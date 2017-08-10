@@ -2,9 +2,12 @@
 	ViewBag.Title = "Home Page";
 }
 
+
+
 <div class="navigation-search">
 	<div id="head-search" class="search-container featured-search fade">
 		<!-- Include Search -->
+        
 		@Html.Partial("~/Views/shared/modules/search.cshtml")
 	</div>
 
@@ -14,6 +17,7 @@
 <div class="search-results-container">
 	@Html.Partial("~/Views/shared/modules/search-results.cshtml")
 </div>
+
 <div class="header-decoration"></div>
 
 <body class="primary">
@@ -28,7 +32,8 @@
 	<div id="main-content" class="main-content">
 		<main class="main-primary">
 			<!-- Begin Main Content -->
-			@Html.Partial("~/Views/shared/modules/section-service-group.cshtml")
+			@Html.Partial("~/Views/shared/modules/section-card-tests.cshtml")
+            @Html.Partial("~/Views/shared/modules/section-service-group.cshtml")
 			@Html.Partial("~/Views/shared/modules/section-open-data.cshtml")
 			@Html.Partial("~/Views/shared/modules/section-green-buildings.cshtml")
 			@Html.Partial("~/Views/shared/modules/section-green-stats.cshtml")

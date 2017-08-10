@@ -27,5 +27,10 @@ namespace StateTemplateV5Beta.Controllers
         {
             return View("~/Views/Shared/modules/serp.cshtml");
         }
+
+        public ActionResult Admin()
+        {
+            return View("~/Views/Admin/modules/add-blog-to-homepage.cshtml");
+        }
     }
 }
