@@ -63,6 +63,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -121,11 +123,18 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AddBlogsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Migrations\201708142319030_AddDateTime.cs" />
+    <Compile Include="Migrations\201708142319030_AddDateTime.Designer.cs">
+      <DependentUpon>201708142319030_AddDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\CSLDataModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Admin\AddBlog.cs" />
+    <Compile Include="Models\AddBlog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -391,18 +400,28 @@
     <Content Include="Views\TestViews\Test1.cshtml" />
     <Content Include="Views\Shared\modules\section-card-tests.cshtml" />
     <Content Include="Views\Shared\modules\topnav-test.cshtml" />
+    <Content Include="Views\Admin\modules\AddBlog.cshtml" />
+    <Content Include="Views\AddBlogs\Create.cshtml" />
+    <Content Include="Views\AddBlogs\Delete.cshtml" />
+    <Content Include="Views\AddBlogs\Details.cshtml" />
+    <Content Include="Views\AddBlogs\Edit.cshtml" />
+    <Content Include="Views\AddBlogs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\StateTemplate\images\_notes\" />
     <Folder Include="Content\StateTemplate\sample\_notes\" />
-    <Folder Include="Views\Admin\modules\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201708142319030_AddDateTime.resx">
+      <DependentUpon>201708142319030_AddDateTime.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
