@@ -21,6 +21,13 @@ namespace StateTemplateV5Beta.Controllers
         }
 
         // GET: AddBlogs
+        public ActionResult Blogs()
+        {
+            return View(db.AddBlogs);
+        }
+
+
+        // GET: AddBlogs
         public ActionResult Index()
         {
             return View(db.AddBlogs.ToList());

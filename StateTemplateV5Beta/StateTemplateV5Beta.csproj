@@ -225,7 +225,6 @@
     <Content Include="Content\StateTemplate\images\template2014\sierra\ribbon-home.png" />
     <Content Include="Content\StateTemplate\images\template2014\sierra\ribbon-two-col.png" />
     <Content Include="Content\StateTemplate\images\template2014\sierra\ribbon.png" />
-    <Content Include="Content\StateTemplate\js\cagov.core.js" />
     <Content Include="Content\StateTemplate\js\libs\d3.js" />
     <Content Include="Content\StateTemplate\js\libs\html5shiv.min.js" />
     <Content Include="Content\StateTemplate\js\libs\icon-fonts-ie7.js" />
@@ -340,6 +339,7 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\StateTemplate\js\cagov.core.js" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -406,6 +406,8 @@
     <Content Include="Views\AddBlogs\Details.cshtml" />
     <Content Include="Views\AddBlogs\Edit.cshtml" />
     <Content Include="Views\AddBlogs\Index.cshtml" />
+    <Content Include="Views\Shared\Blogs.cshtml" />
+    <Content Include="Views\Shared\modules\section-generic-cards.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
