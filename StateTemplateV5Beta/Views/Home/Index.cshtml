@@ -9,7 +9,7 @@
 	<div id="head-search" class="search-container featured-search fade">
 		<!-- Include Search -->
         
-		@Html.Partial("~/Views/shared/modules/search.cshtml")
+		@*@Html.Partial("~/Views/shared/modules/search.cshtml")*@
 	</div>
 
 </div>
@@ -25,12 +25,12 @@
 
 
 	<!-- Ask Bar -->
-	@Html.Partial("~/Views/shared/modules/ask-bar.cshtml")
+	@*@Html.Partial("~/Views/shared/modules/ask-bar.cshtml")*@
 	<!-- Step 5: Header Images -->
 	<!-- Include for optional slideshow banner -->
-	@Html.Partial("~/Views/shared/modules/header-single-banner.cshtml")
+	@*@Html.Partial("~/Views/shared/modules/header-single-banner.cshtml")*@
 
-    @Html.Action("Blogs", "AddBlogs")
+    
 
 	<div id="main-content" class="main-content">
 		<main class="main-primary">
@@ -38,6 +38,7 @@
             
             
             @Html.Partial("~/Views/shared/modules/section-service-group.cshtml")
+            @Html.Partial("~/Views/shared/modules/_topnav.cshtml")
 			@Html.Partial("~/Views/shared/modules/section-open-data.cshtml")
 			@Html.Partial("~/Views/shared/modules/section-green-buildings.cshtml")
 			@Html.Partial("~/Views/shared/modules/section-green-stats.cshtml")

@@ -146,6 +146,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\cards.css" />
+    <Content Include="Content\Carousel.css" />
+    <Content Include="Content\Random.css" />
     <Content Include="Content\StateTemplate\css\cagov.core.css" />
     <Content Include="Content\StateTemplate\css\cagov.font-only.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-oceanside.css" />
@@ -408,6 +410,9 @@
     <Content Include="Views\AddBlogs\Index.cshtml" />
     <Content Include="Views\Shared\Blogs.cshtml" />
     <Content Include="Views\Shared\modules\section-generic-cards.cshtml" />
+    <Content Include="Views\Shared\modules\_header-carosal.cshtml" />
+    <Content Include="Views\Shared\modules\_topnav.cshtml" />
+    <Content Include="Views\Shared\modules\_RadioButtonsNavBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

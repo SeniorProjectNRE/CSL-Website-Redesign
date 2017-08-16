@@ -14,7 +14,7 @@ Options are: megadropdown dropdown singlelevel
         </li>
 
         <li class="nav-item">
-            <a href="AddBlogs/Index" class="first-level-link"><span class="ca-gov-icon-gears"></span>Admin</a>
+            <a href="AddBlogs/Index" class="first-level-link"><span class="ca-gov-icon-gears"></span></a>
         </li>
 
         <li class="nav-item">
@@ -162,6 +162,12 @@ Options are: megadropdown dropdown singlelevel
         </li>
         <li class="nav-item" id='nav-item-search'>
             <a href="javascript:;" class="first-level-link"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
+        </li>
+        <li>
+            <div id="head-search" class="col-md-12">
+                <!-- Include Search -->
+                @Html.Partial("~/Views/shared/modules/search.cshtml")
+            </div>
         </li>
     </ul>
 </nav>
