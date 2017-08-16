@@ -227,6 +227,7 @@
     <Content Include="Content\StateTemplate\images\template2014\sierra\ribbon-home.png" />
     <Content Include="Content\StateTemplate\images\template2014\sierra\ribbon-two-col.png" />
     <Content Include="Content\StateTemplate\images\template2014\sierra\ribbon.png" />
+    <Content Include="Content\StateTemplate\js\libs\cagov.core.txt" />
     <Content Include="Content\StateTemplate\js\libs\d3.js" />
     <Content Include="Content\StateTemplate\js\libs\html5shiv.min.js" />
     <Content Include="Content\StateTemplate\js\libs\icon-fonts-ie7.js" />
@@ -320,6 +321,7 @@
     <Content Include="Content\StateTemplate\sample\images\service-tiles\service-register-vehicle.jpg" />
     <Content Include="Content\StateTemplate\sample\images\service-tiles\student-driver.jpg" />
     <Content Include="Content\StateTemplate\sample\images\student-driver.jpg" />
+    <Content Include="DBUpdate\UpdateScript.sql" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\StateTemplate\fonts\CaGov.eot" />
