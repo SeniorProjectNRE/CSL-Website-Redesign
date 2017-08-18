@@ -13,3 +13,82 @@
     height: 50px;
     font-weight: bold;
 }
+
+
+/**Styles for top navigation bar**/
+#topNav {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#logoSpace
+{
+    width:30%;
+} 
+
+#navItemSpace
+{
+    width:70%;
+    padding-left:2%;
+}
+#navItemSpace > .row{
+    width:100%;
+}
+
+/*second row styles*/
+#secondRow {
+    display:flex;
+    display:-webkit-flex;
+    flex-direction:row;
+    align-items:stretch;  
+}
+
+ #topNavRadioButtons, #topNavSearchButton{
+    width:auto;
+}
+
+#topNavSearchBar{
+    flex:1;
+}
+
+#topNavSearchBar > input {
+    border: 2px solid #efc83c;
+    padding: 3px 10px; 
+    width:100%;
+}
+
+#topNavRadioButtons {
+    background-color: #efc83c;
+    white-space:nowrap;
+    padding: 3px 10px;
+}  
+#topRadioButtons > input{
+    padding-left:2px;
+}
+
+#topNavSearchButton > button{
+    background-color: transparent;
+    border: 0px;
+    font-size:20px;
+    color:#efc83c;
+}
+
+@media screen and (max-width:780px)
+{
+    #secondRow {
+        flex-wrap:wrap;
+    }
+
+
+    #topNavRadioButtons, #topNavSearchBar {
+       flex:1;
+    }
+
+    #topNavSearchBar {
+        flex:auto;
+    }
+}
