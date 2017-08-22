@@ -5,6 +5,7 @@ namespace StateTemplateV5Beta
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
     using StateTemplateV5Beta.Models;
+    using StateTemplateV5Beta.Models.HelperClasses;
 
     public partial class CSLDataModel : DbContext
     {
@@ -13,15 +14,15 @@ namespace StateTemplateV5Beta
         {
         }
 
-        public virtual DbSet<AddBlog> AddBlogs { get; set; }
+        public virtual DbSet<Blog> AddBlogs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<AddBlog>()
+            modelBuilder.Entity<Blog>()
                 .Property(e => e.Title)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<AddBlog>()
+            modelBuilder.Entity<Blog>()
                 .Property(e => e.Description)
                 .IsUnicode(false);
         }

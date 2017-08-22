@@ -16,6 +16,7 @@
 	-->
 	<meta charset="utf-8">
 	<title>DEV-California State Library</title>
+    <script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
 	<meta name="Author" content="State of California" />
 	<meta name="Description" content="State of California" />
 	<meta name="Keywords" content="California, government" />
@@ -75,11 +76,11 @@
 	<!-- Include Utility Header -->
 	@Html.Partial("~/Views/shared/modules/utility-header.cshtml")
 	<!-- Include Branding -->
-	@Html.Partial("~/Views/shared/modules/branding.cshtml")
+	<!--Html.Partial("~/Views/shared/modules/branding.cshtml")-->
 	<!-- Include Mobile Controls -->
 	@Html.Partial("~/Views/shared/modules/mobile-controls.cshtml")
 	<!-- Include Navigation -->
-	@Html.Partial("~/Views/shared/modules/navigation.cshtml")
+	@Html.Partial("~/Views/shared/modules/_topnav.cshtml")
 </header>
 @RenderBody()
 
@@ -88,3 +89,4 @@
 @Html.Partial("~/Views/shared/modules/scripts.cshtml")
 </html>
 @Scripts.Render("~/bundles/stateTemplateJs")
+

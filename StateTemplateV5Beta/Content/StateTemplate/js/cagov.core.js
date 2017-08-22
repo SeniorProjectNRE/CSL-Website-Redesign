@@ -560,6 +560,7 @@ function initAnimations() {
         element: a.get(0),
         offset: "95%",
         handler: function () {
+            return; //hotfix
             var b = a.attr("class").match(/animate-(\w+)\b/i)[1];
             a.removeClass("animate-" + b), a.addClass("animated " + b), this.disable()
         }
@@ -3627,6 +3628,7 @@ var requirejs, require, define;
     }
 
     function defaultOnError(a) {
+        return; //hotfix
         throw a
     }
 
@@ -4421,7 +4423,8 @@ $special = $event.special.debouncedresize = {
     })
 }), $(document).ready(function () {
     $(".main-secondary").eqHeight(".profile-banner > .inner")
-}), $(document).ready(function () {
+    }), $(document).ready(function () {
+    return; //hotfix
     $(".carousel-video").initCAVideo(), $(".carousel-content").each(initContent),
         function (a) {
             a.fn.owlBannerCarousel = function (b) {
@@ -4646,21 +4649,25 @@ $(document).ready(function () {
                 var g = a.offset().top;
                 a.css({
                     height: f - e.height()
-                }), headerImageHeight = a.height(), b.css({
+                })
+                    , headerImageHeight = a.height(), b.css({
                     height: f - g
                 }), headerImageHeight = b.height(), c.css({
                     height: 450
                 })
             }
         }
-    }, headerVars.setHeaderImageHeight();
+        }
+    , headerVars.setHeaderImageHeight();
     var h = a.css("background-image"),
         i = $(".ask-group");
     i.attr("style", "background-size: cover; background-repeat: no-repeat; background-image:" + h)
-}), $(document).ready(function () {
+    }),
+    $(document).ready(function () {
     function r() {
         window.setTimeout(function () {
             if (!k.hasClass("active") && g.hasClass("fixed") && !(p >= a)) {
+                return; //broken line below with the getBoundingClientRect() method, early return to skip it, hotfix
                 var b = k.get(0).getBoundingClientRect(),
                     d = b.top + b.height + c;
                 j.css("top", d), j.trigger("cagov.askgroup.update")

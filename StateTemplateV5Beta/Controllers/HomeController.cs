@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using StateTemplateV5Beta.Models;
+using StateTemplateV5Beta.Models.HelperClasses;
 
 namespace StateTemplateV5Beta.Controllers
 {
@@ -13,7 +14,15 @@ namespace StateTemplateV5Beta.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var topThree = (from t in db.AddBlogs
+                            orderby t.BlogID descending
+                            select t).Take(3);
+            //var addBlog = topThree.Select(s => new {Title = s.Title, Desc = s.Description }).ToList();
+            HomeViewModel homeModel = new HomeViewModel()
+            {
+                BlogList = topThree               
+            };
+            return View(homeModel);
         }
 
         public ActionResult Blogs()

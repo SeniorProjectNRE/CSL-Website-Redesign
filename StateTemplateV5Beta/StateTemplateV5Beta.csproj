@@ -134,7 +134,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AddBlog.cs" />
+    <Compile Include="Models\Blog.cs" />
+    <Compile Include="Models\HelperClasses\AddBlogModel.cs" />
+    <Compile Include="Models\HelperClasses\HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -410,7 +412,7 @@
     <Content Include="Views\AddBlogs\Details.cshtml" />
     <Content Include="Views\AddBlogs\Edit.cshtml" />
     <Content Include="Views\AddBlogs\Index.cshtml" />
-    <Content Include="Views\Shared\Blogs.cshtml" />
+    <Content Include="Views\Shared\modules\Blogs.cshtml" />
     <Content Include="Views\Shared\modules\section-generic-cards.cshtml" />
     <Content Include="Views\Shared\modules\_header-carosal.cshtml" />
     <Content Include="Views\Shared\modules\_topnav.cshtml" />

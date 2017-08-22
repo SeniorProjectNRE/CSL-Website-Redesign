@@ -40,7 +40,7 @@ namespace StateTemplateV5Beta.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            AddBlog addBlog = db.AddBlogs.Find(id);
+            Blog addBlog = db.AddBlogs.Find(id);
             if (addBlog == null)
             {
                 return HttpNotFound();
@@ -59,7 +59,7 @@ namespace StateTemplateV5Beta.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Title,Description")] AddBlog addBlog)
+        public ActionResult Create([Bind(Include = "Title,Description")] Blog addBlog)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace StateTemplateV5Beta.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            AddBlog addBlog = db.AddBlogs.Find(id);
+            Blog addBlog = db.AddBlogs.Find(id);
             if (addBlog == null)
             {
                 return HttpNotFound();
@@ -91,7 +91,7 @@ namespace StateTemplateV5Beta.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "BlogID,Title,Description")] AddBlog addBlog)
+        public ActionResult Edit([Bind(Include = "BlogID,Title,Description")] Blog addBlog)
         {
             if (ModelState.IsValid)
             {
@@ -109,7 +109,7 @@ namespace StateTemplateV5Beta.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            AddBlog addBlog = db.AddBlogs.Find(id);
+            Blog addBlog = db.AddBlogs.Find(id);
             if (addBlog == null)
             {
                 return HttpNotFound();
@@ -122,7 +122,7 @@ namespace StateTemplateV5Beta.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            AddBlog addBlog = db.AddBlogs.Find(id);
+            Blog addBlog = db.AddBlogs.Find(id);
             db.AddBlogs.Remove(addBlog);
             db.SaveChanges();
             return RedirectToAction("Index");

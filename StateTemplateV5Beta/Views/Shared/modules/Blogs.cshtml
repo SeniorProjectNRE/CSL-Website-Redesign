@@ -1,12 +1,12 @@
-﻿@model IEnumerable<StateTemplateV5Beta.Models.AddBlog>
+﻿@model IEnumerable<Blog>
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
+@using StateTemplateV5Beta.Models;
+
 <link href="~/Content/cards.css" rel="stylesheet" type="text/css" />
 
 <div class="row" style="background-color:white">
     <div class="wrapper col-md-12">
-        @foreach (var item in Model)
+        @foreach (Blog item in Model)
         {
             <div class="col-md-4">
                 <div class="column">
