@@ -135,7 +135,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Blog.cs" />
-    <Compile Include="Models\HelperClasses\AddBlogModel.cs" />
     <Compile Include="Models\HelperClasses\HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -339,13 +338,13 @@
     <Content Include="Content\StateTemplate\sample\configs\line.json" />
     <Content Include="Content\StateTemplate\sample\configs\pie.csv" />
     <Content Include="Content\StateTemplate\sample\configs\pie.json" />
+    <Content Include="Content\StateTemplate\js\cagov.core.js" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-reboot.min.css.map" />
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="Content\StateTemplate\js\cagov.core.js" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -362,7 +361,9 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -414,9 +415,13 @@
     <Content Include="Views\AddBlogs\Index.cshtml" />
     <Content Include="Views\Shared\modules\Blogs.cshtml" />
     <Content Include="Views\Shared\modules\section-generic-cards.cshtml" />
-    <Content Include="Views\Shared\modules\_header-carosal.cshtml" />
+    <Content Include="Views\Shared\modules\header-carousal.cshtml" />
     <Content Include="Views\Shared\modules\_topnav.cshtml" />
     <Content Include="Views\Shared\modules\_RadioButtonsNavBar.cshtml" />
+    <Content Include="Views\Shared\modules\_HomeSpotlight.cshtml" />
+    <Content Include="Views\Shared\modules\_HomeEvents.cshtml" />
+    <Content Include="Views\Shared\modules\_HomeLinks.cshtml" />
+    <Content Include="Views\Shared\modules\_HomeCarousel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,5 +1,6 @@
 ﻿@model StateTemplateV5Beta.Models.HelperClasses.HomeViewModel
-    @using StateTemplateV5Beta.Models
+@using StateTemplateV5Beta.Models
+
 @{
     ViewBag.Title = "Home Page";
 }
@@ -31,18 +32,22 @@
 	<!-- Include for optional slideshow banner -->
 	@*@Html.Partial("~/Views/shared/modules/header-single-banner.cshtml")*@
 
+    
+    
 
 	<div id="main-content" class="main-content">
 		<main class="main-primary">
 			<!-- Begin Main Content -->
+            @*<div style="background-color:red; height:400px;">
+                
+            </div>*@
 
+            @Html.Partial("~/Views/shared/modules/_HomeCarousel.cshtml")
+            @Html.Partial("~/Views/shared/modules/_HomeSpotlight.cshtml")
+            @Html.Partial("~/Views/shared/modules/_HomeEvents.cshtml")
+            @Html.Partial("~/Views/shared/modules/_HomeLinks.cshtml")
+            @Html.Partial("~/Views/shared/modules/section-mobile-gallery.cshtml")
             @Html.Partial("~/Views/shared/modules/Blogs.cshtml", Model.BlogList)
-            @Html.Partial("~/Views/shared/modules/section-service-group.cshtml")
-            
-			@Html.Partial("~/Views/shared/modules/section-open-data.cshtml")
-			@Html.Partial("~/Views/shared/modules/section-green-buildings.cshtml")
-			@Html.Partial("~/Views/shared/modules/section-green-stats.cshtml")
-			@Html.Partial("~/Views/shared/modules/section-mobile-gallery.cshtml")
             @Html.Partial("~/Views/shared/modules/section-footer2.cshtml")
 
 			
