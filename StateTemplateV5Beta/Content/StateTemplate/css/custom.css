@@ -1,0 +1,177 @@
+﻿#title-page {
+    display: none;
+}
+
+#page-banner {
+    display: block;
+}
+
+.holidays {
+    width: 23%;
+    float: right;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid #c7c7c7;
+    padding: 5px 30px
+}
+
+.blue-div {
+    background-color: #0a5b82;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+    .blue-div h2 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 20px 0 0 0;
+        text-align: left;
+    }
+
+.threecolumns {
+    width: 1246px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.columns {
+    width: 400px;
+    float: left;
+    margin-right: 22px;
+    background-color: #fff;
+}
+
+    .columns p, .twocolumns p {
+        padding: 20px;
+    }
+
+    .columns img {
+        width: 400px
+    }
+
+    .columns h3 {
+        text-align: left;
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+.twocolumns {
+    width: 600px;
+    float: left;
+    margin-right: 22px;
+    background-color: #fff;
+}
+
+.wrap {
+    padding: 15px 15px 25px 15px;
+}
+
+.icon {
+    width: 33px;
+    float: left;
+    padding: 20px 0
+}
+
+.more-info {
+    padding-top: 20px
+}
+
+.grey-box {
+    width: 100%;
+    background-color: #e1e1e1;
+    height: 55px;
+    text-align: center;
+}
+
+.box-with-border {
+    width: 23%;
+    float: right;
+    margin: 30px 60px 0 0;
+    text-align: center;
+    border: 1px solid #c7c7c7;
+    padding: 5px 30px
+}
+
+.orange {
+    color: #FDB81E;
+    font-weight: bold;
+    text-align: left;
+}
+
+.blue {
+    text-align: left;
+    color: #0a5b82;
+    font-weight: bold
+}
+
+.expand-div {
+    width: 33%;
+    float: left;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.panel-group {
+    margin-bottom: 0
+}
+
+.spacer {
+    height: 30px;
+}
+
+.clear-white-button {
+    border: 1px solid white;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+}
+
+    .clear-white-button a {
+        color: #fff
+    }
+
+.columns h3 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.white-p {
+    color: #fff;
+    font-weight: bold;
+    padding: 0 20px 0 15px !important;
+}
+
+.div-divider {
+    height: 130px;
+    width: 100%
+}
+
+.events-item {
+    color: #fff;
+    padding: 0 15px 0 15px !important;
+}
+
+    .events-item a {
+        color: #fff;
+        text-decoration: underline;
+        font-size: 18px;
+    }
+
+.white-hr {
+    width: 90%;
+}
+
+.event-divider {
+    height: 115px;
+    width: 100%
+}
+
+.link-icon img {
+    width: 40%
+}
+
