@@ -153,6 +153,21 @@
     <Compile Include="Controllers\Law\LawController.cs" />
     <Compile Include="Controllers\LibraryDevServices\LibraryDevServicesController.cs" />
     <Compile Include="Controllers\MailingLists\MailingListsController.cs" />
+    <Compile Include="Controllers\Privacy\PrivacyController.cs" />
+    <Compile Include="Controllers\Services\ResearchResources\ResearchResourcesController.cs" />
+    <Compile Include="Controllers\Services\ServicesController.cs" />
+    <Compile Include="Controllers\Services\Statistics\StatisticsController.cs" />
+    <Compile Include="Controllers\Services\ToLibraries\CALibraryServicesAct\Board\BoardController.cs" />
+    <Compile Include="Controllers\Services\ToLibraries\CALibraryServicesAct\CALibraryServicesActController.cs" />
+    <Compile Include="Controllers\Services\ToLibraries\ToLibrariesController.cs" />
+    <Compile Include="Controllers\Services\ToPublic\ToPublicController.cs" />
+    <Compile Include="Controllers\Services\ToStateEmployees\ToStateEmployeesController.cs" />
+    <Compile Include="Controllers\SiteMap\SiteMapController.cs" />
+    <Compile Include="Controllers\Sutro\SutroController.cs" />
+    <Compile Include="Controllers\Use\UseController.cs" />
+    <Compile Include="Controllers\VisitUs\VisitUsController.cs" />
+    <Compile Include="Controllers\WorkWithUs\Jobs\JobsController.cs" />
+    <Compile Include="Controllers\WorkWithUs\WorkWithUsController.cs" />
     <Compile Include="Migrations\201708142319030_AddDateTime.cs" />
     <Compile Include="Migrations\201708142319030_AddDateTime.Designer.cs">
       <DependentUpon>201708142319030_AddDateTime.cs</DependentUpon>
@@ -589,7 +604,9 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\StateTemplate\images\_notes\" />
     <Folder Include="Content\StateTemplate\sample\_notes\" />
+    <Folder Include="Views\Board\" />
     <Folder Include="Views\Broadband\" />
+    <Folder Include="Views\CALibraryServicesAct\" />
     <Folder Include="Views\CARevealed\" />
     <Folder Include="Views\CivilLiberties\" />
     <Folder Include="Views\Collections\" />
@@ -599,14 +616,27 @@
     <Folder Include="Views\FederalDepository\" />
     <Folder Include="Views\GovernmentPublications\" />
     <Folder Include="Views\Grants\" />
+    <Folder Include="Views\Jobs\" />
     <Folder Include="Views\Law\" />
     <Folder Include="Views\LibraryDevServices\" />
     <Folder Include="Views\LSTA\" />
     <Folder Include="Views\MailingLists\" />
     <Folder Include="Views\OnlineExhibits\" />
     <Folder Include="Views\PLStaffEducationProgram\" />
+    <Folder Include="Views\Privacy\" />
     <Folder Include="Views\Publications\" />
+    <Folder Include="Views\ResearchResources\" />
+    <Folder Include="Views\Services\" />
+    <Folder Include="Views\SiteMap\" />
     <Folder Include="Views\SLAA\" />
+    <Folder Include="Views\Statistics\" />
+    <Folder Include="Views\Sutro\" />
+    <Folder Include="Views\ToLibraries\" />
+    <Folder Include="Views\ToPublic\" />
+    <Folder Include="Views\ToStateEmployees\" />
+    <Folder Include="Views\Use\" />
+    <Folder Include="Views\VisitUs\" />
+    <Folder Include="Views\WorkWithUs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
