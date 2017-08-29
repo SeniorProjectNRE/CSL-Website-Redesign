@@ -19,12 +19,7 @@ namespace StateTemplateV5Beta
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
-
-            routes.MapRoute(
-                name: "Admin",
-                url: "{controller}/{action}",
-                defaults: new { controller = "Home", action = "Admin"}
-            );
+        
 
 
 

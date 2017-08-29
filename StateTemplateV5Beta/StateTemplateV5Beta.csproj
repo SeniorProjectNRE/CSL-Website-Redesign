@@ -123,6 +123,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\About\AboutController.cs" />
+    <Compile Include="Controllers\About\HistoryController.cs" />
+    <Compile Include="Controllers\About\StateLibrariansController.cs" />
     <Compile Include="Controllers\AddBlogsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Migrations\201708142319030_AddDateTime.cs" />
@@ -495,11 +498,17 @@
     <Content Include="Views\Shared\modules\_HomeCarousel.cshtml" />
     <Content Include="Views\Shared\modules\_HomeTodayInCali.cshtml" />
     <Content Include="Views\Shared\modules\_HomeItems.cshtml" />
+    <Content Include="Views\About\About.cshtml" />
+    <Content Include="Views\About\ExecutiveStaff.cshtml" />
+    <Content Include="Views\About\History.cshtml" />
+    <Content Include="Views\About\Building.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\StateTemplate\images\_notes\" />
     <Folder Include="Content\StateTemplate\sample\_notes\" />
+    <Folder Include="Views\BTBL\" />
+    <Folder Include="Views\StateLibrarians\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
