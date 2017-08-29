@@ -8,26 +8,21 @@ using StateTemplateV5Beta.Models.HelperClasses;
 
 namespace StateTemplateV5Beta.Controllers
 {
+    [RoutePrefix("CSL")]
     public class HomeController : Controller
     {
-        private CSLDataModel db = new CSLDataModel();
+        //private CSLDataModel db = new CSLDataModel();
 
         public ActionResult Index()
         {
-            var topThree = (from t in db.AddBlogs
-                            orderby t.BlogID descending
-                            select t).Take(3);
-            //var addBlog = topThree.Select(s => new {Title = s.Title, Desc = s.Description }).ToList();
-            HomeViewModel homeModel = new HomeViewModel()
-            {
-                BlogList = topThree               
-            };
-            return View(homeModel);
-        }
-
-        public ActionResult Blogs()
-        {
-            return View(db.AddBlogs);
+            //var topThree = (from t in db.AddBlogs
+            //                orderby t.BlogID descending
+            //                select t).Take(3);
+            //HomeViewModel homeModel = new HomeViewModel()
+            //{
+            //    BlogList = topThree               
+            //};
+            return View(/*homeModel*/);
         }
 
         public ActionResult serviceProfile()

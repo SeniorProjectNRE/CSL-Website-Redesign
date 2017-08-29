@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace StateTemplateV5Beta.Controllers
 {
-    [RoutePrefix("about")]
+    [RoutePrefix("About")]
     public class AboutController : Controller
     {
         // GET: About
@@ -16,26 +16,13 @@ namespace StateTemplateV5Beta.Controllers
             return View("About");
         }
 
-        [Route("History")]
-        public ActionResult History()
-        {
-            return View();
-        }
-
-        [Route("History/Building")]
-        public ActionResult Building()
-        {
-            return View();
-        }
-
-
-        [Route("ExecutiveStaff")]
+        [Route("Executive-Staff")]
         public ActionResult ExecutiveStaff()
         {
             return View();
         }
 
-        [Route("LibrarySections")]
+        [Route("Library-Sections")]
         public ActionResult LibrarySections()
         {
             return View();
@@ -53,7 +40,7 @@ namespace StateTemplateV5Beta.Controllers
             return View();
         }
 
-        [Route("PressReleases")]
+        [Route("Press-Releases")]
         public ActionResult PressReleases()
         {
             return View();

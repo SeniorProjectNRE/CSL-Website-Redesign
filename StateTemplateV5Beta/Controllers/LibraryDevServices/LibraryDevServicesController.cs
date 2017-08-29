@@ -6,18 +6,10 @@ using System.Web.Mvc;
 
 namespace StateTemplateV5Beta.Controllers
 {
-    [RoutePrefix("About/History")]
-    public class HistoryController : Controller
+    public class LibraryDevServicesController : Controller
     {
-        // GET: History
-        [Route("")]
+        // GET: LibraryDevServices
         public ActionResult Index()
-        {
-            return View();
-        }
-
-        [Route("building")]
-        public ActionResult Building()
         {
             return View();
         }
