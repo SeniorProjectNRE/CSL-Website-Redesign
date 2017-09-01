@@ -18,7 +18,8 @@ namespace StateTemplateV5Beta
 
             bundles.Add(new StyleBundle("~/Content/stateTemplateCss").Include(
                       "~/Content/StateTemplate/css/cagov.core.css",
-                      "~/Content/StateTemplate/css/colorscheme-oceanside.css"));
+                      "~/Content/StateTemplate/css/colorscheme-oceanside.css",
+                      "~/Content/StateTemplate/css/bootstrap.min.css"));
         }
     }
 }

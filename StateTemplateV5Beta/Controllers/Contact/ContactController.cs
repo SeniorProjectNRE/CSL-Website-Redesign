@@ -6,12 +6,14 @@ using System.Web.Mvc;
 
 namespace StateTemplateV5Beta.Controllers
 {
+    [RoutePrefix("contact")]
     public class ContactController : Controller
     {
         // GET: Contact
+        [Route("")]
         public ActionResult Index()
         {
-            return View();
+            return View("Contact");
         }
     }
 }

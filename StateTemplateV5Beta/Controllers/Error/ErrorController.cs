@@ -6,12 +6,14 @@ using System.Web.Mvc;
 
 namespace StateTemplateV5Beta.Controllers.Error
 {
+    [RoutePrefix("Error")]
     public class ErrorController : Controller
     {
         // GET: Error
+        [Route("")]
         public ActionResult Index()
         {
-            return View();
+            return View("Error");
         }
     }
 }

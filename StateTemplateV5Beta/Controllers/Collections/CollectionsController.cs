@@ -6,12 +6,21 @@ using System.Web.Mvc;
 
 namespace StateTemplateV5Beta.Controllers.Collections
 {
+    [RoutePrefix("collections")]
     public class CollectionsController : Controller
     {
         // GET: Collections
+        [Route("")]
         public ActionResult Index()
         {
-            return View();
+            return View("Collections");
+        }
+
+        // GET: Genealogy
+        [Route("genealogy")]
+        public ActionResult Genealogy()
+        {
+            return View("Genealogy");
         }
     }
 }

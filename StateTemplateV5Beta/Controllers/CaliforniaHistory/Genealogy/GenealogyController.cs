@@ -13,14 +13,14 @@ namespace StateTemplateV5Beta.Controllers.CaliforniaHistory
         [Route("")]
         public ActionResult Index()
         {
-            return View("Genealogy");
+            return View("~/Views/CaliforniaHistory/Genealogy/Genealogy.cshtml");
         }
 
         // GET: county-indexes
         [Route("county-indexes")]
         public ActionResult CountyIndexes()
         {
-            return View();
+            return View("~/Views/CaliforniaHistory/Genealogy/CountyIndexes.cshtml");
         }
     }
 }

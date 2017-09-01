@@ -13,25 +13,25 @@ namespace StateTemplateV5Beta.Controllers.About
         [Route("")]
         public ActionResult Index()
         {
-            return View("StateLibrarians");
+            return View("~/Views/About/History/StateLibrarians/StateLibrarians.cshtml");
         }
 
         [Route("Aldrich")]
         public ActionResult Aldrich()
         {
-            return View();
+            return View("~/Views/About/History/StateLibrarians/Aldrich.cshtml");
         }
 
         [Route("Hildreth")]
         public ActionResult Hildreth()
         {
-            return View();
+            return View("~/Views/About/History/StateLibrarians/Hildreth.cshtml");
         }
 
         [Route("Lucas")]
         public ActionResult Lucas()
         {
-            return View();
+            return View("~/Views/About/History/StateLibrarians/Lucas.cshtml");
         }
     }
 }

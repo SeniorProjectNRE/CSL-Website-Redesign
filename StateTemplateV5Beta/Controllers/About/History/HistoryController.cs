@@ -13,13 +13,13 @@ namespace StateTemplateV5Beta.Controllers
         [Route("")]
         public ActionResult Index()
         {
-            return View();
+            return View("~/Views/About/History/History.cshtml");
         }
 
         [Route("building")]
         public ActionResult Building()
         {
-            return View();
+            return View("~/Views/About/History/Building.cshtml");
         }
     }
 }
