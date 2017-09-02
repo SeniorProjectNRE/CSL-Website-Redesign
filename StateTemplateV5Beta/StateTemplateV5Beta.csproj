@@ -661,6 +661,15 @@
     <Content Include="Views\Grants\LSTA\CARevealed\Ownership.cshtml" />
     <Content Include="Views\Grants\LSTA\CARevealed\Permission.cshtml" />
     <Content Include="Views\Grants\LSTA\CARevealed\RiskManagement.cshtml" />
+    <Content Include="Views\Sutro\Sutro.cshtml" />
+    <Content Include="Views\Sutro\AdolphSutro.cshtml" />
+    <Content Include="Views\Sutro\Class.cshtml" />
+    <Content Include="Views\Sutro\Collection.cshtml" />
+    <Content Include="Views\Sutro\ColoringBook.cshtml" />
+    <Content Include="Views\Sutro\Geneaology.cshtml" />
+    <Content Include="Views\Sutro\Search.cshtml" />
+    <Content Include="Views\Sutro\Visiting.cshtml" />
+    <Content Include="Views\Sutro\WomensMarch.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -676,7 +685,6 @@
     <Folder Include="Views\Services\" />
     <Folder Include="Views\SiteMap\" />
     <Folder Include="Views\Statistics\" />
-    <Folder Include="Views\Sutro\" />
     <Folder Include="Views\ToLibraries\" />
     <Folder Include="Views\ToPublic\" />
     <Folder Include="Views\ToStateEmployees\" />
