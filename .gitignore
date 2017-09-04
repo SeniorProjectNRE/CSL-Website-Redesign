@@ -261,3 +261,4 @@ __pycache__/
 *.pyc
 
 Web.config
+StateTemplateV5Beta/Web.config
