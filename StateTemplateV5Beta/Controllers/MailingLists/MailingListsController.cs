@@ -6,12 +6,14 @@ using System.Web.Mvc;
 
 namespace StateTemplateV5Beta.Controllers
 {
+    [RoutePrefix("Mailing-Lists")]
     public class MailingListsController : Controller
     {
         // GET: MailingLists
+        [Route("")]
         public ActionResult Index()
         {
-            return View();
+            return View("MailingLists");
         }
     }
 }
