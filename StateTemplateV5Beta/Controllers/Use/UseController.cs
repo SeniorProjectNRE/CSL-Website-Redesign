@@ -6,12 +6,14 @@ using System.Web.Mvc;
 
 namespace StateTemplateV5Beta.Controllers.Use
 {
+    [RoutePrefix("Use")]
     public class UseController : Controller
     {
         // GET: Use
+        [Route("")]
         public ActionResult Index()
         {
-            return View();
+            return View("Use");
         }
     }
 }

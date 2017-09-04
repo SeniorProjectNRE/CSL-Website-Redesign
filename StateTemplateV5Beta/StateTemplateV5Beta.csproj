@@ -676,6 +676,20 @@
     <Content Include="Views\MailingLists\MailingLists.cshtml" />
     <Content Include="Views\Privacy\Privacy.cshtml" />
     <Content Include="Views\SiteMap\SiteMap.cshtml" />
+    <Content Include="Views\Services\Services.cshtml" />
+    <Content Include="Views\Services\Apply.cshtml" />
+    <Content Include="Views\Services\Borrowing.cshtml" />
+    <Content Include="Views\Services\OnlineResources.cshtml" />
+    <Content Include="Views\Services\Policies.cshtml" />
+    <Content Include="Views\Services\ResearchResources\ResearchResources.cshtml" />
+    <Content Include="Views\Services\ResearchResources\AdditionalResources.cshtml" />
+    <Content Include="Views\Services\ResearchResources\Patents.cshtml" />
+    <Content Include="Views\Services\ResearchResources\Reference.cshtml" />
+    <Content Include="Views\Services\Statistics\Statistics.cshtml" />
+    <Content Include="Views\Services\Statistics\Archive.cshtml" />
+    <Content Include="Views\Services\Statistics\LibraryDirectory.cshtml" />
+    <Content Include="Views\Services\Statistics\Summary.cshtml" />
+    <Content Include="Views\Use\Use.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -684,12 +698,10 @@
     <Folder Include="Views\Board\" />
     <Folder Include="Views\CALibraryServicesAct\" />
     <Folder Include="Views\ResearchResources\" />
-    <Folder Include="Views\Services\" />
     <Folder Include="Views\Statistics\" />
     <Folder Include="Views\ToLibraries\" />
     <Folder Include="Views\ToPublic\" />
     <Folder Include="Views\ToStateEmployees\" />
-    <Folder Include="Views\Use\" />
     <Folder Include="Views\VisitUs\" />
   </ItemGroup>
   <ItemGroup>
