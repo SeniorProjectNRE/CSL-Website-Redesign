@@ -6,12 +6,14 @@ using System.Web.Mvc;
 
 namespace StateTemplateV5Beta.Controllers.SiteMap
 {
+    [RoutePrefix("SiteMap")]
     public class SiteMapController : Controller
     {
         // GET: SiteMap
+        [Route("")]
         public ActionResult Index()
         {
-            return View();
+            return View("SiteMap");
         }
     }
 }

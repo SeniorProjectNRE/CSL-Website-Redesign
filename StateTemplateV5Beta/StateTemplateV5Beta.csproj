@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -670,6 +671,11 @@
     <Content Include="Views\Sutro\Search.cshtml" />
     <Content Include="Views\Sutro\Visiting.cshtml" />
     <Content Include="Views\Sutro\WomensMarch.cshtml" />
+    <Content Include="Views\Law\Law.cshtml" />
+    <Content Include="Views\LibraryDevServices\LibraryDevelopmentServices.cshtml" />
+    <Content Include="Views\MailingLists\MailingLists.cshtml" />
+    <Content Include="Views\Privacy\Privacy.cshtml" />
+    <Content Include="Views\SiteMap\SiteMap.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -677,13 +683,8 @@
     <Folder Include="Content\StateTemplate\sample\_notes\" />
     <Folder Include="Views\Board\" />
     <Folder Include="Views\CALibraryServicesAct\" />
-    <Folder Include="Views\Law\" />
-    <Folder Include="Views\LibraryDevServices\" />
-    <Folder Include="Views\MailingLists\" />
-    <Folder Include="Views\Privacy\" />
     <Folder Include="Views\ResearchResources\" />
     <Folder Include="Views\Services\" />
-    <Folder Include="Views\SiteMap\" />
     <Folder Include="Views\Statistics\" />
     <Folder Include="Views\ToLibraries\" />
     <Folder Include="Views\ToPublic\" />

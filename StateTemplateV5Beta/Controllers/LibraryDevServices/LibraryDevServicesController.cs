@@ -6,12 +6,14 @@ using System.Web.Mvc;
 
 namespace StateTemplateV5Beta.Controllers
 {
+    [RoutePrefix("Library-Development-Services")]
     public class LibraryDevServicesController : Controller
     {
         // GET: LibraryDevServices
+        [Route("")]
         public ActionResult Index()
         {
-            return View();
+            return View("LibraryDevelopmentServices");
         }
     }
 }
