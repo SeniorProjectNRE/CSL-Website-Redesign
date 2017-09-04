@@ -43,5 +43,12 @@ namespace StateTemplateV5Beta.Controllers.Services
         {
             return View();
         }
+
+        // GET: To-Public
+        [Route("To-Public")]
+        public ActionResult ToPublic()
+        {
+            return View();
+        }
     }
 }

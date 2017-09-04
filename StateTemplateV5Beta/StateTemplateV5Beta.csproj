@@ -717,6 +717,13 @@
     <Content Include="Views\WorkWithUs\Jobs\LibraryTechnicalAssistant\LibraryTechnicalAssistant.cshtml" />
     <Content Include="Views\WorkWithUs\Jobs\LibraryProgramConsultant\LibraryProgramConsultant.cshtml" />
     <Content Include="Views\WorkWithUs\Jobs\LibraryProgramAdmin\LibraryProgramAdmin.cshtml" />
+    <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\CALibraryServicesAct.cshtml" />
+    <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\About.cshtml" />
+    <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Systems.cshtml" />
+    <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Board.cshtml" />
+    <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Meetings.cshtml" />
+    <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Members.cshtml" />
+    <Content Include="Views\Services\ToPublic.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
