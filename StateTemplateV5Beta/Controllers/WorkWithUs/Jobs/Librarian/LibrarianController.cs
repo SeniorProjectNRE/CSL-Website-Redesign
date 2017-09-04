@@ -13,13 +13,13 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
         // GET: Librarian
         public ActionResult Index()
         {
-            return View("Librarian");
+            return View("~/Views/WorkWithUs/Jobs/Librarian/Librarian.cshtml");
         }
 
         [Route("apply")]
         public ActionResult Apply()
         {
-            return View();
+            return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml");
         }
     }
 }

@@ -23,5 +23,12 @@ namespace StateTemplateV5Beta.Controllers
         {
             return View();
         }
+
+        // GET: Internships
+        [Route("Internships")]
+        public ActionResult Internships()
+        {
+            return View();
+        }
     }
 }

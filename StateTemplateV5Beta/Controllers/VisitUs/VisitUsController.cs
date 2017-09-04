@@ -13,6 +13,34 @@ namespace StateTemplateV5Beta.Controllers.VisitUs
         [Route("")]
         public ActionResult Index()
         {
+            return View("VisitUs");
+        }
+
+        // GET: Events
+        [Route("Events")]
+        public ActionResult Events()
+        {
+            return View();
+        }
+
+        // GET: Exhibits
+        [Route("Exhibits")]
+        public ActionResult Exhibits()
+        {
+            return View();
+        }
+
+        // GET: Locations-And-Hours
+        [Route("Locations-And-Hours")]
+        public ActionResult LocationsAndHours()
+        {
+            return View();
+        }
+
+        // GET: Tours
+        [Route("Tours")]
+        public ActionResult Tours()
+        {
             return View();
         }
     }

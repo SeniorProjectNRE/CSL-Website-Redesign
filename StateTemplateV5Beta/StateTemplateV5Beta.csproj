@@ -169,6 +169,10 @@
     <Compile Include="Controllers\VisitUs\VisitUsController.cs" />
     <Compile Include="Controllers\WorkWithUs\Jobs\JobsController.cs" />
     <Compile Include="Controllers\WorkWithUs\Jobs\Librarian\LibrarianController.cs" />
+    <Compile Include="Controllers\WorkWithUs\Jobs\LibraryProgramAdmin\LibraryProgramAdminController.cs" />
+    <Compile Include="Controllers\WorkWithUs\Jobs\LibraryProgramConsultant\LibraryProgramConsultantController.cs" />
+    <Compile Include="Controllers\WorkWithUs\Jobs\LibraryTechnicalAssistant\LibraryTechnicalAssistantController.cs" />
+    <Compile Include="Controllers\WorkWithUs\Jobs\SupervisingLibrarian\SupervisingLibrarianController.cs" />
     <Compile Include="Controllers\WorkWithUs\WorkWithUsController.cs" />
     <Compile Include="Migrations\201708142319030_AddDateTime.cs" />
     <Compile Include="Migrations\201708142319030_AddDateTime.Designer.cs">
@@ -690,6 +694,29 @@
     <Content Include="Views\Services\Statistics\LibraryDirectory.cshtml" />
     <Content Include="Views\Services\Statistics\Summary.cshtml" />
     <Content Include="Views\Use\Use.cshtml" />
+    <Content Include="Views\Services\ToLibraries\ToLibraries.cshtml" />
+    <Content Include="Views\Services\ToLibraries\ERate.cshtml" />
+    <Content Include="Views\Services\ToLibraries\Grants.cshtml" />
+    <Content Include="Views\Services\ToLibraries\InterlibraryLending.cshtml" />
+    <Content Include="Views\Services\ToStateEmployees\ToStateEmployees.cshtml" />
+    <Content Include="Views\Services\ToStateEmployees\StateTrainingVideos.cshtml" />
+    <Content Include="Views\VisitUs\VisitUs.cshtml" />
+    <Content Include="Views\VisitUs\Events.cshtml" />
+    <Content Include="Views\VisitUs\Exhibits.cshtml" />
+    <Content Include="Views\VisitUs\LocationsAndHours.cshtml" />
+    <Content Include="Views\VisitUs\Tours.cshtml" />
+    <Content Include="Views\WorkWithUs\Internships.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\Jobs.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\Librarian\Librarian.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\Librarian\Apply.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\LibraryProgramAdmin\Apply.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\LibraryProgramConsultant\Apply.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\LibraryTechnicalAssistant\Apply.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\SupervisingLibrarian\Apply.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\SupervisingLibrarian\SupervisingLibrarian.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\LibraryTechnicalAssistant\LibraryTechnicalAssistant.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\LibraryProgramConsultant\LibraryProgramConsultant.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\LibraryProgramAdmin\LibraryProgramAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -697,12 +724,14 @@
     <Folder Include="Content\StateTemplate\sample\_notes\" />
     <Folder Include="Views\Board\" />
     <Folder Include="Views\CALibraryServicesAct\" />
+    <Folder Include="Views\LibraryProgramConsultant\" />
+    <Folder Include="Views\LibraryTechnicalAssistant\" />
     <Folder Include="Views\ResearchResources\" />
     <Folder Include="Views\Statistics\" />
+    <Folder Include="Views\SupervisingLibrarian\" />
     <Folder Include="Views\ToLibraries\" />
     <Folder Include="Views\ToPublic\" />
     <Folder Include="Views\ToStateEmployees\" />
-    <Folder Include="Views\VisitUs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
