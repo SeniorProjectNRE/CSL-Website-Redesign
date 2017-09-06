@@ -151,6 +151,7 @@
     <Compile Include="Controllers\Grants\LSTA\LSTAController.cs" />
     <Compile Include="Controllers\Grants\LSTA\PLStaffEducationProgram\PLStaffEducationProgramController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\Law\LawController.cs" />
     <Compile Include="Controllers\LibraryDevServices\LibraryDevServicesController.cs" />
     <Compile Include="Controllers\MailingLists\MailingListsController.cs" />
@@ -185,6 +186,7 @@
     </Compile>
     <Compile Include="Models\Blog.cs" />
     <Compile Include="Models\HelperClasses\HomeViewModel.cs" />
+    <Compile Include="Models\Images.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -731,6 +733,7 @@
     <Folder Include="Content\StateTemplate\sample\_notes\" />
     <Folder Include="Views\Board\" />
     <Folder Include="Views\CALibraryServicesAct\" />
+    <Folder Include="Views\Image\" />
     <Folder Include="Views\LibraryProgramConsultant\" />
     <Folder Include="Views\LibraryTechnicalAssistant\" />
     <Folder Include="Views\ResearchResources\" />

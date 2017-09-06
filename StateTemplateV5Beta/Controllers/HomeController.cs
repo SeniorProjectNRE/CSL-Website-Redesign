@@ -22,6 +22,7 @@ namespace StateTemplateV5Beta.Controllers
             //{
             //    BlogList = topThree               
             //};
+            
             return View(/*homeModel*/);
         }
 
