@@ -699,7 +699,6 @@
     <Content Include="Views\Services\ToLibraries\ToLibraries.cshtml" />
     <Content Include="Views\Services\ToLibraries\ERate.cshtml" />
     <Content Include="Views\Services\ToLibraries\Grants.cshtml" />
-    <Content Include="Views\Services\ToLibraries\InterlibraryLending.cshtml" />
     <Content Include="Views\Services\ToStateEmployees\ToStateEmployees.cshtml" />
     <Content Include="Views\Services\ToStateEmployees\StateTrainingVideos.cshtml" />
     <Content Include="Views\VisitUs\VisitUs.cshtml" />
@@ -726,13 +725,13 @@
     <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Meetings.cshtml" />
     <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Members.cshtml" />
     <Content Include="Views\Services\ToPublic.cshtml" />
+    <Content Include="Views\Services\ToLibraries\InterlibraryLending.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\StateTemplate\images\_notes\" />
     <Folder Include="Content\StateTemplate\sample\_notes\" />
     <Folder Include="Views\Board\" />
-    <Folder Include="Views\CALibraryServicesAct\" />
     <Folder Include="Views\Image\" />
     <Folder Include="Views\LibraryProgramConsultant\" />
     <Folder Include="Views\LibraryTechnicalAssistant\" />
