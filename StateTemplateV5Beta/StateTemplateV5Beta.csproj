@@ -199,7 +199,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\cards.css" />
     <Content Include="Content\Carousel.css" />
-    <Content Include="Content\Random.css" />
+    <Content Include="Content\StateTemplate\css\random.css" />
     <Content Include="Content\StateTemplate\css\cagov.core.css" />
     <Content Include="Content\StateTemplate\css\cagov.font-only.css" />
     <Content Include="Content\StateTemplate\css\colorscheme-oceanside.css" />
