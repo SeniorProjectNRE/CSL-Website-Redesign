@@ -208,6 +208,7 @@
     <Content Include="Content\StateTemplate\favicon.ico" />
     <Content Include="Content\StateTemplate\fonts\CaGov.svg" />
     <Content Include="Content\StateTemplate\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\StateTemplate\images\about\Stacey_Aldrich.png" />
     <Content Include="Content\StateTemplate\images\banner\banner-blank.png" />
     <Content Include="Content\StateTemplate\images\banner\banner-gal.png" />
     <Content Include="Content\StateTemplate\images\banner\banner-guy.png" />
