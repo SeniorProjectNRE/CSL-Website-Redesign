@@ -151,7 +151,6 @@
     <Compile Include="Controllers\Grants\LSTA\LSTAController.cs" />
     <Compile Include="Controllers\Grants\LSTA\PLStaffEducationProgram\PLStaffEducationProgramController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\Law\LawController.cs" />
     <Compile Include="Controllers\LibraryDevServices\LibraryDevServicesController.cs" />
     <Compile Include="Controllers\MailingLists\MailingListsController.cs" />
@@ -162,7 +161,6 @@
     <Compile Include="Controllers\Services\ToLibraries\CALibraryServicesAct\Board\BoardController.cs" />
     <Compile Include="Controllers\Services\ToLibraries\CALibraryServicesAct\CALibraryServicesActController.cs" />
     <Compile Include="Controllers\Services\ToLibraries\ToLibrariesController.cs" />
-    <Compile Include="Controllers\Services\ToPublic\ToPublicController.cs" />
     <Compile Include="Controllers\Services\ToStateEmployees\ToStateEmployeesController.cs" />
     <Compile Include="Controllers\SiteMap\SiteMapController.cs" />
     <Compile Include="Controllers\Sutro\SutroController.cs" />
