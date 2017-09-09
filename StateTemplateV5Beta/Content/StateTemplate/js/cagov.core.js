@@ -71,6 +71,10 @@ function initContent() {
     })
 }
 
+String.prototype.capitalize = function () {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
 function breadcrumbs() {
     if ($(".breadcrumb.dynamic")[0]) {
         var a = location.href,
@@ -81,11 +85,12 @@ function breadcrumbs() {
         var c = /<.*/g;
         a = a.replace(c, "");
         var d = a.split("/"),
-            e = '<li><a href="/">Home</a></li>',
+            e = '<li><a href="/">home</a></li>',
             f = "/";
         if (("" == d[d.length - 1] || d[d.length - 1].match(/^index\.|^default\./i)) && d.length-- , d.length > 3) {
-            for (counter = 3; counter < d.length - 1; counter++) f += d[counter] + "/", e += '<li><a href="' + f + '">' + d[counter].replace(/(_|-)/g, " ") + "</a></li>";
+            for (counter = 3; counter < d.length - 1; counter++) f += d[counter] + "/", e += '<li><a href="' + f.capitalize + '">' + d[counter].replace(/(_|-)/g, " ") + "</a></li>";
             e += '<li class="active">' + d[d.length - 1].replace(/(_|-)/g, " ").replace(/\.\w{3,5}$/, "") + "</li>"
+
         }
         $(".breadcrumb.dynamic").html(e)
     }

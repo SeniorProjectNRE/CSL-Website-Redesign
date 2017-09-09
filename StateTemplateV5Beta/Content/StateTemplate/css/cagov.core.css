@@ -2746,7 +2746,8 @@ tbody.collapse.in {
     margin-bottom: 22px;
     list-style: none;
     background-color: #fff;
-    border-radius: 0
+    border-radius: 0;
+    text-transform: capitalize;
 }
 
     .breadcrumb > li + li:before {

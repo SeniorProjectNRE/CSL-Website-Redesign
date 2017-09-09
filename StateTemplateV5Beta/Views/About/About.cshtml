@@ -1,13 +1,23 @@
 ﻿
 @{
     ViewBag.Title = "About Us";
+    ViewBag.Author = "";
+    ViewBag.Description = "";
+    ViewBag.Keywords = "";
     ViewBag.Banner = "CSLBuilding.jpg";
 }
 
 <head>
+
+    <title>@ViewBag.Title</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
 </head>
 
 <div id="main-content" class="main-content">
@@ -15,10 +25,11 @@
         <main class="main-primary">
 
             <div class="container">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb dynamic"></ol>
+                @*<ol class="breadcrumb">
                     <li><a href="/home">Home</a></li>
                     <li class="active"><a href="/about">About</a></li>
-                </ol>
+                </ol>*@
 
                 <h1 class="orange" id="title">@ViewBag.Title</h1>
 
