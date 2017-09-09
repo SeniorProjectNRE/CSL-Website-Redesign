@@ -805,6 +805,17 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\StateTemplate\images\_notes\" />
     <Folder Include="Content\StateTemplate\sample\_notes\" />
+    <Folder Include="Controllers\Services\ToPublic\" />
+    <Folder Include="Views\Board\" />
+    <Folder Include="Views\Image\" />
+    <Folder Include="Views\LibraryProgramConsultant\" />
+    <Folder Include="Views\LibraryTechnicalAssistant\" />
+    <Folder Include="Views\ResearchResources\" />
+    <Folder Include="Views\Statistics\" />
+    <Folder Include="Views\SupervisingLibrarian\" />
+    <Folder Include="Views\ToLibraries\" />
+    <Folder Include="Views\ToPublic\" />
+    <Folder Include="Views\ToStateEmployees\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
