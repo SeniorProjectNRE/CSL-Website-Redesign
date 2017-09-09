@@ -260,6 +260,7 @@
     <Content Include="Content\StateTemplate\images\icons\symbol.png" />
     <Content Include="Content\StateTemplate\images\icons\talkingbooks.png" />
     <Content Include="Content\StateTemplate\images\icons\tours.png" />
+    <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
     <Content Include="Content\StateTemplate\images\template-logo.png" />
     <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-114x114.png" />
     <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-144x144.png" />
