@@ -5225,8 +5225,8 @@ html {
 
 @font-face {
     font-family: CaGov;
-    src: url(../Content/StateTemplate/fonts/CaGov.eot);
-    src: url(../Content/StateTemplate/fonts/CaGov.eot?#iefix) format('embedded-opentype'),url(../fonts/CaGov.woff) format('woff'),url(../fonts/CaGov.ttf) format('truetype'),url(../fonts/CaGov.svg) format('svg')
+    src: url(/Content/StateTemplate/fonts/CaGov.eot);
+    src: url(/Content/StateTemplate/fonts/CaGov.eot?#iefix) format('embedded-opentype'),url(/Content/StateTemplate/fonts/CaGov.woff) format('woff'),url(/Content/StateTemplate/fonts/CaGov.ttf) format('truetype'),url(/Content/StateTemplate/fonts/CaGov.svg) format('svg')
 }
 
 [class*=" ca-gov-icon-"], [class^=ca-gov-icon-] {
