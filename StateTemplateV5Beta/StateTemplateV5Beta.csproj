@@ -466,6 +466,11 @@
     <Content Include="Content\StateTemplate\images\home\Thumbs.db" />
     <Content Include="Content\StateTemplate\images\icons\Thumbs.db" />
     <Content Include="Content\StateTemplate\images\top-icons\Thumbs.db" />
+    <Content Include="Content\StateTemplate\pdf\services\policies\CaliforniaStateLibraryExhibitPolicy.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\policies\CaliforniaStateLibraryPublicInternet.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\policies\CaliforniaStateLibraryWirelessInternetUsePolicy.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\policies\DigitalPreservationPolicy.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\policies\ExhibitProposalForm.pdf" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
