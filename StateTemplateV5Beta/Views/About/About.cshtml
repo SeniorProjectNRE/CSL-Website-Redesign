@@ -1,9 +1,6 @@
 ﻿
 @{
     ViewBag.Title = "About Us";
-    ViewBag.Author = "";
-    ViewBag.Description = "";
-    ViewBag.Keywords = "";
     ViewBag.Banner = "CSLBuilding.jpg";
     ViewBag.Author = "Alan Cleetus, Matthew Loller";
     ViewBag.Description = "California State Library About page.  Find general information about the state library here.";
@@ -11,6 +8,7 @@
 }
 
 <head>
+    <title>@(ViewBag.Title)</title>
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
