@@ -1,11 +1,95 @@
 ﻿
 @{
-    ViewBag.Title = "Staff";
+    ViewBag.Title = "Staff by Department";
+    ViewBag.Author = "Dmitriy Rusetskiy";
+    ViewBag.Description = "California State Library - California State Research Bureau Staff";
+    ViewBag.Keywords = "California, state, Library, Policies";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Staff</h2>
+        <div class="container">
+            <ol class="breadcrumb dynamic"></ol>
+            <h2 class="page-title">Staff by Department</h2>
+        </div>
+        <div class="section">
+            <div class="container">
+                <h3>California Research Bureau</h3>
+                <div class="half">
+                    <p class="regular">
+                        <strong>Anne Neville</strong><br />
+                        Director, California Research Bureau<br />
+                        (916) 653-8303<br />
+                        <a href="mailto:Anne.Neville@library.ca.gov">Anne.Neville@library.ca.gov</a>
+                    </p>
+                    <p class="regular">
+                        <strong>Sabah Eltareb</strong><br />
+                        Assistant Director, Information Services, California Research Bureau<br />
+                        (916) 653-8532<br />
+                        <a href="mailto:Sabah.Eltareb@library.ca.gov">Sabah.Eltareb@library.ca.gov</a>
+                    </p>
+                </div>
+                <div class="half">
+                    <p class="regular">
+                        <strong>Jason MacCannell</strong><br />
+                        Assistant Director, California Research Bureau<br />
+                        (916) 653-9771<br />
+                        <a href="mailto:Jason.MacCannell@library.ca.gov">Jason.MacCannell@library.ca.gov</a>
+                    </p>
+                    <p class="regular">
+                        <strong>Tom Negrete</strong><br />
+                        Assistant Director, California Research Bureau<br />
+                        (916) 653-6972<br />
+                        <a href="mailto:Tom.Negrete@library.ca.gov">Tom.Negrete@library.ca.gov</a>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="section light-gray">
+            <div class="container">
+                <h3>California Research Bureau Staff</h3>
+                <div class="half">
+                    <h4><strong>Capitol Office:</strong></h4>
+                    <p><strong>Berger, Chris</strong> <br />Senior Research Librarian <br /> 653-8313 <br /> <a href="mailto:Chris.Berger@library.ca.gov">Chris.Berger@library.ca.gov</a></p>
+                    <p><strong>Cornelison, John</strong> <br />Senior Research Librarian <br /> 653-8048 <br /> <a href="mailto:John.Cornelison@library.ca.gov">John.Cornelison@library.ca.gov</a></p>
+                    <p><strong>Lee, Jaemin</strong> <br />Research Librarian <br /> 653-8161 <br /> <a href="mailto:Jaemin.Lee@library.ca.gov">Jaemin.Lee@library.ca.gov</a></p>
+                    <p><strong>Ray, Rebecca</strong> <br />Library Technical Assistant <br /> 653-7422<br /> <a href="mailto:Rebecca.Ray@library.ca.gov">Rebecca.Ray@library.ca.gov</a></p>
+                    <p><strong>Roche, Maeve</strong> <br />Senior Research Librarian <br /> 653-6709<br /> <a href="mailto:Maeve.Roche@library.ca.gov">Maeve.Roche@library.ca.gov</a></p>
+                    <h4><strong>Admin and Support:</strong></h4>
+                    <p><strong>Herron, Carley</strong> <br />Staff Services Analyst <br /> 651-2743<br /> <a href="mailto:Carley.Herron@library.ca.gov">Carley.Herron@library.ca.gov</a></p>
+                    <p><strong>Humphrey, Leslie</strong> <br />Associate Government Program Analyst <br /> 653-0125<br /> <a href="mailto:Leslie.Humphrey@library.ca.gov">Leslie.Humphrey@library.ca.gov</a></p>
+                </div>
+                <div class="half">
+                    <h4><strong>Researchers:</strong></h4>
+                    <p><strong>Hogue, Kellie Jean</strong> <br />Senior Policy Analyst <br /> 653-7522<br /> <a href="mailto:Kelliejean.Hogue@library.ca.gov">KellieJean.Hogue@library.ca.gov</a></p>
+                    <p><strong>Lavelle, Devin</strong> <br />Senior Policy Analyst <br /> 653-5562<br /> <a href="mailto:Devin.Lavelle@library.ca.gov">Devin.Lavelle@library.ca.gov</a></p>
+                    <p><strong>Lindsey, Tonya D.</strong> <br />Senior Policy Analyst <br /> 653-8667<br /> <a href="mailto:Tonya.Lindsey@library.ca.gov">Tonya.Lindsey@library.ca.gov</a></p>
+                    <p><strong>Martin, Pam</strong> <br />Senior Policy Analyst <br /> 653-6742<br /> <a href="mailto:Pamela.Martin@library.ca.gov">Pamela.Martin@library.ca.gov</a></p>
+                    <p><strong>Rasada, Pamela</strong> <br />Senior Policy Analyst <br /> 653-6372<br /> <a href="mailto:Pamela.Rasada@library.ca.gov">Pamela.Rasada@library.ca.gov</a></p>
+                    <p><strong>Rogers, Patrick</strong> <br />Senior Policy Analyst <br /> 653-5207<br /> <a href="mailto:Patrick.Rogers@library.ca.gov">Patrick.Rogers@library.ca.gov</a></p>
+                    <p><strong>Tang, Ben</strong> <br />Senior Policy Analyst <br /> 651-8793<br /><a href="mailto:Ben.Tang@library.ca.gov">Ben.Tang@library.ca.gov</a></p>
+                    <p><strong>Tran, Ngan</strong> <br />Senior Policy Analyst <br /> 653-7381<br /><a href="mailto:Ngan.Tran@library.ca.gov">Ngan.Tran@library.ca.gov</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <p>For information on the Homeless Youth Project please go to the project website at <a href="http://cahomelessyouth.library.ca.gov/" target="_blank">cahomelessyouth.library.ca.gov</a></p>
+                <p>For new research requests, please e-mail our Capitol Office at <a href="mailto:crb@library.ca.gov">crb@library.ca.gov</a></p>
+            </div>
+        </div>
     </main>
 </div>
 
