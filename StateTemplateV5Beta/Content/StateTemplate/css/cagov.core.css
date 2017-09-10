@@ -493,7 +493,8 @@ dd {
         margin-left: 180px
     }
 
-    .container, .global-header, .main-content > .section, .two-column .main-content > .section {
+    .container, .global-header, .
+    > .section, .two-column .main-content > .section {
         width: 750px
     }
 }
@@ -6315,11 +6316,11 @@ body {
 
 .main-content {
     background: #fff;
-    min-height: 400px
+    min-height: 400px;
 }
 
     .main-content > .section {
-        padding-bottom: 22px
+        padding-bottom: 22px;
     }
 
 @media (min-width:992px) {

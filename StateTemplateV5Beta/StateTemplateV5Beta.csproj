@@ -806,6 +806,7 @@
     <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Members.cshtml" />
     <Content Include="Views\Services\ToPublic.cshtml" />
     <Content Include="Views\Services\ToLibraries\InterlibraryLending.cshtml" />
+    <Content Include="Views\Home\Releases.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
