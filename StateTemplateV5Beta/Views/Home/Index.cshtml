@@ -2,9 +2,18 @@
 @using StateTemplateV5Beta.Models
 
 @{
-    ViewBag.Title = "Home Page";
-}
+    ViewBag.Title = "Welcome to the California State Library";
+    ViewBag.Author = "";
+    ViewBag.Description = "";
+    ViewBag.Keywords = "";
 
+}
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="State of California" />
+    <meta name="Description" content="State of California" />
+    <meta name="Keywords" content="California, government" />
+</head>
 
 <!--
 <div class="navigation-search">

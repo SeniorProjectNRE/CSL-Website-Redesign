@@ -1,32 +1,36 @@
 ﻿
 @{
     ViewBag.Title = "About Us";
+    ViewBag.Author = "";
+    ViewBag.Description = "";
+    ViewBag.Keywords = "";
     ViewBag.Banner = "CSLBuilding.jpg";
-    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Author = "Alan Cleetus, Matthew Loller";
     ViewBag.Description = "California State Library About page.  Find general information about the state library here.";
     ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library";
 }
 
 <head>
-    <meta name="Author" content="@(ViewBag.Author)" />
-    <meta name="Description" content="@(ViewBag.Description)" />
-    <meta name="Keywords" content="@(ViewBag.Keywords)" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
 </head>
 
 <div id="main-content" class="main-content">
 
     <main class="main-primary">
 
-        <div class="container">
-            <ol class="breadcrumb dynamic"></ol>
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li class="active"><a href="/about">About</a></li>
+                </ol>
 
             <h1 class="orange" id="title">@ViewBag.Title</h1>
 
-            <img src="~/Content/StateTemplate/images/banner/@(ViewBag.Banner)" style="width:100%" alt="" />
-        </div>
+                <img src="~/Content/StateTemplate/images/banner/@(ViewBag.Banner)" style="width:100%" alt="" />
+            </div>
 
         <div class="section">
             <div class="container">

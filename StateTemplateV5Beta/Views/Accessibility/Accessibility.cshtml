@@ -1,11 +1,145 @@
 ﻿
 @{
-    ViewBag.Title = "Accessibility";
+    ViewBag.Title = "CSL - California State Library’s website accessibility info and tips";
+    ViewBag.Author = "Matthew Loller";
+    ViewBag.Description = "Find info about the accessibility standards the library follows and tips on how to change your settings " +
+                          "and keyboard shortcuts to better view and access the library’s information.";
+    ViewBag.Keywords = "";
+    ViewBag.Banner = "";
 }
+
+<head>
+
+    <title>@ViewBag.Title</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Accessibility</h2>
+        <div class="container">
+            <ol class="breadcrumb dynamic"></ol>
+            @*<ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li class="active"><a href="/about">About</a></li>
+            </ol>*@
+
+            <h1 class="orange" id="title">@ViewBag.Title</h1>
+        </div>
+
+        <div class="section">
+            <div class="container">
+
+                <h2 class="page-title">Website Accessibility</h2>
+
+                <p>
+                    The California State Library (CSL) website is designed to be a model of accessibility and ensure 
+                    we meet the access needs of any site visitor. CSL has implemented the strict guidelines set forth 
+                    by the World Wide Web Consortium (W3C) and the US Department of Justice (DOJ). The website meets 
+                    most of the <a href="https://www.w3.org/TR/WCAG20/">W3C Web Content Accessibility Guidelines (WCAG) 2.0</a> 
+                    (WCAG 2.0 – Priority 1, Priority 2, and most of Priority 3) and all of the DOJ Section 508 guidelines.
+
+                    One of the pillars of accessible web design is using defaults and certain design elements that can 
+                    be adjusted by the end user. This kind of design permits visitors to adjust font size, contrast, 
+                    and customize other elements to meet their particular viewing needs. Information on some of our 
+                    special access features, and how to work with custom settings are described below.
+                </p>
+
+            </div>
+        </div>
+
+
+        <div class="section light-gray">
+            <div class="container">
+                <h3>Alternative Text Tag (ALT Tag)</h3>
+                <p>Screen Readers only read text and are unable to read graphics. When the reader encounters a picture or graphic, 
+                the device may only indicate "graphic" and give no further information, unless there is an ALT tag. ALT tags assists 
+                users without graphic display terminals, users whose browsers don't support forms, visually impaired users who use 
+                speech synthesizers, and those who have configured their graphical user agents not to display images. When the device 
+                encounters a graphic, the user will hear a short description of what it is, such as, "picture of person putting on a 
+                seat belt", rather than the generic "graphic."</p>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div class="container">
+                <h3>Contrast</h3>
+                <p>
+                    High contrast is necessary for many users. CSL's website uses style sheets and very good contrast combinations, 
+                    almost black on white, white on dark red, or dark red on white. However, some users can see better using high 
+                    contrast reverse types, such as white on black, or different colors. Below are guidelines for some common web 
+                    browsers on how the user can customize their own web browser to better view all web pages.
+                </p>
+                <div class="indent-outer">
+                    <div class="indent-inner">
+                        <h4>Internet Explorer</h4>
+                        <p>
+                            Select the "Tools" menu. Select "Internet Options". Under the "General" tab, select "Accessibility". Place
+                            a check mark in the box to "Ignore colors specified on Web pages" and select the "OK" box. This will return
+                            you to the "General" tab. Select the "Colors" box and un-check the "use Windows colors" box. Use the "Text",
+                            "Background", "Unvisited Links", and "Visited Links" boxes to select the colors desired (example: white text
+                            and black background). Select the "OK" box and then the "OK" box on the "General" tab and the colors should
+                            change on the browser.
+                        </p>
+                        <h4>Firefox</h4>
+                        <p>
+                            Select the "Tools" menu. Select "Options". Select the "Content" tab. Select "Colors". Select colors desired
+                            for "Text", "Background", "Unvisited Links", and "Visited Links" (example: white text and black background)
+                            and uncheck "Allow pages to choose their own colors, instead of my selections above". Select the "OK" box,
+                            and then the "OK" box again. The colors should change on the browser.
+                        </p>
+                        <h4>Google Chrome</h4>
+                        <p>
+                            --Unfinished
+                        </p>
+                        <h4>Safari</h4>
+                        <p>
+                            --Unfinished
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section  light-gray">
+            <div class="container">
+                <h3>Fonts</h3>
+                <p>
+                    The fonts used on this site are a default size, which allows you to make adjustments according to your preference.
+                    The following is the easiest way to change the font size for some common web browsers.
+                </p>
+                <div class="indent">
+                    <h4>Internet Explorer</h4>
+                    <p>
+                        Click on the "View" menu. Highlight "Text Size". Default setting will be medium. By changing the settings 
+                        between largest and smallest; the text displayed on the page will be modified.
+                    </p>
+                    <h4>Firefox</h4>
+                    <p>
+                        Select the "Tools" menu. Select "Options". Select the "Content" tab. Select "Colors". Select colors desired 
+                        for "Text", "Background", "Unvisited Links", and "Visited Links" (example: white text and black background) 
+                        and uncheck "Allow pages to choose their own colors, instead of my selections above". Select the "OK" box, 
+                        and then the "OK" box again. The colors should change on the browser.
+                    </p>
+                    <h4>Google Chrome</h4>
+                    <p>
+                        --Unfinished
+                    </p>
+                    <h4>Safari</h4>
+                    <p>
+                        --Unfinished
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
