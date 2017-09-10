@@ -1,12 +1,55 @@
 ﻿
 @{
-    ViewBag.Title = "ResearchResources";
+    ViewBag.Title = "Research Resources";
+    ViewBag.Author = "Dmitriy Rusetskiy";
+    ViewBag.Description = "California State Library - Policies";
+    ViewBag.Keywords = "California, state, Library, research, resources, research resources";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>ResearchResources</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb dynamic"></ol>
+                <h1 class="orange" id="title">@ViewBag.Title</h1>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <p>Placeholder for ask a librarian</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+
+            </div>
+        </div>
     </main>
 </div>
-
 

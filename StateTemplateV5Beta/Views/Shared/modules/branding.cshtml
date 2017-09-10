@@ -1,5 +1,17 @@
 <!-- header branding -->
-<div class="branding">
-    <div class="header-cagov-logo"><a href="/"><img src="~/Content/StateTemplate/images/Ca-Gov-Logo-Gold.svg" alt="Organization Title" /></a></div>
-    <div class="header-organization-banner"><a href="/"><img src="~/Content/StateTemplate/images/csl-logo.jpg" alt="California State Library logo" /></a></div>
-</div>
+
+@{ if (ViewBag.pageID == "Home")
+    {
+        <div class="branding animated fadeInLeft">
+            <div class="header-cagov-logo"><a href="/"><img src="~/Content/StateTemplate/images/Ca-Gov-Logo-Gold.svg" alt="Organization Title" /></a></div>
+            <div class="header-organization-banner"><a href="/"><img src="~/Content/StateTemplate/images/csl-logo.jpg" alt="California State Library logo" /></a></div>
+        </div>
+    }
+    else {
+        <div class="branding">
+            <div class="header-cagov-logo"><a href="/"><img src="~/Content/StateTemplate/images/Ca-Gov-Logo-Gold.svg" alt="Organization Title" /></a></div>
+            <div class="header-organization-banner"><a href="/"><img src="~/Content/StateTemplate/images/csl-logo.jpg" alt="California State Library logo" /></a></div>
+        </div>
+    }
+}
+                    

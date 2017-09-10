@@ -46,6 +46,17 @@
 
     Options are: megadropdown dropdown singlelevel
     -->
+    @{ 
+        if(ViewBag.pageID == "Home")
+        {
+            @:<div class="animated fadeInRight">
+        }
+        else
+        {
+            @:<div>
+        }
+
+    }
 
     <nav id="navigation" class="main-navigation megadropdown auto-highlight mobile-closed">
         <ul id="nav_list" class="top-level-nav">
@@ -223,4 +234,5 @@
             </li>
         </ul>
     </nav>
+</div>
 </div>
