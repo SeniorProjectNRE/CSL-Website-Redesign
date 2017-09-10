@@ -1,11 +1,47 @@
 ﻿
 @{
-    ViewBag.Title = "CRB";
+    ViewBag.Title = "California Research Bureau";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "California State Library - California Research Bureau";
+    ViewBag.Keywords = "California, State, Library, Research, Bureau";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>CRB</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li class="active"><a href="/crb">California Research Bureau</a></li>
+                </ol>
+                <h2 class="page-title">@(ViewBag.Title)</h2>
+                <p>The <strong>California Research Bureau</strong> (CRB) provides nonpartisan research services to the Governor and his staff, to both houses of the Legislature, and to other elected State officials. 
+                   These services include preparation of reports and memoranda on current policy issues, which might cover topics such as the history of the issue, experiences and proposals in other states, case studies and examples, data analysis, and development of legislative proposals. 
+                   This work might be confidential to the requestor, or might result in a published report. <b>CRB publications</b> are available at <a href="crb/reports-events/">http://www.library.ca.gov/crb/reports-events</a>.</p>
+                <p>The <strong>California Research Bureau</strong> is also involved in special projects and events with partners in the Legislature and various State agencies.
+                   To view information on the 2013 Women Veteran Survey CRB is conducting with the California Department of Veterans Affairs and the California Commission on the Status of Women and Girls, visit <a href="http://www.library.ca.gov/crb/womenvetsurvey.html">http://www.library.ca.gov/crb/womenvetsurvey.html</a>.</p>
+                <p>The Bureau regularly publishes an electronic notification service of new studies and reports about matters of current legislative or administration interest. This is an excellent way for policy professionals to stay up-to-date about research in their fields. 
+                   The <em> <strong>Studies in the News</strong> </em> is accessible at <a href="crb/newsletters">http://www.library.ca.gov/crb/newsletters</a>. 
+                   Electronic links are provided to most entries.</p>
+                <p>The Bureau also provides specialized library services to its clients. 
+                   It has an office in room 5210 in the Capitol staffed by librarians with considerable expertise in the literature concerning current California policy issues. 
+                   They share a commitment to providing quick, thorough, and discrete services. 
+                   The librarians have ready access to an extensive collection of reports, studies, and other materials concerning current and historical policy issues, as well as many electronic databases. 
+                   In addition, the Bureau convenes regular seminars and presentations by academic and think tank scholars doing work related to current policy issues.</p>
+                <p>State government clients may call (916) 319-2691 or email <a href="mailto:crb@library.ca.gov">crb@library.ca.gov</a> to request research work or librarian assistance, or to be included in the Bureau's electronic studies notification services or seminar distribution lists.</p>
+            </div>
+        </div>
     </main>
 </div>
 
