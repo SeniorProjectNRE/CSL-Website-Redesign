@@ -41,6 +41,51 @@
 }
 
 
+.fancybox-title-float-wrap .child {
+    max-height: 24px;
+    white-space: pre-wrap;
+    overflow-y: scroll;
+}
+
+
+.insetImage {
+    float: right;
+    width: auto;
+    min-width: 300px;
+    max-width: 550px;
+    margin: 0 0 20px 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .insetImage {
+        width: 100%;
+        margin-right: 0;
+        max-width: 900px;
+    }
+
+        .insetImage.left {
+            width: 100%;
+            margin-left: 0;
+            max-width: 900px;
+        }
+}
+
+.insetImage.left {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+
+.indent-outer {
+    margin: 0 auto;
+}
+
+.indent-inner {
+    margin-left: 2%;
+}
+
+
 /**Styles for top navigation bar**/
 #topNav {
     display: flex;
