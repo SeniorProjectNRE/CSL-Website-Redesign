@@ -8,7 +8,7 @@ using StateTemplateV5Beta.Models.HelperClasses;
 
 namespace StateTemplateV5Beta.Controllers
 {
-    [RoutePrefix("CSL")]
+    
     public class HomeController : Controller
     {
         //private CSLDataModel db = new CSLDataModel();
