@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "Adolph Sutro";
     ViewBag.Author = "Ryan Salcido";
-    ViewBag.Description = "California State Library - Adolph Sutro";
+    ViewBag.Description = "Adolph Sutro's rare book and manuscript collection contains over 90,000 volumes and 100,000 pamphlets. ";
     ViewBag.Keywords = "California, State, Library, Adolph, Sutro";
     ViewBag.Image = "adolphsutro.png";
 }
@@ -22,11 +22,7 @@
     <main class="main-primary">
         <div class="section">
             <div class="container">
-                <ol class="breadcrumb">
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/sutro">Sutro</a></li>
-                    <li class="active"><a href="/sutro/adolph-sutro">Adolph Sutro</a></li>
-                </ol>
+                <ol class="breadcrumbs dynamic"></ol>
                 <h2 class="page-title">@(ViewBag.Title)</h2>
                 <img class="insetImage image-responsive" src="~/Content/StateTemplate/images/sutro/@(ViewBag.Image)" alt="Adolph Sutro" />
                 <p>Since the 19th century, Adolph Sutro's passion for book collecting, libraries, the arts, and architecture has benefited San Franciscans and Californians. The California State Library created the Sutro Library from Adolph Sutro's private library in 1917. </p>

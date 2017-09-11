@@ -753,7 +753,7 @@
     <Content Include="Views\Sutro\Class.cshtml" />
     <Content Include="Views\Sutro\Collection.cshtml" />
     <Content Include="Views\Sutro\ColoringBook.cshtml" />
-    <Content Include="Views\Sutro\Geneaology.cshtml" />
+    <Content Include="Views\Sutro\Genealogy.cshtml" />
     <Content Include="Views\Sutro\Search.cshtml" />
     <Content Include="Views\Sutro\Visiting.cshtml" />
     <Content Include="Views\Sutro\WomensMarch.cshtml" />
