@@ -1,12 +1,13 @@
 
 <div class="utility-header">
     <div class="container">
+
         <div class="group">
             <div class="half">
                 <ul class="utility-links social-media-links">
                     <li><a href="/"><span class="ca-gov-icon-home" aria-hidden="true" style="padding-right:20px"></span><span class="sr-only">Home</span></a></li>
                     Share:
-                    <li><a class="ca-gov-icon-facebook" title="Facebook channel" tabindex="0" href=""></a></li>
+                    <li><a class="ca-gov-icon-facebook" title="Facebook channel" tabindex="0" href="@Request.Url.ToString()"></a></li>
                     <li><a class="ca-gov-icon-twitter" title="Twitter channel" tabindex="0" href=""></a></li>
                     <li><a class="ca-gov-icon-google-plus" title="Google+ channel" tabindex="0" href=""></a></li>
                     <li><a class="ca-gov-icon-email" title="email" tabindex="0" href=""></a></li>
@@ -15,21 +16,21 @@
             </div>
             <div class="half settings-links">
                 <ul class="utility-links">
-                    <li><a href="">Join Our Mailing List</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
-                    <li id="SettingsorShare"><a role="tab" data-toggle="collapse" href="#siteSettings" aria-expanded="false" aria-controls="siteSettings" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-gear" aria-hidden="true"></span>Settings</a></li>
+                    <li><a href=""><span class="ca-gov-icon-clipboard"></span>&nbsp;Join Our Mailing List</a></li>
+                    <li><a href="/contact"><span class="ca-gov-icon-contact-us"></span>&nbsp;Contact Us</a></li>
+                    <li><a href="/services/apply"><span class="ca-gov-icon-payment-card"></span>&nbsp; Library Card</a></li>
+                    <li><a role="tab" data-toggle="collapse" href="#siteSettings" aria-expanded="false" aria-controls="siteSettings" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-gear" aria-hidden="true"></span>&nbsp;Settings</a></li>
+                    
                     <!--
                     if on a computer{
                          <li><a role="tab" data-toggle="collapse" href="#siteSettings" aria-expanded="false" aria-controls="siteSettings" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-gear" aria-hidden="true"></span>Settings</a></li>
                     } else if (on mobile){ 
                         <li><a role="tab" data-toggle="collapse" href="#siteShare" aria-expanded="false" aria-controls="siteShare" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-share" aria-hidden="true"></span>Share</a></li>
                     } else  --> 
-                    <li><a role="tab" data-toggle="collapse" href="#siteSettings" aria-expanded="false" aria-controls="siteSettings" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-gear" aria-hidden="true"></span>Settings</a></li>
                     
-                    
-                    <li><a href=""><span style="border:1px solid white; padding:1px 10px">GET LIBRARY CARD</span></a></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
+
