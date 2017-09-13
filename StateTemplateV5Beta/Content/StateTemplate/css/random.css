@@ -1,166 +1,189 @@
-﻿.light-gray {
-    background-color: #f5f5f5;
-}
-
-.page-title {
-    color: #046B99
-}
-
-.fancybox-title-float-wrap .child {
-    max-height: 24px;
-    white-space: pre-wrap;
-    overflow-y: scroll;
+﻿/*css form utility header*/
+.utility-links > .settingsLink {
+    display: inline-block;
+    padding: 0 8px;
 }
 
 
-.insetImage {
-    float: right;
-    width: auto;
-    min-width: 300px;
-    max-width: 550px;
-    margin: 0 0 20px 20px;
+
+.utility-links > .shareLink {
+    display: none;
+    padding:0;
 }
 
 @media screen and (max-width: 992px) {
-    .insetImage {
-        width: 100%;
-        margin-right: 0;
-        max-width: 900px;
+
+    .utility-links > .shareLink {
+        display: inline-block;
+        padding:0 8px;
     }
 
-        .insetImage.left {
+    .utility-links > .settingsLink {
+        display: none;
+        padding: 0;
+    }
+
+}
+
+    .page-title {
+        color: #046B99
+    }
+
+    .fancybox-title-float-wrap .child {
+        max-height: 24px;
+        white-space: pre-wrap;
+        overflow-y: scroll;
+    }
+
+
+    .insetImage {
+        float: right;
+        width: auto;
+        min-width: 300px;
+        max-width: 550px;
+        margin: 0 0 20px 20px;
+    }
+
+    @media screen and (max-width: 992px) {
+        .insetImage {
             width: 100%;
-            margin-left: 0;
+            margin-right: 0;
             max-width: 900px;
         }
-}
 
-.insetImage.left {
-    float: left;
-    margin: 0 20px 20px 0;
-}
-
-
-.fancybox-title-float-wrap .child {
-    max-height: 24px;
-    white-space: pre-wrap;
-    overflow-y: scroll;
-}
-
-
-.insetImage {
-    float: right;
-    width: auto;
-    min-width: 300px;
-    max-width: 550px;
-    margin: 0 0 20px 20px;
-}
-
-@media screen and (max-width: 992px) {
-    .insetImage {
-        width: 100%;
-        margin-right: 0;
-        max-width: 900px;
+            .insetImage.left {
+                width: 100%;
+                margin-left: 0;
+                max-width: 900px;
+            }
     }
 
-        .insetImage.left {
+    .insetImage.left {
+        float: left;
+        margin: 0 20px 20px 0;
+    }
+
+
+    .fancybox-title-float-wrap .child {
+        max-height: 24px;
+        white-space: pre-wrap;
+        overflow-y: scroll;
+    }
+
+
+    .insetImage {
+        float: right;
+        width: auto;
+        min-width: 300px;
+        max-width: 550px;
+        margin: 0 0 20px 20px;
+    }
+
+    @media screen and (max-width: 992px) {
+        .insetImage {
             width: 100%;
-            margin-left: 0;
+            margin-right: 0;
             max-width: 900px;
         }
-}
 
-.insetImage.left {
-    float: left;
-    margin: 0 20px 20px 0;
-}
-
-
-
-.indent-outer {
-    margin: 0 auto;
-}
-
-.indent-inner {
-    margin-left: 2%;
-}
-
-
-/**Styles for top navigation bar**/
-#topNav {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-}
-
-#logoSpace {
-    width: 30%;
-}
-
-#navItemSpace {
-    width: 70%;
-    padding-left: 2%;
-}
-
-    #navItemSpace > .row {
-        width: 100%;
+            .insetImage.left {
+                width: 100%;
+                margin-left: 0;
+                max-width: 900px;
+            }
     }
 
-/*second row styles*/
-#secondRow {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    align-items: stretch;
-}
-
-#topNavRadioButtons, #topNavSearchButton {
-    width: auto;
-}
-
-#topNavSearchBar {
-    flex: 1;
-}
-
-    #topNavSearchBar > input {
-        border: 2px solid #efc83c;
-        padding: 3px 10px;
-        width: 100%;
+    .insetImage.left {
+        float: left;
+        margin: 0 20px 20px 0;
     }
 
-#topNavRadioButtons {
-    background-color: #efc83c;
-    white-space: nowrap;
-    padding: 3px 10px;
-}
 
-#topRadioButtons > input {
-    padding-left: 2px;
-}
 
-#topNavSearchButton > button {
-    background-color: transparent;
-    border: 0px;
-    font-size: 20px;
-    color: #efc83c;
-}
+    .indent-outer {
+        margin: 0 auto;
+    }
 
-@media screen and (max-width:780px) {
-    #secondRow {
+    .indent-inner {
+        margin-left: 2%;
+    }
+
+
+    /**Styles for top navigation bar**/
+    #topNav {
+        display: flex;
+        display: -webkit-flex;
         flex-wrap: wrap;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
     }
 
+    #logoSpace {
+        width: 30%;
+    }
 
-    #topNavRadioButtons, #topNavSearchBar {
-        flex: 1;
+    #navItemSpace {
+        width: 70%;
+        padding-left: 2%;
+    }
+
+        #navItemSpace > .row {
+            width: 100%;
+        }
+
+    /*second row styles*/
+    #secondRow {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    #topNavRadioButtons, #topNavSearchButton {
+        width: auto;
     }
 
     #topNavSearchBar {
-        flex: auto;
+        flex: 1;
     }
-}
 
-© 2017 GitHub, Inc. Terms Privacy Security Status Help Contact GitHub API Training Shop Blog About
+        #topNavSearchBar > input {
+            border: 2px solid #efc83c;
+            padding: 3px 10px;
+            width: 100%;
+        }
+
+    #topNavRadioButtons {
+        background-color: #efc83c;
+        white-space: nowrap;
+        padding: 3px 10px;
+    }
+
+    #topRadioButtons > input {
+        padding-left: 2px;
+    }
+
+    #topNavSearchButton > button {
+        background-color: transparent;
+        border: 0px;
+        font-size: 20px;
+        color: #efc83c;
+    }
+
+    @media screen and (max-width:780px) {
+        #secondRow {
+            flex-wrap: wrap;
+        }
+
+
+        #topNavRadioButtons, #topNavSearchBar {
+            flex: 1;
+        }
+
+        #topNavSearchBar {
+            flex: auto;
+        }
+    }
+
+    © 2017 GitHub, Inc. Terms Privacy Security Status Help Contact GitHub API Training Shop Blog About
