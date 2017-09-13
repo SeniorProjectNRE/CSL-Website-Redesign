@@ -493,8 +493,7 @@ dd {
         margin-left: 180px
     }
 
-    .container, .global-header, .
-    > .section, .two-column .main-content > .section {
+    .container, .global-header, .main-content > .section, .two-column .main-content > .section {
         width: 750px
     }
 }
@@ -12472,7 +12471,7 @@ blockquote {
     }
 
     .branding .header-organization-banner {
-        position: absolute;
+        position:absolute;
         margin-top: -5px;
         padding-right: 100px
     }

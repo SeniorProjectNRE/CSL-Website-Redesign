@@ -807,6 +807,7 @@
     <Content Include="Views\Services\ToPublic.cshtml" />
     <Content Include="Views\Services\ToLibraries\InterlibraryLending.cshtml" />
     <Content Include="Views\Home\Releases.cshtml" />
+    <Content Include="Views\Shared\modules\_MobileShareBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
