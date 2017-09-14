@@ -1,11 +1,31 @@
 ﻿
 @{
-    ViewBag.Title = "Jobs";
+    ViewBag.Title = "Jobs at the California State Library";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "The California State Library seeks diverse and talented people to work in our culturally-rich, and technologically advanced field of librarianship and research. The State Library offers a variety of careers and jobs, ranging from librarians to accounting.  The services our employees provide are truly essential to the people of California. In public service, you will spend every day doing work that is vital to your state and your community.";
+    ViewBag.Keywords = "opportunity, job, career";
+    ViewBag.Image = "";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Jobs</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb dynamic"></ol>
+                <h2 class="page-title">@(ViewBag.Title)</h2>
+            </div>
+        </div>
     </main>
 </div>
 
