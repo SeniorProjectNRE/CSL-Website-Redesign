@@ -5,7 +5,6 @@
     ViewBag.Author = "Alan Cleetus";
     ViewBag.Description = "A California State Library card gives you access to our collection as well as those of other institutions. Sign up today!";
     ViewBag.Keywords = "California State Library, Art, CA, Legislators, State Library";
-    
 }
 
 <head>
@@ -13,17 +12,17 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 </head>
     <div id="main-content" class="main-content">
         <main class="main-primary">
             <div class="container">
+                <ol class="breadcrumb dynamic"></ol>
                 <div class="section">
 
                     <h3 class="page-title">Library Card Application</h3>
 
-                    <p>With a State Lbrary Card, you can: <span id="wid"></span></p>
-                    
+                    <p>With a State Lbrary Card, you can:</p>
                     <div class="indent-outer">
                         <div class="indent-inner">
                             <ul>
@@ -37,27 +36,42 @@
 
                 <div class="section">
 
-                    <!--person type-->
-                    <div class="form-group">
-                        <label for="personType"><span class="required-label">*</span> I am...</label>
-                        <select type="text" class="form-control" id="personType" required>
-                            <option value="California State Employee">California State Employee</option>
-                            <option value="State Legislative Staff">State Legislative Staff</option>
-                            <option value="Appointed State Official/Board Members">Appointed State Official/Board Members</option>
-                            <option value="Faculty or Staff at UC/CSU">Faculty or Staff at UC/CSU</option>
-                            <option value="Officials/Employees of State Court">Officials/Employees of State Court</option>
-                            <option value="General Public">General Public</option>
-                        </select>
-                    </div>
+                    <form role="form" class="libraryCardApplicationForm">
 
-                    <div id="ifNonGeneral">
+                        <!--person type-->
+                        <div class="form-group">
+                            <label for="personType"><span class="required-label">*</span> I am...</label>
 
-                        <form role="form" class="libraryCardApplicationForm">
+                            <select onchange="showRest()" type="text" class="form-control" id="personType" required>
+                                <option value="" disabled selected>Select your option</option>
+                                <option value="California State Employee">California State Employee</option>
+                                <option value="State Legislative Staff">State Legislative Staff</option>
+                                <option value="Appointed State Official/Board Members">Appointed State Official/Board Members</option>
+                                <option value="Faculty or Staff at UC/CSU">Faculty or Staff at UC/CSU</option>
+                                <option value="Officials/Employees of State Court">Officials/Employees of State Court</option>
+                                <option value="General Public">General Public</option>
+                            </select>
+                        </div>
 
+                        <script>
 
+                            function showRest() {
+                                var value = document.getElementById("personType").value;
 
+                                if (value == "General Public"){
+                                    document.getElementById("resultDiv").innerHTML = "<p>The general public cannot apply for a library card<p>";
+                                    document.getElementById("restOfForm").style.display = "none";
+                                }
+                                else {
+                                    document.getElementById("resultDiv").innerHTML = "";
+                                    document.getElementById("restOfForm").style.display = "block";
+                                }
+                            }
+                        </script>
+                        <div id="resultDiv" style="color:red"></div>
 
-
+                        <!--this div only show if you are not the general public-->
+                        <div id="restOfForm" style="display:none">
                             <!--person name-->
                             <div class="group">
                                 <div class="form-group half">
@@ -279,15 +293,6 @@
                                 </select>
                             </div>
 
-                            <!--Currently client no longer wants this feature, Matt 9.12.17-->
-                            <!--work checkbox
-            <div class="form-group">
-                <p>
-                    <input type="checkbox" id="workCheckbox">
-                    My work and home information are the same
-                </p>
-            </div>
-            -->
                             <!--work address-->
                             <div class="form-group">
                                 <label for="workAddress">Work Address</label>
@@ -327,8 +332,31 @@
                                 </p>
                             </div>
 
-                            <!--alerts-->
+                            <!--alerts adn sgnup -->
                             <div class="form-group">
+                                <p>Sign up for California State Library newsletters, and news and alerts on upcoming events:
+</p>
+                                <p>
+                                    <input type="checkbox" id="newsAndEventsAlerts">
+                                    State Library news and events.
+                                </p>
+
+                                <p>
+                                    <input type="checkbox" id="quartelyInformationAlerts">
+                                    Quarterly information for patrons of the Braille and Talking Book Library.
+
+                                </p>
+
+                                <p>
+                                    <input type="checkbox" id="lunchEventsAlerts">
+                                    <em>Lunch with a Side of Research</em> runs Mondays with a listing of free policy/research lunch events.
+                                </p>
+
+                                <p>
+                                    <input type="checkbox" id="studiesInNewsAlerts">
+                                    <em>Studies in the News</em> runs Wednesdays, providing recent studies that may be useful to policy discussions.
+                                </p>
+
                                 <p>
                                     <input type="checkbox" id="emailAlerts">
                                     I would like to get email alerts for upcoming events at the State Library.
@@ -336,17 +364,12 @@
                             </div>
 
                             <input type="submit" />
-                    </div>
+                        </div>
                     </form>
 
                 </div>
-            
 
             </div>
         </main>
     </div>
-
-<script>
-    $("#wid").html(window.innerWidth);
-</script>
 
