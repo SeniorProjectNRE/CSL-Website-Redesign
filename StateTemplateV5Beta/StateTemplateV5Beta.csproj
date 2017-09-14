@@ -334,6 +334,7 @@
     <Content Include="Content\StateTemplate\images\icons\symbol.png" />
     <Content Include="Content\StateTemplate\images\icons\talkingbooks.png" />
     <Content Include="Content\StateTemplate\images\icons\tours.png" />
+    <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
     <Content Include="Content\StateTemplate\images\template-logo.png" />
     <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-114x114.png" />
     <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-144x144.png" />
@@ -539,6 +540,11 @@
     <Content Include="Content\StateTemplate\images\home\Thumbs.db" />
     <Content Include="Content\StateTemplate\images\icons\Thumbs.db" />
     <Content Include="Content\StateTemplate\images\top-icons\Thumbs.db" />
+    <Content Include="Content\StateTemplate\pdf\services\policies\CaliforniaStateLibraryExhibitPolicy.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\policies\CaliforniaStateLibraryPublicInternet.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\policies\CaliforniaStateLibraryWirelessInternetUsePolicy.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\policies\DigitalPreservationPolicy.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\policies\ExhibitProposalForm.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
@@ -747,7 +753,7 @@
     <Content Include="Views\Sutro\Class.cshtml" />
     <Content Include="Views\Sutro\Collection.cshtml" />
     <Content Include="Views\Sutro\ColoringBook.cshtml" />
-    <Content Include="Views\Sutro\Geneaology.cshtml" />
+    <Content Include="Views\Sutro\Genealogy.cshtml" />
     <Content Include="Views\Sutro\Search.cshtml" />
     <Content Include="Views\Sutro\Visiting.cshtml" />
     <Content Include="Views\Sutro\WomensMarch.cshtml" />
@@ -800,6 +806,8 @@
     <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Members.cshtml" />
     <Content Include="Views\Services\ToPublic.cshtml" />
     <Content Include="Views\Services\ToLibraries\InterlibraryLending.cshtml" />
+    <Content Include="Views\Home\Releases.cshtml" />
+    <Content Include="Views\Shared\modules\_MobileShareBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

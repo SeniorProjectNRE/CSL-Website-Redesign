@@ -6315,11 +6315,11 @@ body {
 
 .main-content {
     background: #fff;
-    min-height: 400px
+    min-height: 400px;
 }
 
     .main-content > .section {
-        padding-bottom: 22px
+        padding-bottom: 22px;
     }
 
 @media (min-width:992px) {
@@ -12471,7 +12471,7 @@ blockquote {
     }
 
     .branding .header-organization-banner {
-        position: absolute;
+        position:absolute;
         margin-top: -5px;
         padding-right: 100px
     }
