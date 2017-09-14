@@ -9,6 +9,14 @@
 
 <head>
     <title>@(ViewBag.Title)</title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url" content="@Request.Url.ToString()" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@(ViewBag.Title)" />
+    <meta property="og:description" content="@ViewBag.Description" />
+    <meta property="og:image" content="@(ViewBag.Banner)" />
+
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
