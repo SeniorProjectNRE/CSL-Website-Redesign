@@ -13654,14 +13654,30 @@ $('body').on('click', function (e) {
 * a minimum of 100%
 *************************************************/
 
-    $(document).ready(function() {
+$(document).ready(function () {
 
-        //console.log($(document).height() + ", " + $(".global-header").height() + ", " + $(".global-footer").height());
-        
-        var newHeight = ($(document).height() - $(".global-footer").height() ) + "px";
+    //console.log($(document).height() + ", " + $(".global-header").height() + ", " + $(".global-footer").height());
 
-        //console.log(newHeight);
+    var newHeight = ($(document).height() - $(".global-footer").height()) + "px";
 
-        document.getElementById("main-content").style.cssText = "min-height:" + newHeight;
+    //console.log(newHeight);
 
-    });
+    document.getElementById("main-content").style.cssText = "min-height:" + newHeight;
+
+});
+
+
+/*************************************************
+* code added by alan to add padding to pages at top
+*************************************************/
+
+$(document).ready(function () {
+
+   
+    var newHeight = $(".global-header").height() + "px";
+
+    console.log(newHeight);
+
+    document.getElementById("main-content").style.cssText = "padding-top:" + newHeight;
+
+});
