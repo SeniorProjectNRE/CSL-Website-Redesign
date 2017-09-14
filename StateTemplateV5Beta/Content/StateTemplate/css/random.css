@@ -1,5 +1,8 @@
-﻿/*css form utility header*/
-.utility-links > .settingsLink {
+﻿.header-large-banner {
+    background-position: top;
+}
+    /*css form utility header*/
+    .utility-links > .settingsLink {
     display: inline-block;
     padding: 0 8px;
 }
