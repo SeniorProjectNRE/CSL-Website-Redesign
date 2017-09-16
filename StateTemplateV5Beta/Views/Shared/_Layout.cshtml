@@ -70,11 +70,13 @@
 	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
 	<!-- Location Bar -->
 	@Html.Partial("~/Views/shared/modules/location-bar.cshtml")
-	<!-- Settings Bar -->
-	@Html.Partial("~/Views/shared/modules/settings-bar.cshtml")
+    <!-- Settings Bar -->
+    @Html.Partial("~/Views/shared/modules/settings-bar.cshtml")
+    @Html.Partial("~/Views/shared/modules/_MobileShareBar.cshtml")
+    @Html.Partial("~/Views/shared/modules/utility-header.cshtml")
+
 	<!-- Alert Banner -->
-	<!-- Include Utility Header -->
-	@Html.Partial("~/Views/shared/modules/utility-header.cshtml")
+    
 	<!-- Include Branding -->
 	@Html.Partial("~/Views/shared/modules/branding.cshtml")
 	<!-- Include Mobile Controls -->
@@ -82,11 +84,13 @@
 	<!-- Include Navigation -->
 	@Html.Partial("~/Views/shared/modules/_HomeTopNav.cshtml")
 </header>
+
 @RenderBody()
 
+    @Html.Partial("~/Views/shared/modules/global-footer.cshtml")
+    @Html.Partial("~/Views/shared/modules/scripts.cshtml")
 
-@Html.Partial("~/Views/shared/modules/global-footer.cshtml")
-@Html.Partial("~/Views/shared/modules/scripts.cshtml")
+
 </html>
 @Scripts.Render("~/bundles/stateTemplateJs")
 

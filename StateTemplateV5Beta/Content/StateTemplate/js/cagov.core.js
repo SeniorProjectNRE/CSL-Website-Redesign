@@ -13643,3 +13643,41 @@ $('body').on('click', function (e) {
     }
 
 });
+
+
+
+
+
+
+/*************************************************
+* code added by alan to make the page height be
+* a minimum of 100%
+*************************************************/
+
+$(document).ready(function () {
+
+    //console.log($(document).height() + ", " + $(".global-header").height() + ", " + $(".global-footer").height());
+
+    var newHeight = ($(document).height() - $(".global-footer").height()) + "px";
+
+    //console.log(newHeight);
+
+    document.getElementById("main-content").style.cssText = "min-height:" + newHeight;
+
+});
+
+
+/*************************************************
+* code added by alan to add padding to pages at top
+*************************************************/
+
+$(document).ready(function () {
+
+   
+    var newHeight = $(".global-header").height() + "px";
+
+    console.log(newHeight);
+
+    document.getElementById("main-content").style.cssText = "padding-top:" + newHeight;
+
+});
