@@ -12220,7 +12220,7 @@ $(document).ready(function () {
     var $alert = $('.alert-banner');
     var $askGroup = $('.ask-group');
     var $askGroupBar = $('#askGroup');
-    var $headSearch = $('#head-search');
+    var $headSearch = $('#head_search2');
     var $mainContent = $('#main-content');
 
     var headerHeight = $globalHeader.innerHeight();
