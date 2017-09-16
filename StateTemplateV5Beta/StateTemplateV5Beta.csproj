@@ -335,6 +335,11 @@
     <Content Include="Content\StateTemplate\images\icons\talkingbooks.png" />
     <Content Include="Content\StateTemplate\images\icons\tours.png" />
     <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
+    <Content Include="Content\StateTemplate\images\sutro-images\ASutro.jpg" />
+    <Content Include="Content\StateTemplate\images\sutro-images\coloringbook.jpg" />
+    <Content Include="Content\StateTemplate\images\sutro-images\familysearchflyer.jpg" />
+    <Content Include="Content\StateTemplate\images\sutro-images\volunteer.jpg" />
+    <Content Include="Content\StateTemplate\images\sutro-images\womensmarch.jpg" />
     <Content Include="Content\StateTemplate\images\template-logo.png" />
     <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-114x114.png" />
     <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-144x144.png" />
@@ -545,6 +550,8 @@
     <Content Include="Content\StateTemplate\pdf\services\policies\CaliforniaStateLibraryWirelessInternetUsePolicy.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\policies\DigitalPreservationPolicy.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\policies\ExhibitProposalForm.pdf" />
+    <Content Include="Content\StateTemplate\pdf\sutro\FamilySearchFlyer.pdf" />
+    <Content Include="Content\StateTemplate\pdf\sutro\SutroColoringBook.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />

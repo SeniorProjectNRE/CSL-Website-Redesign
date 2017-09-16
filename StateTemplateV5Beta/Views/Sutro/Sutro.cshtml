@@ -1,11 +1,208 @@
 ﻿
 @{
-    ViewBag.Title = "Sutro";
+    ViewBag.Title = "California State Library - California Womens March Collection";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Donate your materials from any of the Women's Marches that occurred in California on January 21, 2017";
+    ViewBag.Keywords = "California, State, Library, Sutro , Adolf Sutro";
 }
 
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<style>
+    img.left-thumb {
+        float: left;
+        padding-right: 10px;
+    }
+
+    .section-lightGray {
+        background-color: #f5f5f5;
+        padding: 20px;
+    }
+</style>
+
 <div id="main-content" class="main-content">
-    <main class="main-primary">
-        <h2>Sutro</h2>
-    </main>
+    <div class="container">
+        <main class="main-primary">
+            <h2 class="page-title">Sutro Library (San Francisco)</h2>
+
+            <div class="section section-lightGray">
+                <h3 class="orange">WHAT'S NEW:</h3>
+
+                <div>
+
+                    <a href="/Sutro/ColoringBook.cshtml"><img class="img-thumbnail img-left" src="~/Content/StateTemplate/images/sutro-images/coloringbook.jpg" /></a>
+
+                    <p><span class="ca-gov-icon-menu-toggle-closed"></span> In honor of our <strong>100th year</strong> of serving the people of California, we invite you to color our collections! Look at our anniversary coloring book <a href="/Sutro/ColoringBook.cshtml">online</a> or download a <a href="~/Content/StateTemplate/pdf/sutro/SutroColoringBook.pdf">PDF file</a>.</p>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div>
+
+                    <a href="/Sutro/WomensMarch.cshtml"><img class="img-thumbnail img-left" src="~/Content/StateTemplate/images/sutro-images/womensmarch.jpg" /></a>
+
+                    <p><span class="ca-gov-icon-menu-toggle-closed"></span> The California State Library is mandated to protect and preserve California's rich history and is ideally suited to house this collection of historical and political importance. See our <a href="/Sutro/WomensMarch.cshtml">California Women's March Collection.</a></p>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div>
+
+                    <a href="~/Content/StateTemplate/pdf/sutro/ FamilySearchFlyer.pdf"><img class="img-thumbnail img-left" src="~/Content/StateTemplate/images/sutro-images/familysearchflyer.jpg" /></a>
+
+                    <p><span class="ca-gov-icon-menu-toggle-closed"></span> Have no fear, Sutro is here! Join us on Wednesday, September 13th at 11am for a free genealogical talk addressing the Family History Library microfilm phase out and learn how to navigate Family Search and other free online sources. See our <a href="~/Content/StateTemplate/pdf/sutro/FamilySearchFlyer.pdf">flyer</a> for more information!</p>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <p>The Sutro Library (our San Francisco branch) holds the original collection of <a href="/Sutro/AdolphSutro.cshtml">Adolph Sutro</a> (1830–1898), California businessman and San Francisco mayor. The library has a large collection of publications and items dating from the 13th to the 21st centuries. It also has one of the largest genealogy collections in the U.S.</p>
+                <p>Some of the outstanding and rare items in the collection are:</p>
+
+                <div class="half">
+                    <p><strong><span class="ca-gov-icon-menu-toggle-closed text-accent-p1"></span> William Shakespeare's First, Second, Third and Fourth folios (1623–1685);</strong></p>
+
+                    <p><strong><span class="ca-gov-icon-menu-toggle-closed text-accent-p1"></span> Letters and papers of British explorer and naturalist Joseph Banks (1800s);</strong><p>
+
+                </div>
+
+                <div class="half">
+                    <p>
+                        <strong>
+                            <span class="ca-gov-icon-menu-toggle-closed text-accent-p1"></span> The Mexican Collection: materials on Mexican culture, religion and politics (1540–1889);
+                        </strong>
+                    </p>
+
+                    <p>
+                        <strong>
+                            <span class="ca-gov-icon-menu-toggle-closed text-accent-p1"></span> Belgian mapmaker Pieter van den Keere's World Map (1611).
+                        </strong>
+                    </p>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <p>Adolph Sutro's heirs donated his collection to the California State Library in 1913 with the requirement that the collection stay within the city of San Francisco. After operating in various locations in the city for almost 100 years, the Sutro Library moved to a permanent home at San Francisco State University in 2012.</p>
+
+            </div>
+
+            <div class="section">
+                <p><span class="ca-gov-icon-info"></span> Click on the titles below for more information.</p>
+
+                <div class="half">
+                    <ul class="list-overstated accordion-list">
+                        <li>
+                            <a href="/Sutro/Visiting">Visit Sutro</a>
+                        </li>
+                        <li>
+                            <a href="/Sutro/Collection">Adolph Sutro's Collection</a>
+                        </li>
+                        <li>
+                            <a href="/Sutro/Genealogy">Genealogy Collection</a>
+                        </li>
+                        <li>
+                            <a href="/Sutro/Search">Catalog Search Tips</a>
+                        </li>
+
+                        <li>
+                            <a class="toggle">Volunteering</a>
+
+                            <div class="description">
+
+                                <img src="~/Content/StateTemplate/images/sutro-images/volunteer.jpg" />
+                                <p>
+                                    Volunteering is a wonderful way to use current skills, develop new skills, and meet interesting people, while at the same time helping your community. Projects can be as short or long in duration according to your availability; some can even be done virtually. Learn more about the <a href="/work-with-us/volunteer">CSL Volunteer Program.</a>
+                                </p>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a class="toggle">Donations</a>
+                            <div class="description">
+                                <p>
+                                    Donations of materials relating to family history and genealogy are especially welcome. We would also consider materials relating to American and world culture and history.
+                                </p>
+                                <p>
+                                    Your assistance in helping the State Library preserve a record of history for future research and educational use would be greatly appreciated. Contemporary as well as historical materials are added to the collection. Please contact the <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref_Sutro" target="_blank">Sutro Library</a> with any questions. The curator of Special Collections can help you determine if the Sutro Library is an appropriate repository for your collection.
+                                </p>
+                                <p>
+                                    Two online publications from the Society of American Archivists offer donation guidance:
+                                </p>
+                                <ul class="list-overstated">
+                                    <li><a href="http://www.archivists.org/publications/donating-familyrecs.asp" target="_blank">Guide to Donating Your Personal or Family Papers to a Repository</a></li>
+                                    <li><a href="http://www.archivists.org/publications/donating-orgrecs.asp" target="_blank">Guide to Donating Your Organization's Records to a Repository</a></li>
+                                </ul>
+                                <p>
+                                    The California State Library Foundation has established a Sutro Library – Genealogy fund for those who wish to make a contribution. Monetary gifts to this fund or for the State Library in general, should be sent to:
+                                </p>
+                                <p>
+                                    <strong>California State Library Foundation</strong><br>
+                                    1225 8th Street, Suite 345<br>
+                                    Sacramento CA 95814<br>
+                                    (916) 447-6331
+                                </p>
+                                <p>
+                                    Please specify that your donation is to be used for the Sutro Library – Genealogy fund. For information about the Foundation, visit its <a href="http://www.cslfdn.org/" target="_blank">web site</a>. The Foundation is a 501 (c) (3) nonprofit, public charity governed by an independent Board of Directors. Donations of materials or funds may be tax-deductible.
+                                </p>
+                                <div>
+                                    <img src="~/Content/StateTemplate/images/sutro-images/womensmarch.jpg" alt="Donate" class="img-left"> <a href="/Sutro/WomensMarch"<p>
+												Donate to the California<br> Women's March Collection</a>
+                                    </p>
+                                </div>
+                                <div class="clearfix">
+                                    </divclass>
+                                </div>
+                        </li>
+
+
+                        <li>
+                            <a class="toggle">Contact Us</a>
+                            <div class="description">
+                                <div>
+                                    <p>
+                                        <strong>J. Paul Leonard Library – Sutro Library, Fifth Floor</strong><br>
+                                        San Francisco State University<br>
+                                        1630 Holloway Avenue<br>
+                                        San Francisco, CA 94132-4030
+                                    </p>
+                                    <p>
+                                        <strong>Tel:</strong> 415-469-6100<br>
+                                        <strong>Email:</strong> <a href="mailto:sutro@library.ca.gov">sutro@library.ca.gov</a>
+                                    </p>
+                                    <p>
+                                        The Sutro Library is open 10am – 4pm, Monday – Friday, excluding
+                                        <a href="/visit-us/locations-and-hours">State holidays</a>.<br>
+                                        <!-- and the following SFSU campus holidays:
+                                        July 3rd and Dec 25th &ndash; Dec 31st, 2015. Sutro Library <strong>will be closed</strong> on Monday, July 4 for the holiday. June 24th and June 27th Sutro reading room will open at 1 p.m.-->
+                                    </p>
+                                    <p class="regular">
+                                        Do you have a reference question? Use our <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref_Sutro" target="_blank">Ask A Librarian</a> service, <br>which directs your inquiry to a California State Library staff member.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="half">
+                    <!--twitter
+                    -->
+                    <a class="twitter-timeline" data-chrome="noheader%20nofooter" data-chrome="noscrollbar" data-chrome="noborders" data-width="350" data-height="450" data-theme="dark" href="https://twitter.com/SutroLibrary">Tweets by SutroLibrary</a>
+                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </main>
+    </div>
 </div>
 
