@@ -4,6 +4,7 @@
     ViewBag.Author = "Ryan Salcido";
     ViewBag.Description = "The California Research Bureau provides timely and confidential policy research to the Legislature, the Governor’s Office and other Constitutional Officers.";
     ViewBag.Keywords = "California, State, Library, Research, Bureau";
+    ViewBag.Image = "crb-top.jpg";
 }
 
 <head>
@@ -21,24 +22,236 @@
     <main class="main-primary">
         <div class="section">
             <div class="container">
-                <ol class="breadcrumb dynamic"></ol>
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li class="active"><a href="/crb">California Research Bureau</a></li>
+                </ol>
+
+
                 <h2 class="page-title">@(ViewBag.Title)</h2>
-                <p>The <strong>California Research Bureau</strong> (CRB) provides nonpartisan research services to the Governor and his staff, to both houses of the Legislature, and to other elected State officials. 
-                   These services include preparation of reports and memoranda on current policy issues, which might cover topics such as the history of the issue, experiences and proposals in other states, case studies and examples, data analysis, and development of legislative proposals. 
-                   This work might be confidential to the requestor, or might result in a published report. <b>CRB publications</b> are available at <a href="crb/reports-events/">http://www.library.ca.gov/crb/reports-events</a>.</p>
-                <p>The <strong>California Research Bureau</strong> is also involved in special projects and events with partners in the Legislature and various State agencies.
-                   To view information on the 2013 Women Veteran Survey CRB is conducting with the California Department of Veterans Affairs and the California Commission on the Status of Women and Girls, visit <a href="http://www.library.ca.gov/crb/womenvetsurvey.html">http://www.library.ca.gov/crb/womenvetsurvey.html</a>.</p>
-                <p>The Bureau regularly publishes an electronic notification service of new studies and reports about matters of current legislative or administration interest. This is an excellent way for policy professionals to stay up-to-date about research in their fields. 
-                   The <em> <strong>Studies in the News</strong> </em> is accessible at <a href="crb/newsletters">http://www.library.ca.gov/crb/newsletters</a>. 
-                   Electronic links are provided to most entries.</p>
-                <p>The Bureau also provides specialized library services to its clients. 
-                   It has an office in room 5210 in the Capitol staffed by librarians with considerable expertise in the literature concerning current California policy issues. 
-                   They share a commitment to providing quick, thorough, and discrete services. 
-                   The librarians have ready access to an extensive collection of reports, studies, and other materials concerning current and historical policy issues, as well as many electronic databases. 
-                   In addition, the Bureau convenes regular seminars and presentations by academic and think tank scholars doing work related to current policy issues.</p>
-                <p>State government clients may call (916) 319-2691 or email <a href="mailto:crb@library.ca.gov">crb@library.ca.gov</a> to request research work or librarian assistance, or to be included in the Bureau's electronic studies notification services or seminar distribution lists.</p>
+                <img src="~/Content/StateTemplate/images/crb/@(ViewBag.Image)" alt="CRB" style="width:100%; padding-bottom:20px" />
+
+                <div class="section">
+                    <div class="icons">
+                        <div class="link-icon">
+                            <img class="animate-pulse" src="~/Content/StateTemplate/images/crb/icons/reports.png" alt="reports" style="height:65px; width:65.5px;" /><br />
+                            <a class="animate-pulse" href="">Public reports</a>
+                        </div>
+                        <div class="link-icon">
+                            <img class="animate-pulse" src="~/Content/StateTemplate/images/crb/icons/newsletter.png" alt="newsletter" style="height:65px; width:104.88px;" /><br />
+                            <a class="animate-pulse" href="/crb/sitn.html">Newsletters</a>
+                        </div>
+                        <div class="link-icon">
+                            <img class="animate-pulse" src="~/Content/StateTemplate/images/crb/icons/resources.png" alt="reseorces" style="height:65px; width:69px;" /><br />
+                            <a class="animate-pulse" href="">Online Resources</a>
+                        </div>
+                        <div class="link-icon"> 
+                            <img class="animate-pulse" src="~/Content/StateTemplate/images/crb/icons/staff.png" alt="staff"  style="height:65px; width:69px;" /><br />
+                            <a class="animate-pulse" href="">Staff Directory</a>
+                        </div>
+                    </div>
+
+                    <p>Since 1991, the California Research Bureau (CRB) has provided independent, nonpartisan, timely and confidential policy research or analysis to our clients: the Legislature, the Governor's Office and other Constitutional Officers.</p>
+
+                    <p>
+                        We are a team of librarians and researchers ready to help. We provide policy research, 50-state reviews, academic and media summaries, data analysis and much more.
+                        We will meet or beat your deadline: do not hesitate to call us at <a href="tel:+9163192691">(916) 319-2691</a> for urgent or same-day requests!
+                        You can also email us at <a href="mailto:crb@library.ca.gov"> crb@library.ca.gov </a> or visit us in the State Capitol in Room 5210, 9 a.m. to 5 p.m. Monday through Friday.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h2 class="orange">PRODUCTS ON REQUEST</h2>
+
+
+
+                    <div class="twocolumns">
+                        <p>
+                            Want to know whether California is attracting businesses from other states? Which policies might encourage the recruitment of more science teachers? Or how many tax bills the legislature considers every year? Popular work products for our clients include:
+                        </p>
+                        <ul>
+                            <li>Quick fact-finding and fact-chtecking of claims or statistics</li>
+                            <li>Quality assessments of 3rd-party data or research</li>
+                            <li>Analysis of demographic, economic, environmental or other data at any level (district, state, national)</li>
+                            <li>Media/news collection around particular issues</li>
+                            <li>Summaries of scholarly evidence for specific topics</li>
+                            <li>Investigative surveys of groups and institutions</li>
+                            <li>50-state reviews to compare/contrast policies</li>
+                            <li>Tracking of local, state, federal and international bills, codes, court cases and regulations (including all California legislation since statehood in 1850)</li>
+                            <li>Memos or in-depth research reports on specific policy questions</li>
+                        </ul>
+                    </div>
+
+                    <div class="columns" style="float:right">
+                        <div class="animated fadeInRight">
+                            <img class="img-fade" src="~/Content/StateTemplate/images/crb/icons/watercolor.png" alt="Watercolor Building" style="max-height:375px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="section">
+                    <h3 class="orange">ADDITIONAL SERVICES</h3>
+
+                    <p class="p-center"><strong>Public Reports, Events and Videos</strong></p>
+                    <div class="half">
+                        <div class="border">
+                            Search <a href="">publications and events</a> by the Research Bureau.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
-</div>
 
+    </main>
+    <div class="blue-div">
+        <div class="threecolumns">
+            <h2>highlighted videos</h2>
+            <div class="today-img">
+                <iframe class="blue-video" src="https://www.youtube.com/embed/DOCMOcaYlWI" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="today-article">
+                <h3 class="white-title" style="padding-top:0; font-size:1.4em; margin-top:0">
+                    California Policymaking For Tomorrow Amid Rapid Technological Change Today
+                </h3>
+                <hr class="white-hr" style="margin-left:20px; margin-right:0" />
+                <p class="white-p">
+                    Three experts discuss the impact of rapid technological change on California's economy and jobs, as well as the opportunities, challenges and risks awaiting California policymakers.
+                    Anne Neville, director of the California Research Bureau, moderates a thought-provoking discussion with Nicholas Davis, head of Society and Innovation at the World Economic Forum in Geneva; Rachel Hatch, research director of the 10-Year Forecast at the Institute for the Future in Palo Alto; and California's chief economist, Irena Asmundson.
+                </p>
+            </div>
+            <div id="today" class="clear-white-button">
+                <a href="">WATCH MORE</a>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-primary">
+            <div class="wrap">
+                <div class="half">
+                    <h2 class="blue">HIGHLIGHTED PUBLICATIONS</h2>
+                </div>
+                <div class="animate-fadeInRight">
+                    <div class="half">
+                        <div class="blue-clear-button"><a href="">READ MORE</a></div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="half">
+                    <div class="pub">
+
+                        <p class="pdf-title" style="font-size:1.2em; color:#0a5b82;">
+                            <span class="ca-gov-icon-pdf biggest"></span>
+                            Demographics of Disciplinary Action by the Medical Board of California (2003-2013)
+                        </p>
+                        <p class="pdf-date" style="font-size:0.8em; margin-top:-5px">
+                            (January 2017)
+                        </p>
+                        <p style="padding-top:20px">
+                            The Medical Board of California protects the health of Californians by ensuring that practicing physicians in the state are licensed and regulated. Conducted at the request of the Medical Board, this report looked at 10 years of disciplinary data to see if there was any relationship between physician race and disciplinary outcomes. Latino/a and Black physicians were both more likely to receive complaints and more likely to see those complaints escalate to investigations. Latino physicians were also more likely to see those investigations result in discipline. Asian physicians had a reduced likelihood of receiving complaints, or of those complaints escalating to investigations.
+                        <p>
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="pub">
+                         
+                        <p class="pdf-title" style="font-size:1.2em; color:#0a5b82;">
+                            <span class="ca-gov-icon-pdf biggest"></span>
+                            Demographics in the California Legislature: November 2016 Election Update
+                        </p>
+                        <p class="pdf-date" style="font-size:0.8em; margin-top:-5px">
+                            (November 2016)
+                        </p>
+                        <p style="padding:20px 0 20px 0">
+                            Californians voted in 100 Assembly and Senate races in the November 2016 election. Thirty-one new members were elected to the Legislature, shifting the demographics of both bodies. The Assembly is now majority-minority (54%). The number of women legislators decreased by 5, bringing the total to 26, the lowest since 1991-1992. This report was updated on December 5, 2016.
+                        </p>
+                        <p>
+                            <a href="">Download the Data</a>
+                        </p>
+                        <p>
+                            <a href="">Download the Readme</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div style="clear: both;"></div>
+
+                <h2 class="orange" style="padding-left:12px">NEWSLETTERS</h2>
+                <div class="half">
+                    <div class="color-box" style="background-color:#cb7104;">
+                        <div class="wrap">
+                            <div class="div-divider" style="height:auto">
+                                <h3 class="white-title" style="padding:15px 0 0px 15px; font-size:1.8em; text-align:center">
+                                    Studies in the News
+                                </h3>
+                            </div>
+                            <div style="margin:0 auto; text-align:center">
+                                <a href="" class="btn btn-primary">SIGN-UP TODAY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="padding:20px 0 20px 0">
+                        Subscribe to Studies in the News and receive a weekly roundup of high-quality research and surveys on policy issues relevant to California. Curated by wonks for wonks for over 20 years. Archived issues <a href="">available</a>.
+                    </p>
+                </div>
+                <div class="half">
+                    <div class="color-box" style="background-color:#547e4d;">
+                        <div class="wrap">
+                            <div class="div-divider" style="height:auto">
+                                <h3 class="white-title" style="padding:15px 0 0px 15px; font-size:1.8em; text-align:center;">
+                                    Lunch with a side of Research
+                                </h3>
+                            </div>
+                            <div style="margin:0 auto; text-align:center">
+                                <a href="" class="btn btn-primary">SIGN-UP TODAY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="padding-top:20px">
+                        Planning your week? Want to know if there’s free beer bread and a great research topic? <strong>Lunch with a Side of Research</strong> is a free weekly email that lists all upcoming events in Sacramento that include both free lunch and a public policy research discussion.
+                    </p>
+                </div>
+                <div style="clear: both;"></div>
+
+                <div class="half">
+                    <div class="color-box" style="background-color:#4482a0;">
+                        <div class="wrap">
+                            <div class="div-divider" style="height:auto">
+                                <h3 class="white-title" style="padding:15px 0 0px 15px; font-size:1.8em; text-align:center">
+                                    Online Resources for State Employees
+                                </h3>
+                            </div>
+                            <div style="margin:0 auto; text-align:center">
+                                <a href="" class="btn btn-primary">SIGN-UP TODAY</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="padding-top:20px">
+                        Get access to a number of <a href="">online resources</a> from home or when you're not on a state network using your <a href="">State Library Card</a>. It only takes a few minutes to <a href="">sign-up</a>.
+                    </p>
+                </div>
+                <div class="half">
+                    <div class="color-box" style="background-color:#b13e55">
+                        <div class="wrap">
+                            <div class="div-divider" style="height:auto">
+                                <h3 class="white-title" style="padding:15px 0 0px 15px; font-size:1.8em; text-align:center">
+                                    Books and Journals
+                                </h3>
+                            </div>
+                            <div style="margin:0 auto; text-align:center">
+                                <a href="" class="btn btn-primary">CATALOG</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="padding-top:20px">
+                        The State Library maintains a collection of public policy related books and journals. Search for specific material through the <a href="">catalog</a>, or contact us with your request. If we do not have a book, we can often purchase or borrow it from another library.
+                    </p>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="spacer"></div>
+    </div>
+</div>
