@@ -221,6 +221,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\cards.css" />
     <Content Include="Content\Carousel.css" />
+    <Content Include="Content\StateTemplate\css\jquery.fancybox.min.css" />
     <Content Include="Content\StateTemplate\css\random.css" />
     <Content Include="Content\StateTemplate\css\cagov.core.css" />
     <Content Include="Content\StateTemplate\css\cagov.font-only.css" />
@@ -428,6 +429,7 @@
     <Content Include="Content\StateTemplate\js\libs\icon-fonts-ie7.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery-1.11.1.min.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery.eqheight.js" />
+    <Content Include="Content\StateTemplate\js\libs\jquery.fancybox.min.js" />
     <Content Include="Content\StateTemplate\js\libs\mapthat_script.js" />
     <Content Include="Content\StateTemplate\js\libs\modernizr-2.0.6.min.js" />
     <Content Include="Content\StateTemplate\js\libs\modernizr-extra.min.js" />

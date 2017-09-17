@@ -14,7 +14,22 @@
 
 
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/jquery.fancybox.min.css" />
+    <script src="~/Content/StateTemplate/js/libs/jquery.fancybox.min.js"></script>
+
+
 </head>
+<style>
+    #fancyBoxImageGallery > a > img {
+        padding: 5px;
+    }
+</style>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
@@ -25,7 +40,7 @@
 
                 <h2 class="page-title">Art For Legislators</h2>
                 <p>
-                    The California State Library (CSL) can provide reproductions of images in our collections to California State Legislators. Below is a sampling of different items within the collections of CSL which can be duplicated at your request. If you would like to have any of the items below or are looking for anything in particular to adorn the walls of your office, please contact Deborah Lynch at <a href="mailto:deborah.lynch@library.ca.gov">Deborah.Lynch@library.ca.gov</a>
+                    The California State Library can provide reproductions of images in its collections to California State Legislators. Below is a sampling of different items within the collections of the State Library that can be duplicated at your request.
                 </p>
 
                 <p>Click on the thumbnail below to enlarge the image. To move forward to the next image click on the right side of the image or press the right arrow key. To close the image, please click the X or anywhere outside the image.</p>
@@ -33,152 +48,105 @@
         </div>
 
         <div class="section">
-            <div class="container">
+            <div class="container" id="fancyBoxImageGallery">
 
-                <div class="gallery">
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/01.jpg" data-gallery="gallery-1" title="Poster for the San Diego Exposition, all 1916 to 1917.">
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/01.jpg" data-caption="Poster for the San Diego Exposition, all 1916 to 1917.">
                             <img src="~/Content/StateTemplate/images/artForLegislators/t_01.jpg" alt="Poster for the San Diego Exposition, all 1916 to 1917.">
 
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/02.jpg" data-gallery="gallery-1" title="Advertisement for the California State Fair held in Sacramento, September 8 through 15, 1917.">
+                    
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/02.jpg" data-caption="Advertisement for the California State Fair held in Sacramento, September 8 through 15, 1917.">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_02.jpg" alt="Advertisement for the California State Fair held in Sacramento, September 8 through 15, 1917.">
 
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/03.jpg" data-gallery="gallery-1" title="Souvenir print available at the Panama Pacific International Exposition, San Francisco, California, U.S.A. 1915.">
+                     
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/03.jpg" data-caption="Souvenir print available at the Panama Pacific International Exposition, San Francisco, California, U.S.A. 1915.">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_03.jpg" alt="Souvenir print available at the Panama Pacific International Exposition, San Francisco, California, U.S.A. 1915.">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/04.jpg" data-gallery="gallery-1" title="Advertisement for the Delta King riverboat. Circa 1930.">
+                    
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/04.jpg" data-caption="Advertisement for the Delta King riverboat. Circa 1930.">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_04.jpg" alt="Advertisement for the Delta King riverboat. Circa 1930.">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/05.jpg" data-gallery="gallery-1" title="California American's Vacation Land, New York Central Lines. Artist: Jon O. Brubaker, circa 1926">
+                    
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/05.jpg" data-caption="California American's Vacation Land, New York Central Lines. Artist: Jon O. Brubaker, circa 1926">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_05.jpg" alt="California American's Vacation Land, New York Central Lines. Artist: Jon O. Brubaker, circa 1926">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/06.jpg" data-gallery="gallery-1" title="California this summer. Travel by train. Circa 1926.">
+                     
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/06.jpg" data-caption="California this summer. Travel by train. Circa 1926.">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_06.jpg" alt="California this summer. Travel by train. Circa 1926.">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/07.jpg" data-gallery="gallery-1" title="Catalina. Now see Santa Catalina the scenic Riviera of the U.S.A. ... yet only a short delightful voyage from Los Angeles Artist: Otis Shepard.">
+                    
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/07.jpg" data-caption="Catalina. Now see Santa Catalina the scenic Riviera of the U.S.A. ... yet only a short delightful voyage from Los Angeles Artist: Otis Shepard.">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_07.jpg" alt="Catalina. Now see Santa Catalina the scenic Riviera of the U.S.A. ... yet only a short delightful voyage from Los Angeles Artist: Otis Shepard.">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/08.jpg" data-gallery="gallery-1" title="Advertisement for the California State Fair held in Sacramento, September 1 through 8, 1928.">
+                     
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/08.jpg" data-caption="Advertisement for the California State Fair held in Sacramento, September 1 through 8, 1928.">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_08.jpg" alt="Advertisement for the California State Fair held in Sacramento, September 1 through 8, 1928.">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/09.jpg" data-gallery="gallery-1" title="Advertisement for the California State Fair held in Sacramento, September 2 through 9, 1933.">
+                     
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/09.jpg" data-caption="Advertisement for the California State Fair held in Sacramento, September 2 through 9, 1933.">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_09.jpg" alt="Advertisement for the California State Fair held in Sacramento, September 2 through 9, 1933.">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/10.jpg" data-gallery="gallery-1" title="The San Francisco Call, January 23, 1898. Golden Jubilee Edition.">
+                     
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/10.jpg" data-caption="The San Francisco Call, January 23, 1898. Golden Jubilee Edition.">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_10.jpg" alt="The San Francisco Call, January 23, 1898. Golden Jubilee Edition.">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/11.jpg" data-gallery="gallery-1" title="Ville de Sacramento (Californie) December 1849. Text below the lithograph reads: (left) Dess. et Lith. par L. Le Breton; (center) Wild, Editeur, 15, rue de la Banque Place de la Bourse; (right) Paris, Imp. par Auguste Bry, 142, r. du Bac. Stamped: 'Presented to the 'Pioneer Club of Mutual Hook and Ladder Co. No. 1' with the compliments of Jos. H. Levett, February 22, 1855.'">
+                     
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/11.jpg" data-caption="Ville de Sacramento (Californie) December 1849. Text below the lithograph reads: (left) Dess. et Lith. par L. Le Breton; (center) Wild, Editeur, 15, rue de la Banque Place de la Bourse; (right) Paris, Imp. par Auguste Bry, 142, r. du Bac. Stamped: 'Presented to the 'Pioneer Club of Mutual Hook and Ladder Co. No. 1' with the compliments of Jos. H. Levett, February 22, 1855.'">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_11.jpg" alt="Ville de Sacramento (Californie) December 1849. Text below the lithograph reads: (left) Dess. et Lith. par L. Le Breton; (center) Wild, Editeur, 15, rue de la Banque Place de la Bourse; (right) Paris, Imp. par Auguste Bry, 142, r. du Bac. Stamped: 'Presented to the 'Pioneer Club of Mutual Hook and Ladder Co. No. 1' with the compliments of Jos. H. Levett, February 22, 1855.'">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/12.jpg" data-gallery="gallery-1" title="Sacramento from the Sky, the Heart of California (1923)">
+                    
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/12.jpg" data-caption="Sacramento from the Sky, the Heart of California (1923)">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_12.jpg" alt="Sacramento from the Sky, the Heart of California (1923)">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/13.jpg" data-gallery="gallery-1" title="Celebrate the days of '49, the romance of California. Sacramento, California, May 23-28, 1922. Ask your ticket agent for special excursion rates effective May 15th.">
+                     
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/13.jpg" data-caption="Celebrate the days of '49, the romance of California. Sacramento, California, May 23-28, 1922. Ask your ticket agent for special excursion rates effective May 15th.">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_13.jpg" alt="Celebrate the days of '49, the romance of California. Sacramento, California, May 23-28, 1922. Ask your ticket agent for special excursion rates effective May 15th.">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/14.jpg" data-gallery="gallery-1" title="Advertisement for the California State Fair, September 4 - 11, 1926. Sacramento Gateway to the Garden Valley of the World">
+                     
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/14.jpg" data-caption="Advertisement for the California State Fair, September 4 - 11, 1926. Sacramento Gateway to the Garden Valley of the World">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_14.jpg" alt="Advertisement for the California State Fair, September 4 - 11, 1926. Sacramento Gateway to the Garden Valley of the World">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/15.jpg" data-gallery="gallery-1" title="Advertisement for the Portola Festival, held in San Francisco, October 19 - 23, 1909">
+                     
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/15.jpg" data-caption="Advertisement for the Portola Festival, held in San Francisco, October 19 - 23, 1909">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_15.jpg" alt="Advertisement for the Portola Festival, held in San Francisco, October 19 - 23, 1909">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/16.jpg" data-gallery="gallery-1" title="Advertisement for the Causeway Celebration in Sacramento, May 11 - 14, 1916.">
+                    
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/16.jpg" data-caption="Advertisement for the Causeway Celebration in Sacramento, May 11 - 14, 1916.">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_16.jpg" alt="Advertisement for the Causeway Celebration in Sacramento, May 11 - 14, 1916.">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/17.jpg" data-gallery="gallery-1" title="Ground Breaking Panama - California Exposition, July 19-20-21-22, 1911. 1915 San Diego. 4 days of Pageantry and Carnival.">
+                    
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/17.jpg" data-caption="Ground Breaking Panama - California Exposition, July 19-20-21-22, 1911. 1915 San Diego. 4 days of Pageantry and Carnival.">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_17.jpg" alt="Ground Breaking Panama - California Exposition, July 19-20-21-22, 1911. 1915 San Diego. 4 days of Pageantry and Carnival.">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/18.jpg" data-gallery="gallery-1" title="Californie. Vue de la Ville de Sacramento. Artist: Urbano Lopez, circa 1850.">
+                    
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/18.jpg" data-caption="Californie. Vue de la Ville de Sacramento. Artist: Urbano Lopez, circa 1850.">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_18.jpg" alt="Californie. Vue de la Ville de Sacramento. Artist: Urbano Lopez, circa 1850.">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/19.jpg" data-gallery="gallery-1" title="Poster for the San Joaquin County Fair in Stockton, August 24th through 30th. Telephone ahead for reservations!">
+                     
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/19.jpg" data-caption="Poster for the San Joaquin County Fair in Stockton, August 24th through 30th. Telephone ahead for reservations!">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_19.jpg" alt="Poster for the San Joaquin County Fair in Stockton, August 24th through 30th. Telephone ahead for reservations!">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/20.jpg" data-gallery="gallery-1" title="Advertisement for the Silverado Trail Festival in Calistoga, June 28-29-30, 193-? Features horse racing, bathing beauties, dances, barbeque, boxing, '49 camp, band concerts, parades, baseball. Call ahead - keep touch with home. Poster of the Pacific Telephone and Telegraph Company">
+                     
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/20.jpg" data-caption="Advertisement for the Silverado Trail Festival in Calistoga, June 28-29-30, 193-? Features horse racing, bathing beauties, dances, barbeque, boxing, '49 camp, band concerts, parades, baseball. Call ahead - keep touch with home. Poster of the Pacific Telephone and Telegraph Company">
                             <img src=" ~/Content/StateTemplate/images/artForLegislators/t_20.jpg" alt="Advertisement for the Silverado Trail Festival in Calistoga, June 28-29-30, 193-? Features horse racing, bathing beauties, dances, barbeque, boxing, '49 camp, band concerts, parades, baseball. Call ahead - keep touch with home. Poster of the Pacific Telephone and Telegraph Company">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/21.jpg" data-gallery="gallery-1" title="Poster by Pacific Telephone and Telegraph advertising the California State Fair in Sacramento from September 1 - 10, 193-? 'Telephone ahead and telephone home'">
+                    
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/21.jpg" data-caption="Poster by Pacific Telephone and Telegraph advertising the California State Fair in Sacramento from September 1 - 10, 193-? 'Telephone ahead and telephone home'">
                             <img src="~/Content/StateTemplate/images/artForLegislators/t_21.jpg" alt="Poster by Pacific Telephone and Telegraph advertising the California State Fair in Sacramento from September 1 - 10, 193-? 'Telephone ahead and telephone home'">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/22.jpg" data-gallery="gallery-1" title="Poster by Pacific Telephone and Telegraph advertising the California State Fair in Sacramento from September 5 - 12, 193-? 'Make your arrangements by phone.'">
+                    
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/22.jpg" data-caption="Poster by Pacific Telephone and Telegraph advertising the California State Fair in Sacramento from September 5 - 12, 193-? 'Make your arrangements by phone.'">
                             <img src="~/Content/StateTemplate/images/artForLegislators/t_22.jpg" alt="Poster by Pacific Telephone and Telegraph advertising the California State Fair in Sacramento from September 5 - 12, 193-? 'Make your arrangements by phone.'">
                         </a>
-                    </div>
-
-                    <div class="item">
-                        <a class="gallery-item" href="~/Content/StateTemplate/images/artForLegislators/23.jpg" data-gallery="gallery-1" title="Poster by Pacific Telephone and Telegraph advertising the California State Fair in Sacramento from September 2 - 9 inclusive, 193-? 'Make your arrangements by phone.'">
+                     
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/23.jpg" data-caption="Poster by Pacific Telephone and Telegraph advertising the California State Fair in Sacramento from September 2 - 9 inclusive, 193-? 'Make your arrangements by phone.'">
                             <img src="~/Content/StateTemplate/images/artForLegislators/t_23.jpg" alt="Poster by Pacific Telephone and Telegraph advertising the California State Fair in Sacramento from September 2 - 9 inclusive, 193-? 'Make your arrangements by phone.'">
                         </a>
-                    </div>
+                    
                     
                 </div>
-                
-            </div>
+             
         </div>
     </main>
 </div>
