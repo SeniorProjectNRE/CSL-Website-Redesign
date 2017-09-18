@@ -3,9 +3,66 @@
     ViewBag.Title = "WorkWithUs";
 }
 
+@{
+    ViewBag.Title = "CSL Internship Program";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "The California State Library offers internships in which the student gains work experience only or as part of an educational program where the student may earn academic credit from their college. If you are a college student looking to gain valuable work experience you are encouraged to explore our internship opportunities and the possibility of earning academic credit through your assigned academic counselor.";
+    ViewBag.Keywords = "intern, internship, internship opportunity, student experience";
+    ViewBag.Image = "working.png";
+}
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>WorkWithUs</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb dynamic"></ol>
+                <h2 class="page-title">@(ViewBag.Title)</h2>
+
+                <img class="insetImage image-responsive" src="~/Content/StateTemplate/images/workWithUs/@(ViewBag.Image)" alt="Working" />
+
+                <p>
+                    At the California State Library, we seek diverse and talented people to work in our culturally-rich, and technologically advanced field of librarianship and research. 
+                    Our 162-year old institution is still in the business of loaning books, but today's California State Library also embraces the innovative and exciting ways Californians are seeking, and managing, their information.
+                </p>
+
+                <p style="font-size:28px; padding-top:20px">Our Location</p>
+                <p>
+                    California State Library headquarters are in Sacramento, a booming, affordable, metropolitan California city. From Sacramento you can take a two-hour drive to San Francisco, Lake Tahoe, the Sierra Nevadas, the California coastline, or the Wine Country. 
+                    You can also indulge in some of Sacramento's lifestyle perks - boating, swimming, art, theater, award-winning cuisine, and family-friendly neighborhoods. Regional Transit light rail and bus lines, and restaurants are all within walking distance of our Sacramento offices.
+                </p>
+                <p>
+                    We also have the Sutro Library in western San Francisco, on the north campus of San Francisco State University. The Sutro is located near the Stonestown Shopping Center, and Muni transit lines.
+                    A smaller working environment than our headquarters, the Sutro branch features U.S. local history, Adolph Sutro's notable rare book and manuscript collections, and the finest genealogy collection west of Salt Lake City, Utah.
+                </p>
+
+                <p style="font-size:28px; padding-top:20px">State Employee Benefits</p>
+                <p>
+                    The California State Library is a California state agency which means our employees enjoy the state of California's excellent 
+                    <a href="http://calhr.ca.gov/employees/Pages/main.aspx">employee benefits</a> package in addition to competitive salaries and opportunities for advancement.
+                </p>
+
+                <p style="font-size:28px; padding-top:20px">Getting Started with the State: The Civil Service Process</p>
+                <p>
+                    To join a state agency such as the CSL you must compete for job opportunities by taking an examination. When you pass the exam your name is placed on a list, and then you are eligible to work for the state.
+                </p>
+                <p>
+                    To learn about the state of California's official civil service hiring process from the state of California's official personnel agency directly, please visit the <a href="http://www.calhr.ca.gov/Pages/home.aspx">California Department of Human Resources website</a>.
+                </p>
+                <p>
+                    Please visit <a href="~/work-with-us/jobs">Jobs at the California State Library</a> to connect to current exam opportunities, and job openings at the California State Library.
+                </p>
+            </div>
+        </div>
     </main>
 </div>
-
