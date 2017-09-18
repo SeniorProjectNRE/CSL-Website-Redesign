@@ -3886,7 +3886,8 @@ h1 span[class^=ca-gov-icon-]:first-child {
 }
 
 .first-level-link {
-    color: #555
+    color: #555;
+    font-size:16px
 }
 
     .first-level-link > span[class^=ca-gov-icon] {
@@ -6315,11 +6316,11 @@ body {
 
 .main-content {
     background: #fff;
-    min-height: 400px
+    min-height: 400px;
 }
 
     .main-content > .section {
-        padding-bottom: 22px
+        padding-bottom: 22px;
     }
 
 @media (min-width:992px) {
@@ -7455,7 +7456,8 @@ body {
 }
 
 .top-level-nav .nav-item {
-    position: static
+    position: static;
+
 }
 
 @media (max-width:767px) {
@@ -7749,7 +7751,7 @@ a.second-level-link {
     }
 
 .utility-header .settings-links {
-    font-size: 87%;
+    font-size: 90%;
     text-align: right
 }
 
@@ -12471,7 +12473,7 @@ blockquote {
     }
 
     .branding .header-organization-banner {
-        position: absolute;
+        position:absolute;
         margin-top: -5px;
         padding-right: 100px
     }

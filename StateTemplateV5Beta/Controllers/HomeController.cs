@@ -41,5 +41,11 @@ namespace StateTemplateV5Beta.Controllers
             return View("~/Views/Shared/modules/serp.cshtml");
         }
 
+        [Route("releases")]
+        public ActionResult Releases()
+        {
+            return View();
+        }
+
     }
 }
