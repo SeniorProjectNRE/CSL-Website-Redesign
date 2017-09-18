@@ -1,11 +1,96 @@
 ﻿
 @{
-    ViewBag.Title = "Internships";
+    ViewBag.Title = "CSL Internship Program";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "The California State Library offers internships in which the student gains work experience only or as part of an educational program where the student may earn academic credit from their college. If you are a college student looking to gain valuable work experience you are encouraged to explore our internship opportunities and the possibility of earning academic credit through your assigned academic counselor.";
+    ViewBag.Keywords = "intern, internship, internship opportunity, student experience";
+    ViewBag.Image = "intern.jpg";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Internships</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb dynamic"></ol>
+                <h2 class="page-title">@(ViewBag.Title)</h2>
+
+                <img src="~/Content/StateTemplate/images/workWithUs/volunteer.jpg" alt="Volunteer" style="width:100%;" />
+                <p>
+                    The California State Library is the oldest and most continuous cultural agency in the state and has long served as a learning organization. It is the mission of the California State Library to enrich lives, and connect people, libraries and government to information.
+                </p>
+                <p>
+                    The California State Library's Internship Program is designed for undergraduate students of all majors and backgrounds who have an interest in fields that include Library and Information Sciences, California Public Policy, Business Administration, Information Technology and more.
+                </p>
+
+                <img class="insetImage image-responsive" src="~/Content/StateTemplate/images/workWithUs/@(ViewBag.Image)" alt="intern books" />
+
+                <p>
+                    The California State Library offers internships in which the student gains work experience only or as part of an educational program where the student may earn academic credit from their college.
+                    If you are a college student looking to gain valuable work experience you are encouraged to explore our internship opportunities and the possibility of earning academic credit through your assigned academic counselor.
+                </p>
+                <p>
+                    Some educational institutions may require a separate University-Organization Contract in addition to the California State Library Internship Agreement in order for a student to earn academic credit. If such a contract has not been entered into, internships may be arranged independently for work experience only.
+                </p>
+                <p>
+                    The California State Library Internship Program offers opportunities during the school year and also in the summer.
+                </p>
+                <br />
+                <p>
+                    <b>Benefits of participating in an Internship at the California State Library:</b>
+                </p>
+                <br />
+                <ul>
+                    <li><strong>Explore career avenues.</strong> California State Library Interns receive valuable career related work experience and are able to explore and evaluate specific careers prior to committing to full-time employment in a field.</li>
+                    <li><strong>Gain practical knowledge.</strong> Interns receive hands-on opportunities to work with equipment and technology increasing marketability to employers. Internships enhance conventional classroom learning and allow students the opportunity to apply their knowledge and skills in a professional setting while still in school.</li>
+                    <li><strong>Earn academic credit.</strong> Interns have résumé-building experiences while applying academic concepts and principles. They gain exposure to real-world problems and issues that may not be found in textbooks and the potential to earn academic credit.</li>
+                    <li><strong>Develop professional network.</strong> Interns cultivate relationships and build a network of associates and professional references.</li>
+                    <li><strong>Increase self-confidence.</strong> Interns receive exposure to different job opportunities in a professional setting giving them tools and assurance needed to transition from the academic world to the workforce.</li>
+                </ul>
+                <p>
+                    <img src="~/Content/StateTemplate/images/sutro/bullet_info.png" style="float:left; padding-right:10px; margin-top:-9px" alt="info" title="info" />Click on the titles below for more information.
+                </p>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Internship Opportunities</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+
+                            <div class="panel-body">
+                                <div>
+                                    <ul>
+                                        <li><a href="/Content/StateTemplate/pdf/workWithUs/Intern_Opp_Bulletin_2017-8_Cataloging_Collection_Management_PDF.pdf" target="_blank">Cataloging and Collection Management Internship</a></li>
+                                        <li><a href="/Content/StateTemplate/pdf/workWithUs/Intern_Opp_Bulletin_2017-8_Digital_Exhibits_PDF.pdf" target="_blank">Digital Exhibits Internship Opportunity</a></li>
+                                        <li><a href="/Content/StateTemplate/pdf/workWithUs/Intern_Opp_Bulletin_2017-8_History_Content_PDF.pdf" target="_blank">Historical Content Internship Opportunity</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <p style="padding-top:15px">
+                    For further information on internship opportunities at the California State Library, <br />email <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or call <a href="tel:+9166540202">(916) 654-0202</a>.
+                </p>
+            </div>
+        </div>
     </main>
 </div>
 
