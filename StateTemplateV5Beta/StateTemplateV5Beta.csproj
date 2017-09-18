@@ -669,7 +669,7 @@
     <Content Include="Views\CaliforniaHistory\CountyMonth.cshtml" />
     <Content Include="Views\CaliforniaHistory\Databases.cshtml" />
     <Content Include="Views\CaliforniaHistory\DigitalImages.cshtml" />
-    <Content Include="Views\CaliforniaHistory\Display.cshtml" />
+    <Content Include="Views\CaliforniaHistory\CurrentDisplay.cshtml" />
     <Content Include="Views\CaliforniaHistory\Donations.cshtml" />
     <Content Include="Views\CaliforniaHistory\Ephemera.cshtml" />
     <Content Include="Views\CaliforniaHistory\Events.cshtml" />

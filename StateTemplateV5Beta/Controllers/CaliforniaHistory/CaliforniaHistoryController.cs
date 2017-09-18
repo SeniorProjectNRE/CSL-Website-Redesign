@@ -59,8 +59,8 @@ namespace StateTemplateV5Beta.Controllers
         }
 
         // GET: display
-        [Route("display")]
-        public ActionResult Display()
+        [Route("current-display")]
+        public ActionResult CurrentDisplay()
         {
             return View();
         }
