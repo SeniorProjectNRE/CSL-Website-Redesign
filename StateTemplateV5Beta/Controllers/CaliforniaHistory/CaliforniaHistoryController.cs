@@ -183,5 +183,19 @@ namespace StateTemplateV5Beta.Controllers
         {
             return View();
         }
+
+        // GET: fair-use
+        [Route("fair-use")]
+        public ActionResult FairUse()
+        {
+            return View();
+        }
+
+        // GET: photo-reproduction
+        [Route("photo-reproduction")]
+        public ActionResult PhotoReproduction()
+        {
+            return View();
+        }
     }
 }

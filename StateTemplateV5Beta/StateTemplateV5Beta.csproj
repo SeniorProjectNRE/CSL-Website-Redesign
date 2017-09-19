@@ -1057,6 +1057,8 @@
     <Content Include="Views\Services\ToLibraries\InterlibraryLending.cshtml" />
     <Content Include="Views\Home\Releases.cshtml" />
     <Content Include="Views\Shared\modules\_MobileShareBar.cshtml" />
+    <Content Include="Views\CaliforniaHistory\FairUse.cshtml" />
+    <Content Include="Views\CaliforniaHistory\PhotoReproduction.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
