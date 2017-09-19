@@ -1,11 +1,224 @@
 ﻿
 @{
-    ViewBag.Title = "Visiting";
+    ViewBag.Title = "Visiting Sutro";
+    ViewBag.Banner = "SutroBuilding.jpg";
+    ViewBag.Author = "Jonathan Shaw";
+    ViewBag.Description = "California State Library Vist Sutro page.  Find information related to visiting Sutro here";
+    ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library, Sutro, SFSU, visiting, visit";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Visiting</h2>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li class="active"><a href="/Sutro">Sutro</a></li>
+                <li class="active"><a href="/Visiting">Visiting</a></li>
+            </ol>
+
+            <h1 class="orange" id="title">@ViewBag.Title</h1>
+
+            <img src="~/Content/StateTemplate/images/banner/@(ViewBag.Banner)" style="width:100%" alt="" class="animated fadeInLeft" />
+        </div>
+        <div class="section">
+            <div class="container">
+
+                <h2 class="page-title">General Information</h2>
+
+                <p>
+                    You can visit Sutro 10am - 4pm, Monday - Friday, excluding <a href="http://www.library.ca.gov/visit-us/locations-and-hours/">State holidays.</a>
+                </p>
+                <p>
+                    The Sutro Library welcomes SFSU's academic community, visiting scholars, 
+                    and the general public. Scholars using Sutro's rare materials are asked to 
+                    <a href="mailto:sutro@library.ca.gov">email us</a> 3 business days in advance 
+                    of their visit and have a government issued or current student photo ID. 
+                    Pencils and/or laptops are welcome, but no binders, three-ring notebooks or pens 
+                    of any kind will be permitted.
+                </p>
+            </div>
+
+            <ul class="list-overstated accordion-list">
+                <li>
+                    <a class="toggle">Bringing Your Class to Sutro</a>
+                    <div class="description">
+                        <p>
+                            <br />We encourage San Francisco State University instructors and their students
+                            to use our rich and diverse collections. Instructors are encouraged to
+                            collaborate with a librarian in selecting Sutro materials for either a
+                            general or subject-specific class that enhances the educational goals of
+                            their students.
+                        </p>
+
+                        <h4>
+                            Using Sutro's Classroom
+                        </h4>
+                        <p>
+                            Classes are scheduled Monday through Friday, from 10 a.m. to 5 p.m. Due to
+                            the classroom's size, we can only accommodate classes of no more than 20
+                            students. Larger classes will be divided and separate sessions scheduled.
+                            Given our staffing levels, please contact us 3-4 days before the date of your
+                            class.
+                        </p>
+
+                        <h4>
+                            Arranging to Use Our Collections
+                        </h4>
+                        <p>
+                            Instructors can arrange for a library class in the Sutro by completing the
+                            online form.
+                        </p>
+
+                        <h4>
+                            Preparing Your Students
+                        </h4>
+                        <p>
+                            There are a few simple rules that students will need to follow when using the
+                            Sutro classroom:
+                        </p>
+                        <ol>
+                            <li>
+                                Students should wash their hands before entering.
+                            </li>
+                            <li>
+                                Students' backpacks and bags will be left just inside the classroom door.
+                            </li>
+                            <li>
+                                Only pencils should be used. Pens of any type or felt markers are not permitted.
+                            </li>
+                            <li>
+                                No food or drink of any kind is allowed.
+                            </li>
+                        </ol>
+                        <p>
+                            Your assigned librarian will assist you with the physical presentaiton of the
+                            materials and provide instruction on handling materials as needed.
+                        </p>
+
+                        <h4>
+                            Room Amenities
+                        </h4>
+                        <p>
+                            Our classroom is equipped with a laptop projector, one tabletop dry-erase board,
+                            various sizes of foam cradles, and approximately 20 chairs.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-overstated accordion-list">
+                <li>
+                    <a class="toggle">Getting to Sutro Library</a>
+                    <div class="description">
+                        <br />
+                        <ul>
+                            <li>
+                                <a href="http://www.library.ca.gov/about/directionsdetails.html#sutro">
+                                    Driving directions, parking, and public transit
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.library.ca.gov/about/images/sutro/Sutro-map.jpg">
+                                    SFSU map
+                                </a>
+                            </li>
+                        </ul>
+                        <h4>
+                            Disability Assistance
+                        </h4>
+                        <p>
+                            For those individuals who need assistance getting between the parking
+                            garage and the Sutro library, SFSU provides transportation. Call the Disability
+                            Programs and Resource Center at 415-338-2472 a day in advance to arrange a
+                            pick up. The driver picks up passengers near the pedestrian bridge on the top
+                            level of the parking garage (take the elevator to the top level of the garage).
+                            This service is available during campus business hours, Monday – Friday from
+                            8:30am to 4:30pm.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-overstated accordion-list">
+                <li>
+                    <a class="toggle">Library Cards</a>
+                    <div class="description">
+                        <p>
+                            <br />We are changing our circulation policies. Starting January 1, 2017, our
+                            books will not circulate directly to the public. If you wish to borrow a
+                            book from the Sutro Library, please submit an interlibrary loan request through
+                            your local library.
+                        </p>
+                        <p>
+                            This change brings our branch into compliance with the broader lending policies
+                            of the California State Library. We continue to lend eligible materials directly
+                            to following groups:
+                        </p>
+                        <ul>
+                            <li>
+                                Faculty or Staff of UC or CSU
+                            </li>
+                            <li>
+                                California State Employees
+                            </li>
+                            <li>
+                                Members of the California Legislature and their staff
+                            </li>
+                            <li>
+                                State Constitutional Officers
+                            </li>
+                            <li>
+                                Gubernatorial and legislative appointees
+                            </li>
+                            <li>
+                                Members and employees of the California Judiciary
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-overstated accordion-list">
+                <li>
+                    <a class="toggle">Library Amenities</a>
+                    <div class="description">
+                        <br />
+                        <ul>
+                            <li>
+                                Wifi Internet access
+                            </li>
+                            <li>
+                                Computers
+                            </li>
+                            <li>
+                                Digital microform scanners
+                            </li>
+                            <li>
+                                Book scanner
+                            </li>
+                        </ul>
+                        <p>
+                            Scanners can be used to save to a flash drive or email scanned materials
+                            from our various resources. Please check with staff for email size limitations.
+                        </p>
+                        <p>
+                            Sutro will be going green! Sutro Library will save valuable state and
+                            environmental resources by becoming a paperless library. Anyone wanting
+                            to make copies is encouraged to bring a flashdrive, email files to yourself,
+                            or use other cloud storage services.
+                        </p>
+                        <p>
+                            Thank you for helping us save California's resources.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </main>
 </div>
 
