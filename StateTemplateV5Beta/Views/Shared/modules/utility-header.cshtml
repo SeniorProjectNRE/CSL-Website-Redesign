@@ -1,25 +1,39 @@
+<head>
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
 <div class="utility-header">
     <div class="container">
+
         <div class="group">
-            <div class="half">
-                <ul class="utility-links social-media-links">
-                    <li><a href="/"><span class="ca-gov-icon-home" aria-hidden="true" style="padding-right:20px"></span><span class="sr-only">Home</span></a></li>
+            <div class="third">
+                <ul class="utility-links social-media-links" style="margin-top:5px; margin-left:60px; z-index: 0;">
+                    @*<li><a href="/"><span class="ca-gov-icon-home" aria-hidden="true" style="padding-right:20px"></span><span class="sr-only">Home</span></a></li>*@
                     Share:
-                    <li><a class="ca-gov-icon-facebook" title="Facebook channel" tabindex="0" href=""></a></li>
-                    <li><a class="ca-gov-icon-twitter" title="Twitter channel" tabindex="0" href=""></a></li>
-                    <li><a class="ca-gov-icon-google-plus" title="Google+ channel" tabindex="0" href=""></a></li>
-                    <li><a class="ca-gov-icon-email" title="email" tabindex="0" href=""></a></li>
-                    <li><a class="ca-gov-icon-check-list" title="ChangeLog" tabindex="0" href="/Releases"></a></li>
+                    <li><a class="ca-gov-icon-share-facebook" title="Share to Facebook!" tabindex="0" href="@Request.Url.ToString()"></a></li>
+                    <li><a class="ca-gov-icon-share-twitter" title="Tweet It!" tabindex="0" href="@Request.Url.ToString()"></a></li>
+                    <li><a class="ca-gov-icon-share-googleplus" title="Google+ channel" tabindex="0" href="@Request.Url.ToString()"></a></li>
+                    <li><a class="ca-gov-icon-share-email" title="email" tabindex="0" href="@Request.Url.ToString()"></a></li>
+                    <li><a class="ca-gov-icon-check-list" title="ChangeLog" tabindex="0" href="/Releases"></a></li>                  
                 </ul>
+
             </div>
-            <div class="half settings-links">
-                <ul class="utility-links">
-                    <li><a href="">Join Our Mailing List</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
-                    <li><a role="tab" data-toggle="collapse" href="#siteSettings" aria-expanded="false" aria-controls="siteSettings" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</a></li>
-                    <li><a href=""><span style="border:1px solid white; padding:1px 10px">GET LIBRARY CARD</span></a></li>
+            <div class="two-thirds settings-links">
+                <ul class="utility-links" style="margin-top:5px">
+                    <li><a href=""><span class="ca-gov-icon-clipboard"></span>&nbsp;Join Our Mailing List</a></li>
+                    <li><a href="/contact"><span class="ca-gov-icon-contact-us"></span>&nbsp;Contact Us</a></li>
+                    <li><a href="/services/apply"><span class="ca-gov-icon-payment-card"></span>&nbsp; Library Card</a></li>
+                    <!--on desktop it will show this-->
+                    <li class="settingsLink"><a role="tab" data-toggle="collapse" href="#siteSettings" aria-expanded="false" aria-controls="siteSettings" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-gear" aria-hidden="true"></span>&nbsp;Settings</a></li>
+                    <!--on mobile it will show this-->
+                    <li class="shareLink"><a role="tab" data-toggle="collapse" href="#siteShare" aria-expanded="false" aria-controls="siteShare" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-share" aria-hidden="true"></span>&nbsp;Share</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
+
+
+
+
+

@@ -9,6 +9,14 @@
 
 <head>
     <title>@(ViewBag.Title)</title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url" content="@Request.Url.ToString()" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@(ViewBag.Title)" />
+    <meta property="og:description" content="@ViewBag.Description" />
+    <meta property="og:image" content="@(ViewBag.Banner)" />
+
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
@@ -22,7 +30,7 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li><a href="/home">Home</a></li>
-                    <li class="active"><a href="/about">About</a></li>
+                    <li class="active"> About Us</li>
                 </ol>
 
                 <h1 class="orange" id="title">@ViewBag.Title</h1>
@@ -53,13 +61,13 @@
         </div>
 
 
-        <div class="section light-gray">
+        <div class="section">
             <div class="container">
                 <h3>What We Do</h3>
                 <p>The California State Library serves the people of California in several ways:</p>
                 <ul>
                     <li>It is the central reference and research library for state government and the Legislature.</li>
-                    <li>It provides non-partisan research to the Legislature and the Governor.</li>
+                    <li>It provides nonpartisan research to the Legislature and the Governor.</li>
                     <li>
                         It collects, preserves, generates and disseminates information ranging from California's priceless
                         historical items to today's online texts.
@@ -86,7 +94,7 @@
         </div>
 
 
-        <div class="section  light-gray">
+        <div class="section">
             <div class="container">
                 <h3>Get informed online with the California State Library</h3>
                 <p>
@@ -97,7 +105,7 @@
                     needs.
                 </p>
                 <p>
-                    As we continue to streamline our online services, we welcome your feedback</a>. Please send us an email</a>
+                    As we continue to streamline our online services, we welcome your feedback. Please send us an <a href="mailto:cslinfo@library.ca.gov">email</a>
                     and let us know how we can make it easier for you to get what you need.
                 </p>
             </div>

@@ -493,8 +493,7 @@ dd {
         margin-left: 180px
     }
 
-    .container, .global-header, .
-    > .section, .two-column .main-content > .section {
+    .container, .global-header, .main-content > .section, .two-column .main-content > .section {
         width: 750px
     }
 }
@@ -3887,7 +3886,8 @@ h1 span[class^=ca-gov-icon-]:first-child {
 }
 
 .first-level-link {
-    color: #555
+    color: #555;
+    font-size:16px
 }
 
     .first-level-link > span[class^=ca-gov-icon] {
@@ -7456,7 +7456,8 @@ body {
 }
 
 .top-level-nav .nav-item {
-    position: static
+    position: static;
+
 }
 
 @media (max-width:767px) {
@@ -7750,7 +7751,7 @@ a.second-level-link {
     }
 
 .utility-header .settings-links {
-    font-size: 87%;
+    font-size: 90%;
     text-align: right
 }
 
@@ -12472,7 +12473,7 @@ blockquote {
     }
 
     .branding .header-organization-banner {
-        position: absolute;
+        position:absolute;
         margin-top: -5px;
         padding-right: 100px
     }

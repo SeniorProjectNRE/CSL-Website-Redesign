@@ -12220,7 +12220,7 @@ $(document).ready(function () {
     var $alert = $('.alert-banner');
     var $askGroup = $('.ask-group');
     var $askGroupBar = $('#askGroup');
-    var $headSearch = $('#head-search');
+    var $headSearch = $('#head_search2');
     var $mainContent = $('#main-content');
 
     var headerHeight = $globalHeader.innerHeight();
@@ -13641,5 +13641,43 @@ $('body').on('click', function (e) {
     } catch (e) {
         // ask panel is wonky
     }
+
+});
+
+
+
+
+
+
+/*************************************************
+* code added by alan to make the page height be
+* a minimum of 100%
+*************************************************/
+
+$(document).ready(function () {
+
+    //console.log($(document).height() + ", " + $(".global-header").height() + ", " + $(".global-footer").height());
+
+    var newHeight = ($(document).height() - $(".global-footer").height()) + "px";
+
+    //console.log(newHeight);
+
+    document.getElementById("main-content").style.cssText = "min-height:" + newHeight;
+
+});
+
+
+/*************************************************
+* code added by alan to add padding to pages at top
+*************************************************/
+
+$(document).ready(function () {
+
+   
+    var newHeight = $(".global-header").height() + "px";
+
+    console.log(newHeight);
+
+    document.getElementById("main-content").style.cssText = "padding-top:" + newHeight;
 
 });
