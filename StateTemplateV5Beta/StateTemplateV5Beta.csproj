@@ -575,6 +575,7 @@
     <Content Include="Content\StateTemplate\images\sutro-images\stateMaps\usmap_wi.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\stateMaps\usmap_wv.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\stateMaps\usmap_wy.jpg" />
+    <Content Include="Content\StateTemplate\images\sutro-images\sutroMap.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\volunteer.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\womensmarch.jpg" />
     <Content Include="Content\StateTemplate\images\sutro\adolphsutro.png" />
