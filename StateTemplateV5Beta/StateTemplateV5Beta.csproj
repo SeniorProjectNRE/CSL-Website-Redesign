@@ -1062,6 +1062,21 @@
     <Content Include="Views\Shared\modules\_MobileShareBar.cshtml" />
     <Content Include="Views\CaliforniaHistory\FairUse.cshtml" />
     <Content Include="Views\CaliforniaHistory\PhotoReproduction.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section1.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section2.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section10.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section9.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section8.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section7.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section6.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section5.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section4.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section3.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section15.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section14.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section13.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section12.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section11.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
