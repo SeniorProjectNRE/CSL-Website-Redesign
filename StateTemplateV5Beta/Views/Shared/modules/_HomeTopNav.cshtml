@@ -19,7 +19,113 @@ Options are: megadropdown dropdown singlelevel
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
 
 </head>
+<div class="navigation-search" style="border:0">
+    <div id="head-search" class="search-container">
+        <!-- Include Search -->
+        <!--
+        Local and statewide search
+        Version 2010.11.30
+        -->
+        <style>
+            label {
+                font-weight: normal;
+                padding-right: 5px !important;
+                color: #fff;
+                font-weight: bold !important;
+            }
 
+            .forms {
+                float: left;
+            }
+
+            .s-filters {
+                margin-top: 20px
+            }
+        </style>
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="/js/placeholders.min.js"></script>
+        <script type="text/javascript">
+            google.load('search', '1');
+            google.setOnLoadCallback(function () {
+                google.search.CustomSearchControl.attachAutoCompletion(
+                    '001779225245372747843:l2ikrt_n56e', // update this value with your search engine unique ID. Submit a request to the OTech Service Desk if you don't already know your unique search engine ID.
+                    document.getElementById('search_local_textfield'),
+                    'local_form');
+            });
+
+            $(document).ready(function () {
+                $('#local_form').removeClass();
+                $('#catalog_form').removeClass().addClass('hidden');
+                $('#btbl_form').removeClass().addClass('hidden');
+            });
+
+            function changeURL(x) {
+                document.getElementById('search_catalog_textfield').value = document.getElementById('search_catalog_textfield').value.replace(/\s+\+\s+/g, ' ');
+                document.getElementById('search_catalog_textfield').value = document.getElementById('search_catalog_textfield').value.replace(/\s+/g, ' ');
+                document.getElementById('search_catalog_textfield').value = document.getElementById('search_catalog_textfield').value.replace(/\s/g, ' + ');
+            }
+        </script>
+        <div id="head_search">
+            <form id="control" action="/serp.html">
+                <div id="radio_container">
+                    <input type="radio" name="which" id="head_srch_local" value="local" class="radiobutton" checked="checked" />
+                    <label for="head_srch_local" accesskey="l" id="head_srch_l_lbl">This Website</label>
+                    <input type="radio" name="which" id="head_srch_catalog" value="catalog" class="radiobutton" />
+                    <label for="head_srch_catalog" accesskey="g" id="head_srch_g_lbl">Catalog</label>
+                    <input type="radio" name="which" id="head_srch_btbl" value="btbl" class="radiobutton" />
+                    <label for="head_srch_btbl" accesskey="c" id="head_srch_c_lbl">Talking Books</label>
+                </div>
+            </form>
+            <form id="local_form" method="get" action="http://www.google.com/cse">
+                <!-- the form action will be changed using javascript -->
+                <div class="textfield_container">
+                    <label for="search_local_textfield" accesskey="s" class="hidden">Search this site: </label>
+                    <input type="text" name="q" id="search_local_textfield" size="60" value="Search This Site" onfocus="if(this.value=='Search This Site')this.value=''" onblur="if(this.value=='')this.value='Search This Site'" />
+                    <input type="hidden" name="cx" value="001779225245372747843:l2ikrt_n56e" /> <!-- update this value with your search engine unique ID. Submit a request to the OTech Service Desk if you don't already know your unique search engine ID. -->
+                    <input type="hidden" name="cof" value="" /> <!-- this value will be set using javascript -->
+                    <input type="hidden" name="ie" value="UTF-8" />
+                </div>
+                <div class="submit_container">
+                    <!-- Step 08 -->
+                    <input type="submit" style="float:left" alt="Search" title="Search" name="submit" value="Search" />
+                </div>
+                <div style="clear:both"></div>
+            </form>
+
+            <form id="catalog_form" class="hidden" method="get" action="http://catalog.library.ca.gov/F/?" target="_blank" onsubmit="changeURL();">
+                <div class="textfield_catalog_container">
+                    <label for="search_catalog_textfield" accesskey="s" class="hidden">Catalog search: </label>
+                    <input type="hidden" name="func" value="find-b" />
+                    <label for="catalogOptions" class="hidden">Catalog Search Options: </label>
+                    <select id="catalogOptions" name="find_code" width="100%">
+                        <option value=WRD selected="selected">Words anywhere</option>
+                        <option value=WTI>Title words</option>
+                        <option value=WAU>Author words</option>
+                        <option value=WSU>Subject words</option>
+                    </select>
+                    <input type="text" name="request" id="search_catalog_textfield" size="60" maxlength="255" value="Search CSL&#8217;s Catalog" onfocus="if(this.value=='Search CSL&#8217;s Catalog')this.value=''" onblur="if(this.value=='')this.value='Search CSL&#8217;s Catalog'" />
+                </div>
+                <div class="submit_container" style="left:184px;">
+                    <!-- Step 08 -->
+                    <input type="submit" style="float:left" alt="Search" title="Search" name="submit" value="Search" style="height:19px;" />
+                </div><div style="clear:both"></div>
+            </form>
+
+            <form id="btbl_form" class="hidden" action="https://btbl.library.ca.gov/ca1aopac/search/search.jsf" method="get">
+                <!-- the form action will be changed using javascript -->
+                <div class="textfield_container">
+                    <label for="search_btbl_textfield" accesskey="s" class="hidden">WebOPAC Search: </label>
+                    <input type="text" name="q" id="search_btbl_textfield" size="60" value="Talking Books Search" onfocus="if(this.value=='Talking Books Search')this.value=''" onblur="if(this.value=='')this.value='Talking Books Search'" />
+                </div>
+                <div class="submit_container">
+                    <!-- Step 08 -->
+                    <input style="float:left" type="submit" alt="Search" title="Search" name="submit" value="Search" />
+                </div>
+                <div style="clear:both"></div>
+            </form>
+            <button type="button" class="close close-search" data-dismiss="alert" aria-label="Close" style="position:relative; right:-50px; top:-75px"><span aria-hidden="true">×</span></button>
+        </div>
+    </div>
     <nav id="navigation" class="main-navigation megadropdown auto-highlight">
         <ul id="nav_list" class="top-level-nav">
             <li class="home-link nav-item">
@@ -195,6 +301,7 @@ Options are: megadropdown dropdown singlelevel
             </li>-->
         </ul>
     </nav>
+
     <div style="clear:both"></div>
     <!--
     Local and statewide search
@@ -251,6 +358,7 @@ Options are: megadropdown dropdown singlelevel
             document.getElementById('search_catalog_textfield').value = document.getElementById('search_catalog_textfield').value.replace(/\s/g, ' + ');
         }
     </script>
+
     <div id="head_search2" style="width:100% !important; background-color:#ccc; padding-top:10px">
         <div style="width:900px; margin:0px auto">
             <div style="float:left; width:300px; padding:10px">
@@ -314,5 +422,6 @@ Options are: megadropdown dropdown singlelevel
             </div>
         </div>
 
+    </div>
     </div>
     <div style="clear:both"></div>

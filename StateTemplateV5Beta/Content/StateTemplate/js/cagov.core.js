@@ -13681,3 +13681,21 @@ $(document).ready(function () {
     document.getElementById("main-content").style.cssText = "padding-top:" + newHeight;
 
 });
+
+
+
+/*************************************************
+* code added by alan to create autoLooping owl carousel
+*************************************************/
+
+
+$(window).on("load", function () {
+
+    $('.autoLoop').owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 4000,
+        animateOut: 'fadeOut',
+        loop: true,
+        items: 1
+    });
+});
