@@ -1,4 +1,6 @@
-﻿.header-large-banner {
+﻿
+
+.header-large-banner {
     background-position: top;
 }
     /*css form utility header*/
@@ -14,7 +16,7 @@
     padding:0;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
 
     .utility-links > .shareLink {
         display: inline-block;
