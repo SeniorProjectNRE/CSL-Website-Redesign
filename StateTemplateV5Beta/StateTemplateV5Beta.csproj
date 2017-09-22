@@ -282,6 +282,8 @@
     <Content Include="Content\StateTemplate\images\banner\banner-gal.png" />
     <Content Include="Content\StateTemplate\images\banner\banner-guy.png" />
     <Content Include="Content\StateTemplate\images\banner\CSLBuilding.jpg" />
+    <Content Include="Content\StateTemplate\images\banner\SutroBuilding.jpg" />
+    <Content Include="Content\StateTemplate\images\banner\womensmarch1.jpg" />
     <Content Include="Content\StateTemplate\images\buildings.jpg" />
     <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-Blue.svg" />
     <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-Gold.svg" />
@@ -573,6 +575,7 @@
     <Content Include="Content\StateTemplate\images\sutro-images\stateMaps\usmap_wi.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\stateMaps\usmap_wv.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\stateMaps\usmap_wy.jpg" />
+    <Content Include="Content\StateTemplate\images\sutro-images\sutroMap.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\volunteer.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\womensmarch.jpg" />
     <Content Include="Content\StateTemplate\images\sutro\adolphsutro.png" />
@@ -918,7 +921,7 @@
     <Content Include="Views\CaliforniaHistory\CountyMonth.cshtml" />
     <Content Include="Views\CaliforniaHistory\Databases.cshtml" />
     <Content Include="Views\CaliforniaHistory\DigitalImages.cshtml" />
-    <Content Include="Views\CaliforniaHistory\Display.cshtml" />
+    <Content Include="Views\CaliforniaHistory\CurrentDisplay.cshtml" />
     <Content Include="Views\CaliforniaHistory\Donations.cshtml" />
     <Content Include="Views\CaliforniaHistory\Ephemera.cshtml" />
     <Content Include="Views\CaliforniaHistory\Events.cshtml" />
@@ -1057,6 +1060,23 @@
     <Content Include="Views\Services\ToLibraries\InterlibraryLending.cshtml" />
     <Content Include="Views\Home\Releases.cshtml" />
     <Content Include="Views\Shared\modules\_MobileShareBar.cshtml" />
+    <Content Include="Views\CaliforniaHistory\FairUse.cshtml" />
+    <Content Include="Views\CaliforniaHistory\PhotoReproduction.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section1.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section2.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section10.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section9.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section8.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section7.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section6.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section5.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section4.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section3.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section15.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section14.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section13.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section12.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section11.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
