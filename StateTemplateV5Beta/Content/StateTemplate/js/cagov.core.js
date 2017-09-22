@@ -13694,8 +13694,6 @@ $(window).on("load", function () {
     $('.autoLoop').owlCarousel({
         autoplay: true,
         autoplayTimeout: 4000,
-        animateIn: 'fadeInLeft',
-        animateOut: 'fadeOut',
         loop: true,
         items: 1
     });
