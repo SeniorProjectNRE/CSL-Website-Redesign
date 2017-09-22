@@ -1,11 +1,46 @@
 ﻿
 @{
     ViewBag.Title = "Policies";
+    ViewBag.Author = "Dmitriy Rusetskiy";
+    ViewBag.Description = "California State Library - Policies";
+    ViewBag.Keywords = "California, state, Library, Policies";
+    ViewBag.Image = "policies.png";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Policies</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li class="active">Policies</a></li>
+                </ol>
+                <h2 class="page-title">@(ViewBag.Title)</h2>
+                <img class="image-responsive insetImage" src="~/Content/StateTemplate/images/services/policies/@(ViewBag.Image)" alt="Policies" />
+                <p>The California State Library provides information on its policies and procedures for its reading rooms and other public areas, as well as internal policies for staff. Policies currently approved for sharing via the State Library website are listed below.</p>
+                <p>Please note: State Library staff will be expanding and editing this content as needed, so please check back here for more information, links and edits to the policies listed.</p>
+                <p>Questions? Please contact <a href="mailto:webmaster@library.ca.gov">webmaster@library.ca.gov</a></p>
+                <ul class="regular_short">
+                    <li><a href="~/Content/StateTemplate/pdf/services/policies/CaliforniaStateLibraryExhibitPolicy.pdf" target="_blank">Exhibit Policy</a> (PDF) and <a href="~/Content/StateTemplate/pdf/services/policies/ExhibitProposalForm.pdf" target="_blank">Exhibit Proposal Form</a> (PDF)</li>
+                    <li><a href="~/Content/StateTemplate/pdf/services/policies/DigitalPreservationPolicy.pdf" target="_blank">Digital Preservation Policy</a> (PDF)</li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="~/Content/StateTemplate/pdf/services/policies/CaliforniaStateLibraryPublicInternet.pdf" target="_blank">Public Internet Use Policy</a> (PDF)</li>
+                    <li><a href="~/Content/StateTemplate/pdf/services/policies/CaliforniaStateLibraryWirelessInternetUsePolicy.pdf" target="_blank">Wireless Internet Use Policy</a> (PDF)</li>
+                </ul>
+            </div>
+        </div>
     </main>
 </div>
 

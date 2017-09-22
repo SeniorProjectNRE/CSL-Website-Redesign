@@ -59,8 +59,8 @@ namespace StateTemplateV5Beta.Controllers
         }
 
         // GET: display
-        [Route("display")]
-        public ActionResult Display()
+        [Route("current-display")]
+        public ActionResult CurrentDisplay()
         {
             return View();
         }
@@ -180,6 +180,20 @@ namespace StateTemplateV5Beta.Controllers
         // GET: visiting
         [Route("visiting")]
         public ActionResult Visiting()
+        {
+            return View();
+        }
+
+        // GET: fair-use
+        [Route("fair-use")]
+        public ActionResult FairUse()
+        {
+            return View();
+        }
+
+        // GET: photo-reproduction
+        [Route("photo-reproduction")]
+        public ActionResult PhotoReproduction()
         {
             return View();
         }

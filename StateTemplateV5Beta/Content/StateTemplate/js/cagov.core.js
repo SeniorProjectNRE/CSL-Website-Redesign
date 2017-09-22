@@ -242,23 +242,15 @@
             this.addAriaAndCollapsedClass(this.$element, this.$trigger)
         }
 
-function breadcrumbs() {
-    if ($(".breadcrumb.dynamic")[0]) {
-        var a = location.href,
-            b = a.indexOf("#");
-        b != -1 && (a = a.substr(0, b));
-        var b = a.indexOf("?");
-        b != -1 && (a = a.substr(0, b)), a = unescape(a);
-        var c = /<.*/g;
-        a = a.replace(c, "");
-        var d = a.split("/"),
-            e = '<li><a href="/">Home</a></li>',
-            f = "/";
-        if (("" == d[d.length - 1] || d[d.length - 1].match(/^index\.|^default\./i)) && d.length-- , d.length > 3) {
-            for (counter = 3; counter < d.length - 1; counter++) f += d[counter] + "/", e += '<li><a href="' + f + '">' + d[counter].replace(/(_|-)/g, " ") + "</a></li>";
-            e += '<li class="active">' + d[d.length - 1].replace(/(_|-)/g, " ").replace(/\.\w{3,5}$/, "") + "</li>"
-        }
-        $(".breadcrumb.dynamic").html(e)
+        if (this.options.toggle) this.toggle()
+    }
+
+    Collapse.VERSION = '3.3.5'
+
+    Collapse.TRANSITION_DURATION = 350
+
+    Collapse.DEFAULTS = {
+        toggle: true
     }
 
     Collapse.prototype.dimension = function () {
@@ -7417,7 +7409,7 @@ Licensed under GPL v2.
             if (self.d.tagName == 'INPUT') {
                 this.d.value = result;
             }
-            else if (self.d.tagName == 'text' ||  self.d.tagName == 'tspan') {
+            else if (self.d.tagName == 'text' || self.d.tagName == 'tspan') {
                 this.d.textContent = result;
             }
             else {
@@ -12228,7 +12220,7 @@ $(document).ready(function () {
     var $alert = $('.alert-banner');
     var $askGroup = $('.ask-group');
     var $askGroupBar = $('#askGroup');
-    var $headSearch = $('#head-search');
+    var $headSearch = $('#head_search2');
     var $mainContent = $('#main-content');
 
     var headerHeight = $globalHeader.innerHeight();
@@ -13650,4 +13642,61 @@ $('body').on('click', function (e) {
         // ask panel is wonky
     }
 
+});
+
+
+
+
+
+
+/*************************************************
+* code added by alan to make the page height be
+* a minimum of 100%
+*************************************************/
+
+$(document).ready(function () {
+
+    //console.log($(document).height() + ", " + $(".global-header").height() + ", " + $(".global-footer").height());
+
+    var newHeight = ($(document).height() - $(".global-footer").height()) + "px";
+
+    //console.log(newHeight);
+
+    document.getElementById("main-content").style.cssText = "min-height:" + newHeight;
+
+});
+
+
+/*************************************************
+* code added by alan to add padding to pages at top
+*************************************************/
+
+$(document).ready(function () {
+
+   
+    var newHeight = $(".global-header").height() + "px";
+
+    console.log(newHeight);
+
+    document.getElementById("main-content").style.cssText = "padding-top:" + newHeight;
+
+});
+
+
+
+/*************************************************
+* code added by alan to create autoLooping owl carousel
+*************************************************/
+
+
+$(window).on("load", function () {
+
+    $('.autoLoop').owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 4000,
+        animateIn: 'fadeInLeft',
+        animateOut: 'fadeOut',
+        loop: true,
+        items: 1
+    });
 });

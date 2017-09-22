@@ -1,11 +1,197 @@
 ﻿
 @{
-    ViewBag.Title = "Visiting";
+    ViewBag.Title = "CSL - Visiting Us - CA History Room";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "Planning on visiting the California History Room? This page will tell you where to find us, what to expect when you arrive and about our basic research policies.";
+    ViewBag.Keywords = "California State Library, visit, california history, room";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Visiting</h2>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/collections">Our Collections</a></li>
+                <li><a href="/california-history">California History</a></li>
+                <li style="text-transform:none;">Visiting the California History Room</li>
+            </ol>
+            <h2 class="page-title">Visiting the California History Room</h2>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="group">
+                    <div class="three-quarters">
+
+                        <p>
+                            We are delighted that you are thinking about visiting us! You can drop by any time during our open hours. If you're wondering what to expect when you come by, you might find the information on this page helpful. You can also <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us directly</a> with any specific questions or concerns you may have.
+                        </p>
+                        <br />
+                        <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Suggested Visit Preparation</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <p>
+                                            You are welcome to conduct research any time we're open, but if you want to prepare for your visit, here are some things you can do:
+                                        </p>
+                                        <ul>
+                                            <li>Consult our <a href="/california-history/research-guides">research guides</a></li>
+                                            <li>Check our <a href="http://catalog.library.ca.gov" target="_blank">catalog</a> for materials related to your topic</li>
+                                            <li>Check our <a href="/california-history/databases">supplemental databases</a> for further information</li>
+                                            <li><a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">Ask us</a> what other resources might help you in your research</li>
+                                            <li><a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">Ask us</a> to pull materials for you ahead of time</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">You May Wish to Bring</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>A camera or phone with camera capability</li>
+                                            <li>A flash drive</li>
+                                            <li>A sweater or jacket</li>
+                                            <li>Note-taking materials including pencils</li>
+                                            <li>Quarters for copies (We can make change for up to $5.00)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Location and Hours</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><strong>Location:</strong> Room 200 (2nd Floor) of <a href="https://maps.google.com/maps?oe=utf-8&client=firefox-a&q=900+N+Street+sacramento&ie=UTF-8&hq=&hnear=0x809ad128b7a290ed:0xba7d239668ae7fa7,900+N+St,+Sacramento,+CA+95814&gl=us&ei=CplsUMeBC8zSigKm-YEQ&ved=0CCEQ8gEwAA" target="_blank">900 N Street, Sacramento, CA 95814</a></li>
+                                            <!-- TODO: Change/remove old or non-existent links to state holidays and travel directions. -->
+                                            <li><strong>Hours:</strong> Monday-Friday, 9:30 a.m.&ndash;4:00 p.m., excluding California <a href="#">state holidays</a>.</li>
+                                            <li><strong>Getting here:</strong> You can reach the library via <a href="#">driving or public transit</a>.</li>
+                                            <li><strong>Parking:</strong> Fee-based <span style="text-decoration:underline">street or garage</span> parking is available</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Registration</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <p>
+                                            To use the majority of our <a href="/california-history/collections">materials</a>, you will need register as an in-house patron. This requires completing a short form and showing us a driver's license or other photo ID. Registration is valid for two years.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Copying and Reproduction</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                    <div class="panel-body">
+                                        <p>
+                                            In addition to permitting no-flash photography (please no tripods or personal scanners), we are proud to offer a number of self-serve copying options including the following:
+                                        </p>
+                                        <ul>
+                                            <li>Digital Microfilm Scanners (Free digital copies)</li>
+                                            <li>Digital Book Scanners (Free digital copies)</li>
+                                            <li>Analog microfilm reader/printer (25 cents per page)</li>
+                                            <li>Analog copy machine (15 cents per page)</li>
+                                        </ul>
+                                        <p>
+                                            Some of our rare materials have restricted copying but we offer the following services:
+                                        </p>
+                                        <ul>
+                                            <li><a href="/california-history/photocopy">Low-resolution copies or photocopies</a> (depending on material)</li>
+                                            <li><a href="/california-history/photo-reproduction">Photographic reproductions</a></li>
+                                            <li><a href="/california-history/digital-images">High-resolution digital reproductions</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSix">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Section Policies</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                    <div class="panel-body">
+                                        <p>
+                                            In addition to the State Library's general policies, we in the California History Section ask you to help us protect the collection and respect other patrons by following these guidelines:
+                                        </p>
+                                        <ul>
+                                            <li>Storing all purses, bags etc. in our Reading Room lockers</li>
+                                            <li>Not bringing food or drink into the Reading Room</li>
+                                            <li>Using pencils instead of pens inside the Reading Rooms</li>
+                                            <li>Silencing your cell phones and stepping outside the reading rooms when you conduct a call</li>
+                                            <li>Following staff instructions regarding how and where to view/use materials</li>
+                                            <li>Enjoying your research!</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="quarter" style="padding-bottom:15px; padding-top:15px;">
+                        <div class="autoLoop carousel owl-carousel carousel-content">
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/visiting/1.jpg" title="Rob Stewart of 'Rob on the Road,' in the Special Collections room with Gary Kurutz of the State Library." alt="Rob Stewart of 'Rob on the Road,' in the Special Collections room with Gary Kurutz of the State Library."/>
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/visiting/2.jpg" title="Library and Courts Two building at 900 N Street, Sacramento, CA" alt="Library and Courts Two building at 900 N Street, Sacramento, CA"/>
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/visiting/3.jpg" title="Library card catalog" alt="Library card catalog"/>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
     </main>
 </div>
 

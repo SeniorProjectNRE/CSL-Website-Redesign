@@ -6,6 +6,7 @@
     ViewBag.Author = "";
     ViewBag.Description = "";
     ViewBag.Keywords = "";
+    ViewBag.pageID = "Home";
 
 }
 <head>
@@ -13,6 +14,7 @@
     <meta name="Author" content="State of California" />
     <meta name="Description" content="State of California" />
     <meta name="Keywords" content="California, government" />
+    
 </head>
 
 <!--
@@ -52,10 +54,10 @@
             @Html.Partial("~/Views/shared/modules/_HomeSpotlight.cshtml")
             @Html.Partial("~/Views/shared/modules/_HomeEvents.cshtml")
             @Html.Partial("~/Views/shared/modules/_HomeLinks.cshtml")
-            @Html.Partial("~/Views/shared/modules/_HomeTodayInCali.cshtml")
+            @*@Html.Partial("~/Views/shared/modules/_HomeTodayInCali.cshtml")*@
             @Html.Partial("~/Views/shared/modules/_HomeItems.cshtml")
             @*Html.Partial("~/Views/shared/modules/Blogs.cshtml", Model.BlogList)*@
-            @Html.Partial("~/Views/shared/modules/section-footer2.cshtml")
+            @*@Html.Partial("~/Views/shared/modules/section-footer2.cshtml")*@
 
 			
 			<!-- End Main Content -->

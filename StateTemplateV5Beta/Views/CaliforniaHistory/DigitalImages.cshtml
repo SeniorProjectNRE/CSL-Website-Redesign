@@ -1,12 +1,13 @@
 ﻿
 @{
-    ViewBag.Title = "DigitalImages";
+    ViewBag.Title = "California State Library - Get copies of digitized images - CA History Room";
     ViewBag.Author = "Alan Cleetus";
-    ViewBag.Description = "California State Library Digital Images Reproduction information";
+    ViewBag.Description = "Did you spot an image in the California State Library catalog and fall in love with it? Learn how to order a copy here!";
     ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library";
 }
 
 <head>
+    <title>@(ViewBag.Title)</title>
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
@@ -23,23 +24,42 @@
 
 
                 <h2 class="page-title">Digital Images Reproduction</h2>
-              
-                <img class="image-responsive insetImage" src="~/Content/StateTemplate/images/caliorniaHistory/imageReproduction1.png" alt="digital image reproduction" />
-
+              <div class="row">
                 
-                <p>
-                    The digital images in the California State Library <a href="http://catalog.library.ca.gov/F/?func=find-e-0&local_base=images">Picture Catalog</a> are available <strong>FREE OF CHARGE</strong>. Only existing digital images (represented by a thumbnail in the Picture Catalog) may be requested. We are unable to scan on demand.
-                </p>
-                <p>
-                    You may view and download low-resolution and/or high-resolution images from the Picture Catalog by clicking on the link in each picture record labelled "<strong>View low-resolution JPEG</strong>" (open image, right click and save) or "<strong>Download High-Resolution TIFF</strong>" (click on link and select save option from pop-up window).
-                </p>
-                 
-                <p>
-                    Reproduction of any materials from the California State Library's collections, for publication, commercial display or other non-private use, requires the <a href="/california-history/permission-to-use">advance written permission</a> of the State Library.
-                </p>
-                <p>
-                    Contact the California History Section with inquiries regarding digital images at: California History Section, California State Library, PO Box 942837, Sacramento, CA 94237-0001, email <a href="mailto:cslcal@library.ca.gov">cslcal@library.ca.gov</a> or FAX: 916 654-8777.
-                </p>
+                <div class="col-md-8">
+                    <p>
+                        The digital images in the California State Library <a href="http://catalog.library.ca.gov/F/?func=find-e-0&local_base=images">Picture Catalog</a> are available <strong>FREE OF CHARGE</strong>. Only existing digital images (represented by a thumbnail in the Picture Catalog) may be requested. We are unable to scan on demand.
+                    </p>
+                    <p>
+                        You may view and download low-resolution and/or high-resolution images from the Picture Catalog by clicking on the link in each picture record labelled "<strong>View low-resolution JPEG</strong>" (open image, right click and save) or "<strong>Download High-Resolution TIFF</strong>" (click on link and select save option from pop-up window).
+                    </p>
+
+                    <p>
+                        Reproduction of any materials from the California State Library's collections, for publication, commercial display or other non-private use, requires the <a href="/california-history/permission-to-use">advance written permission</a> of the State Library.
+                    </p>
+                    <p>
+                        Contact the California History Section with inquiries regarding digital images at: California History Section, California State Library, PO Box 942837, Sacramento, CA 94237-0001, email <a href="mailto:cslcal@library.ca.gov">cslcal@library.ca.gov</a> or FAX: 916 654-8777.
+                    </p>
+                </div>
+
+                  <div class="col-md-4">
+                      <div class="autoLoop carousel owl-carousel carousel-content">
+                          <div class="item">
+                              <img src="~/Content/StateTemplate/images/caliorniaHistory/imageReproduction1.png" alt="digital image reproduction" />
+                          </div>
+
+                          <div class="item">
+                              <img src="~/Content/StateTemplate/images/caliorniaHistory/imageReproduction2.png" alt="digital image reproduction" />
+                          </div>
+
+                          <div class="item">
+                              <img src="~/Content/StateTemplate/images/caliorniaHistory/imageReproduction3.png" alt="digital image reproduction" />
+                          </div>
+
+                      </div>
+                  </div>
+              
+                </div>
             </div>
         </div>
     </main>

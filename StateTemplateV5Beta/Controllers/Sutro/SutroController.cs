@@ -44,9 +44,9 @@ namespace StateTemplateV5Beta.Controllers.Sutro
             return View();
         }
 
-        // GET: geneaology
-        [Route("geneaology")]
-        public ActionResult Geneaology()
+        // GET: genealogy
+        [Route("genealogy")]
+        public ActionResult Genealogy()
         {
             return View();
         }
