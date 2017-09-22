@@ -231,6 +231,7 @@
     <Content Include="Content\StateTemplate\favicon.ico" />
     <Content Include="Content\StateTemplate\fonts\CaGov.svg" />
     <Content Include="Content\StateTemplate\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\StateTemplate\images\about\Stacey_Aldrich.png" />
     <Content Include="Content\StateTemplate\images\artForLegislators\01.jpg" />
     <Content Include="Content\StateTemplate\images\artForLegislators\02.jpg" />
     <Content Include="Content\StateTemplate\images\artForLegislators\03.jpg" />
@@ -281,6 +282,8 @@
     <Content Include="Content\StateTemplate\images\banner\banner-gal.png" />
     <Content Include="Content\StateTemplate\images\banner\banner-guy.png" />
     <Content Include="Content\StateTemplate\images\banner\CSLBuilding.jpg" />
+    <Content Include="Content\StateTemplate\images\banner\SutroBuilding.jpg" />
+    <Content Include="Content\StateTemplate\images\banner\womensmarch1.jpg" />
     <Content Include="Content\StateTemplate\images\buildings.jpg" />
     <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-Blue.svg" />
     <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-Gold.svg" />
@@ -302,6 +305,9 @@
     <Content Include="Content\StateTemplate\images\crb\watercolor.jpg" />
     <Content Include="Content\StateTemplate\images\crb\year.png" />
     <Content Include="Content\StateTemplate\images\csl-logo.jpg" />
+    <Content Include="Content\StateTemplate\images\csl_logo_big.png" />
+    <Content Include="Content\StateTemplate\images\CSL_pic.png" />
+    <Content Include="Content\StateTemplate\images\CSL_picj.jpg" />
     <Content Include="Content\StateTemplate\images\fancybox\blank.gif" />
     <Content Include="Content\StateTemplate\images\fancybox\fancybox_loading%402x.gif" />
     <Content Include="Content\StateTemplate\images\fancybox\fancybox_loading.gif" />
@@ -569,8 +575,11 @@
     <Content Include="Content\StateTemplate\images\sutro-images\stateMaps\usmap_wi.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\stateMaps\usmap_wv.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\stateMaps\usmap_wy.jpg" />
+    <Content Include="Content\StateTemplate\images\sutro-images\sutroMap.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\volunteer.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\womensmarch.jpg" />
+    <Content Include="Content\StateTemplate\images\sutro\adolphsutro.png" />
+    <Content Include="Content\StateTemplate\images\sutro\bullet_info.png" />
     <Content Include="Content\StateTemplate\images\template-logo.png" />
     <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-114x114.png" />
     <Content Include="Content\StateTemplate\images\template2014\apple-touch-icon-144x144.png" />
@@ -653,6 +662,9 @@
     <Content Include="Content\StateTemplate\images\top-icons\visit.jpg" />
     <Content Include="Content\StateTemplate\images\top-icons\work-over.jpg" />
     <Content Include="Content\StateTemplate\images\top-icons\work.jpg" />
+    <Content Include="Content\StateTemplate\images\workWithUs\intern.jpg" />
+    <Content Include="Content\StateTemplate\images\workWithUs\volunteer.jpg" />
+    <Content Include="Content\StateTemplate\images\workWithUs\working.png" />
     <Content Include="Content\StateTemplate\js\libs\cagov.core.txt" />
     <Content Include="Content\StateTemplate\js\libs\d3.js" />
     <Content Include="Content\StateTemplate\js\libs\html5shiv.min.js" />
@@ -782,6 +794,7 @@
     <Content Include="Content\StateTemplate\pdf\services\policies\CaliforniaStateLibraryWirelessInternetUsePolicy.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\policies\DigitalPreservationPolicy.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\policies\ExhibitProposalForm.pdf" />
+    <Content Include="Content\StateTemplate\images\Thumbs.db" />
     <Content Include="Content\StateTemplate\pdf\sutro\FamilySearchFlyer.pdf" />
     <Content Include="Content\StateTemplate\pdf\sutro\SutroColoringBook.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
@@ -908,7 +921,7 @@
     <Content Include="Views\CaliforniaHistory\CountyMonth.cshtml" />
     <Content Include="Views\CaliforniaHistory\Databases.cshtml" />
     <Content Include="Views\CaliforniaHistory\DigitalImages.cshtml" />
-    <Content Include="Views\CaliforniaHistory\Display.cshtml" />
+    <Content Include="Views\CaliforniaHistory\CurrentDisplay.cshtml" />
     <Content Include="Views\CaliforniaHistory\Donations.cshtml" />
     <Content Include="Views\CaliforniaHistory\Ephemera.cshtml" />
     <Content Include="Views\CaliforniaHistory\Events.cshtml" />
@@ -1047,6 +1060,23 @@
     <Content Include="Views\Services\ToLibraries\InterlibraryLending.cshtml" />
     <Content Include="Views\Home\Releases.cshtml" />
     <Content Include="Views\Shared\modules\_MobileShareBar.cshtml" />
+    <Content Include="Views\CaliforniaHistory\FairUse.cshtml" />
+    <Content Include="Views\CaliforniaHistory\PhotoReproduction.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section1.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section2.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section10.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section9.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section8.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section7.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section6.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section5.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section4.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section3.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section15.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section14.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section13.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section12.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Section11.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

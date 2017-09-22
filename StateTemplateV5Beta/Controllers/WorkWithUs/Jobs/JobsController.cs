@@ -13,7 +13,7 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs
         [Route("")]
         public ActionResult Index()
         {
-            return View("Jobs");
+            return View("~/Views/WorkWithUs/Jobs/Jobs.cshtml");
         }
     }
 }
