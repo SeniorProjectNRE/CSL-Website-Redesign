@@ -1,12 +1,70 @@
 ﻿
 @{
-    ViewBag.Title = "CurrentDisplay";
+    ViewBag.Title = "CSL - Collection Highlights - CA History Room";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "At the California History Room, we love to display our images, ephemera and book collections! See what treasures we have selected for your viewing pleasure.";
+    ViewBag.Keywords = "History Room, Collection, Highlights";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Display</h2>
-    </main>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/california-history">California History</a></li>
+                    <li>Current Display</li>
+                </ol>
+
+                <h2 class="page-title">@(ViewBag.Title)</h2>
+
+                <div class="group">
+                    <div class="two-thirds">
+
+                    </div>
+
+                    <div class="third">
+                        <div class="autoLoop carousel owl-carousel carousel-content">
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/sword_performer.jpg" alt="Marysville Yuba" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/johnson_band.jpg" alt="Festival" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/winchester_mystery_house.jpg" alt="Orchard" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+</main>
 </div>
 
 
