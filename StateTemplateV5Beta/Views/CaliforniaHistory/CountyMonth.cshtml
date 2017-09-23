@@ -3,6 +3,8 @@
     ViewBag.Author = "Ryan Salcido";
     ViewBag.Description = "Love local history? Celebrate it with us by conducting research on the California History Room's featured County of the Month, using our customized pathfinder!";
     ViewBag.Keywords = "County of the Month, History Room";
+
+    ViewBag.CountyOfMonth = "Yuba County";
 }
 
 <head>
@@ -28,10 +30,10 @@
                     <li>County of the Month</li>
                 </ol>
 
-                <h2 class="page-title">@(ViewBag.Title)</h2>
+                <h3 class="page-title">@(ViewBag.Title)</h3>
 
                 <div>
-                    <h3>County of the Month: YUBA COUNTY</h3>
+                    <h2 class="orange" style="text-align:center;">@(ViewBag.CountyOfMonth)</h2>
                 </div>
 
                 <div class="group">
