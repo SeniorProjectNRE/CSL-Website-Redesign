@@ -292,6 +292,9 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction1.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction2.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction3.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\pictorialResources\1.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\pictorialResources\2.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\pictorialResources\3.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\researchGuides\1.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\researchGuides\2.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\researchGuides\3.jpg" />
