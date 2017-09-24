@@ -289,6 +289,7 @@
     <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-Gold.svg" />
     <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-White.svg" />
     <Content Include="Content\StateTemplate\images\ca-logo.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\books1.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction1.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction2.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction3.png" />
