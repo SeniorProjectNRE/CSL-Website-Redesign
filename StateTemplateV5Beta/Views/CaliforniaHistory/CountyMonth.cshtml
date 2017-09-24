@@ -1,11 +1,139 @@
-﻿
-@{
-    ViewBag.Title = "CountyMonth";
+﻿@{
+    ViewBag.Title = "CSL - County of the Month - CA History Room";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "Love local history? Celebrate it with us by conducting research on the California History Room's featured County of the Month, using our customized pathfinder!";
+    ViewBag.Keywords = "County of the Month, History Room";
+
+    ViewBag.CountyOfMonth = "Yuba County";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>CountyMonth</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/california-history">California History</a></li>
+                    <li>County of the Month</li>
+                </ol>
+
+                <h3 class="page-title">@(ViewBag.Title)</h3>
+
+                <div>
+                    <h2 class="orange" style="text-align:center;">@(ViewBag.CountyOfMonth)</h2>
+                </div>
+
+                <div class="group">
+                    <div class="two-thirds animate-fadeInUp">
+                        <p>
+                            Congratulations to our September County of the Month, Yuba! Formed in 1850, Yuba County boasted a population of 72,155 people as of 2010.
+                            In addition to having several very active historic preservation organizations, Yuba County is also the home of a thriving agricultural sector and to Beale Air Force Base.
+                            Furthermore, its abundance of gold-bearing gravel beds made it home to many Gold-Rush era boom-towns. If you are looking for an exciting local history research project, you might find one within this region's boundaries!
+                        </p>
+
+                        <p><span class="ca-gov-icon-info"></span>   Click on the title below for more information.</p>
+
+                        <div class="group">
+                            <div class="half">
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Fun Facts</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <ul class="list-overstated">
+                                                    <li>
+                                                        <p>
+                                                            <b>Did you know that the Bok Kai Temple in Marysville has some of the finest 19th century Taoist murals you'll see anywhere?</b>
+                                                            It's true! Most 19th century temple murals in China and Thailand were painted over or destroyed decades ago.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <b>Did you know that Yuba County's capital has a Donner Party connection?</b>
+                                                            It's true! Charles Covillaud, the founder of Marysville, named the city after his wife, Mary, who migrated west with the Donner Party.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <b>Want to learn more?</b>
+                                                            Check out our County of the <a href="~/Content/StateTemplate/pdf/californiaHistory/yubaresearch.pdf">Month Research Guide</a>!
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Previous Editions</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <ul class="list-overstated">
+                                                    <li>
+                                                        <p>
+                                                            <b>August 2017 Selection:</b>
+                                                            <a href="~/Content/StateTemplate/pdf/californiaHistory/alamedaresearch.pdf">Alameda County</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="list-unstyled p-t-md">
+                            In August of 2017, in an effort to better support the work of local governments and historical societies in promoting and preserving the past, the <a href="/california-history">California History Section</a> started the County of the Month program.
+                            This recognition honors the diverse character of California's many counties while providing <a href="~/Content/StateTemplate/pdf/californiaHistory/yubaresearch.pdf">research tips</a> to individuals interested in finding out more about California local history.
+                            If you have any questions about this program, please feel free to <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">contact us</a>.
+                        </p>
+                    </div>
+                    <div class="third animate-fadeInUp">
+                        <div class="autoLoop carousel owl-carousel carousel-content">
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/marysville_yuba.png" alt="Marysville Yuba" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/festival.png" alt="Festival" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/orchard.png" alt="Orchard" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
+
+
+
 
