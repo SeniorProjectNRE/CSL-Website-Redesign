@@ -1,14 +1,34 @@
-﻿<div class="site-settings section section-standout collapse collapsed" role="alert" id="section1">
+﻿<div class="site-settings section section-standout collapse collapsed" role="alert" id="section7">
     <div class="container  p-y">
         <div class="row">
-            <button type="button" class="close col-md-2" data-toggle="collapse" data-target="#section1" aria-expanded="false" aria-controls="section1" aria-label="Close" style="z-index:1"><span aria-hidden="true">Close</span></button>
-            <button type="button" class="close col-md-2" data-toggle="collapse" data-target="#section2" aria-expanded="false" aria-controls="section2" aria-label="Close" style="z-index:1"><span aria-hidden="true">Next Section</span></button>
+            <!--title of page-->
+            <div class="section-title col-md-6 col-sm-12 col-xs-12">
+                <h1 class="orange" id="title">@ViewBag.Title</h1>
+            </div>
+            <!--button for previous section-->
+            <div class="section-previous col-md-2 col-sm-4 col-xs-12">
+                <div data-toggle="collapse" data-target="#section7" aria-expanded="false" aria-controls="section7" aria-label="Close">
+                    <a id="section-controls" data-toggle="collapse" data-target="#section6" aria-expanded="false" aria-controls="section6" aria-label="Previous Section"><span class="ca-gov-icon-caret-two-left" aria-hidden="true"></span> Previous Section</a>
+                </div>
+            </div>
+            <!--button for next section-->
+            <div class="section-next col-md-2 col-sm-4 col-xs-12">
+                <div data-toggle="collapse" data-target="#section7" aria-expanded="false" aria-controls="section7" aria-label="Close">
+                    <a id="section-controls" data-toggle="collapse" data-target="#section8" aria-expanded="false" aria-controls="section8" aria-label="Next Section">Next Section <span class="ca-gov-icon-caret-two-right" aria-hidden="true"></span></a>
+                </div>
+            </div>
+            <!--close botton-->
+            <div class="section-close col-md-2 col-sm-4 col-xs-12">
+                <a id="section-controls" data-toggle="collapse" data-target="#section7" aria-expanded="false" aria-controls="section7" aria-label="Close"><span class="ca-gov-icon-close-mark" aria-hidden="true"></span> Close</a>
+
+            </div>
+
         </div>
         
 
 
         <div class="row" role="group">
-                    <p>Here is some contnent</p>
+                    <p>Here is some contnent7</p>
                     <div style="height:200px; background-color:red">
 
                     </div>
