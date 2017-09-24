@@ -1,6 +1,7 @@
 ﻿
 @{
-    ViewBag.Title = "California State Library - Get copies of digitized images - CA History Room";
+    ViewBag.Title = "CSL - Get copies of digitized images - CA History Room";
+    ViewBag.PageTitle = "Digital Images Reproduction";
     ViewBag.Author = "Alan Cleetus";
     ViewBag.Description = "Did you spot an image in the California State Library catalog and fall in love with it? Learn how to order a copy here!";
     ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library";
@@ -20,10 +21,16 @@
             <div class="container">
 
 
-                <ol class="breadcrumb dynamic"></ol>
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/california-history">California History</a></li>
+                    <li>Digital Image Reproduction</li>
+                </ol>
 
 
-                <h2 class="page-title">Digital Images Reproduction</h2>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
               <div class="row">
                 
                 <div class="col-md-8">
@@ -42,7 +49,7 @@
                     </p>
                 </div>
 
-                  <div class="col-md-4">
+                  <div class="col-md-4 animated fadeInRight">
                       <div class="autoLoop carousel owl-carousel carousel-content">
                           <div class="item">
                               <img src="~/Content/StateTemplate/images/caliorniaHistory/imageReproduction1.png" alt="digital image reproduction" />

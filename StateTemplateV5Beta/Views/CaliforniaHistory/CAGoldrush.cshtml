@@ -1,6 +1,7 @@
 ﻿
 @{
-    ViewBag.Title = "CAGoldRush";
+    ViewBag.Title = "CSL - California As We Saw It: Exploring The California Gold Rush";
+    ViewBag.PageTitle = "California Gold Rush";
     ViewBag.Banner = "CSLBuilding.jpg";
     ViewBag.Author = "Matthew Loller";
     ViewBag.Description = "California State Library About page.  Find general information about the state library here.";
@@ -9,45 +10,226 @@
 
 <head>
     <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
+<div id="top"></div>
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>CAGoldrush</h2>
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section1.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section2.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section3.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section4.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section5.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section6.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section7.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section8.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section9.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section10.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section11.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section12.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section13.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section14.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section15.cshtml")
-        <ul>
-            <li><a role="tab" data-toggle="collapse" href="#section1" aria-expanded="false" aria-controls="section1" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section1</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section2" aria-expanded="false" aria-controls="section2" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section2</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section3" aria-expanded="false" aria-controls="section3" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section3</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section4" aria-expanded="false" aria-controls="section4" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section4</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section5" aria-expanded="false" aria-controls="section5" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section5</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section6" aria-expanded="false" aria-controls="section6" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section6</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section7" aria-expanded="false" aria-controls="section7" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section7</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section8" aria-expanded="false" aria-controls="section8" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section8</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section9" aria-expanded="false" aria-controls="section9" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section9</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section10" aria-expanded="false" aria-controls="section10" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section10</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section11" aria-expanded="false" aria-controls="section11" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section11</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section12" aria-expanded="false" aria-controls="section12" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section12</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section13" aria-expanded="false" aria-controls="section13" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section13</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section14" aria-expanded="false" aria-controls="section14" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section14</a></li>
-            <li><a role="tab" data-toggle="collapse" href="#section15" aria-expanded="false" aria-controls="section15" aria-selected="false" id="ui-collapse-278"><span class="ca-gov-icon-play" aria-hidden="true"></span>&nbsp;Section15</a></li>
-        </ul>
-    </main>
+
+        
+
+        <div class="container section">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/california-history/">california history</a>
+                </li>
+                <li class="active">California Gold Rush</li>
+            </ol>
+            <h2 class="page-title">@ViewBag.PageTitle</h2>
+        </div>
+
+
+
+            @Html.Partial("~/Views/shared/CAGoldRush/_Intro.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section1.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section2.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section3.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section4.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section5.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section6.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section7.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section8.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section9.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section10.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section11.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section12.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section13.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section14.cshtml")
+            
+
+       
+        <div class="section">
+            <div class="container">
+                <div class="third" name="section1">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section1.jpg" alt="section 1 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section I. The Great Discovery</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section1" aria-expanded="false" aria-controls="section1" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third" name="section2">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section2.jpg" alt="section 2 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section II. By Sea to the Golden Land</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section2" aria-expanded="false" aria-controls="section2" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third" name="section3">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section3.jpg" alt="section 3 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section III. Ho for California! The Overland Trek</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section3" aria-expanded="false" aria-controls="section3" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        
+        <div class="section">
+            <div class="container">
+                <div class="third" name="section4">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section4.jpg" alt="section 4 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section IV. Via the Isthmus</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section4" aria-expanded="false" aria-controls="section4" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third" name="section5">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section5.jpg" alt="section 5 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section V. Gold Mania Satirized</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section5" aria-expanded="false" aria-controls="section5" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third" name="section6">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section6.jpg" alt="section 6 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section VI. The Miners' Ten Commandments</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section6" aria-expanded="false" aria-controls="section6" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section">
+            <div class="container">
+                <div class="third" name="section7">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section7.jpg" alt="section 7 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section VII. The World Rushed In: Part I</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section7" aria-expanded="false" aria-controls="section7" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third" name="section8">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section8.jpg" alt="section 8 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section VII. The World Rushed In: Part II</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section8" aria-expanded="false" aria-controls="section8" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third" name="section9">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section9.jpg" alt="section 9 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section VIII. An Instant City: Sacramento</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section9" aria-expanded="false" aria-controls="section9" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section">
+            <div class="container">
+                <div class="third" name="section10">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section10.jpg" alt="section 10 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section IX. The Northern Mines</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section10" aria-expanded="false" aria-controls="section10" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third" name="section11">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section11.jpg" alt="section 11 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section X. Scenes in the Life of the California Miner</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section11" aria-expanded="false" aria-controls="section11" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third" name="section12">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section12.jpg" alt="section 12 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section XI. Making a Pile</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section12" aria-expanded="false" aria-controls="section12" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div class="container">
+                <div class="third" name="section13">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section13.jpg" alt="section 13 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section XII. Mining Companies</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section13" aria-expanded="false" aria-controls="section13" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third" name="section14">
+                    <div class="card card-default">
+                        <div class="card-block">
+                            <h4 class="card-title">Credits</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section14" aria-expanded="false" aria-controls="section14" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</main>
 </div>

@@ -1,11 +1,176 @@
 ﻿
 @{
-    ViewBag.Title = "UniqueIndexes";
+    ViewBag.Title = "CSL - Unique Files - CA History Room";
+    ViewBag.PageTitle = "Unique Indexes and Files";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "Looking for a California ancestor or pioneer? How about a San Francisco newspaper article? Check out the California History Room’s specialized indexes and files!";
+    ViewBag.Keywords = "California State Library, california history, room, unique files";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>UniqueIndexes</h2>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/collections">Our Collections</a></li>
+                <li><a href="/california-history">California History</a></li>
+                <li style="text-transform:none;">Unique Indexes</li>
+            </ol>
+            <h2 class="page-title">@ViewBag.PageTitle</h2>
+        </div>
+
+        <div class="section">
+            <div class="container">
+
+                <div class="group">
+                    <!-- Main content -->
+                    <div class="two-thirds">
+                        <p>
+                            <!-- <img src="../history/images/collection/unique_banner.png" title="Unique Indexes and Files Collection" alt="Unique Indexes and Files" style="padding-bottom:15px"/>
+        California History Section staff members have, over time, created a number of unique and important indexes and files, drawing together various sources of information that researchers might not otherwise find. -->
+                            To help our researchers, we have created several one-of-a-kind files that contain information on people and events in California history. Many of our important files are listed below. If you have questions about these resources, please feel free to <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">ask us a question</a>.
+                        </p>
+                        <br />
+                        <p><span class="ca-gov-icon-info"></span>   Click on the titles below for more information.</p>
+                        <div class="panel-group" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading2">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">California Information File (1846&ndash;1985)</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                    <div class="panel-body">
+                                        <p>
+                                            With over 1.4 million references to <a href="/california-history/newspapers" target="_blank">newspaper</a>, <a href="/california-history/periodicals">periodical</a>, <a href="/california-history/books" target="_blank">book</a>, <a href="/california-history/ephemera" target="_blank">ephemera</a> and <a href="/california-history/manuscripts" target="_blank">manuscript collections</a> the California Information File is one of the most important California history resources in the world. If you cannot <a href="/california-history/visiting" target="_blank">visit</a> the State Library to use it, you might be able to borrow microfiche copies of it from other libraries. For information about which libraries have copies, please check our <a href="~/Content/StateTemplate/pdf/californiaHistory/IndexResearch.pdf" target="_blank">Vital Statistics and Indexes Research Guide</a> or <a href="https://www.worldcat.org/title/california-information-file-1846-1985/oclc/21804091/editions?editionsView=true&referer=br" target="_blank">Worldcat</a>.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading3">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">California Information File II (1986&ndash;Present)</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                    <div class="panel-body">
+                                        <p class="regular_short_column1">
+                                            This <a href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm" target="_blank">database</a> continues the <a href="http://catalog.library.ca.gov/F/?func=find-e&adjacent=N&find_scan_code=FIND_SYS&request=000420333" target="_blank">California Information File</a>, which was closed and microfiched in 1985. We update this resource monthly with citations from our <a href="/california-history/newspapers" target="_blank">newspaper</a>, <a href="/california-history/periodicals">periodical</a>, <a href="/california-history/books" target="_blank">book</a>, <a href="/california-history/ephemera" target="_blank">ephemera</a> and <a href="/california-history/books" target="_blank">manuscript collections</a>.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading4">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4">San Francisco Newspapers Index (1904&ndash;1949)</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                                    <div class="panel-body">
+                                        <p>
+                                            The San Francisco Newspapers Index provides approximately 1.8 million citations to the following titles in our <a href="/california-history/newspapers" target="_blank">newspaper collection</a>:
+                                        </p>
+                                        <ul>
+                                            <li><a href="http://catalog.library.ca.gov/F/?func=find-e&adjacent=N&find_scan_code=FIND_SYS&request=001000895" target="_blank"><em>Call</em> (1/1/1904&ndash;8/31/1913)</a></li>
+                                            <li><a href="http://catalog.library.ca.gov/F/?func=find-e&adjacent=N&find_scan_code=FIND_SYS&request=001000217" target="_blank"><em>Examiner</em> (9/1/1913&ndash;9/23/1928)</a></li>
+                                            <li><a href="http://catalog.library.ca.gov/F/?func=find-e&adjacent=N&find_scan_code=FIND_SYS&request=001000373" target="_blank"><em>Chronicle</em> (9/1/1913&ndash;12/31/1949)</a></li>
+                                        </ul>
+                                        <p class="regular_short_column1">
+                                            If you cannot <a href="/california-history/visiting" target="_blank">visit</a> the State Library to use the index, you might be able to borrow microfiche copies of it from other libraries. For information about which libraries have copies, please check our <a href="~/Content/StateTemplate/pdf/californiaHistory/IndexResearch.pdf" target="_blank">Vital Statistics and Indexes Research Guide</a> or <a href="http://www.worldcat.org/title/san-francisco-newspapers-index-1904-1959/oclc/16641332/editions?editionsView=true&referer=br" target="_blank">Worldcat</a>.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading5">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapse5">San Francisco Chronicle Index (1950&ndash;1980)</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                                    <div class="panel-body">
+                                        <p class="regular_short_column1">
+                                            This file continues the San Francisco Newspapers Index and provides approximately 720,000 citations to California-related articles in the <a href="http://catalog.library.ca.gov/F/?func=find-e&adjacent=N&find_scan_code=FIND_SYS&request=001000373" target="_blank"><em>San Francisco Chronicle</em></a>. As with our other indexes, if you cannot <a href="/california-history/visiting" target="_blank">visit</a> the State Library, you might be able to borrow microfiche copies of it from other libraries. For information about which libraries have copies, please check our <a href="~/Content/StateTemplate/pdf/californiaHistory/IndexResearch.pdf" target="_blank">Vital Statistics and Indexes Research Guide</a> or <a href="http://www.worldcat.org/title/san-francisco-chronicle-index-1950-1980/oclc/16641338/editions?editionsView=true&referer=br" target="_blank">Worldcat</a>.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading6">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse6" aria-expanded="true" aria-controls="collapse6">Biographical Files</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                                    <div class="panel-body">
+                                        <p>
+                                            If you are researching a California artist, early resident, author, actor, musician, state official, World War I soldier, or other notable this is a good resource to check. Our biographical files usually contain basic information, newspaper articles and sometimes personal letters. To see for whom we have files, please check the <a href="http://catalog.library.ca.gov/F/?func=find-e&adjacent=N&find_scan_code=FIND_SYS&request=000420333" target="_blank">California Information File</a> and the <a href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm" target="_blank">California Information File II</a>.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading7">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="true" aria-controls="collapse7">Pioneer Card File</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                                    <div class="panel-body">
+                                        <p>
+                                            Listing California pioneers who arrived before 1860 or their direct descendants, this file contains biographical information and vital statistics on many early Californians. To see for whom we have cards, please check the <a href="http://catalog.library.ca.gov/F/?func=find-e&adjacent=N&find_scan_code=FIND_SYS&request=000420333" target="_blank">California Information File</a> and the <a href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm" target="_blank">California Information File II</a>. If you cannot <a href="/california-history/visiting" target="_blank">visit</a> the library to view this collection, you might be able to borrow a microfilm copy of it from other libraries listed on <a href="http://www.worldcat.org/title/pioneer-index-file-california-1906-1935/oclc/865858588" target="_blank">Worldcat</a> or even view it online. For information, please check our <a href="~/Content/StateTemplate/pdf/californiaHistory/IndexResearch.pdf" target="_blank">Vital Statistics and Indexes Research Guide</a>.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading8">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="true" aria-controls="collapse8">Other Indexes</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                                    <div class="panel-body">
+                                        <p>
+                                            We also house a number of other, third-party specialized publications including <a href="https://catalog.library.ca.gov/F/?func=find-c&ccl_term=(+WSU+%3D+(+newspapers+indexes+)+OR+WSU+%3D+(+newspapers+genealogy+)+OR+WRD+%3D+(+newspaper+indexes+)+)+NOT+WSU+%3D+(+Catalogs+)+NOT+WSU+%3D+(+Indexing+)+Not+WRD+%3D+(+List+)&adjacent=N&local_base=calif" target="_blank">newspaper indexes</a>, <a href="/california-history/genealogy/county-indexes">genealogy indexes</a>, and a variety of other resources, some of which can be accessed remotely. Please consult our <a href="~/Content/StateTemplate/pdf/californiaHistory/IndexResearch.pdf" target="_blank">Vital Statistics and Indexes Research Guide</a> for more information. If you aren't finding what you need, please <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">ask us a question</a>.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Rotating image carousel -->
+                    <div class="third">
+                        <div class="autoLoop carousel owl-carousel carousel-content animated fadeInRight">
+                            <div class="item"><img src="~/Content/StateTemplate/images/caliorniaHistory/unique/1.jpg" title="Library card catalog" alt="Library card catalog" /></div>
+                            <div class="item"><img src="~/Content/StateTemplate/images/caliorniaHistory/unique/2.jpg" title="Shows Union card file lining either side of corridor. Two women at work filing." alt="Union Card File" /></div>
+                            <div class="item"><img src="~/Content/StateTemplate/images/caliorniaHistory/unique/3.jpg" title="Library School Class of 1919" alt="Library School Class of 1919" /></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 </div>
 
