@@ -3901,11 +3901,11 @@ h1 span[class^=ca-gov-icon-]:first-child {
 .second-level-nav > li {
     border: 1px solid transparent;
     border-right: 1px solid #d6d6d6;
-    border-bottom: 1px solid #d6d6d6
+    border-bottom: 1px solid #d6d6d6;
 }
 
     .second-level-nav > li:focus, .second-level-nav > li:hover {
-        background: #fff
+        background: #fff;
     }
 
 .second-level-nav .link-description {
