@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "CSL - Professional Reproduction - CA History Room";
+    ViewBag.PageTitle = "Professional Reproductions";
     ViewBag.Author = "Chris Pulido";
     ViewBag.Description = "When the item you want is too fragile for the California History Room staff to copy, we call in the professionals! Here is more information about their services.";
     ViewBag.Keywords = "California State Library, california history, room, photo, reproduction";
@@ -23,14 +24,14 @@
                 <li><a href="/california-history">California History</a></li>
                 <li style="text-transform:none;">Professional Reproductions</li>
             </ol>
-            <h2 class="page-title">Professional Reproductions</h2>
+            <h2 class="page-title">@ViewBag.PageTitle</h2>
         </div>
 
         <div class="section">
             <div class="container">
                 <div class="group">
                     <!-- Main content -->
-                    <div class="three-quarters">
+                    <div class="two-thirds">
                         <p>
                             The <a href="/california-history">California History Section</a> works with <a href="http://www.coxblackandwhitelab.com/" target="_blank">Cox Black and White Lab</a>, an independent photo lab to provide photographic prints and reproductions of items which have not yet been scanned by State Library staff. These orders are placed through <a href="/california-history">California History Room</a> staff, who facilitate the order and prepare items for the photographer.
                         </p>
@@ -392,52 +393,49 @@
 
                     </div>
                     <!-- Rotating image carousel -->
-                    <div class="quarter">
-                        <div class="autoLoop carousel owl-carousel carousel-content">
+                    <div class="third">
+                        <div class="autoLoop carousel owl-carousel carousel-content animated fadeInRight">
                             <img src="~/Content/StateTemplate/images/caliorniaHistory/photoReproduction/1.jpg" title="Dan Silva in Photoreproduction Section, Library and Courts Building" alt="Dan Silva in Photoreproduction Section, Library and Courts Building." />
                             <img src="~/Content/StateTemplate/images/caliorniaHistory/photoReproduction/2.jpg" title="California State Library, book processing staff" alt="Two staff processing books for interlibrary loan" />
                             <img src="~/Content/StateTemplate/images/caliorniaHistory/photoReproduction/3.jpg" title="A person using a scanner" alt="A person using a scanner" />
                         </div>
 
+
+
+                        <div class="panel panel-understated">
+                                    <div class="panel-heading">
+                                        <h4>Cox Black and White Lab, Inc.</h4>
+                                    </div>
+                                    <div class="panel-body">
+
+                                            <p>
+                                                <span class="ca-gov-icon-call"></span> <strong>Phone</strong><br>
+                                                (916) 631-7275
+                                            </p>
+
+                                            <p>
+                                                <span class="ca-gov-icon-time"></span> <strong>Business Days & Hours</strong><br>
+                                                Monday-Thursday 9:00AM-5:00PM<br />
+                                                Closed: Fridays, all State &amp; Federal Holidays
+                                            </p>
+
+                                            <p>
+                                                <span class="ca-gov-icon-mail"></span> <strong>E-Mail</strong><br />
+                                                <a href="mailto:customerservice@coxphotolab.com">customerservice@coxphotolab.com</a>
+                                            </p>
+                                            <p>
+                                                <span class="ca-gov-icon-globe"></span> <strong>Website</strong><br />
+                                                <a href="http://www.coxblackandwhitelab.com/">http://www.coxblackandwhitelab.com/</a>
+                                    </div>
+                      </div>
+
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <div class="section">
-            <div class="container">
-                <div class="panel panel-understated">
-                    <div class="panel-heading">
-                        <h4>Cox Black and White Lab, Inc.</h4>
-                    </div>
-                    <div class="panel-body">
-                        <div class="half">
-                            <p>
-                                <span class="ca-gov-icon-call"></span> <strong>Phone</strong><br>
-                                (916) 631-7275
-                            </p>
-
-                            <p>
-                                <span class="ca-gov-icon-time"></span> <strong>Business Days & Hours</strong><br>
-                                Monday-Thursday 9:00AM-5:00PM<br />
-                                Closed: Fridays, all State &amp; Federal Holidays
-                            </p>
-                        </div>
-                        <div class="half">
-                            <p>
-                                <span class="ca-gov-icon-mail"></span> <strong>E-Mail</strong><br />
-                                <a href="mailto:customerservice@coxphotolab.com">customerservice@coxphotolab.com</a>
-                            </p>
-                            <p>
-                                <span class="ca-gov-icon-globe"></span> <strong>Website</strong><br />
-                                <a href="http://www.coxblackandwhitelab.com/">http://www.coxblackandwhitelab.com/</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </main>
 </div>
 

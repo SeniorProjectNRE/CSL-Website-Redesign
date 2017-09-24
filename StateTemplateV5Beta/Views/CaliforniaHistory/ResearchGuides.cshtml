@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "CSL - Research Guides - CA History Room";
+    ViewBag.PageTitle = "California History and Research Guides";
     ViewBag.Author = "Chris Pulido";
     ViewBag.Description = "Have a research project but don't know where to start? Check the California History Room’s research guides and pathfinders! We cover counties, genealogy and more!";
     ViewBag.Keywords = "California State Library, california history, research, guide";
@@ -23,12 +24,12 @@
                 <li><a href="/california-history">California History</a></li>
                 <li style="text-transform:none;">Research Guides</li>
             </ol>
-            <h2 class="page-title">California History and Research Guides</h2>
+            <h2 class="page-title">@ViewBag.PageTitle</h2>
         </div>
         <div class="section">
             <div class="container">
                 <div class="group">
-                    <div class="three-quarters">
+                    <div class="two-thirds">
                         <div class="panel-group" role="tablist" aria-multiselectable="true">
                             <p>
                                 Are you stumped? We can help! The <a href="/california-history">California History Room</a> librarians have spent hundreds of hours developing research guides for specific California topics. You can see our current guides below. If you cannot find a guide to the topic you are researching or if you still have questions, please <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
@@ -119,8 +120,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="quarter">
-                        <div class="autoLoop carousel owl-carousel carousel-content">
+                    <div class="third">
+                        <div class="autoLoop carousel owl-carousel carousel-content animated fadeInRight">
                             <div class="item"><img src="~/Content/StateTemplate/images/caliorniaHistory/researchGuides/1.jpg" title="Richard Dillon and an unidentified staff member seated at desks in the Sutro Library Research Room." alt="View of Richard Dillon and an unidentified staff member seated at desks in the Sutro Library Research Room. Books stacked on the tables and on shelves; bust of Adolph Sutro at left." /></div>
                             <div class="item"><img src="~/Content/StateTemplate/images/caliorniaHistory/researchGuides/2.jpg" title="Union card file, within 1970s." alt="Union card file lining on both sides of corridor. Two women at work filing." /></div>
                             <div class="item"><img src="~/Content/StateTemplate/images/caliorniaHistory/researchGuides/3.jpg" title="Library users in the Government Publications Section, California State Library, Sacramento, April, 1970." alt=" Shows staff and patrons in Government Publications reading room. Sacramento, April, 1970." /></div>

@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "CSL - Visiting Us - CA History Room";
+    ViewBag.PageTitle = "Visiting the California History Room";
     ViewBag.Author = "Chris Pulido";
     ViewBag.Description = "Planning on visiting the California History Room? This page will tell you where to find us, what to expect when you arrive and about our basic research policies.";
     ViewBag.Keywords = "California State Library, visit, california history, room";
@@ -24,13 +25,13 @@
                 <li><a href="/california-history">California History</a></li>
                 <li style="text-transform:none;">Visiting the California History Room</li>
             </ol>
-            <h2 class="page-title">Visiting the California History Room</h2>
+            <h2 class="page-title">@ViewBag.PageTitle</h2>
         </div>
 
         <div class="section">
             <div class="container">
                 <div class="group">
-                    <div class="three-quarters">
+                    <div class="two-thirds">
 
                         <p>
                             We are delighted that you are thinking about visiting us! You can drop by any time during our open hours. If you're wondering what to expect when you come by, you might find the information on this page helpful. You can also <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us directly</a> with any specific questions or concerns you may have.
@@ -170,8 +171,8 @@
 
 
                     </div>
-                    <div class="quarter" style="padding-bottom:15px; padding-top:15px;">
-                        <div class="autoLoop carousel owl-carousel carousel-content">
+                    <div class="third" style="padding-bottom:15px; padding-top:15px;">
+                        <div class="autoLoop carousel owl-carousel carousel-content animated fadeInRight">
                             <div class="item">
                                 <img src="~/Content/StateTemplate/images/caliorniaHistory/visiting/1.jpg" title="Rob Stewart of 'Rob on the Road,' in the Special Collections room with Gary Kurutz of the State Library." alt="Rob Stewart of 'Rob on the Road,' in the Special Collections room with Gary Kurutz of the State Library."/>
                             </div>
