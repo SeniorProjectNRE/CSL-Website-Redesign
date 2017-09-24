@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
-
+<div id="top"></div>
 <div id="main-content" class="main-content">
     <main class="main-primary">
 
@@ -29,48 +29,65 @@
                 </li>
                 <li class="active">California Gold Rush</li>
             </ol>
-            <h3 class="orange">California Gold Rush</h3>
+            <h1 class="orange">California Gold Rush</h1>
+        </div>
+
+
+
+            @Html.Partial("~/Views/shared/CAGoldRush/_Intro.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section1.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section2.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section3.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section4.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section5.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section6.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section7.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section8.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section9.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section10.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section11.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section12.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section13.cshtml")
+            @Html.Partial("~/Views/shared/CAGoldRush/_Section14.cshtml")
+            
+
+       
+        <div class="container section">
+            <div class="section">
+                <div class="third" name="section1">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section1.jpg" alt="section 1 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section I. The Great Discovery</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section1" aria-expanded="false" aria-controls="section1" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third" name="section2">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section2.jpg" alt="section 2 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section II. By Sea to the Golden Land</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section2" aria-expanded="false" aria-controls="section2" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third" name="section3">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section3.jpg" alt="section 3 image">
+                        <div class="card-block">
+                            <h4 class="card-title">Section III. Ho for California! The Overland Trek</h4>
+                            <p></p>
+                            <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section3" aria-expanded="false" aria-controls="section3" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         
-       
-        <div class="container section">
-
-            <div class="third" name="section1">
-                <div class="card card-default">
-                    <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section1.jpg" alt="section 1 image">
-                    <div class="card-block">
-                        <h4 class="card-title">Section I. The Great Discovery</h4>
-                        <p></p>
-                        <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section1" aria-expanded="false" aria-controls="section1" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                    </div>
-                </div>
-            </div>
-            <div class="third" name="section2">
-                <div class="card card-default">
-                    <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section2.jpg" alt="section 2 image">
-                    <div class="card-block">
-                        <h4 class="card-title">Section II. By Sea to the Golden Land</h4>
-                        <p></p>
-                        <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section2" aria-expanded="false" aria-controls="section2" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                    </div>
-                </div>
-            </div>
-            <div class="third" name="section3">
-                <div class="card card-default">
-                    <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section3.jpg" alt="section 3 image">
-                    <div class="card-block">
-                        <h4 class="card-title">Section III. Ho for California! The Overland Trek</h4>
-                        <p></p>
-                        <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section3" aria-expanded="false" aria-controls="section3" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section1.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section2.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section3.cshtml")
         
         
 
@@ -106,9 +123,7 @@
                 </div>
             </div>
         </div>
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section4.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section5.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section6.cshtml")
+        
         
         
 
@@ -144,9 +159,7 @@
                 </div>
             </div>
         </div>
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section7.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section8.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section9.cshtml")
+        
         
         
 
@@ -182,19 +195,17 @@
                 </div>
             </div>
         </div>
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section10.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section11.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section12.cshtml")
+        
         
 
-        <div class="container section">
+        <div class="container section" role="tab" data-toggle="collapse" href="#section13" aria-expanded="false" aria-controls="section13" aria-selected="false" id="ui-collapse-278">
             <div class="third" name="section13">
                 <div class="card card-default">
                     <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section13.jpg" alt="section 13 image">
                     <div class="card-block">
                         <h4 class="card-title">Section XII. Mining Companies</h4>
                         <p></p>
-                        <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section13" aria-expanded="false" aria-controls="section13" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        <a role="tab" class="btn btn-default" data-toggle="collapse" href="#top" aria-expanded="false" aria-controls="section13" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
                     </div>
                 </div>
             </div>
@@ -203,13 +214,12 @@
                     <div class="card-block">
                         <h4 class="card-title">Credits</h4>
                         <p></p>
-                        <a role="tab" class="btn btn-default" data-toggle="collapse" href="#section14" aria-expanded="false" aria-controls="section14" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                        <a role="tab" class="btn btn-default" data-toggle="collapse" href="#top" aria-expanded="false" aria-controls="section14" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section13.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section14.cshtml")
+        
     </main>
 </div>

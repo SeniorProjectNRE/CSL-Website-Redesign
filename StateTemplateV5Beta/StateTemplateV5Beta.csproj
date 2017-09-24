@@ -1089,7 +1089,7 @@
     <Content Include="Views\Shared\CAGoldRush\_Section5.cshtml" />
     <Content Include="Views\Shared\CAGoldRush\_Section4.cshtml" />
     <Content Include="Views\Shared\CAGoldRush\_Section3.cshtml" />
-    <Content Include="Views\Shared\CAGoldRush\_Section15.cshtml" />
+    <Content Include="Views\Shared\CAGoldRush\_Intro.cshtml" />
     <Content Include="Views\Shared\CAGoldRush\_Section14.cshtml" />
     <Content Include="Views\Shared\CAGoldRush\_Section13.cshtml" />
     <Content Include="Views\Shared\CAGoldRush\_Section12.cshtml" />
