@@ -1,4 +1,20 @@
-﻿
+﻿#section-controls {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px 0px;
+    transition: width .5s;
+    -webkit-transition: width .5s;
+}
+
+.section-selector{
+    list-style-type:none;
+}
+
+#section-controls:hover{
+    color:gold;
+}
 
 .header-large-banner {
     background-position: top;
