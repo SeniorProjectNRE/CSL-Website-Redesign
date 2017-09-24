@@ -289,6 +289,8 @@
     <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-Gold.svg" />
     <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-White.svg" />
     <Content Include="Content\StateTemplate\images\ca-logo.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\bouquet.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\maynard_dixon.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\festival.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction1.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction2.png" />
@@ -296,6 +298,7 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\johnson_band.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\marysville_yuba.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\orchard.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\statue.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\sword_performer.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\winchester_mystery_house.jpg" />
     <Content Include="Content\StateTemplate\images\contact-top.jpg" />

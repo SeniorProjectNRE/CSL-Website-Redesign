@@ -1,11 +1,112 @@
 ﻿
 @{
-    ViewBag.Title = "Donations";
+    ViewBag.Title = "CSL - Donations - CA History Room";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "Do you have historic California papers, magazines or books? Save space and make them publicly accessible! Donate them to the California History Room!";
+    ViewBag.Keywords = "History Room, Donations";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Donations</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/california-history">California History</a></li>
+                    <li>Donations</li>
+                </ol>
+
+                <h2 class="page-title">@(ViewBag.Title)</h2>
+
+                <div class="group">
+                    <div class="two-thirds">
+                        <p>
+                            Donations of all kinds of materials relating to the history of California are welcomed. Your assistance in helping the <a href="/home">State Library</a> preserve a record of our times for future research and educational use is greatly appreciated. 
+                            Contemporary materials as well as traditional Californiana are added to <a href="/california-history/collections">the collection</a>. 
+                            Please <a href="mailto:cslcal@library.ca.gov">email us</a> so that we can help you determine if the <a href="/california-history/">California History Room</a> is an appropriate repository for your collection.
+                        </p>
+
+                        <!--<p><span class="ca-gov-icon-info"></span>   Click on the title below for more information.</p>-->
+
+                        <div class="list-unstyled p-b-md">
+                            <h3>Donations News</h3>
+                            <p>
+                                <a href="">Just Donated</a>
+                            </p>
+                        </div>
+                        
+
+                        <div class="panel panel-standout highlight">
+                            <div class="panel-heading" style="text-align:center">
+                                <h2>Types of Donations</h2>
+                            </div>
+                            <div class="panel-body">
+                                <div class="half">
+                                    <h4>Material Donations</h4>
+                                    <p>
+                                        If you are considering donating items to us, please <a href="mailto:cslcal@library.ca.gov">send us an email</a> for further information. The following two online publications from the Society of American Archivists also offer donation guidance:
+                                    </p>
+                                    <ul class="list-overstated">
+                                        <li><a href="http://www.archivists.org/publications/donating-familyrecs.asp" target="_blank">Guide to Donating Your Personal or Family Papers to a Repository </a></li>
+                                        <li><a href="http://www.archivists.org/publications/donating-orgrecs.asp" target="_blank">Guide to Donating Your Organization's Records to a Repository</a></li>
+                                    </ul>
+                                </div>
+                                <div class="half">
+                                    <h4>Financial Donations</h4>
+                                    <p>
+                                        The <a href="/home">California State Library</a> has established a restoration fund for those who wish to contribute to the conservation and preservation of the existing collections. Monetary gifts to this fund or to the State Library in general, may be sent to:
+                                    </p>
+
+                                    <div class="location mini">
+                                        <div class="ca-gov-icon-road-pin"></div>
+
+                                        <div class="contact">
+                                            <div class="title"><a href="http://cslfdn.org/" target="_blank">California State Library Foundation</a></div>
+                                            <div class="address">1225 8th Street, Suite 345, Sacramento, CA 95814
+                                                <p>
+                                                    Phone Number: <a href="tel:+19164476331">916-447-6331</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Please specify that your donation is to be used for the California History Section. For information about the Foundation, visit its <a href="http://cslfdn.org/">web site</a> .
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="third">
+                        <div class="autoLoop carousel owl-carousel carousel-content">
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/statue.jpg" alt="Statue" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/maynard_dixon.jpg" alt="Maynard Dixon" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/bouquet.jpg" alt="Bouquet" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
-
