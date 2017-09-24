@@ -815,6 +815,16 @@
     <Content Include="Content\StateTemplate\pdf\workWithUs\StaffServicesAnalystTransferExam.pdf" />
     <Content Include="Content\StateTemplate\pdf\workWithUs\std678.pdf" />
     <Content Include="Content\StateTemplate\pdf\californiaHistory\alamedaresearch.pdf" />
+    <Content Include="Content\StateTemplate\pdf\californiaHistory\AugustBooklist.pdf" />
+    <Content Include="Content\StateTemplate\pdf\californiaHistory\January-FebruaryBooklist.pdf" />
+    <Content Include="Content\StateTemplate\pdf\californiaHistory\July-AugDisplay.pdf" />
+    <Content Include="Content\StateTemplate\pdf\californiaHistory\JulyBooklist.pdf" />
+    <Content Include="Content\StateTemplate\pdf\californiaHistory\JuneBooklist.pdf" />
+    <Content Include="Content\StateTemplate\pdf\californiaHistory\March-AprilDisplay.pdf" />
+    <Content Include="Content\StateTemplate\pdf\californiaHistory\May-JuneDisplay.pdf" />
+    <Content Include="Content\StateTemplate\pdf\californiaHistory\November-DecemberBooklist.pdf" />
+    <Content Include="Content\StateTemplate\pdf\californiaHistory\OctoberBooklist.pdf" />
+    <Content Include="Content\StateTemplate\pdf\californiaHistory\SeptemberBooklist.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />

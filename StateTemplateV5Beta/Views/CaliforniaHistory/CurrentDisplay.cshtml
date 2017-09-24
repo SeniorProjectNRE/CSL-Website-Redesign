@@ -4,6 +4,8 @@
     ViewBag.Author = "Ryan Salcido";
     ViewBag.Description = "At the California History Room, we love to display our images, ephemera and book collections! See what treasures we have selected for your viewing pleasure.";
     ViewBag.Keywords = "History Room, Collection, Highlights";
+
+    ViewBag.SubHeading = "It Came from the Archives?! The Weird, Wacky and Wonderful Treasures in our library";
 }
 
 <head>
@@ -42,9 +44,45 @@
 
                 <h2 class="page-title">@(ViewBag.Title)</h2>
 
+                <div class="two-thirds">
+                    <h3 class="orange" style="text-align:center;">@(ViewBag.SubHeading)</h3>
+                </div>
+
                 <div class="group">
                     <div class="two-thirds">
+                        <p>Have you ever puzzled over the Mystery Spot or wondered why California had an emperor? Do you want to take a tour of the Winchester Mystery House? 
+                           See the stranger aspects of California's past and prime your appetite for the wild sights at our next big event, the <a href="/california-history/events">Sacramento Archives Crawl</a>, in the <a href="/california-history/">California History Section's</a> latest
+                           <a href="/california-history/books">books</a>, <a href="/california-history/pictorial-resources">photographs</a> and <a href="/california-history/ephemera">ephemera</a> display
+                           <em>"It Came from the Archives?! The Weird, Wacky and Wonderful Treasures in our Library."</em>
+                           You won't be disappointed but hurry, this display is only up through the end of October.
+                        </p>
+                        <p class="list-unstyled p-b-md">
+                            Our monthly display is available for viewing from 9:30-4 Monday-Friday (<a href="/visit-us/locations-and-hours/">excluding State holidays</a>) in the California History Section, <a href="https://maps.google.com/maps?oe=utf-8&client=firefox-a&q=900+N+Street+sacramento&ie=UTF-8&hq=&hnear=0x809ad128b7a290ed:0xba7d239668ae7fa7,900+N+St,+Sacramento,+CA+95814&gl=us&ei=CplsUMeBC8zSigKm-YEQ&ved=0CCEQ8gEwAA" target="_blank">900 N Street</a>, Room 200, Sacramento, CA 95814. 
+                            If you have any questions please feel free to contact us.
+                        </p>
 
+                        <div class="panel panel-standout highlight">
+                            <div class="panel-heading" style="text-align:center">
+                                <h2>Previous Displays</h2>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="list-overstated">
+                                    <li><a href="~/Content/StateTemplate/pdf/californiaHistory/July-AugDisplay.pdf" target="_blank">July-August 2017: Make Love Not War: California in the 1960’s</a></li>
+                                    <li><a href="~/Content/StateTemplate/pdf/californiaHistory/May-JuneDisplay.pdf" target="_blank">May-June 2017: Wildflowers in California</a></li>
+                                    <li><a href="~/Content/StateTemplate/pdf/californiaHistory/March-AprilDisplay.pdf" target="_blank">March-April 2017: Horses and Horse Racing in California</a></li>
+                                    <li><a href="~/Content/StateTemplate/pdf/californiaHistory/January-FebruaryBooklist.pdf" target="_blank">January-February 2017: Mining in California</a></li>
+                                    <li><a href="~/Content/StateTemplate/pdf/californiaHistory/November-DecemberBooklist.pdf" target="_blank">November-December 2016: Hollywood Movie Stars</a></li>
+                                    <li><a href="~/Content/StateTemplate/pdf/californiaHistory/OctoberBooklist.pdf" target="_blank">October 2016 Selection: A Thirst for History – Wine in California</a></li>
+                                    <li><a href="~/Content/StateTemplate/pdf/californiaHistory/SeptemberBooklist.pdf" target="_blank">September 2016 Selection: Sutter's Fort</a></li>
+                                    <li><a href="~/Content/StateTemplate/pdf/californiaHistory/AugustBooklist.pdf" target="_blank">August 2016 Selection: California Beaches</a></li>
+                                    <li><a href="~/Content/StateTemplate/pdf/californiaHistory/JulyBooklist.pdf" target="_blank">July 2016 Selection: Planes, Trains and Automobiles</a></li>
+                                    <li><a href="~/Content/StateTemplate/pdf/californiaHistory/JuneBooklist.pdf" target="_blank">June 2016 Selection: California – A Political State of Mind</a></li>
+                                </ul>
+                                <p>
+                                    If you have difficulty accessing any material on this site, please contact us in writing and we will work with you to make the information available. You can direct your request to our <a href="mailto:webmaster@library.ca.gov">Webmaster</a>.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="third">
@@ -64,7 +102,9 @@
                         </div>
                     </div>
                 </div>
-</main>
+            </div>
+        </div>
+    </main> 
 </div>
 
 
