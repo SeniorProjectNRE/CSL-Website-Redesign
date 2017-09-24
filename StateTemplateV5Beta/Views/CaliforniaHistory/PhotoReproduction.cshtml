@@ -1,7 +1,443 @@
 ﻿
 @{
-    ViewBag.Title = "PhotoReproduction";
+    ViewBag.Title = "CSL - Professional Reproduction - CA History Room";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "When the item you want is too fragile for the California History Room staff to copy, we call in the professionals! Here is more information about their services.";
+    ViewBag.Keywords = "California State Library, california history, room, photo, reproduction";
 }
-<!--insertmaincontent-->
-<h2>PhotoReproduction</h2>
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<div id="main-content" class="main-content">
+    <main class="main-primary">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/collections">Our Collections</a></li>
+                <li><a href="/california-history">California History</a></li>
+                <li style="text-transform:none;">Professional Reproductions</li>
+            </ol>
+            <h2 class="page-title">Professional Reproductions</h2>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="group">
+                    <!-- Main content -->
+                    <div class="three-quarters">
+                        <p>
+                            The <a href="/california-history">California History Section</a> works with <a href="http://www.coxblackandwhitelab.com/" target="_blank">Cox Black and White Lab</a>, an independent photo lab to provide photographic prints and reproductions of items which have not yet been scanned by State Library staff. These orders are placed through <a href="/california-history">California History Room</a> staff, who facilitate the order and prepare items for the photographer.
+                        </p>
+                        <br />
+                        <p><span class="ca-gov-icon-info"></span>   Click on the titles below for more information.</p>
+
+                        <div class="panel-group" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading1">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">State Library Conditions</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>State Library Staff cannot provide price quotes or accept payment for orders completed by the independent photographer.</li>
+                                            <li>The California State Library reserves the right to restrict the reproduction of rare, fragile or valuable items, as well as items still under copyright.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading2">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">General Photographer Fees</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                    <div class="panel-body">
+                                        <table class="table table-default">
+                                            <tbody>
+                                                <tr>
+                                                    <th><strong>Handling</strong></th>
+                                                    <td>$5 per order</td>
+                                                </tr>
+                                                <tr>
+                                                    <th><strong>Shipping</strong></th>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Up to 6oz and/or 8.5x11 = $7</li>
+                                                            <li>Larger prints require additional postage. Contact photographer for quote.</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><strong>Sales Tax</strong></th>
+                                                    <td>Local to delivery location in California.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th><strong>Special Set-up</strong></th>
+                                                    <td>
+                                                        <ul>
+                                                            
+                                                            <li><strong>Digital Photography</strong> &ndash; originals up to 18x22" = $20 per order</li>
+                                                            <li>
+                                                                <strong>ALL</strong> &ndash; originals
+                                                                <span style="text-decoration:underline">larger than</span> 18x22" = Contact photographer for quote.
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading3">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">Additional B&amp;W/Color Printing Fees</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                    <div class="panel-body">
+                                        <p class="regular_short_column1">
+                                            Creating a paper copy from a negative, slide, or digital file.
+                                        </p>
+                                        <table class="table table-default">
+                                            <thead>
+                                                <tr>
+                                                    <th>Print Size</th>
+                                                    <th>B&W from existing negative</th>
+                                                    <th>B&W no negative available*</th>
+                                                    <th>COLOR from existing negative/slide</th>
+                                                    <th>B&W or COLOR from digital file</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>&le; 5x7"</td>
+                                                    <td>$9.50</td>
+                                                    <td>$25.50</td>
+                                                    <td>$17</td>
+                                                    <td>$7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8x10"</td>
+                                                    <td>$13.50</td>
+                                                    <td>$29.50</td>
+                                                    <td>$21</td>
+                                                    <td>$11</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11x14"</td>
+                                                    <td>$29.50</td>
+                                                    <td>$45.50</td>
+                                                    <td>$47</td>
+                                                    <td>$22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16x20"</td>
+                                                    <td>-----</td>
+                                                    <td>-----</td>
+                                                    <td>$75</td>
+                                                    <td>$30</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td_left_l" colspan="5">
+                                                        <ul>
+                                                            <li>Prints larger than 11x14" must be digitized prior to printing. See Scanning and Digital Files for additional costs.</li>
+                                                            <li>Up to 40" prints available. Contact photographer for quote.</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>
+                                            <em>* When ordering prints, scans, negatives or transparencies of materials for which the California State Library does not own a negative, a negative will be made and the $16.00 fee will be charged to patron. The negative will be retained for the collection of the California State Library.</em>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading4">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4">Additional Copy Work Fees</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                                    <div class="panel-body">
+                                        <p>
+                                            Using a film or high resolution digital camera to duplicate a two dimensional object.
+                                        </p>
+                                        <table class="table table-default">
+                                            <thead>
+                                                <tr>
+                                                    <th>ORIGINAL<br /> Image Size</th>
+                                                    <th>NEGATIVE<br /> (B&W only)</th>
+                                                    <th>DIGITAL<br /> (B&W or Color)*</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>&le; 18x22"</td>
+                                                    <td>$16 each</td>
+                                                    <td>Set-up Fee + Digital file charge</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&gt;18x22"</td>
+                                                    <td>-----</td>
+                                                    <td>Contact photographer for quote</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>
+                                            <em>*Set-up only, there is an additional fee for digital processing based on file size. See fee disclaimer.</em>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading5">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapse5">Additional Scanning/Digital File Fees</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                                    <div class="panel-body">
+                                        <p>
+                                            Using a flatbed scanner or high resolution digital camera, along with computer software to duplicate and process an image.
+                                        </p>
+                                        <p>
+                                            The standard file produced by the photographer is an 8 bit Adobe 1998 RBG TIFF scanned at 100% and 600ppi (for original prints up to 8x10" and negatives up to 4x5"). Higher resolution scans are available, up to 5,000/10,000 for items up to 12x18". Jpeg file format is also available upon request.
+                                        </p>
+                                        <table class="table table-default">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Desired Print Size = File Size</th>
+                                                    <th>Cost</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>&le; 8x10"</td>
+                                                    <td>5-19 Mb</td>
+                                                    <td>$10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11x14"</td>
+                                                    <td>20-40 Mb</td>
+                                                    <td>$25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16x20"</td>
+                                                    <td>41-85 Mb</td>
+                                                    <td>$45</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20x24"</td>
+                                                    <td>86-140 Mb</td>
+                                                    <td>$65</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading6">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse6" aria-expanded="true" aria-controls="collapse6">Fee Disclaimer</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                                    <div class="panel-body">
+                                        <p>
+                                            Costs may vary for non-standard sized originals. Contact photographer for quote.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading7">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="true" aria-controls="collapse7">Payment Methods</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                                    <div class="panel-body">
+                                        <p>
+                                            The photographer requires payment prior to delivery of all orders. Payments can be made to the photographer with: Visa, Mastercard, American Express, Cash, Check, or Money order.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading8">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="true" aria-controls="collapse8">Digital delivery options</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                                    <div class="panel-body">
+                                        <table class="table table-default">
+                                            <thead>
+                                                <tr>
+                                                    <th>Option</th>
+                                                    <th>Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>CD/DVD</td>
+                                                    <td>$5 per disc</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Memory Stick</td>
+                                                    <td>&ge;$15 (depends on capacity needed)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Email via Dropbox</td>
+                                                    <td>$5 per order</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading9">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse9" aria-expanded="true" aria-controls="collapse9">Delivery Times</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                                    <div class="panel-body">
+                                        <p>
+                                            Regular orders will only be picked up on the 1st and 3rd Fridays of each month. All times below are from the date of receipt at the lab, <span style="text-decoration:underline; font-weight: bold">NOT</span> the date the order is placed.
+                                        </p>
+                                        <table class="table table-default">
+                                            <thead>
+                                                <tr>
+                                                    <th>Option</th>
+                                                    <th>Time</th>
+                                                    <th>Premium</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Normal</td>
+                                                    <td>3-4 weeks</td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>RUSH</td>
+                                                    <td>1 &#189; weeks</td>
+                                                    <td>2x print/scan cost</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ASAP</td>
+                                                    <td>3-4 days</td>
+                                                    <td>3x print/scan cost + $40 pick-up fee</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Overnight</td>
+                                                    <td colspan="2" class="td_left_l">Contact photographer for quote.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading10">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse10" aria-expanded="true" aria-controls="collapse10">Contact Photographer</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                                    <div class="panel-body">
+                                        <p class="regular">
+                                            State Library Staff cannot provide price quotes or accept payment for orders completed by the independent photographer. For price quotes, please contact the photographer and be prepared to provide:
+                                        </p>
+                                        <ul>
+                                            <li>Accurate measurements and format of the original item to be reproduced</li>
+                                            <li>How quickly you need the final product (see Turnaround Times, above)</li>
+                                            <li>Format to be produced (b&w print, color print, digital file only)</li>
+                                            <li>For print requests &ndash; desired print size</li>
+                                            <li style="list-style-type:none;">
+                                                <ul>
+                                                    <li>For digital file requests &ndash; (see Scanning and Digital Files, below)</li>
+                                                    <li>Final file or print size</li>
+                                                    <li>Resolution of final file (if higher than 600ppi is needed)</li>
+                                                    <li>Delivery method</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+
+                    </div>
+                    <!-- Rotating image carousel -->
+                    <div class="quarter">
+                        <div class="autoLoop carousel owl-carousel carousel-content">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/photoReproduction/1.jpg" title="Dan Silva in Photoreproduction Section, Library and Courts Building" alt="Dan Silva in Photoreproduction Section, Library and Courts Building." />
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/photoReproduction/2.jpg" title="California State Library, book processing staff" alt="Two staff processing books for interlibrary loan" />
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/photoReproduction/3.jpg" title="A person using a scanner" alt="A person using a scanner" />
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="panel panel-understated">
+                    <div class="panel-heading">
+                        <h4>Cox Black and White Lab, Inc.</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="half">
+                            <p>
+                                <span class="ca-gov-icon-call"></span> <strong>Phone</strong><br>
+                                (916) 631-7275
+                            </p>
+
+                            <p>
+                                <span class="ca-gov-icon-time"></span> <strong>Business Days & Hours</strong><br>
+                                Monday-Thursday 9:00AM-5:00PM<br />
+                                Closed: Fridays, all State &amp; Federal Holidays
+                            </p>
+                        </div>
+                        <div class="half">
+                            <p>
+                                <span class="ca-gov-icon-mail"></span> <strong>E-Mail</strong><br />
+                                <a href="mailto:customerservice@coxphotolab.com">customerservice@coxphotolab.com</a>
+                            </p>
+                            <p>
+                                <span class="ca-gov-icon-globe"></span> <strong>Website</strong><br />
+                                <a href="http://www.coxblackandwhitelab.com/">http://www.coxblackandwhitelab.com/</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
 

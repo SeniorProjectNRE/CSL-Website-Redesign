@@ -1,11 +1,136 @@
 ﻿
 @{
-    ViewBag.Title = "ResearchGuides";
+    ViewBag.Title = "CSL - Research Guides - CA History Room";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "Have a research project but don't know where to start? Check the California History Room’s research guides and pathfinders! We cover counties, genealogy and more!";
+    ViewBag.Keywords = "California State Library, california history, research, guide";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>ResearchGuides</h2>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/collections">Our Collections</a></li>
+                <li><a href="/california-history">California History</a></li>
+                <li style="text-transform:none;">Research Guides</li>
+            </ol>
+            <h2 class="page-title">California History and Research Guides</h2>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="group">
+                    <div class="three-quarters">
+                        <div class="panel-group" role="tablist" aria-multiselectable="true">
+                            <p>
+                                Are you stumped? We can help! The <a href="/california-history">California History Room</a> librarians have spent hundreds of hours developing research guides for specific California topics. You can see our current guides below. If you cannot find a guide to the topic you are researching or if you still have questions, please <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
+                            </p>
+                            <p>
+                                Documents in PDF format can be viewed with the <a href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank">Adobe Acrobat Reader</a>.
+                            </p>
+
+                            <br/>
+                            <p><span class="ca-gov-icon-info"></span>   Click on the titles below for more information.</p>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading1">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">What's New</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/OdditiesResearch.pdf" target="_blank">California Oddities</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/SixtiesResearch.pdf" target="_blank">California in the 1960's</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/YubaResearch.pdf" target="_blank">Yuba County</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/TrainResearch.pdf" target="_blank">Railroads in California</a> (PDF)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading2">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">General California Guides</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/OdditiesResearch.pdf" target="_blank">California Oddities</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/SixtiesResearch.pdf" target="_blank">California in the 1960's</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/ImageResearch.pdf" target="_blank">Images of California</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/IndexResearch.pdf" target="_blank">Remote Access: Vital Statistics and Indexes</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/FlowersResearch.pdf" target="_blank">Wildflowers in California</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/collectionGuide.pdf" target="_blank">Guide to the collection</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/California_land_grants_research_guide.pdf" target="_blank">Resources for researching California land grants</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/NativeAmericanResearch.pdf" target="_blank">Resources for researching California Native Americans</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/MiningResearch.pdf" target="_blank">Mining in California</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/HorsesResearch.pdf" target="_blank">Horses and Horse Racing in California</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/TrainResearch.pdf" target="_blank">Railroads in California</a> (PDF)</li>
+                                        </ul>	
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading3">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">Location Specific Guides</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/YubaResearch.pdf" target="_blank">Yuba County</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/AlamedaResearch.pdf" target="_blank">Alameda County</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/1906EarthquakeResearch.pdf" target="_blank">Resources for researching the 1906 San Francisco earthquake and fire</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/SacHousesResearch.pdf" target="_blank">Resources for researching Sacramento buildings</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/SutterFortCharacterGuide.pdf" target="_blank">Sutter's Fort Character Guide</a> (PDF)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading4">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4">Genealogy Guides</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/IndexResearch.pdf" target="_blank">Remote Access: Vital Statistics and Indexes</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/genealogyguide.pdf" target="_blank">Guide to sources for genealogy</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/genealogyByDate.pdf" target="_blank">Genealogy resources by date</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/FederalCensusResearch.pdf" target="_blank">Using federal census resources in the California History Room</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/StateCensusResearch.pdf" target="_blank">Using the 1852 California state census in the California History Room</a> (PDF)</li>
+                                            <li><a href="~/Content/StateTemplate/pdf/californiaHistory/ImmigrationAndNaturalization.pdf" target="_blank">Immigration and naturalization resources in the California History Room</a> (PDF)</li>
+                                        </ul>		
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quarter">
+                        <div class="autoLoop carousel owl-carousel carousel-content">
+                            <div class="item"><img src="~/Content/StateTemplate/images/caliorniaHistory/researchGuides/1.jpg" title="Richard Dillon and an unidentified staff member seated at desks in the Sutro Library Research Room." alt="View of Richard Dillon and an unidentified staff member seated at desks in the Sutro Library Research Room. Books stacked on the tables and on shelves; bust of Adolph Sutro at left." /></div>
+                            <div class="item"><img src="~/Content/StateTemplate/images/caliorniaHistory/researchGuides/2.jpg" title="Union card file, within 1970s." alt="Union card file lining on both sides of corridor. Two women at work filing." /></div>
+                            <div class="item"><img src="~/Content/StateTemplate/images/caliorniaHistory/researchGuides/3.jpg" title="Library users in the Government Publications Section, California State Library, Sacramento, April, 1970." alt=" Shows staff and patrons in Government Publications reading room. Sacramento, April, 1970." /></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
