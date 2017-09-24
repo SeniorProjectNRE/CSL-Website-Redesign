@@ -1,9 +1,12 @@
-﻿<div class="site-settings section section-standout" role="alert" id="intro">
+﻿@{
+    ViewBag.SectionTitle = "Introduction";
+}
+<div class="site-settings section section-standout collapse collapsed in" role="alert" id="intro">
     <div class="container  p-y">
         <div class="row">
             <!--title of page-->
             <div class="section-title col-md-6 col-sm-12 col-xs-12">
-                <h2 class="orange" id="title">Introduction</h2>
+                <h2 class="orange" id="title">@ViewBag.SectionTitle</h2>
             </div>
             <!--button for next section-->
             <div class="section-next col-md-2 col-sm-4 col-xs-12">
