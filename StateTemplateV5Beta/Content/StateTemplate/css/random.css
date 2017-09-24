@@ -1,11 +1,15 @@
 ﻿#section-controls {
     color: white;
     text-decoration: none;
-    text-align: center;
+    text-align: right;
     cursor: pointer;
     padding: 20px 0px;
     transition: width .5s;
     -webkit-transition: width .5s;
+}
+
+.section-close, .section-previous, .section-next{
+    text-align:right;
 }
 
 .section-selector{
