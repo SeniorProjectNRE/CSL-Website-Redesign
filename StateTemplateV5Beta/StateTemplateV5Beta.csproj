@@ -312,6 +312,7 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction1.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction2.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction3.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\periodical_month_candles.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\photoReproduction\1.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\photoReproduction\2.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\photoReproduction\3.jpg" />
