@@ -343,6 +343,7 @@
     <Content Include="Content\StateTemplate\images\icons\talkingbooks.png" />
     <Content Include="Content\StateTemplate\images\icons\tours.png" />
     <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
+    <Content Include="Content\StateTemplate\images\services\PublicServices.png" />
     <Content Include="Content\StateTemplate\images\sutro-images\ASutro.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\coloringbook.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\countryFlags\Afghanistan.gif" />

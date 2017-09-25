@@ -1,11 +1,100 @@
-﻿
-@{
-    ViewBag.Title = "ToPublic";
+﻿@{
+    ViewBag.Title = "Services to the General Public";
+    ViewBag.Author = "Jonathan Shaw";
+    ViewBag.Description = "California State Library Public Services page.  Find info about public services here.";
+    ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library, services, general, public";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>ToPublic</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb dynamic"></ol>
+                <h1 class="orange" id="title">@ViewBag.Title</h1>
+
+                <div class="half" style="margin-left: -15px;">
+                    <h2>
+                        Overview
+                    </h2>
+                    <p>
+                        A wide range of services are available to Californians through the California State Library. The library provides reference services to visitors of the library, as well as those contacting us via phone, fax, letter, email or TDD. Visitors are welcome to use our collections on site. The State Library's circulating materials are loaned to the public through local libraries. Other services include braille and recorded books, a directory of California libraries, support for literacy programs and volunteer programs, use of computers with Internet access, and online access to our catalogs. For more information, please contact one of our information desks.
+                    </p>
+                    <h2>
+                        Information Services at the State Library
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="http://catalog.library.ca.gov/F?RN=352681599">
+                                Online Catalogs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.library.ca.gov/services/research-resources/reference/">
+                                Information and Reference
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.library.ca.gov/services/borrowing/">
+                                Borrowing Library Materials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.library.ca.gov/california-history/">
+                                California History Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.library.ca.gov/california-history/genealogy/">
+                                California Genealogy Resources
+                            </a>
+                        <li>
+                            <a href="http://www.library.ca.gov/government-publications/">
+                                Government Publications
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.library.ca.gov/visit-us/locations-and-hours/">
+                                Contacting Us
+                            </a>
+                        </li>
+                    </ul>
+                    <h2>
+                        Other Services Available from the State Library
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="http://www.library.ca.gov/services/statistics/library-directory/">
+                                California Library Directory
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://libraryliteracy.org/">
+                                California Library Literacy Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.library.ca.gov/crb/reports-events/">
+                                California Research Bureau Public Policy Reports
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="half" style="margin-top: 30px;">
+                    <img src="~/Content/StateTemplate/images/services/PublicServices.png" style="width:100%" alt="" class="animated fadeInRight" />
+                </div>
+
+            </div>
+        </div>
+
     </main>
 </div>
 
