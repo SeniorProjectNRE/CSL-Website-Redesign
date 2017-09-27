@@ -7,6 +7,10 @@
     transition: width .5s;
     -webkit-transition: width .5s;
 }
+.section-close, .section-previous, .section-next {
+     text-align:right;
+     padding:5px 0px;
+}
 
 .section-selector{
     list-style-type:none;
