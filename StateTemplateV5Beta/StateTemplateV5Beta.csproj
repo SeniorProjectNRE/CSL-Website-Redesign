@@ -305,6 +305,14 @@
     <Content Include="Content\StateTemplate\images\CAGoldRush\section9.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\bouquet.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\camp.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\collections\c_book_over.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\collections\c_ephemera_over.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\collections\c_manuscripts_over.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\collections\c_maps_over.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\collections\c_newspaper_over.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\collections\c_periodicals_over.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\collections\c_pictorial_over.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\collections\c_unique_over.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\letter.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\library.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\maynard_dixon.jpg" />
