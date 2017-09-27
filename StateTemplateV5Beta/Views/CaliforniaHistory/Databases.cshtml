@@ -1,11 +1,140 @@
-﻿
-@{
-    ViewBag.Title = "Databases";
+﻿@{
+    ViewBag.Title = "CSL - Databases - CA History Room";
+    ViewBag.PageTitle = "California History Room Databases";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Manuscripts, building records, periodicals, telephone books and city directories! See what the California History Room contains using these databases!";
 }
 
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
+</head>
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Databases</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb dynamic"></ol>
+
+                <div class="two-thirds">
+
+                    <p>
+                        Sometimes a library catalog is too general for a serious researcher. That is why we created these four databases! Each database provides detailed information about specific resources within the California History Section's collections, including selected <a href="/california-history/collections"></a><a href="/california-history/periodicals">periodicals</a>, <a href="/california-history/manuscripts">manuscript collections</a>, <a href="/california-history/books">books</a> and more! If you have any questions about using these resources please feel free to <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
+                    </p>
+
+
+                    <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">California Information file II</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+
+
+                                    <p>
+                                        A continuation of the <a href="/california-history/uniqueindexes">California Information File I</a>, this database contains more than 85,000 references to California people, places, events, and subjects as they appear in our <a href="/california-history/collections"></a><a href="/california-history/periodicals">periodicals</a>, <a href="/california-history/manuscripts">manuscript</a>, <a href="/california-history/manuscripts">postcard</a> and <a href="/california-history/pictorialresources">ephemera</a> collections.
+                                    </p>
+
+                                    <a class="btn btn-block" href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm" target="_blank" title="California Information File II Database">Search Database</a>
+
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Telephone Directories</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+
+                                    <p>The California History Room has telephone directories covering the years 1878-2006 in a variety of formats (paper, microfilm and microfiche). This database lets you determine if we have the specific telephone directory you need.</p>
+
+                                    <a class="btn btn-block" href="http://dbs.library.ca.gov/dbtext_html/QueryPhonebk.htm" target="_blank" title="California Information File II Database">Search Database</a>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">City and County Directories</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>The California History Room has city and county directories in several formats: paper, microfilm, and microfiche. This database lets you determine if we have the specific city directory you need, and it gives you the format and location.</p>
+
+                                    <a class="btn btn-block" href="http://dbs.library.ca.gov/dbtext_html/QueryCityDir.htm" target="_blank" title="California Information File II Database">Search Database</a>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Gladding McBean Company Archives index</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <p>
+                                        The Gladding McBean Company manufactured decorative architectural elements from terra cotta at its factory in Lincoln. This database is an index of the Gladding McBean Company <a href="http://catalog.library.ca.gov/F/?func=find-c&amp;ccl_term=sys+%3D001161468&amp;local_base=calif" target="_blank">manuscript</a> and <a href="http://catalog.library.ca.gov/F/?func=find-c&amp;ccl_term=sys+%3D001161469&amp;local_base=calif" target="_blank">photo</a> collections containing references to over 6,500 job files from their company.
+                                    </p>
+
+                                    <a class="btn btn-block" href="http://dbs.library.ca.gov/dbtext_html/QueryGladding.htm" target="_blank" title="California Information File II Database">Search Database</a>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="third">
+                    <div class="autoLoop carousel owl-carousel carousel-content">
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/databases/request.png" alt="database" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/databases/databases.png" alt="database" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/databases/cables.png" alt="database" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
