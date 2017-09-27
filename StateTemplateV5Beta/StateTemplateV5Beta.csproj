@@ -319,6 +319,9 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\events\1.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\events\2.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\events\3.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\genealogy\bigler.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\genealogy\miner.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\genealogy\sutro.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\letter.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\library.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\maynard_dixon.jpg" />
