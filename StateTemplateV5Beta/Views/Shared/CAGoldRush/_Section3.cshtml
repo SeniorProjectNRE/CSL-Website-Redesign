@@ -3,14 +3,10 @@
 }
 <div class="site-settings section section-standout collapse collapsed" role="alert" id="section3">
     <div class="container  p-y">
-   
+
         <div class="row">
-            <!--title of page-->
-            <div class="section-title col-md-6 col-sm-12 col-xs-12">
-                <h1 class="orange" id="title">@ViewBag.SectionTitle</h1>
-            </div>
             <!--button for previous section-->
-            <div class="section-previous col-md-2 col-sm-4 col-xs-12">
+            <div class="section-previous col-md-offset-6 col-md-2 col-sm-4 col-xs-12">
                 <div data-toggle="collapse" data-target="#section3" aria-expanded="false" aria-controls="section3" aria-label="Close">
                     <a id="section-controls" data-toggle="collapse" data-target="#section2" aria-expanded="false" aria-controls="section2" aria-label="Previous Section"><span class="ca-gov-icon-caret-two-left" aria-hidden="true"></span> Previous Section</a>
                 </div>
@@ -30,11 +26,12 @@
         </div>
 
         <div class="row" role="group">
-                    <p>Here is some contnent3</p>
-                    <div style="height:200px; background-color:gold">
+            <h1 class="orange" id="title">@ViewBag.SectionTitle</h1>
+            <p>Here is some contnent3</p>
+            <div style="height:200px; background-color:gold">
 
-                    </div>
             </div>
+        </div>
 
     </div>
 </div>
