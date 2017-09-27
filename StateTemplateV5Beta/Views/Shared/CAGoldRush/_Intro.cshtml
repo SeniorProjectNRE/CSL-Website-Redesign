@@ -1,16 +1,22 @@
-﻿<div class="site-settings section section-standout collapse collapsed in" role="alert" id="intro">
+﻿@{
+    ViewBag.SectionTitle = "Introduction";
+}
+<div class="site-settings section section-standout collapse collapsed in" role="alert" id="intro">
     <div class="container  p-y">
         <div class="row">
-            
+            <!--title of page-->
+            <div class="section-title col-md-6 col-sm-12 col-xs-12">
+                <h2 class="orange" id="title">@ViewBag.SectionTitle</h2>
+            </div>
             <!--button for next section-->
-            <div class="section-next col-md-2 col-md-offset-8 col-sm-4 col-sm-offset-4 col-xs-12">
+            <div class="section-next col-md-2 col-sm-4 col-xs-12">
                 <div data-toggle="collapse" data-target="#intro" aria-expanded="false" aria-controls="intro" aria-label="Close">
                     <a id="section-controls" data-toggle="collapse" data-target="#section1" aria-expanded="false" aria-controls="section1" aria-label="Next Section">Next Section <span class="ca-gov-icon-caret-two-right" aria-hidden="true"></span></a>
                 </div>
             </div>
             <!--close botton-->
             <div class="section-close col-md-2 col-sm-4 col-xs-12">
-                <a id="section-controls" data-toggle="collapse" data-target="#intro" aria-expanded="false" aria-controls="intro" aria-label="Close">Close <span class="ca-gov-icon-close-mark" aria-hidden="true"></span></a>
+                <a id="section-controls" data-toggle="collapse" data-target="#intro" aria-expanded="false" aria-controls="intro" aria-label="Close"><span class="ca-gov-icon-close-mark" aria-hidden="true"></span> Close</a>
 
             </div>
         </div>
@@ -19,9 +25,6 @@
 
 
             <div class="container">
-
-                <h2 class="orange" id="title">Introduction</h2>
-
                 <div class="panel-group" id="personal-accordion" role="tablist" aria-multiselectable="true" >
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">

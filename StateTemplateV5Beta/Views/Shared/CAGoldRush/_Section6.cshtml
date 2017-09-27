@@ -1,10 +1,17 @@
-﻿<div class="site-settings section section-standout collapse collapsed" role="alert" id="section6">
+﻿@{
+    ViewBag.SectionTitle = "Section VI. The Miners' Ten Commandments";
+}
+<div class="site-settings section section-standout collapse collapsed" role="alert" id="section6">
     <div class="container  p-y">
-        <div class="row"> 
+        <div class="row">
+            <!--title of page-->
+            <div class="section-title col-md-6 col-sm-12 col-xs-12">
+                <h1 class="orange" id="title">@ViewBag.SectionTitle</h1>
+            </div>
             <!--button for previous section-->
-            <div class="section-previous col-md-offset-6 col-md-2 col-sm-4 col-xs-12">
+            <div class="section-previous col-md-2 col-sm-4 col-xs-12">
                 <div data-toggle="collapse" data-target="#section6" aria-expanded="false" aria-controls="section6" aria-label="Close">
-                    <a id="section-controls" data-toggle="collapse" data-target="#section5" aria-expanded="false" aria-controls="section5" aria-label="Previous Section">Previous Section <span class="ca-gov-icon-caret-two-left" aria-hidden="true"></span></a>
+                    <a id="section-controls" data-toggle="collapse" data-target="#section5" aria-expanded="false" aria-controls="section5" aria-label="Previous Section"><span class="ca-gov-icon-caret-two-left" aria-hidden="true"></span> Previous Section</a>
                 </div>
             </div>
             <!--button for next section-->
@@ -15,7 +22,7 @@
             </div>
             <!--close botton-->
             <div class="section-close col-md-2 col-sm-4 col-xs-12">
-                <a id="section-controls" data-toggle="collapse" data-target="#section6" aria-expanded="false" aria-controls="section6" aria-label="Close">Close <span class="ca-gov-icon-close-mark" aria-hidden="true"></span></a>
+                <a id="section-controls" data-toggle="collapse" data-target="#section6" aria-expanded="false" aria-controls="section6" aria-label="Close"><span class="ca-gov-icon-close-mark" aria-hidden="true"></span> Close</a>
 
             </div>
 
@@ -24,7 +31,6 @@
 
 
         <div class="row" role="group">
-            <h1 class="orange" id="title">@ViewBag.Title</h1>
                     <p>Here is some contnent6</p>
                     <div style="height:200px; background-color:red">
 

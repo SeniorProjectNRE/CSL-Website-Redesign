@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "CSL - Visiting Us - CA History Room";
+    ViewBag.PageTitle = "Visiting the California History Room";
     ViewBag.Author = "Chris Pulido";
     ViewBag.Description = "Planning on visiting the California History Room? This page will tell you where to find us, what to expect when you arrive and about our basic research policies.";
     ViewBag.Keywords = "California State Library, visit, california history, room";
@@ -24,13 +25,13 @@
                 <li><a href="/california-history">California History</a></li>
                 <li style="text-transform:none;">Visiting the California History Room</li>
             </ol>
-            <h2 class="page-title">Visiting the California History Room</h2>
+            <h2 class="page-title">@ViewBag.PageTitle</h2>
         </div>
 
         <div class="section">
             <div class="container">
                 <div class="group">
-                    <div class="three-quarters">
+                    <div class="two-thirds">
 
                         <p>
                             We are delighted that you are thinking about visiting us! You can drop by any time during our open hours. If you're wondering what to expect when you come by, you might find the information on this page helpful. You can also <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us directly</a> with any specific questions or concerns you may have.
@@ -49,7 +50,7 @@
                                         <p>
                                             You are welcome to conduct research any time we're open, but if you want to prepare for your visit, here are some things you can do:
                                         </p>
-                                        <ul class="list-understated">
+                                        <ul>
                                             <li>Consult our <a href="/california-history/research-guides">research guides</a></li>
                                             <li>Check our <a href="http://catalog.library.ca.gov" target="_blank">catalog</a> for materials related to your topic</li>
                                             <li>Check our <a href="/california-history/databases">supplemental databases</a> for further information</li>
@@ -69,7 +70,7 @@
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
-                                        <ul class="list-understated">
+                                        <ul>
                                             <li>A camera or phone with camera capability</li>
                                             <li>A flash drive</li>
                                             <li>A sweater or jacket</li>
@@ -88,7 +89,7 @@
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                     <div class="panel-body">
-                                        <ul class="list-understated">
+                                        <ul>
                                             <li><strong>Location:</strong> Room 200 (2nd Floor) of <a href="https://maps.google.com/maps?oe=utf-8&client=firefox-a&q=900+N+Street+sacramento&ie=UTF-8&hq=&hnear=0x809ad128b7a290ed:0xba7d239668ae7fa7,900+N+St,+Sacramento,+CA+95814&gl=us&ei=CplsUMeBC8zSigKm-YEQ&ved=0CCEQ8gEwAA" target="_blank">900 N Street, Sacramento, CA 95814</a></li>
                                             <!-- TODO: Change/remove old or non-existent links to state holidays and travel directions. -->
                                             <li><strong>Hours:</strong> Monday-Friday, 9:30 a.m.&ndash;4:00 p.m., excluding California <a href="#">state holidays</a>.</li>
@@ -124,7 +125,7 @@
                                         <p>
                                             In addition to permitting no-flash photography (please no tripods or personal scanners), we are proud to offer a number of self-serve copying options including the following:
                                         </p>
-                                        <ul class="list-understated">
+                                        <ul>
                                             <li>Digital Microfilm Scanners (Free digital copies)</li>
                                             <li>Digital Book Scanners (Free digital copies)</li>
                                             <li>Analog microfilm reader/printer (25 cents per page)</li>
@@ -133,7 +134,7 @@
                                         <p>
                                             Some of our rare materials have restricted copying but we offer the following services:
                                         </p>
-                                        <ul class="list-understated">
+                                        <ul>
                                             <li><a href="/california-history/photocopy">Low-resolution copies or photocopies</a> (depending on material)</li>
                                             <li><a href="/california-history/photo-reproduction">Photographic reproductions</a></li>
                                             <li><a href="/california-history/digital-images">High-resolution digital reproductions</a></li>
@@ -154,7 +155,7 @@
                                         <p>
                                             In addition to the State Library's general policies, we in the California History Section ask you to help us protect the collection and respect other patrons by following these guidelines:
                                         </p>
-                                        <ul class="list-understated">
+                                        <ul>
                                             <li>Storing all purses, bags etc. in our Reading Room lockers</li>
                                             <li>Not bringing food or drink into the Reading Room</li>
                                             <li>Using pencils instead of pens inside the Reading Rooms</li>
@@ -170,8 +171,8 @@
 
 
                     </div>
-                    <div class="quarter" style="padding-bottom:15px; padding-top:15px;">
-                        <div class="autoLoop carousel owl-carousel carousel-content">
+                    <div class="third" style="padding-bottom:15px; padding-top:15px;">
+                        <div class="autoLoop carousel owl-carousel carousel-content animated fadeInRight">
                             <div class="item">
                                 <img src="~/Content/StateTemplate/images/caliorniaHistory/visiting/1.jpg" title="Rob Stewart of 'Rob on the Road,' in the Special Collections room with Gary Kurutz of the State Library." alt="Rob Stewart of 'Rob on the Road,' in the Special Collections room with Gary Kurutz of the State Library."/>
                             </div>
