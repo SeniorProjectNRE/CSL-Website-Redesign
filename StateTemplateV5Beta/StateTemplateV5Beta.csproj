@@ -329,6 +329,7 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\library.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\maynard_dixon.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\festival.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\books1.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction1.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction2.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction3.png" />
@@ -406,6 +407,7 @@
     <Content Include="Content\StateTemplate\images\icons\talkingbooks.png" />
     <Content Include="Content\StateTemplate\images\icons\tours.png" />
     <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
+    <Content Include="Content\StateTemplate\images\services\PublicServices.png" />
     <Content Include="Content\StateTemplate\images\sutro-images\ASutro.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\coloringbook.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\countryFlags\Afghanistan.gif" />
