@@ -1,11 +1,145 @@
-﻿
-@{
-    ViewBag.Title = "Periodicals";
+﻿@{
+    ViewBag.Title = "CSL - California Periodicals  - CA History Room";
+    ViewBag.PageTitle = "California Periodicals";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Are you looking for journals on farming or mining? Check our collections! The California History Room’s periodicals cover topics from agriculture to zinc!";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Periodicals</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb dynamic"></ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <div class="two-thirds">
+                    <p> 
+                        Do you need a construction magazine from the fifties? How about a highway patrol magazine? With over 4,000 titles, our collection is perfect for your research! We have rarities such as <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&amp;QF0=NO&amp;QI0=100269&amp;TN=Display&amp;RF=webdisplaycollab&amp;DF=webdisplaycollab&amp;AC=QBE_QUERY" target="_blank">Hutchings California Magazine</a>, <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&amp;QF0=NO&amp;QI0=100270&amp;TN=Display&amp;RF=webdisplaycollab&amp;DF=webdisplaycollab&amp;AC=QBE_QUERY" target="_blank">The Wasp</a>, <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&amp;QF0=NO&amp;QI0=100271&amp;TN=Display&amp;RF=webdisplaycollab&amp;DF=webdisplaycollab&amp;AC=QBE_QUERY" target="_blank">Overland Monthly</a>, and <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&amp;QF0=NO&amp;QI0=100272&amp;TN=Display&amp;RF=webdisplaycollab&amp;DF=webdisplaycollab&amp;AC=QBE_QUERY" target="_blank">Mining &amp; Scientific Press</a>, but many common publications too. You can see all of our titles in our <a href="http://catalog.library.ca.gov/F/?" target="_blank">catalog</a> and many individually indexed articles in the <a href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm" target="_blank">California Information File II</a>. If you have any questions about this collection, please feel free to <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
+                    </p>
+
+                    <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Periodical News</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(CN%20ct%20(Calif)%20AND%20(ENT%20ct%20(August%202017))&amp;TN=CALINFO&amp;RF=webdisplayCOLLAB&amp;DF=webdisplayCOLLAB&amp;AC=QBE_Query" target="_blank">Just indexed</a></li>
+                                        <li><a href="/california-history/periodicals-month">Periodical of the Month</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">More Periodical Resources</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+
+                                    <p>
+                                        Not finding what you need? Don't give up! We have many other resources for serials including <a href="/california-history/unique-indexes">indexes</a>, <a href="/services/online-resources">online periodicals</a> and <a href="/california-history/newspapers">newspapers</a>. What's more, if we don't have it another <a href="/about/library-sections">library section</a> might. Just <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">drop us a line</a> and we will try to connect you with the appropriate resource.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Borrowing</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>
+                                        We are thrilled that you want to borrow our items! We loan our circulating periodicals directly to <a href="/services/to-state-employees">current state employees</a> and indirectly to the general public via interlibrary loan. If you have any questions about borrowing our materials, please feel free to <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Remote Access</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+
+                                    <p>
+                                        You can use many of our periodicals remotely by placing an interlibrary loan at your local library, viewing <a href="https://archive.org/details/californiastatelibrary?" target="_blank">digitized copies</a> or placing <a href="/california-history/photocopy">copy orders</a> for magazine articles less than 20 pages in length. If you have any questions about these access options, please <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Reproduction</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <p>
+                                        We provide access to digital book-scanners during your <a href="/california-history/Visiting">visit</a>, that allow you to email or save scans of most of our periodicals to a flash-drive free of charge. If you need paper copies, we have a coin-operated copy-machine. Each print-out costs 15 cents. We also permit no-flash photography and can arrange for <a href="/california-history/photo-reproduction">photographic reproductions</a> from our rare periodicals.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="third">
+                    <div class="autoLoop carousel owl-carousel carousel-content">
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/periodicals/1.jpg" alt="periodicals" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/periodicals/2.jpg " alt="periodicals" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/periodicals/3.jpg" alt="periodicals" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

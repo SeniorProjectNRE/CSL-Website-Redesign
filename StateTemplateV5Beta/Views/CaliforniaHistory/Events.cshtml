@@ -1,11 +1,194 @@
-﻿
-@{
-    ViewBag.Title = "Events";
+﻿@{
+    ViewBag.Title = "CSL - Events - CA History Room";
+    ViewBag.PageTitle = "Events";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Speeches, tours and more! Read about California History Room events and schedule your own event with us!";
 }
 
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
+</head>
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Events</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb dynamic"></ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <div class="two-thirds">
+
+                    <p>
+                        Is your group looking for something fun to do together? Do you need a speaker? We can help you out! In addition to participating in the Sacramento Archives Crawl and Sacramento Museum Day, the California History Section gives numerous off-site presentations and on-site facilities tours. What are you waiting for? <a href="mailto:cslcal@library.ca.gov">Email us</a> to see how we can accommodate your group!
+                    </p>
+
+                    <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What's Next</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+
+                                    <section class="events-list">
+                                        <article class="event-item">
+                                            <h5><a class="title" href="http://www.conservation.ca.gov/" target="_blank">California Department of Conservation</a></h5>
+                                            <div class="description"> Environmental History and the California History Room</div>
+                                            <div class="start-date"><time datetime="2018-02-13">February 13, 2018</time></div>
+                                        </article>
+
+                                        <article class="event-item">
+                                            <h5><a class="title" href="https://gensac.org/" target="_blank">Genealogical Association of Sacramento</a></h5>
+                                            <div class="description">Genealogy at the California History Room–Sacramento County Focus</div>
+                                            <div class="start-date"><time datetime="2018-02-21">February 21, 2018</time></div>
+                                        </article>
+
+                                        <article class="event-item">
+                                            <h5><a class="title" href="http://murerhouse.org/" target="_blank">Murer House</a></h5>
+                                            <div class="description">Materials at the California History Section–Folsom Focus</div>
+                                            <div class="start-date"><time datetime="2018-04-14">April 14,2018</time></div>
+                                        </article>
+
+                                        <article class="event-item">
+                                            <h5><a class="title" href="http://www.ahpcs.org/" target="_blank">American Historical Print Collectors Society Visit</a></h5>
+                                            <div class="description">Facilities Tour</div>
+                                            <div class="start-date"><time datetime="2016-05-17">May 17, 2018</time></div>
+                                        </article>
+
+
+                                    </section>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Archives Crawl</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p>
+                                        Love history? Want to see amazing artifacts and possibly win prizes? Than the Sacramento Archives Crawl is right up your alley! Mark us on your calendars for this year's crawl, which will have the theme, <em>"It Came From the Archives!?"</em> on Saturday, October 7, 2017 from 10 am–4 pm. You won't be disappointed, but if you don't believe us, take a sneak peek at our <a href="~/Content/StateTemplate/pdf/californiaHistory/CrawlHighlights.pdf" target="_blank">display's highlights</a>!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Museum Day</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>
+                                        Did you miss us on <a href="http://sacmuseums.org/news-events/museum-day/" target="_blank">Museum Day</a>? No worries! You can still drop by the State Capitol to see our treasures in the exhibit "<a href="http://capitolmuseum.ca.gov/special/outofthevault/" target="_blank">Out of the Vault</a>." Keep us in mind for <a href="http://sacmuseums.org/news-events/museum-day/" target="_blank">Museum Day</a> next year!
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Previous Events</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+
+                                    <ul>
+                                        <li><strong>August 30, 2017:</strong><br>Portuguese Historical and Cultural Society of Sacramento Talk: <em>Materials in the California History Room</em></li>
+                                        <li><strong>August 30, 2017:</strong><br>Friends of Sutter's Fort Visit: <em>Facilities Tour</em></li>
+                                        <li><strong>August 14, 2017:</strong><br>Capitol Staff Visit: <em>Facilities Tour</em></li>
+                                        <li><strong>August 9, 2017:</strong><br>Xylum Debate Institute Visit: <em>Facilities Tour</em></li>
+                                        <li><strong>August 1, 2017:</strong><br>Department of Finance Staff Visit: <em>Facilities Tour</em></li>
+                                        <li><strong>August 1, 2017:</strong><br>Capitol Staff Visit: <em>Facilities Tour</em></li>
+                                        <li><strong>July 21, 2017:</strong><br>El Dorado Family History Library: <em><a href="~/Content/StateTemplate/pdf/californiaHistory/Genealogy-at-the-California-History-Room-LDS.pdf" target="_blank">Genealogy at the California History Room–Latter Day Saints Focus</a></em></li>
+                                        <li><strong>June 27, 2017:</strong><br>Capitol Staff Visit: <em>Facilities Tour</em></li>
+                                        <li><strong>June 22, 2017:</strong><br>Placer County Genealogy Society: <a href="~/Content/StateTemplate/pdf/californiaHistory/Genealogy-at-the-CaliforniaHistoryRoom-PlacerCountyFocus.pdf" target="_blank"><em>Genealogy at the California History Room–Placer County Focus</em></a></li>
+                                        <li><strong>June 15, 2017:</strong><br>State Coastal Conservancy Visit: <em>Facilities Tour</em></li>
+                                        <li><strong>June 6, 2017:</strong><br>Golden Gate National Recreation Area, Park Archives and Records Center Staff Visit: <em>Facilities Tour</em></li>
+                                        <li><strong>April 24, 2017:</strong><br>Wilton History Group: <a href="~/Content/StateTemplate/pdf/californiaHistory/CaliforniaHistorySectionMaterials-WiltonFocus.pdf" target="_blank"><em>California History Section Materials–Wilton Focus</em></a></li>
+                                        <li><strong>March 21, 2017:</strong> Davis Genealogical Club: <a href="~/Content/StateTemplate/pdf/californiaHistory/Genealogy-at-the-California-History-Room-Yolo-Focus.pdf" target="_blank"><em>Genealogy at the California History Room–Yolo County Focus</em></a></li>
+                                        <li><strong>March 8, 2017:</strong> Sacramento FamilySearch Library: <a href="~/Content/StateTemplate/pdf/californiaHistory/Genealogy-at-the-California-History-Room-LDS.pdf" target="_blank"><em>Genealogy at the California History Room–Latter Day Saints Focus</em></a></li>
+                                        <li><strong>February 6, 2017:</strong> Patwin Elementary School Class Visit: <a href="~/Content/StateTemplate/pdf/californiaHistory/California-and-the-World!.pdf" target="_blank"><em>California and the World!</em></a></li>
+                                        <li><strong>January 19, 2017:</strong> Pioneer Mutual Hook and Ladder Society: <a href="~/Content/StateTemplate/pdf/californiaHistory/The-Sacramento-Fire-Department.pdf" target="_blank"><em>California History Section Materials: The Sacramento Fire Department</em></a></li>
+                                        <li><strong>October 20, 2016:</strong> Roseville Daughters of the American Revolution Visit: <em>Facilities Tour</em></li>
+                                        <li><strong>October 8, 2016:</strong> Archives Crawl: <em>A Thirst for History</em></li>
+                                        <li><strong>September 27, 2016:</strong> Stanislaus County Genealogical Society Visit: <em>Facilities Tour</em></li>
+                                        <li><strong>September 20, 2016:</strong> Yuba County Historical Commission Visit: <em>Facilities Tour</em></li>
+                                        <li><strong>September 9, 2016:</strong> Jewish Genealogical Society of Sacramento: <em>Genealogy at the California History Room</em></li>
+                                        <li><strong>August 24, 2016:</strong> Clarksville Historical Society: <em>Genealogy at the California History Room</em></li>
+                                        <li><strong>June 25, 2016:</strong> Old Sacramento Living History Group: <em>Researching Individuals at the California History Section</em></li>
+                                        <li><strong>June 22, 2016:</strong> Amador County Genealogy Group Visit: <em>Facilities Tour</em></li>
+                                        <li><strong>June 9, 2016:</strong> Root Cellar - Sacramento Genealogical Society: <em>Genealogy at the California History Room: A Sacramento Focus</em></li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">More Events</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <p>
+                                        In addition to the events held by the <a href="/california-history/">California History Section</a>, the California State Library has a multitude of other activities and events you can get involved in. <a href="/visit-us/tours">Sign up for a tour</a> or join our <a href="https://www.library.ca.gov/email-updates/default.aspx">mailing list</a>!
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="third">
+                    <div class="autoLoop carousel owl-carousel carousel-content">
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/events/1.jpg" alt="events" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/events/2.jpg " alt="events" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/events/3.jpg" alt="events" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
