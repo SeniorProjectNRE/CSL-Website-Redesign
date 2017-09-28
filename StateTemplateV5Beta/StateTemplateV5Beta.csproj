@@ -336,6 +336,7 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\permissiontouse\camp.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\permissiontouse\letter.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\permissiontouse\library.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\periodical_month_candles.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\photoReproduction\1.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\photoReproduction\2.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\photoReproduction\3.jpg" />
