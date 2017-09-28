@@ -319,6 +319,9 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\events\1.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\events\2.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\events\3.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\periodicals\1.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\periodicals\2.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\periodicals\3.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\genealogy\bigler.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\genealogy\miner.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\genealogy\sutro.jpg" />
@@ -329,6 +332,9 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction1.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction2.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\imageReproduction3.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\permissiontouse\camp.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\permissiontouse\letter.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\permissiontouse\library.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\photoReproduction\1.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\photoReproduction\2.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\photoReproduction\3.jpg" />
