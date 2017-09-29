@@ -1,11 +1,128 @@
-﻿
-@{
-    ViewBag.Title = "PeriodicalsMonth";
+﻿@{
+    ViewBag.Title = "CSL - Periodical of the Month - CA History Room";
+    ViewBag.PageTitle = "Periodical of the Month";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "Looking for something to read? These featured California History Room periodicals, cover both local history and statewide historic trends.";
+    ViewBag.Keywords = "History Room, Donations";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>PeriodicalsMonth</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/california-history">California History</a></li>
+                    <li>Periodical of the Month</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <div class="two-thirds">
+                        <p>
+                            Congratulations to the writers and editors of our September Periodical of the Month, the Zamorano Club's <a href="http://catalog.library.ca.gov/F/2XYN71X2L7VDPIDRP8VGFTIYNVPRA1MSUHDKD3VRGV2HSR4X7H-20354?func=find-e&amp=&amp=&amp=&amp=&amp=&amp=&amp=&amp=&amp=&adjacent=N&find_scan_code=FIND_SYS&request=000139392&pds_handle=GUEST">Hoja Volante!</a>
+                            We have featured the 
+                            <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000139392&QB1=AND&QF1=PDT&QI1=2016&TN=CALINFO&RF=webdisplaycollab&DF=webdisplaycollab&AC=QBE_QUERY">index to the March 2016 issue</a>, 
+                            in part because this issue pays tribute to one of the greats of the book collecting and mountaineering world, Glen Dawson and chronicles the events he saw during his life. 
+                            If you like reading about Californians who made good, or about the history of 20th century California, this is the periodical for you.
+                        </p>
+                        <p>
+                            At the end of 2015, in an effort to better acknowledge and support work in the California history community, the <a href="/california-history/">California History Section</a> started the Periodical of the Month program. 
+                            This recognition honors quality research, editing and writing in <a href="/california-history/periodicals/">periodicals</a> devoted to California history. 
+                            If you have any questions about this program, please feel free to <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref_History">contact us</a>.
+                        </p>
+
+                        <div>
+                            <h3>Previous Editions of the Periodical of the Month:</h3>
+                        </div>
+
+                        <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">2017 Selections</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <ul class="list-overstated">
+                                            <li>August 2017 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=001268706&QB1=AND&QF1=PDT&QI1=Jan%202017&TN=CALINFO&RF=webdisplaycollab&DF=webdisplaycollab&AC=QBE_QUERY">Comstock's</a></li>
+                                            <li>July 2017 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000146232&QB1=AND&QF1=PDT&QI1=2015&TN=CALINFO&RF=webdisplaycollab&DF=webdisplaycollab&AC=QBE_QUERY">La Campana</a></li>
+                                            <li>June 2017 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=001193051&QB1=AND&QF1=PDT&QI1=2015&TN=CALINFO&RF=webdisplaycollab&DF=webdisplaycollab&AC=QBE_QUERY">ICMJ's Mining and Prospecting Journal</a></li>
+                                            <li>April 2017 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=001436346&QB1=AND&QF1=PDT&QI1=2014%20Spring&TN=CALINFO&RF=webdisplaycollab&DF=webdisplaycollab&AC=QBE_QUERY">Boom</a></li>
+                                            <li>March 2017 Selection: <a href="http://catalog.library.ca.gov/F/814PTUHY75QGJRAHE6F56UIC83T6LLECYQ4YAGRUGKYH4R6CP3-17347?func=find-e&amp=&amp=&amp=&adjacent=N&find_scan_code=FIND_SYS&request=000552757&pds_handle=GUEST">Lodi Historian</a></li>
+                                            <li>February 2017 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000146390&QB1=AND&QF1=PDT&QI1=2015&TN=CALINFO&RF=webdisplaycollab&DF=webdisplaycollab&AC=QBE_QUERY">Chispa</a></li>
+                                            <li>January 2017 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=001268706&QB1=AND&QF1=PDT&QI1=2017&TN=CALINFO&RF=webdisplaycollab&DF=webdisplaycollab&AC=QBE_QUERY">Overland Journal</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2016 Selections</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <ul class="list-overstated">
+                                            <li>December 2016 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000139836&QB1=AND&QF1=PDT&QI1=2015&TN=CALINFO&RF=webdisplaycollab&DF=webdisplaycollab&AC=QBE_QUERY">Pacific Historical Review</a></li>
+                                            <li>November 2016 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=001196240&QB1=AND&QF1=PDT&QI1=2015&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">California Territorial Quarterly</a></li>
+                                            <li>October 2016 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000151391&QB1=AND&QF1=VOL&QI1=61&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">Journal of San Deigo History</a></li>
+                                            <li>September 2016 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000147968&QB1=AND&QF1=PDT&QI1=July%202016&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">California Explorer</a></li>
+                                            <li>August 2016 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000139393&QB1=AND&QF1=PDT&QI1=2015&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">Historic Kern</a></li>
+                                            <li>July 2016 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000148617&QB1=AND&QF1=PDT&QI1=%E2%80%9D1987/88%E2%80%9D&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">Marin County Historical Society Magazine</a></li>
+                                            <li>June 2016 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000146041&QB1=AND&QF1=PDT&QI1=2015&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">Los Tulares: Quarterly Bulletin of the Tulare County Historical Society</a></li>
+                                            <li>May 2016 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000145101&QB1=AND&QF1=PDT&QI1=2016/2015&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">Las Calaveras</a></li>
+                                            <li>April 2016 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=001305475&QB1=AND&QF1=PDT&QI1=2011&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">Journal of Ventura County History</a></li>
+                                            <li>March 2016 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000145311&QB1=AND&QF1=PDT&QI1=2015%20winter&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">Humboldt Historian</a></li>
+                                            <li>February 2016 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000137776&QB1=AND&QF1=PDT&QI1=2014&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">Noticias: Quarterly Bulletin of the Santa Barbara Historical Society</a></li>
+                                            <li>January 2016 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=SYSNO&QI0=000144674%20&QB1=AND&QF1=PDT&QI1=2015&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">California State Library Foundation Bulletin</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">2015 Selections</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <ul class="list-overstated">
+                                            <li>December 2015 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=TI&QI0=Pomo+Bulletin&QB1=AND&QF1=PDT&QI1=%E2%80%9D2015+June%E2%80%9D&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">Pomo Bulletin</a></li>
+                                            <li>November 2015 Selection: <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&QF0=TI&QI0=News+from+Native%20California&QB1=AND&QF1=PDT&I1=%E2%80%9D2015+Summer%E2%80%9D&TN=CALINFO&RF=webdisplaycanned&DF=webdisplaycanned&AC=QBE_QUERY">News from Native California</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="third animate-fadeInRight">
+                        <img src="~/Content/StateTemplate/images/caliorniaHistory/periodical_month_candles.jpg" alt="Periodical of the Month" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

@@ -1,11 +1,207 @@
 ﻿
 @{
-    ViewBag.Title = "Books";
+    ViewBag.Title = "California Books";
+    ViewBag.Author = "Jonathan Shaw";
+    ViewBag.Image = "books1.png";
+    ViewBag.Description = "California State Library books page.  Find info about the historical books here.";
+    ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library, California, history, books";
 }
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Books</h2>
+        
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb dynamic"></ol>
+                <h1 class="orange" id="title">@ViewBag.Title</h1>
+                <p>
+                    Are you looking for books on California history? We can help! In addition to our 
+                    <a href="http://www.library.ca.gov/california-history/manuscripts/">
+                        manuscripts,
+                    </a>
+                    <a href="http://www.library.ca.gov/california-history/ephemera/">
+                        ephemera,
+                    </a>
+                    <a href="http://www.library.ca.gov/california-history/periodicals/">
+                    periodicals, 
+                    </a>
+                    <a href="http://www.library.ca.gov/california-history/pictorial-resources/">
+                        photos
+                    </a>
+                    and 
+                    <a href="http://www.library.ca.gov/california-history/collections/">
+                        other resources,
+                    </a>
+                    we have over 80,000 California history-related books, making our collection one of the largest of its
+                    kind in the world. In our stacks, we have early cookbooks, diaries, county histories, and much more. To fully explore our
+                    books, please consult the 
+                    <a href="http://catalog.library.ca.gov/F/63N218EE6S9BP72GY548LEYF3IASHIGMG2JVV4ENTCLS11J8CH-10454?&pds_handle=GUEST">
+                        library catalog
+                    </a>or 
+                    <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">
+                        contact us.
+                    </a>
+                </p>
+                <br/>
+                <div class="half">
+                    <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true" style="margin-left: -15px;">
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Book News</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body indent-outer">
+                                    <div class="indent-inner">
+                                        <ul style="margin-top: 7px;">
+                                            <li>
+                                                <a href="http://californiastatelibrary.tumblr.com/tagged/botw">
+                                                    Book of the Week
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://californiastatelibrary.tumblr.com/tagged/American-Haiku-Archives">
+                                                    Haiku of the Week
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://catalog.library.ca.gov/F/3G5DTJ5XHDRT211QHUVMB5KP14HHT27DF2SHS5I969F721M489-10238?func=find-c&amp=&ccl_term=wrd+%3D+%28+calnew-17-08+%29+AND+WFM+%3D+%28+Bk+%29&pds_handle=GUEST">
+                                                    Latest Aditions
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.library.ca.gov/california-history/display/">
+                                                    On Display   
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">More Book Resources</a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body indent-outer">
+                                    <div class="indent-inner">
+                                        <p style="margin-top: 7px">
+                                            Not finding what you need? Don't give up! We have many other book resources including 
+                                            <a href="http://www.library.ca.gov/california-history/unique-indexes/">
+                                                indexes
+                                            </a> and 
+                                            <a href="http://www.library.ca.gov/services/online-resources/">
+                                                online books.
+                                            </a>
+                                            What's more, if we don't have it another 
+                                            <a href="http://www.library.ca.gov/about/library-sections/">
+                                                library section 
+                                            </a>
+                                            might. Just 
+                                            <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?pmi=cPYI9N65bk">
+                                                drop us a line 
+                                            </a>
+                                            and we will 
+                                            try to connect you with the appropriate resource.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Borrowing</a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body indent-outer">
+                                    <div class="indent-inner">
+                                        <p style="margin-top: 7px">
+                                            We are thrilled that you want to borrow our items! We loan our circulating books directly to current state 
+                                            employees and indirectly to the general public via interlibrary loan. If you have any questions about 
+                                            borrowing our materials, please feel free to 
+                                            <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">
+                                                contact us.
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Remote Access</a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body indent-outer">
+                                    <div class="indent-inner">
+                                        <p style="margin-top: 7px">
+                                            Even if you cannot 
+                                            <a href="http://www.library.ca.gov/california-history/visiting/">
+                                                visit us, 
+                                            </a>
+                                            you can still use many of our books remotely by placing an inter-library loan at 
+                                            your local library, viewing 
+                                            <a href="https://archive.org/details/californiastatelibrary?">
+                                                digitized copies
+                                            </a>or placing 
+                                            <a href="http://www.library.ca.gov/california-history/photocopy/">
+                                                copy orders
+                                            </a> for book selections less than 20 pages in 
+                                            length. If you have any questions about these access options, please 
+                                            <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">
+                                                contact us.
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">Reproductions</a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body indent-outer">
+                                    <div class="indent-inner">
+                                        <p style="margin-top: 7px">
+                                            To accommodate researchers who choose to visit us, we provide access to digital book-scanners that allow you to 
+                                            email or save scans of many of our books to a flash-drive free of charge. If you need paper copies, we have a 
+                                            coin-operated copy-machine. Each print-out costs 15 cents. We also permit no-flash photography and can arrange 
+                                            for 
+                                            <a href="http://www.library.ca.gov/california-history/photo-reproduction/">
+                                                photographic reproductions 
+                                            </a>
+                                            from our rare books.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="half">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/books1.png" style="width:100%" alt="" class="animated fadeInRight" />
+                </div>
+
+            </div>
+        </div>
     </main>
 </div>
 
