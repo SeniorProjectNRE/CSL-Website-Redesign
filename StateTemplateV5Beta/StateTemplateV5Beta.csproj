@@ -926,6 +926,14 @@
     <Content Include="Content\StateTemplate\pdf\californiaHistory\Genealogy-at-the-California-History-Room-LDS.pdf" />
     <Content Include="Content\StateTemplate\pdf\californiaHistory\CaliforniaHistorySectionMaterials-WiltonFocus.pdf" />
     <Content Include="Content\StateTemplate\pdf\californiaHistory\Genealogy-at-the-CaliforniaHistoryRoom-PlacerCountyFocus.pdf" />
+    <Content Include="Content\StateTemplate\pdf\librarian\Lib_Series_Flyer_access.pdf" />
+    <Content Include="Content\StateTemplate\pdf\librarian\SLSeriesBulletin8-17.pdf" />
+    <Content Include="Content\StateTemplate\pdf\libraryAssistant\LTASeriesAmendedBulletin8-17.pdf" />
+    <Content Include="Content\StateTemplate\pdf\libraryAssistant\LibraryTechnicalAssistantBulletin.pdf" />
+    <Content Include="Content\StateTemplate\pdf\programsConsultant\LPC_Flyer.pdf" />
+    <Content Include="Content\StateTemplate\pdf\programsConsultant\LPCBulletin8-17.pdf" />
+    <Content Include="Content\StateTemplate\pdf\programsAdministrator\LPA_Flyer.pdf" />
+    <Content Include="Content\StateTemplate\pdf\programsAdministrator\LPABulletin8-17.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
