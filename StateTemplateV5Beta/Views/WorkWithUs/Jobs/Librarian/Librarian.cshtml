@@ -1,12 +1,67 @@
-﻿
-@{
-    ViewBag.Title = "Librarian";
+﻿@{
+    ViewBag.Title = "Librarian Exam and Hiring Process";
+    ViewBag.Author = "Jonathan Shaw";
+    ViewBag.Description = "California State librarian exam and hiring page.  Find info about becoming a librarian here.";
+    ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library, California, librarian, work with  us, exam, hiring";
 }
 
-<!DOCTYPE html>
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="State of California" />
+    <meta name="Description" content="State of California" />
+    <meta name="Keywords" content="California, government" />
+
+</head>
 
 <div id="main-content" class="main-content">
-    <main class="main-primary">
-        <h2>Librarian</h2>
-    </main>
+    <div class="container">
+        <main class="main-primary">
+            <ol class="breadcrumb dynamic"></ol>
+            <h2 class="page-title">@ViewBag.Title</h2>
+            <p>
+                Thank you for your interest in the Supervising Librarian I/II and Principal Librarian jobs. You can find all the information you need to apply for the examination and to be considered for these jobs here.
+            </p>
+            <p>
+                <a href="~/Content/StateTemplate/pdf/librarian/Lib_Series_Flyer_access.pdf">
+                    About the Job
+                </a>
+                (PDF)
+            </p>
+            <h3>
+                Application and Examination Instructions and Forms
+            </h3>
+            <ul>
+                <li>
+                    <a href="~/Content/StateTemplate/pdf/librarian/SLSeriesBulletin8-17.pdf">
+                        Examination Bulletin
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.calhr.ca.gov/state-hr-professionals/Pages/2951.aspx">
+                        Class Specification
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.library.ca.gov/work-with-us/jobs/supervising-librarian/apply/">
+                        Exam Instructions and Supplemental Application
+                    </a>
+                </li>
+            </ul>
+            <h3>
+                Contact Us Regarding the Application or Examination Process
+            </h3>
+            <p>
+                <strong>
+                    Angela Duprey
+                </strong>
+                <br/>
+                (916) 651-0337
+                <br/>
+                <a href="mailto:Angela.Duprey@library.ca.gov">
+                    Angela.Duprey@library.ca.gov
+                </a>
+            </p>
+            <br/>
+        </main>
+    </div>
 </div>
