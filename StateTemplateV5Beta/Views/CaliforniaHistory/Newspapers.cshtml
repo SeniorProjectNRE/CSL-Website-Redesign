@@ -1,11 +1,221 @@
-﻿
-@{
-    ViewBag.Title = "Newspapers";
+﻿@{
+    ViewBag.Title = "CSL - Newspaper - CA History Room";
+    ViewBag.PageTitle = "California Newspaper";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Do you want articles from a California paper? The California History Room’s historic newspaper collection probably has the article you're looking for.  ";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Newspapers</h2>
+
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/collections/">Our Collection</a></li>
+                    <li><a href="/california-history/">California History</a></li>
+                    <li class="active">Newspaper</li>
+                </ol>
+
+
+
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <div class="two-thirds">
+                    <p>
+                        Our extensive collection of California newspapers is one of the <a href="/california-history/">California History Section's</a> treasures. Dating back to 1846, it consists of more than 2,200 titles and includes long runs of at least one title from each of the 58 counties. The majority of our newspapers are on microfilm. However, we also have a number of specimen newspapers, and provide online access to several <a href="/services/online-resources">newspaper databases</a>. If you have questions about any of our newspaper resources please feel free to <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">ask us a question</a>.
+                    </p>
+                </div>
+
+                <div class="third">
+                    <div class="autoLoop carousel owl-carousel carousel-content">
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/maps/1.jpg" alt=" maps" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/maps/2.jpg" alt="maps" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/maps/3.jpg" alt="maps" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Newspapers on Microfilm</a>
+                            </h3>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+
+                                <div class="half">
+                                    <p>Alameda-Fresno Counties</p>
+                                    <ul>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+alameda%22+and+wlc=calif+and+wck=mfr" target="_blank">Alameda</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+alpine%22+and+wlc=calif+and+wck=mfr" target="_blank">Alpine</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+amador%22+and+wlc=calif+and+wck=mfr" target="_blank">Amador</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+butte%22+and+wlc=calif+and+wck=mfr" target="_blank">Butte</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+calaveras%22+and+wlc=calif+and+wck=mfr" target="_blank">Calaveras</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+colusa%22+and+wlc=calif+and+wck=mfr" target="_blank">Colusa</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+contra+costa%22+and+wlc=calif+and+wck=mfr" target="_blank">Contra Costa</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+del+norte%22+and+wlc=calif+and+wck=mfr" target="_blank">Del Norte</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+el+dorado%22+and+wlc=calif+and+wck=mfr" target="_blank">El Dorado</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+fresno%22+and+wlc=calif+and+wck=mfr" target="_blank">Fresno</a></li>
+                                    </ul>
+                                </div>
+                                <div class="half">
+                                    <p>Glenn-Madera Counties</p>
+                                    <ul>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+glenn%22+and+wlc=calif+and+wck=mfr" target="_blank">Glenn</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+humboldt%22+and+wlc=calif+and+wck=mfr" target="_blank">Humboldt</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+imperial%22+and+wlc=calif+and+wck=mfr" target="_blank">Imperial</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+inyo%22+and+wlc=calif+and+wck=mfr" target="_blank">Inyo</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+kern%22+and+wlc=calif+and+wck=mfr" target="_blank">Kern</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+kings%22+and+wlc=calif+and+wck=mfr" target="_blank">Kings</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+lake%22+and+wlc=calif+and+wck=mfr" target="_blank">Lake</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+lassen%22+and+wlc=calif+and+wck=mfr" target="_blank">Lassen</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+los+angeles%22+and+wlc=calif+and+wck=mfr" target="_blank">Los Angeles</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+madera%22+and+wlc=calif+and+wck=mfr" target="_blank">Madera</a></li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="half">
+                                    <p>Marin-Orange Counties</p>
+                                    <ul>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+marin%22+and+wlc=calif+and+wck=mfr" target="_blank">Marin</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+mariposa%22+and+wlc=calif+and+wck=mfr" target="_blank">Mariposa</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+mendocino%22+and+wlc=calif+and+wck=mfr" target="_blank">Mendocino</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+merced%22+and+wlc=calif+and+wck=mfr" target="_blank">Merced</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+modoc%22+and+wlc=calif+and+wck=mfr" target="_blank">Modoc</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+mono%22+and+wlc=calif+and+wck=mfr" target="_blank">Mono</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+monterey%22+and+wlc=calif+and+wck=mfr" target="_blank">Monterey</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+napa%22+and+wlc=calif+and+wck=mfr" target="_blank">Napa</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+nevada%22+and+wlc=calif+and+wck=mfr" target="_blank">Nevada</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+orange%22+and+wlc=calif+and+wck=mfr" target="_blank">Orange</a></li>
+                                    </ul>
+                                </div>
+                                <div class="half">
+                                    <p>Placer-San Luis Obispo Counties</p>
+                                    <ul>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+placer%22+and+wlc=calif+and+wck=mfr" target="_blank">Placer</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+plumas%22+and+wlc=calif+and+wck=mfr" target="_blank">Plumas</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+riverside%22+and+wlc=calif+and+wck=mfr" target="_blank">Riverside</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+sacramento%22+and+wlc=calif+and+wck=mfr" target="_blank">Sacramento</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+san+benito%22+and+wlc=calif+and+wck=mfr" target="_blank">San Benito</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+san+bernardino%22+and+wlc=calif+and+wck=mfr" target="_blank">San Bernardino</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+san+diego%22+and+wlc=calif+and+wck=mfr" target="_blank">San Diego</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+san+francisco%22+and+wlc=calif+and+wck=mfr" target="_blank">San Francisco</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+san+joaquin%22+and+wlc=calif+and+wck=mfr" target="_blank">San Joaquin</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+San+Luis+Obispo%22+and+wlc=calif+and+wck=mfr" target="_blank">San Luis Obispo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="half">
+                                    <p>San Mateo-Stanislaus Counties</p>
+                                    <ul>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+San+mateo%22+and+wlc=calif+and+wck=mfr" target="_blank">San Mateo</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Santa+barbara%22+and+wlc=calif+and+wck=mfr" target="_blank">Santa Barbara</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Santa+clara%22+and+wlc=calif+and+wck=mfr" target="_blank">Santa Clara</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Santa+cruz%22+and+wlc=calif+and+wck=mfr" target="_blank">Santa Cruz</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Shasta%22+and+wlc=calif+and+wck=mfr" target="_blank">Shasta</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Sierra%22+and+wlc=calif+and+wck=mfr" target="_blank">Sierra</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Siskiyou%22+and+wlc=calif+and+wck=mfr" target="_blank">Siskiyou</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Solano%22+and+wlc=calif+and+wck=mfr" target="_blank">Solano</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Sonoma%22+and+wlc=calif+and+wck=mfr" target="_blank">Sonoma</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Stanislaus%22+and+wlc=calif+and+wck=mfr" target="_blank">Stanislaus</a></li>
+                                    </ul>
+                                </div>
+                                <div class="half">
+                                    <p>Sutter-Yuba Counties</p>
+                                    <ul>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Sutter%22+and+wlc=calif+and+wck=mfr" target="_blank">Sutter</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+tehama%22+and+wlc=calif+and+wck=mfr" target="_blank">Tehama</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+trinity%22+and+wlc=calif+and+wck=mfr" target="_blank">Trinity</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Tulare%22+and+wlc=calif+and+wck=mfr" target="_blank">Tulare</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Tuolumne%22+and+wlc=calif+and+wck=mfr" target="_blank">Tuolumne</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Ventura%22+and+wlc=calif+and+wck=mfr" target="_blank">Ventura</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Yolo%22+and+wlc=calif+and+wck=mfr" target="_blank">Yolo</a></li>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=pla=%22united+states+California+Yuba%22+and+wlc=calif+and+wck=mfr" target="_blank">Yuba</a></li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Newspaper Indexes</a>
+                            </h3>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="https://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=SYS=(000141221)+OR+SYS=(000149390)+OR+SYS=(000597465)+OR+SYS=(000955490)+OR+SYS=(001079215)+OR+SYS=(001104195)+OR+SYS=(000420333)" target="_blank">Statewide</a></li>
+                                    <li><a href="https://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=%20SYS%20=%20(001407067)" target="_blank">Alameda County</a></li>
+                                    <li><a href="https://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=%20SYS%20=%20(000593385)" target="_blank">Butte County</a></li>
+                                    <li><a href="https://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=%20SYS%20=%20(001163267)" target="_blank">Fresno County</a></li>
+                                    <li><a href="https://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=%20SYS%20=%20(000984189)" target="_blank">Humboldt County</a></li>
+                                    <li><a href="https://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=%20SYS%20=%20(000444376)+OR+Sys=(001063605)" target="_blank">Kern County</a></li>
+                                    <li><a href="https://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=%20SYS%20=%20(000433446)" target="_blank">Lassen County</a></li>
+                                    <li><a href="https://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=SYS=(000134506)+OR+SYS=(000134507)+OR+SYS=(000134508)+OR+SYS=(000403968)+OR+SYS=(000934086)+OR+SYS=(001080360)+OR+SYS=(000965323)" target="_blank">Los Angeles County</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Reproductions</a>
+                            </h3>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <p>
+                                    To accommodate researchers who choose to <a href="/california-history/Visiting">visit us</a>, we provide access to digital microfilm scanners that allow you to email or save scans to a flash-drive free of charge. If you need paper copies, we have a coin-operated microfilm reader/printer. Each print-out costs 25 cents. We also permit no-flash photography and can arrange for <a href="/california-history/photo-reproduction">photographic reproductions</a> of our specimen or bound newspapers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Remote Access</a>
+                            </h3>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <p>
+                                    If you live in the United States or Canada but cannot <a href="/california-history/Visiting">visit</a> us, you can still use our newspaper collection remotely. All you have to do is request our newspapers on microfilm through inter-library loan at your local library. If you have any questions about this process please feel free to <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" traget="_blank">contact us</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

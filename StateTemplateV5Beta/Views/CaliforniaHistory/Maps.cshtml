@@ -1,11 +1,118 @@
-﻿
-@{
-    ViewBag.Title = "Maps";
+﻿@{
+    ViewBag.Title = "CSL - Maps Collection - CA History Room";
+    ViewBag.PageTitle = "Maps";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Maps</h2>
+
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/collections/">Our Collection</a></li>
+                    <li><a href="/california-history/">California History</a></li>
+                    <li class="active">Maps</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <p>
+                    With over 5,000 items, our map collection is an invaluable resource for anyone researching California. It includes rarities such as a <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&amp;QF0=NO&amp;QI0=100277&amp;TN=Display&amp;RF=webdisplaycollab&amp;DF=webdisplaycollab&amp;AC=QBE_QUERY" target="_blank">map of California</a> as an island, James Marshall's <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&amp;QF0=NO&amp;QI0=100278&amp;TN=Display&amp;RF=webdisplaycollab&amp;DF=webdisplaycollab&amp;AC=QBE_QUERY" target="_blank">gold-discovery map</a>, and a map of John Bidwell's <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QB0=AND&amp;QF0=NO&amp;QI0=100279&amp;TN=Display&amp;RF=webdisplaycollab&amp;DF=webdisplaycollab&amp;AC=QBE_QUERY" target="_blank">land grant</a>. We have highlighted a small selection of our maps in our <a href="http://catalog.library.ca.gov/F/?" target="_blank">catalog</a>. If you have any questions about these resources or if you cannot find what you need (many of our map records are not yet online), please feel free to <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
+                </p>
+
+                <div class="two-thirds">
+                    <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Map News</a>
+                                </h3>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;ccl_term=wrd+%3D+%28+calnew-17-08+%29+AND+%28+WSU+%3D+%28+Maps+%29+OR+WCK+%3D+%28+MAPS+%29+OR+WFM+%3D+%28+MP+%29+%29" target="_blank">Latest Additions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">More Maps</a>
+                                </h3>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p>
+                                        The library's <a href="http://catalog.library.ca.gov/F/?" target="_blank">online catalog</a> identifies only a portion of our map collection. However, we have a more comprehensive card catalog of our map resources available in the <a href="/california-history/">California History Room</a>. To check for the existence of a map in a specific region, please <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>. We also suggest that you check the <a href="/government-publications/">Government Publications Section's</a> equally extensive map collection.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Remote Access</a>
+                                </h3>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>
+                                        Although the majority of our maps are in original, hard-copy format and must be used in-house, a small portion of the collection may exist in books or microfilm which may circulate via the inter-library loan service of your local library. You may also arrange for <a href="/california-history/photo-reproduction">photographic reproductions</a> or <a href="/california-history/photocopy">low-resolution copies</a> of some of our maps. If you have any questions about these or other possible access options, please <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Reproductions</a>
+                                </h3>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <p>
+                                        To accommodate researchers who are able to <a href="/california-history/Visiting">visit</a> us, we provide access to digital microfilm and microfiche scanners that allow you to email or save scans to a flash-drive free of charge of our microfiche and microfilm maps. If you need paper copies of maps on microfilm or microfiche, we have a coin-operated reader/printer. Each print-out costs 25 cents. We also permit no-flash photography and can arrange for <a href="/california-history/photo-reproduction">photographic reproductions</a>. We can also provide <a href="/california-history/photocopy" target="_blank">low-resolution scans</a> of some of our paper maps, depending on their size and condition. Please consult our <a href="/california-history/photocopy">copying services</a> page for further conditions and pricing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="third">
+                    <div class="autoLoop carousel owl-carousel carousel-content">
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/newspapers/1.png" alt="newspapers" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/newspapers/2.png" alt="newspapers" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/newspapers/3.png" alt="newspapers" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 </div>
-

@@ -1,8 +1,8 @@
 ﻿@{
-    ViewBag.Title = "CSL - Events - CA History Room";
+    ViewBag.Title = "CSL - California Genealogy - CA History Room";
     ViewBag.PageTitle = "Genealogy";
     ViewBag.Author = "Alan Cleetus";
-    ViewBag.Description = "Speeches, tours and more! Read about California History Room events and schedule your own event with us!";
+    ViewBag.Description = "Doing genealogy research? Check the California History Room! We have city directories, census data, vital statistics, telephone books, newspapers, and more!";
 }
 
 <head>
@@ -19,7 +19,12 @@
         <div class="section">
             <div class="container">
 
-                <ol class="breadcrumb dynamic"></ol>
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/collections/">Our Collection</a></li>
+                    <li><a href="/california-history/">California History</a></li>
+                    <li class="active">Genealogy</li>
+                </ol>
 
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
                 <div class="animated fadeInRight">
@@ -52,7 +57,7 @@
                 <div class="half">
                     <div class="panel panel-default ">
                         <div class="panel-heading">
-                            <h4>California History Section</h4>
+                            <h3>California History Section</h3>
 
                         </div>
                         <div class="panel-body">
@@ -81,7 +86,7 @@
                 <div class="half">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>Sutro Library</h4>
+                            <h3>Sutro Library</h3>
 
                         </div>
                         <div class="panel-body">
