@@ -1,11 +1,148 @@
-﻿
-@{
-    ViewBag.Title = "PreviousCACapitals";
+﻿@{
+    ViewBag.Title = "CSL - Previous California State Capitals";
+    ViewBag.PageTitle = "Previous Capitals of California";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "";
+    ViewBag.Keywords = "Previous California State Capitals, Capitols";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>PreviousCACapitals</h2>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/collections">Our Collections</a></li>
+                <li><a href="/california-history">California History</a></li>
+                <li>Previous California Capitals</li>
+            </ol>
+            <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+            <div class="group">
+                <div class="two-thirds animate-fadeInUp">
+                    <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a align="center" role="button" class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">San Jose</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <p>
+                                        "The First and Second Sessions of the Legislature, which were held in 1850 and 1851, convened at San Jose.
+                                        Founded in 1777, San Jose was the first incorporated city in the state and the county seat of Santa Clara County.
+                                    </p>
+                                    <p>
+                                        "The Capitol was a two-story adobe hotel, 60 by 40 feet, the upper story being assigned to the Assembly and the lower to the Senate.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a align="center" class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Vallejo</a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p>
+                                        "During the session of 1850, several proposals to provide suitable lands for state buildings, along with lands, bonds or moneys to establish funding for construction, were presented to the Legislature.
+                                        General Vallejo's offer was by far the most generous.... A majority of the Senate Committee on Public Buildings reported a bill recommending the removal of the capital to the town of Vallejo which, passing both houses, was approved by the Governor on February 4, 1851.
+                                    </p>
+                                    <p>
+                                        "The Third Session opened at Vallejo on January 5, 1852. The capital was in a state of total chaos.  Accommodations of all sorts were in varying stages of construction....
+                                        The dearth of essentials and the absence of amenities plunged the legislators into a new battle to move the Capitol....
+                                        [It] was decided that, while the town of Vallejo would remain the permanent capital of the state, the Senate and Assembly would repair to Sacramento to complete the session.
+                                    </p>
+                                    <p>
+                                        The following year, on January 3rd, the Legislature assembled again in Vallejo for the Fourth Session. Compared with the previous year, conditions were little better, and the weather worse. Transportation and communication, in spite of great effort, fell far short of the needs of the Legislature.
+                                        Proponents of removal viewed, one the one hand, Sacramento recovering from a flood and, on the other, the town of Benicia offering the free use of its new city hall and a port of call at which all river traffic stopped.
+                                        Spurred perhaps by the immediate prospect of an uncomfortable session in Vallejo, the Legislature passed a bill on February 4 ordering the seat of government to be moved instantly to the City of Benicia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a align="center" class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Benicia</a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>
+                                        "The newly designated capital promptly welcomed the Legislature as the Fourth Session reconvened on February 11, 1853.
+                                        Benicia, given the second name of the wife of General Vallejo, had grown with the addition of an ordnance depot and a military post into a major port of call between San Francisco and Sacramento.
+                                    </p>
+                                    <p>
+                                        "The new State Capitol was a roomy, two-story brick building which, besides two large legislative chambers, contained much-demanded rooms for committees.
+                                        Two Doric pillars and four pilasters presented, for the first time, a suitably grand facade. The lawmakers, with little or no complaint, resumed their labors and adjourned May 19, 1853.
+                                    </p>
+                                    <p>
+                                        "Yet, once more, the capital seemed inadequate to the accommodations required for a legislative session and its entourage of scribes, journalists and advocates.... A handsome proposal from the City of Sacramento arrived at about this time.
+                                        Free use of the Sacramento County Courthouse as a capitol building, rooms for state officers, fireproof vaults for the records, removal of the Legislature and furnishings from Benicia to Sacramento without charge, and a building site for a permanent capitol – should Sacramento be declared the permanent capital – were included.
+                                    </p>
+                                    <p>
+                                        "Other political considerations were agreed to, and an act was passed repealing all prior legislation which had to do with a state capital and naming Sacramento as the permanent seat of government.
+                                        On February 25, the bill was signed by Governor Bigler, and the Legislature, bag and baggage, climbed aboard the steamer, Wilson B. Hunt for the voyage to the new capital."
+                                    </p>
+                                    <p align="right">
+                                        From: <a href="http://leginfo.public.ca.gov/califleg.html">California Legislature</a>, Chief Clerk of the Assembly, 2011.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a align="center" class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">Sacramento</a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <p>
+                                        Find out more about the <a href="~/Content/StateTemplate/pdf/californiaHistory/2011_Cal_Legi_Ch_11.pdf">history of the capital</a> and its move to Sacramento in California's Legislature.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="third animate-fadeInUp">
+                    <div class="autoLoop carousel owl-carousel carousel-content">
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/previousCACapitals/san_jose_capital.jpg" alt="San Jose State Capital" title="San Jose State Capital"/>
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/previousCACapitals/capital_vallejo.jpg" alt="Vallejo State Capital" title="Vallejo State Capital"/>
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/previousCACapitals/benicia-state-capitol.jpg" alt="Benicia State Capital" title="Benicia State Capital"/>
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/previousCACapitals/sacramento-capitol-building.jpg" alt="Sacramento State Capital" title="Sacramento State Capital"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
