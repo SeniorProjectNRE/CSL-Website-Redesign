@@ -1,11 +1,63 @@
-﻿
-@{
-    ViewBag.Title = "Handbook";
+﻿@{
+    ViewBag.Title = "CSL - BTBL - Patron Handbook";
+    ViewBag.PageTitle = "BTBL Patron Handbook";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "Includes helpful information about how to use our free service. The BTBL Patron Handbook is mailed to all new patrons when they sign up for service. To receive a large print or braille copy of this handbook through the mail, please contact BTBL.";
+    ViewBag.Keywords = "BARD, BTBL, Braille, Patron Handbook";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Handbook</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/btbl">Braille and Talking Books</a></li>
+                    <li>Patron Handbook</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <p>
+                    This handbook is mailed to all new patrons when they sign up for service. 
+                    It includes helpful information about how to use our free service. 
+                    To receive a large print or braille copy of this handbook through the mail, please <a href="/btbl/contact">contact BTBL</a>.
+                </p>
+                <div class="group">
+                    <div class="half">
+                        <h3>BTBL Patron Handbook</h3>
+                        <ul class="list-overstated">
+                            <li><a href="~/Content/StateTemplate/otherDocuments/btbl/BTBL_PatronHandbookFINALrev2015.doc">WORD</a></li>
+                            <li><a href="~/Content/StateTemplate/pdf/btbl/BTBL_PatronHandbookFINALrev2015.pdf">PDF</a></li>
+                            <li><a href="~/Content/StateTemplate/otherDocuments/btbl/PatronHandbook2014.mp3">MP3</a></li>
+                            <li><a href="~/Content/StateTemplate/otherDocuments/btbl/PatronHandbook2014.zip">DAISY</a></li>
+                            <li><a href="~/Content/StateTemplate/otherDocuments/btbl/PatronHandbook_2014.brf">BRF</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="half">
+                        <h3>BTBL Institution Handbook</h3>
+                        <ul class="list-overstated">
+                            <li><a href="~/Content/StateTemplate/otherDocuments/btbl/BTBL_InstitutionHandbookFINAL.doc">WORD</a></li>
+                            <li><a href="~/Content/StateTemplate/pdf/btbl/BTBL_InstitutionHandbookFINAL.pdf">PDF</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
