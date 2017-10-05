@@ -1,11 +1,168 @@
-﻿
-@{
-    ViewBag.Title = "PermissionToUse";
+﻿@{
+    ViewBag.Title = "CSL - Permission to Use  - CA History Room";
+    ViewBag.PageTitle = "Permission to Use";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Do you want to use a California History Room item in your next exhibit, book, website or movie? Ask us for permission to use our items!";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>PermissionToUse</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/collections/">Our Collection</a></li>
+                    <li><a href="/california-history/">California History</a></li>
+                    <li class="active">Permission to Use</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <div class="two-thirds">
+                    <p>
+                        The vast majority of the images contained in the California State Library collections that were produced or published prior to 1923 are public domain images. The library does not research each image in its collection to determine or guarantee freedom from copyright. The library can claim only physical ownership of the material. Materials may be protected by copyright, trademark, or related interests, including possible rights of privacy. All responsibility for questions of copyright liability and release violations that may arise in the use made of reproduced material is assumed by the user. For more information, please consult our <a href="/california-history/fair-use">copyright page</a>. To obtain our permission to use an item in the collection, please <a href="mailto:cslcal@library.ca.gov">email us</a> the following information:
+                    </p>
+                    <div class="panel panel-understated">
+                        <div class="panel-heading">
+                            <h3> Information Needed</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <li>List of images for which you are requesting permission to use,</li>
+                                <li>an explanation of how the materials will be used,</li>
+                                <li>the publisher or sponsor,</li>
+                                <li>the print run and/or production numbers,</li>
+                                <li>a circulation estimate,</li>
+                                <li>whether the material is being used for non-profit purposes.</li>
+                            </ul>
+
+                            <p>In lieu of an e-mail, you may also send a letter to:</p>
+
+                            <div class="location contact">
+                                <span class="ca-gov-icon-email"></span>
+
+                                <div class="contact">
+                                    <p class="address">
+                                        California History Room<br />
+                                        California State Library<br />
+                                        P.O. Box 942837<br />
+                                        Sacramento, CA 94237-0001<br />
+                                    </p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                     
+                </div>
+                <div class="third">
+                    <div class="autoLoop carousel owl-carousel carousel-content">
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/permissiontouse/camp.jpg" alt="permission to use" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/permissiontouse/letter.jpg" alt="permission to use" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/permissiontouse/library.jpg" alt="permission to use" />
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="section">
+
+                    <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Conditions</a>
+                                </h3>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+
+                                    <p>Materials obtained from the California State Library must be published unaltered and in their entirety unless the alterations are approved in advance and in writing by the library. The library gives no exclusive rights for the use of its materials. Permission is granted for a one-time use only. It is the user's responsibility to determine copyright.</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Right to Refusal</a>
+                                </h3>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+
+                                    <p>
+                                        The California State Library reserves the right to refuse permission to publish or exhibit materials if, in its judgment, publication or exhibition would involve violation of copyright law, would cause irreparable damage to valuable and fragile originals, or for any other reason.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Fees</a>
+                                </h3>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>
+                                        At present, we charge no commercial usage fees for use of our materials.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">In-Kind Donations</a>
+                                </h3>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+
+                                    <p>
+                                        The library requests and gratefully accepts donations of publications or media containing materials from its collections.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

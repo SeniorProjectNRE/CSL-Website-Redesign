@@ -1,11 +1,162 @@
-﻿
-@{
-    ViewBag.Title = "Ephemera";
+﻿@{
+    ViewBag.Title = "CSL - California Ephemera - CA History Room";
+    ViewBag.TitlePage = "California Ephemera";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "Menus, receipts, and posters for counties, clubs, events and more! To see these historical nuggets, check the California History Room ephemera collection.";
+    ViewBag.Keywords = "History Room, Ephemera";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Ephemera</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/california-history">California History</a></li>
+                    <li>Ephemera</li>
+                </ol>
+
+                <h2 class="page-title">@(ViewBag.TitlePage)</h2>
+
+                <div class="group">
+                    <div class="two-thirds">
+                        <p>
+                            Are you feeling peckish and want to look at <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100296))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">restaurant menus</a> from 1905? 
+                            Do you have a yen to see <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100298))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">advertisements</a> from 1890?
+                            Then we have the resource for you. Our massive ephemera files include rarities like historic <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100301))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">event programs</a>, 
+                            <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100294))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">sheet music</a>, 
+                            <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100299))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">certificates</a>, 
+                            <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100293))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">receipts</a>, 
+                            <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100302))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">shape books</a>, 
+                            <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100304))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">campaign memorabilia</a>, 
+                            <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100300))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">trade cards</a>, 
+                            <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100303))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">posters</a>, 
+                            <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100305))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">bottle stopers</a>, 
+                            <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100295))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">buttons</a> and 
+                            <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100297))&TN=Display&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">more</a>!
+                            Although, we don't have online records for all of the items in these files, you can get a feel for the scope of this amazing collection by searching the <a href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm">California Information File II</a>.
+                            If you have any questions, please feel free to <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?pmi=3mtPEu8ddN">contact us</a>.
+                        </p>
+
+                        <p><span class="ca-gov-icon-info"></span>   Click on the title below for more information.</p>
+
+                        <div class="group">
+                            <div class="half list-unstyled p-b-md" >
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Ephemera News</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <ul class="list-overstated">
+                                                    <li><a href="/california-history/current-display">On Display</a></li>
+                                                    <li><a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(FI%20ct%20((Textual%20File/Vertical%20File/VF/TF)!MSS)%20AND%20(ENT%20ct(%E2%80%98July%202017%E2%80%99))&TN=CALINFO&RF=webdisplayCOLLAB&DF=webdisplayCOLLAB&AC=QBE_Query">Just Indexed</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half list-unstyled p-b-md">
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">More Ephemera</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <p>
+                                                    The items we have highlighted on this page just barely hint at the richness of our collection.
+                                                    You can obtain a fuller idea of our holdings by searching the <a href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm">California Information File II</a> or 
+                                                    <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">consulting with</a> one of our librarians.
+                                                    The best way to fully explore this collection is to plan to <a href="/california-history/visiting">visit us</a>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <div class="half">
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">Remote Access</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <p>
+                                                    You can see digital copies of some of our ephemera in our <a href="">California Calls You</a> exhibit or the <a href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm">California Information File II</a>.
+                                                    If you aren't finding what you want, please <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">email us</a> with your questions.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseTwo">Reporductions</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                            <div class="panel-body">
+                                                <p>
+                                                    We permit no-flash photography of these materials and can arrange for <a href="/california-history/photo-reproduction/">photographic reproductions</a> 
+                                                    or <a href="/california-history/photocopy/">low-resolution copies</a> of much of our ephemera.
+                                                    If you have any questions about these services, please feel free to <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">contact us</a>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="third animate-fadeInRight">
+                        <div class="autoLoop carousel owl-carousel carousel-content">
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/banquet.jpg" alt="Banquet" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/lake_tahoe.jpg" alt="Lake Tahoe" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/san_diego_exposition.jpg" alt="San Diego Exposition" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

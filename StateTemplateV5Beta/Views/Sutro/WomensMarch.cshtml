@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Women's March";
+    ViewBag.PageTitle = "Women's March";
     ViewBag.Banner = "womensmarch1.jpg";
     ViewBag.Author = "Jonathan Shaw";
     ViewBag.Description = "California State Library Women's March page.  Find info about the women's march here.";
@@ -18,10 +19,14 @@
     <main class="main-primary">
 
         <div class="container">
-            <ol class="breadcrumb dynamic">
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><a href="/collections">Our Collections</a></li>
+                <li><a href="/sutro">Sutro</a></li>
+                <li>Womens March</li>
             </ol>
 
-            <h1 class="orange" id="title">@ViewBag.Title</h1>
+            <h2 class="page-title" id="title">@ViewBag.Title</h2>
 
             <img src="~/Content/StateTemplate/images/banner/@(ViewBag.Banner)" style="width:100%" alt="" class="animated fadeInLeft" />
         </div>
@@ -38,33 +43,34 @@
                     house this collection of historical and political importance. It will be maintained for researchers, students, and
                     the general public and is freely accessible to all.
                 </p>
-                <p>
-                    Material to be collected includes but is not limited to:
-                </p>
-
-                <div class="half">
-
-                    <ul>
-                        <li>
-                            Flyers, posters, and signs
-                        </li>
-                        <li>
-                            Clothing and wearable art
-                        </li>
-                    </ul>
+                <div class="section">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#highlights-accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Material to be collected includes but is not limited to:</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>
+                                        Flyers, posters, and signs
+                                    </li>
+                                    <li>
+                                        Clothing and wearable art
+                                    </li>
+                                    <li>
+                                        Artwork
+                                    </li>
+                                    <li>
+                                        Personal narratives in any format
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="half">
-
-                    <ul>
-                        <li>
-                            Artwork
-                        </li>
-                        <li>
-                            Personal narratives in any format
-                        </li>
-                    </ul>
-                    </div>
                     <p>
                         Please carefully remove any frames or sign supports before submitting. Unfortunately, we will not be able to accept
                         severely damaged posters and art.
@@ -73,29 +79,41 @@
                     <h3>
                         How to Proceed
                     </h3>
-                    <div class="half">
-                        <p>
-                            <strong>Mail:</strong> <br />
-                            Please mail your items to:<br />
-                            California Women's March Collection<br />
-                            Sutro Library - California State Library<br />
-                            1630 Holloway Avenue<br />
-                            San Francisco, CA 94132
-                        </p>
+                <div class="section half">
+                    <div class="panel panel-overstated highlight">
+                        <div class="panel-heading" style="text-align:center">
+                            <h2><strong>Mail:</strong></h2>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                Please mail your items to:<br />
+                                California Women's March Collection<br />
+                                Sutro Library - California State Library<br />
+                                1630 Holloway Avenue<br />
+                                San Francisco, CA 94132
+                            </p>
+                        </div>
                     </div>
-                    <div class="half">
-                        <p>
-                            <strong>Drop Off:</strong> <br />
-                            If you wish to drop off physical<br />
-                            materials, the Sutro Library is located<br />
-                            on the SFSU campus in the J. Paul<br />
-                            Leonard Library, 5th Floor. Our hours are<br />
-                            10 a.m. to 4 p.m. Monday through Friday<br />
-                        </p>
+                </div>
+                <div class="section half">
+                    <div class="panel panel-overstated highlight">
+                        <div class="panel-heading" style="text-align:center">
+                            <h2><strong>Drop Off:</strong></h2>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                If you wish to drop off physical<br />
+                                materials, the Sutro Library is located<br />
+                                on the SFSU campus in the J. Paul<br />
+                                Leonard Library, 5th Floor. Our hours are<br />
+                                10 a.m. to 4 p.m. Monday through Friday<br />
+                            </p>
+                        </div>
                     </div>
+                </div>
                     <p>
                         <strong>Further questions?</strong> Please contact Mattie Taormina, Director of the Sutro Library at
-                        <a href="mailto:mattie.taormina@library.ca.gov">mattie.taormina@library.ca.gov</a>, <b>415-469-6102</b>.
+                        <a href="mailto:mattie.taormina@library.ca.gov">mattie.taormina@library.ca.gov</a>, <strong>415-469-6102</strong>.
                     </p>
                     <br />
                     <h3>
@@ -105,9 +123,9 @@
                     <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingOne">
-                                <h4 class="panel-title">
+                                <h3 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What will happen to my items?</a>
-                                </h4>
+                                </h3>
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body indent-outer">
@@ -124,9 +142,9 @@
 
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingTwo">
-                                <h4 class="panel-title">
+                                <h3 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Where will they live?</a>
-                                </h4>
+                                </h3>
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body indent-outer">
@@ -145,9 +163,9 @@
 
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingThree">
-                                <h4 class="panel-title">
+                                <h3 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Do you accept digital photographs?</a>
-                                </h4>
+                                </h3>
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body indent-outer">
@@ -162,9 +180,9 @@
 
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingFour">
-                                <h4 class="panel-title">
+                                <h3 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Can I have it back later to give to my relatives?</a>
-                                </h4>
+                                </h3>
                             </div>
                             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                 <div class="panel-body indent-outer">
@@ -180,9 +198,9 @@
 
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingFive">
-                                <h4 class="panel-title">
+                                <h3 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">What if you don't want what I send?</a>
-                                </h4>
+                                </h3>
                             </div>
                             <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                                 <div class="panel-body indent-outer">
@@ -198,9 +216,9 @@
 
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingSix">
-                                <h4 class="panel-title">
+                                <h3 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">What about copyright laws?</a>
-                                </h4>
+                                </h3>
                             </div>
                             <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                                 <div class="panel-body indent-outer">
@@ -218,9 +236,9 @@
 
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingSeven">
-                                <h4 class="panel-title">
+                                <h3 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">Will I be associated with my donation?</a>
-                                </h4>
+                                </h3>
                             </div>
                             <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
                                 <div class="panel-body indent-outer">
@@ -236,9 +254,9 @@
 
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingEight">
-                                <h4 class="panel-title">
+                                <h3 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">Can I send you a testimony with my item?</a>
-                                </h4>
+                                </h3>
                             </div>
                             <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
                                 <div class="panel-body indent-outer">
@@ -254,9 +272,9 @@
 
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingNine">
-                                <h4 class="panel-title">
+                                <h3 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">I was an organizer of a group that marched. Can we send you all our posters?</a>
-                                </h4>
+                                </h3>
                             </div>
                             <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
                                 <div class="panel-body indent-outer">
@@ -272,9 +290,9 @@
 
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingTen">
-                                <h4 class="panel-title">
+                                <h3 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">How big a poster can I send?</a>
-                                </h4>
+                                </h3>
                             </div>
                             <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
                                 <div class="panel-body indent-outer">

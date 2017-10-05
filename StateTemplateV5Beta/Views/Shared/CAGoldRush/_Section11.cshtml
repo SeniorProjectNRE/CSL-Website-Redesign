@@ -1,18 +1,40 @@
-﻿<div class="site-settings section section-standout collapse collapsed" role="alert" id="section1">
+﻿@{
+    ViewBag.SectionTitle = "Section X. Scenes in the Life of the California Miner";
+}
+<div class="site-settings section section-standout collapse collapsed" role="alert" id="section11">
     <div class="container  p-y">
         <div class="row">
-            <button type="button" class="close col-md-2" data-toggle="collapse" data-target="#section1" aria-expanded="false" aria-controls="section1" aria-label="Close" style="z-index:1"><span aria-hidden="true">Close</span></button>
-            <button type="button" class="close col-md-2" data-toggle="collapse" data-target="#section2" aria-expanded="false" aria-controls="section2" aria-label="Close" style="z-index:1"><span aria-hidden="true">Next Section</span></button>
+
+            <!--button for previous section-->
+            <div class="section-previous col-md-offset-6 col-md-2 col-sm-4 col-xs-12">
+                <div data-toggle="collapse" data-target="#section11" aria-expanded="false" aria-controls="section11" aria-label="Close">
+                    <a id="section-controls" data-toggle="collapse" data-target="#section10" aria-expanded="false" aria-controls="section10" aria-label="Previous Section">Previous Section <span class="ca-gov-icon-caret-two-left" aria-hidden="true"></span></a>
+                </div>
+            </div>
+            <!--button for next section-->
+            <div class="section-next col-md-2 col-sm-4 col-xs-12">
+                <div data-toggle="collapse" data-target="#section11" aria-expanded="false" aria-controls="section11" aria-label="Close">
+                    <a id="section-controls" data-toggle="collapse" data-target="#section12" aria-expanded="false" aria-controls="section12" aria-label="Next Section">Next Section <span class="ca-gov-icon-caret-two-right" aria-hidden="true"></span></a>
+                </div>
+            </div>
+            <!--close botton-->
+            <div class="section-close col-md-2 col-sm-4 col-xs-12">
+                <a id="section-controls" data-toggle="collapse" data-target="#section11" aria-expanded="false" aria-controls="section11" aria-label="Close">Close <span class="ca-gov-icon-close-mark" aria-hidden="true"></span></a>
+
+            </div>
+
         </div>
-        
+
 
 
         <div class="row" role="group">
-                    <p>Here is some contnent</p>
-                    <div style="height:200px; background-color:red">
 
-                    </div>
+            <h1 class="orange" id="title">@ViewBag.SectionTitle</h1>
+            <p>Here is some contnent11</p>
+            <div style="height:200px; background-color:red">
+
             </div>
+        </div>
 
     </div>
 </div>

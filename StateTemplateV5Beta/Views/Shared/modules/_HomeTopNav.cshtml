@@ -2,6 +2,29 @@
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
+    <style>
+        .nav li ul {
+            position: absolute;
+            left: 0;
+            top: 36px;
+            z-index: 1;
+            max-height: 0;
+            overflow: hidden;
+            -webkit-transform: perspective(400) rotate3d(1,0,0,-90deg);
+            -webkit-transform-origin: 50% 0;
+            -webkit-transition: 350ms;
+            -moz-transition: 350ms;
+            -o-transition: 350ms;
+            transition: 350ms;
+        }
+
+        .nav ul > li:hover ul {
+            max-height: 1000px;
+            -webkit-transform: perspective(400) rotate3d(0,0,0,0);
+        }
+    </style>
+
 </head>
 <!--
 Step 2
@@ -10,15 +33,6 @@ Select Navigation Type:
 Options are: megadropdown dropdown singlelevel
 -->
 
-<head>
-    
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
-
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-
-</head>
 <div class="navigation-search" style="border:0">
     <div id="head-search" class="search-container">
         <!-- Include Search -->
@@ -87,7 +101,7 @@ Options are: megadropdown dropdown singlelevel
                 </div>
                 <div class="submit_container">
                     <!-- Step 08 -->
-                    <input type="submit" style="float:left" alt="Search" title="Search" name="submit" value="Search" />
+                    <input type="submit" style="float:left"   title="Search" name="submit" value="Search" />
                 </div>
                 <div style="clear:both"></div>
             </form>
@@ -107,7 +121,7 @@ Options are: megadropdown dropdown singlelevel
                 </div>
                 <div class="submit_container" style="left:184px;">
                     <!-- Step 08 -->
-                    <input type="submit" style="float:left" alt="Search" title="Search" name="submit" value="Search" style="height:19px;" />
+                    <input type="submit" style="float:left"   title="Search" name="submit" value="Search" style="height:19px;" />
                 </div><div style="clear:both"></div>
             </form>
 
@@ -119,7 +133,7 @@ Options are: megadropdown dropdown singlelevel
                 </div>
                 <div class="submit_container">
                     <!-- Step 08 -->
-                    <input style="float:left" type="submit" alt="Search" title="Search" name="submit" value="Search" />
+                    <input style="float:left" type="submit"   title="Search" name="submit" value="Search" />
                 </div>
                 <div style="clear:both"></div>
             </form>
@@ -133,46 +147,45 @@ Options are: megadropdown dropdown singlelevel
             </li>
             <li class="nav-item">
                 <a href="/services" class="first-level-link"><span class="ca-gov-icon-state" aria-hidden="true"></span>Services</a>
-                <!--<a href="http://webtools.ca.gov/" target="_blank" class="first-level-link"><span class="ca-gov-icon-state" aria-hidden="true"></span><img name="services" src="/images/top-icons/services.jpg" onmouseover="document.services.src='/images/top-icons/services-over.jpg'" onmouseout="document.services.src='/images/top-icons/services.jpg'" alt="services" style="width:48px !important; padding-bottom:5px" /><br />Services</a>-->
-            </li>
-            <li class="nav-item">
-                <a href="/grants" class="first-level-link"><span class="ca-gov-icon-wallet" aria-hidden="true"></span>Grants</a>
-                <!--<a href="../structure.html" class="first-level-link"><span class="ca-gov-icon-flowchart" aria-hidden="true"></span><img name="grants" src="/images/top-icons/grants.jpg" onmouseover="document.grants.src='/images/top-icons/grants-over.jpg'" onmouseout="document.grants.src='/images/top-icons/grants.jpg'" alt="grants" style="width:48px !important; padding-bottom:5px" /><br />Grants</a>-->
                 <div class="sub-nav">
                     <!-- Offset class needed to fix positioning issue caused when positioning the image -->
                     <div class="three-quarters offset-quarter">
                         <ul class="second-level-nav">
-                            <li class="unit1">
-                                <a href="/" class="second-level-link"><span class="ca-gov-icon-home" aria-hidden="true"></span>Link 1</a>
-                            </li>
-                            <li class="unit1">
-                                <a href="/" class="second-level-link"><span class="ca-gov-icon-home" aria-hidden="true"></span>Link 2</a>
-                            </li>
-                            <li class="unit1">
-                                <a href="/" class="second-level-link">
-                                    <span class="ca-gov-icon-home" aria-hidden="true"></span>Link 3
-                                </a>
-                            </li>
                             <li class="unit2">
-                                <a href="/" class="second-level-link">
-                                    <span class="ca-gov-icon-home" aria-hidden="true"></span>Link 4
-                                    <div class="link-description">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                                <a href="/btbl" class="second-level-link"><span class="ca-gov-icon-book" aria-hidden="true"></span>&nbsp;Braille and Talking Books</a>
+                            </li>
+                            <li class="unit1">
+                                <a href="/services/to-libraries" class="second-level-link"><span class="ca-gov-icon-building" aria-hidden="true"></span>&nbsp;To Libraries </a>
+                            </li>
+                            <li class="unit1">
+                                <a href="/services/borrowing" class="second-level-link"><span class="ca-gov-icon-drawer" aria-hidden="true"></span>&nbsp;Borrowing</a>
+                            </li>
+                            <li class="unit1">
+                                <a href="/services/online-resources" class="second-level-link">
+                                    <span class="ca-gov-icon-computer" aria-hidden="true"></span>&nbsp;Online Resources 
+                                    <div class="link-description"></div>
                                 </a>
                             </li>
                             <li class="unit1">
-                                <a href="/" class="second-level-link">
-                                    <span class="ca-gov-icon-home" aria-hidden="true"></span>Link 5
+                                <a href="/services/statistics" class="second-level-link">
+                                    <span class="ca-gov-icon-calculator" aria-hidden="true"></span>&nbsp;Statistics
                                 </a>
                             </li>
                             <li class="unit1">
-                                <a href="/" class="second-level-link">
-                                    <span class="ca-gov-icon-home" aria-hidden="true"></span>Link 5
+                                <a href="/services/to-public" class="second-level-link">
+                                    <span class="ca-gov-icon-ca-state" aria-hidden="true"></span>&nbsp;To General Public
                                 </a>
                             </li>
-                            <li class="unit2">
-                                <a href="/" class="second-level-link">
-                                    <span class="ca-gov-icon-home" aria-hidden="true"></span>Link 7
-                                    <div class="link-description">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                            <li class="unit1">
+                                <a href="/services/to-state-employees" class="second-level-link">
+                                    <span class="ca-gov-icon-state" aria-hidden="true"></span>&nbsp;To State Employees
+                                    <div class="link-description"></div>
+                                </a>
+                            </li>
+                            <li class="unit1">
+                                <a href="/services/reasearch" class="second-level-link">
+                                    <span class="ca-gov-icon-archive" aria-hidden="true"></span>&nbsp;Research
+                                    <div class="link-description"></div>
                                 </a>
                             </li>
                         </ul>
@@ -183,33 +196,45 @@ Options are: megadropdown dropdown singlelevel
                 </div>
             </li>
             <li class="nav-item">
-                <a href="/collections" class="first-level-link"><span class="ca-gov-icon-images" aria-hidden="true"></span>Collections</a>
+                <a href="/grants" class="first-level-link"><span class="ca-gov-icon-currency" aria-hidden="true"></span>Grants</a>
+            </li>
+            <li class="nav-item">
+                <a href="/collections" class="first-level-link"><span class="ca-gov-icon-images" aria-hidden="true"></span>&nbsp;Collections</a>
                 <div class="sub-nav">
-                    <div class="half offset-half">
+                    <div class="three-quarters offset-quarter">
                         <ul class="second-level-nav">
                             <li class="unit1">
-                                <a href="/" class="second-level-link"><span class="ca-gov-icon-home" aria-hidden="true"></span>Link 1</a>
+                                <a href="http://catalog.library.ca.gov " class="second-level-link"><span class="ca-gov-icon-read-book" aria-hidden="true"></span>&nbsp;Online Catalogs</a>
                             </li>
                             <li class="unit1">
-                                <a href="/" class="second-level-link"><span class="ca-gov-icon-home" aria-hidden="true"></span>Link 2</a>
+                                <a href="/california-history" class="second-level-link"><span class="ca-gov-icon-hourglass" aria-hidden="true"></span>&nbsp;California History</a>
                             </li>
                             <li class="unit2">
-                                <a href="/" class="second-level-link">
-                                    <span class="ca-gov-icon-home" aria-hidden="true"></span>Link 3
-                                    <div class="link-description">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                                <a href="/btbl" class="second-level-link">
+                                    <span class="ca-gov-icon-book" aria-hidden="true"></span>&nbsp;Braille and Talking Books
+                                    <div class="link-description"></div>
                                 </a>
                             </li>
                             <li class="unit1">
-                                <a href="/" class="second-level-link"><span class="ca-gov-icon-home" aria-hidden="true"></span>Link 4</a>
-                            </li>
-                            <li class="unit2">
-                                <a href="/" class="second-level-link">
-                                    <span class="ca-gov-icon-home" aria-hidden="true"></span>Link 5
-                                    <div class="link-description">Lorem ipsum dolor sit amet consectetur adipisicing</div>
-                                </a>
+                                <a href="/sutro" class="second-level-link"><span class="ca-gov-icon-building" aria-hidden="true"></span>&nbsp;Sutro Library</a>
                             </li>
                             <li class="unit1">
-                                <a href="/" class="second-level-link"><span class="ca-gov-icon-home" aria-hidden="true"></span>Link 6</a>
+                                <a href="/collections/genealogy" class="second-level-link">
+                                    <span class="ca-gov-icon-flowchart" aria-hidden="true"></span>&nbsp;Genealogy 
+                                    <div class="link-description"></div>
+                                </a>
+                            </li>
+                            <li class="unit2">
+                                <a href="/government-publications" class="second-level-link"><span class="ca-gov-icon-capitol" aria-hidden="true"></span>&nbsp;Government Publications </a>
+                            </li>
+                            <li class="unit2">
+                                <a href="/law" class="second-level-link"><span class="ca-gov-icon-justice-legal" aria-hidden="true"></span>&nbsp;Law</a>
+                            </li>
+                            <li class="unit1">
+                                <a href="/collections/online-collections" class="second-level-link"><span class="ca-gov-icon-computer" aria-hidden="true"></span>&nbsp;Online Collections</a>
+                            </li>
+                            <li class="unit1">
+                                <a href="/services/online-resources" class="second-level-link"><span class="ca-gov-icon-video-camera" aria-hidden="true"></span>&nbsp;Videos & Podcasts</a>
                             </li>
                         </ul>
                     </div>
@@ -220,6 +245,21 @@ Options are: megadropdown dropdown singlelevel
             </li>
             <li class="nav-item">
                 <a href="/work-with-us" class="first-level-link" style="padding-left: 10px; padding-right: 10px;"><span class="ca-gov-icon-briefcase" aria-hidden="true"></span>Work With Us</a>
+                <div class="sub-nav">
+                    <div class="quarter offset-three-quarters">
+                        <ul class="second-level-nav">
+                            <li class="unit1">
+                                <a href="/work-with-us/jobs" class="second-level-link"><span class="ca-gov-icon-wallet" aria-hidden="true"></span>&nbsp;Jobs</a>
+                            </li>
+                            <li class="unit1">
+                                <a href="/work-with-us/internship" class="second-level-link"><span class="ca-gov-icon-user-id" aria-hidden="true"></span>&nbsp;Internship</a>
+                            </li>
+                            <li class="unit1">
+                                <a href="/work-with-us/volunteer" class="second-level-link"><span class="ca-gov-icon-person" aria-hidden="true"></span>&nbsp;Volunteer</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </li>
             <!-- LEFT ALIGNED IMAGE -->
             <!--<li class="nav-item">
@@ -230,67 +270,70 @@ Options are: megadropdown dropdown singlelevel
             <!--<img name="research" src="/images/top-icons/research.jpg" onmouseover="document.research.src='/images/top-icons/research-over.jpg'" onmouseout="document.research.src='/images/top-icons/research.jpg'" alt="research" style="width:48px !important; padding-bottom:5px"/><br />Research</a>
             </li>-->
             <li class="nav-item">
-                <!--class="ca-gov-icon-gears"-->
                 <a href="/about" class="first-level-link"><span class="ca-gov-icon-info-bubble" aria-hidden="true"></span>About Library</a>
                 <div class="sub-nav">
-                    <div class="half">
+                    <!-- Offset class needed to fix positioning issue caused when positioning the image -->
+                    <div class="three-quarters offset-quarter">
                         <ul class="second-level-nav">
-                            <li class="unit1">
-                                <a href="/" class="second-level-link"><span class="ca-gov-icon-home" aria-hidden="true"></span>Link 1</a>
+                            <li class="unit2">
+                                <a href="/contact" class="second-level-link"><span class="ca-gov-icon-contact-us"true"></span>&nbsp;Contact Us</a>
                             </li>
                             <li class="unit1">
-                                <a href="/" class="second-level-link"><span class="ca-gov-icon-home" aria-hidden="true"></span>Link 2</a>
+                                <a href="/about/general-information" class="second-level-link"><span class="ca-gov-icon-page" aria-hidden="true"></span>&nbsp;General Information</a>
+                            </li>
+                            <li class="unit1">
+                                <a href="/about/library-sections" class="second-level-link"><span class="ca-gov-icon-folder" aria-hidden="true"></span>&nbsp;Library Sections</a>
                             </li>
                             <li class="unit2">
-                                <a href="/" class="second-level-link">
-                                    <span class="ca-gov-icon-home" aria-hidden="true"></span>Link 3
-                                    <div class="link-description">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                                <a href="/about/history" class="second-level-link">
+                                    <span class="ca-gov-icon-time" aria-hidden="true"></span>&nbsp;History
+                                    <div class="link-description"></div>
+                                </a>
+                            </li>
+                            <li class="unit2">
+                                <a href="/about/press-releases" class="second-level-link">
+                                    <span class="ca-gov-icon-film" aria-hidden="true"></span>&nbsp;Press Releases
                                 </a>
                             </li>
                             <li class="unit1">
-                                <a href="/" class="second-level-link"><span class="ca-gov-icon-home" aria-hidden="true"></span>Link 4</a>
-                            </li>
-                            <li class="unit2">
-                                <a href="/" class="second-level-link">
-                                    <span class="ca-gov-icon-home" aria-hidden="true"></span>Link 5
-                                    <div class="link-description">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                                <a href="/about/executive-staff" class="second-level-link">
+                                    <span class="ca-gov-icon-law-enforcement" aria-hidden="true"></span>&nbsp;Executive Staff
                                 </a>
-                            </li>
-                            <li class="unit1">
-                                <a href="/" class="second-level-link"><span class="ca-gov-icon-home" aria-hidden="true"></span>Link 6</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="half">
-                        <div class="nav-media">
-                            <div class="media unit2">
-                                <div class="media-left">
-                                    <a href="#"><img class="media-object" src="/sample/images/70x70.gif" alt="..."></a>
-                                </div>
-                                <div class="media-body">
-                                    <div class="title"><a href="">Public profile</a></div>
-                                    <div class="subtitle">Subtitle</div>
-                                    <div class="teaser">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</div>
-                                    <a href="" class="btn btn-default btn-xs pull-right">Read More</a>
-                                </div>
-                            </div>
-                            <div class="media unit2">
-                                <div class="media-left">
-                                    <a href="#"><img class="media-object" src="/sample/images/70x70.gif" alt="..."></a>
-                                </div>
-                                <div class="media-body">
-                                    <div class="title"><a href="">News Title</a></div>
-                                    <div class="subtitle">Subtitle</div>
-                                    <div class="teaser">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</div>
-                                    <a href="" class="btn btn-default btn-xs pull-right">Read More</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="quarter with-image-left">
+                        <div class="nav-media" style="background:url('/sample/images/sample-nav-image2.jpg')"></div>
                     </div>
                 </div>
             </li>
             <li class="nav-item">
-                <a href="/contact" class="first-level-link"><span class="ca-gov-icon-road-pin" aria-hidden="true"></span>Visit Us</a>
+                <a href="/visit-us" class="first-level-link"><span class="ca-gov-icon-road-pin" aria-hidden="true"></span>Visit Us</a>
+                <div class="sub-nav">
+                    <!-- Offset class needed to fix positioning issue caused when positioning the image -->
+                    <div class="half offset-half">
+                        <ul class="second-level-nav">
+                            <li class="unit2">
+                                <a href="/contact" class="second-level-link"><span class="ca-gov-icon-contact-us" true"></span>&nbsp;Location and Hours</a>
+                            </li>
+                            <li class="unit1">
+                                <a href="/visit-us/events" class="second-level-link"><span class="ca-gov-icon-favorite" aria-hidden="true"></span>&nbsp;Events</a>
+                            </li>
+                            <li class="unit1">
+                                <a href="/visit-us/exhibits" class="second-level-link"><span class="ca-gov-icon-binoculars" aria-hidden="true"></span>&nbsp;Exhibits</a>
+                            </li>
+                            <li class="unit2">
+                                <a href="/visit-us/tours" class="second-level-link">
+                                    <span class="ca-gov-icon-compass" aria-hidden="true"></span>&nbsp;Tours
+                                    <div class="link-description"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="half with-image-left">
+                        <div class="nav-media" style="background:url('/sample/images/sample-nav-image2.jpg')"></div>
+                    </div>
+                </div>
             </li>
             <li class="nav-item">
                 <a href="/contact" class="first-level-link"><span class="ca-gov-icon-question" aria-hidden="true"></span>Ask a Librarian</a>
@@ -383,7 +426,7 @@ Options are: megadropdown dropdown singlelevel
                         <input type="hidden" name="ie" value="UTF-8" />
                     </div>
                     <div class="submit_container">
-                        <input type="submit" style="position:absolute; right:-86px; top:3px" alt="Search" title="Search" name="submit" value="Search" />
+                        <input type="submit" style="position:absolute; right:-86px; top:3px"   title="Search" name="submit" value="Search" />
                     </div>
                     <div style="clear:both"></div>
                 </form>
@@ -401,7 +444,7 @@ Options are: megadropdown dropdown singlelevel
                         <input style="margin-top:-3px" type="text" name="request" id="search_catalog_textfield" size="60" maxlength="255" value="Search CSL&#8217;s Catalog" onfocus="if(this.value=='Search CSL&#8217;s Catalog')this.value=''" onblur="if(this.value=='')this.value='Search CSL&#8217;s Catalog'" />
                     </div>
                     <div class="submit_container">
-                        <input type="submit" style="position:absolute; right:35px; top:122px" alt="Search" title="Search" name="submit" value="Search" />
+                        <input type="submit" style="position:absolute; right:35px; top:122px"   title="Search" name="submit" value="Search" />
                     </div>
                     <div style="clear:both"></div>
                 </form>
@@ -413,7 +456,7 @@ Options are: megadropdown dropdown singlelevel
                         <input type="text" name="q" id="search_btbl_textfield" size="60" value="Talking Books Search" onfocus="if(this.value=='Talking Books Search')this.value=''" onblur="if(this.value=='')this.value='Talking Books Search'" />
                     </div>
                     <div class="submit_container">
-                        <input type="submit" style="position:absolute; right:35px; top:122px" alt="Search" title="Search" name="submit" value="Search" />
+                        <input type="submit" style="position:absolute; right:35px; top:122px"   title="Search" name="submit" value="Search" />
                     </div>
                     <div style="clear:both"></div>
                 </form>

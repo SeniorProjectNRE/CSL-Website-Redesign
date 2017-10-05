@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Art For Legislators from the State Library Collection";
+    ViewBag.PageTitle = "Art For Legislators";
     ViewBag.Author = "Alan Cleetus";
     ViewBag.Description = "Art for Legislators";
     ViewBag.Keywords = "California State Library, Art, CA, Legislators, State Library";
@@ -31,7 +32,7 @@
 
                 <ol class="breadcrumb dynamic"></ol>
 
-                <h2 class="page-title">Art For Legislators</h2>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
                 <p>
                     The California State Library can provide reproductions of images in its collections to California State Legislators. Below is a sampling of different items within the collections of the State Library that can be duplicated at your request.
                 </p>
@@ -40,7 +41,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section animated fadeInLeft">
             <div class="container" id="fancyBoxImageGallery">
 
                         <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/01.jpg" data-caption="Poster for the San Diego Exposition, all 1916 to 1917.">

@@ -1,4 +1,28 @@
-﻿
+﻿#section-controls {
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    cursor: pointer;
+    padding: 20px 0px;
+    transition: width .5s;
+    -webkit-transition: width .5s;
+}
+.section-close, .section-previous, .section-next {
+     text-align:right;
+     padding:5px 0px;
+}
+
+.section-close, .section-previous, .section-next{
+    text-align:right;
+}
+
+.section-selector{
+    list-style-type:none;
+}
+
+#section-controls:hover{
+    color:gold;
+}
 
 .header-large-banner {
     background-position: top;

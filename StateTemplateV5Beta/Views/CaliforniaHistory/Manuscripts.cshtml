@@ -1,11 +1,125 @@
-﻿
-@{
-    ViewBag.Title = "Manuscripts";
+﻿@{
+    ViewBag.Title = "CSL - Manuscript Collections - CA History Room";
+    ViewBag.PageTitle = "California Manuscript Collections";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Letters, diaries, business papers and more! Check out the California History Room’s manuscript collections, they cover almost every aspect of California history!";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Manuscripts</h2>
+
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/collections/">Our Collection</a></li>
+                    <li><a href="/california-history/">California History</a></li>
+                    <li class="active">Manuscript Collections</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <p>
+                    Are our <a href="/california-history/books">books</a> and <a href="/california-history/periodicals">periodicals</a> just not enough for your research? Do you need to hold the primary sources? No problem! We have about 2,000 manuscript collections covering much of California's history. These incredible records contain historic gems like <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100273))&amp;TN=Display&amp;RF=webdisplayCOLLAB&amp;DF=webdisplayCOLLAB&amp;AC=QBE_Query" target="_blank">letters</a>, <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100274))&amp;TN=Display&amp;RF=webdisplayCOLLAB&amp;DF=webdisplayCOLLAB&amp;AC=QBE_Query" target="_blank">diaries</a>, <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100275))&amp;TN=Display&amp;RF=webdisplayCOLLAB&amp;DF=webdisplayCOLLAB&amp;AC=QBE_Query" target="_blank">corporate records</a>, and <a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(NO%20ct(100276))&amp;TN=Display&amp;RF=webdisplayCOLLAB&amp;DF=webdisplayCOLLAB&amp;AC=QBE_Query" target="_blank">legal papers</a>, from people like John Sutter and Caryl Chessman. You can access finding aids detailing the contents of many of our manuscript collections, on our <a href="http://catalog.library.ca.gov/F/?" target="_blank">catalog</a> and on <a href="http://oac.cdlib.org/institutions/California+State+Library::California+History+Room?descriptions=show" target="_blank">Online Archive of California</a>. We also have records for our smaller collections in the <a href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm" target="_blank">California Information File II</a>. If you have any questions about these resources, please feel free to <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">ask</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="two-thirds">
+                    <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Manuscript New</a>
+                                </h3>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;ccl_term=wrd+%3D+%28+calnew-17-06+%29+AND+WCK%3D%28STKMS%29&amp;local_base=calif" target="_blank">Recently processed</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">More Manuscripts</a>
+                                </h3>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p>
+                                        Our <a href="http://catalog.library.ca.gov/F/?" target="_blank">catalog</a> records just barely hint at the richness of our manuscript collections. If you find an interesting looking collection online, you can <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">request</a> a copy of the detailed paper finding aid. However, it won't list everything in a collection. The best way to fully explore our manuscript collections is to plan to visit us. If you have any questions, please <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Remote Access</a>
+                                </h3>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>
+                                        Not able to make it into Sacramento? If a manuscript collection is smaller than 20 pages and is in good condition, you may be able to place a <a href="/california-history/photocopy">copy order</a> for it. If you wish to place an order or want more information please <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>. If the collection is too large to copy you may be able to place an order for the collection to be microfilmed.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Reproductions</a>
+                                </h3>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <p>
+                                        We permit no-flash photography of these materials and can arrange for <a href="/california-history/photo-reproduction">photographic reproductions</a> or <a href="/california-history/photocopy">low-resolution copies</a> of up to 20 pages of our manuscript collections, depending on the item's format and condition. We can even arrange to have a collection microfilmed if necessary. If you have any questions about these services, please  <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="third">
+                    <div class="autoLoop carousel owl-carousel carousel-content">
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/manuscripts/1.jpg" alt="manuscripts" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/manuscripts/2.jpg" alt="manuscripts" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/caliorniaHistory/manuscripts/3.jpg" alt="manuscripts" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 </div>
+
 

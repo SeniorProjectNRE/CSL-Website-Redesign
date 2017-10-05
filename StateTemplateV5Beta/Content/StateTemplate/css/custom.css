@@ -21,6 +21,8 @@
     text-align: center;
     padding-bottom: 30px;
     margin: 0 auto;
+    color:white;
+    font-weight:bold
 }
 
     .blue-div h2 {
@@ -29,6 +31,10 @@
         font-weight: bold;
         padding: 20px 0 0 0;
         text-align: left;
+    }
+
+    .blue-div p {
+        color: #fff;
     }
 
 .threecolumns {
