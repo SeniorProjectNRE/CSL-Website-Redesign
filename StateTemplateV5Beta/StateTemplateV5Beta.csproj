@@ -896,6 +896,7 @@
     <Content Include="Content\StateTemplate\otherDocuments\btbl\BTBL_PatronHandbookFINALrev2015.doc" />
     <Content Include="Content\StateTemplate\otherDocuments\btbl\PatronHandbook_2014.brf" />
     <Content Include="Content\StateTemplate\otherDocuments\btbl\PatronHandbook2014.zip" />
+    <Content Include="Content\StateTemplate\otherDocuments\governmentPublications\PreviousFDLPDisposalListOffers.xlsx" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />

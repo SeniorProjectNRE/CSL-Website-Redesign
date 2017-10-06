@@ -1,11 +1,56 @@
-﻿
-@{
-    ViewBag.Title = "DisposalList";
+﻿@{
+    ViewBag.Title = "CSL - Previous FDLP Disposal List Offers";
+    ViewBag.PageTitle = "Previous FDLP Disposal List Offers";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "A list of depository titles and volumes not needed to be offered to the California State Library before offering to other selective depositories and discarding.";
+    ViewBag.Keywords = "Government Publications, Disposal List, Offers";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>DisposalList</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/government-publications">Government Publications</a></li>
+                    <li><a href="/government-publications/federal-depository">Federal Depository Library Program</a></li>
+                    <li><a href="/government-publications/federal-depository/disposal-instructions">Disposal Instructions</a></li>
+                    <li>List</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <p>
+                    As processing the disposal list offers can be extremely time- and energy-consuming, we ask that you first check your offers against those that have already been offered in the past. 
+                    This will expedite the processing of lists on our end, and it will allow you to dispose of unneeded materials quicker.
+                </p>
+
+                <p>
+                    This list contains only three fields–SuDoc, year or issue, and title–compiled from lists submitted from various depositories over the past few years. 
+                    Considering the various formats and eccentricities of the lists submitted, we have simplified and minimally corrected information to create a simple, searchable list that you should compare your submissions against before offering them to the California State Library. 
+                    If you find an item on this list that you were going to offer, please do not offer it to CSL, but offer it on CalDoc-L as you would with other offers not claimed by CSL.
+                </p>
+
+                <p class="list-unstyled p-b-md">
+                    This list will be updated periodically to remain current and usable, so please check to see you are comparing potential offers to the most current list:
+                </p>
+
+                <h3><span class="ca-gov-icon-excel"></span><a href="~/Content/StateTemplate/otherDocuments/governmentPublications/PreviousFDLPDisposalListOffers.xlsx">Previous FDLP Disposal List Offers (Excel)</a></h3>
+            </div>
+        </div>
     </main>
 </div>
 
