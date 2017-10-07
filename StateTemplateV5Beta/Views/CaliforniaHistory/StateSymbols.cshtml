@@ -1,11 +1,900 @@
-﻿
-@{
-    ViewBag.Title = "StateSymbols";
+﻿@{
+    ViewBag.Title = "CSL - History and Culture - California State Symbols";
+    ViewBag.PageTitle = "State Symbols";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Official symbols representing California's cultural heritage and natural treasures";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>StateSymbols</h2>
+
+        <div class="container">
+
+            <div class="section">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/california-history">California History</a></li>
+                    <li class="active">State Symbols</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="two-thirds">
+                    <p>
+                        California's state symbols are set by <a href="http://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=GOV&amp;division=2.&amp;title=1.&amp;part=&amp;chapter=2.&amp;article=" target="_blank">state law</a>. If you would like to propose a new state symbol, contact your local <br><a href="http://findyourrep.legislature.ca.gov/" target="_blank">State Senate or Assembly member</a>.
+                    </p>
+                    <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading1'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>State Amphibian</a>
+                                </h3>
+                            </div>
+                            <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                <div class='panel-body'>
+
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/frog.png" class="insetImage left" title="California red-legged frog (Threatened)" alt="California state symbol: California red-legged frog (Threatened)">
+
+                                    <p>
+                                        Perhaps best known for its probable appearance in Mark Twain's short story "The Celebrated Jumping Frog of Calaveras County," the California red-legged frog (Rana draytonii) is the largest native frog in the western United States and is almost exclusive to California.
+                                        <br><br>
+                                        During the Gold Rush, miners ate nearly 80,000 frogs per year. Recent development and competition from invasive species have also been hard on the California red-legged frog. It has lost 70 percent of its former habitat range, and in 1996, the U.S. Fish and Wildlife Service listed it as a threatened species under the Endangered Species Act. It is now found primarily in coastal regions from Marin County to northern Baja California.
+                                        <br><br>Photo credit: "California red-legged frog (Threatened)" by Robert Fletcher, Ohlone Preserve Conservation Bank, is licensed © <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>
+                                    </p>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading2'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>State Animal</a>
+                                </h3>
+                            </div>
+                            <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                <div class='panel-body'>
+
+                                        <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/grizzlybear_sm.png" class="insetImage left" title="California grizzly bear (Ursus californicus)" alt="California state symbol: California grizzly bear (Ursus californicus)">
+
+                                        <p>
+                                            The California grizzly bear (Ursus californicus) was designated official State Animal in 1953. Before dying out in California, this largest and most powerful of carnivores thrived in the great valleys and low mountains of the state, probably in greater numbers than anywhere else in the United States. As humans began to populate California, the grizzly stood its ground, refusing to retreat in the face of advancing civilization. It killed livestock and interfered with settlers. Less than 75 years after the discovery of gold, every grizzly bear in California had been tracked down and killed. The last one was killed in Tulare County in August 1922, more than 20 years before the authority to regulate the take of fish and wildlife was delegated to the California Fish and Game Commission by the State Legislature.
+                                            <br><br>Photo credit: © Tom Myers Photography.
+                                        </p>
+                                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading3'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>State Bird</a>
+                                </h3>
+                            </div>
+                            <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                <div class='panel-body'>
+                                    
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/quail_sm.png" class="insetImage left" title="California quail (Lophortyx californica)" alt="California state symbol: California quail (Lophortyx californica)">
+
+                                    <p>
+                                        The California quail (Lophortyx californica), also known as the valley quail, became the official state bird in 1931. A widely distributed and prized game bird, it is known for its hardiness and adaptability. Plump, gray-colored and smaller than a pigeon, the California quail sports a downward curving black plume on top of its head and black bib with white stripe under the beak. Flocks number from a few to 60 or more in the fall and winter months, but in the spring break into pairs. They nest in hollows scratched in the ground and concealed by foliage, and their eggs, 6 to 28 in number, are creamy white and thickly spotted with golden brown.
+                                        <br><br>Photo credit: © tammyd57, Photobucket.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading4'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>State Colors</a>
+                                </h3>
+                            </div>
+                            <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/colors.png" class="insetImage left" title="State Colors" alt="California state symbol: State Colors">
+
+                                    <p>
+                                        The combination of blue and gold as official colors in California were first used as school colors by the University of California, Berkeley in 1875. Blue represented the sky and gold the color of the precious metal found by forty-niners in the state's hills. The Secretary of State began using blue and gold ribbons with the state seal on official documents as early as 1913. Secretary of State Frank M. Jordan suggested making blue and gold the official state colors and in 1951, the State Legislature passed legislation to that effect.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading5'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>State Dance</a>
+                                </h3>
+                            </div>
+                            <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                                <div class='panel-body'>
+                                    
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/dance.png" class="insetImage left" title="West Coast Swing Dancing" alt="California state symbol: West Coast Swing Dancing">
+
+                                    <p>
+                                        West Coast Swing Dancing, related to the Swing, Whip, or Jitterbug, came into being in the early 1930's in response to new musical forms then sweeping the land. It was created at the grassroots level and devotees of this art come from every conceivable ethnic, religious, racial, and economic background.
+                                        <br><br>Photo credits: © Creative Commons.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading6'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>State Dinosaur</a>
+                                </h3>
+                            </div>
+                            <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/dino.png" class="insetImage left" title="Augustynolophus morrisi, State Dinosaur" alt="California state symbol: Augustynolophus morrisi, State Dinosaur">
+                                    <p>
+                                        Augustynolophus morrisi (au-gus-tine-o-LOAF-us MORE-iss-ee) roamed what is now central California approximately 66 million years ago during the Maastrichtian Age, making it a contemporary of well-known dinosaurs such as Tyrannosaurus and Triceratops. Augustynolophus belongs to a family of dinosaurs known scientifically as Hadrosauridae and informally as "duck-billed dinosaurs." About 30 feet in length, Augustynolophus was an herbivore. Its fossils were first unearthed in 1939 in the Moreno Formation of Fresno County and have only been found in California. Its the most complete dinosaur to be found in the state. Augustynolophus morrisi became California's official state dinosaur in 2017.
+                                        <br><br>Photo credits: © Courtesy of the Natural History Museum of Los Angeles County.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading7'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse7' aria-expanded='false' aria-controls='collapse7'>State Fabric</a>
+                                </h3>
+                            </div>
+                            <div id='collapse7' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading7'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/denim.png" class="insetImage left" title="Denim Jeans" alt="California state symbol: Denim">
+
+                                    <p>
+                                        Denim has been a part of California since the Gold Rush era. It was first developed in the 16th and 17th centuries in Genoa, Italy and Nimes, France; though unconfirmed, tradition has it that the word "jeans" comes from "Genoa" while "de Nimes" led to "denim." The coarse cotton fabric was often used for working people's clothes. Denim gained a more prominent place in history when San Francisco dry goods wholesaler Levi Strauss agreed to apply for a patent together with Nevada tailor Jacob Davis, who had developed a method of reinforcing the pockets of work pants with copper rivets. On May 20, 1873, the US Patent and Trademark Office granted Patent #139,121 for an "Improvement in Fastening Pocket-Openings." The pair's usually-denim "waist overalls" grew ever more successful. Today, the average American owns 7 pairs of jeans, California's cotton and jeans industries employ tens of thousands of people, and 75% of the world's designer jeans come from the Golden State. Denim apparel—both designer and tough working clothing—is now enduringly popular in wardrobes across the world.
+                                        <!--Photo Credit: Public Domain, flickr.com-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading8'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse8' aria-expanded='false' aria-controls='collapse8'>State Fife and Drum Band</a>
+                                </h3>
+                            </div>
+                            <div id='collapse8' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading8'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/band.png" class="insetImage left" title="State Fife and Drum Band" alt="California state symbol: State Fife and Drum Band">
+
+                                    <p>
+                                        The California Consolidated Drum Band was designated as the official State Fife and Drum Corps in 1997. The music of fife and drum roused and inspired soldiers during significant events in this country's history.
+                                        <br><br>Photo credits: © California Consolidated Drum Band.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading9'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse9' aria-expanded='false' aria-controls='collapse9'>State Fish</a>
+                                </h3>
+                            </div>
+                            <div id='collapse9' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading9'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/fish.png" class="insetImage left" title="The golden trout (Salmo agua-bonita)" alt="California state symbol: The golden trout (Salmo agua-bonita)">
+                                    <p>
+                                        The golden trout (Salmo agua-bonita) is native only to California and was named the official state fish by act of the State Legislature in 1947. Originally the species was found only in a few streams in the icy headwaters of the Kern River, south of Mount Whitney, the highest peak in the United States outside of Alaska. Stocking of wild and hatchery-reared fish has extended its range to many waters at high elevation in the Sierra Nevada from El Dorado and Alpine Counties southward. It has also been planted in other states.
+                                        <br><br>Photo credit: California State Archives.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading10'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse10' aria-expanded='false' aria-controls='collapse10'>State Flag</a>
+                                </h3>
+                            </div>
+                            <div id='collapse10' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading10'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/flag.png" class="insetImage left" title="State Flag" alt="California state symbol: State Flag">
+                                    <p>
+                                        On June 14, 1846, a small band of settlers marched on the Mexican garrison at Sonoma and took the commandant, Mariano Vallejo, prisoner, They issued a proclamation which declared California to be a Republic independent of Mexico. This uprising became known as the Bear Flag Revolt after the hastily designed flag depicting a grizzly bear and a five pointed star over a red bar and the words "California Republic." The grizzly bear was a symbol of great strength while the lone star made reference to the lone Star of Texas. The flag only flew until July 9, 1846 when it was learned that Mexico and the United States were already at war. Soon after, the Bear Flag was replaced with the American flag. It was adopted as the State Flag by the State Legislature in 1911.
+                                        <br><br>Photo credit: California State Archives.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading11'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse11' aria-expanded='false' aria-controls='collapse11'>State Flower</a>
+                                </h3>
+                            </div>
+                            <div id='collapse11' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading11'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/poppy.png" class="insetImage left" title="State flower, Eschscholzia californica" alt="California state symbol: State flower, Eschscholzia californica">
+                                    <p>
+                                        California Indians cherished the poppy as both a source of food and for oil extracted from the plant. Its botanical name, Eschscholzia californica, was given by Adelbert Von Chamisso, a naturalist and member of the Prussian Academy of Sciences, who dropped anchor in San Francisco in 1816 in a bay surrounded by hills of the golden flowers. Also sometimes known as the flame flower, la amapola, and copa de oro (cup of gold), the poppy grows wild throughout California. It became the state flower in 1903. Every year April 6 is California Poppy Day, and Governor Wilson proclaimed May 13-18, 1996, Poppy Week.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading12'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse12' aria-expanded='false' aria-controls='collapse12'>State Folk Dance</a>
+                                </h3>
+                            </div>
+                            <div id='collapse12' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading12'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/folk_dance.png" class="insetImage left" title="Square Dancing, CA State Folk Dance" alt="California state symbol: Square Dancing, CA State Folk Dance">
+                                    <p>
+                                        Square Dancing is the American folk dance which is called, cued, or prompted to the dancers, and includes squares, rounds, clogging, contra, line and heritage dances. The Square Dance has a long and proud history. It is an exciting art form that is truly an original of our country, and has been danced continuously in California since the "Gold Rush Days."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading13'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse13' aria-expanded='false' aria-controls='collapse13'>State Fossil</a>
+                                </h3>
+                            </div>
+                            <div id='collapse13' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading13'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/fossil.png" class="insetImage left" title="Saber-toothed cat (Smilodon californicus)" alt="California state symbol: Saber-toothed cat (Smilodon californicus)">
+                                    <p>
+                                        The saber-toothed cat (Smilodon californicus) was adopted by the Legislature as the official State Fossil in 1973. Fossil evidence indicates that this member of the cat family with 8-inch upper canine teeth was somewhat shorter than a modern lion, but weighed more. This meat-eater was very common in California during the late Pleistocene epoch that ended about 11,000 to 10,000 years ago. Fossil bones of Smilodon californicus have been found in abundance preserved in the tar pits of Rancho La Brea in Los Angeles.
+                                        <br><br>Photo credit: California State Archives.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading14'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse14' aria-expanded='false' aria-controls='collapse14'>State Gemstone</a>
+                                </h3>
+                            </div>
+                            <div id='collapse14' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading14'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/gemstone.png" class="insetImage left" title="Benitoite, State Gemstone" alt="California state symbol: Benitoite, State Gemstone">
+                                    <p>
+                                        Benitoite was designated as the official State Gemstone in 1985. Sometimes called the "blue diamond", it was first discovered near the headwaters of the San Benito River from which it derived its name. The gem is extremely rare and ranges in color from a light transparent blue to dark, vivid sapphire blue, and occasionally it is found in a violet shade.
+                                        <br><br>Photo credit:© Tom Myers Photography.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading15'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse15' aria-expanded='false' aria-controls='collapse15'>State Gold Rush Ghost Town</a>
+                                </h3>
+                            </div>
+                            <div id='collapse15' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading15'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/town.png" class="insetImage left" title="Bodie, State Gold Rush Ghost Town" alt="California state symbol: Bodie, State Gold Rush Ghost Town">
+                                    <p>
+                                        Bodie was designated as the official California State Gold Rush ghost town in 2002. In 1962 it was named a National Historic Site and a California State Historic Park. It once housed a population of 10,000, but now it is preserved in a state of arrested decay. What was left of the town's buildings and contents remains as they did after the last resident departed. Bodie is located northeast of Yosemite about 13 miles off of Highway 395 on Bodie Road and 7 miles south of Bridgeport.
+                                    </p>
+                                    <p>
+                                        The exact source of the town's name remains unknown today. It may have been named for gold miner W. S. Body also known as William S. or Waterman S. Body or his name may have been Wakeman S. Bodey. The name Bodie was given to the camp that was near the site where he discovered gold in 1859. It was not until 1877 when gold was discovered in quantity and the population increased that Bodie grew in size from 3,000 up to 10,000 by 1880. The mining boom ended in the early 1880's and by 1888 about $18,000,000 worth of gold had been mined, but only 3 mines were left from the 40 to 50 that had existed during the boom years.
+                                        <br><br>Photo credit: California State Library.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading16'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse16' aria-expanded='false' aria-controls='collapse16'>State Grass</a>
+                                </h3>
+                            </div>
+                            <div id='collapse16' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading16'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/grass.png" class="insetImage left" title="Nassella pulchra, State Grass" alt="California state symbol: Nassella pulchra, State Grass">
+                                        <p>
+                                            The official State Grass designated in 2004, is Nassella pulchra, or Purple needlegrass, as it is most commonly known. Purple needlegrass is a medium-large, long-lived bunchgrass well adapted to clay soils. It is the most widespread native bunchgrass and its growing range is from the Oregon border into northern Baja California.
+                                        </p>
+                                        <p >
+                                            The seed of this grass species was one of several used by many California Native American communities as a food source. It remains to this day as an important food source for California's wildlife. During the period of Mexican control of California, Purple needlegrass was used for cattle grazing to support the cowhide and tallow industry. Today, this grass continues to provide forage for California's important cattle industry.
+                                        </p>
+                                        <p >
+                                            Once established, Purple needlegrass is tolerant of summer drought and heat. It can live more than 150 years and has been used in projects such as habitat restoration, erosion and levee control.
+                                            <br><br>Photo credit: Illus. by Michael Lee, Seattle, WA, 2003 © Good Nature Publishing.
+                                        </p>
+                                       
+                                  
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading17'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse17' aria-expanded='false' aria-controls='collapse17'>State Historical Society</a>
+                                </h3>
+                            </div>
+                            <div id='collapse17' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading17'>
+                                <div class='panel-body'>
+                                    
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/society.png" class="insetImage left" title="State Historical Society" alt="California state symbol: State Historical Society">
+                                    <p>
+                                        Established in 1871, the California Historical Society was designated the official California State Historical society in 1979. Headquartered in San Francisco with a library and museum, the Society collects, preserves and exhibits materials about the history of California and the West.
+                                    </p>
+                                    <p >
+                                        The North Baker Research Library houses a large collection of manuscripts, maps, posters, printed ephemera, books, and pamphlets. The collection of photographs numbers over 500,000 and includes works by noted California photographers such as Carleton E. Watkins, Eadweard Muybridge and Ansel Adams. The Society also has a large collection of art that depicts the history of California. In addition to its library and museum function, it also offers lectures, family and school programs and other activities on a scheduled basis.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading18'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse18' aria-expanded='false' aria-controls='collapse18'>State Insect</a>
+                                </h3>
+                            </div>
+                            <div id='collapse18' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading18'>
+                                <div class='panel-body'>
+                                    
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/insect.png" class="insetImage left" title="California dogface butterfly or dog head (Zerene eurydice), State Insect" alt="California dogface butterfly or dog head (Zerene eurydice), State Insect">
+                                    <p>
+                                        The California dogface butterfly or dog head (Zerene eurydice) was designated the official State Insect in 1972. The butterfly is found only in California from the foothills of the Sierra Nevada to the Coast Ranges and from Sonoma south to San Diego. The male has a yellow silhouette of a dog's head on its wings. The female is usually entirely yellow with a black spot on the upper wings.
+                                        <br><br>Photo credit: © Tom Myers Photography.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading19'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse19' aria-expanded='false' aria-controls='collapse19'>State Lichen</a>
+                                </h3>
+                            </div>
+                            <div id='collapse19' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading19'>
+                                <div class='panel-body'>
+                                     
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/lichen.png" class="insetImage left" title="Lace Lichen (Ramalina menziesii), State Lichen" alt="Lace Lichen (Ramalina menziesii), State Lichen">
+                                        <p>
+                                            Lace lichen (Ramalina menziesii) is a common sight throughout much of California, being native to the Pacific Coast from southeast Alaska to Baja California and up to 130 miles inland. Like other lichens, it is formed from a partnership between algae and fungus. Lace lichen hangs from oaks and other trees and shrubs in netlike strands several feet long, and does not harm its hosts. It is extremely susceptible to air pollution, so the health and presence or absence of lace lichen can be used as an indicator of air quality. Animals use it for food and nesting material.
+                                            <br><br>Photo credit: <a href="http://creativecommons.org/licenses/by-nc/3.0/legalcode" target="_blank"><span class="ca-gov-icon-cc-copyright"></span></a> JK Johnson, <a href="http://www.inaturalist.org/photos/1741932" target="_blank">inaturalist.org</a>.
+                                        </p>
+                                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading20'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse20' aria-expanded='false' aria-controls='collapse20'>State Marine Fish</a>
+                                </h3>
+                            </div>
+                            <div id='collapse20' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading20'>
+                                <div class='panel-body'>
+                                    
+                                      <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/garibaldi.png" class="insetImage left" title="Garibaldi (Hypsypops rubicundus), State Marine Fish" alt="California state symbol: Garibaldi (Hypsypops rubicundus), State Marine Fish">
+                                        <p>
+                                            A golden orange fish approximately 14 inches in length, the garibaldi (Hypsypops rubicundus) is most common in the shallow waters off the Southern California coast. Young garibaldi are even more colorful with bright blue spots on a reddish orange body.
+                                        </p>
+                                        <p >
+                                            When disturbed these fish emit a thumping sound which can be heard by divers. Although the garibaldi is not an endangered species, there is concern that commercial collection by the saltwater aquarium industry has reduced its numbers. In 1995, the Legislature acted to protect the garibaldi by placing a moratorium on commercial collection until the year 2002. They also named the garibaldi the official State Marine Fish.
+                                        </p>
+                                         
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading21'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse21' aria-expanded='false' aria-controls='collapse21'>State Marine Mammal</a>
+                                </h3>
+                            </div>
+                            <div id='collapse21' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading21'>
+                                <div class='panel-body'>
+
+                                        <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/mammal.png" class="insetImage left" title="California gray whale (Eschrichtius robustus), State Marine Mammal" alt="California state symbol: California gray whale (Eschrichtius robustus), State Marine Mammal">
+                                        <p>
+                                            Measuring 35 to 50 feet in length and around 20 to 40 tons in weight, the California gray whale (Eschrichtius robustus) is identified by its mottled gray color and low hump in place of a dorsal fin. Gray whale feed mainly on small crustaceans along the ocean bottom in the western Bering Sea where they spend the summer.
+                                        </p>
+                                        <p >
+                                            From December through February, the whales can be seen traveling southward in small groups along the California coast on their way to the bays and lagoons of Baja California where mating occurs and the females calve. In March and April, they once again travel north following the shoreline. The whales cover approximately 6,000 to 7,000 miles each way. It is believed that memory and vision aid them on their long migration. The California gray whale was designated the State Marine Mammal in 1975.
+                                            <br><br>Photo credit: © Larry Foster.
+                                        </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading22'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse22' aria-expanded='false' aria-controls='collapse22'>State Marine Reptile</a>
+                                </h3>
+                            </div>
+                            <div id='collapse22' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading22'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/sea_turtle.png" title="Leatherback Sea Turtle, State Marine Reptile" alt="California state symbol: Leatherback Sea Turtle, State Marine Reptile">
+                                        <p>
+                                            The Pacific leatherback sea turtle is the largest and deepest diving of all sea turtles. Adult leatherbacks can weigh up to 2000 pounds and can reach a length of 8 feet. Its species has been on the planet for 70 million years. The leatherback acquired its common name because its shell is made of small bones covered by a layer of rubbery skin. The turtle is black with white and pink spotting. The leatherback has been on the endangered species list since 1970.
+                                        </p>
+                                        <p >
+                                            The Pacific leatherback turtle was established as the state marine reptile in 2012.  Every October 15 is designated as Pacific Leatherback Sea Turtle Conservation Day.
+                                            <br><br>Photo credit: © U.S. Fish and Wildlife Service.
+                                        </p>
+                                       
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading23'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse23' aria-expanded='false' aria-controls='collapse23'>State Military Museum</a>
+                                </h3>
+                            </div>
+                            <div id='collapse23' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading23'>
+                                <div class='panel-body'> 
+                                        <a href="http://www.militarymuseum.org/" target="_blank">
+                                            <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/museum.png" title="California State Military Museum" alt="California state symbol: California State Military Museum">
+                                        </a>
+                                        <p>
+                                            The California State Military Museum was formerly located at 1119 Second Street in the Old Sacramento State Historical Park. It was designated by legislation in 2004 as the California State Military Museum and Resource Center. The museum displayed California's military history and housed many artifacts as well as an extensive research library and related archival materials.
+                                        </p>
+                                        <p >
+                                            The Sacramento museum closed in 2013. The Camp Roberts Historical Museum, located 12 miles north of Paso Robles on U.S. 101, is serving as the State's official military museum until a new Sacramento location can be established. The California Military Museum System includes other auxiliary museums at Camp San Luis Obispo, Fresno Air National Guard Base, Los Alamitos Joint Forces Training Base in Orange County, and San Diego National Guard Armory. In addition, the California State Military Museum website is still available (<a href="http://www.militarymuseum.org/" target="_blank">http://www.militarymuseum.org/</a>) to provide the public with California military history information.
+                                        </p>
+                                         
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading24'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse24' aria-expanded='false' aria-controls='collapse24'>State Mineral</a>
+                                </h3>
+                            </div>
+                            <div id='collapse24' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading24'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/gold.png"  title="Gold, State Mineral" alt="California state symbol: Gold, State Mineral">
+                                    <p>
+                                        As one might expect, gold is the official state mineral and was so designated in 1965. In the four years following the discovery of gold by James Marshall in January of 1848, California's population swelled from 14,000 to 250,000 people. Miners came from all over the world and extracted 28,280,711 fine ounces of gold from 1850-1859 which would be worth approximately $10,000,000,000 today. Although production is much lower, present day prospectors can still pan for gold in California's streams.
+                                        <br><br>Photo credit: © Tom Myers Photography.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading25'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse25' aria-expanded='false' aria-controls='collapse25'>State Motto</a>
+                                </h3>
+                            </div>
+                            <div id='collapse25' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading25'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/eureka.png" class="insetImage left" title="Eureka, State Motto" alt="California state symbol: Eureka, State Motto">
+
+                                    <p>
+                                        The Greek word "Eureka" has appeared on the state seal since 1849 and means "I have found it". The words were probably intended to refer to the discovery of gold in California. Archimedes, the famed Greek mathematician, is said to have exclaimed "Eureka!" when, after long study, he discovered a method of determining the purity of gold. In 1957, attempts were made to establish "In God We Trust" as the state motto, but "Eureka" was made the official state motto in 1963.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading26'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse26' aria-expanded='false' aria-controls='collapse26'>State Nickname</a>
+                                </h3>
+                            </div>
+                            <div id='collapse26' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading26'>
+                                <div class='panel-body'>
+                                         <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/goldenstate.png" class="insetImage left" title="California State" alt="California state symbol: California State">
+                                        <p>
+                                            "The Golden State" has long been a popular designation for California and was made the official State Nickname in 1968. It is particularly appropriate since California's modern development can be traced back to the discovery of gold in 1848 and fields of golden poppies can be seen each spring throughout the state.
+                                        </p>
+                                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading27'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse27' aria-expanded='false' aria-controls='collapse27'>State Nut</a>
+                                </h3>
+                            </div>
+                            <div id='collapse27' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading27'>
+
+                                <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/nut.png" class="insetImage left" title="California State Nut" alt="California State Nut">
+                                <div class='panel-body'>
+                                    <p>
+                                        California is such an important nut-growing region that it has four official state nuts: the almond, the walnut, the pistachio, and the pecan. California grows eight out of ten almonds eaten in the world, 99% of the commercial walnuts in the United States (and 3/4 of the world's supply), and 98% of the pistachios in the United States. Pecans are the only nut of the group native to the United States, and while they still constitute a small portion of California's nut industry, they are growing in importance.
+                                    </p>
+                                    <div class="clearfix"></div>
+                                        <p>Photo credits: <br>
+                                        Almonds: Luigi Chiesa, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" target="_blank">CC BY-SA 3.0</a><br>
+                                        Pistachios: Danielle Scott, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a><br>
+                                        Walnuts: Inyucho, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a><br>
+                                        Pecans: Thomas Quine, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading28'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse28' aria-expanded='false' aria-controls='collapse28'>State Prehistoric Artifact</a>
+                                </h3>
+                            </div>
+                            <div id='collapse28' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading28'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/artifact.png" class="insetImage left" title="Chipped stone bear, State Prehistoric Artifact" alt="California state symbol: Chipped stone bear, State Prehistoric Artifact">
+
+                                    <p>
+                                        Perhaps the most unusual state symbol is the state prehistoric artifact, the chipped stone bear. Discovered at an archaeological dig site in San Diego County in 1985, this small stone object measures about 2 1/2 by 1 1/2 inches and resembles a walking bear. Fashioned from volcanic rock by one of California's earliest inhabitants some 7-8,000 years ago, the stone artifact is thought to have been made for religious use. The Legislature named the chipped stone bear a state symbol in 1991 making California the first state to designate an official State Prehistoric Artifact.
+                                        <br><br>Photo credit: California Dept. of Parks &amp; Recreation Newsletter.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading29'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse29' aria-expanded='false' aria-controls='collapse29'>State Quarter</a>
+                                </h3>
+                            </div>
+                            <div id='collapse29' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading29'>
+                                <div class='panel-body'>
+
+                                   
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/quarter.png"  class="insetImage left" title="California State Quarter" alt="California state symbol: California State Quarter">
+                                        <p>
+                                            The California Quarter was issued January 31, 2005 by the United States Mint. The California Quarter, part of the <a href="http://www.usmint.gov/mint_programs/50sq_program/?action=designs_50sq" target="_blank">United States Mint's 50 State Quarters' Program</a>, was the 31st state quarter released by the Mint because California, admitted into the Union on September 9, 1850, is our nation's 31st state. The California Quarter depicts naturalist and conservationist John Muir admiring Yosemite Valley's monolithic Half Dome while a California condor soars overhead. The coin bears the inscriptions "California," "John Muir," "Yosemite Valley" and "1850."
+                                        </p>
+                                        <p >
+                                            John Muir helped form the Sierra Club in 1892 to protect Yosemite National Park that Congress had established in 1890. Muir served as the Sierra Club's president until his death in 1914. The California condor, with a wingspan of nine feet, was once nearly extinct. Its prominence on the quarter is a testament to the enormous bird's successful repopulation in California.
+                                        </p>
+                                        <p >
+                                            Governor Arnold Schwarzenegger chose the California Quarter design concept from five final concepts presented to him by the 20-member California State Quarter Commission. The U.S. Department of Treasury approved the "John Muir/Yosemite Valley" design on April 15, 2004.
+                                        </p>
+                                        <p >
+                                            California Quarters are available in commemorative holders through the California Museum for History, Women, and The Arts <a href="http://www.californiamuseum.org/museum-merchandise" target="_blank">store</a>.
+                                        </p>
+                                        
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading30'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse30' aria-expanded='false' aria-controls='collapse30'>State Reptile</a>
+                                </h3>
+                            </div>
+                            <div id='collapse30' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading30'>
+                                <div class='panel-body'>
+                                    <img src="~/content/StateTemplate/images/caliorniaHistory/symbols/reptile.png" class="insetImage left"  title="Desert tortoise (gopherus agassizi), State Reptile" alt="California state symbol: Desert tortoise (gopherus agassizi), State Reptile">
+
+                                    <p>
+                                        Under a full head of steam, the desert tortoise (gopherus agassizi) moves at a stolid pace of about 20 feet per minute. This patient vegetarian has existed on Earth almost unchanged for millions of years. It is found in the southwestern desert areas of California where it now enjoys protected status as an endangered species. The desert tortoise played a key role in the passage of the California Desert Protection Act in 1994. To protect the fragile desert habitat of the tortoise and other plants and animals, millions of acres were added to the national park and wilderness system. Supporters reportedly brought a desert tortoise to the White House for the bill signing. The tortoise has been the official State Reptile since 1972.
+                                        <br><br>Photo credit: © Tom Myers Photography.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading31'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse31' aria-expanded='false' aria-controls='collapse31'>State Rock</a>
+                                </h3>
+                            </div>
+                            <div id='collapse31' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading31'>
+                                <div class='panel-body'>
+                                    
+                                    <img src="~/Content/StateTemplate/images/caliorniaHistory/symbols/rock.png" class="insetImage left" title="Serpentine, State Rock" alt="California state symbol: Serpentine, State Rock">
+                                    <p >
+                                        California has a greater number of minerals and a wider variety of rock types than does any other state. Serpentine, a shiny, green and blue rock found throughout California, was named the official State Rock in 1965. It contains the state's principal deposits of chromite, magnesite, and cinnabar. California was the first state to designate a State Rock.
+                                        <br><br>Photo credit: © Tom Myers Photography.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading32'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse32' aria-expanded='false' aria-controls='collapse32'>State Seal</a>
+                                </h3>
+                            </div>
+                            <div id='collapse32' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading32'>
+                                <div class='panel-body'>
+                                        <img src="~/Content/StateTemplate/images/caliorniaHistory/symbols/seal.png" class="insetImage left" title="California State Seal" alt="California state symbol: California State Seal">
+                                        <p>
+                                            The Constitutional Convention of 1849 adopted the Great Seal of the State of California. The seal was designed by Major R. S. Garnett of the United States Army, and proposed by Caleb Lyon, a clerk of the convention. The Roman goddess of wisdom, Minerva, has at her feet a grizzly bear and clusters of grapes representing wildlife and agricultural richness. A miner works near the busy Sacramento River, below the Sierra Nevada peaks. The Greek word "Eureka" meaning "I have found it", probably refers to the miner's discovery of gold. Near the upper edge of the seal are 31 stars representing the number of states with California's anticipated admission. Just as Minerva sprung full-grown from the head of Jupiter, California became a state on September 9, 1850, without having to go through a territorial stage.
+                                            <br><br>Photo credit: California State Archives.
+                                        </p>
+                                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading33'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse33' aria-expanded='false' aria-controls='collapse33'>State Silver Rush Ghost Town</a>
+                                </h3>
+                            </div>
+                            <div id='collapse33' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading33'>
+                                <div class='panel-body'>
+                                           <img src="~/Content/StateTemplate/images/caliorniaHistory/symbols/ghost_town.png" class="insetImage left" alt="California state symbol: Calico, State Silver Rush Ghost Town" title="Calico, State Silver Rush Ghost Town">
+                                        <p>
+                                            Calico, located near Barstow in San Bernardino county, was designated the official California State Silver Rush Ghost town in 2005. Prior to its present status it had been designated State Historic Landmark number 782.
+                                        </p>
+                                        <p>
+                                            The town of Calico was founded near the site of a major silver strike in 1881 and at the height of its glory claimed over 20 saloons and hundreds of nearby mines. The exact value of silver that was mined is estimated to have been between $13,000,000 and $20,000,000 by the end of the boom years. In the mid-1890's the price of an ounce of silver dropped over half in value from what it had been in 1880. This event caused a loss of demand for silver and by the early 1900's Calico had become a deserted ghost town.
+                                        </p>
+                                        <p>
+                                            Calico was acquired in the 1950's by Walter Knott, owner of Knott's Berry Farm in Buena Park, California. He preserved what was left of Calico and constructed other buildings to recreate Calico's past to serve as a tourist attraction. Mr. Knott donated Calico Ghost Town to the County of San Bernardino in 1966, and today it is part of a 480-acre County Regional Park.
+                                            <br><br>Photo credit: California State Library.
+                                        </p>
+                                         
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading35'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse35' aria-expanded='false' aria-controls='collapse35'>State Soil</a>
+                                </h3>
+                            </div>
+                            <div id='collapse35' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading35'>
+                                <div class='panel-body'>
+                                    <img src="~/Content/StateTemplate/images/caliorniaHistory/symbols/soil.png" class="insetImage left" title="San Joaquin Soil, State Soil" alt="California state symbol: San Joaquin Soil, State Soil">
+                                        <p>
+                                            The San Joaquin Soil was designated as the official state soil in 1997. The designation commemorates the completion of the state's most comprehensive soil inventory and acknowledges the importance of soil.
+                                            <br><br>Photo credit: USDA, Natural Resources Conservation Service.
+                                        </p>
+                                         
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading36'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse36' aria-expanded='false' aria-controls='collapse36'>State Song</a>
+                                </h3>
+                            </div>
+                            <div id='collapse36' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading36'>
+                                <div class='panel-body'>
+                                          
+                                        <p>
+                                            California's official state song is <em>"I Love You, California"</em>, written by F.B. Silverwood, a Los Angeles merchant. The words were subsequently put to music by Alfred Frankenstein, a former conductor for the Los Angeles Symphony Orchestra. It was the official song of expositions held in San Francisco and San Diego in 1915, and was played aboard the first ship to go through the Panama Canal. In 1951, the State Legislature passed a resolution designating it as California's state song. During the years following, several attempts were made to make other songs such as "California, Here I Come" the official state song. Finally, in 1988, "I Love You, California" became the official state song by law.
+                                        </p>
+
+                                        <p>
+                                        </p><h2><em>I Love You, California</em></h2>
+                                        <a title="State Song" href="~/Content/StateTemplate/images/caliorniaHistory/symbols/ca_song.mid"><img src="~/Content/StateTemplate/images/caliorniaHistory/symbols/midi.png" alt="song" title="song" style="position:absolute; border:0; left:500px; float:right; z-index:2"></a>
+                                        <p></p>
+                                        <strong>I.</strong><br> <em>
+                                            I love you, California, you're the greatest
+                                            state of all.
+                                            <p></p>
+                                        </em><p>
+                                            <em>
+                                                I love you in the winter, summer, spring and in the fall.<br>
+                                                I love your fertile valleys; your dear mountains I adore.<br>
+                                                I love your grand old ocean and I love her rugged shore.
+                                            </em>
+                                        </p>
+                                        <p>
+                                            <em>
+                                                <strong>Chorus</strong><br>
+                                                Where the snow crowned Golden Sierras<br>
+                                                Keep their watch o'er the valleys bloom,<br>
+                                                It is there I would be in our land by the sea,<br>
+                                                Every breeze bearing rich perfume.<br>
+                                                It is here nature gives of her rarest. It is Home Sweet Home to
+                                                me,<br>
+                                                And I know when I die I shall breathe my last sigh<br>
+                                                For my sunny California.
+                                            </em>
+                                        </p>
+                                        <p>
+                                            <strong>II.</strong><br><em>
+                                                I love
+                                                your red-wood forests - love your fields of yellow grain.<br>
+                                                I love your summer breezes and I love your winter rain.<br>
+                                                I love you, land of flowers; land of honey, fruit and wine.<br>
+                                                I love you, California; you have won this heart of mine.
+                                            </em>
+                                        </p>
+                                        <p>
+                                            <strong>III.</strong><br><em>
+                                                I love your old gray Missions - love your
+                                                vineyards stretching far.<br>
+                                                I love you, California, with your Golden Gate ajar.<br>
+                                                I love your purple sun-sets, love your skies of azure blue.<br>
+                                                I love you, California; I just can't help loving you.
+                                            </em>
+                                        </p>
+                                        <p>
+                                            <strong>IV.</strong><br><em>
+                                                I love you, Catalina, you are very dear to
+                                                me.<br>
+                                                I love you, Tamalpais, and I love Yosemite.<br>
+                                                I love you, Land of Sunshine, Half your beauties are untold.<br>
+                                                I loved you in my childhood, and I'll love you when I'm old.
+                                            </em>
+                                        </p>
+                                      
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading37'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse37' aria-expanded='false' aria-controls='collapse37'>State Tall Ship</a>
+                                </h3>
+                            </div>
+                            <div id='collapse37' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading37'>
+                                <div class='panel-body'>
+                                       <a href="http://www.sdmaritime.org/private-events/" target="_blank">
+                                            <img src="~/Content/StateTemplate/images/caliorniaHistory/symbols/ship.png" class="insetImage left"  title="Californian, State Tall Ship" alt="California state symbol: Californian, State Tall Ship">
+                                        </a>
+                                        <p>
+                                            Designated by legislation in 2003, the Californian was named the State's Official Tall Ship. She is the only ship that can claim this title.
+                                        </p>
+                                        <p>
+                                            Built in 1984, the Californian is a replica of the 1847 Revenue Cutter C. W. Lawrence that patrolled California's coast during the Gold Rush period. She has nine sails for a total of 7,000 square feet of canvas, weighs 130 tons and measures 145 feet in length.
+                                        </p>
+                                        <p>
+                                            The Californian has been owned by the Maritime Museum of San Diego since 2002. The Californian is used for educational programs including an annual summer tour of the California coast.
+                                            <br><br>Photo credit: © Maritime Museum of San Diego.
+                                        </p>
+                                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading38'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse38' aria-expanded='false' aria-controls='collapse38'>State Tartan</a>
+                                </h3>
+                            </div>
+                            <div id='collapse38' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading38'>
+                                <div class='panel-body'>
+                                         <img src="~/Content/StateTemplate/images/caliorniaHistory/symbols/tartan.png" class="insetImage left" title="State Tartan" alt="California state symbol: State Tartan">
+                                        <p>
+                                            Enacted by legislation in 2001, the California Tartan recognizes the contributions to California by residents of Scottish ancestry.The legislation also stated that the official State Tartan may be claimed by any resident of the state.
+                                        </p>
+                                        <p>
+                                            The tartan is based on the Muir Clan tartan to honor the great naturalist John Muir. However, it is original enough to be registered with the Scottish Tartan Authority as California State District Tartan Number 200111 and with the Scottish Tartans Society as Tartan 2454.
+                                        </p>
+                                        <p>
+                                            The official State Tartan is described as a pattern or sett consisting of alternate squares of meadow green and pacific blue that are separated and surrounded by narrow charcoal bands. The squares of meadow green are divided by a gold seam that is supported by charcoal lines on each side. There are three redwood stripes, the middle of which is broader, that are added to each side of the gold seam. The pacific blue square is divided by a sky blue stripe, which is supported on each side by charcoal lines.
+                                        </p>
+                                        <p>
+                                            The tartan's blue reflects the sky, the ocean, and the state' s rivers and lakes, while the green stands for the state's mountains, fields, and parks. The red, gold, and blue seams signify the arts, sciences, agriculture, and industry of California.
+                                            <br><br>Photo credit: © Bonbright Woolens, Inc.
+                                        </p>
+                                      
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading39'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse39' aria-expanded='false' aria-controls='collapse39'>State Theater</a>
+                                </h3>
+                            </div>
+                            <div id='collapse39' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading39'>
+                                <div class='panel-body'>
+                                         <img src="~/Content/StateTemplate/images/caliorniaHistory/symbols/theater.png" class="insetImage left" title="Pasadena Playhouse, State Theater" alt="California state symbol: Pasadena Playhouse, State Theater">
+                                        <p >
+                                            Designed in the Spanish style by Pasadena architect Elmer Grey, the cornerstone for the Pasadena Playhouse was laid in May, 1924. The theater staged its first production in May 1925 and was recognized by the Legislature as the State Theater in 1937. With close ties to Hollywood, many famous actors have graced the Pasadena Playhouse stage including Jean Arthur, Eve Arden, Gene Hackman, Raymond Burr, and Tyrone Power. The theater has produced hundreds of new scripts including many American and world premieres. Today, the 680-seat mainstage theater hosts a year-round season of six plays, giving 306-322 performances annually.
+                                            <br><br>Photo credit: California State Archives.
+                                        </p>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading40'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse40' aria-expanded='false' aria-controls='collapse40'>State Tree</a>
+                                </h3>
+                            </div>
+                            <div id='collapse40' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading40'>
+                                <div class='panel-body'>
+                                          <img src="~/Content/StateTemplate/images/caliorniaHistory/symbols/tree.png" class="insetImage left" title="General Sherman Tree, State Tree" alt="California state symbol: General Sherman Tree, State Tree">
+                                        <p>
+                                            The California redwood was designated the official State Tree of California by the State Legislature in 1937. Once common throughout the Northern Hemisphere, redwoods are found only on the Pacific Coast. Many groves and stands of the towering trees are preserved in state and national parks and forests. There are actually two genera of California redwood: the coast redwood (Sequoia sempervirens) and the giant sequoia (Sequoiadendron giganteum). The coast redwoods are the tallest trees in the world; one reaching over 379 feet tall grows in Redwood National and State Parks. One giant sequoia, the General Sherman Tree in Sequoia &amp; Kings Canyon National Park, is over 274 feet high and more than 102 feet in circumference at its base; it is widely considered to be the world's largest tree in overall volume.
+                                            <!--<br /><br />Photo credit: California State Archives.-->
+                                        </p>
+                                       
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading41'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse41' aria-expanded='false' aria-controls='collapse41'>State Vietnam Veterans Memorial</a>
+                                </h3>
+                            </div>
+                            <div id='collapse41' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading41'>
+                                <div class='panel-body'>
+                                     <img src="~/Content/StateTemplate/images/caliorniaHistory/symbols/memorial.png" class="insetImage left" title="State Vietnam Veterans Memorial" alt="California state symbol: State Vietnam Veterans Memorial">
+                                        <p>
+                                            Dedicated in 1988, the California Vietnam Veterans Memorial in Sacramento's Capitol Park commemorates the 5,822 Californians who died or went missing in action while serving in the Vietnam War. In total, more than 350,000 Californians served in the war. <br><br>
+                                            Vietnam War veteran B.T. Collins and journalist Stan Atkinson led the fundraising drive which paid for the memorial's creation. The memorial's black marble panels bear the names of the California dead, while bronze sculptures depict the wartime lives of the soldiers, pilots, medics, nurses, chaplains, POWs, and other service members. The dedication monument memorializes them with the inscription, "All gave some. Some gave all."
+                                        </p>
+                                       
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h3>Graphic &amp; Photo Credits:</h3>
+                    <p>
+                        Graphics and photos are copyrighted and may not be used without prior consent.
+                    </p>
+                    <br />
+                    <h3>Sources of Information:</h3>
+                    <p>
+                        California Blue Book; Statutes of California; California Government Code.
+                    </p>
+                </div>
+                <div class="third">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/symbols/vertical_banner.jpg" alt="banner" />
+
+                </div>
+            </div> 
+        </div> 
     </main>
 </div>
 
