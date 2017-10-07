@@ -284,6 +284,7 @@
     <Content Include="Content\StateTemplate\images\banner\CSLBuilding.jpg" />
     <Content Include="Content\StateTemplate\images\banner\SutroBuilding.jpg" />
     <Content Include="Content\StateTemplate\images\banner\womensmarch1.jpg" />
+    <Content Include="Content\StateTemplate\images\btbl\printdisabilities\disable.jpg" />
     <Content Include="Content\StateTemplate\images\btbl\ravenous\corner.png" />
     <Content Include="Content\StateTemplate\images\buildings.jpg" />
     <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-Blue.svg" />
