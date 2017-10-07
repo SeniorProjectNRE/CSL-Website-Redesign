@@ -1,11 +1,223 @@
-﻿
-@{
-    ViewBag.Title = "RavenousReaders";
+﻿@{
+    ViewBag.Title = "CSL - BTBL - Ravenous Readers Corner";
+    ViewBag.PageTitle = "Ravenous Readers Corner";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "What to read next? Help finding your next great read in audio or braille books. Staff Picks, Book Lists by Subject, Read-Alike Book Lists, Bestseller Lists, Other Resources (Links), BTBL Book Subject Categories.";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>RavenousReaders</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb dynamic"></ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="two-thirds">
+
+                    <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">BTBL Book Subject Categories</a>
+                                </h3>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <li>BTBL Book Subject Categories (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/BTBL_BookSubjectCategories.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/BTBL_BookSubjectCategories.pdf" target="_blank">PDF</a>)</li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Staff Picks</a>
+                                </h3>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>What is BTBL Staff Reading? Winter 2012/13 (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/What_is_BTBLStaffReading.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/What_is_BTBLStaffReading.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Summer Reading Picks from BTBL Staff 2013 (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/SummerReadingPicks_fromBTBL_Staff.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/SummerReadingPicks_fromBTBL_Staff.pdf" target="_blank">PDF</a>)</li>
+                                        <li>What We're Reading: BTBL Staff Picks Summer 2014 (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/WhatWeReadingBTBLStaffPicks.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/WhatWeReadingBTBLStaffPicks.pdf" target="_blank">PDF</a>)</li>
+                                        <li>What We're Reading: BTBL Staff Picks Winter 2014/15 (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/WhatWereReadingBTBLStaffPicks2.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/WhatWereReadingBTBLStaffPicks2.pdf" target="_blank">PDF</a>)</li>
+                                        <li>BTBL Staff Picks: Revisiting Books from Childhood Fall 2015 (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/StaffPicksBooksfromChildhood.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/StaffPicksBooksfromChildhood.pdf" target="_blank">PDF</a>)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Book Lists</a>
+                                </h3>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>Adventure: Apocalypse and Disaster Novels (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Adventure-Apocalypse_and_DisasterFiction.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Adventure-Apocalypse_and_DisasterFiction.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Adventure in the Great Outdoors, Non-Fiction Books (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Adventure_in_GreatOutdoors_Nonfiction.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Adventure_in_GreatOutdoors_Nonfiction.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Adventure: Novels About Epidemics and Superbugs (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/AdventureNovels_about_Epidemics_and_Superbugs.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/AdventureNovels_about_Epidemics_and_Superbugs.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Adventure: Treasure Hunting, Conspiracies, Secret Societies (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/AdventureTreasureHuntingConspiraciesSecretSocieties.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/AdventureTreasureHuntingConspiraciesSecretSocieties.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Art History, Artists, and Photographers (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ArtHistoryArtists_and_Photographers_nonfiction.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ArtHistoryArtists_and_Photographers_nonfiction.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Award Winning Books: National Book Award (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Award_Winning_Books_National_Book_Award.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Award_Winning_Books_National_Book_Award.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Banned Books (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/BannedBooks.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/BannedBooks.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Baseball: the Game, the Players, the History (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/BaseballGame_the_Players_the_History.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/BaseballGame_the_Players_the_History.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Biographies and Memoirs from the Golden Age of Hollywood (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Biographies_and_Memoirs_from_the_GoldenAge_of_Hollywood.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Biographies_and_Memoirs_from_the_GoldenAge_of_Hollywood.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Biographies and Memoirs of the Presidents of the United States of America (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Biographies_of_USPresidents.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Biographies_of_USPresidents.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Biographies of Country Music Stars (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Biographies_of_CountryMusicStars.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Biographies_of_CountryMusicStars.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Biographies of Jazz and Blues Singers and Musicians (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Biographies_of_Jazz_and_BluesSingers_and_Musicians.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Biographies_of_Jazz_and_BluesSingers_and_Musicians.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Biographies of Rock N Roll Stars (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Biographies_of_RockNRollStars.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Biographies_of_RockNRollStars.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Books Referenced in "The End of Your Life Book Club" (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/BooksReferenced_in_TheEnd_of_YourLifeBookClub.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/BooksReferenced_in_TheEnd_of_YourLifeBookClub.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Cesar Chavez Day (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CesarChavezDay.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CesarChavezDay.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Children's Animal Stories (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ChildrensAnimalStories.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ChildrensAnimalStories.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Children's Books in Print/Braille (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ChildrensBooks_in_PrintBraille.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ChildrensBooks_in_PrintBraille.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Children's Classics for Young and Adult Readers (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ChildrensClassics_for_Young_and_AdultReaders.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ChildrensClassics_for_Young_and_AdultReaders.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Children's Newbery Award Winners (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ChildrensNewberyAwardWinners.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ChildrensNewberyAwardWinners.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Classic Books by California Authors (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ClassicBooksByCalifornianAuthors.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ClassicBooksByCalifornianAuthors.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Classics: Pre-20th Century English Novels (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ClassicsPre20thCenturyEnglishNovels.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ClassicsPre20thCenturyEnglishNovels.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Cookbooks: All American Recipes (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CookbooksAllAmericanRecipes.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CookbooksAllAmericanRecipes.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Cookbooks: Dessert Recipes (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CookbooksDessertRecipes.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CookbooksDessertRecipes.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Cookbooks: From Around the World (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CookbooksFromAround_the_World.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CookbooksFromAround_the_World.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Cookbooks: Quick and Easy Recipes (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CookbooksQuick_and_EasyRecipes.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CookbooksQuick_and_EasyRecipes.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Cookbooks: Vegetarian and Vegan (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CookbooksVegetarian_and_Vegan.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CookbooksVegetarian_and_Vegan.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Current Events and Concerns about the Environment: Climate Change, Ecology, and Pollution (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CurrentEvents_and_Concerns_about_Environment.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/CurrentEvents_and_Concerns_about_Environment.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Dayton Literary Peace Prize Winners (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/DaytonLiteraryPeacePrizeAwardWinners.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/DaytonLiteraryPeacePrizeAwardWinners.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Diabetes: Non-Fiction Guides (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/DiabetesNonfictionGuides.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/DiabetesNonfictionGuides.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Fantasy Series (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/FantasySeries.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/FantasySeries.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Fantasy: Urban Fantasy Series (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/FantasyUrbanFantasySeries.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/FantasyUrbanFantasySeries.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Gardening Books (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/GardeningBooks.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/GardeningBooks.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Gentle and Inoffensive Fiction (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Gentle_and_Inoffensive_fiction.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Gentle_and_Inoffensive_fiction.pdf" target="_blank">PDF</a>)</li>
+                                        <li>History: American Civil War (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/HistoryAmericanCivilWar.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/HistoryAmericanCivilWar.pdf" target="_blank">PDF</a>)</li>
+                                        <li>History: American Revolution (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/HistoryAmericanRevolution.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/HistoryAmericanRevolution.pdf" target="_blank">PDF</a>)</li>
+                                        <li>History: California (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/HistoryCalifornia.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/HistoryCalifornia.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Holidays in the Springtime, Fiction and Non-Fiction Books (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Holidays_in_the_Springtime.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Holidays_in_the_Springtime.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Horror and Frightfully Suspenseful Stories (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Horror_suspense_fiction.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Horror_suspense_fiction.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Independent Living for People with Disabilities (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/IndependentLiving_for_People_with_Disabilities.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/IndependentLiving_for_People_with_Disabilities.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Inspirational Non-Fiction Books about People with Disabilities (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/InspirationalNonfiction_about_People_with_Disabilities.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/InspirationalNonfiction_about_People_with_Disabilities.pdf" target="_blank">PDF</a>)</li>
+                                        <li>International Crime Novels (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/InternationalCrimeNovels.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/InternationalCrimeNovels.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Inventions, Ideas, and Scientists that Shaped the World (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Inventions_Ideas_and_Scientists.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Inventions_Ideas_and_Scientists.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Job Searching and Career Development (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/JobSearching_and_Career_Development.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/JobSearching_and_Career_Development.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Movie Books: Seen the Movie? Read the Book that Inspired It (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/MovieBooksSeen_the_MovieRead_the_Book_that_Inspired.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/MovieBooksSeen_the_MovieRead_the_Book_that_Inspired.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Mysteries: Agatha Award Winners (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/MysteriesAgatha_award_winners.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/MysteriesAgatha_award_winners.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Mysteries: Culinary (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/MysteriesCulinary.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/MysteriesCulinary.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Mysteries: Historical (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/MysteriesHistorical.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/MysteriesHistorical.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Mysteries: Spy and Espionage Novels (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/MysteriesSpy_and_EspionageNovels.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/MysteriesSpy_and_EspionageNovels.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Mysteries: True Crime (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/MysteriesTrueCrime.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/MysteriesTrueCrime.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Nobel Prize in Literature (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/NobelPrizeLiterature.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/NobelPrizeLiterature.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Popular and Contemporary Fiction Favorites 2006 Through 2008 (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Popular_and_ContemporaryFiction2006through2008.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Popular_and_ContemporaryFiction2006through2008.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Popular and Contemporary Fiction Favorites 2009 Through 2011 (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Popular_and_ContemporaryFiction2009through2011.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Popular_and_ContemporaryFiction2009through2011.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Popular and Contemporary Fiction Favorites 2012 Through 2014 (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Popular_and_ContemporaryFiction2012through2014.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Popular_and_ContemporaryFiction2012through2014.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Popular and Contemporary Fiction Favorites 2012 Through 2014 (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Popular_and_ContemporaryFiction2012through2014.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Popular_and_ContemporaryFiction2012through2014.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Popular and Contemporary Fiction Favorites 2015 Through 2017 (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Popular_and_Contemporary_Fiction_Favorites2015through2017.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Popular_and_Contemporary_Fiction_Favorites2015through2017.pdf" target="_blank">PDF</a>)</li>
+                                        <li>President Obama Recommends (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/President_Obama_Recommends.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/President_Obama_Recommends.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Pulitzer Prize Winners: Fiction (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/PulitzerPrizeWinnersFictionBooks.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/PulitzerPrizeWinnersFictionBooks.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Romance: Amish (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/RomanceAmish.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/RomanceAmish.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Romance: RITA Award-Winning Books (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/RomanceRITAwinners.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/RomanceRITAwinners.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Romance: Gentle and Inspirational (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/RomanceGentle_and_Inspirational.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/RomanceGentle_and_Inspirational.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Romance Novels: Historical (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Romance_novels_historical.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Romance_novels_historical.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Romance: Paranormal (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/RomanceParanormal.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/RomanceParanormal.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Romance: Spicy Novels (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/RomanceSpicy.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/RomanceSpicy.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Science Fiction Space Opera Novels (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ScienceFictionSpaceOperaFiction.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/ScienceFictionSpaceOperaFiction.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Short, Sweet and Simple Fiction (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Short_sweet_simple_fiction.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Short_sweet_simple_fiction.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Travel, Sports, and Adventure for People with Disabilities (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/TravelSports_and_Adventure_for_People_with_Disabilities.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/TravelSports_and_Adventure_for_People_with_Disabilities.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Vampires: The Classics and Contemporaries (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/VampiresClassics_and_Contemporaries.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/VampiresClassics_and_Contemporaries.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Women's Lives and Relationships Fiction (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/WomensLives_and_Relationships_fiction.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/WomensLives_and_Relationships_fiction.pdf" target="_blank">PDF</a>)</li>
+                                        <li>World Literature (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/WorldLiterature.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/WorldLiterature.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Young Adult: Action, Adventure, and Intrigue (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/YoungAdult_Action_Adventure_and_Intrigue.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/YoungAdult_Action_Adventure_and_Intrigue.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Young Adult and Children's Books: Schneider Family Book Award (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/YoungAdult_and_ChildrensBooksSchneiderFamilyBookAward.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/YoungAdult_and_ChildrensBooksSchneiderFamilyBookAward.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Young Adult: Contemporary Realistic Novels (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/YoungAdult_Contemporary_RealisticNovels.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/YoungAdult_Contemporary_RealisticNovels.pdf" target="_blank">PDF</a>)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Read-Alikes Lists</a>
+                                </h3>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>Read-Alikes for Barbara Kingsolver (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_BarbaraKingsolver.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_BarbaraKingsolver.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Read-Alikes for the Hunger Games Series (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_the_HungerGamesSeries.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_the_HungerGamesSeries.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Read-Alikes for Lilian Jackson Braun (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_LilianJacksonBraun.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_LilianJacksonBraun.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Read-Alikes for Nicholas Sparks (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_NicholasSparks.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_NicholasSparks.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Read-Alikes for the Stephanie Plum Series (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_the_StephaniePlumSeries.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_the_StephaniePlumSeries.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Read-Alikes for VC Andrews (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_VC_Andrews.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_VC_Andrews.pdf" target="_blank">PDF</a>)</li>
+                                        <li>Read-Alikes for Zane Grey and Louis L'Amour (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_ZaneGrey_and_LouisLAmour.docx">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/ravenous/Readalikes_for_ZaneGrey_and_LouisLAmour.pdf" target="_blank">PDF</a>)</li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Bestseller Lists</a>
+                                </h3>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <p>
+                                        This monthly report lists <a href="http://www.loc.gov/nls/" target="_blank">NLS</a> production-related information on books selected from the combined bestseller lists of the <em>Los Angeles Times</em> (LAT), the <em>New York Times</em> (NYT), and the <em>Washington Post</em> (WP): <a href="http://www.loc.gov/nlsold/networkdocs/bestsellers/archives.html" target="_blank">NLS Bestseller Report</a>.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Other Links</a>
+                                </h3>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                    <p>
+                                        These links to outside resources may help you find your next great read. Any mention of products and services in this list are for information only and does not imply endorsement by BTBL or the California State Library.
+                                    </p>
+                                    <ul>
+                                        <li><a href="http://www.mymcpl.org/books-movies-music/based-book" target="_blank">Based on the Book</a></li>
+                                        <li><a href="http://www.bookbrowse.com/index.cfm" target="_blank">BookBrowse</a></li>
+                                        <li><a href="http://www.fantasticfiction.co.uk/" target="_blank">Fantastic Fiction</a></li>
+                                        <li><a href="http://www.goodreads.com/" target="_blank">Goodreads</a></li>
+                                        <li><a href="http://thesavvyreader.ca/" target="_blank">Savvy Reader</a></li>
+                                        <li><a href="http://www.openingthebook.com/whichbook/" target="_blank">Whichbook</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                   
+
+                </div>
+
+                <div class="third">
+                    <img src="~/Content/StateTemplate/images/btbl/ravenous/corner.png" alt="ravenous readers" />
+                    <p>image credit: <a href="http://en.dawanda.com/shop/printery" target="_blank">http://en.dawanda.com/shop/printery</a></p>
+                </div>
+
+            </div>
     </main>
 </div>
 
