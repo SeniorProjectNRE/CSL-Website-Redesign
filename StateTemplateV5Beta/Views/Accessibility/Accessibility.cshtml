@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "CSL - California State Library’s website accessibility info and tips";
+    ViewBag.PageTitle = "Website Accessibility";
     ViewBag.Author = "Matthew Loller";
     ViewBag.Description = "Find info about the accessibility standards the library follows and tips on how to change your settings " +
                           "and keyboard shortcuts to better view and access the library’s information.";
@@ -30,13 +31,13 @@
                 <li class="active"><a href="/about">About</a></li>
             </ol>*@
 
-            <h1 class="orange" id="title">@ViewBag.Title</h1>
+            <h2 class="page-title">@ViewBag.PageTitle</h2>
         </div>
 
         <div class="section">
             <div class="container">
 
-                <h2 class="page-title">Website Accessibility</h2>
+                
 
                 <p>
                     The California State Library (CSL) website is designed to be a model of accessibility and ensure 
@@ -95,14 +96,14 @@
                             and uncheck "Allow pages to choose their own colors, instead of my selections above". Select the "OK" box,
                             and then the "OK" box again. The colors should change on the browser.
                         </p>
-                        <h4>Google Chrome</h4>
+                        @*<h4>Google Chrome</h4>
                         <p>
                             --Unfinished
                         </p>
                         <h4>Safari</h4>
                         <p>
                             --Unfinished
-                        </p>
+                        </p>*@
                     </div>
                 </div>
             </div>
@@ -130,14 +131,14 @@
                             and uncheck "Allow pages to choose their own colors, instead of my selections above". Select the "OK" box,
                             and then the "OK" box again. The colors should change on the browser.
                         </p>
-                        <h4>Google Chrome</h4>
+                        @*<h4>Google Chrome</h4>
                         <p>
                             --Unfinished
                         </p>
                         <h4>Safari</h4>
                         <p>
                             --Unfinished
-                        </p>
+                        </p>*@
                     </div>
                 </div>
             </div>
@@ -148,6 +149,84 @@
                 <p>Below is the list of keyboard shortcuts that will help you to navigate through our web pages without the use of a mouse.
                 <br />
                 (Note: Some commands may not work with every Internet browser version.)</p>
+                <br />
+                <table class="table table-default" style="width:87%; aligh:center; font-size:1.1em; font-weight:bold">
+                    <tbody>
+                        <tr>
+                            <th id="If_you_want_to......"><h3 style="border:0; background: none">If you want to...</h3></th>
+                            <th id="Select..."><h3 style="border:0; background: none">Select...</h3></th>
+                        </tr>
+                        <tr>
+                            <td headers="If_you_want_to......"><p>Increase text size</p></td>
+                            <td headers="Select..."><p>Ctrl + +</p></td>
+                        </tr>
+                        <tr>
+                            <td headers="If_you_want_to......"><p>Decrease text size</p></td>
+                            <td headers="Select..."><p>Ctrl - -</p></td>
+                        </tr>
+                        <tr>
+                            <td headers="If_you_want_to......"><p>Move forward from link to link</p></td>
+                            <td headers="Select..."><p>Tab</p></td>
+                        </tr>
+                        <tr>
+                            <td headers="If_you_want_to......"><p>Move backward from link to link </p></td>
+                            <td headers="Select..."><p>Shift + Tab</p></td>
+                        </tr>
+                        <tr>
+                            <td headers="If_you_want_to......"><p>Move from box to box</p></td>
+                            <td headers="Select..."><p>Tab</p></td>
+                        </tr>
+                        <tr>
+                            <td headers="If_you_want_to......"><p>Go to top of page</p></td>
+                            <td headers="Select..."><p>Ctrl + Home</p></td>
+                        </tr>
+                        <tr>
+                            <td headers="If_you_want_to......"><p>Go to bottom of page</p></td>
+                            <td headers="Select..."><p>Ctrl + End</p></td>
+                        </tr>
+                        <tr>
+                            <td headers="If_you_want_to......"><p>Close window</p></td>
+                            <td headers="Select..."><p>Ctrl + W</p></td>
+                        </tr>
+                        <tr>
+                            <td headers="If_you_want_to......"><p>Go back a page</p></td>
+                            <td headers="Select..."><p>Alt + Left Arrow</p></td>
+                        </tr>
+                        <tr>
+                            <td headers="If_you_want_to......"><p>Go forward a page</p></td>
+                            <td headers="Select..."><p>Alt + Right Arrow</p></td>
+                        </tr>
+                        <tr>
+                            <td headers="If_you_want_to......"><p>Go to search box</p></td>
+                            <td headers="Select..."><p>Alt + S</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h3>
+                    More Keyboard Shortcuts
+                </h3>
+                <ul class="list-overstated">
+                    <li><a href="http://support.mozilla.com/en-US/kb/Keyboard+shortcuts" target="_blank">Firefox</a></li>
+                    <li><a href="http://windows.microsoft.com/en-US/windows-vista/Internet-Explorer-keyboard-shortcuts" target="_blank">Internet Explorer</a></li>
+                    <li><a href="http://www.google.com/support/chrome/bin/answer.py?hl=en&amp;answer=95743" target="_blank">Chrome</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h3>
+                    Difficulty Accessing Material
+                </h3>
+                <p>
+                        If you have difficulty accessing any material on this site, please contact us in writing and we will work with you to make the information 
+                        available. You can direct your request to our <a href="mailto:webmaster@library.ca.gov">Webmaster</a>.
+                    </p>
             </div>
         </div>
     </main>
