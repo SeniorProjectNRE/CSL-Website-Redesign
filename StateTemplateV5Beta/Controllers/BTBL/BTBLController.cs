@@ -31,11 +31,11 @@ namespace StateTemplateV5Beta.Controllers.BTBL
         }
 
         // GET: advisory-council
-        [Route("advisory-council")]
+       /* [Route("advisory-council")]
         public ActionResult AdvisorycCouncil()
         {
             return View();
-        }
+        }*/
 
         // GET: borrow
         [Route("borrow")]

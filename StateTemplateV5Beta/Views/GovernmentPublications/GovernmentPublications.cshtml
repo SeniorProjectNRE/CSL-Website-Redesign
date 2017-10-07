@@ -1,11 +1,206 @@
-﻿
-@{
-    ViewBag.Title = "GovernmentPublications";
+﻿@{
+    ViewBag.Title = "CSL - Government Publications";
+    ViewBag.PageTitle = "Government Publications";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "The Government Publications Section provides the public with free and open access to government information and guides State and Federal Depository Libraries.";
 }
 
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+
+</head>
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>GovernmentPublications</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                    <li><a href="/sutro">Our Collections</a></li>
+                    <li class="active">Government Publications</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <div class="two-thirds">
+                    <p>Our Mission</p>
+                    <p>
+                        The mission of the Government Publications Section is to assist California state employees and to support State and Federal Depository Libraries in California in providing the public with free and open access to government information. Providing a single primary location for government documents and information assistance improves government efficiency, and coordinating the efforts of depository libraries in collecting, organizing, preserving, and making available information from the California and U.S. Federal Governments strengthens a democratic tradition of open government and free access to public information.
+                    </p>
+
+
+                    <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Our Collections</a>
+                                </h3>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+
+                                    <p>
+                                        The California State Library's government publications collection is the only regional depository of federal government information in California, a full depository for California state government publications, and a Patent and Trademark Resource Center. Our collections include:
+                                    </p>
+                                    <ul>
+                                        <li>All federal publications distributed by the United States Superintendent of Documents to depository libraries;</li>
+                                        <li>All California state publications distributed under the <a href="http://www.leginfo.ca.gov/cgi-bin/displaycode?section=gov&amp;group=14001-15000&amp;file=14900-14912" target="_blank">Library Distribution Act</a>;</li>
+                                        <li>Selected Environmental Impact Reports (EIRs) produced as required by the California Environmental Quality Act (CEQA);</li>
+                                        <li>Selected California local government publications;</li>
+                                        <li>Selected publications by other state governments;</li>
+                                        <li>Selected foreign government publications.</li>
+                                    </ul>
+                                    <p>
+                                        Some of our older materials and special-format collections are not included in the Library’s online catalog. Collections which are not represented in the library’s online catalog include:
+                                    </p>
+                                    <ul>
+                                        <li>Many pre-1976 federal publications;</li>
+                                        <li>United States patent and trademark information in paper, CD-ROM, DVD, and microform formats, including full patent specifications with images;</li>
+                                        <li>National Technical Information Service (NTIS) reports on microfiche;</li>
+                                        <li>ERIC reports on educational research on microfiche.</li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Our Services</a>
+                                </h3>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p>We help government employees and members of the public locate government-disseminated information. We also provide one-on-one patent and trademark search training sessions.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Contact Us</a>
+                                </h3>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+
+
+                                    <div>
+
+                                        <p>Phone: (916) 654-0261</p>
+                                        <p>Fax: (916) 323-9768</p>
+                                        <p><a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref_GPS&amp;cllcid=GPS" target="_blank">Ask Government Publications a Question</a></p>
+                                        <p>
+                                            <a href="mailto:cslgps@library.ca.gov">cslgps@library.ca.gov</a>
+                                        </p>
+
+                                        <div class="panel panel-understated">
+                                            <div class="panel-heading">
+                                                <h3>In Person</h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <p>
+                                                    914 Capitol Mall<br>
+                                                    Stanley Mosk Library &amp; Courts Bldg, 3rd Floor<br>
+                                                    Sacramento, CA 95814
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-understated">
+                                            <div class="panel-heading">
+                                                <h3>Mail</h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <p>
+                                                    California State Library<br>
+                                                    Government Publications Section<br>
+                                                    PO Box 942837<br>
+                                                    Sacramento, CA 94237-0001
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Highlighted Document</a>
+                                </h3>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+
+                                    <img src="~/Content/StateTemplate/images/gps/book.png" alt="Book cover: Dozier, Herbert L. Recipes for cooking muskrat meat. Wildlife leaflet 229. United States Department of the Interior, Fish and Wildlife Service. October 1943." title="Book cover: Dozier, Herbert L. Recipes for cooking muskrat meat. Wildlife leaflet 229. United States Department of the Interior, Fish and Wildlife Service. October 1943." style="float:left; padding-right:10px">
+                                    <p>
+                                        <a href="https://archive.org/details/recipesforcookin229dozi" target="_blank">Dozier, Herbert L. <em>Recipes for cooking muskrat meat</em></a>. Wildlife leaflet 229. United States Department of the Interior, Fish and Wildlife Service. October 1943.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="section">
+                        <p>
+                            <img src="~/Content/StateTemplate/images/gps/fdlp_logo.jpg" alt="FDLP logo" title="FDLP logo" style="height:45px; padding-right:30px; float:left">
+                            <img src="~/Content/StateTemplate/images/gps/cdlp_logo.jpg" alt="CDLP logo" title="CDLP logo" style="height:45px;padding-right:30px; float:left">
+                            <img src="~/Content/StateTemplate/images/gps/ptrc_logo.jpg" alt="PTRC logo" title="PTRC logo" style="height:45px;padding-right:30px; float:left">
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="third">
+
+                    <div class="panel panel-standout highlight">
+                        <div class="panel-heading">
+                            <h3>Government Publications Programs and Services</h3>
+                            
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="/government-publications/state-document-depository-program/">California Depository Library Program</a></li>
+                                <li><a href="/government-publications/state-document-depositories/">State Documents Depository Libraries</a></li>
+                                <!--<li><a href="/gps/cal-pubs.html">Selected Digital California State Publications</a></li>-->
+                                <li><a href="/government-publications/federal-depository/">Federal Depository Library Program</a></li>
+                                <li><a href="http://catalog.gpo.gov/fdlpdir/public.jsp?flag=searchp&amp;st_12=CA" target="_blank">Federal Depository Libraries in California</a></li>
+                                <li><a href="/services/research-resources/patents/">Patent and Trademark Resource Center</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-standout highlight">
+                        <div class="panel-heading">
+                            <h3>Quick Links to Government Information</h3>
+                           
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="research-resources/additional-resources/">California</a></li>
+                                <li><a href="research-resources/additional-resources/">Federal</a></li>
+                                <li><a href="/research/morelinks.html#govlocal">City and County</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                      
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
