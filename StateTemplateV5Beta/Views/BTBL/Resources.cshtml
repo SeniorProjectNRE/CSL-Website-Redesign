@@ -1,11 +1,315 @@
-﻿
-@{
-    ViewBag.Title = "Resources";
+﻿@{
+    ViewBag.Title = "CSL - BTBL - Other Resources (Links)";
+    ViewBag.PageTitle = "Other Resources (Links)";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Other Resources (Links) that may be of use to BTBL patrons or other persons with low vision or blindness Braille Resources Mobile apps Blindness/Low Vision Disability Information and Advocacy Organizations Religious Materials in Special Media Assistive Technology Resources Textbooks in Special Media Described Video Resources Magazines in Special Media Downloadable Media Sources Other Special Media Sources Online Accessible Courses NLS Information Online Reference Services";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Resources</h2>
+
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb ">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/BTBL/">Braille and Talking Books</a></li>
+                    <li class="active">Resources</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <p>Any mention of products and services in this list are for information only and does not imply endorsement by BTBL or the California State Library.</p>
+
+                <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading1'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Blindness/Low Vision Information and Advocacy Organizations</a>
+                            </h4>
+                        </div>
+                        <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                            <div class='panel-body'>
+                                <ul>
+                                    <li><a href="http://www.catransitionalliance.org/content.aspx?id=1561&amp;title=Resources" target="_blank">ACCESS - CA Transition Alliance</a></li>
+                                    <li><a href="http://www.afb.org/seniorsite" target="_blank">AFB - Senior Site</a></li>
+                                    <li><a href="http://www.familyconnect.org/" target="_blank">AFB - Family Connect</a></li>
+                                    <li><a href="http://www.acb.org/" target="_blank">American Council of the Blind (ACB)</a></li>
+                                    <li><a href="http://www.afb.org/" target="_blank">American Foundation for the Blind (AFB)</a></li>
+                                    <li><a href="http://www.brightfocus.org/macular/article/resource-list" target="_blank">BrightFocus Foundation</a></li>
+                                    <li><a href="http://www.ccbnet.org/" target="_blank">California Council of the Blind (CCB)</a></li>
+                                    <li><a href="http://www.cde.ca.gov/re/pn/sm/lowvision.asp" target="_blank">CA Low Vision Information and Directory</a></li>
+                                    <li><a href="http://www.cdss.ca.gov/Blind-Services" target="_blank">CA Office of Services to the Blind (OSB) Handbook of Resources</a></li>
+                                    <li><a href="http://www.csb-cde.ca.gov/" target="_blank">CA School for the Blind (Fremont)</a></li>
+                                    <li><a href="http://www.lbcenter.org/" target="_blank">Lions Center for the Blind (Oakland)</a></li>
+                                    <li><a href="http://www.seniorvision.org/" target="_blank">Lions Center for the Visually Impaired (Pittsburg)</a></li>
+                                    <li><a href="http://lighthouse-sf.org/" target="_blank">LightHouse for the Blind and Visually Impaired (Northern California)</a></li>
+                                    <li><a href="http://www.nfb.org/" target="_blank">National Federation of the Blind (NFB)</a></li>
+                                    <li><a href="http://sixdots.org/" target="_blank">NFB - California Chapter (Six Dots)</a></li>
+                                    <li><a href="https://nfb.org/images/nfb/publications/vod/vodsum0405.htm" target="_blank">NFB - Jobline</a></li>
+                                    <li><a href="https://www.loc.gov/nls/resources/blindness-and-vision-impairment/information-advocacy-organizations/" target="_blank">NLS Directory of Organizations</a></li>
+                                    <li><a href="http://www.rehab.cahwnet.gov/OCB/" target="_blank">Orientation Center for the Blind (Albany)</a></li>
+                                    <li><a href="http://www.pathstoliteracy.org/" target="_blank">Paths to Literacy</a></li>
+                                    <li><a href="http://www.sierraservices.org/" target="_blank">Sierra Services for the Blind (Nevada City)</a></li>
+                                    <li><a href="http://www.societyfortheblind.org/" target="_blank">Society for the Blind (Sacramento)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading2'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Disability Information and Advocacy Organizations</a>
+                            </h4>
+                        </div>
+                        <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="http://www.ada.gov/" target="_blank">Americans with Disabilities Act</a></li>
+                                    <li><a href="http://www.rehab.cahwnet.gov/" target="_blank">CA Dept. of Rehabilitation</a></li>
+                                    <li><a href="https://www.disability.gov/" target="_blank">Disability.gov</a></li>
+                                    <li><a href="http://www.disabilityresource.org/" target="_blank">Disability Resource Community</a></li>
+                                    <li><a href="http://www.icanconnect.org/" target="_blank">iCanConnect</a></li>
+                                    <li><a href="http://www.ldonline.org" target="_blank">LD OnLine</a></li>
+                                    <li><a href="http://www.ldanatl.org" target="_blank">Learning Disabilities Association of America</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading3'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Braille Resources</a>
+                            </h4>
+                        </div>
+                        <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="http://www.brailleauthority.org/ueb.html" target="_blank">BANA – Unified English Braille (UEB) Information</a></li>
+                                    <li><a href="http://www.ctevh.org/" target="_blank">CA Transcribers and Educators for the Blind and Visually Impaired</a></li>
+                                    <li><a href="http://www.hadley.edu/" target="_blank">Hadley School for the Blind</a></li>
+                                    <li><a href="http://www.nbp.org/" target="_blank">National Braille Press</a></li>
+                                    <li><a href="https://nfb.org/bell-academy" target="_blank">NFB BELL Academy</a></li>
+                                    <li><a href="https://www.loc.gov/nls/resources/blindness-and-vision-impairment/braille-information/" target="_blank">NLS About Braille</a></li>
+                                    <li><a href="https://www.loc.gov/nls/resources/blindness-and-vision-impairment/braille-information/braille-literacy-resources-learning-reading/" target="_blank">NLS Braille Literacy</a></li>
+                                    <li><a href="https://www.loc.gov/nls/resources/blindness-and-vision-impairment/devices-aids/braille-embossers/" target="_blank">NLS Directory of Braille Embossers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading4'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Textbooks in Special Media</a>
+                            </h4>
+                        </div>
+                        <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="http://www.cde.ca.gov/re/pn/sm/" target="_blank">CA Clearninghouse for Specialized Media &amp; Translations</a></li>
+                                    <li><a href="http://www.coursesmart.com/accessibility" target="_blank">CourseSmart</a></li>
+                                    <li><a href="http://www.learningally.org/" target="_blank">Learning Ally (formerly Recordings for the Blind &amp; Dyslexic)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading5'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>Religious Materials in Special Media</a>
+                            </h4>
+                        </div>
+                        <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="https://www.loc.gov/nls/braille-audio-reading-materials/bibles-sacred-writings-special-media/" target="_blank">NLS Directory of Organizations that provide religious materials in alternate format</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading6'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>Magazines in Special Media</a>
+                            </h4>
+                        </div>
+                        <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="https://www.loc.gov/nls/braille-audio-reading-materials/magazines/" target="_blank">NLS Directory of accessible magazines</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading7'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse7' aria-expanded='false' aria-controls='collapse7'>Downloadable Media Sources</a>
+                            </h4>
+                        </div>
+                        <div id='collapse7' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading7'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="http://www.audible.com" target="_blank">Audible.com</a></li>
+                                    <li><a href="http://www.bookshare.org" target="_blank">Bookshare</a></li>
+                                    <li><a href="http://comicsempower.com" target="_blank">Comics Empower: Comic Books for the Blind</a></li>
+                                    <li><a href="http://www.wtbbl.org/braille-files.aspx" target="_blank">Electronic Braille from Washington Talking Book &amp; Braille Library</a></li>
+                                    <li><a href="http://www.gutenberg.org" target="_blank">Gutenberg Project</a></li>
+                                    <li><a href="http://www.archive.org" target="_blank">Internet Archive</a></li>
+                                    <li><a href="http://statelibrary.ncdcr.gov/lbph/noble.html" target="_blank">Locally-Produced Books from North Carolina Library for the Blind &amp; Physically Handicapped</a></li>
+                                    <li><a href="http://www.wtbbl.org/login.aspx" target="_blank">Locally-Produced Books from Washington Talking Book &amp; Braille Library</a></li>
+                                    <li><a href="http://openebooks.net/" target="_blank">Open eBooks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading8'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse8' aria-expanded='false' aria-controls='collapse8'>Other Special Media Sources</a>
+                            </h4>
+                        </div>
+                        <div id='collapse8' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading8'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="https://www.loc.gov/nls/resources/custom-books-transcription-services/" target="_blank">Directory of Producers of Accessible Reading Materials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading9'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse9' aria-expanded='false' aria-controls='collapse9'>
+                                    Assistive Technology Resources
+
+                                </a>
+                            </h4>
+                        </div>
+                        <div id='collapse9' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading9'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="https://www.loc.gov/nls/resources/custom-books-transcription-services/" target="_blank">Directory of Producers of Accessible Reading Materials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading10'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse10' aria-expanded='false' aria-controls='collapse10'>Mobile Apps</a>
+                            </h4>
+                        </div>
+                        <div id='collapse10' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading10'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="https://itunes.apple.com/us/app/bard-mobile/id705229586" target="_blank">iOS BARD Mobile</a></li>
+                                    <li><a href="https://itunes.apple.com/us/app/voice-dream-reader/id496177674?mt=8" target="_blank">iOS Voice Dream Reader</a></li>
+                                    <!--<li><a href="https://itunes.apple.com/us/app/brailletouch/id579725651?mt=8" target="_blank">iOS BrailleTouch</a></li>-->
+                                    <li><a href="https://itunes.apple.com/us/app/low-vision-center/id527023535?mt=8" target="_blank">iOS Low Vision Center</a></li>
+                                    <li><a href="https://itunes.apple.com/us/app/eyenote/id405336354?mt=8" target="_blank">iOS EyeNote</a></li>
+                                    <li><a href="https://play.google.com/store/apps/details?id=gov.loc.nls.dtb" target="_blank">Android BARD Mobile</a></li>
+                                    <li><a href="https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback" target="_blank">Android Google Talkback</a></li>
+                                    <li><a href="https://play.google.com/store/apps/details?id=com.google.android.tts" target="_blank">Android Google Text-To-Speech</a></li>
+                                    <li><a href="https://play.google.com/store/apps/details?id=name.kunes.android.launcher.activity&amp;hl=en" target="_blank">Android BIG Launcher</a></li>
+                                    <li><a href="https://play.google.com/store/apps/details?id=org.ideal.currencyid&amp;hl=en" target="_blank">Android IDEAL Currency Identifier</a></li>
+                                    <li><a href="https://play.google.com/store/apps/details?id=com.msearcher.taptapsee.android&amp;hl=en" target="_blank">Android TapTapSee</a></li>
+                                    <li><a href="https://www.loc.gov/nls/resources/blindness-and-vision-impairment/devices-aids/accessible-mobile-reading-apps/" target="_blank">List of Accessible Mobile Reading Apps</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading11'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse11' aria-expanded='false' aria-controls='collapse11'>Described Video Resources</a>
+                            </h4>
+                        </div>
+                        <div id='collapse11' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading11'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="http://www.acb.org/adp/index.html" target="_blank">The Audio Description Project (from ACB)</a></li>
+                                    <li><a href="http://www.afb.org/tv.aspx" target="_blank">Described TV Listings (from AFB)</a></li>
+                                    <li><a href="http://main.wgbh.org/wgbh/pages/mag/description.html" target="_blank">Media Access Group at WGBH</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading12'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse12' aria-expanded='false' aria-controls='collapse12'>Online Accessible Courses</a>
+                            </h4>
+                        </div>
+                        <div id='collapse12' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading12'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="http://www.cannect.org" target="_blank">CANnect</a></li>
+                                    <li><a href="http://www.yismehu.org" target="_blank">Yismehu (Hebrew and Jewish Studies)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading13'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse13' aria-expanded='false' aria-controls='collapse13'>Online Reference Services</a>
+                            </h4>
+                        </div>
+                        <div id='collapse13' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading13'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="http://www.infoeyes.org/" target="_blank">Infoeyes - Ask a Question About Anything</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading14'>
+                            <h4 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse14' aria-expanded='false' aria-controls='collapse14'>NLS Information</a>
+                            </h4>
+                        </div>
+                        <div id='collapse14' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading14'>
+                            <div class='panel-body'>
+                                <ul class="regular" style="padding-bottom:0">
+                                    <li><a href="http://www.loc.gov/nls/" target="_blank">National Library Service for the Blind and Physically Handicapped (NLS)</a></li>
+                                    <li><a href="https://www.loc.gov/nls/about/organization/standards-guidelines/collection-building-policy/" target="_blank">NLS Collection Building Policy</a></li>
+                                    <li><a href="http://www.loc.gov/nls/braille-audio-reading-materials/find-a-local-library/" target="_blank">Directory of NLS Libraries</a></li>
+                                    <li><a href="https://www.facebook.com/ThatAllMayRead" target="_blank">NLS on Facebook</a></li>
+                                    <li><a href="http://www.loc.gov/nls/about/news/" target="_blank">NLS Newsletters</a></li>
+                                    <li><a href="http://www.loc.gov/programs/national-library-service-for-the-blind-and-physically-handicapped/about-this-service/" target="_blank">That All May Read</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
     </main>
 </div>
 
