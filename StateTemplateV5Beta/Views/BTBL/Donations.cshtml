@@ -1,11 +1,65 @@
 ﻿
 @{
-    ViewBag.Title = "Donations";
+    ViewBag.Title = "CSL - BTBL - Donations";
+    ViewBag.PageTitle = "Donations";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "Donations to BTBL are accepted at any time and are used to enhance and improve library services. Donations can be made online, by mail, or in person. How to donate to Braille and Talking Book Library BTBL. Online by Mail In Person In Honor In Memory";
+    ViewBag.Keywords = "California, state, Library, Braille, talking book, donation";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Donations</h2>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/btbl" style="text-transform:none;">Braille and Talking Books</a></li>
+                <li>Donations</a></li>
+            </ol>
+            <h2 class="page-title">@ViewBag.PageTitle</h2>
+        </div>
+
+        <div class="section">
+            <div class="container">
+
+                <p>
+                    Donations to BTBL are accepted at any time and are used to enhance and improve library services. Donations can be made online, by mail, or in person.
+                </p>
+                <br />
+
+                <h3>Online</h3>
+                <p>
+                    Please visit the California State Library Foundation at: <a href="http://www.cslfdn.org/" target="_blank">http://www.cslfdn.org/</a> and select the link for "Join/Donate". Be sure to designate "Braille &amp; Talking Books" as the donation recipient.
+                </p>
+                <br />
+                <h3>By Mail</h3>
+                <p>
+                    Checks should be made payable to the California State Library (CSL) Foundation and should include a note that the donation is for the Braille and Talking Book Library. Donations should be sent to: California State Library Foundation, 1225 8th Street, Suite 345, Sacramento, CA, 95814-4809.
+                </p>
+                <br />
+                <h3>In Person</h3>
+                <p>
+                    Cash donations can be made in person in our reading room at 900 N Street, Room 100, Sacramento, CA 95814. Cash donations should be placed in our donation box.
+                </p>
+                <br />
+                <h3>In Honor/In Memory Donations</h3>
+                <p>
+                    In the case of memorials or donations in honor of a particular person or event, please include the name(s) and address (es) of those to be notified.
+                </p>
+
+            </div>
+        </div>
     </main>
 </div>
 

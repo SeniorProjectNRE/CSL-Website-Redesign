@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "California State Library - Use Policy";
+    ViewBag.PageTitle = "Use Policy";
     ViewBag.Author = "Chris Pulido";
     ViewBag.Description = "View the use policy of information on the California State Library website.";
     ViewBag.Keywords = "California, state, Library";
@@ -41,7 +42,7 @@
 
         <div class="section">
             <div class="container">
-                <h2 class="page-title">Use Policy</h2>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
                 <p>Thank you for visiting the State of California's website and reviewing our Use Policy. You should also be aware that the State has a privacy policy, also available on this website. The State wants you to know about the collection, use, security, and access to information that may be obtained through use of the State's web portal. By visiting this website, you are accepting the policies and practices described in this notice. This notice covers the following topics:</p>
             </div>
         </div>
@@ -84,10 +85,11 @@
         <div class="section">
             <div class="container">
                 <div class="panel-group" id="personal-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="choice"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed anchor" data-toggle="collapse" data-parent="#example-accordion" href="#collapsePersonal" aria-expanded="false" aria-controls="collapsePersonal" name="choice">Personal Information and Choice</a>
+                                <a role="button" class="collapsed anchor" data-toggle="collapse" data-parent="#example-accordion" href="#collapsePersonal" aria-expanded="false" aria-controls="collapsePersonal">Personal Information and Choice</a>
                             </h4>
                         </div>
                         <div id="collapsePersonal" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -110,10 +112,11 @@
 
             <div class="container">
                 <div class="panel-group" id="children-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="children"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseChildren" aria-expanded="false" aria-controls="collapseChildren" name="children">A Special Note About Children</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseChildren" aria-expanded="false" aria-controls="collapseChildren">A Special Note About Children</a>
                             </h4>
                         </div>
                         <div id="collapseChildren" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -130,10 +133,11 @@
 
             <div class="container">
                 <div class="panel-group" id="info-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="info"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseInfo" aria-expanded="false" aria-controls="collapseInfo" name="info">Information Collected and How It Is Used</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseInfo" aria-expanded="false" aria-controls="collapseInfo">Information Collected and How It Is Used</a>
                             </h4>
                         </div>
                         <div id="collapseInfo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -164,11 +168,12 @@
             <br />
 
             <div class="container">
+                <a name="submit"></a>
                 <div class="panel-group" id="submit-accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSubmit" aria-expanded="false" aria-controls="collapseSubmit" name="info">What Happens to Information You Submit to Us?</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSubmit" aria-expanded="false" aria-controls="collapseSubmit">What Happens to Information You Submit to Us?</a>
                             </h4>
                         </div>
                         <div id="collapseSubmit" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -185,10 +190,11 @@
 
             <div class="container">
                 <div class="panel-group" id="form-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="form"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseForm" aria-expanded="false" aria-controls="collapseForm" name="form">Use of Internet Request for Assistance Form Information</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseForm" aria-expanded="false" aria-controls="collapseForm">Use of Internet Request for Assistance Form Information</a>
                             </h4>
                         </div>
                         <div id="collapseForm" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -205,10 +211,11 @@
 
             <div class="container">
                 <div class="panel-group" id="survey-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="surveys"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSurvey" aria-expanded="false" aria-controls="collapseSurvey" name="surveys">Surveys</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSurvey" aria-expanded="false" aria-controls="collapseSurvey">Surveys</a>
                             </h4>
                         </div>
                         <div id="collapseSurvey" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -231,10 +238,11 @@
 
             <div class="container">
                 <div class="panel-group" id="email-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="email"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseEmail" aria-expanded="false" aria-controls="collapseEmail" name="email">If You Send Us E-Mail</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseEmail" aria-expanded="false" aria-controls="collapseEmail">If You Send Us E-Mail</a>
                             </h4>
                         </div>
                         <div id="collapseEmail" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -251,10 +259,11 @@
 
             <div class="container">
                 <div class="panel-group" id="email-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="order"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOrder" aria-expanded="false" aria-controls="collapseOrder" name="order">Order Forms</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOrder" aria-expanded="false" aria-controls="collapseOrder">Order Forms</a>
                             </h4>
                         </div>
                         <div id="collapseOrder" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -269,10 +278,11 @@
 
             <div class="container">
                 <div class="panel-group" id="disclose-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="disclose"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseDisclose" aria-expanded="false" aria-controls="collapseDisclose" name="disclose">Public Disclosure</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseDisclose" aria-expanded="false" aria-controls="collapseDisclose">Public Disclosure</a>
                             </h4>
                         </div>
                         <div id="collapseDisclose" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -289,10 +299,11 @@
 
             <div class="container">
                 <div class="panel-group" id="personal-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="personal"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapsePer" aria-expanded="false" aria-controls="collapsePer" name="personal">Personal Information</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapsePer" aria-expanded="false" aria-controls="collapsePer">Personal Information</a>
                             </h4>
                         </div>
                         <div id="collapsePer" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -307,10 +318,11 @@
 
             <div class="container">
                 <div class="panel-group" id="cookies-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="cookies"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseCookies" aria-expanded="false" aria-controls="collapseCookies" name="cookies">Automatic Collection of Information/Cookies</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseCookies" aria-expanded="false" aria-controls="collapseCookies">Automatic Collection of Information/Cookies</a>
                             </h4>
                         </div>
                         <div id="collapseCookies" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -330,10 +342,11 @@
 
             <div class="container">
                 <div class="panel-group" id="security-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="security"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSecurity" aria-expanded="false" aria-controls="collapseSecurity" name="personal">Security</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSecurity" aria-expanded="false" aria-controls="collapseSecurity">Security</a>
                             </h4>
                         </div>
                         <div id="collapseSecurity" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -348,10 +361,11 @@
 
             <div class="container">
                 <div class="panel-group" id="links-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="links"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseLinks" aria-expanded="false" aria-controls="collapseLinks" name="links">Links to Other Sites</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseLinks" aria-expanded="false" aria-controls="collapseLinks">Links to Other Sites</a>
                             </h4>
                         </div>
                         <div id="collapseLinks" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -368,10 +382,11 @@
 
             <div class="container">
                 <div class="panel-group" id="liability-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="liability"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseLiability" aria-expanded="false" aria-controls="collapseLiability" name="liability">Limitation of Liability</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseLiability" aria-expanded="false" aria-controls="collapseLiability">Limitation of Liability</a>
                             </h4>
                         </div>
                         <div id="collapseLiability" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -390,10 +405,11 @@
 
             <div class="container">
                 <div class="panel-group" id="ownership-accordion" role="tablist" aria-multiselectable="true">
+                    <a name="ownership"></a>
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
-                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOwnership" aria-expanded="false" aria-controls="collapseOwnership" name="ownership">Ownership</a>
+                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOwnership" aria-expanded="false" aria-controls="collapseOwnership">Ownership</a>
                             </h4>
                         </div>
                         <div id="collapseOwnership" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">

@@ -1,11 +1,97 @@
-﻿
-@{
-    ViewBag.Title = "Bard";
+﻿@{
+    ViewBag.Title = "CSL - BTBL - About BARD (Braille & Audio Reading Download)";
+    ViewBag.PageTitle = "About BARD (Braille & Audio Reading Download)";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "BARD is a free website where you can download audio and electronic braille books, magazines, and more! BARD Benefits Equipment Needed Getting Started BARD Express BARD Tutorials BARD Mobile Tutorials BARD signup BARD Help BARD instructions BARD FAQ Tips How to Download BARD User Guide";
+    ViewBag.Keywords = "BARD, BTBL, Braille, Audio, Reading";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Bard</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/btbl">Braille and Talking Books</a></li>
+                    <li>Bard</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <p>
+                    BARD is a free website where you can download audio and electronic braille books, magazines, and more!
+                </p>
+
+                <div class="group">
+                    <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                        <div class="half">
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Getting Started</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <p>
+                                            1. To download books, you must first Sign-Up for BARD
+                                        </p>
+                                        <p>
+                                            2. Once you have submitted your completed application, you will receive an email with further instructions within the next few business days.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="half">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Equipment Needed</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <p>
+                                            1. Access to a computer with high-speed internet connection and a valid email address.
+                                        </p>
+                                        <p>
+                                            2. You cannot listen to audio downloads directly from your computer. To listen to audio downloads you need
+                                        </p>
+                                        <p class="list-unstyled m-l-md">
+                                            a. Library's loaned Digital Book Machine – OR – NLS-compatible Third Party Player
+                                            <br />
+                                            b. Standard USB flash (thumb) drive – OR – Blank book cartridge and cable
+                                        </p>
+                                        <p>
+                                            3. To use braille downloads you need
+                                        </p>
+                                        <p class="list-unstyled m-l-md">
+                                            a. Braille display, braille-aware notetaker, or braille embosser (see Third Party Player)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
