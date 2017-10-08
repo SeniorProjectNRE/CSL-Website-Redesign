@@ -1,11 +1,90 @@
 ﻿
 @{
-    ViewBag.Title = "StateDocumentDepositoryProgram";
+    ViewBag.Title = "CSL - Collection and Depository Library Program";
+    ViewBag.PageTitle = "California State Documents Collection and Depository Library Program Information";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "The largest collection of California agency and commission reports, budgets, Environmental Impact Reports, and more official government publications.";
+    ViewBag.Keywords = "California, state, Library, government, publications, collection, depository";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>StateDocumentDepositoryProgram</h2>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/collections">Our Collections</a></li>
+                <li><a href="/government-publications" style="text-transform:none;">Government Publications</a></li>
+                <li>California Depository Library Program</li>
+            </ol>
+            <h2 class="page-title">@ViewBag.PageTitle</h2>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="group">
+                    <div class="two-thirds">
+                        <p>
+                            Since 1850, the California State Library has collected publications of the legislative, executive, and judicial branches, commissions, public authorities, and other agencies of state government. The Library is the official California State Document Depository and houses the largest collection of California state documents in the United States.
+                        </p>
+                        <p>
+                            The Library's collection contains publications and reports that record the State's political history, natural history, socioeconomic condition, and culture. Some of the types of documents that can be found include:
+                        </p>
+                        <ul>
+                            <li>Legislative proceedings, hearings, and research reports;</li>
+                            <li>State agency annual or biennial reports;</li>
+                            <li>Materials about agency programs;</li>
+                            <li>Environmental impact reports;</li>
+                            <li>Budgets and financial reports;</li>
+                            <li>Statistical compilations;</li>
+                            <li>State agency research reports;</li>
+                            <li>Directories and organization charts; and</li>
+                            <li>Periodicals.</li>
+                        </ul>
+                        <p>
+                            All state publications are available for the public to view, photocopy, and/or borrow on interlibrary loan. For more information, please contact the Government Publications Section by telephone at 916-654-0261 or by e-mail at <a href="mailto:cslgps@library.ca.gov">cslgps@library.ca.gov</a>.
+                        </p>
+                        <h3>California State Depository Library Program</h3>
+                        <p>
+                            In 1945, the California Legislature passed the <a href="http://www.leginfo.ca.gov/cgi-bin/displaycode?section=gov&amp;group=14001-15000&amp;file=14900-14912" target="_blank">Library Distribution Act</a> (Government Code 14900 &ndash; 14912), which established the depository library program to make California state documents readily available to the citizens of the state. The California State Library is responsible for carrying out the provisions of the Act by developing and maintaining standards for depository libraries, granting depository status to libraries, and administering the depository program. Today a total of <a href="/government-publications/state-document-depositories">105 libraries</a> statewide participate in this program.
+                        </p>
+                    </div>
+                    <div class="third">
+                        <div class="panel panel-standout highlight">
+                            <div class="panel-heading">
+                                <h3><span class="ca-gov-icon-info"></span>  Related Links</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="/collections/publications/ca-publications">California State Publications (CSP)</a></li>
+                                    <li><a href="/government-publications/state-document-depositories">State Documents Depository Libraries</a></li>
+                                    <!-- TODO: This link needs a view -->
+                                    <li><a href="cal-policies.html">Retention and Disposal Policies for State Depository Libraries</a></li>
+                                    <li><a href="/government-publications/federal-depository/performance-standards">Performance Standards for State Depository Libraries</a></li>
+                                    <!--<li><a href="cal-pubs.html">Selected Digital California State Publications</a></li>
+                <li><a href="gps_cal2.html">Ensuring  Access to California Digital Government Documents</a></li>-->
+                                    <!-- TODO: This link is dead, even on the current website! -->
+                                    <li><a href="http://www.ca.gov/Apps/Agencies.aspx" target="_blank">State Agency Index</a></li>
+                                    <li><a href="/services/research-resources/additional-resources">More California Government Links</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </main>
 </div>
 
