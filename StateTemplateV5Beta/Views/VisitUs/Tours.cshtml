@@ -1,11 +1,113 @@
-﻿
-@{
-    ViewBag.Title = "Tours";
+﻿@{
+    ViewBag.Title = "CSL - Tours of the California State Library";
+    ViewBag.PageTitle = "Tours of the Historic State Library Building";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "The State Library offers docent-led tours Monday through Friday, excluding holidays, by appointment.";
+    ViewBag.Keywords = "Tours";
+    ViewBag.Image = "vertical_for_tours.png";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Tours</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/visit-us">Visit Us</a></li>
+                    <li>Tours</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <div class="two-thirds animate-fadeInRight">
+                        <p>
+                            Welcome to the California State Library in the historic Stanley Mosk Library and Courts Building.
+                        </p>
+
+                        <p>
+                            The State Library, older than the state itself, began with several books donated on December 22, 1849 by Colonel J.D. Stevenson. 
+                            Colonel Stevenson presented the books to the State Legislature in San Jose to establish a state library. 
+                            California was admitted to the Union on September 9, 1850 becoming the 31st state in the Nation.
+                        </p>
+
+                        <p>
+                            The Library was located in different locations before finding its permanent home in the Stanley Mosk Library and Courts Building, which was completed in 1928. 
+                            Recent renovations of the building have brought it back to its original splendor.
+                        </p>
+
+                        <div>
+                            <h2 class="orange" style="text-align:center;">Tours</h2>
+                        </div> 
+
+                        <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Docent-led Tours</a>
+                                    </h3>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        If you are interested in a tour of the State Library, led by a knowledgeable docent, here's some information. Tours are scheduled Monday through Friday, excluding holidays, by appointment. 
+                                        The limit per tour group is 15. After filling out the <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?key=Tour">online form</a>, or calling the tour scheduler phone line at <a href="tel:+19166531440">916-653-1440</a>, allow two full business days for a response.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Self-guided Tours</a>
+                                    </h3>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        You can explore the public areas of the Library without a docent during regular business hours 9:30 a.m. to 4 p.m., Monday through Friday, excluding holidays. 
+                                        You can simply download a <a href="~/Content/StateTemplate/pdf/visitUs/SelfGuidedTourBrochure_web2.pdf">brochure</a> from our website or pick up one in the Memorial Vestibule (lobby).
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Virtual Tours</a>
+                                    </h3>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        Another way to find out more about the Library is to take one of our virtual tours. 
+                                        You can check out the <a href="~/about/history/building/">Historic Library and Courts Building: An Architectural Treasure</a>, which focuses on historical photographs and contemporary images of the library and its architectural features. 
+                                        You can also take our interactive virtual tour of the <a href="">Stanley Mosk Library and Courts Renovation</a>, which highlights images before, during and after the renovation.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="list-unstyled p-t-md">
+                            Thank you for visiting. Explore the history and architecture and wonder of the California State Library by 
+                            <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?pmi=hSReALWkWu">scheduling a tour</a> today.
+                        </p>
+                    </div>
+
+                    <div class="third animate-fadeInRight">
+                        <img src="~/Content/StateTemplate/images/visitUs/tours.png" alt="Tours" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

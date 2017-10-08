@@ -1,11 +1,210 @@
-﻿
-@{
-    ViewBag.Title = "Contact";
+﻿@{
+    ViewBag.Title = "CSL - BTBL - Contact";
+    ViewBag.PageTitle = "Contact BTBL";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "How to contact the Braille and Talking Book Library BTBL and listing of assitive technology and accessible computers offered in the reading room in Sacramento. Hours Phone Email Fax Location Mailing Address Facebook Free Matter for the Blind Postage Parking Public Transportation Reading Room Services Wi-Fi CCTV Kurzweil Reading Machine Perkins Brailler Tactile Board Games Tactile Maps children's corner browsing collection of audio and braille books Disbilities print collection large print reference material Artwork Gregory Kondos On The Sacramento River relief bronze large print keyboards Scanners Juliet Pro Embosser screen reader software JAWS WindowEyes screen magnification software ZoomText Magic Optical Character Recognition Software OCR OpenBook Kurzweil Duxbury";
+    ViewBag.Keywords = "BTBL, Contact";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Contact</h2>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/btbl">Braille and Talking Books</a></li>
+                <li>Contat BTBL</li>
+            </ol>
+
+            <h2 class="page-title">@ViewBag.PageTitle</h2>
+            <div class="group list-unstyled p-b-md">
+                <div class="two-thirds">
+                    <div class="panel panel-understated">
+                        <div class="panel-heading">
+                            <h3>Braille and Talking Book Library</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                900 N Street<br>
+                                Sacramento, CA 95814<br>
+                                <span class="ca-gov-icon-phone"></span>  Phone: (916) 654-0640 <br>
+                                Toll-Free in CA: (800) 952-5666 <br>
+                                Fax: (916) 654-1119 <br>
+                                <span class="ca-gov-icon-email"></span>  Email: <a href="btbl@library.ca.gov">btbl@library.ca.gov</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="half">
+                            <div class="orange">
+                                <h4>Mailing Address (for letters, book orders, and cards):</h4>
+                            </div>
+
+                            <div class="location mini">
+                                <div class="ca-gov-icon-road-pin"></div>
+
+                                <div class="contact">
+                                    <div class="title">BTBL</div>
+                                    <div class="address">
+                                        <p>
+                                            PO Box 942837 <br>
+                                            Sacramento, CA 94237-0001
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="half">
+                            <div class="orange">
+                                <h4>Address (for books, machines, and packages):</h4>
+                            </div>
+
+                            <div class="location mini">
+                                <div class="ca-gov-icon-road-pin"></div>
+
+                                <div class="contact">
+                                    <div class="title">BTBL</div>
+                                    <div class="address">900 N Street, Sacramento, CA 95814</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a align="center" role="button" class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Free Matter Postage</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <p>
+                                            Any book order forms or typed large-print correspondence (not handwritten) sent to the library via U.S. mail should ship postage-free. 
+                                            Any of the library's books, machines or equipment sent to the library via U.S. mail should ship postage-free. Simply write "Free Matter for the Blind" in the upper right-hand corner, where the stamp would go. 
+                                            Leave paper letters unsealed to comply with postal regulations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a align="center" class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Parking</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <p>
+                                            Metered parking is available on-street or in nearby parking garages. 
+                                            Most metered parking now accepts credit cards as payment in addition to traditional coin payment. Vehicles that display the proper disabled placard or license plates can park free of charge in on-street metered spaces. 
+                                            There is a passenger loading zone near the entrance of the building's lobby along the south side of N Street midway between 9th and 10th streets. 
+                                            Visit the <a href="http://www.cityofsacramento.org/Public-Works/Parking-Services">City of Sacramento Parking Services</a> website for additional information about parking in downtown Sacramento.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a align="center" class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Public Transportation</a>
+                                    </h4>
+                                </div>
+
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <p>
+                                            We are located approximately two blocks from regional Transit light rail stops at 8th and O and at Archives Plaza. Several RT regular and commuter buses come within a few blocks of our location. 
+                                            Regional Transit customer service is available at (916) 321-2877 or you can find routes and schedule information at
+                                            <a href="http://sacrt.com/">sacrt.com</a>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                                        <a align="center" class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Reading Room</a>
+                                    </h4>
+                                </div>
+
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <p>
+                                            BTBL is located on the first floor of the California State Library building at 900 N Street in downtown Sacramento. 
+                                            Our entrance is on the south side of N Street and is approximately 400 feet west of the intersection of 10th and N streets. 
+                                            As you enter the building's lobby, head to the far left side of the lobby to our Reading Room in Suite 100.
+                                        </p>
+
+                                        <div class="group">
+                                            <div class="half">
+                                                <p>
+                                                    Our Reading Room is open to all members of the public and features:
+                                                </p>
+                                                <ul class="list-overstated">
+                                                    <li>Free Wi-Fi</li>
+                                                    <li>2 Closed-Circuit Magnifiers (CCTVs)</li>
+                                                    <li>Stand-alone Kurzweil reading machine</li>
+                                                    <li>Perkins Braillers</li>
+                                                    <li>Tactile board games</li>
+                                                    <li>Tactile maps</li>
+                                                    <li>Children's Corner</li>
+                                                    <li>Browsing collection of audio and braille books for BTBL patrons</li>
+                                                    <li>Small print collection of books related to disabilities</li>
+                                                    <li>Large-print reference materials (dictionaries, encyclopedias, almanac, etc.)</li>
+                                                    <li>Artwork by BTBL patrons</li>
+                                                    <li>Gregory Kondos painting and bronze bas-relief reproduction of On The Sacramento River</li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="half">
+                                                <p>
+                                                    In addition, two accessible computers are available for use by persons with print disabilities and feature:
+                                                </p>
+                                                <ul class="list-overstated">
+                                                    <li>Internet access</li>
+                                                    <li>Microsoft Office 10</li>
+                                                    <li>Large-print keyboards</li>
+                                                    <li>Adjustable-height desks</li>
+                                                    <li>HP Scanjet 5590 Flatbed scanners</li>
+                                                    <li>HP LaserJet Printer</li>
+                                                    <li>Juliet Pro60 Braille Embosser</li>
+                                                    <li>Screen reader software: Jaws for Windows 15 & WindowEyes 8.4.0</li>
+                                                    <li>Screen magnification software: ZoomText 10 & Magic 11</li>
+                                                    <li>Optical character recognition (OCR) software: Open Book 9 & Kurzweil 11</li>
+                                                    <li>Braille translation software that allows a user to print braille documents using an attached or networked braille embosser: Duxbury 11.1</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="third">
+                    <img src="~/Content/StateTemplate/images/btbl/cal_state_library.png" alt="California State Library" />
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
