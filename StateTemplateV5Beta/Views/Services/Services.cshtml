@@ -11,34 +11,7 @@
                 <div id="search_directory_container">
                     <div class="section section-default" style="background-image:url(/-/media/Global-Files/Banners/services.ashx); background-size:cover; background-position: right;">
                         <div class="container">
-                            <h1 class="m-b-0">Find a Service</h1>
-                        </div>
-                    </div>
-
-                    <div class="section section-search collapsed">
-                        <div class="container">
-                            <div class="group">
-                                <div class="three-quarters">
-
-                                    <div class="agency-form">
-                                        <div class="textfield-container">
-                                            <label for="search_local_textfield" accesskey="s" class="hidden">Agency Search: </label>
-                                            <input type="text" name="search" id="search_directory_input" class="search-textfield" size="35" autocomplete="off" placeholder="Search">
-
-
-                                            <input id="page" name="page" type="hidden" value="1">
-
-                                        </div>
-                                        <div class="submit-container">
-                                            <button type="submit"><span class="ca-gov-icon-search"><span class="sr-only">Search</span></span></button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="quarter">
-                                    <a class="btn btn-secondary filter-toggle  m-y btn-block-xs " role="tab" data-toggle="collapse" data-target="#search_directory_filters" aria-controls="search_directory_filters" aria-selected="false" aria-expanded="false" id="ui-collapse-482">Show Filters <span class="ca-gov-icon-filter" aria-hidden="true"></span></a>
-                                </div>
-                            </div>
+                            <h1 class="orange">Find a Service</h1>
                         </div>
                     </div>
 
@@ -57,107 +30,11 @@
 
 
                     <form action="/Services" data-ajax-action="/api/sitecore/Search/ServiceAjax" id="search_directory_form">
-                        <input id="search_directory_input_hidden" name="search" type="hidden">
-                        <div class="section section-search collapsed">
-                            <div class="container ">
-                                <!-- Filters expand only when requested -->
-                                <!-- Use .active class on buttons when selected by user -->
-                                <div class="collapse  serviceFilters filter-group m-b-sm " id="search_directory_filters">
 
-
-
-                                    <input id="primaryFilters" name="primaryFilters" type="hidden" value="">
-                                    <input id="secondaryFilters" name="secondaryFilters" type="hidden" value="">
-
-                                    <span>Service Type:</span>
-                                    <div class="btn-row">
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=By+Mail&amp;secondaryFilters=&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=By+Mail&amp;secondaryFilters=&amp;tab=">By Mail</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=Field+Office+Service&amp;secondaryFilters=&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=Field+Office+Service&amp;secondaryFilters=&amp;tab=">Field Office Service</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=In+Person&amp;secondaryFilters=&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=In+Person&amp;secondaryFilters=&amp;tab=">In Person</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=Mobile+App&amp;secondaryFilters=&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=Mobile+App&amp;secondaryFilters=&amp;tab=">Mobile App</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=Online+Service&amp;secondaryFilters=&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=Online+Service&amp;secondaryFilters=&amp;tab=">Online Service</a>
-                                    </div>
-
-
-                                    <span>Categories:</span>
-                                    <div class="btn-row">
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Business&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Business&amp;tab=">Business</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Civil+Duty&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Civil+Duty&amp;tab=">Civil Duty</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Doing+Business&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Doing+Business&amp;tab=">Doing Business</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Education&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Education&amp;tab=">Education</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Employment&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Employment&amp;tab=">Employment</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Environment&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Environment&amp;tab=">Environment</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Family&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Family&amp;tab=">Family</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Government&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Government&amp;tab=">Government</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Health&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Health&amp;tab=">Health</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Learning&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Learning&amp;tab=">Learning</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Living&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Living&amp;tab=">Living</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Property&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Property&amp;tab=">Property</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Public+Safety&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Public+Safety&amp;tab=">Public Safety</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Recreation&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Recreation&amp;tab=">Recreation</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Transportation&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Transportation&amp;tab=">Transportation</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Visiting&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Visiting&amp;tab=">Visiting</a>
-                                        <a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Working&amp;tab=" class="btn btn-secondary  " data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=Working&amp;tab=">Working</a>
-
-                                    </div>
-
-
-
-
-
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="section section-default">
                             <div class="container">
 
-
-                                <!-- Results header -->
-
-                                <div class="group m-b">
-                                    <div class="half">
-                                        <span class="search-result-stats">Displaying results 1 - 10 of 63 total results  </span>
-
-                                    </div>
-
-                                    <div class="half text-right">
-
-                                        <div class="form-inline">
-                                            <div class="form-group">
-                                                <label for="sort">Sort By:</label>
-                                                <select class="form-control" id="sort" name="sort">
-                                                    <option selected="selected" value="empty">Choose an Option</option>
-                                                    <option value="relevance">Relevance</option>
-                                                    <option value="asc">Alphabetical: (A-Z)</option>
-                                                    <option value="desc">Alphabetical: (Z-A)</option>
-                                                </select>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- End results header -->
-
-                            </div>
-
-
-                            <!-- .pagination -->
-                            <nav style="text-align: center; margin-top: -15px" data-search-pagination="" id="search_directory_pagination">
-                                <ul class="pagination">
-
-                                    <li class="active"><a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">1</a></li>
-                                    <li class=""><a href="/Services?search=&amp;page=2&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=2&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">2</a></li>
-                                    <li class=""><a href="/Services?search=&amp;page=3&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=3&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">3</a></li>
-                                    <li class=""><a href="/Services?search=&amp;page=4&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=4&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">4</a></li>
-                                    <li class=""><a href="/Services?search=&amp;page=5&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=5&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">5</a></li>
-                                    <li class=""><a href="/Services?search=&amp;page=6&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=6&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">6</a></li>
-                                    <li class=""><a href="/Services?search=&amp;page=7&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=7&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">7</a></li>
-                                    <li class=""><a href="/Services?search=&amp;page=2&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" aria-label="Next" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=2&amp;primaryFilters=&amp;secondaryFilters=&amp;tab="><span aria-hidden="true">Next »</span></a></li>
-                                </ul>
-                            </nav>
 
 
 
@@ -175,37 +52,37 @@
 
 
                                         <div class="card card-default">
-                                            <div class="card-block" id="collapse-e9d6b9c3-8761-4236-8e9d-17a5864b765c" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
+                                            <div class="card-block" id="collapse-e9d6b9c3-8761-4236-8e9d-17a5864b765c" itemscope="" itemtype="" role="tablist" aria-multiselectable="true">
 
                                                 <div class="row" role="presentation">
                                                     <div class="col-md-2" role="presentation">
-                                                        <img src="/-/media/Agencies/Public-Health-California-Department-of/Services/Apply-Birth-Certificate.ashx" alt="Apply Birth Certificate" class="img-responsive">
+                                                        <img src="" alt="Braile and Talking Books" class="img-responsive">
 
                                                     </div>
 
                                                     <div class="col-md-10" role="presentation">
-                                                        <a href="/Agencies/Public-Health-California-Department-of/Agency-Services/Apply-for-Birth-Certificate" class="lead">Apply for Birth Certificate</a>
+                                                        <a href="/btbl">Braile and Talking Books</a>
                                                         <div class="row" role="presentation">
                                                             <div class="col-md-7" role="presentation">
-                                                                <p itemprop="name"><a href="/Agencies/Public-Health-California-Department-of">California Department of Public Health</a></p>
-                                                                <p itemprop="description">Apply for Birth Certificate. An authorized, certified California birth certificate can typically be  ...</p>
+                                                                <p itemprop="name"><a href="#">California State Library</a></p>
+                                                                <p itemprop="description">Description</p>
 
                                                                 <div class="collapse collapse-e9d6b9c3-8761-4236-8e9d-17a5864b765c" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-413" aria-hidden="true">
 
-                                                                    <div class="location" itemscope="" itemtype="http://schema.org/Organization" role="presentation">
-                                                                        <meta itemprop="name" content="Apply for Birth Certificate">
+                                                                    <div class="location" itemscope="" itemtype="" role="presentation">
+                                                                        <meta itemprop="name" content="Braile and Talking Books">
                                                                         <p class="other">
-                                                                            General Information: <span itemprop="telephone">916-445-2684</span><br>
+                                                                            General Information: <span itemprop="telephone">(800) 952-5666 toll-free in CA</span><br>
                                                                         </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-5" role="presentation">
-                                                                <a href="/Agencies/Public-Health-California-Department-of/Agency-Services/Apply-for-Birth-Certificate" class="btn btn-secondary btn-block btn-sm">Service Details</a>
+                                                                <a href="/btbl/service" class="btn btn-secondary btn-block btn-sm">Service Details</a>
 
                                                                 <div class="collapse collapse-e9d6b9c3-8761-4236-8e9d-17a5864b765c" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-413" aria-hidden="true">
-                                                                    <a href="/Agencies/Public-Health-California-Department-of/Agency-Services/Apply-for-Birth-Certificate#locations-near-you" class="btn btn-secondary btn-block btn-sm">Locations</a>
-                                                                    <a href="/Agencies/Public-Health-California-Department-of/Agency-Services/Apply-for-Birth-Certificate#frequently-asked-questions" class="btn btn-secondary btn-block btn-sm">FAQ's</a>
+                                                                    <a href="/btbl/resources" class="btn btn-secondary btn-block btn-sm">Resources</a>
+                                                                    <a href="/btbl/contact" class="btn btn-secondary btn-block btn-sm">Contact</a>
                                                                 </div>
                                                             </div>
 
@@ -227,37 +104,33 @@
 
 
                                         <div class="card card-default">
-                                            <div class="card-block" id="collapse-e134d484-8266-4b1d-ba27-e425f5fdf39a" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
+                                            <div class="card-block" id="collapse-e134d484-8266-4b1d-ba27-e425f5fdf39a" itemscope="" itemtype="" role="tablist" aria-multiselectable="true">
 
                                                 <div class="row" role="presentation">
                                                     <div class="col-md-2" role="presentation">
-                                                        <img src="/-/media/Agencies/Child-Support-Services-Department-of/Services/Apply-Child-Support.ashx" alt="child support" class="img-responsive">
+                                                        <img src="" alt="To Libraries" class="img-responsive">
 
                                                     </div>
 
                                                     <div class="col-md-10" role="presentation">
-                                                        <a href="/Agencies/Child-Support-Services-Department-of/Agency-Services/Apply-for-Child-Support" class="lead">Apply for Child Support</a>
+                                                        <a href="/services/to-libraries" class="lead">For Libraries</a>
                                                         <div class="row" role="presentation">
                                                             <div class="col-md-7" role="presentation">
-                                                                <p itemprop="name"><a href="/Agencies/Child-Support-Services-Department-of">Department of Child Support Services</a></p>
-                                                                <p itemprop="description">To apply for services, complete the Application for Child Support Services Packet and return it to t ...</p>
+                                                                <p itemprop="name"><a href="/services/to-libraries">California State Library</a></p>
+                                                                <p itemprop="description">Description</p>
 
                                                                 <div class="collapse collapse-e134d484-8266-4b1d-ba27-e425f5fdf39a" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-830" aria-hidden="true">
 
-                                                                    <div class="location" itemscope="" itemtype="http://schema.org/Organization" role="presentation">
-                                                                        <meta itemprop="name" content="Apply for Child Support">
+                                                                    <div class="location" itemscope="" itemtype="" role="presentation">
+                                                                        <meta itemprop="name" content="To Libraries">
                                                                         <p class="other">
-                                                                            General Information: <span itemprop="telephone">1-866-901-3212</span><br>
+                                                                            For more information, contact the Library Development Services: <span itemprop="telephone">(916) 653-5217</span><br>
                                                                         </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-5" role="presentation">
-                                                                <a href="/Agencies/Child-Support-Services-Department-of/Agency-Services/Apply-for-Child-Support" class="btn btn-secondary btn-block btn-sm">Service Details</a>
-
-                                                                <div class="collapse collapse-e134d484-8266-4b1d-ba27-e425f5fdf39a" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-830" aria-hidden="true">
-                                                                    <a href="/Agencies/Child-Support-Services-Department-of/Agency-Services/Apply-for-Child-Support#frequently-asked-questions" class="btn btn-secondary btn-block btn-sm">FAQ's</a>
-                                                                </div>
+                                                                <a href="/services/to-libraries/ca-library-services-act/about/" class="btn btn-secondary btn-block btn-sm">Service Details</a>
                                                             </div>
 
                                                         </div>
@@ -278,39 +151,31 @@
 
 
                                         <div class="card card-default">
-                                            <div class="card-block" id="collapse-fccd297b-5d9a-4405-ad48-787e924ea6da" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
+                                            <div class="card-block" id="collapse-fccd297b-5d9a-4405-ad48-787e924ea6da" itemscope="" itemtype="" role="tablist" aria-multiselectable="true">
 
                                                 <div class="row" role="presentation">
                                                     <div class="col-md-2" role="presentation">
-                                                        <img src="/-/media/Agencies/Social-Services-Department-of/Services/Apply-Food-Stamps.ashx" alt="Apply Food Stamps" class="img-responsive">
+                                                        <img src="" alt="Borrowing" class="img-responsive">
 
                                                     </div>
 
                                                     <div class="col-md-10" role="presentation">
-                                                        <a href="/Agencies/Social-Services-Department-of/Agency-Services/Apply-for-Food-Stamps" class="lead">Apply for Food Stamps</a>
+                                                        <a href="/services/borrowing" class="lead">Borrowing</a>
                                                         <div class="row" role="presentation">
                                                             <div class="col-md-7" role="presentation">
-                                                                <p itemprop="name"><a href="/Agencies/Social-Services-Department-of">Department of Social Services</a></p>
-                                                                <p itemprop="description">The CalFresh program helps to improve the health and well-being of qualified households and individu ...</p>
+                                                                <p itemprop="name"><a href="#">California State Library</a></p>
+                                                                <p itemprop="description">Description</p>
 
                                                                 <div class="collapse collapse-fccd297b-5d9a-4405-ad48-787e924ea6da" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-426" aria-hidden="true">
 
-                                                                    <div class="location" itemscope="" itemtype="http://schema.org/Organization" role="presentation">
-                                                                        <meta itemprop="name" content="Apply for Food Stamps">
+                                                                    <div class="location" itemscope="" itemtype="" role="presentation">
+                                                                        <meta itemprop="name" content="Borrowing">
                                                                         <p class="other">
-                                                                            General Information: <span itemprop="telephone">1-877-847-3663</span><br>
+                                                                            General Information: <span itemprop="telephone">(916)654-0261</span><br>
                                                                         </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-5" role="presentation">
-                                                                <a href="/Agencies/Social-Services-Department-of/Agency-Services/Apply-for-Food-Stamps" class="btn btn-secondary btn-block btn-sm">Service Details</a>
-
-                                                                <div class="collapse collapse-fccd297b-5d9a-4405-ad48-787e924ea6da" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-426" aria-hidden="true">
-                                                                    <a href="/Agencies/Social-Services-Department-of/Agency-Services/Apply-for-Food-Stamps#frequently-asked-questions" class="btn btn-secondary btn-block btn-sm">FAQ's</a>
-                                                                </div>
-                                                            </div>
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -329,40 +194,31 @@
 
 
                                         <div class="card card-default">
-                                            <div class="card-block" id="collapse-9ef0a8e6-500d-444b-a733-ed6ac9d4cd87" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
+                                            <div class="card-block" id="collapse-9ef0a8e6-500d-444b-a733-ed6ac9d4cd87" itemscope="" itemtype="" role="tablist" aria-multiselectable="true">
 
                                                 <div class="row" role="presentation">
                                                     <div class="col-md-2" role="presentation">
-                                                        <img src="/-/media/Agencies/Health-Care-Services-Department-of/Services/Apply-MediCal.ashx" alt="apply medical" class="img-responsive">
+                                                        <img src="" alt="Online Resources" class="img-responsive">
 
                                                     </div>
 
                                                     <div class="col-md-10" role="presentation">
-                                                        <a href="/Agencies/Health-Care-Services-Department-of/Agency-Services/Apply-for-Medi-Cal" class="lead">Apply for Medi-Cal</a>
+                                                        <a href="/services/online-resources/" class="lead">Online Resources</a>
                                                         <div class="row" role="presentation">
                                                             <div class="col-md-7" role="presentation">
-                                                                <p itemprop="name"><a href="/Agencies/Health-Care-Services-Department-of">Department of Health Care Services</a></p>
-                                                                <p itemprop="description">Medi-Cal offers free or low-cost health coverage for California residents who meet eligibility requi ...</p>
+                                                                <p itemprop="name"><a href="#">California State Library</a></p>
+                                                                <p itemprop="description">Description</p>
 
                                                                 <div class="collapse collapse-9ef0a8e6-500d-444b-a733-ed6ac9d4cd87" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-797" aria-hidden="true">
 
-                                                                    <div class="location" itemscope="" itemtype="http://schema.org/Organization" role="presentation">
-                                                                        <meta itemprop="name" content="Apply for Medi-Cal">
+                                                                    <div class="location" itemscope="" itemtype="" role="presentation">
+                                                                        <meta itemprop="name" content="Online Resources">
                                                                         <p class="other">
-                                                                            General Information: <span itemprop="telephone">916-552-9200</span><br>
+                                                                            General Information: <span itemprop="telephone">(916)654-0261</span><br>
                                                                         </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-5" role="presentation">
-                                                                <a href="/Agencies/Health-Care-Services-Department-of/Agency-Services/Apply-for-Medi-Cal" class="btn btn-secondary btn-block btn-sm">Service Details</a>
-
-                                                                <div class="collapse collapse-9ef0a8e6-500d-444b-a733-ed6ac9d4cd87" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-797" aria-hidden="true">
-                                                                    <a href="/Agencies/Health-Care-Services-Department-of/Agency-Services/Apply-for-Medi-Cal#locations-near-you" class="btn btn-secondary btn-block btn-sm">Locations</a>
-                                                                    <a href="/Agencies/Health-Care-Services-Department-of/Agency-Services/Apply-for-Medi-Cal#frequently-asked-questions" class="btn btn-secondary btn-block btn-sm">FAQ's</a>
-                                                                </div>
-                                                            </div>
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -379,96 +235,38 @@
 
 
 
-
-                                        <div class="card card-default">
-                                            <div class="card-block" id="collapse-62341f50-356c-49cb-8ec2-f02b872128bc" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
-
-                                                <div class="row" role="presentation">
-                                                    <div class="col-md-2" role="presentation">
-                                                        <img src="/-/media/Agencies/Equalization-Board-of/Services/Apply-Sellers-Permit.ashx" alt="Apply Sellers Permit" class="img-responsive">
-
-                                                    </div>
-
-                                                    <div class="col-md-10" role="presentation">
-                                                        <a href="/Agencies/Equalization-Board-of/Agency-Services/Apply-for-Sellers-Permit" class="lead">Apply for Sellers Permit</a>
-                                                        <div class="row" role="presentation">
-                                                            <div class="col-md-7" role="presentation">
-                                                                <p itemprop="name"><a href="/Agencies/Equalization-Board-of">Board of Equalization</a></p>
-                                                                <p itemprop="description">A seller's permit is required if you are engaged in business in California, intend to sell or lease  ...</p>
-
-                                                                <div class="collapse collapse-62341f50-356c-49cb-8ec2-f02b872128bc" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-469" aria-hidden="true">
-
-                                                                    <div class="location" itemscope="" itemtype="http://schema.org/Organization" role="presentation">
-                                                                        <meta itemprop="name" content="Apply for Sellers Permit">
-                                                                        <p class="other">
-                                                                            General Information: <span itemprop="telephone">1-800-400-7115</span><br>
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-5" role="presentation">
-                                                                <a href="/Agencies/Equalization-Board-of/Agency-Services/Apply-for-Sellers-Permit" class="btn btn-secondary btn-block btn-sm">Service Details</a>
-
-                                                                <div class="collapse collapse-62341f50-356c-49cb-8ec2-f02b872128bc" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-469" aria-hidden="true">
-                                                                    <a href="/Agencies/Equalization-Board-of/Agency-Services/Apply-for-Sellers-Permit#frequently-asked-questions" class="btn btn-secondary btn-block btn-sm">FAQ's</a>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="card-block text-center">
-                                                <a href="javascript:;" role="tab" data-toggle="collapse" data-parent="#collapse-62341f50-356c-49cb-8ec2-f02b872128bc" aria-expanded="false" aria-controls="avascript:;" data-target=".collapse-62341f50-356c-49cb-8ec2-f02b872128bc" aria-selected="false" id="ui-collapse-469" tabindex="-1">
-                                                    <span class="toggle-more" aria-expanded="false"></span><span class="sr-only">Open</span>
-                                                </a>
-                                            </div>
-                                        </div>
-
-
-
-
                                     </div>
                                     <div class="half">
 
 
                                         <div class="card card-default">
-                                            <div class="card-block" id="collapse-42e1e8f3-f6d8-4d73-90c6-d40aa98ea2f1" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
+                                            <div class="card-block" id="collapse-42e1e8f3-f6d8-4d73-90c6-d40aa98ea2f1" itemscope="" itemtype="" role="tablist" aria-multiselectable="true">
 
                                                 <div class="row" role="presentation">
                                                     <div class="col-md-2" role="presentation">
-                                                        <img src="/-/media/Agencies/Equalization-Board-of/Services/Apply-Business.ashx" alt="Apply Business" class="img-responsive">
+                                                        <img src="" alt="Statistics" class="img-responsive">
 
                                                     </div>
 
                                                     <div class="col-md-10" role="presentation">
-                                                        <a href="/Agencies/Equalization-Board-of/Agency-Services/Apply-for-Business-License" class="lead">Apply for Business License</a>
+                                                        <a href="/services/statistics" class="lead">Statistics</a>
                                                         <div class="row" role="presentation">
                                                             <div class="col-md-7" role="presentation">
-                                                                <p itemprop="name"><a href="/Agencies/Equalization-Board-of">Board of Equalization</a></p>
+                                                                <p itemprop="name"><a href="#">California State Library</a></p>
                                                                 <p itemprop="description">
-                                                                    Apply for Business License, Permit, or Account
+                                                                    Description
                                                                 </p>
 
                                                                 <div class="collapse collapse-42e1e8f3-f6d8-4d73-90c6-d40aa98ea2f1" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-768" aria-hidden="true">
 
-                                                                    <div class="location" itemscope="" itemtype="http://schema.org/Organization" role="presentation">
+                                                                    <div class="location" itemscope="" itemtype="" role="presentation">
                                                                         <meta itemprop="name" content="Apply for Business License">
                                                                         <p class="other">
-                                                                            General Information: <span itemprop="telephone">1-800-400-7115</span><br>
+                                                                            General Information: <span itemprop="telephone">(916)654-0261</span><br>
                                                                         </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-5" role="presentation">
-                                                                <a href="/Agencies/Equalization-Board-of/Agency-Services/Apply-for-Business-License" class="btn btn-secondary btn-block btn-sm">Service Details</a>
-
-                                                                <div class="collapse collapse-42e1e8f3-f6d8-4d73-90c6-d40aa98ea2f1" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-768" aria-hidden="true">
-                                                                    <a href="/Agencies/Equalization-Board-of/Agency-Services/Apply-for-Business-License#frequently-asked-questions" class="btn btn-secondary btn-block btn-sm">FAQ's</a>
-                                                                </div>
-                                                            </div>
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -487,38 +285,33 @@
 
 
                                         <div class="card card-default">
-                                            <div class="card-block" id="collapse-ef446330-4893-4e16-a990-6981e29303ce" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
+                                            <div class="card-block" id="collapse-ef446330-4893-4e16-a990-6981e29303ce" itemscope="" itemtype="" role="tablist" aria-multiselectable="true">
 
                                                 <div class="row" role="presentation">
                                                     <div class="col-md-2" role="presentation">
-                                                        <img src="/-/media/Agencies/Public-Health-California-Department-of/Services/Apply-Death-Certificate.ashx" alt="Apply Death Certificate" class="img-responsive">
+                                                        <img src="" alt="To General Public" class="img-responsive">
 
                                                     </div>
 
                                                     <div class="col-md-10" role="presentation">
-                                                        <a href="/Agencies/Public-Health-California-Department-of/Agency-Services/Apply-for-Death-Certificate" class="lead">Apply for Death Certificate</a>
+                                                        <a href="/services/to-public" class="lead">For Public</a>
                                                         <div class="row" role="presentation">
                                                             <div class="col-md-7" role="presentation">
-                                                                <p itemprop="name"><a href="/Agencies/Public-Health-California-Department-of">California Department of Public Health</a></p>
-                                                                <p itemprop="description">A certified copy of a death certificate can typically be used to obtain death benefits, claim insura ...</p>
+                                                                <p itemprop="name"><a href="#">California State Library</a></p>
+                                                                <p itemprop="description">Description</p>
 
                                                                 <div class="collapse collapse-ef446330-4893-4e16-a990-6981e29303ce" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-948" aria-hidden="true">
 
-                                                                    <div class="location" itemscope="" itemtype="http://schema.org/Organization" role="presentation">
-                                                                        <meta itemprop="name" content="Apply for Death Certificate">
+                                                                    <div class="location" itemscope="" itemtype="" role="presentation">
+                                                                        <meta itemprop="name" content="To Public">
                                                                         <p class="other">
-                                                                            General Information: <span itemprop="telephone">916-445-2684</span><br>
+                                                                            General Information: <span itemprop="telephone">(916)654-0261</span><br>
                                                                         </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-5" role="presentation">
-                                                                <a href="/Agencies/Public-Health-California-Department-of/Agency-Services/Apply-for-Death-Certificate" class="btn btn-secondary btn-block btn-sm">Service Details</a>
-
-                                                                <div class="collapse collapse-ef446330-4893-4e16-a990-6981e29303ce" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-948" aria-hidden="true">
-                                                                    <a href="/Agencies/Public-Health-California-Department-of/Agency-Services/Apply-for-Death-Certificate#locations-near-you" class="btn btn-secondary btn-block btn-sm">Locations</a>
-                                                                    <a href="/Agencies/Public-Health-California-Department-of/Agency-Services/Apply-for-Death-Certificate#frequently-asked-questions" class="btn btn-secondary btn-block btn-sm">FAQ's</a>
-                                                                </div>
+                                                                <a href="/services/to-public/local-libraries" class="btn btn-secondary btn-block btn-sm">Local Libraries</a>
                                                             </div>
 
                                                         </div>
@@ -539,40 +332,31 @@
 
 
                                         <div class="card card-default">
-                                            <div class="card-block" id="collapse-243fd641-c12d-43d7-a5fe-0680adda0369" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
+                                            <div class="card-block" id="collapse-243fd641-c12d-43d7-a5fe-0680adda0369" itemscope="" itemtype="" role="tablist" aria-multiselectable="true">
 
                                                 <div class="row" role="presentation">
                                                     <div class="col-md-2" role="presentation">
-                                                        <img src="/-/media/Agencies/Public-Health-California-Department-of/Services/Apply-Marriage-Certificate.ashx" alt="Apply Marriage Certificate" class="img-responsive">
+                                                        <img src="" alt="To State Employees" class="img-responsive">
 
                                                     </div>
 
                                                     <div class="col-md-10" role="presentation">
-                                                        <a href="/Agencies/Public-Health-California-Department-of/Agency-Services/Apply-for-Marriage-Certificate" class="lead">Apply for Marriage Certificate</a>
+                                                        <a href="/services/to-state-employees" class="lead">For State Employees</a>
                                                         <div class="row" role="presentation">
                                                             <div class="col-md-7" role="presentation">
-                                                                <p itemprop="name"><a href="/Agencies/Public-Health-California-Department-of">California Department of Public Health</a></p>
-                                                                <p itemprop="description">A certified copy of a marriage certificate can typically be used as proof of marriage and other lega ...</p>
+                                                                <p itemprop="name"><a href="#">California State Library</a></p>
+                                                                <p itemprop="description">Description</p>
 
                                                                 <div class="collapse collapse-243fd641-c12d-43d7-a5fe-0680adda0369" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-802" aria-hidden="true">
 
-                                                                    <div class="location" itemscope="" itemtype="http://schema.org/Organization" role="presentation">
-                                                                        <meta itemprop="name" content="Apply for Marriage Certificate">
+                                                                    <div class="location" itemscope="" itemtype="" role="presentation">
+                                                                        <meta itemprop="name" content="For Employees">
                                                                         <p class="other">
-                                                                            General Information: <span itemprop="telephone">916-445-2684</span><br>
+                                                                            General Information: <span itemprop="telephone">(916)654-0261</span><br>
                                                                         </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-5" role="presentation">
-                                                                <a href="/Agencies/Public-Health-California-Department-of/Agency-Services/Apply-for-Marriage-Certificate" class="btn btn-secondary btn-block btn-sm">Service Details</a>
-
-                                                                <div class="collapse collapse-243fd641-c12d-43d7-a5fe-0680adda0369" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-802" aria-hidden="true">
-                                                                    <a href="/Agencies/Public-Health-California-Department-of/Agency-Services/Apply-for-Marriage-Certificate#locations-near-you" class="btn btn-secondary btn-block btn-sm">Locations</a>
-                                                                    <a href="/Agencies/Public-Health-California-Department-of/Agency-Services/Apply-for-Marriage-Certificate#frequently-asked-questions" class="btn btn-secondary btn-block btn-sm">FAQ's</a>
-                                                                </div>
-                                                            </div>
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -591,41 +375,33 @@
 
 
                                         <div class="card card-default">
-                                            <div class="card-block" id="collapse-1221b20e-2609-4c02-bf26-98247ec78150" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
+                                            <div class="card-block" id="collapse-1221b20e-2609-4c02-bf26-98247ec78150" itemscope="" itemtype="" role="tablist" aria-multiselectable="true">
 
                                                 <div class="row" role="presentation">
                                                     <div class="col-md-2" role="presentation">
-                                                        <img src="/-/media/Agencies/Health-Benefit-Exchange-California/Services/Apply-Medical-Insurance.ashx" alt="Apply Medical Insurance" class="img-responsive">
+                                                        <img src="" alt="Research" class="img-responsive">
 
                                                     </div>
 
                                                     <div class="col-md-10" role="presentation">
-                                                        <a href="/Agencies/Health-Benefit-Exchange-California/Agency-Services/Apply-for-Medical-Insurance" class="lead">Apply for Medical Insurance</a>
+                                                        <a href="/services/research" class="lead">Research</a>
                                                         <div class="row" role="presentation">
                                                             <div class="col-md-7" role="presentation">
-                                                                <p itemprop="name"><a href="/Agencies/Health-Benefit-Exchange-California">California Health Benefit Exchange</a></p>
+                                                                <p itemprop="name"><a href="#">California State Library</a></p>
                                                                 <p itemprop="description">
-                                                                    Apply for Medical Insurance via Covered California
+                                                                    Description
                                                                 </p>
 
                                                                 <div class="collapse collapse-1221b20e-2609-4c02-bf26-98247ec78150" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-354" aria-hidden="true">
 
                                                                     <div class="location" itemscope="" itemtype="http://schema.org/Organization" role="presentation">
-                                                                        <meta itemprop="name" content="Apply for Medical Insurance">
+                                                                        <meta itemprop="name" content="Research">
                                                                         <p class="other">
-                                                                            General Information: <span itemprop="telephone">1-800-300-1506</span><br>
+                                                                            General Information: <span itemprop="telephone">(916)654-0261</span><br>
                                                                         </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-5" role="presentation">
-                                                                <a href="/Agencies/Health-Benefit-Exchange-California/Agency-Services/Apply-for-Medical-Insurance" class="btn btn-secondary btn-block btn-sm">Service Details</a>
-
-                                                                <div class="collapse collapse-1221b20e-2609-4c02-bf26-98247ec78150" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-354" aria-hidden="true">
-                                                                    <a href="/Agencies/Health-Benefit-Exchange-California/Agency-Services/Apply-for-Medical-Insurance#frequently-asked-questions" class="btn btn-secondary btn-block btn-sm">FAQ's</a>
-                                                                </div>
-                                                            </div>
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -643,55 +419,6 @@
 
 
 
-                                        <div class="card card-default">
-                                            <div class="card-block" id="collapse-bf0cb55a-3abe-452d-a530-0f4ff2218996" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
-
-                                                <div class="row" role="presentation">
-                                                    <div class="col-md-2" role="presentation">
-                                                        <img src="/-/media/Agencies/Student-Aid-Commission-California/Services/Apply-Cal-Grant.ashx" alt="cal grant" class="img-responsive">
-
-                                                    </div>
-
-                                                    <div class="col-md-10" role="presentation">
-                                                        <a href="/Agencies/Student-Aid-Commission-California/Agency-Services/Apply-for-a-Cal-Grant" class="lead">Apply for a Cal Grant </a>
-                                                        <div class="row" role="presentation">
-                                                            <div class="col-md-7" role="presentation">
-                                                                <p itemprop="name"><a href="/Agencies/Student-Aid-Commission-California">California Student Aid Commission</a></p>
-                                                                <p itemprop="description">Apply for a Cal Grant, a financial aid program administrated by the California Student Aid Commissio ...</p>
-
-                                                                <div class="collapse collapse-bf0cb55a-3abe-452d-a530-0f4ff2218996" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-328" aria-hidden="true">
-
-                                                                    <div class="location" itemscope="" itemtype="http://schema.org/Organization" role="presentation">
-                                                                        <meta itemprop="name" content="Apply for a Cal Grant ">
-                                                                        <p class="other">
-                                                                            General Information: <span itemprop="telephone">888-294-0148</span><br>
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-5" role="presentation">
-                                                                <a href="/Agencies/Student-Aid-Commission-California/Agency-Services/Apply-for-a-Cal-Grant" class="btn btn-secondary btn-block btn-sm">Service Details</a>
-
-                                                                <div class="collapse collapse-bf0cb55a-3abe-452d-a530-0f4ff2218996" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-328" aria-hidden="true">
-                                                                    <a href="/Agencies/Student-Aid-Commission-California/Agency-Services/Apply-for-a-Cal-Grant#frequently-asked-questions" class="btn btn-secondary btn-block btn-sm">FAQ's</a>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="card-block text-center">
-                                                <a href="javascript:;" role="tab" data-toggle="collapse" data-parent="#collapse-bf0cb55a-3abe-452d-a530-0f4ff2218996" aria-expanded="false" aria-controls="avascript:;" data-target=".collapse-bf0cb55a-3abe-452d-a530-0f4ff2218996" aria-selected="false" id="ui-collapse-328" tabindex="-1">
-                                                    <span class="toggle-more" aria-expanded="false"></span><span class="sr-only">Open</span>
-                                                </a>
-                                            </div>
-                                        </div>
-
-
-
-
                                     </div>
                                 </div>
 
@@ -700,21 +427,6 @@
                                 <br style="clear:both">
                                 <div style="font-size: 0.001em;padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">&nbsp;</div>
 
-
-                                <!-- .pagination -->
-                                <nav style="text-align: center; margin-top: -15px" data-search-pagination="" id="search_directory_pagination">
-                                    <ul class="pagination">
-
-                                        <li class="active"><a href="/Services?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=1&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">1</a></li>
-                                        <li class=""><a href="/Services?search=&amp;page=2&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=2&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">2</a></li>
-                                        <li class=""><a href="/Services?search=&amp;page=3&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=3&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">3</a></li>
-                                        <li class=""><a href="/Services?search=&amp;page=4&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=4&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">4</a></li>
-                                        <li class=""><a href="/Services?search=&amp;page=5&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=5&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">5</a></li>
-                                        <li class=""><a href="/Services?search=&amp;page=6&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=6&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">6</a></li>
-                                        <li class=""><a href="/Services?search=&amp;page=7&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=7&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=">7</a></li>
-                                        <li class=""><a href="/Services?search=&amp;page=2&amp;primaryFilters=&amp;secondaryFilters=&amp;tab=" aria-label="Next" data-ajax-url="/api/sitecore/Search/ServiceAjax?search=&amp;page=2&amp;primaryFilters=&amp;secondaryFilters=&amp;tab="><span aria-hidden="true">Next »</span></a></li>
-                                    </ul>
-                                </nav>
 
 
 
@@ -726,8 +438,8 @@
 
                 <span class="return-top"></span>
             </div>
-            <div id="feedback" style="display: block;"><a href="javascript:showFeedback();"><img src="/images/template2014/clear.gif" width="25" height="75" title="Provide Feedback" alt="Provide Feedback"></a></div>
             <div id="mouseposition-extension-element-full-container" style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; pointer-events: none; z-index: 2147483647; font-weight: 400;"><div id="mouseposition-extension-element-rect-display" style="display: none; position: absolute; background: rgba(255, 255, 255, 0.7); outline: black solid 1px; font-size: 12px; z-index: 2147483647; justify-content: center; align-items: center; user-select: none; cursor: default; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 0px; height: 0px;"><pre style="flex: 1 1 0%; text-align: center; background-color: rgba(255, 255, 255, 0.7); color: rgb(0, 0, 0); min-width: 42px; min-height: 12px; transition: all 1s;"></pre></div><pre id="mouseposition-extension-element-coordinate-display" style="position: absolute; display: none; background: rgb(255, 255, 255); font-size: 12px; line-height: 14px; border-radius: 3px; border-width: 1px; border-color: rgb(34, 34, 34) black rgb(51, 51, 51); border-style: solid; padding: 3px; z-index: 2147483647; color: rgb(34, 34, 34); user-select: none; cursor: default; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;"></pre></div>
     </main>
 </div>
+
 

@@ -1627,7 +1627,7 @@
     <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Board.cshtml" />
     <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Meetings.cshtml" />
     <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Members.cshtml" />
-    <Content Include="Views\Services\ToPublic.cshtml" />
+    <Content Include="Views\Services\ToPublic\ToPublic.cshtml" />
     <Content Include="Views\Services\ToLibraries\InterlibraryLending.cshtml" />
     <Content Include="Views\Home\Releases.cshtml" />
     <Content Include="Views\Shared\modules\_MobileShareBar.cshtml" />
@@ -1648,6 +1648,7 @@
     <Content Include="Views\Shared\CAGoldRush\_Section13.cshtml" />
     <Content Include="Views\Shared\CAGoldRush\_Section12.cshtml" />
     <Content Include="Views\Shared\CAGoldRush\_Section11.cshtml" />
+    <Content Include="Views\Services\ToPublic\LocalLibraries.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
