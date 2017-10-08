@@ -1,12 +1,34 @@
-﻿
-@{
-    ViewBag.Title = "Policies";
+﻿@{
+    ViewBag.Title = "CSL - BTBL - Policies";
+    ViewBag.PageTitle = "";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "The following policies govern the circulation of materials to eligible blind, print-disabled, or reading-disabled patrons and the institutions who serve them who are registered with the California State Library's Braille and Talking Book Library (BTBL). Patrons who borrow materials from BTBL accept the following policies. Violation of these policies can result in suspension of library services.";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Policies</h2>
+
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb ">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/BTBL/">Braille and Talking Books</a></li>
+                    <li class="active">Policies</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+
+
+            </div>
+        </div>
     </main>
 </div>
-
-
