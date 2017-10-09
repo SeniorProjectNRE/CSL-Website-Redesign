@@ -30,13 +30,6 @@ namespace StateTemplateV5Beta.Controllers.BTBL
             return View();
         }
 
-        // GET: advisory-council
-        [Route("advisory-council")]
-        public ActionResult AdvisorycCouncil()
-        {
-            return View();
-        }
-
         // GET: borrow
         [Route("borrow")]
         public ActionResult Borrow()

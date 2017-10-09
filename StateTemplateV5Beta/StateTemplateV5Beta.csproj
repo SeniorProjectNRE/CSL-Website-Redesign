@@ -284,6 +284,7 @@
     <Content Include="Content\StateTemplate\images\banner\CSLBuilding.jpg" />
     <Content Include="Content\StateTemplate\images\banner\SutroBuilding.jpg" />
     <Content Include="Content\StateTemplate\images\banner\womensmarch1.jpg" />
+    <Content Include="Content\StateTemplate\images\btbl\btbl_home_3_pictures.jpg" />
     <Content Include="Content\StateTemplate\images\btbl\cal_state_library.png" />
     <Content Include="Content\StateTemplate\images\buildings.jpg" />
     <Content Include="Content\StateTemplate\images\Ca-Gov-Logo-Blue.svg" />
@@ -997,7 +998,6 @@
     <Content Include="Views\BTBL\BTBL.cshtml" />
     <Content Include="Views\BTBL\AdvisoryCouncil.cshtml" />
     <Content Include="Views\BTBL\Bard.cshtml" />
-    <Content Include="Views\BTBL\AdvisorycCouncil.cshtml" />
     <Content Include="Views\BTBL\Borrow.cshtml" />
     <Content Include="Views\BTBL\Contact.cshtml" />
     <Content Include="Views\BTBL\DescriptiveVideoService.cshtml" />
