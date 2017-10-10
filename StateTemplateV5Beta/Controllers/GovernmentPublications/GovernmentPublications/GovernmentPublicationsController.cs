@@ -29,12 +29,5 @@ namespace StateTemplateV5Beta.Controllers.GovernmentPublications
         {
             return View();
         }
-
-        // GET: state-document-depository-program
-        [Route("state-document-depository-program")]
-        public ActionResult StateDocumentDepositoryProgram()
-        {
-            return View();
-        }
     }
 }

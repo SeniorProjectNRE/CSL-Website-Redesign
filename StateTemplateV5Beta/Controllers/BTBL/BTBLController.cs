@@ -32,7 +32,7 @@ namespace StateTemplateV5Beta.Controllers.BTBL
 
         // GET: advisory-council
        /* [Route("advisory-council")]
-        public ActionResult AdvisorycCouncil()
+        public ActionResult AdvisoryCouncil()
         {
             return View();
         }*/
@@ -141,6 +141,27 @@ namespace StateTemplateV5Beta.Controllers.BTBL
         {
             return View();
         }
-           
+
+        // GET: bookshare
+        [Route("bookshare")]
+        public ActionResult Bookshare()
+        {
+            return View();
+        }
+
+        // GET: apply
+        [Route("apply")]
+        public ActionResult Apply()
+        {
+            return View();
+        }
+
+        // GET: purchase-cartridge
+        [Route("purchase-cartridge")]
+        public ActionResult PurchaseCartridge()
+        {
+            return View();
+        }
+
     }
 }

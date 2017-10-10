@@ -165,7 +165,8 @@
     <Compile Include="Controllers\CRB\CRBController.cs" />
     <Compile Include="Controllers\Error\ErrorController.cs" />
     <Compile Include="Controllers\GovernmentPublications\FederalDepository\FederalDepositoryController.cs" />
-    <Compile Include="Controllers\GovernmentPublications\GovernmentPublicationsController.cs" />
+    <Compile Include="Controllers\GovernmentPublications\GovernmentPublications\GovernmentPublicationsController.cs" />
+    <Compile Include="Controllers\GovernmentPublications\GovernmentPublications\StateDocumentDepositoryProgram\StateDocumentDepositoryProgramController.cs" />
     <Compile Include="Controllers\Grants\CivilLiberties\ApplyController.cs" />
     <Compile Include="Controllers\Grants\CivilLiberties\CivilLibertiesController.cs" />
     <Compile Include="Controllers\Grants\GrantsController.cs" />
@@ -1532,7 +1533,7 @@
     <Content Include="Views\GovernmentPublications\GovernmentPublications.cshtml" />
     <Content Include="Views\GovernmentPublications\SLAA.cshtml" />
     <Content Include="Views\GovernmentPublications\StateDocumentDepositories.cshtml" />
-    <Content Include="Views\GovernmentPublications\StateDocumentDepositoryProgram.cshtml" />
+    <Content Include="Views\GovernmentPublications\StateDocumentDepositoryProgram\StateDocumentDepositoryProgram.cshtml" />
     <Content Include="Views\GovernmentPublications\FederalDepository\FederalDepository.cshtml" />
     <Content Include="Views\GovernmentPublications\FederalDepository\DisposalInstructions.cshtml" />
     <Content Include="Views\GovernmentPublications\FederalDepository\DisposalList.cshtml" />
@@ -1649,6 +1650,11 @@
     <Content Include="Views\Shared\CAGoldRush\_Section12.cshtml" />
     <Content Include="Views\Shared\CAGoldRush\_Section11.cshtml" />
     <Content Include="Views\Services\ToPublic\LocalLibraries.cshtml" />
+    <Content Include="Views\GovernmentPublications\StateDocumentDepositoryProgram\Depositories.cshtml" />
+    <Content Include="Views\GovernmentPublications\StateDocumentDepositoryProgram\Policies.cshtml" />
+    <Content Include="Views\BTBL\Apply.cshtml" />
+    <Content Include="Views\BTBL\Bookshare.cshtml" />
+    <Content Include="Views\BTBL\PurchaseCartridge.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1660,6 +1666,7 @@
     <Folder Include="Views\LibraryProgramConsultant\" />
     <Folder Include="Views\LibraryTechnicalAssistant\" />
     <Folder Include="Views\ResearchResources\" />
+    <Folder Include="Views\StateDocumentDepositoryProgram\" />
     <Folder Include="Views\Statistics\" />
     <Folder Include="Views\SupervisingLibrarian\" />
     <Folder Include="Views\ToLibraries\" />
