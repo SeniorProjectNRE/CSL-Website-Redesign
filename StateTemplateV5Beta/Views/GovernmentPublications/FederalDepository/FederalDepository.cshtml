@@ -1,11 +1,69 @@
 ﻿
 @{
-    ViewBag.Title = "FederalDepository";
+    ViewBag.Title = "CSL - Federal Depository Library Program";
+    ViewBag.Author = "Dmitriy Rusetskiy";
+    ViewBag.Description = "The California State Library is the Regional Depository in California offering officially published federal documents from the U.S. Government Publishing Office.";
+    ViewBag.Keywords = "California, state, Library, Policies";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>FederalDepository</h2>
+        <div class="container">
+            <a name="aboutfd"></a>
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/sutro">Our Collections</a></li>
+                <li><a href="/government-publications">Government Publications</a></li>
+                <li><a href="/government-publications/federal-depository">Federal Depository Library Program</a></li>
+            </ol>
+            <h2 class="page-title">Federal Depository Library Program</h2>
+        </div>
+        <div class="section">
+            <div class="container">
+                <img class="insetImage image-responsive" src="~/Content/StateTemplate/images/GovernmentPublications/FederalDepository/GPO_logo.png" alt="GPO_logo" />
+                <ul>
+                    <li><p><a href="#aboutfd">About the Federal Depository Program</a></p></li>
+                    <li><p><a href="#special">Special Collections</a></p></li>
+                    <li><p><a href="http://catalog.gpo.gov/fdlpdir/public.jsp?flag=searchp&amp;st_12=CA" target="_blank">Federal depository libraries in California</a></p></li>
+                    <li><p><a href="~/government-publications/federal-depository/disposal-instructions/">Federal Depository Disposal Instructions</a></p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <h3>About the Federal Depository Program</h3>
+                <p>The California State Library has been a federal depository since 1895, although its collection of United States documents reaches back over 100 years before that. The Section has been a Regional depository, the only one in California, since the Regional Depository System was established by Congress in 1962. As the Regional library the State Library oversees nearly 77 selective libraries which carry out the federal depository library program in California, and it maintains the only complete collection of federal documents in the state. This comprehensive collection is cataloged and made permanently accessible to the public by the Government Publications Section staff. United States documents issued from July, 1976 forward, and an increasing number of pre-1976 documents, are represented in the <a href="http://catalog.library.ca.gov" target="_blank">State Library's online catalog</a>, and all titles can be found in the various card files and printed indexes available in the Section.</p>
+                <p>All federal publications in the Section are available for the public to view, scan and save, and/or borrow on interlibrary loan. If you are planning to scan many pages, it is advisable to bring a portable drive to save your files.</p>
+                <p>In addition to the documents distributed by the Government Printing Office, the Section collects and catalogs materials from local federal agencies (U.S. Army Corps of Engineers, U.S. Bureau of Reclamation, U.S. Bureau of Land Management, etc.). It is also an official depository for maps produced by the U.S. Geological Survey, the U.S. Forest Service, and the National Imagery and Mapping Agency (formerly the Defense Mapping Agency). In addition, the Section is a depository for the U.S. Dept. of Energy, having a complete collection of <a href="http://www.osti.gov/scitech/" target="_blank">DOE microfiche</a> through 1996, when this technical material became available electronically.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <a name="special"></a>
+                <h3>Special Collections</h3>
+                <ul>
+                    <li><p>The State Library purchases major microfiche collections and indexes to supplement the federal collections:</p></li>
+                    <li><p>ASI (complete microfiche collection and indexes, 1970– )</p></li>
+                    <li><p>CIS (complete microfiche collection and indexes, 1970–, plus earlier hearings, committee prints, Serial Set, 1909 Checklist documents and indexes, 1910–1932 executive documents and indexes, cartobibliography of maps in the Serial Set)</p></li>
+                    <li><p>SRI (complete microfiche collection and indexes, 1970– ) <a href="http://www.ntis.gov/" target="_blank">NTIS</a> collection of technical, defense and other reports (PB's, AD's, etc.)</p></li>
+                    <li><p><a href="http://www.eric.ed.gov" target="_blank">ED reports (complete microfiche collection)</a></p></li>
+                    <li><p>Major Studies and Issue Briefs from the Congressional Research Service</p></li>
+                    <li><p>Online access to the CIS Statistical Universe is available to in-house users.</p></li>
+                </ul>
+            </div>
+        </div>
     </main>
 </div>
+
 
