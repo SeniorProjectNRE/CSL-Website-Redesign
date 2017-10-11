@@ -831,6 +831,8 @@
     <Content Include="Content\StateTemplate\js\libs\typedarray.js" />
     <Content Include="Content\StateTemplate\js\search.js" />
     <Content Include="Content\StateTemplate\otherDocuments\btbl\PatronHandbook2014.mp3" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\nls_that_all_may_read.mp4" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.mp3" />
     <Content Include="Content\StateTemplate\sample\images\150x100.gif" />
     <Content Include="Content\StateTemplate\sample\images\150x150.gif" />
     <Content Include="Content\StateTemplate\sample\images\150x150Map.gif" />
@@ -1233,6 +1235,10 @@
     <Content Include="Content\StateTemplate\otherDocuments\btbl\PatronHandbook_2014.brf" />
     <Content Include="Content\StateTemplate\otherDocuments\btbl\PatronHandbook2014.zip" />
     <Content Include="Content\StateTemplate\otherDocuments\governmentPublications\PreviousFDLPDisposalListOffers.xlsx" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\BTBL_PatronHandbookFINALrev2015.doc" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\BTBL_PatronHandbookFINALrev2015.pdf" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.brf" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.zip" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <Content Include="Content\StateTemplate\pdf\crb\Newsletters\20170104.pdf" />
