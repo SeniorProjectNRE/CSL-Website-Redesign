@@ -1,12 +1,207 @@
-﻿
-@{
-    ViewBag.Title = "Policies";
+﻿@{
+    ViewBag.Title = "CSL - BTBL - Policies";
+    ViewBag.PageTitle = "Library Policies";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "The following policies govern the circulation of materials to eligible blind, print-disabled, or reading-disabled patrons and the institutions who serve them who are registered with the California State Library's Braille and Talking Book Library (BTBL). Patrons who borrow materials from BTBL accept the following policies. Violation of these policies can result in suspension of library services.";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Policies</h2>
+
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb ">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/BTBL/">Braille and Talking Books</a></li>
+                    <li class="active">Policies</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading1'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Overview</a>
+                            </h3>
+                        </div>
+                        <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                            <div class='panel-body'>
+                                <p>The following policies govern the circulation of materials to eligible blind, print-disabled, or reading-disabled patrons and the institutions who serve them who are registered with the California State Library's Braille and Talking Book Library (BTBL). Patrons who borrow materials from BTBL accept the following policies. Violation of these policies can result in suspension of library services. Some services to CDCR (California Department of Corrections and Rehabilitation) patrons may be limited or restricted by CDCR policies or regulations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading2'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Materials Definition</a>
+                            </h3>
+                        </div>
+                        <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                            <div class='panel-body'>
+                                <p>Materials include braille books, books on cassette, books on digital cartridge, descriptive videos on VHS and DVD, cassette book machines, digital book machines, accessories, or any specialty items on loan from BTBL.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading3'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Patron Responsibilities</a>
+                            </h3>
+                        </div>
+                        <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                            <div class='panel-body'>
+                                <strong> 1.	Communicate with BTBL</strong>
+                                <p >Patrons accept responsibility for notifying the library of any changes in address or other contact information, or to cancel or hold service. Discourtesy toward BTBL staff, including but not limited to the use of obscene, harassing, threatening, or degrading language or behavior will not be tolerated and may result in suspension of service.</p>
+
+                                <strong> 2.	Return Materials</strong>
+                                <p  >Materials remain property of the library and are on loan to the patron. Patrons may borrow materials according to the loan periods listed in this policy. Patrons may not lend materials to other persons, regardless of their program eligibility. Materials must be returned to the library when they need repair; a replacement will be issued as soon as possible. Materials being returned to the library must be placed into the hands of the U.S. Postal Service by placing the materials in a street mailbox or delivering materials to the post office. Under the Free Matter for the Blind program the USPS has no obligation to pick up parcels from blind or physically handicapped persons or from the libraries and organizations that serve such persons. It is sometimes possible, however, to make informal arrangements with local postal officials for mail to be picked up, particularly in hardship cases.</p>
+
+                                <strong> 3.	Care for Materials</strong>
+                                <p >Patrons accept responsibility for using materials with reasonable care. Damage or loss of materials through intentional defacement, abuse, negligence, or carelessness can result in suspension of service. Please do not attempt to repair library materials. Materials must be returned to the library when they need repair.</p>
+
+                                <strong> 4.	Maintain Active Status</strong>
+                                <p  >To remain active with our service, patrons must order or download at least one book or magazine per year. If equipment is not being used to listen to library materials, the equipment must be returned.</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading4'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Loan Periods</a>
+                            </h3>
+                        </div>
+                        <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                            <div class='panel-body'>
+                                <strong>Books</strong>
+                                <p  >The loan period for books sent via mail to individual patrons is 5 weeks. The length of the loan period for books sent via mail to institutions is 3 months.</p>
+
+                                <strong>Magazines</strong>
+                                <p >Magazines in braille or large print format do not need to be returned to the library. Magazines on digital cartridge are available to individual patrons as circulating library items and must be returned regularly. Institutions are currently prohibited from subscribing to magazines on digital cartridge. However, eligible individuals within those institutions may subscribe to magazines on digital cartridge.</p>
+
+                                <p>There are two types of magazines on digital cartridges: weekly cartridges, which hold only weekly magazines, and monthly cartridges, which hold monthly/bimonthly/quarterly (and sometimes weekly) magazines.</p>
+
+                                <p>Weekly digital cartridges have a loan period of three weeks. Monthly digital cartridges have a loan period of seven weeks. Failure to return magazines on digital cartridge in a timely manner can mean a disruption in magazine service.</p>
+
+
+                                <strong>Descriptive Videos</strong>
+                                <p>The loan period for descriptive video is 14 days with no renewals. Patrons may borrow a maximum of 2 descriptive videos in each medium at a time. Please see the<a href="/btbl/descriptive-video-service"> complete Descriptive Video Loan Policy</a>.</p>
+
+                                <strong>Equipment</strong>
+                                <p>BTBL provides book machines and other equipment on extended loan to patrons for the duration of their library service. Equipment must be returned if a patron becomes ineligible, or does not use it to read library materials for 12 months.</p>
+
+                                <strong>Overdues</strong>
+                                <p>Patrons will not be charged fines for overdue or lost materials; however, persistent failure to abide by the loan period may result in suspension of service.</p>
+
+                                <strong>Renewals</strong>
+                                <p>Arrangements can be made for a renewal of the loan period if a book is needed for an extended period of time. Renewals may not be granted if there is a waiting list of other patrons who have requested the book. There is a maximum of two renewals for any library book. There are no renewals for descriptive videos.</p>
+
+                                <strong>Maximum Limits</strong>
+                                <p>Patrons in good standing may have a maximum of 25 books and 2 descriptive videos in each medium checked out at any given time. An individual patron in good standing may have 1 cassette book machine and 1 digital book machine checked out at any given time. The quantity and types of equipment provided to institutions will vary with their specific needs as determined in consultation with BTBL.</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading5'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>Good Standing</a>
+                            </h3>
+                        </div>
+                        <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                            <div class='panel-body'>
+                                <p  >A patron in good standing will have priority over other patrons in the assignment of materials. A patron in good standing:</p>
+
+                                <ul>
+                                    <li> is in compliance with the maximum limits on materials</li>
+                                    <li> has not had any books checked out longer than 6 months</li>
+                                    <li> does not have excessive quantities of overdue or lost materials</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading6'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>Responsibility of BTBL</a>
+                            </h3>
+                        </div>
+                        <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
+                            <div class='panel-body'>
+                                <ol>
+                                    <li>The library will provide courteous, respectful, and timely service to patrons.</li>
+                                    <li>The library will keep records of all loaned materials.</li>
+                                    <li>The library will loan materials without charge.</li>
+                                    <li>No fines will be levied for materials returned after the loan period has expired. No fines will be levied for lost materials.</li>
+                                    <li>By law, the library gives preference in the lending of materials to veterans that have been honorably discharged from the armed forces of the United States.</li>
+                                    <li>In compliance with state and federal laws pertaining to information privacy, the library will make every effort to keep patron registration and borrowing records confidential.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading7'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse7' aria-expanded='false' aria-controls='collapse7'>Suspension Procedures</a>
+                            </h3>
+                        </div>
+                        <div id='collapse7' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading7'>
+                            <div class='panel-body'>
+                                <p  >BTBL reserves the right to suspend a patron's service in two cases: non-activity for 12 months or in the event any BTBL policies are repeatedly violated.</p>
+
+                                <strong> Non-Activity</strong>
+
+                                <ol >
+                                    <li> BTBL will mail a letter to patrons who have had no activity in their account for at least 12 months, providing an opportunity for the patron to reply.</li>
+                                    <li> If the patron does not contact BTBL within 60 days, a second attempt to contact the patron (by phone or mail) will be made.</li>
+                                    <li> If the patron does not contact BTBL within 60 days of the second attempt, their account will be suspended.</li>
+                                    <li> When an account is suspended, the patron can contact BTBL to reinstate the account for up to 2 years after suspension. After 2 years, a new application will need to be filled out to reinstate the account.</li>
+                                </ol>
+
+                                <strong> BTBL Policies Repeatedly Violated</strong>
+                                <ol >
+                                    <li> A BTBL staff member will make several attempts to discuss the policy violation with the patron by telephone or in person. A follow-up letter summarizing the discussion and violation will be sent providing an opportunity for the patron to reply.</li>
+                                    <li> If the same policy violation recurs, BTBL will send a written notice of suspension of service for a stated period (up to six months). Specific dates for suspension and resumption of service will be included in this letter. To avoid suspension, the patron must contact BTBL before the scheduled suspension date and be prepared to explain why the suspension should not take place.</li>
+                                    <li> When service is resumed, written notice of resumption will be sent, including a reminder that further recurrences of the same policy violation will result in another suspension of service.</li>
+                                </ol>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading8'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse8' aria-expanded='false' aria-controls='collapse8'>Updates</a>
+                            </h3>
+                        </div>
+                        <div id='collapse8' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading8'>
+                            <div class='panel-body'>
+                                <p>These policies are subject to change. Last updated: September 10, 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 </div>
-
-
