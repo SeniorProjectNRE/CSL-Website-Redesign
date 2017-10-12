@@ -1,11 +1,148 @@
-﻿
-@{
-    ViewBag.Title = "BTBL";
+﻿@{
+    ViewBag.Title = "CSL - BTBL Home - Braille and Talking Book Library - Free Audio and Braille Books and Magazines";
+    ViewBag.PageTitle = "Braille and Talking Book Library (BTBL)";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "Loans braille and audio books, magazines, playback equipment, and descriptive videos to Northern Californians unable to read conventional print (print disabilities). Free service is for California residents with a physical or visual disability, organic dysfuntion, dyslexia. Regional library of the U.S. National Library Service for the Blind and Physically Handicapped offered throughout the United States. application BTBL Online Catalog BARD Braille and Audio Reading Download BARD mobile NLS-compatible third party player talking book machine newsletter borrow descriptive video audio description talking book cartridges VHS DVD Ravenous Readers' Corner currency reader screen reader audio newspapers NFB Newsline Access News policies resources contact hours location";
+    ViewBag.Keywords = "BARD, BTBL, Braille, Audio, Reading";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>BTBL</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li>Braille and Talking Books</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <div class="group">
+                    <div class="two-thirds animate-fadeInUp">
+                        <div class="panel panel-standout highlight">
+                            <div class="panel-heading">
+                                <h2>ANNOUNCEMENTS</h2>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="list-overstated">
+                                    <li>BTBL now offering <a href="/btbl/bookshare/">free subscription to Bookshare.org</a> downloadable books.</li>
+                                    <li>New DVDs recently added to our <a href="/btbl/descriptive-video-service/">Descriptive Video Service</a> collection.</li>
+                                    <li>Read the Spring/Summer 2017 newsletter at <a href="/btbl/newsletter/">BTBL News</a>.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading1'>
+                                    <h3 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Become a Patron</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                    <div class='panel-body'>
+                                        <ul class="list-overstated">
+                                            <li><a href="/btbl/apply/">Application for BTBL Service</a></li>
+                                            <li><a href="/btbl/service/">About the Service</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading2'>
+                                    <h3 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Current Patrons</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                    <div class='panel-body'>
+                                        <ul class="list-overstated">
+                                            <li><a href="https://btbl.library.ca.gov/ca1aopac/">Search the BTBL Catalog</a></li>
+                                            <li><a href="/btbl/descriptive-video-service/">Descriptive Video Service</a></li>
+                                            <li><a href="/btbl/handbook/">BTBL Patron Handbook</a></li>
+                                            <li><a href="/btbl/borrow/">What Can Be Borrowed</a></li>
+                                            <li><a href="/btbl/ravenous-readers/">Ravenous Readers' Corner</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading3'>
+                                    <h3 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>BARD (Braille & Audio Reading Download)</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                    <div class='panel-body'>
+                                        <ul class="list-overstated">
+                                            <li><a href="/btbl/bard/">About BARD</a></li>
+                                            <li><a href="https://nlsbard.loc.gov/CA1A/ApplicationInstructions.html">Sign up for BARD</a></li>
+                                            <li><a href="https://nlsbard.loc.gov/nlsbardprod/login/CA1A">BARD Login</a></li>
+                                            <li><a href="https://itunes.apple.com/us/app/bard-mobile/id705229586">BARD Mobile iOS app</a></li>
+                                            <li><a href="https://play.google.com/store/apps/details?id=gov.loc.nls.dtb">BARD Mobile Android app</a></li>
+                                            <li><a href="https://www.amazon.com/gp/product/B016760320?keywords=bard%20mobile%20app&qid=1444139812&ref_=sr_1_2&s=mobile-apps&sr=1-2">BARD Mobile Amazon App</a></li>
+                                            <li><a href="/btbl/purchase-cartridge/">Purchasing blank book cartridges</a></li>
+                                            <li><a href="/btbl/purchase-player/">Purchasing a third-party NLS-compatible player</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading4'>
+                                    <h3 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Get Involved!</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                                    <div class='panel-body'>
+                                        <ul class="list-overstated">
+                                            <li><a href="/work-with-us/volunteer/">Volunteer</a></li>
+                                            <li><a href="/btbl/donations/">Donations</a></li>
+                                            <li><a href="/btbl/advisory-council/">BTBL User Advisory Council</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading5'>
+                                    <h3 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>BTBL Information</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                                    <div class='panel-body'>
+                                        <ul class="list-overstated">
+                                            <li><a href="/btbl/contact/">Hours/Location</a></li>
+                                            <li><a href="/btbl/newsletter/">BTBL Newsletter</a></li>
+                                            <li><a href="/btbl/policies/">BTBL Policies</a></li>
+                                            <li><a href="https://www.facebook.com/BTBLSacramento/?ref=hl">BTBL on Facebook</a></li>
+                                            <li><a href="/btbl/resources/">Other Resources (Links)</a></li>
+                                            <li><a href="/btbl/contact/">Contact BTBL</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="third animate-fadeInUp">
+                        <img src="~/Content/StateTemplate/images/btbl/btbl_home_3_pictures.jpg" alt="BTBL Home" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

@@ -165,7 +165,8 @@
     <Compile Include="Controllers\CRB\CRBController.cs" />
     <Compile Include="Controllers\Error\ErrorController.cs" />
     <Compile Include="Controllers\GovernmentPublications\FederalDepository\FederalDepositoryController.cs" />
-    <Compile Include="Controllers\GovernmentPublications\GovernmentPublicationsController.cs" />
+    <Compile Include="Controllers\GovernmentPublications\GovernmentPublications\GovernmentPublicationsController.cs" />
+    <Compile Include="Controllers\GovernmentPublications\GovernmentPublications\StateDocumentDepositoryProgram\StateDocumentDepositoryProgramController.cs" />
     <Compile Include="Controllers\Grants\CivilLiberties\ApplyController.cs" />
     <Compile Include="Controllers\Grants\CivilLiberties\CivilLibertiesController.cs" />
     <Compile Include="Controllers\Grants\GrantsController.cs" />
@@ -284,6 +285,7 @@
     <Content Include="Content\StateTemplate\images\banner\CSLBuilding.jpg" />
     <Content Include="Content\StateTemplate\images\banner\SutroBuilding.jpg" />
     <Content Include="Content\StateTemplate\images\banner\womensmarch1.jpg" />
+    <Content Include="Content\StateTemplate\images\btbl\btbl_home_3_pictures.jpg" />
     <Content Include="Content\StateTemplate\images\btbl\cal_state_library.png" />
     <Content Include="Content\StateTemplate\images\btbl\printdisabilities\disable.jpg" />
     <Content Include="Content\StateTemplate\images\btbl\ravenous\corner.png" />
@@ -830,7 +832,16 @@
     <Content Include="Content\StateTemplate\js\libs\selectivizr-min.js" />
     <Content Include="Content\StateTemplate\js\libs\typedarray.js" />
     <Content Include="Content\StateTemplate\js\search.js" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\BTBLDescriptiveVideoCatalogsDVD.mp3" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\BTBLDescriptiveVideoCatalogsSupp2013.mp3" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\BTBLDescriptiveVideoCatalogsSupp201404.mp3" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\BTBLDescriptiveVideoCatalogsSupp201506.mp3" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\BTBLDescriptiveVideoCatalogSupp2016.mp3" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\BTBLDescriptiveVideoCatalogSupp2017.mp3" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\BTBLDescriptiveVideoCatalogsVHS.mp3" />
     <Content Include="Content\StateTemplate\otherDocuments\btbl\PatronHandbook2014.mp3" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\nls_that_all_may_read.mp4" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.mp3" />
     <Content Include="Content\StateTemplate\sample\images\150x100.gif" />
     <Content Include="Content\StateTemplate\sample\images\150x150.gif" />
     <Content Include="Content\StateTemplate\sample\images\150x150Map.gif" />
@@ -1233,6 +1244,24 @@
     <Content Include="Content\StateTemplate\otherDocuments\btbl\PatronHandbook_2014.brf" />
     <Content Include="Content\StateTemplate\otherDocuments\btbl\PatronHandbook2014.zip" />
     <Content Include="Content\StateTemplate\otherDocuments\governmentPublications\PreviousFDLPDisposalListOffers.xlsx" />
+    <Content Include="Content\StateTemplate\pdf\btbl\dvs\DVDSpring2012.pdf" />
+    <Content Include="Content\StateTemplate\pdf\btbl\dvs\DVDSpring2013.pdf" />
+    <Content Include="Content\StateTemplate\pdf\btbl\dvs\DVDSpring2014.pdf" />
+    <Content Include="Content\StateTemplate\pdf\btbl\dvs\DVDSpring2015.pdf" />
+    <Content Include="Content\StateTemplate\pdf\btbl\dvs\DVDSpring2016.pdf" />
+    <Content Include="Content\StateTemplate\pdf\btbl\dvs\DVDSpring2017.pdf" />
+    <Content Include="Content\StateTemplate\pdf\btbl\dvs\VHSSpring2012.pdf" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\DVDSpring2012.docx" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\DVDSpring2013.docx" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\DVDSpring2014.docx" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\DVDSpring2015.docx" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\DVDSpring2016.docx" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\DVDSpring2017.docx" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\VHSSpring2012.docx" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\BTBL_PatronHandbookFINALrev2015.doc" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\BTBL_PatronHandbookFINALrev2015.pdf" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.brf" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.zip" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <Content Include="Content\StateTemplate\pdf\crb\Newsletters\20170104.pdf" />
@@ -1467,7 +1496,6 @@
     <Content Include="Views\BTBL\BTBL.cshtml" />
     <Content Include="Views\BTBL\AdvisoryCouncil.cshtml" />
     <Content Include="Views\BTBL\Bard.cshtml" />
-    <Content Include="Views\BTBL\AdvisorycCouncil.cshtml" />
     <Content Include="Views\BTBL\Borrow.cshtml" />
     <Content Include="Views\BTBL\Contact.cshtml" />
     <Content Include="Views\BTBL\DescriptiveVideoService.cshtml" />
@@ -1532,7 +1560,7 @@
     <Content Include="Views\GovernmentPublications\GovernmentPublications.cshtml" />
     <Content Include="Views\GovernmentPublications\SLAA.cshtml" />
     <Content Include="Views\GovernmentPublications\StateDocumentDepositories.cshtml" />
-    <Content Include="Views\GovernmentPublications\StateDocumentDepositoryProgram.cshtml" />
+    <Content Include="Views\GovernmentPublications\StateDocumentDepositoryProgram\StateDocumentDepositoryProgram.cshtml" />
     <Content Include="Views\GovernmentPublications\FederalDepository\FederalDepository.cshtml" />
     <Content Include="Views\GovernmentPublications\FederalDepository\DisposalInstructions.cshtml" />
     <Content Include="Views\GovernmentPublications\FederalDepository\DisposalList.cshtml" />
@@ -1649,6 +1677,11 @@
     <Content Include="Views\Shared\CAGoldRush\_Section12.cshtml" />
     <Content Include="Views\Shared\CAGoldRush\_Section11.cshtml" />
     <Content Include="Views\Services\ToPublic\LocalLibraries.cshtml" />
+    <Content Include="Views\GovernmentPublications\StateDocumentDepositoryProgram\Depositories.cshtml" />
+    <Content Include="Views\GovernmentPublications\StateDocumentDepositoryProgram\Policies.cshtml" />
+    <Content Include="Views\BTBL\Apply.cshtml" />
+    <Content Include="Views\BTBL\Bookshare.cshtml" />
+    <Content Include="Views\BTBL\PurchaseCartridge.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1660,6 +1693,7 @@
     <Folder Include="Views\LibraryProgramConsultant\" />
     <Folder Include="Views\LibraryTechnicalAssistant\" />
     <Folder Include="Views\ResearchResources\" />
+    <Folder Include="Views\StateDocumentDepositoryProgram\" />
     <Folder Include="Views\Statistics\" />
     <Folder Include="Views\SupervisingLibrarian\" />
     <Folder Include="Views\ToLibraries\" />
