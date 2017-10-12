@@ -308,6 +308,7 @@
     <Content Include="Content\StateTemplate\images\CAGoldRush\section7.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section8.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section9.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\banquet.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\bouquet.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\camp.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\collections\c_book_over.jpg" />
@@ -327,6 +328,7 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\genealogycountyindexes\1.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\genealogycountyindexes\2.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\genealogycountyindexes\3.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\lake_tahoe.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\manuscripts\1.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\manuscripts\2.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\manuscripts\3.jpg" />
@@ -367,6 +369,7 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\researchGuides\1.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\researchGuides\2.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\researchGuides\3.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\san_diego_exposition.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\symbols\artifact.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\symbols\band.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\symbols\banner_mount.jpg" />
@@ -444,7 +447,10 @@
     <Content Include="Content\StateTemplate\images\crb\bullet_info.png" />
     <Content Include="Content\StateTemplate\images\crb\crb-top.jpg" />
     <Content Include="Content\StateTemplate\images\crb\icons\crb-home.png" />
+    <Content Include="Content\StateTemplate\images\crb\icons\newsletter.png" />
+    <Content Include="Content\StateTemplate\images\crb\icons\reports.png" />
     <Content Include="Content\StateTemplate\images\crb\icons\resources.png" />
+    <Content Include="Content\StateTemplate\images\crb\icons\staff.png" />
     <Content Include="Content\StateTemplate\images\crb\icons\watercolor.png" />
     <Content Include="Content\StateTemplate\images\crb\rss.png" />
     <Content Include="Content\StateTemplate\images\crb\sitn-top.jpg" />
@@ -461,6 +467,7 @@
     <Content Include="Content\StateTemplate\images\fancybox\fancybox_sprite%402x.png" />
     <Content Include="Content\StateTemplate\images\fancybox\fancybox_sprite.png" />
     <Content Include="Content\StateTemplate\images\favicon.ico" />
+    <Content Include="Content\StateTemplate\images\GovernmentPublications\FederalDepository\GPO_logo.png" />
     <Content Include="Content\StateTemplate\images\gps\book.png" />
     <Content Include="Content\StateTemplate\images\gps\cdlp_logo.jpg" />
     <Content Include="Content\StateTemplate\images\gps\fdlp_logo.jpg" />
@@ -817,6 +824,7 @@
     <Content Include="Content\StateTemplate\images\workWithUs\intern.jpg" />
     <Content Include="Content\StateTemplate\images\workWithUs\volunteer.jpg" />
     <Content Include="Content\StateTemplate\images\workWithUs\working.png" />
+    <Content Include="Content\StateTemplate\images\_notes\dwsync.xml" />
     <Content Include="Content\StateTemplate\js\libs\cagov.core.txt" />
     <Content Include="Content\StateTemplate\js\libs\d3.js" />
     <Content Include="Content\StateTemplate\js\libs\html5shiv.min.js" />
@@ -1685,7 +1693,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\StateTemplate\images\_notes\" />
     <Folder Include="Content\StateTemplate\sample\_notes\" />
     <Folder Include="Controllers\Services\ToPublic\" />
     <Folder Include="Views\Board\" />
