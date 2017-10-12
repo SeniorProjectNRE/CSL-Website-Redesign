@@ -1,0 +1,65 @@
+@{
+    ViewBag.Title = "CSL - BTBL - About the Service";
+    ViewBag.PageTitle = "About the Service";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "BTBL has braille and audio book titles similar to what you would find at your public library. The library also offers magazines, movies, newspapers and more! Services are free to all eligible readers. Books (and the equipment needed to use the library's audio books) are mailed postage-free to and from library patrons. There are no fines or fees for overdue or lost materials. Eligible readers include Northern California residents who cannot read standard print material in the usual manner due to visual, physical, or organic dysfunction. You must obtain a signature from a competent authority (doctor, etc.) confirming your inability to read standard print material. BTBL is a branch of the California State Library which cooperates with the Library of Congress, National Library Service for the Blind and Physically Handicapped (NLS). The books and players are provided by the Library of Congress. Overview Eligibility Patron Handbook Reader Advisors About";
+}
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+</head>
+
+<div id="main-content" class="main-content">
+    <main class="main-primary">
+
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb ">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/BTBL/">Braille and Talking Books</a></li>
+                    <li class="active">About the Service</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                 
+                    <h3>Overview</h3>
+                    <p>
+                        BTBL has braille and audio book titles similar to what you would find at your public library. The library also offers magazines, movies, newspapers and more! Read about what else the library has on the page: <a href="/btbl/borrow">What Can Be Borrowed</a>.
+                    </p>
+                    <h3>Completely Free</h3>
+                    <p>
+                        Services are free to all eligible readers. Books (and the equipment needed to use the library's audio books) are mailed postage-free to and from library patrons.  There are no fines or fees for overdue or lost materials.
+                    </p>
+                    <h3>Eligibility</h3>
+                    <p>
+                        Eligible readers include Northern California residents who cannot read standard print material in the usual manner due to visual, physical, or organic dysfunction. You must obtain a signature from a competent authority (doctor, etc.) confirming your inability to read standard print material. Read more on the page: <a href="/btbl/publications">Application for BTBL Service</a>
+                    </p>
+                    <h3>BTBL Patron Handbook</h3>
+                    <p>
+                        (<a href="~/Content/StateTemplate/otherDocuments/services/BTBL_PatronHandbookFINALrev2015.doc">WORD</a>) (<a href="~/Content/StateTemplate/otherDocuments/services/BTBL_PatronHandbookFINALrev2015.pdf" target="_blank">PDF</a>)  (<a href="~/Content/StateTemplate/otherDocuments/services/PatronHandbook2014.mp3">MP3</a>) (<a href="~/Content/StateTemplate/otherDocuments/services/PatronHandbook2014.zip">DAISY</a>) (<a href="~/Content/StateTemplate/otherDocuments/services/PatronHandbook2014.brf" download>BRF</a>)
+                    </p>
+                    <p>
+                        This handbook is mailed to all new patrons when they sign up for service. It includes helpful information about how to use our free service. To receive a large print or braille copy of this handbook through the mail, please <a href="/btbl/contact">contact BTBL</a>.
+                    </p>
+                    <h3>Reader Advisors</h3>
+                    <p>
+                        Each patron is assigned a reader advisor to help with his/her library service. Reader advisors can help with book orders, author or subject requests, machine problems, placing a temporary hold on service, and much more! Please do not hesitate to contact your reader advisor with any questions or concerns you may have about your service.
+                    </p>
+
+                    <h3>About Us</h3>
+                    <p>
+                        BTBL is a branch of the California State Library which cooperates with the Library of Congress, <a href="http://www.loc.gov/nls" target="_blank">National Library Service for the Blind and Physically Handicapped (NLS)</a>. The books and players are provided by the Library of Congress. The California State Library directly administers the program in Northern California. <a href="http://www.brailleinstitute.org/library/" target="_blank">The Braille Institute Library</a> in Los Angeles, which is also funded by the State Library, serves residents of Southern California.
+                    </p>
+                    <div style="width:728px; height:470px; padding-top:10px">
+                        <iframe class="embed-iframe" src="//cdn.loc.gov/loader/embed//embed-with-loader.php?uuid=112BA25FABF50610E0538C93F0280610&amp;size=largeWide&amp;name=&amp;type=V&amp;image=http://www.library.ca.gov/images/content/services/video.jpg" width="728" height="470" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+ 
+        </div>
+    </main>
+</div>

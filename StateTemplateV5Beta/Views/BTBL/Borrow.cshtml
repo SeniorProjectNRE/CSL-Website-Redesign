@@ -1,0 +1,224 @@
+@{
+    ViewBag.Title = "CSL - BTBL - What Can Be Borrowed";
+    ViewBag.PageTitle = "What Can Be Borrowed";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Information about materials patrons of BTBL library can borrow as part of the free service. Books magazines Descriptive Videos audio description DVD VHS newspapers equipment machines digital cartridge cassette braille foreign language BTBL online catalog Talking book topics braille book review BARD NFB Newsline Access News music instruction sheet music large print braille music national library service for blind and physically handicapped low vision blind blindness visual disability visual impairment physical disability dyslexia print disability";
+}
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+</head>
+
+<div id="main-content" class="main-content">
+    <main class="main-primary">
+
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb ">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/BTBL/">Braille and Talking Books</a></li>
+                    <li class="active">Borrowing</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading1'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Books</a>
+                            </h3>
+                        </div>
+                        <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                            <div class='panel-body'>
+                                <p>
+                                    Our book collection contains thousands of fiction and nonfiction titles, including classics, biographies, romances, mysteries, westerns, science fiction, cookbooks, politics, history, and much more! Books are on digital cartridge (DB), cassette (RC), and in braille (BR). The loan period for books is 5 weeks for individuals and 3 months for institutions. Use the online resources listed below to find books:
+                                </p>
+                                <table class=" table table-default btbl_t1">
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="https://btbl.library.ca.gov/" target="_blank">Search BTBL Catalog:</a></td>
+                                            <td>Browse, search for and order books from BTBL</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="http://nlscatalog.loc.gov/" target="_blank">Search NLS Catalog:</a></td>
+                                            <td>Search for books to order from all NLS libraries</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://nlsbard.loc.gov/ca1a/" target="_blank">Search BARD:</a></td>
+                                            <td>Free downloads of Audio and Braille books</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://www.loc.gov/nls/braille-audio-reading-materials/new-braille-audio-books/talking-book-topics-bimonthly-magazine/" target="_blank">Talking Book Topics</a> /
+                                                <a href="https://www.loc.gov/nls/braille-audio-reading-materials/new-braille-audio-books/braille-book-review-bimonthly-magazine/" target="_blank">Braille Book Review</a>
+                                            </td>
+                                            <td>Bi-monthly catalog from NLS that lists the most recent audio and braille books</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://www.loc.gov/nls/braille-audio-reading-materials/foreign-language-materials/" target="_blank">Foreign Language:</a></td>
+                                            <td>Find books in languages other than English</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading2'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Magazines</a>
+                            </h3>
+                        </div>
+                        <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                            <div class='panel-body'>
+                                <p>
+                                    Our magazine collection contains many popular titles such as National Geographic, The Week, Health &amp; Nutrition Newsletters, and many more! Magazines are on digital (DB), in braille (BR), and for download from <a href="/btbl/bard">BARD</a>. Use the online resources listed below to find magazines:
+                                </p>
+
+                                <table class=" table  table-default btbl_t1">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="https://www.loc.gov/nls/braille-audio-reading-materials/new-braille-audio-books/talking-book-topics-bimonthly-magazine/" target="_blank">Talking Book Topics</a> /
+                                                <a href="https://www.loc.gov/nls/braille-audio-reading-materials/new-braille-audio-books/braille-book-review-bimonthly-magazine/" target="_blank">Braille Book Review:</a>
+                                            </td>
+                                            <td>Bi-monthly catalog from NLS lists current magazines available</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://nlsbard.loc.gov/ca1a/" target="_blank">Search BARD:</a></td>
+                                            <td>Free download of audio and braille magazines</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://www.loc.gov/nls/braille-audio-reading-materials/magazines/" target="_blank">Other Magazines</a></td>
+                                            <td>Additional magazine titles may be available through other organizations and may include publications from specific locales. Some of these magazine titles charge a subscription fee.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    <a href="/btbl/contact">Contact BTBL</a> to manage magazine subscriptions. Magazines subscriptions usually take 6-8 weeks to initiate, cancel or change the address. Magazines subscriptions cannot be placed on hold temporarily. If a magazine is returned by the post office as undeliverable, your subscription will automatically be cancelled.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading3'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Descriptive Videos</a>
+                            </h3>
+                        </div>
+                        <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                            <div class='panel-body'>
+                                <p class="regular">
+                                    Descriptive videos are movies that have a second audio track with a narrator's voice describing the action on the screen during breaks in the dialog and sound effects. BTBL offers both DVD and VHS collections of descriptive videos that patrons may borrow for a two-week checkout. Please visit our <a href="/btbl/descriptive-video-service">Descriptive Video Service</a> page for more information.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading4'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Newspapers</a>
+                            </h3>
+                        </div>
+                        <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                            <div class='panel-body'>
+                                <p>
+                                    BTBL offers access to <a href="https://nfb.org/audio-newspaper-service" target="_blank">NFB-NEWSLINE</a>, a touch-tone telephone service for patrons who cannot read a printed newspaper. NFB-NEWSLINE converts text from newspapers across the country to synthetic speech. This service is available through local phone numbers statewide and now features online and email options. Please <a href="/btbl/contact">contact BTBL</a> for further information or assistance with newspaper service.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading5'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>
+                                    Sacramento Access News
+
+                                </a>
+                            </h3>
+                        </div>
+                        <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                            <div class='panel-body'>
+                                <p>
+                                    Some local newspapers and magazines, narrated by volunteers, are available to our patrons through the <a href="http://societyfortheblind.org/programs-services/access-news/" target="_blank">Access News</a> service run by the <a href="http://www.societyfortheblind.org/" target="_blank">Society for the Blind in Sacramento</a>. These publications will be of most interest to residents of the Sacramento and Central Valleys. Please <a href="https://societyfortheblind.org/about-us/contact-us/" target="_blank">contact Society for the Blind</a> to sign up for this free service.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading6'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>Music</a>
+                            </h3>
+                        </div>
+                        <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
+                            <div class='panel-body'>
+                                <p>
+                                    The library does not have recordings of music. Musical scores and instructional materials are available in special formats, including braille or audio music instruction, and braille, audio, or large print sheet music. Some music instruction materials are also available for download from BARD. For more information on music materials, please contact the Music Section of NLS at (800) 424-8567 or online at the <a href="https://www.loc.gov/nls/braille-audio-reading-materials/music-materials/" target="_blank">NLS Music Section</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading7'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse7' aria-expanded='false' aria-controls='collapse7'>California Interest</a>
+                            </h3>
+                        </div>
+                        <div id='collapse7' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading7'>
+                            <div class='panel-body'>
+                                <p>
+                                    A small collection of locally recorded books by California authors and of local California interest (including history) is available on cassette (RC). Please <a href="/btbl/contact">contact BTBL</a> for a catalog of this Californiana collection.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading8'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse8' aria-expanded='false' aria-controls='collapse8'>Print Collection on Blindness and Disability</a>
+                            </h3>
+                        </div>
+                        <div id='collapse8' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading8'>
+                            <div class='panel-body'>
+                                <p>A small print collection of books about blindness and other disabilities is available for checkout by State of California employees and other holders of a California State Library card. BTBL customers can borrow print books on blindness, visual disabilities, and other physical disabilities through interlibrary loan from their public and/or academic libraries.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading9'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse9' aria-expanded='false' aria-controls='collapse9'>Equipment</a>
+                            </h3>
+                        </div>
+                        <div id='collapse9' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading9'>
+                            <div class='panel-body'>
+                                <p>BTBL loans digital book machines, cassette book machines, and accessories free of charge to patrons for the duration of their service. Any loaned equipment must be returned to BTBL for repairs, or if service is cancelled.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+</div>
+

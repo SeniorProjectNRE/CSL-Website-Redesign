@@ -1,0 +1,355 @@
+
+@{
+    ViewBag.Title = "CSL - BTBL - Descriptive Video Service (DVS)";
+    ViewBag.PageTitle = "BTBL Descriptive Video Service (DVS)";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "BTBL offers both DVD and VHS collections of descriptive movies and TV shows that patrons may borrow for a two-week checkout. Descriptive videos are movies that have a second audio track with a narrator's voice describing the action on the screen during breaks in the dialog and sound effects. List of Videos DVS sign-up Descriptive Video Borrower Form Order Videos Loan Period How to Return Equipment needed for DVS Selecting the Descriptive (Audio Description) Track Damaged Videos Video Care More Videos DVS Loan Policy";
+    ViewBag.Keywords = "California, state, Library, Braille, talking book, descriptive, video, service";
+}
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<style>
+    ol li {
+        padding-bottom:15px;
+    }
+</style>
+
+<div id="main-content" class="main-content">
+    <main class="main-primary">
+
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/btbl" style="text-transform:none;">Braille and Talking Books</a></li>
+                    <li>Descriptive Videos</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+       
+
+            @*<div class="section">
+                <div class="container">
+                    <div class="half">
+                        <ul class="list-overstated">
+                            <li><a href="#videos">List of videos</a></li>
+                            <li><a href="#descriptive">What is descriptive video?</a></li>
+                            <li><a href="#borrow">How do I sign up to borrow videos?</a></li>
+                            <li><a href="#order">How do I order videos?</a></li>
+                            <li><a href="#long">How long can I keep the videos?</a></li>
+                            <li><a href="#return">How do I return the videos?</a></li>
+                            <li><a href="#equip">What equipment do I need to play the videos?</a></li>
+                            <li><a href="#dvd">How do I select the descriptive track on DVDs?</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="half">
+                        <ul class="list-overstated">
+                            <li><a href="#damaged">What do I do if a video is damaged?</a></li>
+                            <li><a href="#avoiddvd">How do I avoid damage to DVDs?</a></li>
+                            <li><a href="#avoidvhs">How do I avoid damage to VHS tapes?</a></li>
+                            <li><a href="#more">When are you going to get more videos?</a></li>
+                            <li><a href="#topics">Where are the videos in Talking Book Topics?</a></li>
+                            <li><a href="#thankyou">Thank you Kelly Foundation!</a></li>
+                            <li><a href="#loan">What is the official DVS Loan Policy?</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>*@
+                 
+                <div class="panel-group" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    List of videos
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="https://btbl.library.ca.gov/ca1aopac/search/search.jsf?q=descriptive+video" target="_blank">List of all descriptive videos via BTBL Online Catalog</a></li>
+                                    <li>May 2017 DVDs (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/DVDSpring2017.docx">WORD</a>) (<a href="~/Content/StateTemplate/pdf/btbl/dvs/DVDSpring2017.pdf" target="_blank">PDF</a>) (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/BTBLDescriptiveVideoCatalogSupp2017.mp3">MP3</a>)</li>
+                                    <li>May 2016 DVDs (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/DVDSpring2016.docx">WORD</a>) (<a href="~/Content/StateTemplate/pdf/btbl/dvs/DVDSpring2016.pdf" target="_blank">PDF</a>) (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/BTBLDescriptiveVideoCatalogSupp2016.mp3">MP3</a>)</li>
+                                    <li>May 2015 DVDs (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/DVDSpring2015.docx">WORD</a>) (<a href="~/Content/StateTemplate/pdf/btbl/dvs/DVDSpring2015.pdf" target="_blank">PDF</a>) (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/BTBLDescriptiveVideoCatalogsSupp201506.mp3">MP3</a>)</li>
+                                    <li>April 2014 DVDs (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/DVDSpring2014.docx">WORD</a>) (<a href="~/Content/StateTemplate/pdf/btbl/dvs/DVDSpring2014.pdf" target="_blank">PDF</a>) (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/BTBLDescriptiveVideoCatalogsSupp201404.mp3" target="_blank">MP3</a>)</li>
+                                    <li>April 2013 DVDs (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/DVDSpring2013.docx">WORD</a>) (<a href="~/Content/StateTemplate/pdf/btbl/dvs/DVDSpring2013.pdf" target="_blank">PDF</a>) (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/BTBLDescriptiveVideoCatalogsSupp2013.mp3" target="_blank">MP3</a>)</li>
+                                    <li>January 2012 DVDs (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/DVDSpring2012.docx">WORD</a>) (<a href="~/Content/StateTemplate/pdf/btbl/dvs/DVDSpring2012.pdf" target="_blank">PDF</a>) (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/BTBLDescriptiveVideoCatalogsDVD.mp3" target="_blank">MP3</a>)</li>
+                                    <li>January 2012 VHS Catalog (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/VHSSpring2012.docx">WORD</a>) (<a href="~/Content/StateTemplate/pdf/btbl/dvs/VHSSpring2012.pdf" target="_blank">PDF</a>) (<a href="~/Content/StateTemplate/otherDocuments/btbl/dvs/BTBLDescriptiveVideoCatalogsVHS.mp3" target="_blank">MP3</a>)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    What is descriptive video?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <p>
+                                    Descriptive videos are movies that have a second audio track with a narrator's voice describing the action on the screen during breaks in the dialog and sound effects. BTBL offers both DVD and VHS collections of descriptive videos that patrons may borrow for a two-week checkout.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading3">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    How do I sign up to borrow videos?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body">
+                                <p>
+                                    You must complete a separate "Descriptive Video Borrower Registration Form" before you can use our descriptive video service. Either complete the online <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=DVSReg&cllcid=BTBL" targret="_blank">Descriptive Video Borrower Registration Form</a> or <a href="/btbl/contact">contact BTBL</a> and request that a print Descriptive Video Borrower Registration Form be mailed. You must be a current BTBL patron in good standing to be able to sign up for videos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading4">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                    How do I order videos?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                            <div class="panel-body">
+                                <p>
+                                    Once you have signed up, videos may be requested in the same way you request books: in person, by telephone, by mail, by <a href="mailto:btbl@library.ca.gov">email</a> or through the online <a href="https://btbl.library.ca.gov/" target="_blank">BTBL Catalog.</a> There is no limit to the number of requests patrons may place on file for future loan. The first available descriptive video on a borrower's request list will be sent automatically each time a title is returned.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading5">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                    How long can I keep the videos?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                            <div class="panel-body">
+                                <p>
+                                    The loan period is <strong>14 days</strong>. There will be <strong>no renewals</strong>. Patrons may borrow a maximum of <strong>two</strong> descriptive video titles in each medium at a time.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading6">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                    How do I return the videos?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                            <div class="panel-body">
+                                <p>
+                                    Descriptive video titles should be mailed back to BTBL after viewing by turning over the mailing card so the library's address is facing up. Videos should be delivered into the hands of the U.S. Postal Service, do not leave videos on your doorstep.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading7">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                    What equipment do I need to play the videos?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                            <div class="panel-body">
+                                <p>
+                                    You need a television with DVD player or a computer with a DVD player to watch descriptive videos on DVD. You need a television with VCR player to watch descriptive videos on VHS. No other special equipment is required. BTBL does not loan televisions, DVD, or VCR players; just the videos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading8">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                                    How do I select the descriptive track on DVDs?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                            <div class="panel-body">
+                                <p>
+                                    A portion of our DVD collection is fully accessible (the movie will play automatically with the descriptive track selected). The films that do not begin automatically with narration upon insertion are noted as such in our catalogs. To locate the DVS track on non-accessible DVDs, usually found under Languages or Set-up Menus, assistance from a sighted friend or family member may be helpful. Some patrons have found that for some DVDs, once the film has begun playing, pressing the "Audio" button repeatedly on their DVD player's remote control will help select the DVS track. We have also conducted limited testing of screen-reader software and found that the visual menus for DVDs are <strong>not</strong> accessible with JAWS (version 10) for Windows or WindowEyes (version 7.5) software. Later versions of these software programs *may* yield better results.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading9">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                                    What do I do if a video is damaged?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                            <div class="panel-body">
+                                <p>If a DVD or VHS is damaged, return it to us promptly and <a href="/btbl/contact">contact BTBL</a> to let us know what happened.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading15">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse15" aria-expanded="true" aria-controls="collapse15">
+                                    How do I avoid damage to DVDs?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+                            <div class="panel-body">
+                                <p>The DVDs are exactly like CDs, they are small, round, fragile, thin plastic discs. Each disc fits tightly in its mailing container; either use your fingers on the edges of the DVD to gently dislodge it, or gently push with your thumb on the small circular center of the disc to pop it out of its container.</p>
+                                <ol>
+                                    <li>Permanent damage occurs when the surface of a DVD is scratched</li>
+                                    <li>Handle DVDs by the edges</li>
+                                    <li>Avoid dropping them</li>
+                                    <li>Avoid dust, dirt, food, liquids and condensation</li>
+                                </ol>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading10">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                                    How do I avoid damage to VHS tapes?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                            <div class="panel-body">
+                                <p class="regular">
+                                    The VHS videos are large, fragile tapes constructed from plastic. Use them only in a clean VCR, as old and dirty machines may result in permanent damage. Extreme temperature conditions are not good for videos. Please do not leave them in cars or place them near heaters, stoves, etc. In cold weather, allow videos to warm to room temperature before inserting in your player.
+                                </p>
+                                <ol>
+                                    <li>Avoid dropping them</li>
+                                    <li>Magnetic or electromagnetic fields may damage videos: avoid placing videos on TV sets, speakers, or near electric motors.</li>
+                                    <li>Avoid dust, dirt, food, liquids and condensation</li>
+                                </ol>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading11">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                                    When are you going to get more videos?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                            <div class="panel-body">
+                                <p>
+                                    We purchase new videos in the spring of each year using donated funds from the <a href="http://www.cslfdn.org/" target="_blank">California State Library Foundation</a>. So far, we have been able to purchase around 50 new DVD titles every year. We are restricted in which movie titles we can purchase by the limited number of commercial DVDs with audio description that are released each year by the movie studios. Read more about what DVD titles are commercially available with audio description at the <a href="http://www.acb.org/adp/dvds.html" target="_blank">Audio Description Project</a>.
+                                    <!--After a period of implementation of this new service and an assessment of its success, we will be determining how and when to purchase additional videos or replacement copies of damaged videos. The videos that BTBL has to offer now were purchased with a special $10,000 grant from <a href="http://kellyfoundationsacramento.org/" target="_blank">Sacramento's Kelly Foundation.</a>-->
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading12">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse12" aria-expanded="true" aria-controls="collapse12">
+                                    Where are the videos in <em>Talking Book Topics</em>?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                            <div class="panel-body">
+                                <p>
+                                    Videos from BTBL will never appear in <em>Talking Book Topics</em> (TBT) or <em>Braille Book Review</em> (BBR). The videos from BTBL are a local collection only available to BTBL patrons. TBT and BBR are bi-monthly magazines published by the National Library Service National Library Service for the Blind & Physically Handicapped (NLS). Since videos are a part of BTBL's collection, and not NLS's collection, you will never see our videos advertised in these publications.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading13">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse13" aria-expanded="true" aria-controls="collapse13">
+                                    Thank you Kelly Foundation!
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                            <div class="panel-body">
+                                <p class="regular">
+                                    Thanks to a special $10,000 grant from <a href="http://kellyfoundationsacramento.org/" target="_blank">Sacramento's Kelly Foundation</a> we have been able to purchase described movies and circulation accessories in order to create this inaugural collection. We are grateful to the Kelly Foundation and to the <a href="http://www.cslfdn.org/" target="_blank">California State Library Foundation</a> for their continuous support and management of BTBL funds. We hope this new service is successful and that we will find opportunities to purchase new descriptive video titles to add to the collection in future months and years.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading14">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse14" aria-expanded="true" aria-controls="collapse14">
+                                    What is the official DVS Loan Policy?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+                            <div class="panel-body">
+                                <ol>
+                                    <li>Borrowers must be registered and active patrons in good standing with the Braille and Talking Book Library.</li>
+                                    <li>All borrowers must complete a <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=DVSReg&cllcid=BTBL" target="_blank">Descriptive Video Borrower Registration Form</a>.</li>
+                                    <li>Patrons may borrow a maximum of<strong> two</strong> descriptive video titles in each medium at a time.</li>
+                                    <li>The loan period is <strong>14 days</strong>. There will be <strong>no renewals</strong>.</li>
+                                    <li>Videos may be requested in the same way you request books: in person, by telephone, by email or through the online <a href="https://btbl.library.ca.gov/" target="_blank">Braille and Talking Book Library Catalog</a>. There is no limit to the number of requests patrons may place on file for future loan. The first available descriptive video on a borrower's request list will be sent automatically each time a title is returned.</li>
+                                    <li>Videos loaned to individuals are for personal use only, and are not intended for group viewing. Videos may be loaned to organizations or groups, including nursing homes, libraries, schools or teachers solely for viewing by individuals eligible for BTBL services. Patrons or institutions may not charge fees for anyone attending a showing of any descriptive videos loaned by the Braille and Talking Book Library.</li>
+                                    <li>Due to high demand, descriptive video titles may not be reserved for special dates.</li>
+                                    <li>VHS format videocassette tapes should be rewound before being returned to the library. DVDs should be returned as is; there is nothing to rewind.</li>
+                                    <li>Descriptive video titles should be mailed back to the Braille and Talking Book Library after viewing by turning over the mailing card so the Library's address is facing up. Descriptive VHS videocassettes and DVDs may be mailed free of charge when "Free Matter for the Blind" is imprinted on each container's mailing card.</li>
+                                    <li>Abuse of the video lending service, including but not limited to, violation of Loan Policy item 6. above, repeated overdues, lost materials, or damaged tapes and discs may result in suspension of video service to a borrower.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+</div>
+
