@@ -1612,7 +1612,7 @@
     <Content Include="Views\Sutro\Class.cshtml" />
     <Content Include="Views\Sutro\Collection.cshtml" />
     <Content Include="Views\Sutro\ColoringBook.cshtml" />
-    <Content Include="Views\Sutro\Genealogy.cshtml" />
+    <Content Include="Views\Sutro\Genealogy\Genealogy.cshtml" />
     <Content Include="Views\Sutro\Search.cshtml" />
     <Content Include="Views\Sutro\Visiting.cshtml" />
     <Content Include="Views\Sutro\WomensMarch.cshtml" />
@@ -1690,6 +1690,9 @@
     <Content Include="Views\BTBL\Apply.cshtml" />
     <Content Include="Views\BTBL\Bookshare.cshtml" />
     <Content Include="Views\BTBL\PurchaseCartridge.cshtml" />
+    <Content Include="Views\Sutro\Genealogy\Calendar.cshtml" />
+    <Content Include="Views\Services\ToLibraries\DevelopmentProgramsProjects\DevelopmentProgramsProjects.cshtml" />
+    <Content Include="Views\Services\ToLibraries\DevelopmentProgramsProjects\ValueLibraries.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

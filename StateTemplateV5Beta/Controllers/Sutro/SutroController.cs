@@ -71,5 +71,12 @@ namespace StateTemplateV5Beta.Controllers.Sutro
         {
             return View();
         }
+
+        // GET: genealogy/calendar
+        [Route("genealogy/calendar")]
+        public ActionResult Calendar()
+        {
+            return View("~/Views/Sutro/Genealogy/Calendar.cshtml");
+        }
     }
 }
