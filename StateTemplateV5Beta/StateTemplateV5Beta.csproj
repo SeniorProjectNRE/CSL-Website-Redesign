@@ -222,6 +222,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\cards.css" />
     <Content Include="Content\Carousel.css" />
+    <Content Include="Content\datatables.min.css" />
+    <Content Include="Content\StateTemplate\css\datatables.css" />
     <Content Include="Content\StateTemplate\css\jquery.fancybox.min.css" />
     <Content Include="Content\StateTemplate\css\random.css" />
     <Content Include="Content\StateTemplate\css\cagov.core.css" />
@@ -1720,6 +1722,23 @@
     <EmbeddedResource Include="Migrations\201708142319030_AddDateTime.resx">
       <DependentUpon>201708142319030_AddDateTime.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSLBusinessLayer\CSLBusinessLayer.csproj">
+      <Project>{da218437-5466-4559-bc7d-909299127c73}</Project>
+      <Name>CSLBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSLBusinessObjects\CSLBusinessObjects.csproj">
+      <Project>{bf8d7be7-d333-4aa8-b599-ba59f0a5d52f}</Project>
+      <Name>CSLBusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSLDataAccessLayer\CSLDataAccessLayer.csproj">
+      <Project>{375216ec-3d17-4540-9cd2-b6f693e4efc8}</Project>
+      <Name>CSLDataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

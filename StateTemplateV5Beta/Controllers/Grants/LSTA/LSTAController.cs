@@ -1,5 +1,9 @@
-﻿using System;
+﻿using CSLBusinessLayer.Interface;
+using CSLBusinessObjects.Models;
+using CSLBusinessObjects.ViewModels;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -9,6 +13,13 @@ namespace StateTemplateV5Beta.Controllers.Grants
     [RoutePrefix("grants/lsta")]
     public class LSTAController : Controller
     {
+        private IGrantsService _grantsService;
+
+        public LSTAController(IGrantsService grantsService)
+        {
+            _grantsService = grantsService;
+        }
+
         // GET: LSTA
         [Route("")]
         public ActionResult Index()
@@ -84,6 +95,31 @@ namespace StateTemplateV5Beta.Controllers.Grants
         public ActionResult PreviousGrantAwards()
         {
             return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml");
+        }
+
+        // Post
+        [HttpPost]
+        public ActionResult PreviousGrantAwards(GrantsViewModel model)
+        {
+            //decimal principle = Convert.ToDecimal(Request["txtAmount"].ToString());
+            string grantID = "40-7600";
+            string year = "2010/2011";
+            string library = "Alameda County Library";
+            string project = "Ashland READS";
+            int award = 4;
+
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (!ModelState.IsValid)
+            {
+                model.GrantGetAllList = _grantsService.GetAllGrants(grantID, year, library, project, award);
+                return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", model);
+            }
+
+            return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", model);
         }
 
         // GET: staff-innovation
