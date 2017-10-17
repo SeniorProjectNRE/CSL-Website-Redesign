@@ -1692,6 +1692,7 @@
     <Content Include="Views\Sutro\Genealogy\Calendar.cshtml" />
     <Content Include="Views\Services\ToLibraries\DevelopmentProgramsProjects\DevelopmentProgramsProjects.cshtml" />
     <Content Include="Views\Services\ToLibraries\DevelopmentProgramsProjects\ValueLibraries.cshtml" />
+    <Content Include="Views\About\Test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1720,6 +1721,12 @@
     <EmbeddedResource Include="Migrations\201708142319030_AddDateTime.resx">
       <DependentUpon>201708142319030_AddDateTime.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSLBusinessLayer\CSLBusinessLayer.csproj">
+      <Project>{da218437-5466-4559-bc7d-909299127c73}</Project>
+      <Name>CSLBusinessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

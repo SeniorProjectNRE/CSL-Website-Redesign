@@ -45,5 +45,11 @@ namespace StateTemplateV5Beta.Controllers
         {
             return View();
         }
+
+        [Route("test")]
+        public ActionResult Test()
+        {
+            return View();
+        }
     }
 }
