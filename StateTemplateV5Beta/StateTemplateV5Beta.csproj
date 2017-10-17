@@ -1466,7 +1466,6 @@
     <Content Include="Views\Shared\modules\service-directory.cshtml" />
     <Content Include="Views\Shared\modules\serp.cshtml" />
     <Content Include="Views\Shared\modules\search-results-standalone.cshtml" />
-    <Content Include="Views\TestViews\Test1.cshtml" />
     <Content Include="Views\Shared\modules\section-card-tests.cshtml" />
     <Content Include="Views\Shared\modules\topnav-test.cshtml" />
     <Content Include="Views\Admin\modules\AddBlog.cshtml" />
@@ -1706,6 +1705,7 @@
     <Folder Include="Views\StateDocumentDepositoryProgram\" />
     <Folder Include="Views\Statistics\" />
     <Folder Include="Views\SupervisingLibrarian\" />
+    <Folder Include="Views\TestViews\" />
     <Folder Include="Views\ToLibraries\" />
     <Folder Include="Views\ToPublic\" />
     <Folder Include="Views\ToStateEmployees\" />
