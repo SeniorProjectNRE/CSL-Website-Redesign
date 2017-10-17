@@ -1,8 +1,8 @@
 ﻿
 @{
-    ViewBag.Title = "Studies in the News";
+    ViewBag.Title = "CSL - California Research Bureau Newsletters";
     ViewBag.Author = "Dmitriy Rusetskiy";
-    ViewBag.Description = "California State Library - California State Research Bureau Staff";
+    ViewBag.Description = "Subscribe to the California Research Bureau's free, weekly newsletters, Lunch with a side of Research and Studies in the News.";
     ViewBag.Keywords = "California, state, Library, Policies";
 }
 
@@ -20,7 +20,13 @@
 <div id="main-content" class="main-content">
     <main class="main-primary">
         <div class="container">
-            <ol class="breadcrumb dynamic"></ol>
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="../services/research-resources">Research by CSL</a></li>
+                <li><a href="/crb">CRB</a></li>
+                <li>Newsletters</li>
+            </ol>
             <h2 class="page-title">@(ViewBag.Title)</h2>
         </div>
         <div class="section">

@@ -1,11 +1,94 @@
-﻿
+
 @{
-    ViewBag.Title = "PerformanceStandards";
+    ViewBag.Title = "CSL - Performance Standards";
+    ViewBag.PageTitle = "Performance Standards For California State Document Depository Libraries";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "These standards for distribution of state publications to California State Document Depository Libraries include contractual space, records, and staff requirements.";
+    ViewBag.Keywords = "California, state, Library, government, publications, depository, performance, standards";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>PerformanceStandards</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/government-publications/federal-depository" style="text-transform:none;">Federal Depository Library Program</a></li>
+                    <li>Performance Standards</li>
+                </ol>
+
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <p>
+                    The underscored portions of the statements below are part of the CONTRACT FOR DISTRIBUTION OF STATE PUBLICATIONS TO LIBRARIES. Any library designated as a California state depository, either complete or selective, in signing the contract has agreed to these conditions with the understanding that failure to comply with any one condition is sufficient grounds for cancellation of the contract.
+                </p>
+
+                <p>
+                    The term "state publication", as used below, means those publications defined in Government Code section 14902 which a library receives under its depository agreement with the state.
+                </p>
+
+                <ol>
+                    <li>
+                        <p><strong>Provide suitable shelf space to house state publications with adequate provision for expansion.</strong></p>
+                        <p>
+                            Shelving should be such as to provide the same ease of access and the same physical protection and security as is provided for other materials in the library. Pamphlet or leaflet type material may be housed in vertical files. Because of the disposal limitations placed on depository collections, allowances must be made for expansion of the collection.
+                        </p>
+                        <p>
+                            Where multiple formats of the same resource exist (paper, CD-ROM, online, etc.), selective depositories may opt to provide access to just one format, e.g., to provide records with links to remotely-accessed electronic versions through their online catalogs rather than to retain paper copies. Complete depositories should retain paper copies of "core" publications* if they receive them but may otherwise elect to catalog a remotely-accessed electronic version. Where depositories have formed regional consortia or agreements for sharing collections, they may reduce the total number of duplicate paper copies in their library systems with the approval of the State Library, provided there is an acceptable method of sharing between libraries and providing public access.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Maintain accurate record of holdings of state publications.</strong></p>
+                        <p>
+                            The library must maintain for its own use a reliable record of state publications received and in the collection. The holdings record may be the same as the patron access record described below.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Provide records for patron access to state publications.</strong></p>
+                        <p>
+                            State publications need not be fully cataloged. However access points (author, title, subject, location information) as suit the needs of the library and its patrons must be considered. Records should be made available through the library's online catalog, but may be made in hard copy or microform if necessary.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Process, shelve, and have fully available for patron use all state publications within 30 days of receipt.</strong></p>
+                        <p>
+                            Processing includes unpacking, recording, labeling, and the preparing of holdings and patron access records. In the case of remotely-available electronic publications, a qualified staff person (see 5 below) should review the listings in <em>California State Publications</em> on a monthly basis, to select publications to add to the library's catalog.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Provide a qualified staff person to manage the depository collection and to assist patrons in its use.</strong></p>
+                        <p>
+                            A qualified staff person may be (a) a librarian holding a graduate degree in library science or library/information studies, or (b) a librarian who has been promoted to that rank through local career ladder programs, or (c) any staff person who, through experience and/or training, is deemed qualified to provide professional level service. Management of the depository collection and reference assistance need not be assigned to a single individual, and neither do these duties need to be the sole responsibilities of the individual(s) assigned. However, there must be one person at each depository library who is deemed the local coordinator and who will serve as the State Library's liaison. It is the responsibility of the depository library to ensure that the State Library has contact information for the local coordinator and that the State Library is informed when the local coordinator changes.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Dispose of state publications only in accordance with the disposal policies established by the California State Library.</strong></p>
+                        <p>
+                            Retention and disposal policies for state depositories are available from the State Library and are published in each monthly issue of <em>California</em><em> State</em><em> Publications</em>.
+                        </p>
+                    </li>
+                </ol>
+
+                <p>
+                    In addition to these conditions, the CONTRACT FOR DISTRIBUTION OF STATE PUBLICATIONS also states, "Library agrees that State may at any reasonable time inspect the facilities provided by the Library for storage and use of all state publications distributed to it under this agreement, and that it will promptly supply any information which may be requested by State in connection with the storage and use of such publications." While the State Library does not perform in-person inspections, it has the right to ask depositories to submit reports on state depository operations and will do so periodically.
+                </p>
+                <p>
+                    * "Core" publications would generally include the following types of documents: Administrative and statistical reports issued by state agencies, including annual/biennial reports to the legislature; state level fiscal documents such as the Governor's budget and associated documents and the financial transactions reports for cities, counties, etc. issued by the State Controller; legislative reference works such as the Assembly and Senate final histories, the Legislative index and table of sections affected; legal documents such as the Assembly and Senate journals, any published legislative hearings and reports, statutes, the California Code of Regulations, etc. Other types of documents may be considered core depending on the type of depository and the user community it serves, at the discretion of the depository's state documents collection manager.
+                </p>
+            </div>
+        </div>
     </main>
 </div>
 

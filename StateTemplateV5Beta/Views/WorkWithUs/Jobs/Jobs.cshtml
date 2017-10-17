@@ -1,188 +1,185 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "CSL - Jobs at the California State Library";
     ViewBag.PageTitle = "Jobs at the California State Library";
-    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Author = "Ryan Salcido, Matt Loller";
     ViewBag.Description = "When you become eligible to work for the state (when you have passed an Open Examination), or if you are a former or current state employee, you can apply for a job at the California State Library. The California Department of Human Resources  lists these jobs for us on their website CalCareers https://jobs.ca.gov/Default.aspx.";
     ViewBag.Keywords = "vacant position, vacancy, examination, current state employee, former state employee, new to state";
 }
-
 <head>
     <title>@(ViewBag.Title)</title>
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
-
 <div id="main-content" class="main-content">
     <main class="main-primary">
         <div class="section">
             <div class="container">
                 <ol class="breadcrumb dynamic"></ol>
                 <h2 class="page-title">@(ViewBag.PageTitle)</h2>
-
                 <p>
                     When you become <a href="http://jobs.ca.gov/GeneralInfo/Glossary#class-E">eligible</a>
                     to work for the state (when you have passed an <a href="http://jobs.ca.gov/">Open Examination</a>),
                     or if you are a former or current state employee, you can apply for a job at the California State Library.
                     The <a href="https://www.jobs.ca.gov/">California Department of Human Resources (CalHR)</a> lists these jobs for us on their website.
                 </p>
-
-                <ul>
-                    <li>
-                        <a href="https://jobs.ca.gov/CalHRPublic/Search/JobSearchResults.aspx#depid=276">Current Jobs</a>
-                    </li>
-                    <li>
-                        <a href="/Content/StateTemplate/pdf/workWithUs/Admin-AGPA_DRAFT_August.2017.pdf">Associate Governmental Program Analyst &ndash; Administrative Services Bureau</a><br />
-                        <p class="indent">&ndash; <a href="/Content/StateTemplate/pdf/workWithUs/2161.JD.AGPA.406.6-2017.PROPOSED.pdf" target="_blank">AGPA Duty Statement</a></p>
-                    </li>
-                    <li>
-                        <a href="/Content/StateTemplate/pdf/workWithUs/JOB-Fiscal-SSMII_FFDExtended.pdf">Staff Services Manager II (Supervisory) &ndash; Administrative Services Bureau / Fiscal Services Section</a><br />
-                        <p class="indent">&ndash; <a href="/Content/StateTemplate/pdf/workWithUs/2179.JD.404.SSMII(S).07-28_Final.pdf">SSM II (Sup) Duty Statement</a></p>
-                    </li>
-                    <li><a href="~/work-with-us/internships">Internship Opportunities at the Library</a></li>
-                    <li><a href="~/work-with-us/volunteer">Volunteer Opportunities at the Library</a></li>
-                </ul>
             </div>
         </div>
         <div class="section">
             <div class="container">
-                <div class="panel panel-standout">
-                    <div class="panel-heading">
-                        <h2> Currently scheduled examinations: </h2>
-
+                <div class="two-thirds">
+                    <div class="section">
+                        <h3>Job Opportunities</h3>
+                        <ul>
+                            <li>
+                                <a href="https://jobs.ca.gov/CalHRPublic/Search/JobSearchResults.aspx#depid=276">Current Jobs</a>
+                            </li>
+                            <li><a href="~/work-with-us/internships">Internship Opportunities at the Library</a></li>
+                            <li><a href="~/work-with-us/volunteer">Volunteer Opportunities at the Library</a></li>
+                            <li>
+                                <a href="/Content/StateTemplate/pdf/workWithUs/Admin-AGPA_DRAFT_August.2017.pdf">Associate Governmental Program Analyst &ndash; Administrative Services Bureau</a>
+                                <ul>
+                                    <li><a href="/Content/StateTemplate/pdf/workWithUs/2161.JD.AGPA.406.6-2017.PROPOSED.pdf" target="_blank">AGPA Duty Statement</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/Content/StateTemplate/pdf/workWithUs/JOB-Fiscal-SSMII_FFDExtended.pdf">Staff Services Manager II (Supervisory) &ndash; Administrative Services Bureau / Fiscal Services Section</a>
+                                <ul>
+                                    <li>
+                                        <p class="indent">&ndash; <a href="/Content/StateTemplate/pdf/workWithUs/2179.JD.404.SSMII(S).07-28_Final.pdf">SSM II (Sup) Duty Statement</a></p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="panel-body">
-
-                        <div class="half">
-                            <h3>Open</h3>
-                            <ul>
-                                <li><a href="/about/jobs/lsenl.html">Librarian</a></li>
-                                <li><a href="/about/jobs/libprogadm.html">Library Programs Administrator</a></li>
-                                <li><a href="/about/jobs/libprogcons.html">Library Programs Consultant</a></li>
-                                <li><a href="/about/jobs/libtechassist.html">Library Technical Assistant I/II</a></li>
-                                <li><a href="/about/jobs/lsenl.html">Senior Librarian</a></li>
-                                <li><a href="/about/jobs/libseries.html">Supervising Librarian I</a></li>
-                                <li><a href="/about/jobs/libseries.html">Supervising Librarian II</a></li>
-                                <li><a href="/about/jobs/libseries.html">Principal Librarian</a></li>
-                            </ul>
-
+                    <div class="section">
+                        <p>
+                            For further information on employment at the California State Library, email <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or call (916) 654-0202.
+                        </p>
+                    </div>
+                    <div class="section">
+                        <div class="panel panel-overstated">
+                            <div class="panel-heading">
+                                <h2>Library Careers</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    For general information about careers in the library field go to
+                                    <a href="http://www.ala.org/educationcareers/careers/librarycareerssite/home">American Library Association</a>.
+                                    For more specific information about California library careers go to <a href="http://www.cla-net.org/?page=813">California Library Association Career Center</a>.
+                                </p>
+                                <div>
+                                    <ul class="list-overstated accordion-list">
+                                        <li>
+                                            <a href="/Content/StateTemplate/pdf/workWithUs/std678.pdf">State Application</a> (STD. 678)
+                                        </li>
+                                        <li>
+                                            <a class="toggle">Application Instructions</a>
+                                            <div class="description">
+                                                <div class="group">
+                                                    <div class="half">
+                                                        <p>You may send job applications to</p>
+                                                        <ul>
+                                                            <li>
+                                                                <strong>
+                                                                    The California State Library<br />
+                                                                    Human Resources Services
+                                                                </strong><br /><br />
+                                                                P.O. Box 942837<br />
+                                                                Sacramento, CA 94237-0001
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="half">
+                                                        <p>You may hand-deliver job applications to</p>
+                                                        <ul>
+                                                            <li>
+                                                                <strong>
+                                                                    The California State Library<br />
+                                                                    Human Resources Services<br />
+                                                                    California State Library Building
+                                                                </strong><br /><br />
+                                                                900 N Street, Suite 400<br />
+                                                                Sacramento, CA 95814
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <p>All applicants must clearly indicate the basis for their eligibility in "Examination(s) or Job Title(s) for which you are applying" on the standard application form (STD678).</p>
+                                                    <p>All appointments subject to State Restrictions of Appointments (SROA) provisions. Surplus employees are encouraged to apply.</p>
+                                                    <p>Applications will be screened and only the most qualified candidates will be interviewed.</p>
+                                                    <p>For further information on employment at the State Library, email <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or call (916) 654-0202.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://jobs.ca.gov/">California Department of Human Resources &ndash; Jobs and Employment Information</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.calhr.ca.gov/state-hr-professionals/Pages/job-descriptions.aspx">State Civil Service Classification Specifications</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/pay-scales.aspx">State Civil Service Pay Scales</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://forms.spb.ca.gov/bulletins/">Open State Examinations</a>
+                                        </li>
+                                        <li>
+                                            <a href="~/work-with-us/">Working at the CSL</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="half">
-                            <h3>Promotional</h3>
-                            <ul>
-                                <li><a href="/Content/StateTemplate/pdf/workWithUs/SSATransferRequestForm.pdf" target="_blank">SSA Transfer Request Form</a></li>
-                                <li><a href="/Content/StateTemplate/pdf/workWithUs/StaffServicesAnalystTransferExam.pdf" target="_blank">Staff Services Analyst Transfer Exam</a></li>
-                            </ul>
-                        </div>
-
                     </div>
                 </div>
-
-                <p>
-                    For further information on employment at the California State Library, email <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or call (916) 654-0202.
-                </p>
-
-                <div class="section">
-                    <div class="container">
-                        <h3>Library Careers</h3>
-
-                        <p>
-                            For general information about careers in the library field go to
-                            <a href="http://www.ala.org/educationcareers/careers/librarycareerssite/home">American Library Association</a>.
-                            For more specific information about California library careers go to <a href="http://www.cla-net.org/?page=813">California Library Association Career Center</a>.
-                        </p>
-                        <div>
-                            <ul class="list-overstated accordion-list">
-                                <li>
-                                    <a href="/Content/StateTemplate/pdf/workWithUs/std678.pdf">State Application</a> (STD. 678)
-                                </li>
-
-                                <li>
-                                    <a class="toggle">Application Instructions</a>
-                                    <div class="description">
-
-                                        <div class="group">
-
-                                            <div class="half">
-                                                <p>You may send job applications to</p>
-                                                <ul>
-                                                    <li>
-                                                        <strong>
-                                                            The California State Library<br />
-                                                            Human Resources Services
-                                                        </strong><br /><br />
-                                                        P.O. Box 942837<br />
-                                                        Sacramento, CA 94237-0001
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="half">
-                                                <p>You may hand-deliver job applications to</p>
-                                                <ul>
-                                                    <li>
-                                                        <strong>
-                                                            The California State Library<br />
-                                                            Human Resources Services<br />
-                                                            California State Library Building
-                                                        </strong><br /><br />
-                                                        900 N Street, Suite 400<br />
-                                                        Sacramento, CA 95814
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p>All applicants must clearly indicate the basis for their eligibility in "Examination(s) or Job Title(s) for which you are applying" on the standard application form (STD678).</p>
-                                            <p>All appointments subject to State Restrictions of Appointments (SROA) provisions. Surplus employees are encouraged to apply.</p>
-                                            <p>Applications will be screened and only the most qualified candidates will be interviewed.</p>
-                                            <p>For further information on employment at the State Library, email <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or call (916) 654-0202.</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <a href="http://jobs.ca.gov/">California Department of Human Resources &ndash; Jobs and Employment Information</a>
-                                </li>
-
-                                <li>
-                                    <a href="http://www.calhr.ca.gov/state-hr-professionals/Pages/job-descriptions.aspx">State Civil Service Classification Specifications</a>
-                                </li>
-
-                                <li>
-                                    <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/pay-scales.aspx">State Civil Service Pay Scales</a>
-                                </li>
-
-                                <li>
-                                    <a href="https://forms.spb.ca.gov/bulletins/">Open State Examinations</a>
-                                </li>
-
-                                <li>
-                                    <a href="~/work-with-us/">Working at the CSL</a>
-                                </li>
-                            </ul>
+                <div class="third">
+                    <div class="section">
+                        <div class="panel panel-standout highlight">
+                            <div class="panel-heading">
+                                <h2> Currently scheduled open examinations: </h2>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="/about/jobs/lsenl.html">Librarian</a></li>
+                                    <li><a href="/about/jobs/libprogadm.html">Library Programs Administrator</a></li>
+                                    <li><a href="/about/jobs/libprogcons.html">Library Programs Consultant</a></li>
+                                    <li><a href="/about/jobs/libtechassist.html">Library Technical Assistant I/II</a></li>
+                                    <li><a href="/about/jobs/lsenl.html">Senior Librarian</a></li>
+                                    <li><a href="/about/jobs/libseries.html">Supervising Librarian I</a></li>
+                                    <li><a href="/about/jobs/libseries.html">Supervising Librarian II</a></li>
+                                    <li><a href="/about/jobs/libseries.html">Principal Librarian</a></li>
+                                </ul>
+                            </div>
                         </div>
-
-                    </div>
-                </div>
-
-                <div class="section">
-                    <div class="container">
-                        <h3>EEO Disclaimer</h3>
-                        <p>
-                            It is the policy of the State and the California State Library (CSL) to provide equal employment opportunity to all qualified job applicants and employees and have a workforce representative of California's diverse population. All efforts to ensure a representative workforce are made on the basis of an individual's merit, efficiency, ability, and fitness consistent with the State civil service and merit system principles and  regulations.
-                        </p>
-
+                        <div class="panel panel-standout highlight">
+                            <div class="panel-heading">
+                                <h2> Currently scheduled promotional examinations: </h2>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="/Content/StateTemplate/pdf/workWithUs/SSATransferRequestForm.pdf" target="_blank">SSA Transfer Request Form</a></li>
+                                    <li><a href="/Content/StateTemplate/pdf/workWithUs/StaffServicesAnalystTransferExam.pdf" target="_blank">Staff Services Analyst Transfer Exam</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h2>EEO Disclaimer</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    It is the policy of the State and the California State Library (CSL) to provide equal employment opportunity to all qualified job applicants and employees and have a workforce representative of California's diverse population. All efforts to ensure a representative workforce are made on the basis of an individual's merit, efficiency, ability, and fitness consistent with the State civil service and merit system principles and  regulations.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 </div>
-

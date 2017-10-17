@@ -50,5 +50,12 @@ namespace StateTemplateV5Beta.Controllers.Services
         {
             return View();
         }
+
+        // GET: To-Public/Local-Libraries
+        [Route("to-public/local-libraries")]
+        public ActionResult ToPublicLocalLibraries()
+        {
+            return View("~/Views/Services/ToPublic/LocalLibraries.cshtml");
+        }
     }
 }
