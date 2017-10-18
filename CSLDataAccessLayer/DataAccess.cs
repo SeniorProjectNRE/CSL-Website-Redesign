@@ -38,7 +38,8 @@ namespace CSLDataAccessLayer
             GrantProjectModel grantProject;
             GrantYearModel grantYear;
 
-            SqlConnection conn = new SqlConnection(_dbConnectionString);
+            string dbConnectionString = @"Data Source=csldata.database.windows.net;Initial Catalog=LSTAGrants;User ID=csl;Password=Testing!23";
+            SqlConnection conn = new SqlConnection(dbConnectionString);
             SqlCommand cmd = new SqlCommand("[dbo].[uspSeeAllGrants]", conn);
             cmd.CommandType = CommandType.StoredProcedure;
 

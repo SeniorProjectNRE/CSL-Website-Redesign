@@ -99,7 +99,12 @@ namespace StateTemplateV5Beta.Controllers.Grants
         [Route("previous-grant-awards")]
         public ActionResult PreviousGrantAwards()
         {
-            return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml");
+            GrantsModel grants = new GrantsModel { GrantID = "40-7600", Year = "2010/2011", Library = "Alameda County Library", Project = "Ashland READS", Award = 4 };
+            List < GrantsModel > grantList = new List<GrantsModel>();
+            grantList.Add(grants);
+            GrantsViewModel viewModel = new GrantsViewModel() { GrantGetAllList = grantList };
+
+            return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", viewModel);
         }
 
         // Post
