@@ -441,6 +441,7 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\statue.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\sword_performer.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\winchester_mystery_house.jpg" />
+    <Content Include="Content\StateTemplate\images\collections\collection_index.png" />
     <Content Include="Content\StateTemplate\images\contact-top.jpg" />
     <Content Include="Content\StateTemplate\images\contact\LCI.jpg" />
     <Content Include="Content\StateTemplate\images\contact\LCII.jpg" />
