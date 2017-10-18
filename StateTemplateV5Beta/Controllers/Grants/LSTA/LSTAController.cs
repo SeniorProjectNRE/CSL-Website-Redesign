@@ -15,6 +15,11 @@ namespace StateTemplateV5Beta.Controllers.Grants
     {
         private IGrantsService _grantsService;
 
+        public LSTAController()
+        {
+
+        }
+
         public LSTAController(IGrantsService grantsService)
         {
             _grantsService = grantsService;
@@ -115,11 +120,15 @@ namespace StateTemplateV5Beta.Controllers.Grants
 
             if (!ModelState.IsValid)
             {
-                model.GrantGetAllList = _grantsService.GetAllGrants(grantID, year, library, project, award);
+                
                 return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", model);
             }
 
-            return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", model);
+            model = _grantsService.GetAllGrants(grantID, year, library, project, award);
+
+            List<GrantsModel> grantModel = model.GrantGetAllList;
+
+            return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", grantModel);
         }
 
         // GET: staff-innovation

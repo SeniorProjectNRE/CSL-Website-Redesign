@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using CSLBusinessObjects.ViewModels;
 
 namespace CSLBusinessLayer.Concrete
 {
@@ -18,9 +19,9 @@ namespace CSLBusinessLayer.Concrete
             _dataAccess = DataAccess;
         }
 
-        public GrantsModel GetAllGrants(string grantNum, string year, string library, string project, string category, int award)
+        public GrantsViewModel GetAllGrants(string grantNum, string year, string library, string project, int award)
         {
-            return _dataAccess.GetAllGrants(grantNum, year, library, project, category, award);
+            return _dataAccess.GetAllGrants(grantNum, year, library, project, award);
         }
     }
 }

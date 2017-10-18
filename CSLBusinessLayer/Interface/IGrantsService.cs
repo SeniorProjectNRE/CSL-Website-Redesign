@@ -1,4 +1,5 @@
 ﻿using CSLBusinessObjects.Models;
+using CSLBusinessObjects.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,6 +11,6 @@ namespace CSLBusinessLayer.Interface
 {
     public interface IGrantsService
     {
-        DataTable GetAllGrants(string grantNum, string year, string library, string project, string category, int award);
+        GrantsViewModel GetAllGrants(string grantNum, string year, string library, string project, int award);
     }
 }
