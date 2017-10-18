@@ -1,11 +1,140 @@
-﻿
-@{
-    ViewBag.Title = "Borrowing";
+﻿@{
+    ViewBag.Title = "CSL - Borrowing materials from the California State Library";
+    ViewBag.PageTitle = "Borrowing Library Materials";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "Find information on borrowing materials from the California State Library, for state government employee and officials, as well as for the general public.";
+    ViewBag.Keywords = "Borrowing";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Borrowing</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li>Borrowing</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <div class="two-thirds animate-fadeInUp">
+                        <p>
+                            The California State Library loans books, magazines, government publications, newspapers on microfilm, and other materials to the public through the interlibrary loan program. 
+                            Please contact your local public, academic, or workplace library to request an interlibrary loan. 
+                            <a href="/services/to-libraries/Interlibrary-Lending/">Interlibrary Loan</a> departments should review our Interlibrary Loan instructions.
+                        </p>
+
+                        <p>
+                            <a href="/services/to-state-employees/">State employees</a> <b>may borrow most materials directly from the California State Library.</b>
+                        </p>
+
+                        <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading1'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Locate Materials</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            You can locate the author, title, and call number of items in the California State Library collections in the 
+                                            <a href="http://catalog.library.ca.gov/">Online Catalogs</a>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading2'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Non-Circulating Items</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Rare materials, fragile items, materials in special collections such as photographs and prints, single-copy California State documents, and reference items are not loaned and must be viewed in the Library.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading3'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Sutro Library</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                    <div class='panel-body'>
+                                        Visitors to the Sutro Library may borrow selected items if they display a valid California driver's license and or California government issued ID card, complete the required application form, and return borrowed materials to the Sutro Library in person.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading4'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Braille and Talking Books</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Braille and cassette books, magazines and playback equipment are available for loan to Californians unable to read conventional print due to a visual or physical disability.
+                                        </p>
+                                        <p>
+                                            In Northern California, contact the <a href="/btbl/">Braille and Talking Book Library</a>.
+                                        </p>
+                                        <p>
+                                            In the City of San Francisco, contact <a href="http://sfpl.org/lbpd">San Francisco Public Library</a>.
+                                        </p>
+                                        <p>
+                                            In Fresno, Tulare, Madera and Kings Counties, contact <a href="http://www.fresnolibrary.org/tblb/index.html">Fresno County Public Library</a>.
+                                        </p>
+                                        <p>
+                                            In Southern California, contact <a href="http://www.braillelibrary.org/">Braille Institute Library</a>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading5'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>Contact Us</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            For information about California State Library services and collections, please contact the Information Services Section, Monday through Friday, 9:30 a.m. to 4:00 p.m., 
+                                            by telephone: <a href="tel:+19166540261">916-654-0261</a>, 
+                                            or by email: <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="third animate-fadeInUp">
+                        <img src="~/Content/StateTemplate/images/services/borrowing/library_card_catalog.png" alt="Library Card Catalog" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

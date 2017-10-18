@@ -1,11 +1,61 @@
-﻿
-@{
-    ViewBag.Title = "Hayden";
+﻿@{
+    ViewBag.Title = "CSL - A Discussion with Senator Tom Hayden";
+    ViewBag.PageTitle = "A Discussion with Tom Hayden";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "State Librarian Greg Lucas interviews former State Senator Tom Hayden about his life and time in the State Legislature.";
+    ViewBag.Keywords = "Senator Tom Hayden, Discussion";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Hayden</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/collections/online-exhibits">Online Exhibits</a></li>
+                    <li>Hayden</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <p>
+                        Tom Hayden (1930-2016), civil rights and anti-war activist turned California lawmaker, spoke with California State Librarian Greg Lucas in June 2016.
+                        The conversation begins with his transformation from a political outsider in the South during the 1960s civil rights movement to his work reporting on Jerry Brown's gubernatorial campaign in 1974 for 
+                        <a href="http://www.rollingstone.com/politics/news/the-mystic-and-the-machine-19741219">Rolling Stone magazine</a>, his bid for U.S. senator from California in 1976, and subsequently his election to the California Assembly (1982-1992) and State Senate (1992-2000). 
+                        Joining Hayden and Lucas in the interview is Larry Levin, longtime Hayden associate and retired communications director for state senator Loni Hancock. 
+                        The video runs 71 minutes.
+                    </p>
+
+                    <p>
+                        For more information on Tom Hayden's run for the U.S. Senate and his time in the California State Assembly and Senate, take a look at these two documents:
+                    </p>
+
+                    <ul class="list-overstated">
+                        <li><a href="~/Content/StateTemplate/pdf/Collections/Online-Exhibits/MakeTheFutureOurs_sm.pdf">Make The Future Ours </a>(PDF) – A Campaign booklet on why Tom was running for the U.S. Senate</li>
+                        <li><a href="~/Content/StateTemplate/pdf/Collections/Online-Exhibits/BattlesWonBattlesLostBattleOn!.pdf">Battles Won Battles Lost Battle On! </a>(PDF) – A review of Tom's 17 years' service in the California State Legislature</li>
+                    </ul>
+
+                    <p>
+                        The video below: California State Librarian Greg Lucas chats with the late Tom Hayden about his start in the California political landscape in the 1960s and 1970s.
+                    </p>
+
+                    <div class="today-img">
+                        <iframe class="blue-video" src="https://www.youtube.com/embed/WSPHAsJOPzM" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

@@ -1,11 +1,226 @@
-﻿
-@{
-    ViewBag.Title = "CaliforniaHistory";
+﻿@{
+    ViewBag.Title = "CSL - About Us - CA History Room";
+    ViewBag.PageTitle = "About the California History Section";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "Are you researching California? Then check out this overview of the California History Room, a one-stop research resource for California--past and present.";
+    ViewBag.Keywords = "California History Section, About Us";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>CaliforniaHistory</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li>California History</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <div class="two-thirds animate-fadeInUp">
+                        <p>
+                            The California History Section holds a premier collection of documents from and about California's rich history. 
+                            Our vaults house thousands of rare books, maps, newspapers, and periodicals in addition to a huge collection of one-of-a-kind photographs, letters, paintings, posters, pamphlets, and sheet music. 
+                            Regardless of whether you're a serious researcher, a fourth grader or an average person visiting Sacramento, we'll have a resource for you!
+                        </p>
+
+                        <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading1'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>What's New</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                    <div class='panel-body'>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading2'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>California History Collections</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                    <div class='panel-body'>
+                                        Accordion2content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading3'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Online Resources</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                    <div class='panel-body'>
+                                        Accordion3content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading4'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>California Genealogy Resources</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                                    <div class='panel-body'>
+                                        Accordion4content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading5'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>Research Guides</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                                    <div class='panel-body'>
+                                        Accordion5content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading6'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>California History Room Databases</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
+                                    <div class='panel-body'>
+                                        Accordion6content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading7'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse7' aria-expanded='false' aria-controls='collapse7'>Visiting and Events</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse7' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading7'>
+                                    <div class='panel-body'>
+                                        Accordion7content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading8'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse8' aria-expanded='false' aria-controls='collapse8'>Reproductions, Copyright and Fair Use</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse8' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading8'>
+                                    <div class='panel-body'>
+                                        Accordion8content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading9'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse9' aria-expanded='false' aria-controls='collapse9'>Exhibits and Displays</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse9' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading9'>
+                                    <div class='panel-body'>
+                                        Accordion9content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading10'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse10' aria-expanded='false' aria-controls='collapse10'>Donations</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse10' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading10'>
+                                    <div class='panel-body'>
+                                        Accordion10content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading11'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse11' aria-expanded='false' aria-controls='collapse11'>Other Web Resources</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse11' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading11'>
+                                    <div class='panel-body'>
+                                        Accordion11content
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading12'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse12' aria-expanded='false' aria-controls='collapse12'>Contact the California History Section</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse12' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading12'>
+                                    <div class='panel-body'>
+                                        Accordion12content
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="third animate-fadeInUp">
+                        <div class="autoLoop carousel owl-carousel carousel-content">
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/CaliforninaHistory/eureka_winery.png" alt="Eureka Winery" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/CaliforninaHistory/ca_this_summer.png" alt="California This Summer" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/CaliforninaHistory/ca_pioneers_song.png" alt="California Pioneers Song" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/CaliforninaHistory/miners_coat_arms.png" alt="Miners Coat Arms" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/CaliforninaHistory/sacramento_capital.png" alt="Sacramento Capitol Building" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/CaliforninaHistory/southern_pacific.png" alt="Souther Pacific Poster" />
+                            </div>
+
+                            <div class="item">
+                                <img src="~/Content/StateTemplate/images/caliorniaHistory/CaliforninaHistory/the_barometer.png" alt="The Barometer" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

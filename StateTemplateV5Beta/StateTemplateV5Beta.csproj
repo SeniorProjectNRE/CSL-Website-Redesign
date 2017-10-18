@@ -312,6 +312,13 @@
     <Content Include="Content\StateTemplate\images\CAGoldRush\section9.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\banquet.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\bouquet.jpg" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\CaliforninaHistory\ca_pioneers_song.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\CaliforninaHistory\ca_this_summer.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\CaliforninaHistory\eureka_winery.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\CaliforninaHistory\miners_coat_arms.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\CaliforninaHistory\sacramento_capital.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\CaliforninaHistory\southern_pacific.png" />
+    <Content Include="Content\StateTemplate\images\caliorniaHistory\CaliforninaHistory\the_barometer.png" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\camp.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\collections\c_book_over.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\collections\c_ephemera_over.jpg" />
@@ -500,6 +507,7 @@
     <Content Include="Content\StateTemplate\images\icons\symbol.png" />
     <Content Include="Content\StateTemplate\images\icons\talkingbooks.png" />
     <Content Include="Content\StateTemplate\images\icons\tours.png" />
+    <Content Include="Content\StateTemplate\images\services\borrowing\library_card_catalog.png" />
     <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
     <Content Include="Content\StateTemplate\images\services\PublicServices.png" />
     <Content Include="Content\StateTemplate\images\sutro-images\ASutro.jpg" />
@@ -1272,6 +1280,8 @@
     <Content Include="Content\StateTemplate\otherDocuments\services\BTBL_PatronHandbookFINALrev2015.pdf" />
     <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.brf" />
     <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.zip" />
+    <Content Include="Content\StateTemplate\pdf\Collections\Online-Exhibits\BattlesWonBattlesLostBattleOn!.pdf" />
+    <Content Include="Content\StateTemplate\pdf\Collections\Online-Exhibits\MakeTheFutureOurs_sm.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <Content Include="Content\StateTemplate\pdf\crb\Newsletters\20170104.pdf" />
