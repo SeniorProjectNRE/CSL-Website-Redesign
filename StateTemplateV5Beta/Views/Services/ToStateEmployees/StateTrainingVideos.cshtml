@@ -1,11 +1,95 @@
 ﻿
 @{
-    ViewBag.Title = "StateTrainingVideos";
+    ViewBag.Title = "CSL - State Workforce Training Collection";
+    ViewBag.PageTitle = "State Workforce Training Collection";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "An extensive collection of books, videos, civil service exam study guides and other training materials on interviewing skills, supervision, motivation, communication skills, management techniques, teamwork, presentations, and many other workplace topics.";
+    ViewBag.Keywords = "California, state, Library, state, workforce, training, video, collection";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>StateTrainingVideos</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/to-state-employees">To State Employees</a></li>
+                    <li>State Training Videos</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+            </div>
+            <div class="container">
+                <p>
+                The California State Library supports the State training community in its efforts to educate and develop the State workforce. We are committed to providing trainers and other workforce leaders with access to an extensive collection of books, videos, civil service exam study guides and other training materials on interviewing skills, supervision, motivation, communication skills, management techniques, teamwork, presentations, and many other workplace topics.
+                </p>
+                <br />
+                <h3>Titles in the Collection</h3>
+                <ul>
+                    <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local_base=csl01pub&amp;ccl_term=WRD+=+dto" target="_blank">Videos in our Online Catalog</a></li>
+                    <li><a href="~/Content/StateTemplate/pdf/services/toStateEmployees/stateTrainingVideos/CSLVideosA-Z.pdf" target="_blank">Training videos (A-Z) </a>(PDF)</li>
+                    <li><a title="pdf" href="~/Content/StateTemplate/pdf/services/toStateEmployees/stateTrainingVideos/CSLVideos_by_Topic.pdf" target="_blank">Training videos (By Topic)</a> (PDF)</li>
+                    <li><a href="~/Content/StateTemplate/pdf/services/toStateEmployees/stateTrainingVideos/StudyGuides.pdf" target="_blank">Civil Service Exam Study Guides (A-Z list) </a>(PDF)</li>
+                    <li><a href="http://proquestcombo.safaribooksonline.com/" target="_blank">Safari Tech Books Online</a></li>
+                    <li><a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank">Journal articles online</a></li>
+                </ul>
+                <br />
+                <h3>Borrowing Books and Training Videos</h3>
+                <!-- TODO: Library card: needs new view. -->
+                <p>
+                    State employees who have a <a href="https://www.library.ca.gov/about/card/default.aspx" target="_blank">California State Library card</a> can borrow books, journals, videos, civil service exam study guides and other items from the library's collections.
+                </p>
+                <p>
+                    We also require a signed <a href="~/Content/StateTemplate/pdf/services/toStateEmployees/stateTrainingVideos/VideoAgreement.pdf" target="_blank">Training Video Loan Agreement</a> in order to borrow training videos. Please see our <a href="~/Content/StateTemplate/pdf/services/toStateEmployees/stateTrainingVideos/FAQs_on_Borrowing_Training_Videos.pdf" target="_blank">FAQ's on Borrowing Training Videos</a> for further information.
+                </p>
+                <br />
+                <h3>Additional Resources</h3>
+                <p>
+                    <a href="http://www.calhr.ca.gov/Training/Pages/training-officers-meetings.aspx" target="_blank">California Network of Learning Professionals</a> is a supportive alliance of learning professionals collaboratively networking to provide the California state workforce effective and timely learning solutions.
+                </p>
+                <br />
+                <div class="panel panel-understated">
+                    <div class="panel-heading">
+                        <h3>Contact Us</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="group">
+                            <div class="half">
+                                <div class="container">
+                                    <p>
+                                        California State Library<br />
+                                        Information Services<br />
+                                        P.O. Box 942837<br />
+                                        Sacramento, CA 94237-0001
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="container">
+                                    <p>
+                                        <span class="ca-gov-icon-phone"></span> (916) 654-0261, menu option 1<br />
+                                        <span class="ca-gov-icon-email"></span> Email: <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a><br />
+                                        <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">Ask A Librarian</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 </div>
 

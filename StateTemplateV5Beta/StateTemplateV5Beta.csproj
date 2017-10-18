@@ -1273,6 +1273,11 @@
     <Content Include="Content\StateTemplate\otherDocuments\services\BTBL_PatronHandbookFINALrev2015.pdf" />
     <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.brf" />
     <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.zip" />
+    <Content Include="Content\StateTemplate\pdf\services\toStateEmployees\stateTrainingVideos\CSLVideosA-Z.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toStateEmployees\stateTrainingVideos\CSLVideos_by_Topic.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toStateEmployees\stateTrainingVideos\StudyGuides.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toStateEmployees\stateTrainingVideos\FAQs_on_Borrowing_Training_Videos.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toStateEmployees\stateTrainingVideos\VideoAgreement.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <Content Include="Content\StateTemplate\pdf\crb\Newsletters\20170104.pdf" />
