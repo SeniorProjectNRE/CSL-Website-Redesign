@@ -111,7 +111,11 @@ namespace StateTemplateV5Beta.Controllers.Grants
             List<GrantNumberModel> NumberList = _grantsService.GetAllGrantIDs(grantID, year, library, project, award);
             List<GrantProjectModel> ProjectList = _grantsService.GetAllProjects(grantID, year, library, project, award);
             List<GrantYearModel> YearList = _grantsService.GetAllYears(grantID, year, library, project, award);
-            List<String> ListValues = _grantsService.GetListValues(NumberList);
+            List<String> NumListValues = _grantsService.GetNumListValues(NumberList);
+            List<int> AwardListValues = _grantsService.GetAwardListValues(AwardList);
+            List<String> ProjectListValues = _grantsService.GetProjectListValues(ProjectList);
+            List<String> LibraryListValues = _grantsService.GetLibrariesListValues(LibraryList);
+            List<String> YearListValues = _grantsService.GetYearListValues(YearList);
 
             GrantsViewModel viewModel = new GrantsViewModel()
             {
@@ -121,7 +125,11 @@ namespace StateTemplateV5Beta.Controllers.Grants
                 GrantNumberList = NumberList,
                 GrantProjectList = ProjectList,
                 GrantYearList = YearList,
-                GetListValues = ListValues
+                GetNumListValues = NumListValues,
+                GetAwardListValues = AwardListValues,
+                GetLibrariesListValues = LibraryListValues,
+                GetProjectListValues = ProjectListValues,
+                GetYearListValues = YearListValues
             };
 
             return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", viewModel);

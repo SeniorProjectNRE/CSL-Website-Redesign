@@ -51,12 +51,56 @@ namespace CSLBusinessLayer.Concrete
             return _dataAccess.GetYear(grantNum, year, library, project, award);
         }
 
-        public List<string> GetListValues(List<GrantNumberModel> model)
+        public List<int> GetAwardListValues(List<GrantAwardModel> model)
+        {
+            List<int> res = new List<int>();
+            foreach (var item in model)
+            {
+                int value = (int)item.Award;
+                res.Add(value);
+            }
+            return res;
+        }
+
+        public List<string> GetLibrariesListValues(List<GrantLibraryModel> model)
+        {
+            List<string> res = new List<string>();
+            foreach (var item in model)
+            {
+                string value = item.Library;
+                res.Add(value);
+            }
+            return res;
+        }
+
+        public List<string> GetNumListValues(List<GrantNumberModel> model)
         {
             List<string> res = new List<string>();
             foreach (var item in model)
             {
                 string value = item.GrantID;
+                res.Add(value);
+            }
+            return res;
+        }
+
+        public List<string> GetProjectListValues(List<GrantProjectModel> model)
+        {
+            List<string> res = new List<string>();
+            foreach (var item in model)
+            {
+                string value = item.Project;
+                res.Add(value);
+            }
+            return res;
+        }
+
+        public List<string> GetYearListValues(List<GrantYearModel> model)
+        {
+            List<string> res = new List<string>();
+            foreach (var item in model)
+            {
+                string value = item.Year;
                 res.Add(value);
             }
             return res;

@@ -17,7 +17,10 @@ namespace CSLBusinessLayer.Interface
         List<GrantLibraryModel> GetAllLibraries(string grantNum, string year, string library, string project, int award);
         List<GrantYearModel> GetAllYears(string grantNum, string year, string library, string project, int award);
         List<GrantNumberModel> GetAllGrantIDs(string grantNum, string year, string library, string project, int award);
-        List<string> GetListValues(List<GrantNumberModel> model);
-
+        List<string> GetNumListValues(List<GrantNumberModel> model);
+        List<int> GetAwardListValues(List<GrantAwardModel> model);
+        List<string> GetProjectListValues(List<GrantProjectModel> model);
+        List<string> GetLibrariesListValues(List<GrantLibraryModel> model);
+        List<string> GetYearListValues(List<GrantYearModel> model);
     }
 }

@@ -19,14 +19,22 @@
 
         <div class="section section-overstated">
             <div class="container">
-                @Html.DropDownListFor(m => m.GetListValues, new SelectList(Model.GetListValues, "GrantID"))
+                <h2 class="page-title">PreviousGrantAwards</h2>
+                <button type="submit" id="submit">Generate</button>
+                <div class="group">
+                    @Html.DropDownListFor(m => m.GetNumListValues, new SelectList(Model.GetNumListValues, "GrantID"))
+                    @Html.DropDownListFor(m => m.GetYearListValues, new SelectList(Model.GetYearListValues, "Year"))
+                    @Html.DropDownListFor(m => m.GetLibrariesListValues, new SelectList(Model.GetLibrariesListValues, "Library"))
+                    @Html.DropDownListFor(m => m.GetProjectListValues, new SelectList(Model.GetProjectListValues, "Project"))
+                    @Html.DropDownListFor(m => m.GetAwardListValues, new SelectList(Model.GetAwardListValues, "Award"))
+                </div>
             </div>
+
         </div>
 
         <div class="section">
             <div class="container">
-                <h2>PreviousGrantAwards</h2>
-                <button type="submit" id="submit">Generate</button>
+                
 
                 <table id="grantsData">
                     <thead>
