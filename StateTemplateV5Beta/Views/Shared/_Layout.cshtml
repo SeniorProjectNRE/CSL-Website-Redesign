@@ -32,7 +32,6 @@
 	<!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
 
-	@Styles.Render("~/Content/stateTemplateCss")
 
 	<!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
 	<!--[if (lt IE 9) & (!IEMobile)]>
@@ -41,6 +40,10 @@
 
 
 	@Scripts.Render("~/bundles/stateTemplateLibJs")
+    @Styles.Render("~/Content/stateTemplateCss")
+
+
+
 
 	<!-- For iPad 3-->
 	<link rel="apple-touch-icon" sizes="144x144" href="~/Content/StateTemplate/images/template2014/apple-touch-icon-144x144.png">

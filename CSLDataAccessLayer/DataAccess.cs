@@ -43,11 +43,17 @@ namespace CSLDataAccessLayer
             SqlCommand cmd = new SqlCommand("[dbo].[uspSeeAllGrants]", conn);
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.AddWithValue("@grantNum", grantNum);
-            cmd.Parameters.AddWithValue("@year", year);
-            cmd.Parameters.AddWithValue("@library", library);
-            cmd.Parameters.AddWithValue("@project", project);
-            cmd.Parameters.AddWithValue("@award", award);
+            if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
+            if (year != null) { cmd.Parameters.AddWithValue("@YearFilter", year); }
+            if (library != null) { cmd.Parameters.AddWithValue("@LibraryFilter", library); }
+            if (project != null) { cmd.Parameters.AddWithValue("@ProjectFilter", project); }
+            if (award <=7 && award >=0) { cmd.Parameters.AddWithValue("@AwardFilter", award); }
+
+            //cmd.Parameters.AddWithValue("@GrantFilter", grantNum);
+            //cmd.Parameters.AddWithValue("@YearFilter", year);
+            //cmd.Parameters.AddWithValue("@LibraryFilter", library);
+            //cmd.Parameters.AddWithValue("@ProjectFilter", project);
+            //cmd.Parameters.AddWithValue("@AwardFilter", award);
 
             conn.Open();
 
@@ -55,13 +61,13 @@ namespace CSLDataAccessLayer
             {
                 using (var reader = cmd.ExecuteReader())
                 {
-                    while (reader.Read())
-                    {
-                        grantAward = new GrantAwardModel();
-                        grantAward.Award = Convert.ToInt32(reader["Award"]);
-                        res.GrantAwardList.Add(grantAward);
-                    }
-                    reader.NextResult();
+                    //while (reader.Read())
+                    //{
+                    //    grantAward = new GrantAwardModel();
+                    //    grantAward.Award = Convert.ToInt32(reader["Award"]);
+                    //    res.GrantAwardList.Add(grantAward);
+                    //}
+                    //reader.NextResult();
 
                     while (reader.Read())
                     {
@@ -73,39 +79,38 @@ namespace CSLDataAccessLayer
                         grantsModel.Year = reader["Year"].ToString();
                         res.GrantGetAllList.Add(grantsModel);
                     }
-                    reader.NextResult();
 
-                    while (reader.Read())
-                    {
-                        grantLibrary = new GrantLibraryModel();
-                        grantLibrary.Library = reader["Library"].ToString();
-                        res.GrantLibraryList.Add(grantLibrary);
-                    }
-                    reader.NextResult();
+                    //while (reader.Read())
+                    //{
+                    //    grantLibrary = new GrantLibraryModel();
+                    //    grantLibrary.Library = reader["Library"].ToString();
+                    //    res.GrantLibraryList.Add(grantLibrary);
+                    //}
+                    //reader.NextResult();
 
-                    while (reader.Read())
-                    {
-                        grantNumber = new GrantNumberModel();
-                        grantNumber.GrantID = reader["GrantID"].ToString();
-                        res.GrantNumberList.Add(grantNumber);
-                    }
-                    reader.NextResult();
+                    //while (reader.Read())
+                    //{
+                    //    grantNumber = new GrantNumberModel();
+                    //    grantNumber.GrantID = reader["GrantID"].ToString();
+                    //    res.GrantNumberList.Add(grantNumber);
+                    //}
+                    //reader.NextResult();
 
-                    while (reader.Read())
-                    {
-                        grantProject = new GrantProjectModel();
-                        grantProject.Project = reader["Project"].ToString();
-                        res.GrantProjectList.Add(grantProject);
-                    }
-                    reader.NextResult();
+                    //while (reader.Read())
+                    //{
+                    //    grantProject = new GrantProjectModel();
+                    //    grantProject.Project = reader["Project"].ToString();
+                    //    res.GrantProjectList.Add(grantProject);
+                    //}
+                    //reader.NextResult();
 
-                    while (reader.Read())
-                    {
-                        grantYear = new GrantYearModel();
-                        grantYear.Year = reader["Year"].ToString();
-                        res.GrantYearList.Add(grantYear);
-                    }
-                    reader.NextResult();
+                    //while (reader.Read())
+                    //{
+                    //    grantYear = new GrantYearModel();
+                    //    grantYear.Year = reader["Year"].ToString();
+                    //    res.GrantYearList.Add(grantYear);
+                    //}
+                    //reader.NextResult();
 
                 }
             }

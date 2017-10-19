@@ -7,12 +7,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using CSLBusinessObjects.ViewModels;
+using CSLBusinessLayer.Interface;
 
 namespace CSLBusinessLayer.Concrete
 {
-    class GrantsService
+    public class GrantsService : IGrantsService
     {
         private IDataAccess _dataAccess;
+
 
         public GrantsService(IDataAccess DataAccess)
         {

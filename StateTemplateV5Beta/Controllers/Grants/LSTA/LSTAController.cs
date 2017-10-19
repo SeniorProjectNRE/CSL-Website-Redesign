@@ -102,7 +102,13 @@ namespace StateTemplateV5Beta.Controllers.Grants
             GrantsModel grants = new GrantsModel { GrantID = "40-7600", Year = "2010/2011", Library = "Alameda County Library", Project = "Ashland READS", Award = 4 };
             List < GrantsModel > grantList = new List<GrantsModel>();
             grantList.Add(grants);
-            GrantsViewModel viewModel = new GrantsViewModel() { GrantGetAllList = grantList };
+            string grantID = null;
+            string year = null;
+            string library = null;
+            string project = null;
+            int award = 4;
+            //GrantsViewModel viewModel = new GrantsViewModel() { GrantGetAllList = grantList };
+            GrantsViewModel viewModel = _grantsService.GetAllGrants(grantID, year, library, project, award);
 
             return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", viewModel);
         }
