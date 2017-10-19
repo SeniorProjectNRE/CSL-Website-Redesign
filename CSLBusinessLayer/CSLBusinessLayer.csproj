@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Concrete\GrantsService.cs" />
+    <Compile Include="Interface\IGrantsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,14 +53,8 @@
       <Project>{375216ec-3d17-4540-9cd2-b6f693e4efc8}</Project>
       <Name>CSLDataAccessLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\StateTemplateV5Beta\StateTemplateV5Beta.csproj">
-      <Project>{fafb0cb7-7922-4bdd-af3a-eaccd37d431c}</Project>
-      <Name>StateTemplateV5Beta</Name>
-    </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interface\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>

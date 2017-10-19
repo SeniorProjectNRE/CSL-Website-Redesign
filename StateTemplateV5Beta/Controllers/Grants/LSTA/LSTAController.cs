@@ -1,5 +1,9 @@
-﻿using System;
+﻿using CSLBusinessLayer.Interface;
+using CSLBusinessObjects.Models;
+using CSLBusinessObjects.ViewModels;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -9,6 +13,18 @@ namespace StateTemplateV5Beta.Controllers.Grants
     [RoutePrefix("grants/lsta")]
     public class LSTAController : Controller
     {
+        private IGrantsService _grantsService;
+
+        public LSTAController()
+        {
+
+        }
+
+        public LSTAController(IGrantsService grantsService)
+        {
+            _grantsService = grantsService;
+        }
+
         // GET: LSTA
         [Route("")]
         public ActionResult Index()
@@ -83,7 +99,47 @@ namespace StateTemplateV5Beta.Controllers.Grants
         [Route("previous-grant-awards")]
         public ActionResult PreviousGrantAwards()
         {
-            return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml");
+            GrantsModel grants = new GrantsModel { GrantID = "40-7600", Year = "2010/2011", Library = "Alameda County Library", Project = "Ashland READS", Award = 4 };
+            List < GrantsModel > grantList = new List<GrantsModel>();
+            grantList.Add(grants);
+            string grantID = null;
+            string year = null;
+            string library = null;
+            string project = null;
+            int award = 4;
+            //GrantsViewModel viewModel = new GrantsViewModel() { GrantGetAllList = grantList };
+            GrantsViewModel viewModel = _grantsService.GetAllGrants(grantID, year, library, project, award);
+
+            return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", viewModel);
+        }
+
+        // Post
+        [HttpPost]
+        public ActionResult PreviousGrantAwards(GrantsViewModel model)
+        {
+            //decimal principle = Convert.ToDecimal(Request["txtAmount"].ToString());
+            string grantID = "40-7600";
+            string year = "2010/2011";
+            string library = "Alameda County Library";
+            string project = "Ashland READS";
+            int award = 4;
+
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (!ModelState.IsValid)
+            {
+                
+                return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", model);
+            }
+
+            model = _grantsService.GetAllGrants(grantID, year, library, project, award);
+
+            List<GrantsModel> grantModel = model.GrantGetAllList;
+
+            return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", grantModel);
         }
 
         // GET: staff-innovation
