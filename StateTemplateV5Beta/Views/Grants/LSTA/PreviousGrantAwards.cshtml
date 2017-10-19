@@ -16,6 +16,13 @@
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
+
+        <div class="section section-overstated">
+            <div class="container">
+                @Html.DropDownListFor(m => m.GetListValues, new SelectList(Model.GetListValues, "GrantID"))
+            </div>
+        </div>
+
         <div class="section">
             <div class="container">
                 <h2>PreviousGrantAwards</h2>

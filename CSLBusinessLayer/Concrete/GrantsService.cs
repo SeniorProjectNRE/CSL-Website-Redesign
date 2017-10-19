@@ -21,34 +21,45 @@ namespace CSLBusinessLayer.Concrete
             _dataAccess = DataAccess;
         }
 
-        public GrantsViewModel GetAllAwards(string grantNum, string year, string library, string project, int award)
+        public List<GrantAwardModel> GetAllAwards(string grantNum, string year, string library, string project, int award)
         {
             return _dataAccess.GetAward(grantNum, year, library, project, award);
         }
 
-        public GrantsViewModel GetAllGrantIDs(string grantNum, string year, string library, string project, int award)
+        public List<GrantNumberModel> GetAllGrantIDs(string grantNum, string year, string library, string project, int award)
         {
             return _dataAccess.GetGrantNumber(grantNum, year, library, project, award);
         }
 
-        public GrantsViewModel GetAllGrants(string grantNum, string year, string library, string project, int award)
+        public List<GrantsModel> GetAllGrants(string grantNum, string year, string library, string project, int award)
         {
             return _dataAccess.GetAllGrants(grantNum, year, library, project, award);
         }
 
-        public GrantsViewModel GetAllLibraries(string grantNum, string year, string library, string project, int award)
+        public List<GrantLibraryModel> GetAllLibraries(string grantNum, string year, string library, string project, int award)
         {
             return _dataAccess.GetLibrary(grantNum, year, library, project, award);
         }
 
-        public GrantsViewModel GetAllProjects(string grantNum, string year, string library, string project, int award)
+        public List<GrantProjectModel> GetAllProjects(string grantNum, string year, string library, string project, int award)
         {
             return _dataAccess.GetProject(grantNum, year, library, project, award);
         }
 
-        public GrantsViewModel GetAllYears(string grantNum, string year, string library, string project, int award)
+        public List<GrantYearModel> GetAllYears(string grantNum, string year, string library, string project, int award)
         {
             return _dataAccess.GetYear(grantNum, year, library, project, award);
+        }
+
+        public List<string> GetListValues(List<GrantNumberModel> model)
+        {
+            List<string> res = new List<string>();
+            foreach (var item in model)
+            {
+                string value = item.GrantID;
+                res.Add(value);
+            }
+            return res;
         }
     }
 }

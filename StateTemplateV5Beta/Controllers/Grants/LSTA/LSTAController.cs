@@ -99,16 +99,30 @@ namespace StateTemplateV5Beta.Controllers.Grants
         [Route("previous-grant-awards")]
         public ActionResult PreviousGrantAwards()
         {
-            GrantsModel grants = new GrantsModel { GrantID = "40-7600", Year = "2010/2011", Library = "Alameda County Library", Project = "Ashland READS", Award = 4 };
-            List < GrantsModel > grantList = new List<GrantsModel>();
-            grantList.Add(grants);
             string grantID = null;
             string year = null;
             string library = null;
             string project = null;
-            int award = 4;
-            //GrantsViewModel viewModel = new GrantsViewModel() { GrantGetAllList = grantList };
-            GrantsViewModel viewModel = _grantsService.GetAllGrants(grantID, year, library, project, award);
+            int award = 0;
+
+            List<GrantsModel> AllList = _grantsService.GetAllGrants(grantID, year, library, project, award);
+            List<GrantAwardModel> AwardList = _grantsService.GetAllAwards(grantID, year, library, project, award);
+            List<GrantLibraryModel> LibraryList = _grantsService.GetAllLibraries(grantID, year, library, project, award);
+            List<GrantNumberModel> NumberList = _grantsService.GetAllGrantIDs(grantID, year, library, project, award);
+            List<GrantProjectModel> ProjectList = _grantsService.GetAllProjects(grantID, year, library, project, award);
+            List<GrantYearModel> YearList = _grantsService.GetAllYears(grantID, year, library, project, award);
+            List<String> ListValues = _grantsService.GetListValues(NumberList);
+
+            GrantsViewModel viewModel = new GrantsViewModel()
+            {
+                GrantGetAllList = AllList,
+                GrantAwardList = AwardList,
+                GrantLibraryList = LibraryList,
+                GrantNumberList = NumberList,
+                GrantProjectList = ProjectList,
+                GrantYearList = YearList,
+                GetListValues = ListValues
+            };
 
             return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", viewModel);
         }
@@ -134,8 +148,6 @@ namespace StateTemplateV5Beta.Controllers.Grants
                 
                 return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", model);
             }
-
-            model = _grantsService.GetAllGrants(grantID, year, library, project, award);
 
             List<GrantsModel> grantModel = model.GrantGetAllList;
 
