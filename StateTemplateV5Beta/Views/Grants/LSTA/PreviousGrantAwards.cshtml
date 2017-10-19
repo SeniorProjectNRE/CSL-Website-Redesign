@@ -16,34 +16,38 @@
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>PreviousGrantAwards</h2>
-        <button type="submit" id="submit">Generate</button>
+        <div class="section">
+            <div class="container">
+                <h2>PreviousGrantAwards</h2>
+                <button type="submit" id="submit">Generate</button>
 
-        <table id="grantsData">
-            <thead>
-                <tr>
-                    <th>Grant#</th>
-                    <th>Year</th>
-                    <th>Library</th>
-                    <th>Project</th>
-                    <th>Award</th>
-                    <th>Narrative</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model.GrantGetAllList)
-                {
-                    <tr>
-                        <td>@item.GrantID</td>
-                        <td>@item.Year</td>
-                        <td>@item.Library</td>
-                        <td>@item.Project</td>
-                        <td>@item.Award</td>
-                        <td>row</td>
-                    </tr>
-                }
-            </tbody>   
-        </table>
+                <table id="grantsData">
+                    <thead>
+                        <tr>
+                            <th>Grant#</th>
+                            <th>Year</th>
+                            <th>Library</th>
+                            <th>Project</th>
+                            <th>Award</th>
+                            <th>Narrative</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.GrantGetAllList)
+                        {
+                            <tr>
+                                <td>@item.GrantID</td>
+                                <td>@item.Year</td>
+                                <td>@item.Library</td>
+                                <td>@item.Project</td>
+                                <td>@item.Award</td>
+                                <td>row</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
                 
             
     </main>

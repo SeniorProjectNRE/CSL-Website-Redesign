@@ -21,9 +21,34 @@ namespace CSLBusinessLayer.Concrete
             _dataAccess = DataAccess;
         }
 
+        public GrantsViewModel GetAllAwards(string grantNum, string year, string library, string project, int award)
+        {
+            return _dataAccess.GetAward(grantNum, year, library, project, award);
+        }
+
+        public GrantsViewModel GetAllGrantIDs(string grantNum, string year, string library, string project, int award)
+        {
+            return _dataAccess.GetGrantNumber(grantNum, year, library, project, award);
+        }
+
         public GrantsViewModel GetAllGrants(string grantNum, string year, string library, string project, int award)
         {
             return _dataAccess.GetAllGrants(grantNum, year, library, project, award);
+        }
+
+        public GrantsViewModel GetAllLibraries(string grantNum, string year, string library, string project, int award)
+        {
+            return _dataAccess.GetLibrary(grantNum, year, library, project, award);
+        }
+
+        public GrantsViewModel GetAllProjects(string grantNum, string year, string library, string project, int award)
+        {
+            return _dataAccess.GetProject(grantNum, year, library, project, award);
+        }
+
+        public GrantsViewModel GetAllYears(string grantNum, string year, string library, string project, int award)
+        {
+            return _dataAccess.GetYear(grantNum, year, library, project, award);
         }
     }
 }

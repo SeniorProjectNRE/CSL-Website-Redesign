@@ -12,11 +12,11 @@ namespace CSLDataAccessLayer
     public interface IDataAccess
     {
         #region Grants
-        void GetGrantNumber(string grantNum, string year, string library, string project, int award);
-        void GetYear(string grantNum, string year, string library, string project, int award);
-        void GetLibrary(string grantNum, string year, string library, string project, int award);
-        void GetProject(string grantNum, string year, string library, string project, int award);
-        void GetAward(string grantNum, string year, string library, string project, int award);
+        GrantsViewModel GetGrantNumber(string grantNum, string year, string library, string project, int award);
+        GrantsViewModel GetYear(string grantNum, string year, string library, string project, int award);
+        GrantsViewModel GetLibrary(string grantNum, string year, string library, string project, int award);
+        GrantsViewModel GetProject(string grantNum, string year, string library, string project, int award);
+        GrantsViewModel GetAward(string grantNum, string year, string library, string project, int award);
         //void GetCategory(string grantNum, string year, string library, string project, string category, int award);
         GrantsViewModel GetAllGrants(string grantNum, string year, string library, string project, int award);
         #endregion
