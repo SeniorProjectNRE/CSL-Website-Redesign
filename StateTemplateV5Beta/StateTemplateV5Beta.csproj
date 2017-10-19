@@ -245,6 +245,7 @@
     <Content Include="Content\StateTemplate\css\colorscheme-oceanside.css" />
     <Content Include="Content\StateTemplate\css\custom.css" />
     <Content Include="Content\StateTemplate\css\custom1.css" />
+    <Content Include="Content\StateTemplate\css\select2.min.css" />
     <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.bootstrap.css" />
     <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.bootstrap.min.css" />
     <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.bootstrap4.css" />
@@ -884,6 +885,7 @@
     <Content Include="Content\StateTemplate\js\libs\modernizr-extra.min.js" />
     <Content Include="Content\StateTemplate\js\libs\Plotly.js" />
     <Content Include="Content\StateTemplate\js\libs\respond.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\select2.min.js" />
     <Content Include="Content\StateTemplate\js\libs\selectivizr-min.js" />
     <Content Include="Content\StateTemplate\js\libs\typedarray.js" />
     <Content Include="Content\StateTemplate\js\search.js" />
