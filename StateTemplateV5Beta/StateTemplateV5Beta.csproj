@@ -82,6 +82,15 @@
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.MVC5.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -140,6 +149,9 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
     </Reference>
@@ -147,6 +159,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\About\AboutController.cs" />
     <Compile Include="Controllers\About\History\HistoryController.cs" />
@@ -222,6 +235,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\cards.css" />
     <Content Include="Content\Carousel.css" />
+    <Content Include="Content\StateTemplate\css\datatables.min.css" />
+    <Content Include="Content\StateTemplate\css\datatables.css" />
+    <Content Include="Content\StateTemplate\css\jquery.dataTables.min.css" />
     <Content Include="Content\StateTemplate\css\jquery.fancybox.min.css" />
     <Content Include="Content\StateTemplate\css\random.css" />
     <Content Include="Content\StateTemplate\css\cagov.core.css" />
@@ -229,6 +245,35 @@
     <Content Include="Content\StateTemplate\css\colorscheme-oceanside.css" />
     <Content Include="Content\StateTemplate\css\custom.css" />
     <Content Include="Content\StateTemplate\css\custom1.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.bootstrap.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.bootstrap.min.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.bootstrap4.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.foundation.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.foundation.min.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.jqueryui.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.jqueryui.min.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.semanticui.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.semanticui.min.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\css\jquery.dataTables.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\css\jquery.dataTables.min.css" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\images\sort_asc.png" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\images\sort_asc_disabled.png" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\images\sort_both.png" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\images\sort_desc.png" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\images\sort_desc_disabled.png" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\js\dataTables.bootstrap.js" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\js\dataTables.bootstrap.min.js" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\js\dataTables.bootstrap4.js" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\js\dataTables.foundation.js" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\js\dataTables.foundation.min.js" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\js\dataTables.jqueryui.js" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\js\dataTables.jqueryui.min.js" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\js\dataTables.semanticui.js" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\js\dataTables.semanticui.min.js" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\js\jquery.dataTables.js" />
+    <Content Include="Content\StateTemplate\DataTables-1.10.16\js\jquery.dataTables.min.js" />
     <Content Include="Content\StateTemplate\favicon.ico" />
     <Content Include="Content\StateTemplate\fonts\CaGov.svg" />
     <Content Include="Content\StateTemplate\fonts\glyphicons-halflings-regular.svg" />
@@ -827,9 +872,11 @@
     <Content Include="Content\StateTemplate\images\_notes\dwsync.xml" />
     <Content Include="Content\StateTemplate\js\libs\cagov.core.txt" />
     <Content Include="Content\StateTemplate\js\libs\d3.js" />
+    <Content Include="Content\StateTemplate\js\libs\datatables.min.js" />
     <Content Include="Content\StateTemplate\js\libs\html5shiv.min.js" />
     <Content Include="Content\StateTemplate\js\libs\icon-fonts-ie7.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery-1.11.1.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\jquery.dataTables.min.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery.eqheight.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery.fancybox.min.js" />
     <Content Include="Content\StateTemplate\js\libs\mapthat_script.js" />
@@ -1727,6 +1774,17 @@
       <Project>{da218437-5466-4559-bc7d-909299127c73}</Project>
       <Name>CSLBusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CSLBusinessObjects\CSLBusinessObjects.csproj">
+      <Project>{bf8d7be7-d333-4aa8-b599-ba59f0a5d52f}</Project>
+      <Name>CSLBusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSLDataAccessLayer\CSLDataAccessLayer.csproj">
+      <Project>{375216ec-3d17-4540-9cd2-b6f693e4efc8}</Project>
+      <Name>CSLDataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
