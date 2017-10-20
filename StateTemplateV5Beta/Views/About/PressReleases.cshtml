@@ -1,11 +1,328 @@
 ﻿
 @{
-    ViewBag.Title = "PressReleases";
+    ViewBag.Title = "CSL - Recent Press Releases from the California State Library";
+    ViewBag.PageTitle = " ";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Recent Press Releases from the California State Library";
+
 }
 
+<head>
+    <title>@(ViewBag.Title)</title>
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
 <div id="main-content" class="main-content">
+
     <main class="main-primary">
-        <h2>PressReleases</h2>
+
+        <div class="section">
+            <div class="container"> 
+                    <ol class="breadcrumb">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About Library</a></li>
+                        <li class="active">Press Releases</li>
+                    </ol>
+
+                
+
+                <h2 class="page-title">@ViewBag.Title</h2>
+
+                <div class="panel-group" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">2017</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <table class="table table-responsive table-bordered table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>2017, Sep. 12</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/CSL_Benetech_Partnership_Press_Release.pdf" target="_blank">pdf</a></td>
+                                            <td>Benetech Partners with California State Library to Bring Bookshare to Patrons who Read Differently</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, July 24</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/NACSLrelease8.9.17.pdf" target="_blank">pdf</a></td>
+                                            <td>Night at the State Library Presents: A Way Across the Mountain with Scott Stine, Wednesday, August 9, 2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, July 17</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/MediaAdvisory_JiangsuDelegationDonatesBooks-to-StateLibrary_7.24.17.pdf" target="_blank">pdf</a></td>
+                                            <td>State Library Hosts Vice Governor of Jiangsu Province, China, at public event on July 24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, June 15</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/Fine_Press_Release.pdf" target="_blank">pdf</a></td>
+                                            <td>For the Joy of Doing, New Exhibit at the State Library</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, June 12</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/Author_Talk_Release 6.20.17.pdf" target="_blank">pdf</a></td>
+                                            <td>Jersey Gold: The Newark Overland Company’s Trek to California, 1849 – A Lunchtime Author Talk with Margaret Casterline Bowen, June 20 at noon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, June 7</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/Virtual_Reality_Release.pdf" target="_blank">pdf</a></td>
+                                            <td>Virtual Reality Arrives in California Libraries</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, May 31</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/NACSL_Juneteenth_2017_Release.pdf" target="_blank">pdf</a></td>
+                                            <td>A Night at the State Library presents the 15th Annual Juneteenth Kick-off Reception, June 14, 5:30 – 7:30 p.m.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, May 2</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/CivilLibertiesGrantees2016-17PRESS-RELEASE.pdf" target="_blank">pdf</a></td>
+                                            <td>California Civil Liberties Projects Announced.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, Apr. 7</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/LibraryWeek2017release.pdf" target="_blank">pdf</a></td>
+                                            <td>National Library Week is April 9-15, 2017: Celebrate with the California State Library.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, Mar. 7</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/NACSLrelease3.15.17.pdf" target="_blank">pdf</a></td>
+                                            <td>The Important Role Women Play in Civic Engagement. Wednesday, March 15, 2017.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, Feb. 14</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/GoldenAgeOfBookIllustrationExhibit.pdf" target="_blank">pdf</a></td>
+                                            <td>"The Golden Age of Book Illustration" – new exhibit at CSUS Library Gallery features State Library collections</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, Feb. 13</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/AuthorTalkRelease2.22.17.pdf" target="_blank">pdf</a></td>
+                                            <td>The California State Library Presents: Employment for California's Adults with Autism in 2017, a Lunchtime Discussion with Michael Bernick and Dr. Louis A. Vismara, M.D.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, Feb. 2</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/CivilLibertiesPressReleaseFebruary2-2017.pdf" target="_blank">pdf</a></td>
+                                            <td>Grant Program for Civil Liberties Projects Now Open</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, Jan. 27</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/MuseumDayRelease2.4.17.pdf" target="_blank">pdf</a></td>
+                                            <td>California State Library to take part in the 19th Annual Sacramento Museum Day Saturday, February 4, 2016, 10 am – 5 pm.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, Jan. 15</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/DrKevinStarr_Release.pdf" target="_blank">pdf</a></td>
+                                            <td>The Death of Dr. Kevin Starr, State Librarian Emeritus.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017, Jan. 5</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/BTBL.exhibit.state.capitol.pdf" target="_blank">pdf</a></td>
+                                            <td>Braille and Talking Book Library Featured in Exhibit at the State Capitol, January 9-22, 2017.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2016</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <table class="table table-responsive table-bordered table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>2016, Nov. 28</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/WildfireLibraryGrants_release.pdf" target="_blank">pdf</a></td>
+                                            <td>California State Library provides funds for libraries hit hard by summer wildfires through federal Library Services and Technology Act.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Oct. 5</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/ChessmanForum_10.5.2016.pdf" target="_blank">pdf</a></td>
+                                            <td>State Library Hosts Forum On Caryl Chessman Case And Its Impact On The Death Penalty Debate.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Oct. 3</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/PAI_Grants_Release_2016-17.pdf" target="_blank">pdf</a></td>
+                                            <td>Local Public Libraries Receive More Than $1 million in Innovation Grants from the State.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Sep. 14</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/GoldenGate_Release_9.16.pdf" target="_blank">pdf</a></td>
+                                            <td>A Night at the State Library presents: Art and Architecture of the Golden Gate Bridge – An Insider's View</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Aug. 9</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/pat_canterbury_speak_at_csl.pdf" target="_blank">pdf</a></td>
+                                            <td>Local Author Patricia Canterbury to Speak at California State Library's Lunchtime Author Series.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, July 6</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/pr_070616.pdf" target="_blank">pdf</a></td>
+                                            <td>California on the Move – Air, Land and Sea: State Library Exhibit at the California State Fair.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, June 2</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/pr_060216_.pdf" target="_blank">pdf</a></td>
+                                            <td>A Night at the State Library Presents: Juneteenth Celebration of Freedom Reception, Thursday, June 16.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, May 27</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/treasures_exhibit_press_release_6.12.pdf" target="_blank">pdf</a></td>
+                                            <td>Out of the Vault: Treasures from your California State Library – New Exhibit at the State Capitol Museum.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, May 23</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/annette_kassis_speak.pdf" target="_blank">pdf</a></td>
+                                            <td>Prohibition in Sacramento: A Lunchtime Discussion with Local Author Annette Kassis.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, May 13</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/ShaheraHyatt_Release_5.16.pdf" target="_blank">pdf</a></td>
+                                            <td>A Night at the State Library presents: Homeless Youth – Challenges &amp; Solutions.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Apr. 18</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/TransportationExhibit_2016_Final.pdf" target="_blank">pdf</a></td>
+                                            <td>New exhibit at State Library: From Oxcarts to Airplanes: the story of transportation in California.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Apr. 4</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/pr_040416.pdf" target="_blank">pdf</a></td>
+                                            <td>The Maidu Museum and Historic Site, Wednesday, April 13, 2016.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Mar. 30</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/New_CLSB_member_appointed.pdf" target="_blank">pdf</a></td>
+                                            <td>Governor Brown Appoints Brandy Rose Buenafe to California Library Services Board.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Mar. 8</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/SashaAbramskyCSL.pdf" target="_blank">pdf</a></td>
+                                            <td>The California State Library Presents: A Special Noontime Discussion with Author/Journalist Sasha Abramsky on his Latest Book, <em>The House of Twenty Thousand Books</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Feb. 10</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/NACSL%202.10.16_r.pdf" target="_blank">pdf</a></td>
+                                            <td>A Night at the State Library Presents: "San Francisco Lithographer: African American Artist Grafton Tyler Brown" by Dr. Robert Chandler</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Feb. 8</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/Taormina_release_2.8.16.pdf" target="_blank">pdf</a></td>
+                                            <td>Special Collections Librarian Named Director of San Francisco's Sutro Library.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Feb. 5</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/Yosemite_photoexhibit_release.pdf" target="_blank">pdf</a></td>
+                                            <td>Yosemite Photography Exhibit Begins at the Public Policy Institute in San Francisco.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Feb. 3</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/NACSL 2.10.16_r.pdf" target="_blank">pdf</a></td>
+                                            <td><em>"San Francisco Lithographer: African American Artist Grafton Tyler Brown"</em> by Dr. Robert Chandler, Wednesday, February 10, 2016.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Jan. 26</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/pr_012616.pdf" target="_blank">pdf</a></td>
+                                            <td>California, Nevada and Washington create ground-breaking initiative to increase open data access through local libraries.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Jan. 15</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/pr_020616.pdf" target="_blank">pdf</a></td>
+                                            <td>California State Library to take part in the 18th Annual Sacramento Museum Day Saturday, February 6, 2016.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2016, Jan. 4</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/pr_040116.pdf" target="_blank">pdf</a></td>
+                                            <td>A Night at the State Library presents: Fortune to the Bold: How French Argonauts Struck it Rich in Gold Rush California, Wednesday, January 13.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">2015</a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <p>Special Collections Librarian Named Director of San Francisco’s Sutro Library</p>
+                                <table class="table table-responsive table-bordered table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>2015, Nov. 6</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/NACSL11.18.15.pdf" target="_blank">pdf</a></td>
+                                            <td>A Night at the State Library presents: Called to Action: California's Role in WWII, a joint program with the State Capitol Museum, Wednesday, November 18.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015, Sep. 25</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/TomKillion_Release_10.2015.pdf" target="_blank">pdf</a></td>
+                                            <td>A Night at the State Library presents an evening with printmaker Tom Killion, October 14, 2015.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015, Sep. 25</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/ArchivesCrawlRelease.pdf" target="_blank">pdf</a></td>
+                                            <td>State Library Treasures On View at Annual Archives Crawl, October 3.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015, Aug. 12</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/DAmbrosio_exhibit_release_8-12-15.pdf" target="_blank">pdf</a></td>
+                                            <td>Joe D'Ambrosio: The Book as an Art Form – New Exhibit at the State Library.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015, June 8</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/Juneteenth_2015_release.pdf" target="_blank">pdf</a></td>
+                                            <td>A Night at the State Library presents: Sacramento's 14th Annual Juneteenth Celebration of Freedom Kick-off Reception.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015, May 28</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/LightingUpLibraries.pdf" target="_blank">pdf</a></td>
+                                            <td>Lighting Up Libraries: High-speed Broadband in California Public Libraries.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015, Mar. 6</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/pr_060315.pdf" target="_blank">pdf</a></td>
+                                            <td>A Night at the State Library Presents Hidden Histories: Asians and Pacific Islanders in the U.S. Civil War, March 11, 2015.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015, Feb. 19</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/pr_150219.pdf" target="_blank">pdf</a></td>
+                                            <td>CalVet and the California State Library Announce Tulare Public Library Veteran Resource Center Opening.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015, Feb. 4</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/pr_150204.pdf" target="_blank">pdf</a></td>
+                                            <td>The California State Library in collaboration with First 5 California presents a Special Night at the State Library: The Raising of America: Early Childhood and the Future of Our Nation.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015, Jan. 9</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/pr_150109.pdf" target="_blank">pdf</a></td>
+                                            <td>A Night at the State Library presents Building the Central Pacific Railroad: A Photographic Journey.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015, Jan. 7</td>
+                                            <td><a href="~/Content/StateTemplate/pdf/pressreleases/pr_150107.pdf" target="_blank">pdf</a></td>
+                                            <td>"Governor Culbert Levy Olson – Past, Present and Future: A Statesman Ahead of His Time" – <br>A Special Appreciation By His Granddaughter, Debra Deanne Olson.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
     </main>
 </div>
-
