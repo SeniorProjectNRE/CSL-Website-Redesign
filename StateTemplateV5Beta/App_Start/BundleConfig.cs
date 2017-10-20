@@ -12,7 +12,7 @@ namespace StateTemplateV5Beta
                      "~/Content/StateTemplate/DataTables-1.10.16/js/jquery.dataTables.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/stateTemplateLibJs").Include(
-                     "~/Content/StateTemplate/js/libs/jquery-3.2.1.min.js", "~/Content/StateTemplate/js/libs/modernizr-2.0.6.min.js",
+                     "~/Content/StateTemplate/js/libs/modernizr-2.0.6.min.js",
                      "~/Content/StateTemplate/js/libs/modernizr-extra.min.js",
                      "~/Content/StateTemplate/js/libs/jquery.dataTables.min.js",
                      "~/Content/StateTemplate/js/libs/jquery.dataTables.rowReorder.min.js",
