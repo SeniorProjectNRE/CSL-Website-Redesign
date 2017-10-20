@@ -508,6 +508,14 @@
     <Content Include="Content\StateTemplate\images\csl_logo_big.png" />
     <Content Include="Content\StateTemplate\images\CSL_pic.png" />
     <Content Include="Content\StateTemplate\images\CSL_picj.jpg" />
+    <Content Include="Content\StateTemplate\images\exhibit\1.jpg" />
+    <Content Include="Content\StateTemplate\images\exhibit\1_001.jpg" />
+    <Content Include="Content\StateTemplate\images\exhibit\1_002.jpg" />
+    <Content Include="Content\StateTemplate\images\exhibit\2.jpg" />
+    <Content Include="Content\StateTemplate\images\exhibit\3.jpg" />
+    <Content Include="Content\StateTemplate\images\exhibit\4.jpg" />
+    <Content Include="Content\StateTemplate\images\exhibit\5.jpg" />
+    <Content Include="Content\StateTemplate\images\exhibit\6.jpg" />
     <Content Include="Content\StateTemplate\images\fancybox\blank.gif" />
     <Content Include="Content\StateTemplate\images\fancybox\fancybox_loading%402x.gif" />
     <Content Include="Content\StateTemplate\images\fancybox\fancybox_loading.gif" />
