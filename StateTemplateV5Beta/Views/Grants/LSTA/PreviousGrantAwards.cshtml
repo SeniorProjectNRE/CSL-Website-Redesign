@@ -1,80 +1,187 @@
 ﻿@model CSLBusinessObjects.ViewModels.GrantsViewModel
 
 @{
-    ViewBag.Title = "PreviousGrantAwards";
+    ViewBag.Title = "CSL - LSTA Grant Awards";
+    ViewBag.PageTitle = "All Grant Awards";
+    ViewBag.Author = "Matthew Loller";
+    ViewBag.Description = "All Grant Awards";
+    ViewBag.Keywords = "";
 }
 
 <head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
     <link href='~/Content/StateTemplate/css/select2.min.css' rel='stylesheet' type='text/css'>
     <script src='/Content/StateTemplate/js/libs/select2.min.js' type="text/javascript"></script>
     <style>
         select, input{
             color:black;
         }
+        #grantsData_filter label{
+            color:black;
+        }
+        #grantsData_length label {
+            color: black;
+        }
+
+        select {
+            width: 250px;
+            overflow: hidden;
+            white-space: pre;
+            text-overflow: ellipsis;
+            -webkit-appearance: none;
+        }
+
+        option {
+            border: solid 1px #DDDDDD;
+        }
     </style>
 </head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-
-        <div class="section section-overstated">
-            <div class="container">
-                <h2 class="page-title">PreviousGrantAwards</h2>
-                <button type="submit" id="submit">Generate</button>
-                <div class="group">
-                    @Html.DropDownListFor(m => m.GetNumListValues, new SelectList(Model.GetNumListValues, "GrantID"))
-                    @Html.DropDownListFor(m => m.GetYearListValues, new SelectList(Model.GetYearListValues, "Year"))
-                    @Html.DropDownListFor(m => m.GetLibrariesListValues, new SelectList(Model.GetLibrariesListValues, "Library"))
-                    @Html.DropDownListFor(m => m.GetProjectListValues, new SelectList(Model.GetProjectListValues, "Project"))
-                    @Html.DropDownListFor(m => m.GetAwardListValues, new SelectList(Model.GetAwardListValues, "Award"))
-                </div>
-            </div>
-
-        </div>
-
         <div class="section">
             <div class="container">
-                
 
-                <table id="grantsData">
-                    <thead>
-                        <tr>
-                            <th>Grant#</th>
-                            <th>Year</th>
-                            <th>Library</th>
-                            <th>Project</th>
-                            <th>Award</th>
-                            <th>Narrative</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model.GrantGetAllList)
-                        {
-                            <tr>
-                                <td>@item.GrantID</td>
-                                <td>@item.Year</td>
-                                <td>@item.Library</td>
-                                <td>@item.Project</td>
-                                <td>@item.Award</td>
-                                <td>row</td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/Grants">Grants</a></li>
+                    <li><a href="/Grants/LSTA">LSTA</a></li>
+                    <li>Previous Grant Awards</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <br />
+                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingy">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapsey" aria-expanded="true" aria-controls="collapsey">Instructions</a>
+                            </h3>
+                        </div>
+                        <div id="collapsey" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <h3>LSTA Grant Awards (2010 – )</h3>
+                                <p>
+                                    For grants awarded from 2013/2014, the following types of documents are available – grant application,
+                                    award letter, and a final narrative report (if available).  All documents are in PDF.
+                                    Documents for grants that were awarded prior to 2013/2014 will be added as they become available.
+                                </p>
+                                <br />
+                                <h3>Searching for a grant</h3>
+                                <div>
+                                    <p>
+                                        To find a grant, you select a filter from the options listed in the table below.  Only grants awarded
+                                        as of 2014/2015 can be searched by category.  You can sort your results by clicking on any of the column
+                                        headers:  Grant #, Year, Library, Project, or Award. To access the documents for each grant:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Click on the grant number to view the grant application;
+                                        </li>
+                                        <li>
+                                            Click on the award amount to view the award letter; and
+                                        </li>
+                                        <li>
+                                            Click on “Report” in the narrative column to view the final program narrative report. A report is not available for all the grants listed.  Reports will be added as they are received.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p>
+                                    <span style="font-weight: bold;">NOTE:</span> If you would like to see an original grant application or award letter that is not linked from this page, please contact
+                                    Mickie Potter at <a href="mailto:mickie.potter@library.ca.gov">mickie.potter@library.ca.gov</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-                
-            
-    </main>
+        
+                    <div class="section section-standout">
+                        <div class="container">
+                            <div class="group">
+                                @using (Html.BeginForm("PreviousGrantAwards", "LSTA", FormMethod.Post))
+                                {
+                                    <div class="form-group">
+                                        <div class="half">
+                                            @Html.LabelFor(m => m.GetNumListValues, "Grant Number:")
+                                            @Html.DropDownListFor(m => m.GetNumListValues, new SelectList(Model.GetNumListValues, "GrantID"))
+                                        </div>
+                                        <div class="half">
+                                            @Html.LabelFor(m => m.GetYearListValues, "Year:")
+                                            @Html.DropDownListFor(m => m.GetYearListValues, new SelectList(Model.GetYearListValues, "Year"))
+                                        </div>
+                                        <div class="half">
+                                            @Html.LabelFor(m => m.GetAwardListValues, "Award:")
+                                            @Html.DropDownListFor(m => m.GetAwardListValues, new SelectList(Model.GetAwardListValues, "Award"))
+                                        </div>
+                                        <div class="half">
+                                            @Html.LabelFor(m => m.GetLibrariesListValues, "Library:")
+                                            @Html.DropDownListFor(m => m.GetLibrariesListValues, new SelectList(Model.GetLibrariesListValues, "Library"))
+                                        </div>
+                                        <div class="half">
+                                            @Html.LabelFor(m => m.GetProjectListValues, "Project:")
+                                            @Html.DropDownListFor(m => m.GetProjectListValues, new SelectList(Model.GetProjectListValues, "Project"))
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="pull-right">
+                                            <input type="submit" value="Filter" />
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="section">
+                        <div class="container">
+
+
+                            <table id="grantsData">
+                                <thead>
+                                    <tr>
+                                        <th>Grant#</th>
+                                        <th>Year</th>
+                                        <th>Library</th>
+                                        <th>Project</th>
+                                        <th>Award</th>
+                                        <th>Narrative</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.GrantGetAllList)
+                                    {
+                                        <tr>
+                                            <td>@item.GrantID</td>
+                                            <td>@item.Year</td>
+                                            <td>@item.Library</td>
+                                            <td>@item.Project</td>
+                                            <td>@item.Award</td>
+                                            <td></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+</main>
 </div>
 
 <script>
     $(document).ready(function () {
-        var grantsTable = $('#grantsData').DataTable(
-            {
-                /*rowReorder: true  { selector: 'td:nth-child(2)' }, responsive: true*/
-            }
-        );
+        $('#grantsData').DataTable();
+        $('#GetNumListValues').select2();
+        $('#GetYearListValues').select2();
+        $('#GetAwardListValues').select2();
+        $('#GetLibrariesListValues').select2();
+        $('#GetProjectListValues').select2();
     });
 </script>
 
