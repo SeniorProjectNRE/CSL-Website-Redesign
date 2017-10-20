@@ -26,6 +26,8 @@ namespace StateTemplateV5Beta
                       "~/Content/StateTemplate/css/cagov.core.css",
                       "~/Content/StateTemplate/css/colorscheme-oceanside.css",
                       "~/Content/StateTemplate/css/bootstrap.min.css",
+                      "~/Content/StateTemplate/css/rowReorder.dataTables.min.css",
+                      "~/Content/StateTemplate/css/responsive.dataTables.min.css",
                       "~/Content/StateTemplate/DataTables-1.10.16/css/jquery.dataTables.min.css"));
         }
     }

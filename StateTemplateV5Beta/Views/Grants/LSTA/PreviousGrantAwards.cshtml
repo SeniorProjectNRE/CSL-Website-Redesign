@@ -107,25 +107,30 @@
                                 {
                                     <div class="form-group">
                                         <div class="half">
-                                            @Html.LabelFor(m => m.GetNumListValues, "Grant Number:")
+                                            @Html.LabelFor(m => m.GetNumListValues, "Grant #:")
                                             @Html.DropDownListFor(m => m.GetNumListValues, new SelectList(Model.GetNumListValues, "GrantID"))
                                         </div>
+                                        <div><br /></div>
                                         <div class="half">
                                             @Html.LabelFor(m => m.GetYearListValues, "Year:")
                                             @Html.DropDownListFor(m => m.GetYearListValues, new SelectList(Model.GetYearListValues, "Year"))
                                         </div>
+                                        <div><br /></div>
                                         <div class="half">
                                             @Html.LabelFor(m => m.GetAwardListValues, "Award:")
                                             @Html.DropDownListFor(m => m.GetAwardListValues, new SelectList(Model.GetAwardListValues, "Award"))
                                         </div>
+                                        <div><br /></div>
                                         <div class="half">
                                             @Html.LabelFor(m => m.GetLibrariesListValues, "Library:")
                                             @Html.DropDownListFor(m => m.GetLibrariesListValues, new SelectList(Model.GetLibrariesListValues, "Library"))
                                         </div>
+                                        <div><br /></div>
                                         <div class="half">
                                             @Html.LabelFor(m => m.GetProjectListValues, "Project:")
                                             @Html.DropDownListFor(m => m.GetProjectListValues, new SelectList(Model.GetProjectListValues, "Project"))
                                         </div>
+                                        <div><br /></div>
                                     </div>
                                     <div class="form-group">
                                         <div class="pull-right">
@@ -176,7 +181,7 @@
 
 <script>
     $(document).ready(function () {
-        $('#grantsData').DataTable();
+        var table = $('#grantsData').DataTable( { rowReorder: { selector: 'td:nth-child(2)' }, responsive: true});
         $('#GetNumListValues').select2();
         $('#GetYearListValues').select2();
         $('#GetAwardListValues').select2();
