@@ -14,7 +14,9 @@ namespace StateTemplateV5Beta
             bundles.Add(new ScriptBundle("~/bundles/stateTemplateLibJs").Include(
                      "~/Content/StateTemplate/js/libs/modernizr-2.0.6.min.js",
                      "~/Content/StateTemplate/js/libs/modernizr-extra.min.js",
-                     "~/Content/StateTemplate/js/libs/jquery.dataTables.min.js"));
+                     "~/Content/StateTemplate/js/libs/jquery.dataTables.min.js",
+                     "~/Content/StateTemplate/js/libs/jquery.dataTables.rowReorder.min.js",
+                     "~/Content/StateTemplate/js/libs/jquery.dataTables.responsive.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/stateTemplateJs").Include(
                      "~/Content/StateTemplate/js/cagov.core.js",

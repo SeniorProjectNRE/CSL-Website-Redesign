@@ -70,7 +70,11 @@
 
 <script>
     $(document).ready(function () {
-        $('#grantsData').DataTable();
+        var grantsTable = $('#grantsData').DataTable(
+            {
+                /*rowReorder: true  { selector: 'td:nth-child(2)' }, responsive: true*/
+            }
+        );
     });
 </script>
 

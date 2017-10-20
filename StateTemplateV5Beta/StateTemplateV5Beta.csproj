@@ -874,6 +874,8 @@
     <Content Include="Content\StateTemplate\js\libs\cagov.core.txt" />
     <Content Include="Content\StateTemplate\js\libs\d3.js" />
     <Content Include="Content\StateTemplate\js\libs\datatables.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\dataTables.responsive.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\dataTables.rowReorder.min.js" />
     <Content Include="Content\StateTemplate\js\libs\html5shiv.min.js" />
     <Content Include="Content\StateTemplate\js\libs\icon-fonts-ie7.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery-1.11.1.min.js" />
