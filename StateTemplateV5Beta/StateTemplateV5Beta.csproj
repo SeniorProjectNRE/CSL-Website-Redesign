@@ -245,6 +245,8 @@
     <Content Include="Content\StateTemplate\css\colorscheme-oceanside.css" />
     <Content Include="Content\StateTemplate\css\custom.css" />
     <Content Include="Content\StateTemplate\css\custom1.css" />
+    <Content Include="Content\StateTemplate\css\responsive.dataTables.min.css" />
+    <Content Include="Content\StateTemplate\css\rowReorder.dataTables.min.css" />
     <Content Include="Content\StateTemplate\css\select2.min.css" />
     <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.bootstrap.css" />
     <Content Include="Content\StateTemplate\DataTables-1.10.16\css\dataTables.bootstrap.min.css" />
@@ -874,6 +876,8 @@
     <Content Include="Content\StateTemplate\js\libs\cagov.core.txt" />
     <Content Include="Content\StateTemplate\js\libs\d3.js" />
     <Content Include="Content\StateTemplate\js\libs\datatables.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\dataTables.responsive.min.js" />
+    <Content Include="Content\StateTemplate\js\libs\dataTables.rowReorder.min.js" />
     <Content Include="Content\StateTemplate\js\libs\html5shiv.min.js" />
     <Content Include="Content\StateTemplate\js\libs\icon-fonts-ie7.js" />
     <Content Include="Content\StateTemplate\js\libs\jquery-1.11.1.min.js" />
@@ -1741,6 +1745,7 @@
     <Content Include="Views\Sutro\Genealogy\Calendar.cshtml" />
     <Content Include="Views\Services\ToLibraries\DevelopmentProgramsProjects\DevelopmentProgramsProjects.cshtml" />
     <Content Include="Views\Services\ToLibraries\DevelopmentProgramsProjects\ValueLibraries.cshtml" />
+    <Content Include="Views\About\Test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

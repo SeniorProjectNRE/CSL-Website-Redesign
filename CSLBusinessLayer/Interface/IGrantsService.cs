@@ -11,6 +11,16 @@ namespace CSLBusinessLayer.Interface
 {
     public interface IGrantsService
     {
-        GrantsViewModel GetAllGrants(string grantNum, string year, string library, string project, int award);
+        List<GrantsModel> GetAllGrants(string grantNum, string year, string library, string project, int award);
+        List<GrantAwardModel> GetAllAwards(string grantNum, string year, string library, string project, int award);
+        List<GrantProjectModel> GetAllProjects(string grantNum, string year, string library, string project, int award);
+        List<GrantLibraryModel> GetAllLibraries(string grantNum, string year, string library, string project, int award);
+        List<GrantYearModel> GetAllYears(string grantNum, string year, string library, string project, int award);
+        List<GrantNumberModel> GetAllGrantIDs(string grantNum, string year, string library, string project, int award);
+        List<string> GetNumListValues(List<GrantNumberModel> model);
+        List<int> GetAwardListValues(List<GrantAwardModel> model);
+        List<string> GetProjectListValues(List<GrantProjectModel> model);
+        List<string> GetLibrariesListValues(List<GrantLibraryModel> model);
+        List<string> GetYearListValues(List<GrantYearModel> model);
     }
 }

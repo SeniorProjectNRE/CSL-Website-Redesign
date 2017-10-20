@@ -16,5 +16,15 @@ namespace CSLBusinessObjects.ViewModels
         public List<GrantAwardModel> GrantAwardList { get; set; }
         public List<GrantCategoryModel> GrantCategoryList { get; set; }
         public List<GrantsModel> GrantGetAllList { get; set; }
+        public List<string> GetNumListValues { get; set; }
+        public List<int> GetAwardListValues { get; set; }
+        public List<string> GetProjectListValues { get; set; }
+        public List<string> GetLibrariesListValues { get; set; }
+        public List<string> GetYearListValues { get; set; }
+        public string SelectedGrantID { get; set; }
+        public int SelectedAward { get; set; }
+        public string SelectedProject { get; set; }
+        public string SelectedLibrary { get; set; }
+        public string SelectedYear { get; set; }
     }
 }

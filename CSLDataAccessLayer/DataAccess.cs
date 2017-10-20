@@ -20,25 +20,21 @@ namespace CSLDataAccessLayer
             _dbConnectionString = config.ConnectionString;
         }
 
-        public GrantsViewModel GetAllGrants(string grantNum, string year, string library, string project, int award)
+        public List<GrantsModel> GetAllGrants(string grantNum, string year, string library, string project, int award)
         {
-            GrantsViewModel res = new GrantsViewModel();
-            res.GrantAwardList = new List<GrantAwardModel>();
-            res.GrantCategoryList = new List<GrantCategoryModel>();
-            res.GrantGetAllList = new List<GrantsModel>();
-            res.GrantLibraryList = new List<GrantLibraryModel>();
-            res.GrantNumberList = new List<GrantNumberModel>();
-            res.GrantProjectList = new List<GrantProjectModel>();
-            res.GrantYearList = new List<GrantYearModel>();
-            GrantAwardModel grantAward;
-            GrantCategoryModel grantCategory;
+            List<GrantsModel> res = new List<GrantsModel>();
+            //res.GrantAwardList = new List<GrantAwardModel>();
+            //res.GrantCategoryList = new List<GrantCategoryModel>();
+            //res.GrantGetAllList = new List<GrantsModel>();
+            //res.GrantLibraryList = new List<GrantLibraryModel>();
+            //res.GrantNumberList = new List<GrantNumberModel>();
+            //res.GrantProjectList = new List<GrantProjectModel>();
+            //res.GrantYearList = new List<GrantYearModel>();
             GrantsModel grantsModel;
-            GrantLibraryModel grantLibrary;
-            GrantNumberModel grantNumber;
-            GrantProjectModel grantProject;
-            GrantYearModel grantYear;
 
-            string dbConnectionString = @"Data Source=csldata.database.windows.net;Initial Catalog=LSTAGrants;User ID=csl;Password=Testing!23";
+
+            //string dbConnectionString = @"Data Source=csldata.database.windows.net;Initial Catalog=LSTAGrants;User ID=csl;Password=Testing!23";
+            string dbConnectionString = _dbConnectionString;
             SqlConnection conn = new SqlConnection(dbConnectionString);
             SqlCommand cmd = new SqlCommand("[dbo].[uspSeeAllGrants]", conn);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -61,14 +57,6 @@ namespace CSLDataAccessLayer
             {
                 using (var reader = cmd.ExecuteReader())
                 {
-                    //while (reader.Read())
-                    //{
-                    //    grantAward = new GrantAwardModel();
-                    //    grantAward.Award = Convert.ToInt32(reader["Award"]);
-                    //    res.GrantAwardList.Add(grantAward);
-                    //}
-                    //reader.NextResult();
-
                     while (reader.Read())
                     {
                         grantsModel = new GrantsModel();
@@ -77,40 +65,8 @@ namespace CSLDataAccessLayer
                         grantsModel.GrantID = reader["GrantID"].ToString();
                         grantsModel.Project = reader["Project"].ToString();
                         grantsModel.Year = reader["Year"].ToString();
-                        res.GrantGetAllList.Add(grantsModel);
+                        res.Add(grantsModel);
                     }
-
-                    //while (reader.Read())
-                    //{
-                    //    grantLibrary = new GrantLibraryModel();
-                    //    grantLibrary.Library = reader["Library"].ToString();
-                    //    res.GrantLibraryList.Add(grantLibrary);
-                    //}
-                    //reader.NextResult();
-
-                    //while (reader.Read())
-                    //{
-                    //    grantNumber = new GrantNumberModel();
-                    //    grantNumber.GrantID = reader["GrantID"].ToString();
-                    //    res.GrantNumberList.Add(grantNumber);
-                    //}
-                    //reader.NextResult();
-
-                    //while (reader.Read())
-                    //{
-                    //    grantProject = new GrantProjectModel();
-                    //    grantProject.Project = reader["Project"].ToString();
-                    //    res.GrantProjectList.Add(grantProject);
-                    //}
-                    //reader.NextResult();
-
-                    //while (reader.Read())
-                    //{
-                    //    grantYear = new GrantYearModel();
-                    //    grantYear.Year = reader["Year"].ToString();
-                    //    res.GrantYearList.Add(grantYear);
-                    //}
-                    //reader.NextResult();
 
                 }
             }
@@ -126,34 +82,265 @@ namespace CSLDataAccessLayer
             return res;
         }
 
-        public void GetAward(string grantNum, string year, string library, string project, int award)
+        public List<GrantAwardModel>GetAward(string grantNum, string year, string library, string project, int award)
         {
-            throw new NotImplementedException();
+            List<GrantAwardModel> res = new List<GrantAwardModel>();
+            GrantAwardModel init = new GrantAwardModel() { Award = 0 };
+            res.Add(init);
+            GrantAwardModel grantAward;
+
+            string dbConnectionString = _dbConnectionString;
+            SqlConnection conn = new SqlConnection(dbConnectionString);
+            SqlCommand cmd = new SqlCommand("[dbo].[uspFillAwardDDL]", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
+            if (year != null) { cmd.Parameters.AddWithValue("@YearFilter", year); }
+            if (library != null) { cmd.Parameters.AddWithValue("@LibraryFilter", library); }
+            if (project != null) { cmd.Parameters.AddWithValue("@ProjectFilter", project); }
+            if (award <= 7 && award >= 0) { cmd.Parameters.AddWithValue("@AwardFilter", award); }
+
+            conn.Open();
+
+            try
+            {
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        grantAward = new GrantAwardModel();
+                        grantAward.Award = Convert.ToInt32(reader["Award"]);
+                        res.Add(grantAward);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return res;
         }
 
-        public void GetCategory(string grantNum, string year, string library, string project, int award)
+        //public List<GrantCategoryModel> GetCategory(string grantNum, string year, string library, string project, int award)
+        //{
+        //    GrantsViewModel res = new GrantsViewModel();
+        //    res.GrantCategoryList = new List<GrantCategoryModel>();
+        //    GrantCategoryModel grantCategory;
+
+        //    string dbConnectionString = _dbConnectionString;
+        //    SqlConnection conn = new SqlConnection(dbConnectionString);
+        //    SqlCommand cmd = new SqlCommand("[dbo].[uspSeeAllGrants]", conn);
+        //    cmd.CommandType = CommandType.StoredProcedure;
+
+        //    if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
+        //    if (year != null) { cmd.Parameters.AddWithValue("@YearFilter", year); }
+        //    if (library != null) { cmd.Parameters.AddWithValue("@LibraryFilter", library); }
+        //    if (project != null) { cmd.Parameters.AddWithValue("@ProjectFilter", project); }
+        //    if (award <= 7 && award >= 0) { cmd.Parameters.AddWithValue("@AwardFilter", award); }
+
+        //    try
+        //    {
+        //        using (var reader = cmd.ExecuteReader())
+        //        {
+        //            while (reader.Read())
+        //            {
+        //                grantCategory = new GrantCategoryModel();
+        //                grantCategory.Category = Convert.ToInt32(reader["Category"]);
+        //                res.GrantCategoryList.Add(grantCategory);
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw;
+        //    }
+        //    finally
+        //    {
+        //        conn.Close();
+        //    }
+
+        //    return res;
+        //}
+
+        public List<GrantNumberModel> GetGrantNumber(string grantNum, string year, string library, string project, int award)
         {
-            throw new NotImplementedException();
+            List<GrantNumberModel> res = new List<GrantNumberModel>();
+            GrantNumberModel init = new GrantNumberModel() { GrantID = "All"};
+            res.Add(init);
+            GrantNumberModel grantNumber;
+
+            string dbConnectionString = _dbConnectionString;
+            SqlConnection conn = new SqlConnection(dbConnectionString);
+            SqlCommand cmd = new SqlCommand("[dbo].[uspFillGrantDDL]", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
+            if (year != null) { cmd.Parameters.AddWithValue("@YearFilter", year); }
+            if (library != null) { cmd.Parameters.AddWithValue("@LibraryFilter", library); }
+            if (project != null) { cmd.Parameters.AddWithValue("@ProjectFilter", project); }
+            if (award <= 7 && award >= 0) { cmd.Parameters.AddWithValue("@AwardFilter", award); }
+
+            conn.Open();
+
+            try
+            {
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        grantNumber = new GrantNumberModel();
+                        grantNumber.GrantID = reader["GrantID"].ToString();
+                        res.Add(grantNumber);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return res;
         }
 
-        public void GetGrantNumber(string grantNum, string year, string library, string project, int award)
+        public List<GrantLibraryModel> GetLibrary(string grantNum, string year, string library, string project, int award)
         {
-            throw new NotImplementedException();
+            List<GrantLibraryModel> res = new List<GrantLibraryModel>();
+            GrantLibraryModel init = new GrantLibraryModel() { Library = "All" };
+            res.Add(init);
+            GrantLibraryModel grantLibrary;
+
+            string dbConnectionString = _dbConnectionString;
+            SqlConnection conn = new SqlConnection(dbConnectionString);
+            SqlCommand cmd = new SqlCommand("[dbo].[uspFillLibraryDDL]", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
+            if (year != null) { cmd.Parameters.AddWithValue("@YearFilter", year); }
+            if (library != null) { cmd.Parameters.AddWithValue("@LibraryFilter", library); }
+            if (project != null) { cmd.Parameters.AddWithValue("@ProjectFilter", project); }
+            if (award <= 7 && award >= 0) { cmd.Parameters.AddWithValue("@AwardFilter", award); }
+
+            conn.Open();
+
+            try
+            {
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        grantLibrary = new GrantLibraryModel();
+                        grantLibrary.Library = reader["Library"].ToString();
+                        res.Add(grantLibrary);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return res;
         }
 
-        public void GetLibrary(string grantNum, string year, string library, string project, int award)
+        public List<GrantProjectModel> GetProject(string grantNum, string year, string library, string project, int award)
         {
-            throw new NotImplementedException();
+            List<GrantProjectModel> res = new List<GrantProjectModel>();
+            GrantProjectModel init = new GrantProjectModel() { Project = "All" };
+            res.Add(init);
+            GrantProjectModel grantProject;
+
+            string dbConnectionString = _dbConnectionString;
+            SqlConnection conn = new SqlConnection(dbConnectionString);
+            SqlCommand cmd = new SqlCommand("[dbo].[uspFillProjectDDL]", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
+            if (year != null) { cmd.Parameters.AddWithValue("@YearFilter", year); }
+            if (library != null) { cmd.Parameters.AddWithValue("@LibraryFilter", library); }
+            if (project != null) { cmd.Parameters.AddWithValue("@ProjectFilter", project); }
+            if (award <= 7 && award >= 0) { cmd.Parameters.AddWithValue("@AwardFilter", award); }
+
+            conn.Open();
+
+            try
+            {
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        grantProject = new GrantProjectModel();
+                        grantProject.Project = reader["Project"].ToString();
+                        res.Add(grantProject);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return res;
         }
 
-        public void GetProject(string grantNum, string year, string library, string project, int award)
+        public List<GrantYearModel> GetYear(string grantNum, string year, string library, string project, int award)
         {
-            throw new NotImplementedException();
-        }
+            List<GrantYearModel> res = new List<GrantYearModel>();
+            GrantYearModel init = new GrantYearModel() { Year = "All" };
+            res.Add(init);
+            GrantYearModel grantYear;
 
-        public void GetYear(string grantNum, string year, string library, string project, int award)
-        {
-            throw new NotImplementedException();
+            string dbConnectionString = _dbConnectionString;
+            SqlConnection conn = new SqlConnection(dbConnectionString);
+            SqlCommand cmd = new SqlCommand("[dbo].[uspFillYearDDL]", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
+            if (year != null) { cmd.Parameters.AddWithValue("@YearFilter", year); }
+            if (library != null) { cmd.Parameters.AddWithValue("@LibraryFilter", library); }
+            if (project != null) { cmd.Parameters.AddWithValue("@ProjectFilter", project); }
+            if (award <= 7 && award >= 0) { cmd.Parameters.AddWithValue("@AwardFilter", award); }
+
+            conn.Open();
+
+            try
+            {
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        grantYear = new GrantYearModel();
+                        grantYear.Year = reader["Year"].ToString();
+                        res.Add(grantYear);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return res;
         }
     }
 }
