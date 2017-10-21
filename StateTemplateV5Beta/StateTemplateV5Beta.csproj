@@ -1705,6 +1705,7 @@
     <Content Include="Views\Sutro\Genealogy\Calendar.cshtml" />
     <Content Include="Views\Services\ToLibraries\DevelopmentProgramsProjects\DevelopmentProgramsProjects.cshtml" />
     <Content Include="Views\Services\ToLibraries\DevelopmentProgramsProjects\ValueLibraries.cshtml" />
+    <Content Include="Views\About\GeneralInformation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

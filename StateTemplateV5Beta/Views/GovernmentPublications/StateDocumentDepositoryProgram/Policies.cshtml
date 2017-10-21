@@ -1,10 +1,137 @@
-﻿
-@{
-    ViewBag.Title = "Policies";
+﻿@{
+    ViewBag.Title = "CSL – Retention And Disposal Policies";
+    ViewBag.PageTitle = "Retention And Disposal Policies For California State Document Depository Libraries";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "The retention and disposal policies for California State Document Depository Libraries outline the program’s legal requirements and materials that may be discarded.";
+    ViewBag.Keywords = "Policies, Retention, Disposal";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Policies</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/government-publications">Government Publications</a></li>
+                    <li><a href="/government-publications/state-document-depository-program">California Depository Library Program</a></li>
+                    <li>Retention Policies</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <div class="two-thirds">
+                        <p>
+                            Publications distributed to depository libraries, although on permanent deposit, remain the property of the State of California and may not be disposed of in any manner without the written authorization of the State Library, except as provided below.
+                        </p>
+                        <p>
+                            Publications received prior to September 15, 1945, and duplicates are not subject to these policies.
+                        </p>
+                        <p>
+                            Publications selected for discard should first be offered to the Government Publications Section, California State Library, and then to other state depositories through the CALDOC-L listserv.
+                        </p>
+                        <p>
+                            Regional library consortia may, with the approval of the State Library, reduce the number of duplicate copies owned by complete, selective, or law library depositories in their library systems provided there is an acceptable method of sharing between libraries and providing public access to the remaining copy or copies.
+                        </p>
+
+                        <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading1'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Complete Depositories</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Complete depository libraries must retain all publications permanently except as follows.
+                                        </p>
+                                        <ul class="list-overstated">
+                                            <li>Any publication may be discarded when it is superseded by a cumulation or a new edition or revision, e.g., legislative histories, codes and compilations of laws or regulations, directories, college and university catalogs, and superseded pages of loose-leaf publications.</li>
+                                            <li>Any publication may be discarded when it is replaced by another format, e.g., paper copies when replaced with microfacsimile, slip laws when replaced by Statutes and Amendments to the Codes (session laws), and the daily legislative journals when replaced by the bound edition.</li>
+                                            <li>Ephemeral publications may be discarded when no longer current or useful, e.g., announcements of conferences and workshops, award lists, exhibit catalogs and premium lists, class schedules of the California State University, lists of publications intended for order use only, and press releases.</li>
+                                            <li>Statistical publications issued more often than annually may be discarded after five years.</li>
+                                            <li>Legislative daily files may be discarded on receipt of a later file.</li>
+                                            <li>Legislative bills, constitutional amendments, and concurrent and joint resolutions may be discarded two years after the close of the session.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading2'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Selective Depository Libraries</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Selective depository libraries may dispose of publications at any time with the exception of the following classes of material that must be retained for at least five years.
+                                        </p>
+
+                                        <ul class="list-overstated">
+                                            <li>Periodicals (e.g., Outdoor California, Journal of the Center for Families, Children and the Courts).</li>
+                                            <li>Administrative and statistical reports issued by state agencies (e.g., Biennial report of the California Department of Industrial Relations, Annual report of the Insurance Commissioner, Annual report of fatal and injury motor vehicle traffic accidents).</li>
+                                            <li>Basic state level fiscal documents (e.g., Governor's budget).</li>
+                                            <li>Basic legislative reference works (e.g., Senate final history, Assembly final history, Legislative index and table of sections affected).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading3'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Law Library Depositories</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Law library depositories must retain publications in accordance with Government Code section 14909 as administered by the State Library. Section 14909 stipulates that maintenance of basic general documents shall not be required of law library depositories, but they shall maintain basic legal documents. 
+                                            Such basic legal documents shall include legislative bills, legislative committee hearings and reports, legislative journals, statutes, administrative reports, California Code of Regulations, annual reports of state agencies and other legal materials published by the state.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="one-third">
+                        <p>
+                            For further information contact:
+                        </p>
+
+                        <div class="panel panel-understated">
+                            <div class="panel-heading">
+                                <h4>California State Library</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    Bill Riddle, Senior Librarian<br>
+                                    Government Publications Section<br>
+                                    P.O. Box 942837<br>
+                                    Sacramento, 94237-0001<br>
+                                    Telephone: <a href="tel:+19163239693">916-323-9693</a><br>
+                                    e-mail: <a href="mailto:bill.riddle@library.ca.gov">bill.riddle@library.ca.gov</a><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
