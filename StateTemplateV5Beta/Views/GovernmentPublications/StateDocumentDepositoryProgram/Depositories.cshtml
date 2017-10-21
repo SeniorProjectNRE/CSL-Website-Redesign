@@ -1,11 +1,235 @@
-﻿
-@{
-    ViewBag.Title = "Depositories";
+﻿@{
+    ViewBag.Title = "CSL - State Document Depositories";
+    ViewBag.PageTitle = "State Document Depositories (alpha order by city)";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "A complete list of contact information for all full and selective State Document Depositories listed by city.";
+    ViewBag.Keywords = "Document, Depositories";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Depositories</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/government-publications">Government Publications</a></li>
+                    <li><a href="/government-publications/state-document-depository-program">California Depository Library Program</a></li>
+                    <li>Depositories</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <p>
+                        Below is a list of depository libraries that receive publications produced or distributed by California state agencies.
+                        Libraries designated below as "full" depositories receive copies of each state publication as defined in Government Code section 14902.
+                        The other libraries on the list are selective depositories that receive copies of each publication distributed by the Office of State Publishing, and may request other state documents distributed directly by the issuing agencies.
+                    </p>
+                    <p>
+                        Patrons needing access to or reference assistance concerning California state publications may contact the libraries below using the contact information provided. 
+                        State agencies needing a list of depository libraries for the purposes of distributing their publications should consult the <a href="">State Document Depositories mailing list</a> (PDF, last updated July 2017).
+                    </p>
+
+                    <div class="orange">
+                        <h3>State Document Depositories (alphabetical order by city)</h3>
+                    </div>
+                    <div class="tab-group">
+                        <span class="ca-gov-icon-favorite"></span>
+                        <!-- Nav tabs - NOTE: UNIQUE ID IS REQUIRED -->
+                        <ul id="homeTabs" class="nav nav-tabs responsive" role="tablist">
+                            <li class="active"><a href="#a" role="tab" data-toggle="tab">A</a></li>
+                            <li><a href="#b" role="tab" data-toggle="tab">B</a></li>
+                            <li><a href="#c" role="tab" data-toggle="tab">C</a></li>
+                            <li><a href="#d" role="tab" data-toggle="tab">D</a></li>
+                            <li><a href="#e" role="tab" data-toggle="tab">E</a></li>
+                            <li><a href="#f" role="tab" data-toggle="tab">F</a></li>
+                            <li><a href="#g" role="tab" data-toggle="tab">G</a></li>
+                            <li><a href="#h" role="tab" data-toggle="tab">H</a></li>
+                            <li><a href="#i" role="tab" data-toggle="tab">I</a></li>
+                            <li><a href="#l" role="tab" data-toggle="tab">L</a></li>
+                            <li><a href="#m" role="tab" data-toggle="tab">M</a></li>
+                            <li><a href="#n" role="tab" data-toggle="tab">N</a></li>
+                            <li><a href="#o" role="tab" data-toggle="tab">O</a></li>
+                            <li><a href="#p" role="tab" data-toggle="tab">P</a></li>
+                            <li><a href="#r" role="tab" data-toggle="tab">R</a></li>
+                            <li><a href="#s" role="tab" data-toggle="tab">S</a></li>
+                            <li><a href="#t" role="tab" data-toggle="tab">T</a></li>
+                            <li><a href="#v" role="tab" data-toggle="tab">V</a></li>
+                            <li><a href="#w" role="tab" data-toggle="tab">W</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content responsive">
+                            <div class="tab-pane active" id="a">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.alhambralibrary.org/">Alhambra Public Library</a></div>
+                                                <div class="address">
+                                                    101 South First Street, Alhambra, CA 91801<br>
+                                                    Phone: <a href="tel:+16265705008">626-570-5008</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="https://library.humboldt.edu/search/govdocs/index.html">Humboldt State University Library</a></div>
+                                                <div class="address">
+                                                    1 Harpst Street, Arcata, CA 95521<br>
+                                                    Phone: <a href="tel:+17078263441">707-826-3441</a><br>
+                                                    Fax: <a href="tel:+17078263440">707-826-3440</a><br>
+                                                    <a href="mhttp://library.humboldt.edu/ask/email.html">Email</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="b">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.alhambralibrary.org/">Alhambra Public Library</a></div>
+                                                <div class="address">
+                                                    101 South First Street, Alhambra, CA 91801<br>
+                                                    Phone: <a href="tel:+16265705008">626-570-5008</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="https://library.humboldt.edu/search/govdocs/index.html">Humboldt State University Library</a></div>
+                                                <div class="address">
+                                                    1 Harpst Street, Arcata, CA 95521<br>
+                                                    Phone: <a href="tel:+17078263441">707-826-3441</a><br>
+                                                    Fax: <a href="tel:+17078263440">707-826-3440</a><br>
+                                                    <a href="mhttp://library.humboldt.edu/ask/email.html">Email</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="c"
+                                 >Messages Tab
+                            </div>
+                            <div class="tab-pane" id="d">
+                                Settings Tab
+                            </div>
+                            <div class="tab-pane" id="e">
+                                Settings Tab
+                            </div>
+                            <div class="tab-pane" id="f">
+                                Settings Tab
+                            </div>
+                            <div class="tab-pane" id="g">
+                                <div class="location mini">
+                                    <div class="ca-gov-icon-road-pin"></div>
+                                    <div class="contact">
+                                        <div class="title"><a href="http://ocpl.org/gov/occr/lib/">Orange County Public Library</a></div>
+                                        <div class="address">
+                                            Garden Grove Regional Branch<br>
+                                            11200 Stanford Avenue, Garden Grove, CA 92840-5318<br>
+                                            Phone: <a href="tel:+17145300711">714-530-0711</a><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="h">
+                                Settings Tab
+                            </div>
+                            <div class="tab-pane" id="i">
+                                Settings Tab
+                            </div>
+                            <div class="tab-pane" id="l">
+                                Settings Tab
+                            </div>
+                            <div class="tab-pane" id="m">
+                                <div class="location mini">
+                                    <div class="ca-gov-icon-road-pin"></div>
+                                    <div class="contact">
+                                        <div class="title"><a href="http://www.stanislauslibrary.org/">Stanislaus County Library</a></div>
+                                        <div class="address">
+                                            1500 I Street, Modesto, CA 95354-1166<br>
+                                            Phone: <a href="tel:+12095587814">209-558-7814</a><br>
+                                            <a href="http://www.stanislauslibrary.org/find_ask_ref.shtml">Email</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="n">
+                                Settings Tab
+                            </div>
+                            <div class="tab-pane" id="o">
+                                Settings Tab
+                            </div>
+                            <div class="tab-pane" id="p">
+                                Settings Tab
+                            </div>
+                            <div class="tab-pane" id="r">
+                                Settings Tab
+                            </div>
+                            <div class="tab-pane" id="s">
+                                Settings Tab
+                            </div>
+                            <div class="tab-pane" id="t">
+                                Settings Tab
+                            </div>
+                            <div class="tab-pane" id="v">
+                                <div class="location mini">
+                                    <div class="ca-gov-icon-road-pin"></div>
+                                    <div class="contact">
+                                        <div class="title"><a href="http://www.vencolawlib.org/">Ventura County Law Library</a></div>
+                                        <div class="address">
+                                            Courthouse<br>
+                                            800 S. Victoria Ave., Ventura, CA 93009-2020<br>
+                                            Phone: <a href="tel:+18056428982">805-642-8982</a><br>
+                                            Fax: <a href="tel:+18056427177">805-642-7177</a><br>
+                                            Email: <a href="mailto:vencolawlib@yahoo.com">vencolawlib@yahoo.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="w">
+                                <div class="location mini">
+                                    <div class="ca-gov-icon-road-pin"></div>
+                                    <div class="contact">
+                                        <div class="title"><a href="http://www.vencolawlib.org/">Anglo-American Acquisition Division</a></div>
+                                        <div class="address">
+                                            Library of Congress (Complete)<br>
+                                            101 Independence Ave S.E., Washington, D.C., 20540-4172<br>
+                                            Phone: <a href="tel:+12027075000">202-707-5000</a><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
