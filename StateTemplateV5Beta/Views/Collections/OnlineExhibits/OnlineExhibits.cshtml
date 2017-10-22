@@ -1,11 +1,367 @@
 ﻿
 @{
-    ViewBag.Title = "OnlineExhibits";
+    ViewBag.Title = "Online Exhibits";
+    ViewBag.PageTitle = "CSL - Online Exhibits";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "California State Library, Online Exhibits";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+ 
+</head> 
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>OnlineExhibits</h2>
+        <div class="container">
+            <div class="section">
+
+                <ol class="breadcrumb dynamic"></ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="autoLoop carousel owl-carousel carousel-content">
+                    <div class="item">
+                        <a href="/california-history/cagoldrush"><img src="~/Content/StateTemplate/images/online_exhibits/top_gold.jpg" alt="gold" /></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="http://governors.library.ca.gov/"> <img src="~/Content/StateTemplate/images/online_exhibits/top_governors.jpg" alt="governors" /></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="http://governors.library.ca.gov/firstladies/"> <img src="~/Content/StateTemplate/images/online_exhibits/top_ladies.jpg" alt="ladies" /></a>
+                    </div>
+
+                    <!--view missing-->
+                    <div class="item">
+                        <a href="http://www.library.ca.gov/calhist/ca_calls.html"> <img src="~/Content/StateTemplate/images/online_exhibits/top_calls.jpg" alt="calls" /></a>
+                    </div>
+
+                </div>
+
+                <strong>Don't want to travel to Sacramento? Visit us virtually! Stroll our halls via the 3-D photography of our library's restoration and encounter collection treasures in exhibits on the California Gold Rush, cooking and even advertising. If you have any questions, please feel free to ask us.</strong>
+                </div>
+
+                <div class="section">
+                    <div class='panel-group' role='tablist' aria-multiselectable='true'>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading1'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Upgrading a Landmark for the Future</a>
+                                </h3>
+                            </div>
+                            <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                <div class='panel-body'>
+
+                                    <!--view missing-->
+                                        <a href="http://www.library.ca.gov/about/renovation_demo.html">
+                                            <img class="img-responsive insetImage left" name="online1" src="~/Content/StateTemplate/images/online_exhibits/upgrade.jpg" alt="Circulation Room" title="Stanley Mosk Library &amp; Courts Building. Circulation Room" ">
+                                        </a>
+                                        <p>
+                                            In 2009, a team of master architects, engineers, and technology experts began renovation and restoration of the exquisite 1928 Stanley Mosk Library and Courts Building. The restoration was completed in 2013, bringing the historic building back to its original splendor while equipping it with the latest technological features. This photographic exhibit documents the story of the building's transformation. Be certain to view the amazing 3D slides that accompany this exhibit.
+                                        </p>
+                                
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading2'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>"California as We Saw It" – Exploring the California Gold Rush</a>
+                                </h3>
+                            </div>
+                            <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                <div class='panel-body'>
+                                    <a href="/california-history/gold-rush">
+                                        <img class="img-responsive insetImage left"  name="online2" src="~/Content/StateTemplate/images/online_exhibits/gold_rush1.jpg" alt="CSL Online Exhibits: Gold Rush Poster" title="CSL Online Exhibits: Gold Rush Poster">
+                                    </a>
+                                    <p>
+                                        The goal of the exhibit is many fold: provide an overview of the Gold Rush, emphasize the strength of the Library's collection, and incorporate items that will simultaneously delight, surprise, and inform. In creating this exhibit, the varieties and richness of the material proved to be both a joy and challenge.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading3'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>The Historic Library & Courts Building: An Architectural Treasure</a>
+                                </h3>
+                            </div>
+                            <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                <div class='panel-body'>
+                                    <a href="/about/history/building">
+                                        <img class="img-responsive insetImage left" name="online3" src="~/Content/StateTemplate/images/online_exhibits/library1.jpg" alt="CSL Online Exhibits: Library &amp; Courts Building, 1926" title="CSL Online Exhibits: Library &amp; Courts Building, 1926" >
+                                    </a>
+                                    <p >
+                                        The Library &amp; Courts Building located at 914 Capitol Mall is widely regarded as one of the most beautiful buildings in State Government. Its entrance lobby is unsurpassed and the building features three murals and a variety of attractive decorative features. On May 24, 1984, the Library &amp; Courts Building was named to the National Register of Historic Places.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading4'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>California Calls You: The Art of Promoting the Golden State</a>
+                                </h3>
+                            </div>
+                            <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                                <div class='panel-body'>
+                                    <a href="http://www.library.ca.gov/calhist/ca_calls.html">
+                                        <img class="img-responsive insetImage left"  name="online4" src="~/Content/StateTemplate/images/online_exhibits/posters1.jpg" alt="CSL Online Exhibits: Sunset Limited. Southern Pacific Poster" title="CSL Online Exhibits: Sunset Limited. Southern Pacific Poster" >
+                                    </a>
+                                    <p >
+                                        These beautiful and colorful booster materials were designed to attract tourists and home seekers to the Golden State. Produced by the thousands, these now rare publications touted California as a land of perpetual spring and boundless opportunity.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading5'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>California Gold Rush – Seekers, Scoundrels, Loss and Luck</a>
+                                </h3>
+                            </div>
+                            <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                                <div class='panel-body'>
+                                    
+                                    <a href="/california-history/cagoldrush">
+                                        <img class="img-responsive insetImage left"  name="online4_" src="~/Content/StateTemplate/images/online_exhibits/cagoldrush.jpg" alt="Two Miners. Most who came to the California goldfields were young, male, unattached and seeking riches and adventure. Most failed in the pursuit, but they fondly remembered the experience the rest of their lives.'Two Miners,' daguerreotype, c. 1850. Source: California State Library." title="Two Miners. Most who came to the California goldfields were young, male, unattached and seeking riches and adventure. Most failed in the pursuit, but they fondly remembered the experience the rest of their lives.'Two Miners,' daguerreotype, c. 1850. Source: California State Library."  >
+                                    </a>
+
+                                    <p  >
+                                        These images from the State Library's collection reflect the wide range of pioneers, dreamers and schemers who headed west to seek their fortune in the 1849 Gold Rush.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading6'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>Culinary California or California in the Kitchen</a>
+                                </h3>
+                            </div>
+                            <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
+                                <div class='panel-body'>
+                                    <!-- view missing-->
+                                    <a href="http://www.library.ca.gov/calhist/cookbooks.html">
+                                        <img class="img-responsive insetImage left" name="online6" src="~/Content/StateTemplate/images/online_exhibits/cookbook.jpg" alt="Cookbooks" title="Cookbooks" >
+                                    </a>
+                                    <p >
+                                        From 1870 to 1990 approximately 4,000 books were printed on California food and wine. This astonishing number fully demonstrates that California leads the nation in the culinary arts and the collections of the California State Library reflect this keen interest. This exhibit introduces you to some of amazing cookbooks in the State Library's collection along with a few excerpts and recipes from the books.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading7'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse7' aria-expanded='false' aria-controls='collapse7'>Governor's Gallery</a>
+                                </h3>
+                            </div>
+                            <div id='collapse7' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading7'>
+                                <div class='panel-body'>
+                                    <a href="http://governors.library.ca.gov/" target="_blank">
+                                        <img class="img-responsive insetImage left" name="online7" src="~/Content/StateTemplate/images/online_exhibits/governors.jpg" alt="Governors" title="Governors"  >
+                                    </a>
+                                    <p >
+                                        Our state's governors lead the largest state in the union and their political influence reaches beyond the borders of the state. This gallery provides a brief glimpse into the rich political and personal life of each governor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading8'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse8' aria-expanded='false' aria-controls='collapse8'>First Ladies Gallery</a>
+                                </h3>
+                            </div>
+                            <div id='collapse8' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading8'>
+                                <div class='panel-body'>
+                                    <a href="http://governors.library.ca.gov/firstladies/" target="_blank">
+                                        <img class="img-responsive insetImage left" name="online8" src="~/Content/StateTemplate/images/online_exhibits/firstladies.jpg" alt="First Ladies" title="First Ladies"  >
+                                    </a>
+                                    <p >
+                                        First Ladies have always played an important role in the service of California citizens, balancing the demanding responsibilities of their prestigious position while enduring hardships, tragedies, and the daily difficulties of life and a family. This gallery provides a small glimpse into the lives of these courageous women.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading9'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse9' aria-expanded='false' aria-controls='collapse9'>"Afflicting the Comfortable: California's Editorial Cartoonists"</a>
+                                </h3>
+                            </div>
+                            <div id='collapse9' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading9'>
+                                <div class='panel-body'>
+                                    <a href="http://www.library.ca.gov/calhist/cartoon/">
+                                        <img class="img-responsive insetImage left" name="online9" src="~/Content/StateTemplate/images/online_exhibits/cartoon.jpg" alt="Cartoon exhibit: Fat business man smiles at nerdy scientist while saying: 'It's not that we don't believe in climate change, we just believe in profit more.'" title="Cartoon exhibit"  >
+                                    </a>
+                                    <p >
+                                        It's been said that the duty of newspapers is to comfort the afflicted and afflict the comfortable. Arguably, no one does that better than the editorial cartoonist. This exhibit showcases the work of 15 of California's sharpest cartoonists.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading10'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse10' aria-expanded='false' aria-controls='collapse10'>Building the Central Pacific Railroad: The Photos of Alfred A. Hart</a>
+                                </h3>
+                            </div>
+                            <div id='collapse10' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading10'>
+                                <div class='panel-body'>
+                                    <a href="http://www.library.ca.gov/calhist/railroad.html">
+                                        <img class="img-responsive insetImage left" name="online5" src="~/Content/StateTemplate/images/online_exhibits/railroad.jpg" alt="Locomotive on Turntable" title="Locomotive on Turntable">
+                                    </a>
+                                    <p >
+                                        See photographs of one of the great engineering feats of the 19th Century! This exhibit highlights the work of Alfred A. Hart, who from 1864-1869, documented the construction of the Central Pacific Railroad Company's railway from Sacramento, over the Sierra Nevada range, across Nevada to Promontory, Utah.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Other Exhibits and Displays</h3>
+
+
+                    <div class='panel-group' role='tablist' aria-multiselectable='true'>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading11'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse11' aria-expanded='false' aria-controls='collapse11'>Current Exhibits</a>
+                                </h3>
+                            </div>
+                            <div id='collapse11' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading11'>
+                                <div class='panel-body'>
+                                        <a href="/visit-us/exhibits">"The Love Generation: Music &amp; Art from the Summer of '67"</a><br>
+                                        Circulation Room and Gillis Hall at the Library and Courts Building
+                                        <p >
+                                            This exhibit explores the 1967 "Summer of Love" through photos, rock concert poster art, underground newspapers, and memorabilia.
+                                        </p>
+                                        <br>
+                                        <a href="/visit-us/exhibits">"For the Joy of Doing"<br>A Selection of Fine Printing from the Collections of the California State Library</a><br>
+                                        State Library Annex First and Second Floor Galleries
+                                        <p >
+                                            This exhibit tells the history of fine printing and book arts in California beginning in the 1860s and includes some of the finest examples of this great art from our collection.
+                                        </p>
+                                  
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading12'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse12' aria-expanded='false' aria-controls='collapse12'>Book Displays</a>
+                                </h3>
+                            </div>
+                            <div id='collapse12' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading12'>
+                                <div class='panel-body'>
+                                    <a href="/california-history/current-display">It Came from the Archives?! The Weird, Wacky and Wonderful Treasures in our library</a>
+                                    <p>
+                                        It's weird! It's wacky! It must be California history! Right now we are celebrating California's odder sights in our September-October display.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading13'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse13' aria-expanded='false' aria-controls='collapse13'>3-D Photo Albums</a>
+                                </h3>
+                            </div>
+                            <div id='collapse13' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading13'>
+                                <div class='panel-body'>
+                                    <ul>
+                                        <li><a href="http://phereo.com/californiastatelibrary" target="_blank">View All</a></li>
+                                        <li><a href="http://phereo.com/album/55b1e6a9e7e564a20300004f" target="_blank">Panama Pacific International Exposition, San Francisco, 1915</a></li>
+                                        <li><a href="http://phereo.com/album/55b1e250e7e564b46000034e" target="_blank">California State Fair-2015</a></li>
+                                        <li><a href="http://phereo.com/album/54c2dd89df7df3897c000003" target="_blank">San Francisco</a></li>
+                                        <li><a href="http://phereo.com/album/54c2dd6edf7df3657b000002" target="_blank">Railroads</a></li>
+                                        <li><a href="http://phereo.com/album/513fb19be15585c801000001" target="_blank">Library-Courts Renovation in 3D</a></li>
+                                        <li><a href="http://phereo.com/album/513fb125e15585c501000000" target="_blank">CSL Stereo Card Collection</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading14'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse14' aria-expanded='false' aria-controls='collapse14'>Selected specially digitized collections</a>
+                                </h3>
+                            </div>
+                            <div id='collapse14' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading14'>
+                                <div class='panel-body'>
+                                    <ul>
+                                        <li><a href="https://archive.org/details/californiastatelibrary?" target="_blank">View All</a></li>
+                                        <li><a href="https://archive.org/details/californiastatelibrary?&amp;sort=-downloads&amp;and%5b%5d=mining%20and%20scientific%20press" target="_blank">Mining and Scientific Press</a></li>
+                                        <li><a href="https://archive.org/details/californiastatelibrary?sort=-downloads&amp;and%5b%5d=railroad%20pamphlets" target="_blank">Railroad Pamphlets</a></li>
+                                        <li><a href="https://archive.org/details/californiastatelibrary?sort=-downloads&amp;and%5b%5d=chinese%20pamphlets" target="_blank">Chinese Pamphlets</a></li>
+                                        <li><a href="https://archive.org/details/californiastatelibrary?sort=-downloads&amp;and%5b%5d=japanese%20pamphlets" target="_blank">Japanese Pamphlets</a></li>
+                                        <li><a href="https://archive.org/details/californiastatelibrary?sort=-downloads&amp;and%5b%5d=land%20pamphlets" target="_blank">California Land Pamphlets</a></li>
+                                        <li><a href="https://archive.org/details/californiastatelibrary?sort=-downloads&amp;and%5b%5d=%22san%20francisco%20pamphlets%22" target="_blank">San Francisco Pamphlets</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading15'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse15' aria-expanded='false' aria-controls='collapse15'>Selected specially digitized visual materials</a>
+                                </h3>
+                            </div>
+                            <div id='collapse15' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading15'>
+                                <div class='panel-body'>
+                                    <ul>
+                                        <li><a href="https://catalog.library.ca.gov/F/?func=file&amp;file_name=image-collections" target="_blank">View All</a></li>
+                                        <li><a href="https://catalog.library.ca.gov/F/?func=find-b&amp;request=Daguerreotype&amp;find_code=WRD&amp;local_base=images" target="_blank">Daguerreotype Collection</a></li>
+                                        <li><a href="https://catalog.library.ca.gov/F/?func=find-b&amp;request=(Mexican+War+Prints)&amp;find_code=WRD&amp;local_base=imagess" target="_blank">Mexican War Prints</a></li>
+                                        <li><a href="https://catalog.library.ca.gov/F/?func=find-b&amp;request=(Sacramento+History+Online)&amp;find_code=WRD&amp;local_base=images" target="_blank">Sacramento History Online Project</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading16'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse16' aria-expanded='false' aria-controls='collapse16'>Other institutions displaying California State Library materials</a>
+                                </h3>
+                            </div>
+                            <div id='collapse16' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading16'>
+                                <div class='panel-body'>
+                                    <ul>
+                                        <li><a href="http://www.californiamuseum.org/voting-california" target="_blank">California Museum</a></li>
+                                        <li><a href="http://capitolmuseum.ca.gov/special/outofthevault/" target="_blank">Capitol Museum</a></li>
+                                        <li><a href="http://lapca.org/" target="_blank">La Plaza de Cultura y Artes</a></li>
+                                        <li><a href="http://lfla.org/event/americas-shakespeare/" target="_blank">Los Angeles Public Library</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </main>
 </div>
-

@@ -1,12 +1,70 @@
 ﻿
 @{
-    ViewBag.Title = "StateLibrarians";
+    ViewBag.Title = "California State Librarians";
+    ViewBag.PageTitle = "CSL - California State Librarians";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "California State Library California State Librarians Present and Past Librarians";
 }
 
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+    
+</head>
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>StateLibrarians</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/about/">about library</a></li><li><a href="/about/history/">history</a></li><li class="active">state librarians</li></ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="two-thirds">
+                    <h3>Secretaries of State (Ex-Officio State Librarians)</h3>
+                    <ol>
+                        <li>William Van Voorhies 1850–1853</li>
+                        <li>James W. Denver 1853–1855</li>
+                        <li>Charles H. Hempstead 1855–1856</li>
+                        <li>David F. Douglas 1856–1858</li>
+                        <li>Ferris Forman 1858–1860</li>
+                        <li>Johnson Price 1860–1861</li>
+                    </ol>
+
+                    <h3>State Librarians</h3>
+                    <ol>
+                        <li>W. C. Stratton 1861–1870</li>
+                        <li>William Neely Johnson 1870–1870</li>
+                        <li>Robert O. Cravens 1870–1882</li>
+                        <li>Talbot H. Wallis 1882–1890</li>
+                        <li>11 W. Dana Perkins 1890–1896</li>
+                        <li>William P. Mathews 1896–1897</li>
+                        <li>Edward D. McCabe 1897–1898</li>
+                        <li>Frank L. Coombs 1898–1899</li>
+                        <li>James L. Gillis 1899–1917</li>
+                        <li>Milton J. Ferguson 1917–1930</li>
+                        <li>Mabel R. Gillis 1930–1951</li>
+                        <li>Carma R.( Zimmerman) Leigh 1951–1972</li>
+                        <li>Ethel S. Crockett 1972–1980</li>
+                        <li>Gary E. Strong 1980–1994</li>
+                        <li>Dr. Kevin Starr 1994–2004</li>
+                        <li>Susan Hildreth 2004–2009</li>
+                        <li>Stacey A. Aldrich 2009–2012</li>
+                        <li>Gerald Maginnity 2012–2014</li>
+                        <li>Greg Lucas 2014 –</li>
+                    </ol>
+
+                    <h3><a href="http://www.cslfdn.org/exhibits.html">Profiles of State Librarians 1850 – Present</a></h3>
+                <p>* State Librarians up to 1921 were appointed by the State Library Board of Trustees. The Board was abolished in 1921 during a reorganization of state government and the Library was made a division of the Department of Finance. In 1927 Governor C. C. Young placed the Library under the Department of Education. The State Librarian then became an appointee of the governor and Milton Ferguson was reappointed as State Librarian by Governor Young. Mabel Gillis and later State Librarians were appointed by the governor in office.</p>
+                
+                </div>
+
+                <div class="third">
+                    <img alt="old building" class="animated fadeInLeft" src="~/Content/StateTemplate/images/about/old_building.png"/>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
-
-
