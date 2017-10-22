@@ -1,9 +1,84 @@
-﻿@{
-    ViewBag.Title = "Building";
+﻿
+@{
+    ViewBag.Title = "Art For Legislators from the State Library Collection";
+    ViewBag.PageTitle = "Art For Legislators";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Art for Legislators";
+    ViewBag.Keywords = "California State Library, Art, CA, Legislators, State Library";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+     
+    <script src="~/Content/StateTemplate/js/libs/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/jquery.fancybox.min.css" />
+ 
+</head>
+<style>
+    #fancyBoxImageGallery > a > img {
+        padding: 5px;
+    }
+</style>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Building</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb dynamic"></ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+
+                <h3>Introduction</h3>
+                <p>The Library & Courts Building located at 914 Capitol Mall is widely regarded as one of the most beautiful buildings in State Government. Its entrance lobby is unsurpassed and the building features three murals and a variety of attractive decorative features. On May 24, 1984, the Library & Courts Building was named to the National Register of Historic Places. The building underwent an extensive restoration that was completed in 2014.</p>
+                <p>The Library & Courts Building opened in 1928 as part of the Capitol Extension Group. It faces a twin structure, Office Building Number 1 (now called the Unruh Building). Designed by the prestigious San Francisco firm of Weeks & Day, both neo-classical structures are located across the street from the State Capitol. A circular drive with a fountain in the middle provides a graceful division between the two office buildings. The five-story exteriors are clad in Sierra white granite quarried by the McGilvrary-Raymond Granite Company in Madera County and granitex architectural terra cotta manufactured by Gladding, McBean and Company of Lincoln, Placer County.
+
+</p>
+                <p>The Foundation commissioned noted architectural photographer Cathy Kelly in 1988 and 2001 to photograph this magnificent edifice. Her photographs are supplemented by historic photographs from the Library's California History Section.
+
+</p>
+                <p>For further information on the history of this fabulous building see: California State Library Bulletin, Issue Number 69 (Fall 2000 / Winter 2001). Copies of the Bulletin may be obtained purchased from the Foundation for $7.50. Please see <a href="http://www.cslfdn.org/pub.html">Publications List</a> for order information.
+
+</p>
+                <h3>The Exhibit
+
+</h3>
+                <p>Here you can see exterior and interior views of the Library & Courts Building, as well as the photos of the Library & Courts II Building.
+
+</p>
+                <p>Click on the thumbnail below to enlarge the image. To move forward to the next image click on the right side of the image or press the right arrow key. To close the image, please click the X or anywhere outside the image.
+
+</p>
+
+                <a href="~/Content/StateTemplate/images/about/hist_building/1.jpg" data-lightbox="roadtrip">Image #2</a>
+                <a href="~/Content/StateTemplate/images/about/hist_building/1.jpg" data-lightbox="roadtrip">Image #3</a>
+                <a href="~/Content/StateTemplate/images/about/hist_building/1.jpg" data-lightbox="roadtrip">Image #4</a>
+
+                <div class="section animated fadeInLeft">
+                    <div class="container" id="fancyBoxImageGallery">
+
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/about/hist_building/1.jpg" data-caption="Library & Courts Building, north facade. 2001. Photograph by Cathy Kelly">
+                            <img src="~/Content/StateTemplate/images/about/hist_building/t1.jpg" alt="Library & Courts Building, north facade. 2001. Photograph by Cathy Kelly">
+
+                        </a>
+
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/about/hist_building/2.jpg" data-caption="Aerial photograph of the State Capitol and Capitol Extension Group. The building on the right is Office Building No. 1 or the Jesse Unruh Building, and on the left is the Library & Courts Building. Photograph was taken shortly after the completion of the twin buildings in 1928.">
+                            <img src=" ~/Content/StateTemplate/images/about/hist_building/t2.jpg" alt="Aerial photograph of the State Capitol and Capitol Extension Group. The building on the right is Office Building No. 1 or the Jesse Unruh Building, and on the left is the Library & Courts Building. Photograph was taken shortly after the completion of the twin buildings in 1928.">
+
+                        </a>
+
+                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/03.jpg" data-caption="Souvenir print available at the Panama Pacific International Exposition, San Francisco, California, U.S.A. 1915.">
+                            <img src=" ~/Content/StateTemplate/images/artForLegislators/t_03.jpg" alt="Souvenir print available at the Panama Pacific International Exposition, San Francisco, California, U.S.A. 1915.">
+                        </a>
+                    </div>
+                </div>
+            </div>
     </main>
 </div>
