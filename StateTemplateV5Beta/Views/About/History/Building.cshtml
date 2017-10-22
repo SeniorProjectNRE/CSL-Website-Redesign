@@ -1,10 +1,9 @@
 ﻿
 @{
-    ViewBag.Title = "Art For Legislators from the State Library Collection";
-    ViewBag.PageTitle = "Art For Legislators";
+    ViewBag.Title = "The Historic Library & Courts Building: An Architectural Treasure";
+    ViewBag.PageTitle = "CSL - The Historic Library & Courts Building";
     ViewBag.Author = "Alan Cleetus";
-    ViewBag.Description = "Art for Legislators";
-    ViewBag.Keywords = "California State Library, Art, CA, Legislators, State Library";
+    ViewBag.Description = "The Library & Courts Building located at 914 Capitol Mall is widely regarded as one of the most beautiful buildings in State Government";
 }
 
 <head>
@@ -15,10 +14,10 @@
 
 
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
-     
-    <script src="~/Content/StateTemplate/js/libs/jquery.fancybox.min.js"></script>
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/jquery.fancybox.min.css" />
- 
+
+    <script src="~/Content/StateTemplate/js/libs/lightbox.js"></script>
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/lightbox.css" />
+
 </head>
 <style>
     #fancyBoxImageGallery > a > img {
@@ -38,47 +37,99 @@
 
                 <h3>Introduction</h3>
                 <p>The Library & Courts Building located at 914 Capitol Mall is widely regarded as one of the most beautiful buildings in State Government. Its entrance lobby is unsurpassed and the building features three murals and a variety of attractive decorative features. On May 24, 1984, the Library & Courts Building was named to the National Register of Historic Places. The building underwent an extensive restoration that was completed in 2014.</p>
-                <p>The Library & Courts Building opened in 1928 as part of the Capitol Extension Group. It faces a twin structure, Office Building Number 1 (now called the Unruh Building). Designed by the prestigious San Francisco firm of Weeks & Day, both neo-classical structures are located across the street from the State Capitol. A circular drive with a fountain in the middle provides a graceful division between the two office buildings. The five-story exteriors are clad in Sierra white granite quarried by the McGilvrary-Raymond Granite Company in Madera County and granitex architectural terra cotta manufactured by Gladding, McBean and Company of Lincoln, Placer County.
+                <p>
+                    The Library & Courts Building opened in 1928 as part of the Capitol Extension Group. It faces a twin structure, Office Building Number 1 (now called the Unruh Building). Designed by the prestigious San Francisco firm of Weeks & Day, both neo-classical structures are located across the street from the State Capitol. A circular drive with a fountain in the middle provides a graceful division between the two office buildings. The five-story exteriors are clad in Sierra white granite quarried by the McGilvrary-Raymond Granite Company in Madera County and granitex architectural terra cotta manufactured by Gladding, McBean and Company of Lincoln, Placer County.
 
-</p>
-                <p>The Foundation commissioned noted architectural photographer Cathy Kelly in 1988 and 2001 to photograph this magnificent edifice. Her photographs are supplemented by historic photographs from the Library's California History Section.
+                </p>
+                <p>
+                    The Foundation commissioned noted architectural photographer Cathy Kelly in 1988 and 2001 to photograph this magnificent edifice. Her photographs are supplemented by historic photographs from the Library's California History Section.
 
-</p>
-                <p>For further information on the history of this fabulous building see: California State Library Bulletin, Issue Number 69 (Fall 2000 / Winter 2001). Copies of the Bulletin may be obtained purchased from the Foundation for $7.50. Please see <a href="http://www.cslfdn.org/pub.html">Publications List</a> for order information.
+                </p>
+                <p>
+                    For further information on the history of this fabulous building see: California State Library Bulletin, Issue Number 69 (Fall 2000 / Winter 2001). Copies of the Bulletin may be obtained purchased from the Foundation for $7.50. Please see <a href="http://www.cslfdn.org/pub.html">Publications List</a> for order information.
 
-</p>
-                <h3>The Exhibit
+                </p>
+                <h3>
+                    The Exhibit
 
-</h3>
-                <p>Here you can see exterior and interior views of the Library & Courts Building, as well as the photos of the Library & Courts II Building.
+                </h3>
+                <p>
+                    Here you can see exterior and interior views of the Library & Courts Building, as well as the photos of the Library & Courts II Building.
 
-</p>
-                <p>Click on the thumbnail below to enlarge the image. To move forward to the next image click on the right side of the image or press the right arrow key. To close the image, please click the X or anywhere outside the image.
+                </p>
+                <p>
+                    Click on the thumbnail below to enlarge the image. To move forward to the next image click on the right side of the image or press the right arrow key. To close the image, please click the X or anywhere outside the image.
 
-</p>
+                </p>
 
-                <a href="~/Content/StateTemplate/images/about/hist_building/1.jpg" data-lightbox="roadtrip">Image #2</a>
-                <a href="~/Content/StateTemplate/images/about/hist_building/1.jpg" data-lightbox="roadtrip">Image #3</a>
-                <a href="~/Content/StateTemplate/images/about/hist_building/1.jpg" data-lightbox="roadtrip">Image #4</a>
 
-                <div class="section animated fadeInLeft">
-                    <div class="container" id="fancyBoxImageGallery">
+                <div class="section animated fadeInLeft" id="fancyBoxImageGallery">
+                    <a href="~/Content/StateTemplate/images/about/hist_building/1.jpg" data-lightbox="buildings" title="Library &amp; Courts Building, north facade. 2001. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t1.jpg" alt="Library &amp; Courts Building, north facade. 2001. Photograph by Cathy Kelly� (image 1 0f 30)"></a>
 
-                        <a data-fancybox="group" href="~/Content/StateTemplate/images/about/hist_building/1.jpg" data-caption="Library & Courts Building, north facade. 2001. Photograph by Cathy Kelly">
-                            <img src="~/Content/StateTemplate/images/about/hist_building/t1.jpg" alt="Library & Courts Building, north facade. 2001. Photograph by Cathy Kelly">
 
-                        </a>
+                    <a href="~/Content/StateTemplate/images/about/hist_building/2.jpg" data-lightbox="buildings" title="Aerial photograph of the State Capitol and Capitol Extension Group. The building on the right is Office Building No. 1 or the Jesse Unruh Building, and on the left is the Library &amp; Courts Building. Photograph was taken shortly after the completion of the twin buildings in 1928."><img src="~/Content/StateTemplate/images/about/hist_building/t2.jpg" alt="Aerial photograph of the State Capitol and Capitol Extension Group (image 2 0f 30)"></a>
 
-                        <a data-fancybox="group" href="~/Content/StateTemplate/images/about/hist_building/2.jpg" data-caption="Aerial photograph of the State Capitol and Capitol Extension Group. The building on the right is Office Building No. 1 or the Jesse Unruh Building, and on the left is the Library & Courts Building. Photograph was taken shortly after the completion of the twin buildings in 1928.">
-                            <img src=" ~/Content/StateTemplate/images/about/hist_building/t2.jpg" alt="Aerial photograph of the State Capitol and Capitol Extension Group. The building on the right is Office Building No. 1 or the Jesse Unruh Building, and on the left is the Library & Courts Building. Photograph was taken shortly after the completion of the twin buildings in 1928.">
 
-                        </a>
+                    <a href="~/Content/StateTemplate/images/about/hist_building/3.jpg" data-lightbox="buildings" title="Library &amp; Courts Building, Cornerstone Laying Ceremony, March 26, 1924."><img src="~/Content/StateTemplate/images/about/hist_building/t3.jpg" alt="Library &amp; Courts Building, Cornerstone Laying Ceremony, March 26, 1924 (image 3 0f 30)"></a>
 
-                        <a data-fancybox="group" href="~/Content/StateTemplate/images/artForLegislators/03.jpg" data-caption="Souvenir print available at the Panama Pacific International Exposition, San Francisco, California, U.S.A. 1915.">
-                            <img src=" ~/Content/StateTemplate/images/artForLegislators/t_03.jpg" alt="Souvenir print available at the Panama Pacific International Exposition, San Francisco, California, U.S.A. 1915.">
-                        </a>
-                    </div>
+                    <a href="~/Content/StateTemplate/images/about/hist_building/4.jpg" data-lightbox="buildings" title="State Capitol with Library &amp; Courts Building under construction. Looking south, southwest. McCurry photograph."><img src="~/Content/StateTemplate/images/about/hist_building/t4.jpg" alt="State Capitol with Library &amp; Courts Building under construction. Looking south, southwest. McCurry photograph (image 4 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/5.jpg" data-lightbox="buildings" title="Library &amp; Courts Building, 1926 depicting the east and north facades."><img src="~/Content/StateTemplate/images/about/hist_building/t5.jpg" alt="Library &amp; Courts Building, 1926 depicting the east and north facades. (image 5 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/6.jpg" data-lightbox="buildings" title="Library &amp; Courts Building and circle, circa 1930. This view of the north facade was taken shortly after the completion of the landscaping."><img src="~/Content/StateTemplate/images/about/hist_building/t6.jpg" alt="Library &amp; Courts Building and circle, circa 1930. This view of the north facade was taken shortly after the completion of the landscaping (image 6 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/7.jpg" data-lightbox="buildings" title="The north facade features a granite pediment group created by New York sculptor Edward Field Sanford, Jr. Composed of seventeen figures and entitled 'California's Gift to the World', it was the largest pediment in the country at the time of installation."><img src="~/Content/StateTemplate/images/about/hist_building/t7.jpg" alt="The north facade features a granite pediment group created by New York sculptor Edward Field Sanford, Jr. (image 7 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/8.jpg" data-lightbox="buildings" title="The sculptor Edward Field Sanford, Jr. inspects the work on his pediment. In this photograph, the artist is inspecting the work of the craftsmen who carried out his design. The central figure, standing a full twelve feet, represents the fully developed California with a sword of justice in one hand and the owl of wisdom in the other.."><img src="~/Content/StateTemplate/images/about/hist_building/t8.jpg" alt="The sculptor Edward Field Sanford, Jr. inspects the work on his pediment (image 8 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/9.jpg" data-lightbox="buildings" title="Memorial Entrance Vestibule. The Lobby is dedicated to California veterans who died in World War I. The most dominating feature of the room is the sixteen black Italian marble pillars. The pillars serve no function other than decoration. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t9.jpg" alt="Memorial Entrance Vestibule. Photograph by Cathy Kelly� (image 9 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/10.jpg" data-lightbox="buildings" title="Detail of one the decorative urns surmounting the marble pillars. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t10.jpg" alt="Detail of one the decorative urns surmounting the marble pillars. Photograph by Cathy Kelly� (image 10 0f 30)"></a>
+
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/11.jpg" data-lightbox="buildings" title="Detail of bronze torch light standards in the Memorial Vestibule. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t11.jpg" alt="Detail of bronze torch light standards in the Memorial Vestibule. Photograph by Cathy Kelly� (image 11 0f 30)"></a>
+
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/12.jpg" data-lightbox="buildings" title="Frank Van Sloan murals. The famed San Francisco artist received a contract from the State of California to paint a series of twelve mural panels illustrating the history of warfare from neolithic times to World War I. He completed the murals in April 1929. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t12.jpg" alt="Frank Van Sloan murals. Photograph by Cathy Kelly� (image 12 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/13.jpg" data-lightbox="buildings" title="Detail of Frank Van Sloan murals. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t13.jpg" alt="Detail of Frank Van Sloan murals. Photograph by Cathy Kelly� (image 13 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/14.jpg" data-lightbox="buildings" title="Grand staircase. Photograph by Ross Steiner�"><img src="~/Content/StateTemplate/images/about/hist_building/t14.jpg" alt="Grand staircase. Photograph by Ross Steiner� (image 14 0f 30)"></a>
+
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/15.jpg" data-lightbox="buildings" title="Courtroom. Recognized as one of the most beautiful courtrooms in the country, it is used by the Third District Court of Appeal, and for six days a year, the California Supreme Court. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t15.jpg" alt="Courtroom. Photograph by Cathy Kelly� (image 15 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/16.jpg" data-lightbox="buildings" title="State Librarian's Office. The office features important California landscape and portrait paintings. Recently, the Library's Foundation acquired from Marcia and Robin Williams the Maynard Dixon painting called 'Allegory'. It is shown above the roll top desk. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t16.jpg" alt="State Librarian's Office.  Photograph by Cathy Kelly� (image 16 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/17.jpg" data-lightbox="buildings" title="The Anoakia Murals by Maynard Dixon. Located on the second floor corridor, these murals were originally commissioned by Anita Baldwin McClaughry for her mansion in Arcadia, California. The McCaslin family, the owners of the mansion, donated the murals to the Library in 1997. These murals, Dixon believed, dated the start of his true creative life. A bronze statue of Dixon by Gary Smith purchased through Foundation funds stands in a niche between the paintings. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t17.jpg" alt="The Anoakia Murals by Maynard Dixon. Photograph by Cathy Kelly� (image 17 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/18.jpg" data-lightbox="buildings" title="The Anoakia Murals by Maynard Dixon. Located on the second floor corridor, these murals were originally commissioned by Anita Baldwin McClaughry for her mansion in Arcadia, California. The McCaslin family, the owners of the mansion, donated the murals to the Library in 1997. These murals, Dixon believed, dated the start of his true creative life. A bronze statue of Dixon by Gary Smith purchased through Foundation funds stands in a niche between the paintings. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t18.jpg" alt="The Anoakia Murals by Maynard Dixon. Photograph by Cathy Kelly� (image 18 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/19.jpg" data-lightbox="buildings" title="Ceiling details. The ceilings of the public floors are painted with figures from mythology including this portrait of Medusa. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t19.jpg" alt="Ceiling details. The ceilings of the public floors are painted with figures from mythology including this portrait of Medusa. Photograph by Cathy Kelly� (image 19 0f 30)"></a>
+                    <a href="~/Content/StateTemplate/images/about/hist_building/20.jpg" data-lightbox="buildings" title="Ceiling details. The ceilings of the public floors are painted with figures from mythology including this portrait of Medusa. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t20.jpg" alt="Ceiling details. The ceilings of the public floors are painted with figures from mythology including this portrait of Medusa. Photograph by Cathy Kelly� (image 20 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/21.jpg" data-lightbox="buildings" title="Gillis Hall, 1929. Named in honor of State Librarian James L. Gillis, this stately room serves as the main reference center for the Library."><img src="~/Content/StateTemplate/images/about/hist_building/t21.jpg" alt="Gillis Hall, 1929. Named in honor of State Librarian James L. Gillis, this stately room serves as the main reference center for the Library. (image 21 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/22.jpg" data-lightbox="buildings" title="A Pageant of Tradition. Created by Maynard Dixon in 1928, this immense mural in Gillis Hall measures fourteen feet high by sixty-nine feet in length. For this mural, Dixon selected California's historical progress and pioneering ambition as his theme. It was Dixon's largest mural. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t22.jpg" alt="Maynard Dixon mural in Gillis Hall. Photograph by Cathy Kelly�"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/23.jpg" data-lightbox="buildings" title="A Pageant of Tradition. Created by Maynard Dixon in 1928, this immense mural in Gillis Hall measures fourteen feet high by sixty-nine feet in length. For this mural, Dixon selected California's historical progress and pioneering ambition as his theme. It was Dixon's largest mural. Photograph by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t23.jpg" alt="Maynard Dixon mural in Gillis Hall. Photograph by Cathy Kelly� (image 23 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/24.jpg" data-lightbox="buildings" title="Maynard Dixon at work on the mural. Dixon worked from a scaffold. For three and a half months, Dixon labored daily in Gillis Hall finally completing the mural in November 1928."><img src="~/Content/StateTemplate/images/about/hist_building/t24.jpg" alt="Maynard Dixon at work on the mural. Dixon worked from a scaffold. For three and a half months, Dixon labored daily in Gillis Hall finally completing the mural in November 1928 (image 24 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/25.jpg" data-lightbox="buildings" title="Circulation and Catalog Room, 1929. The room is graced by a highly ornamented ceiling, terrazzo floor, and bronze chandelier."><img src="~/Content/StateTemplate/images/about/hist_building/t25.jpg" alt="Circulation and Catalog Room, 1929. The room is graced by a highly ornamented ceiling, terrazzo floor, and bronze chandelier (image 25 0f 30)"></a>
+                    <a href="~/Content/StateTemplate/images/about/hist_building/26.jpg" data-lightbox="buildings" title="Bronze entrance gate to the Circulation and Catalog Room, 1929."><img src="~/Content/StateTemplate/images/about/hist_building/t26.jpg" alt="Bronze entrance gate to the Circulation and Catalog Room, 1929 (image 26 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/27.jpg" data-lightbox="buildings" title="Elevated bronze statue by Edward Field Sanford, Jr., flank side of the Circulation and Catalog Room. This female figure is called Inspiration. Photographs by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t27.jpg" alt="Eelevated bronze statue by Edward Field Sanford, Jr., flank side of the Circulation and Catalog Room. Photographs by Cathy Kelly� (image 27 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/28.jpg" data-lightbox="buildings" title="Elevated bronze statue by Edward Field Sanford, Jr., flank side of the Circulation and Catalog Room. This male figure is called Wisdom. Photographs by Cathy Kelly�"><img src="~/Content/StateTemplate/images/about/hist_building/t28.jpg" alt="Eelevated bronze statue by Edward Field Sanford, Jr., flank side of the Circulation and Catalog Room (image 28 0f 30)"></a>
+
+                    <a href="~/Content/StateTemplate/images/about/hist_building/29.jpg" data-lightbox="buildings" title="The Library &amp; Courts II Building was created as an annex for both the Library and the Third District Court of Appeal. Outgoing State Librarian Gary E. Strong and incoming State Librarian Dr. Kevin Starr dedicated the building in October 1994."><img src="~/Content/StateTemplate/images/about/hist_building/t29.jpg" alt="The Library &amp; Courts II Building (image 29 0f 30)"></a>
+                    <a href="~/Content/StateTemplate/images/about/hist_building/30.jpg" data-lightbox="buildings" title="The Library &amp; Courts II Building."><img src="~/Content/StateTemplate/images/about/hist_building/t30.jpg" alt="The Library &amp; Courts II Building (image 30 0f 30)"></a>
                 </div>
+
+
+
             </div>
+        </div>
     </main>
 </div>
