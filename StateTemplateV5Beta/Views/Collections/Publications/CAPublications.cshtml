@@ -6,6 +6,7 @@
     ViewBag.Description = "A monthly listing of official publications received by the State Library from California governmental agencies including an introduction, register, and index.";
 }
 
+
 <head>
     <title>@(ViewBag.Title)</title>
     <meta name="Author" content="@(ViewBag.Author)" />
@@ -18,8 +19,16 @@
         <div class="section">
             <div class="container">
 
-                <ol class="breadcrumb dynamic"></ol>
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/Collections/">Our Collections</a></li>
+                    <li><a href="/government-publications/">Government Publications</a></li>
+                    <li><a href="/government-publications/state-document-depository-program/">California Depository Library Program</a></li>
 
+                    <li class="active">
+                        California State Publications
+                    </li>
+                </ol>
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
 
                 <p>
