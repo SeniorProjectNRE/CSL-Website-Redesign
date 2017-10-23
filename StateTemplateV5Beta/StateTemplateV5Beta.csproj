@@ -1323,6 +1323,10 @@
     <Content Include="Content\StateTemplate\otherDocuments\services\BTBL_PatronHandbookFINALrev2015.pdf" />
     <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.brf" />
     <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.zip" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\BTBLIndividualApplicationRev8-17.docx" />
+    <Content Include="Content\StateTemplate\pdf\btbl\BTBLIndividualApplicationRev8-17.pdf" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\new_institution_application-klas-arial-new_logo.doc" />
+    <Content Include="Content\StateTemplate\pdf\btbl\new_institution_application-klas-arial-new_logo.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <Content Include="Content\StateTemplate\pdf\crb\Newsletters\20170104.pdf" />
