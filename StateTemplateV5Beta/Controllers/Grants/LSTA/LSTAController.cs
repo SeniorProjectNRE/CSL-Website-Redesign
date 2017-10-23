@@ -96,6 +96,7 @@ namespace StateTemplateV5Beta.Controllers.Grants
         }
 
         // GET: previous-grant-awards
+        [HttpGet]
         [Route("previous-grant-awards")]
         public ActionResult PreviousGrantAwards()
         {
@@ -137,14 +138,20 @@ namespace StateTemplateV5Beta.Controllers.Grants
 
         // Post
         [HttpPost]
+        [Route("previous-grant-awards")]
         public ActionResult PreviousGrantAwards(GrantsViewModel model)
         {
             //decimal principle = Convert.ToDecimal(Request["txtAmount"].ToString());
-            string grantID = "40-7600";
-            string year = "2010/2011";
-            string library = "Alameda County Library";
-            string project = "Ashland READS";
-            int award = 4;
+            string selectedGrantId;
+            string selectedYear;
+            string selectedLibrary;
+            string selectedProject;
+            int selectedAward;
+            string grantID = null;
+            string year = null;
+            string library = null;
+            string project = null;
+            int award = 0;
 
             if (model == null)
             {
@@ -152,14 +159,68 @@ namespace StateTemplateV5Beta.Controllers.Grants
             }
 
             if (!ModelState.IsValid)
-            {
-                
+            {   
                 return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", model);
             }
 
-            List<GrantsModel> grantModel = model.GrantGetAllList;
+            if (model.GetNumListValues[0] == "All")
+            {
+                selectedGrantId = null;
+            }
+            else selectedGrantId = model.GetNumListValues[0];
 
-            return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", grantModel);
+            if (model.GetYearListValues[0] == "All")
+            {
+                selectedYear = null;
+            }
+            else selectedYear = model.GetYearListValues[0];
+
+            if (model.GetLibrariesListValues[0] == "All")
+            {
+                selectedLibrary = null;
+            }
+            else selectedLibrary = model.GetLibrariesListValues[0];
+
+            if (model.GetProjectListValues[0] == "All")
+            {
+                selectedProject = null;
+            }
+            else selectedProject = model.GetProjectListValues[0];
+
+            if (model.GetAwardListValues[0] == 0)
+            {
+                selectedAward = 0;
+            }
+            else selectedAward = model.GetAwardListValues[0];
+
+            List<GrantsModel> AllList = _grantsService.GetAllGrants(selectedGrantId, selectedYear, selectedLibrary, selectedProject, selectedAward);
+            List<GrantAwardModel> AwardList = _grantsService.GetAllAwards(grantID, year, library, project, award);
+            List<GrantLibraryModel> LibraryList = _grantsService.GetAllLibraries(grantID, year, library, project, award);
+            List<GrantNumberModel> NumberList = _grantsService.GetAllGrantIDs(grantID, year, library, project, award);
+            List<GrantProjectModel> ProjectList = _grantsService.GetAllProjects(grantID, year, library, project, award);
+            List<GrantYearModel> YearList = _grantsService.GetAllYears(grantID, year, library, project, award);
+            List<String> NumListValues = _grantsService.GetNumListValues(NumberList);
+            List<int> AwardListValues = _grantsService.GetAwardListValues(AwardList);
+            List<String> ProjectListValues = _grantsService.GetProjectListValues(ProjectList);
+            List<String> LibraryListValues = _grantsService.GetLibrariesListValues(LibraryList);
+            List<String> YearListValues = _grantsService.GetYearListValues(YearList);
+
+            GrantsViewModel viewModel = new GrantsViewModel()
+            {
+                GrantGetAllList = AllList,
+                GrantAwardList = AwardList,
+                GrantLibraryList = LibraryList,
+                GrantNumberList = NumberList,
+                GrantProjectList = ProjectList,
+                GrantYearList = YearList,
+                GetNumListValues = NumListValues,
+                GetAwardListValues = AwardListValues,
+                GetLibrariesListValues = LibraryListValues,
+                GetProjectListValues = ProjectListValues,
+                GetYearListValues = YearListValues
+            };
+
+            return View("~/Views/Grants/LSTA/PreviousGrantAwards.cshtml", viewModel);
         }
 
         // GET: staff-innovation

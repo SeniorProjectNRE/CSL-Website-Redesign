@@ -85,6 +85,8 @@ namespace CSLDataAccessLayer
         public List<GrantAwardModel>GetAward(string grantNum, string year, string library, string project, int award)
         {
             List<GrantAwardModel> res = new List<GrantAwardModel>();
+            GrantAwardModel init = new GrantAwardModel() { Award = 0 };
+            res.Add(init);
             GrantAwardModel grantAward;
 
             string dbConnectionString = _dbConnectionString;
@@ -168,6 +170,8 @@ namespace CSLDataAccessLayer
         public List<GrantNumberModel> GetGrantNumber(string grantNum, string year, string library, string project, int award)
         {
             List<GrantNumberModel> res = new List<GrantNumberModel>();
+            GrantNumberModel init = new GrantNumberModel() { GrantID = "All"};
+            res.Add(init);
             GrantNumberModel grantNumber;
 
             string dbConnectionString = _dbConnectionString;
@@ -210,6 +214,8 @@ namespace CSLDataAccessLayer
         public List<GrantLibraryModel> GetLibrary(string grantNum, string year, string library, string project, int award)
         {
             List<GrantLibraryModel> res = new List<GrantLibraryModel>();
+            GrantLibraryModel init = new GrantLibraryModel() { Library = "All" };
+            res.Add(init);
             GrantLibraryModel grantLibrary;
 
             string dbConnectionString = _dbConnectionString;
@@ -252,6 +258,8 @@ namespace CSLDataAccessLayer
         public List<GrantProjectModel> GetProject(string grantNum, string year, string library, string project, int award)
         {
             List<GrantProjectModel> res = new List<GrantProjectModel>();
+            GrantProjectModel init = new GrantProjectModel() { Project = "All" };
+            res.Add(init);
             GrantProjectModel grantProject;
 
             string dbConnectionString = _dbConnectionString;
@@ -294,6 +302,8 @@ namespace CSLDataAccessLayer
         public List<GrantYearModel> GetYear(string grantNum, string year, string library, string project, int award)
         {
             List<GrantYearModel> res = new List<GrantYearModel>();
+            GrantYearModel init = new GrantYearModel() { Year = "All" };
+            res.Add(init);
             GrantYearModel grantYear;
 
             string dbConnectionString = _dbConnectionString;

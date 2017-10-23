@@ -21,5 +21,10 @@ namespace CSLBusinessObjects.ViewModels
         public List<string> GetProjectListValues { get; set; }
         public List<string> GetLibrariesListValues { get; set; }
         public List<string> GetYearListValues { get; set; }
+        public string SelectedGrantID { get; set; }
+        public int SelectedAward { get; set; }
+        public string SelectedProject { get; set; }
+        public string SelectedLibrary { get; set; }
+        public string SelectedYear { get; set; }
     }
 }
