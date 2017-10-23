@@ -1,10 +1,859 @@
 ﻿
+
 @{
-    ViewBag.Title = "ValueLibraries";
+    ViewBag.Title = "The Value of California's Public Libraries";
+    ViewBag.PageTitle = "CSL - The Value of California's Public Libraries";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "The State Library supports California's libraries through a variety of programs and services including grant and financial support programs, library consulting services, and resources such as statewide library statistics and directory information.";
 }
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+    <style>
+        .tips{
+            color:orange;
+            cursor:pointer;
+        }
+        #see_tips
+        {
+            transition:all 2s ease-in;
+        }
+        li{
+            padding-bottom:5px;
+        }
+    </style>
+</head>
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>ValueLibraries</h2>
-        </main>
-    </div>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/">services</a></li>
+                    <li><a href="/services/to-libraries">To Libraries</a></li>
+                    <li class="active">Value of California's Public Libraries</a></li>
+
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <p>
+                    The California State Library is exploring and demonstrating the value that public libraries provide to their communities and the people who invest in them through a project titled <em>Measuring the Value of California's Public Libraries</em>. The project began in January 2017 and continues until June 2019.
+                </p>
+
+                <h3>
+                    Libraries Improve The Bottom Line
+
+                </h3>
+                <p>
+                    During the first phase of the project, we identified approximately 60 resources that demonstrate the financial return of funds provided to public libraries. The resources we identified were selected for their relevance to California and they include studies conducted in California, studies of national and international significance, statewide studies from outside California, and studies using notable methodologies.
+
+                </p>
+                <p>
+                    Like other meta reviews, our resources demonstrate that investment in public libraries is a sound use of public funds: for every dollar invested in libraries, about $2-$10 are returned, with an average of between $3 and $6. The solid findings of high financial returns reinforce that governments and other financial investors can continue to trust public library leaders as good stewards of public money.
+
+                </p>
+                <p>
+                    We also identified a small number of studies that consider the question of how researchers have begun to measure the social impact of libraries to contrast the definition of financial value.
+
+                </p>
+                <p>
+                    The selected resources are available below and we invite users to consult individual items or pull the resources together as a whole and use them in the way that is best suited to their own context.
+
+                </p>
+                <h3>
+                    The Many Dimensions of Value Provided by Libraries
+
+                </h3>
+                <p>
+                    While the return on investment numbers we discovered are compelling, they are but one piece of a larger picture. A more complex approach to looking at libraries' value considers many dimensions of value including user satisfaction and social impact as well as economic impact.
+
+                </p>
+                <p>
+                    In the second phase of the project, we are identifying additional resources that demonstrate the different types of value that libraries provide. These resources will be available in Fall 2018.
+
+                </p>
+                <h3>
+                    Defining and Testing Value
+
+                </h3>
+                <p>
+                    During the third phase of the project, we will develop a definition of value that relates to California's public libraries and will test that definition. Further information will be available shortly.
+
+                </p>
+                <p>
+                    For more information, please contact Natalie Cole, Library Programs Consultant, California State Library at <a href="mailto:natalie.cole@library.ca.gov">natalie.cole@library.ca.gov</a>
+                </p>
+                <p>
+                    <strong>Project advisor</strong>: Cheryl Stenstrom, San José State University<br>
+                    <strong>Project researcher</strong>: Rachel Hanson, San José State University
+                </p>
+
+                <p>
+                    <em>This project is supported with California Library Services Act Funding. The project's fiscal agent is the Black Gold Cooperative Library System.</em>
+                </p>
+
+
+                <script>
+                    $(document).ready(function () {
+                        $(".tips").click(function () {
+                           
+                            $(this).siblings('#see_tips').toggleClass('hidden');
+                        });
+                    });
+
+
+                </script>
+
+                <h3 class="orange">RESOURCES ABOUT STUDIES CONDUCTED</h3>
+                <div class="half">
+                    <div class="panel panel-standout ">
+                        <div class="panel-heading">
+                            <h2><span class="ca-gov-icon-ca-state"></span> In California</h2>
+
+                        </div>
+                        <div class="panel-body">
+                            <h4>Resources about studies conducted in California</h4>
+
+
+                            <ol>
+                                <li>
+                                    Murphy, B. Glavin, M., &amp; Natali, E. (2007). Providing for knowledge, growth, and prosperity: A benefit study of the San Francisco Public Library.
+                                    <br><span class="ca-gov-icon-download" aria-hidden="true"></span><a href="http://sfpl.org/pdf/news/benefitstudy2007.pdf">
+                                        Source
+                                    </a>
+
+                                    <span class="tips" id="tips1"> 
+                                    <span class="ca-gov-icon-info" aria-hidden="true"></span>
+                                    Description
+                                    </span>
+                                    <div id="see_tips" class="hidden" >
+                                        <p>
+                                            The study finds, "for every dollar spent supporting SFPL, the citizens of San Francisco see a return in the range of $1.40 to $3.34" (Murphy, Glavin, &amp; Natali, 2007, p.48).This report describes and, when possible, quantifies the value that the library system provides to the San Francisco community. The authors take a broad perspective and consider the many different roles the library plays. They attempt to describe community benefits stemming from the direct provision of services, including the circulation of materials, the availability of public access computing, meeting room space, and other functions, as well as the library's more indirect impacts on the San Francisco community. The authors use the benefit assessment framework to describe and analyze the diverse array of benefits provided by San Francisco Public Library. This framework examines qualitative and quantitative benefits in the following areas: enriching person learning and recreation, fostering economic and workforce development, partnering for education and early literacy, creating and strengthening communities, and enhancing image and identity for San Francisco and its neighborhoods. The report acknowledges how important qualitative benefits are while explaining their limitations.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Berk &amp; Associates. (2013). Santa Clara Public Library District 2013 return on investment report. [Report].
+                                    <br><span class="ca-gov-icon-download" aria-hidden="true"></span><a href="https://www.sccl.org/SCCL/media/About/sccld_full_report_final.pdf">Source</a>
+                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info" aria-hidden="true"></span>Description</span>
+                                    <div id="see_tips" class="hidden" >
+                                        <p >
+                                            The study finds that for every dollar spent by Santa Clara County Library District, the community receives at least $2.50 to $5.17 in direct benefits (p. 2). This is a strong example of a thorough study that can be used by other libraries in California. The report clearly presents the library's quantifiable and non-quantifiable benefits, listing its many services and benefits broken into five "key roles," and it stresses the importance of non-quantifiable benefits. The methodologies are detailed clearly. Return on investment calculators used by libraries are often based on calculations from other regions or states, but here market values are based on the cost of local goods and services.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Berk &amp; Associates. (2015, September). Reinvesting and renewing for the 21st century. [Report].
+                                    <br><span class="ca-gov-icon-download" aria-hidden="true"></span><a href="http://sfpl.org/pdf/about/commission/ReinvestingRenewing.pdf">Source</a>
+                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info" aria-hidden="true"></span>Description</span>
+                                    <div id="see_tips" class="hidden" >
+                                        <p >
+                                            For every $1 invested in the 14-year San Francisco Public Library's branch library improvement program, the city realized a return of between $5.19 and $9.11. In addition to the return on investment figures, the study also found that the capital investments and additional operating spending associated with the program contributed more than $330 million in indirect and induced benefits to the San Francisco economy. This report s quantifiable and intangible economic benefits gained by San Francisco Public Library's branch library improvement program. Quantifiable return on investment calculations and totals are presented in charts and explained in writing. The authors also note which totals are conservative and which figures might be overstated as a result of the calculation. More specifically, the authors "used IMPLAN I-RIMS multipliers to calculate the economic benefits of both operational and capital spending attributable to BLIP... an advanced version of the Federal Bureau of Economic Analysis' RIMS II multipliers, a standard, widely used tool for calculating such impacts" (BERK, 2015, p. 54). The report uses branch profiles to illustrate how the branch library improvement program improved specific libraries and their communities. By responding to residents' needs, the program increased citizen support. By using funds in a strategic way to improve all branches, the entire San Francisco Public Library and San Francisco communities benefit.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Bourne, J. (2013, August 7). Local libraries' ROI valued at 400 percent. Las Gatos Patch.
+                                    <br><span class="ca-gov-icon-download" aria-hidden="true"></span><a href="http://patch.com/california/losgatos/local-libraries-roi-valued-at-400-percent_d26b1d70">Source</a>
+                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info" aria-hidden="true"></span>Description</span>
+                                    <div id="see_tips" class="hidden" >
+                                        <p >
+                                            This article presents information written by the Santa Clara County Public Affairs Office about the Santa Clara County Library District's return on investment study. To see the full study report, description, comments, and notes, see listing, Santa Clara County Library District 2013 Return on Investment Report on this website.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="panel panel-standout ">
+                        <div class="panel-heading">
+                            <h2><span class="ca-gov-icon-globe"></span> Outside California</h2>
+
+                        </div>
+                        <div class="panel-body">
+                            <h4>
+                                Resources about studies conducted outside California
+                            </h4>
+                            <p>In Alphabetical Order:</p>
+                            <div class="panel-group"role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">A-B</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>
+                                                    American Library Association (ALA). (1996-2017). Libraries matter: Impact research [Web page].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://www.ala.org/research/librariesmatter/">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" style="">
+                                                        <p >
+                                                            This American Library Association resource includes studies that are useful in making the case about the value of libraries to community members and other stakeholders. Topics include the Economic Impact of Libraries, Impact on Community Development, and Impact on Literacy and Education.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    American Library Association (ALA). (1996-2017). The Value of public libraries [Web page]. Libraries Matter: Impact Research.
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://www.ala.org/research/librariesmatter/">
+                                                        Source
+                                                    </a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The American Library Association (ALA) created a resource, Libraries Matter: Impact Research. Within this resource they include the topic "Economic Impact of Libraries" with sub-topic "Return on Investment (ROI)." The Return on Investment section lists brief summaries of library ROI studies.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Association of Research Libraries. (n.d.). LibValue.
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://www.libvalue.org">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            While this was an extensive study spanning three years and eight countries, the information about the study is limited. The Background section on the About page of the site offers the most comprehensive information, explaining the three phases and results found including: [Phase I] "Researchers developed a formula using data on the library's budget, faculty grant income, and faculty surveys. By implementing this model for the year 2006, UIUC [University of Illinois at Urbana-Champaign] determined a return of $4.38 in grant income for every dollar invested in the library." [Phase II] "The study's key finding was that for every monetary unit investing in the library, the respective institutions receive an ROI of between 15.54:1 and 0.64:1 in research grant income alone. In six of the eight countries, ROI for grants is higher than 1:1." The Phase III section is not updated with research findings. The Publications page is also useful, including six articles, 62 presentations, and 10 reports. With all the research done for LibValue, it is unfortunate that Phase III was never updated with final results of the research. Likewise, although an article written by Mays, Tenopir, &amp; Kaufman (2010) explains the project, it, too, was written before the project was complete. Phase I is described in detail in an article by Kaufman (2008) and Phase II is described in an article by Tenopir (2010). From the website homepage: "Values, Outcomes, and Return on Investment of Academic Libraries (LibValue) was a three-year study funded by the Institute of Museum and Library Services to define and measure ways in which academic libraries create value through research, teaching and learning, and social, professional, and public engagement. Project outcomes [include] the following: articulating the value of academic libraries; describing models for calculating ROI and value; providing web-based tools; and testing alternative value methods." While some research was done within the United States, "Phase II research looked at eight institutions in eight countries worldwide" (LibValue, n.d., About page, Background section, para. 1).
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Barron, D., Williams, Robert V., Bajjaly, S., Arns, J., &amp; Wilson, S. (2005). South Carolina Public Library economic impact study. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://www.libsci.sc.edu/SCEIS/home.htm">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The total economic benefit calculated is $4.48 for every $1 spent, almost 350%. This is a straightforward report capturing library value based on library user surveys. This study was a collaborative work by the School of Library and Information Science at the University of South Carolina, the South Carolina Association of Public Library Administrators, and the South Carolina State Library.  Survey respondents included the "general population, self-selected sample of individuals who came into public libraries or visited the public library web sites" (Barron, Williams, Bajjaly, Arns, &amp; Wilson, 2005, p. 3). While the authors (Barron, Williams, Bajjaly, Arns, &amp; Wilson, 2005) argue that "the perceptions of those who make use of a service provide a good measure of its value" (p. 3) the majority of respondents are likely people who are highly favorable toward the library, willing to support it by taking the survey. The surveys did not capture information about library value for South Carolinians who infrequently or rarely use the library.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Buffalo &amp; Erie County Public Library. (2012). The library ... A great return on your investment 2011. [Brochure].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="https://www.buffalolib.org/sites/default/files/pdf/AboutTheLibrary/2012.Color.advocacy.return.brochureWEB.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            This resource is a brochure that uses infographics to promote the library's value to the community. It is a simple tool that can be used by any library to promote their return on investment value to their community and that can easily be updated each year. The brochure clearly announces, "For every $1 funded, the Buffalo &amp; Erie County Public Library returns at least $6.70 in services." The brochure is filled with calculations that list costs of services, use statistics, comparative retail value, library tax, and other county library revenue. This information is routinely gathered by libraries. A section of the brochure is used to remind or make people aware of the fact that these valuable services are available for "FREE" to any Erie County resident with a library card.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Bureau of Business and Economic Research (BBER), Labovitz School of Business and Economics (LSBE), University of Minnesota Duluth. (2011). Minnesota public libraries' return on investment. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://melsa.org/melsa/assets/File/Library_final.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            From the executive summary: "The main conclusion from this survey is that Minnesotans feel public libraries are important and that their support should be maintained or increased." The study, written by business and economic professionals, includes definitions, assumptions, and high and low estimates. The report in general, and discussion of methodologies specifically, is written in professional language. The authors explain that the discussion of methodologies responds to "recent critiques of libraries' effort to value their services" (p. 54). The authors state, "readers can and should conclude that the SROI [Social Return on Investment] is greater than the more narrowly calculated ROI" (p. 63). In addition to the thorough explanation of calculations and the supporting figures and tables, a strength of this report is the discussion of methodologies used. Business and economic professionals explain the uses, pros, and cons of different methodologies including the contingent valuation method used by other library systems. The discussion of indirect and induced spending on the state initiated by libraries, and how taxes and specifics of the libraries' tax exempt status affect return on investment calculations, also make this a strong model. The authors explain that cost/benefit calculations are distinct from return on investment calculations and range can include both quantitative and qualitative considerations. The authors caution against comparing one state's data and return on investment to another without understanding how methodologies and contexts affect final calculations and conclusions.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Bureau of Business Research (BBR) IC2 Institute, The University of Texas at Austin. (2013). Texas libraries: Economic benefits and return on investment. Texas Library Journal, Spring. [Summary Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://www.txla.org/sites/tla/files/TLJ/TLJ89-1.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            In 2011, Texas public libraries collectively were found to provide $2.407 billion in benefits while costing less than $0.545 billion, a return on investment of $4.42 for each dollar invested. The authors summarize the study as follows: "In addition to measuring the economic benefits of public libraries, this research: [1] Documented numerous, specific examples in which libraries have enabled business organizations, businesses, and self-employed individuals to improve their economic activities; [2] Described libraries' activities that assist individuals to obtain employment; and [3] Identified educational and occupational programs libraries have provided to enhance their patrons' quality of life and meet the information, data, and social needs of their communities and regions. The impact Texas public libraries have is still underestimated" (BBR IC2 Institute, 2013, pp. 12-13). From the executive summary: Public libraries in the State of Texas provide significant economic benefits for their communities. This report examines these economic benefits, and documents those activities which contribute to economic activities throughout all regions of Texas. A data-intensive research design was developed to quantify economic benefits. Extensive data from the Texas State Library and Archives Commission (TSLAC) were used in conjunction with the input-output economic modeling software, IMPLAN. Additional data and information from a survey of all Texas public library directors were used as inputs to the economic model. The full report of this study can be accessed at http://hdl.handle.net/2152/19093.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Bureau of Business Research, IC2 Institute, &amp; The University of Texas at Austin. (2017). Texas Public Libraries: Return on investment. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="https://www.tsl.texas.gov/sites/default/files/public/tslac/pubs/ROI_Final.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            Collectively, in FY2015, Texas public libraries were found to provide $2.628 billion in benefits while costing $566 million, a return on investment of $4.64 for each dollar. This report is a good example of results that using the IMPLAN model can produce. A conservative approach, as well as clear statements about the scope, limitations, and challenges, builds confidence in the results and those who are presenting them. The report clearly states, "The software used in this report is unique to the economic activity in the State of Texas" (Bureau of Business Research, IC2 Institute, &amp; The University of Texas at Austin, 2017, p. 5). Volunteers were one of the services calculated in the economic estimates, unique from other studies, but a valuable aspect of most libraries. The authors of this study bring together the Bureau of Business Research, The University of Texas at Austin, and the IC2 Institute (at the University), described as a think tank working toward economic development. The IMPLAN model "which analyzed public libraries purely as business and organizational entities ... commonly used by economists and is widely accepted as one of three software modeling programs for impact analyses (the others are REMI and RIMS II)" (Bureau of Business Research, IC2 Institute, &amp; The University of Texas at Austin, 2017, pp. 4-5). The report includes short - and long-term economic impacts and explains the scope, limitations, and challenges of the research. Discussion of multiplier effects and a brief glossary are also included. From the executive summary: Public libraries in the State of Texas provide significant economic benefits for their communities. A data-intensive research design was developed to document and to quantify these economic benefits. Extensive databases from the Texas State Library and Archives Commission (TSLAC) were used in conjunction with the input-out economic modeling software, IMPLAN (Bureau of Business Research, IC2 Institute, &amp; The University of Texas at Austin, 2017, p. 4).
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">F-H</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>
+                                                    Felton, John. (2009). Bibliography. Nebraska Library Commission. [Bibliography].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://nlc.nebraska.gov/stats/roi/Bibliography.html">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The Nebraska Library Commission provides a brief bibliography of library return on investment studies in nine states. While many of these studies examine quantified benefits, expressed in the form of a return on investment calculation, some of the reports focus on services that are valued by patrons or report on voter surveys.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Fleeter, H. B. (2016). Return on investment analysis of Toledo Lucas County Public Library. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://www.toledolibrary.org/uploads/pdfs/Fleeter-ROI-STUDY.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The study reports that the total return on investment deriving from the libraries' activities is 3.87 to 1. This means that for every $1 spent by Toledo Lucas County Public Library, area residents receive an average of $3.87 in economic value. This report includes text and basic charts, and is well-written and well-organized. Fleeter (2016) explains what an economic impact study is and why it is not the most appropriate choice for a library value study. He explains why a cost-benefit (also known as "Economic Benefit," "Cost-Benefit," or "Return on Investment") approach is better. Additionally, he defines direct and indirect benefits with examples. He also explains that although the "direct return on the library's investment of 2.74 to 1 [the] ‘multiplier effect' ... ripples throughout the economy" (p. ii), bringing the total ROI to 3.87 to 1. He explains how the multiplier effect works and how he determined conservative values for his calculations. From the executive summary: The "Return on Investment" (ROI) for the Toledo Lucas County Public Library is computed by assessing the value (or benefit) of library materials and services to Toledo area library patrons and then comparing this value with TLCPL library operating expenditures. For the purposes of this analysis, library services are broken into the following categories: Physical circulation, digital/electronic circulation, computer &amp; technology services, reference services, and programming and other services.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Georgia Public Library Service. (2007). The economic value of public libraries: A bibliography.
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://www.georgialibraries.org/lib/collection/econ_value_bib.php">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            A simple and extensive bibliography listing 41 books, 22 journal articles, and 32 web resources. The bibliography offers a quick glance of leading authors and research topics between 1989 and 2007.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Griffiths, J-M., King, D. W., Aerni, S., Beach, S., Schlarb, J., Briem, C., ... Choemprayong, S. (2007). Taxpayer return-on-investment (ROI) in Pennsylvania Public Libraries. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="https://c.ymcdn.com/sites/www.palibraries.org/resource/resmgr/roi_docs/roi_fullreport.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            Key findings include, "The Pennsylvania taxpayer return on investment (ROI) in public library is 5.5 to 1 [and the] public libraries yield a net impact of $3.14 of GRP [Gross Regional Product] per dollar of public funding" (Griffiths et al., 2007, pp. 10-11). The findings of this study  both economic and other benefits achieved through use of public libraries. The project involves four integrated surveys, the use of a statewide economic input-output model (REMI), and annual Pennsylvania Library Statistics. The authors of this study are from two Information and Library Science Schools, and from the University Center for Social and Urban Research (UCSUR), University of Pittsburgh. The study is simple and straightforward, focusing on the library user groups and the services they use, with common use of pie charts and bar graphs.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Griffiths, J-M., King, D., Harrington, J., Lynch, T., Tomer, C., &amp; Harrington, J. (2004). Florida's public libraries build strong economies: A taxpayer return on investment report. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://roi.info.florida.gov/">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            This study found that "Florida's public libraries return at least $6.54 for every $1.00 invested from all sources, including local, state and federal dollars" (Griffiths et al., 2004, p. i). This is an independent study on taxpayer return on investment in Florida's public libraries. Over 238 individuals and 169 organizations participated in this study which was the first of its kind ever completed in the state. Researchers used a variety of data collection and analysis methods to assess the return on investment, including surveys and a standard method of assessing return on investment—an input-output econometric model called REMI (Regional Economic Modeling Inc.). The study measured the relationship between total economic benefit and the total investment in public libraries, or the gain or loss resulting from the existence of public libraries. This study shows that all taxpayers in Florida benefit from libraries through their contributions to education, workforce development, tourism, and overall quality of life issues. Surveys were given to households by telephone, at the library, to organizations that use the libraries, and to library directors. The report s the number of in-person visits, remote connections to the library, and technology training. The report provides numerous benefit-to-cost ratio findings. It also states, "For every $6,488 of public support (federal, state and local), one job is created" (Griffiths et al., 2004, 2014, p. ii). Following the framework proposed for library studies by Fraser, Nelson, &amp; McClure (2002), this study and report include the value of the library to non-users through telephone surveys to households and by commenting on indirect benefits to all Florida taxpayers. Indirect, direct, quantitative and qualitative benefits were all mentioned.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Haas Center for Business Research and Economic Development, University of Florida. (2013). Taxpayer return on investment in Florida Public Libraries 2013. [Study].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://roi.info.florida.gov/Home/Index">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The study addresses indirect economic benefits to the community and gives economic context to the study, with the ultimate conclusion that in 2013 Florida libraries had $1 = $10.18 in Economic Return. The contingent valuation method and economic impacts methods are defined and explained. Charts show seven components contributing to the total return on investment and definitions of those components. Conclusions are carefully stated. For example, "Florida's public libraries may increase the attractiveness of their communities" and "Survey results suggest the services provided by public libraries contribute to the quality of life" (Haas Center, 2013, p. 25). Additionally, the report clearly notes that the survey captures participants' perceptions. The website on which the study is found includes graphics, definitions, links to county data, current and previous studies, and informational/marketing materials. It is a good example of a state website presenting quick and easy to read data backed by accessible county data and the complete studies. The report itself is also a good example of making data analysis from surveys, contingent valuation method specifically, accessible and understandable to a broad audience. The Haas Center also performed Florida's 2008 study. From the website: This study "evaluates [1] The value that users place on public libraries [2] Taxpayers' return on investment [3] The economic impact of libraries in their communities." Methods used for the study include survey data and "an economic simulation that took taxpayer funds away from public libraries, and distributed them to other government sectors."
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Harless, D. &amp; Allen, F. (1999). Using the contingent valuation method to measure patron benefits of reference desk service in an academic library. College and Research Libraries 60: 56-59. doi:10.5860/crl.60.1.56<br>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The report asserts that, given reasonable assumptions about the cost of service, students and faculty place a value on the current hours of reference desk service that exceeds the cost by a ratio of 3.5 to 1. The authors of this study explain the contingent valuation method and the concept of measuring worth by patrons' willingness to pay. An important difference in their approach from previous studies is that they studied the value patrons placed on services used as well as the value patrons placed on having services available to them, what the authors call the option value. This is especially important in this study as the purpose was to show the value of staff being available at academic reference desks. The study showed that even though academic library patrons often wait to be served while librarians are helping other patrons, librarians are often witnessed sitting at an empty desk. The study shows that most faculty and students are willing to pay to have reference help ready and available just in case they need help. In a study conducted with the contingent valuation method, including the option value could be a useful measurement depending on the goals and audiences of the study. From the abstract: The authors [use] the contingent valuation (CV) method to estimate the economic value that patrons attach to reference desk service in an academic library... The survey population consisted of the students and faculty of the academic campus of Virginia Commonwealth University. The authors surveyed 382 students and faculty eliciting willingness to pay (WTP) for reference desk services. The [results indicate] that, on average, students are willing to pay $5.59 per semester to maintain current hours of the reference desk; instructional faculty indicate they are willing to pay $45.76 per year to maintain current hours.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Howard Fleeter &amp; Associates (2016), The return on investment of Ohio's Public Libraries &amp; A comparison with other states. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://olc.org/resources/government-relations/ohios-public-libraries-roi-report/">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            For every $1 spent by Ohio public libraries, Ohioans receive $5.48 in economic value. This study shows that Ohio's public libraries save Ohioans money and also directly benefit the state's economy. It is simpler than many others. The report s Ohio libraries' success compared to other states, reporting 1. Ohio has the second highest percentage (77.8%) of residents who are registered library users, 2. "Ohio ranks second in both annual circulation and total library usage" (p. 4), 3. "Ohio ranks 1st nationally in library visits per capita" (p. 7), and 4. Forty states spend more money per transaction than Ohio, with Ohio's final ROI of $5.48 per $1. Due to the difficulty of placing monetary value on indirect benefits, they are not part of this study.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">I-L</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>
+                                                    Indiana Business Research Center. (2007). The economic impact of libraries in Indiana. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://www.ibrc.indiana.edu/studies/EconomicImpactOfLibraries_2007.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The study concludes that "Indiana communities received $2.38 in direct economic benefits for each dollar of cost" (IRBC, 2007, p. 5). This study used the consumer surplus approach and includes cautions against using the contingent value method. The authors review how community leaders value the library compared to the general public, and how community leaders value general library services and resources compared to resources and services targeted to the business community. Report recommendations may be helpful to libraries focusing on small businesses and economic development. There are also recommendations regarding the refinement and expansion of library statistics collected by the state library and ideas about how the state library can help local libraries develop cost-benefit analyses. These recommendations might be useful or adaptable for state libraries. From the executive summary: The Indiana State Library commissioned the Indiana Business Research Center (IBRC) at Indiana University's Kelley School of Business to conduct a study to measure the economic benefits of Indiana's public libraries. In contrast to most other studies that have attempted to measure the economic impact of public libraries, this study also focused on the role that public libraries play in supporting business and economic development in their communities.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Kamer, P. M. (2005). Placing an economic value on the services of public libraries in Suffolk County, New York. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://scls.suffolk.lib.ny.us/pdf/librarystudy.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The author reports, "each tax dollar going to Suffolk County Public Libraries generated $3.93 in library services, a ratio of almost 4-to-1." (Kamer, 2005, p. 7, original in bold and italics). Kamer (2005) also concludes, "Since the model works downward as well as upward, Long Island's output of goods and services would shrink by more than $258 million, its payrolls would decline by more than $50 million and more than 1,200 jobs would be lost if the public libraries would cease to exist" (p. 11). This is a straightforward report with charts and graphs following the body of the report. This study uses the input-output model RIMS II and covers multiplier effects in the community. This report was written by Dr. Pearl M. Kamer, the Long Island Association's (LIA) Chief Economist. Kamer (2005) notes, "The foregoing analysis was predicated on a cost-benefit study performed by researchers studying the St. Louis Public Library in the spring of 1998. Although the current study was considerably less elaborate than the St. Louis study, the results were nevertheless similar." From the executive summary: This study determines the value of the direct services provided by the public libraries in Suffolk County, New York as compared with the tax dollars used to support them. It also measures the secondary economic impact of library expenditures on the community. [Key findings follow]: Library users in Suffolk County received almost four dollars [sic] worth of library services for every tax dollar invested in their public libraries. The libraries in Suffolk County are also major employers, [ultimately creating a ripple or multiplier effect]. Application of an input-output model of the Long Island economy ... showed that operating and capital expenditures ... caused total Long Island earnings to rise by more than $50 million and resulted in the creation of almost 1,250 Long Island jobs.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Kaufman, P. T. (2008). The library as strategic investment: Results of the Illinois return on investment study. LIBER Quarterly, 18(3-4), 424-436.
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://doi.org/10.18352/lq.7941">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The study determined that, in 2006, the university library's budget produced a return on investment of $4.28 for every dollar invested in the library. An independent assessment validated the research methodology used. The process for developing the study and measures is recorded, including the argument that investing in e-resources is valuable for researchers, which leads to more grant applications and scholarly works, which ultimately leads to more grants awarded to the university and is important for faculty recruitment and retention. The methodology can be used by other research universities and the article concludes with a section about next steps. From the abstract: University administrators are asking library directors to demonstrate their library's value to the institution in easily articulated quantitative terms that focus on outputs rather than on traditionally reported input measures. This paper reports on a study undertaken at the University of Illinois at Urbana-Champaign that sought to measure the return on the university's investment in its library. The study sought to develop a quantitative measure that recognizes the library's value in supporting the university's strategic goals, using grant income generated by faculty using library materials. The results of this study, which is believed to be the first of its kind, represent only one piece of the answer to the challenge of representing the university's total return from its investment in its library.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Kawartha Lakes Public Library Board. (2014). Kawartha Lakes Public Library economic impact study.
+                                                    <br><span class="ca-gov-icon-download"></span><a href="https://drive.google.com/file/d/0BwLnmBwFXNmBZ0lnaVFzUHhxWDg/view">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            For every dollar invested, $7.05 in value was received. Kawartha Lakes used similar methodology to that used by the London Public Library and by the Martin Prosperity Institute for the Toronto Public Library study. The Martin Prosperity Institute developed their methodology based on commonly used valuation methodologies in public sectors. Similar methodology was also used by Halton Hills Public Library, Milton Public Library, and Sault Ste. Marie Public Library. Three components were analyzed: Direct tangible benefits; Direct spending; and Indirect tangible benefits.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Ko, Y. M., Shim, Wonsik, Pyo, S-H., Chang, J. S., &amp; Chung, H. K. (2012). An economic valuation study of public libraries in Korea. Library &amp; Information Science Research, 34, 117-124. doi: 10.1016/j.lisr.2011.11.005<br>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The return on investment measured in this study was calculated to be 3.66. This article's organization follows the structure of a traditional research paper with the following sections: introduction, problem statement, literature review, methods, discussion, and conclusion. The authors note that the return on investment changes slightly depending on the library size, with the return on investment of medium-sized libraries being the highest. The research concludes, "the final ROI was estimated as 3.66" (Ko, Shim, Pyo, &amp; Chang, 2012, p. 122). The authors do reveal that even though the sample included a variety of operating environments and geographic regions, sampling individual users was challenging, perhaps affecting the validity of results. This also indicates that national demographics of public library users was not fully captured. From the abstract: The economic value of public libraries for local residents in Korea was measured. An economic-value measurement model that enables the estimation of diverse types of public library services was designed, using a conditional-value measurement method. Benefits were taken as the value of the main services provided by public libraries, such as accessibility to informational materials, facilities, and programs. Costs included the total amount of expenses at libraries such as personnel expenses, materials purchasing expenses, and other operational costs. Data were collected from 1,220 users from 22 public libraries in the province of Seoul/Gyeonggi-do and the other seven Korean provinces.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Levin, Driscoll &amp; Fleeter. (2006). Value for money: Southwestern Ohio's return from investment in public libraries. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://www.9libraries.info/docs/EconomicBenefitsStudy.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The study concludes, "for every dollar expended on library operations, the public received about $2.56 in directly quantifiable benefits" (Levin, Driscoll, &amp; Fleeter, 2006, p. i) and with "The application of a Household Expenditure multiplier [the] total quantifiable economic benefit of library investment [equals] about $3.81 per dollar expended on library operations" (p. ii). This study is thorough and easy to understand. The scope of the study is clearly defined and the report lists services that produce quantifiable benefits as well as indirect and unquantifiable benefits. From the introduction: This report contains four sections. The first section provides an overview of the libraries involved in the study. The second section examines the quantitative value of library services to the extent that measures of dollar value can apply to such services. The third section examines qualitative aspects of library programming to which specific dollar values may not apply but from which communities served by the libraries receive identifiable benefits. The fourth section summarizes the value of the role played by the public libraries as centers of community activities. While the report evaluates library operations from three separate perspectives, the sum of the libraries' total value to Southwest Ohio arises from a synthesis of library operations in which each aspect of library services enriches the other. The whole value exceeds the sum of the respective parts.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Library Research Service. (2016). Summary of recent public library return on investment studies. [Web page].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="https://www.lrs.org/data-tools/public-libraries/return-on-investment/recent-studies/">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            This is a straightforward web page for referencing studies, states, and their return on investment values. It simply lists return on investment studies (with links to those that are available), the scope of the study, the state, and the final return on investment value. The page is provided by the Colorado State Library's Library Research Service (LRS). Half of the web page is dedicated to Colorado's return on investment study that included eight libraries/library districts. Out-of-state studies that are listed were obtained from "Worth Their Weight: An Assessment of the Evolving Field of Library Valuation" (Imholz &amp; Arns, 2007).
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    London Public Library Board. (2015). A perspective on the economic impact of the London Public Library on the City of London.
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://www.londonpubliclibrary.ca/sites/default/files/Economic%20Impact%20of%20London%20Public%20Library_final_long%20version_web_0.pdf" target="_blank">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            London Public Library's study revealed that the library makes the city economically stronger. Based on a conservative estimate, the library produced more than $102 million in total economic impact to the City of London in 2014. For every dollar invested, Londoners received $6.68 in value. The average open hour at a library location generated $1,657 in direct benefits at an average cost of $475. Ultimately, the return on investment to the City of London and its citizens was 452%, which is midpoint in the calculated range of 234% - 670%.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingfour">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">M-O</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>
+                                                    Martin Prosperity Institute. (2013). So Much More: The economic impact of the Toronto Public Library on the City of Toronto. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://martinprosperity.org/media/TPL%20Economic%20Impact_Dec2013_LR_FINAL.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            This is the first study to measure Canadian public libraries' return on investment value. The study focuses on the significance of direct tangible benefits and indirect tangible benefits. The report demonstrates the calculations are conservative and states that local market values were used when possible. In addition to ing the value per open hour, an infographic s the economic impact per the City of Toronto, per capita, and per household. The return on investment value is also presented as a percentage: "The return from the City of Toronto's investment in the Toronto Public Library is 463%, which is the midpoint of a range very conservatively estimated to be 244% and is comfortably shown to reach 681%" (Martin Prosperity Institute, 2013, p. 4). Another strength of this report is the clear statement of how the libraries are supporting the city's strategic plan and goals. From the report overview: The Martin Prosperity Institute found for every dollar invested in the Toronto Public Library, Torontonians receive $5.63. These dollar figures come from extensive examinations of a wide variety of factors; use of collections, programs, meeting space, and technology were the inputs considered to calculate the direct benefits to users, a five-hundred-dollar annual savings per member on average. Each of these inputs has the potential to greatly increase the quality of those individuals' lives, but the study goes on to analyze the impact that direct spending by the library (e.g., collections, staff) and indirect spin-off spending have in the community, thus expressing the increase in the quality of life for the whole community.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    McClure, C. &amp; Bertot, J. C. (1998). Public library use in Pennsylvania: Identifying uses, benefits, and impacts. Final report. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://files.eric.ed.gov/fulltext/ED419548.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            From the abstract: The study found that there are numerous and important impacts and benefits that result from use of Pennsylvania public libraries. The purpose of the study was to identify users of Pennsylvania public libraries and determine their reasons for using the library through a statewide survey of public library users, site visits to ten libraries throughout the state, and logs of critical incidents of significant impacts. Because this study used surveys and focus groups, many of the results that demonstrate library value are broad statements (e.g. "Pennsylvania Public Libraries Support and Encourage Entrepreneurs, the Self Employed, Small Businesses, and Home-Based Businesses") supplemented with personal examples. Quantitative survey data is presented in percentages capturing user demographics, the top five uses of the library, and the percent of users who found specific services valuable. Much of the report captures the value of computers and online resources at the libraries. For staff juggling traditional and new library uses, new technologies were perceived as "a Boon and Bane for Public Libraries" (McClure &amp; Bertot, 1998, p. 20). The authors demonstrate the value of this study by thinking beyond funding. When public librarians and trustees "'make their case'" to policymakers as to the uses, benefits, impacts, and needs of public libraries" their data not only supports decisions about funding, but also supports decisions on "planning, technology development, programming, or other services" (McClure &amp; Bertot, 1998, p. 8). The authors describe a "catch-22": libraries need sufficient funding for resources and services that produce a positive impact, yet having data that proves positive impact is often needed for further funding and support. Reviewing this study alongside more recent studies shows how library studies have evolved, transitioning from capturing the value of libraries through surveys and focus groups to presenting financial values through methodologies such as return on investment, contingent valuation, and cost-benefit analysis.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    McClure, C.R., Fraser, B.T., Nelson, T.W., &amp; Robbins, J.B. (2000). Economic benefits and impacts from public libraries in the State of Florida: Final report to the State Library of Florida.
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://www.ii.fsu.edu/content/download/15666/102036/St-Lib-FL#1.Final.Report.Dec1.2000.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            This report provides a foundational discussion on the challenges and benefits of using economic measurement for public services, and proposes a number of possible methodologies. The authors provide a rigorous review of literature to date and discussion on the topic of assigning economic value to libraries. Through their extensive data collection, they were able to determine that Florida's public libraries provide direct and indirect economic benefits to the citizens of Florida, but propose further research to determine a dollar value for the return on investment. From the abstract: "The purpose of the study is to identify and describe the economic impacts and benefits of Florida public libraries. In addition, the study will develop and test a methodology to describe taxpayers' return on investment (ROI) for supporting public libraries."
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Nashville Area Chamber of Commerce: The Research Center. (2016). Economic impact and contribution analysis: Nashville Public Library. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="https://library.nashville.org/sites/default/files/field/page/file/nashville-public-library-impact-and-contribution_study.pdf">
+                                                        Source
+                                                    </a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            "With a wide range of programs, services and facilities, Nashville Public Library's return on investment to the city is $3.06 for every $1.00 of expenditure for the library system... The return on investment of the Nashville Public Library Foundation to the city is $4.06 for every $1.00 of expenditure for Foundation-sponsored programs and services… For every $1.00 in library operations, the city realizes $1.33 in economic output" (Nashville Area Chamber of Commerce, 2016, pp. 1-2). Unlike other studies, this study included the Library Foundation's contribution to the library. From the executive summary: This study focuses on several major elements of impact and opportunity attached to the library system. The key components featured in this study include: [1] Economic impact and contribution of the library system to Nashville [2] Examination of return on investment through change effects on economic and social capital of the community [3] Consideration of the unique economic aspects and roles of the library within the context of the broader economy and community. Data collection and analysis utilized a mixed-method approach. A key part of the analysis draws from survey data developed for this study to assess valuation of library services by users. This valuation provided the basis for a cost-benefit analysis. A second study component includes an economic impact analysis generated through input-output modeling. Additionally, the third component of analysis portrayed the impact potential of the role of the library on education in the region.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    New York. Senate. (2017, February 15). Assembly Bill A5810: Relates to authorizing a study of the economic impact of public libraries.
+                                                    <br><span class="ca-gov-icon-download"></span><a href="https://www.nysenate.gov/legislation/bills/2017/a5810/amendment/original">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            An act in relation to studying the economic impact of public libraries and public library systems in New York state. Legislation introduced in the senate in response to individual calls for studies showing the return on investment of New York's public libraries. In committee at the time of publication. If this bill passes, the State of New York will be obligated to fund a state-wide economic impact study.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    NorthStar Economics, Inc. (2008). The economic contribution of Wisconsin Public Libraries to the economy of Wisconsin. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://dpi.wi.gov/sites/default/files/imce/pld/pdf/wilibraryimpact.pdf">Source</a>
+                                                    <span class="tips" id="tips1"><span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            This study calculates that Wisconsin's "economic return to taxpayers is $4.06" (Northstar Economics, Inc., 2008, pp. 32-33) per tax dollar support. This study is a statewide collaborative effort, commissioned by the Wisconsin Department of Public Instruction and funded with a grant from the U.S. Institute of Museum and Library Services. The Executive Summary is informative for a general audience while following chapters provide details for those who want to understand processes and calculations. The report notes that the results "are probably not illustrative of all Wisconsin residents" (Northstar Economics, Inc., 2008, p. 9) because most respondents are library users. This report includes a SWOT analysis, not seen in similar reports. Strengths of this report include clearly stated objectives and goals. From the website: "An economic impact research report [that] showed the total economic contribution of Wisconsin public libraries [each year] with [its] return on investment in library services." The report provides "a conservative estimate, as the study did not factor in the value of heavily used and popular library services." Sections include Direct Economic Contribution, Job Generation, Income and Sales Tax Revenue Generation, Return on Investment, Public Input and Library Usage Patterns, and Library Alternatives.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Obal, M. P. (2015). An economic valuation of Marikina City Library using revealed preference methods. Journal of Philippine Librarianship, 35, 1-18.
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://journals.upd.edu.ph/index.php/jpl/article/view/5256">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The Total Economic Value of the Marikina City Library was estimated using an economic-value measurement model that was adapted based on revealed preference theory, which asserts that a person's preferences can be deduced from his/her behavior and actual choices. This straightforward report includes the objectives, scope and methodology of the study. In addition to using library use data and budget information, preferences were recorded by patron observation and the use of a standard observation form. The researchers explain that they used the revealed preference method to assign library value according to monetary terms because "Money straightens out this inconvenience from subjectivity of value because money functions as a common measure of value" (Obal, 2015, p. 3).
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingfive">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapsefive" aria-expanded="false" aria-controls="collapsefive">P-V</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfive">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>
+                                                    Pan, D., Wiersma, G., Williams, L. &amp; Fong, Y. S. (2013). More than a number: Unexpected benefits of return on investment analysis. The Journal of Academic Librarianship, 39(6), 566-572. doi: 10.1016/j.acalib.2013.05.002<br>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            From the abstract: In 2010–2011, University of Colorado (CU) librarians implemented a multi-campus pilot study to measure the institutional value of library resources used by faculty in their research. The study incorporated quantitative methods including return on investment, cost benefit analysis, and citation analysis of journal articles published by faculty, and qualitative methodologies such as in-person interviews with faculty. The study resulted in a CU return on investment model that can be used to measure faculty perceptions of value and the economic benefits of electronic journal collections for faculty research in terms of return on investment. The CU return on investment methodology provides outcomes beyond a single number and led to unexpected benefits for informing collection development decisions and strategies.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Pooley, P. K., Harper, R., Neal, M., Lewis, R., Whitfield, J. &amp; Scheibe, M. (2010). Taxpayer return on investment in Florida Public Libraries. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://roi.info.florida.gov/Home/DownloadStudy">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The study concludes that "Florida's public libraries return $8.32 for every $1.00 invested from all sources" (Pooley, Harter, Neal, Lewis, Whitfield, &amp; Schiebe, 2010, p. 3). Of note, page 12 includes a clear flow chart showing how public library benefits are categorized into 1. economic benefits, and 2. social support. Economic benefits then are broken down into A. information resources, B. tourism, and C. business operations. Categories and sub-categories in information resources and business operations are listed. This is a helpful illustration of the scope of all library benefits and how they are related, compared to the actual scope of the study. Like some other studies, this study included a calculation of halo spending. From the executive summary: This report describes a comprehensive study to assess taxpayer return on investment in Florida's public libraries. The present study was commissioned to provide an update to the original study performed in 2004. In the prior 2004 study, an econometric input-output model (REMI) covering 169 sectors for the State of Florida was applied to Florida's public libraries by the Center for Economic Forecasting and Analysis at Florida State University. This second analysis extended the economic contribution of libraries beyond the actual users of the libraries to yield a set of direct, indirect, and induced effects to the State of Florida and its communities. The present study uses an updated version of the REMI model that includes the ability to analyze the economic contribution of libraries not only at the state level, but at the county level as well.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Pung, C., Clarke, A., &amp; Patten, L. (2004). Measuring the economic impact of the British library. New Review of Academic Librarianship, 10(1), 79-102. doi: 10.1080/13614530412331296826<br>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            This report includes a discussion of outputs versus outcomes, and the desires of the researchers to capture outcomes in order "to quantify their value in terms of social, cultural and economic impacts" (Pung, Clarke, &amp; Patten, 2004, p. 79). Because the British Library is a national library, the use of this study as an example or model is limited. However, the report notes that since the British Library is a major research library, the methodology could be applied to similar, major research libraries. From the abstract: Assessing the British Library's contribution to the national economy is a complex matter ... Traditionally, attempts to assess these benefits [were] qualitative case studies [that failed] to provide a comprehensive evaluation. But now a technique supported by the Nobel Prize winning economists, Kenneth Arrow and Robert Solow, permits a coherent quantitative evaluation of the total benefit to the nation of publicly funded institutions and programmes. Recognising the value of this technique, the British Library commissioned a groundbreaking research study to estimate the impact of the Library on the UK economy. The study demonstrates that the Library generates value of around 4.4 times the level of its annual public funding of £83m. To the best of our knowledge, this study represents the first time the ‘Contingent Valuation' technique has been used to derive a figure for the overall economic impact of a national or major research library.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Ryan, J. &amp; McClure, C. R. (2003). Economic impact of the Hawaii State Public Library System (HSPLS) on the business and tourism industries study: Final report. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="https://eric.ed.gov/?id=ED509533">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            Principal findings were that Hawaii State Public Library System pumped $20 million directly to the economy of Hawaii, providing over $280 million in market equivalent services, returning over $13 to the Hawaii taxpayer in library services for every tax dollar invested, saving every person $218 and saving the average Hawaii family $747 a year. The study was done in two phases: Phase I: HSPLS economic value, and Phase II: Hawaii State Public Library System additional revenue sources. Phase I included determining the direct economic impact, market value, peer comparison, and value to library users. Research questions and the findings are clearly presented. The qualitative value to library users was gathered through "talk stories," recognizing that "not everyone expresses or understands the value of Hawaii State Public Library System using numbers" (Ryan &amp; McClure, 2003, p. i). The authors explained parameters of the study, stating "The researchers consciously decided not to pursue or include other likely but less direct or secondary economic and non economic benefits that Hawaii State Public Library System contributes to Hawaii economic and social capital" (Ryan &amp; McClure, 2003, p. 4). Services that were included met the following criteria: use data could be easily obtained, a commercial analog was available, and the service was heavily used. Due to the finding that Hawaii State Public Library System libraries are underfunded compared to peer libraries, a major portion of the study and report is dedicated to the discussion of expanding revenue sources. From the abstract: Ryan Information Management conducted a return on investment (ROI) study of the economic value of the Hawaii State Public Library System (HSPLS) and identified potential additional sources of operating revenue. HSPLS economic value was examined from four viewpoints, HSPLS' direct economic impact, market value, peer comparison and value to library users.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Smirnov, O. A. (2012). Toledo-Lucas County Public Library: Economic value and return on investment. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://www.utoledo.edu/centers/urban-affairs/publications/LucasLibReport.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            Smirnov concludes, "The economic value of public services provided by Toledo Lucas County Public Library in 2011 is placed in the range of $118 mln - $136 mln per year" (p. 2). $118 million was calculated from the economic impact analysis while $136 million was calculated from the return on investment/non-market valuation method. This study quantifies the taxpayer's return on investment in Toledo Lucas County Public Library. It provides two estimates of the economic value by using two different economic methodologies-economic value and return on investment. Smirnov calls attention to some library services, values, and concepts not noted, or not commonly noted, in other studies: statistics on web page requests and views of the library's special online collection; cost effectiveness of economic elasticity; the idea that helping a patron with a business need provides increased value because the service benefits the entire workforce of the company, while helping a patron with a personal need only affects the individual or one family; the unique value of online databases. Smirnov observes, "The cost-effectiveness of the Library is attributed to the high elasticity of its purchasing practices" (p. 11), a concept not noted in other studies. It should be noted that Smirnov ends by comparing his findings to other state studies; other researchers caution against this, noting the many variables.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Steffan, N., Lietzau, Z., Lance, Keith C., Rybin, A. Molliconi, C. (2009). Public Libraries - a Wise Investment: A Return on Investment Study of Colorado Libraries. [Report].
+                                                    <br><span class="ca-gov-icon-download"></span><a href="https://www.lrs.org/documents/closer_look/roi.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            This study determined that the return on investment for Colorado public libraries was approximately 5:1. The Library Research Service (LRS) undertook What's It Worth to You? A Return on Investment Study of Selected Colorado Public Libraries in May 2006. Using a multiple case study approach, the research was designed to generate information for eight public libraries representing geographically, economically, and demographically diverse regions of Colorado. There was a lack of funds for a statewide study and a random sampling. Instead, the information collected "allowed [the authors] to create a picture of a representative visit to the participating library" (Steffan, Lietzau, Lance, Rybin, &amp; Molliconi, 2009, p. 4). By studying distinct library systems, general differences between urban and rural areas are noted and libraries that did not participate can identify with a similar system to estimate their own return on investment. Differences between and tendencies of contingent and market valuation are explained. Author Lance's (2011) slideshow on how to conduct an ROI study is also noted in this literature collection. "Extrapolating to the State" (p. 6) was not the intent of the study; however, responding to interest, estimates were made.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Tenopir, C. (2010). Measuring the value of the academic library: Return on investment and other value measures. The Serials Librarian, 58(1-4), 39-48. doi: 10.1080/03615261003623005<br>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            This study is a follow-up (Phase 2) to the University of Illinois at Urbana-Champaign study (Kaufman, 2008) that became Phase 1 in a three-part study eventually named LibValue (Association of Research Libraries, n.d.). Tenopir (2010) explains, "Phase 1 ... tested just one aspect of ROI, which was the value of the library in the grants process through proposals, the return in grant funding, and grants reporting ... Phase 2 ... takes the same method of looking at grants and grant funding, but expands it internationally to eight more institutions in eight countries to test how replicable the methods and findings of phase 1 are in a wider context [and] phase 3 will go beyond grants" (pp. 40-41). Lack of literature and information on the LibValue website (Association of Research Libraries, n.d.) suggest that Phase 3 may not have been completed.  From the abstract: Return on Investment (ROI) is one method of measuring the value of a library's e-journal collection. In an international study designed to test an ROI formula developed as a case study at the University of Illinois, ROI of the value of e-journals to grants income was found to vary depending on the mission and subject emphasis of the institution. Faculty members report that e-journals have transformed the way they do research, including making them more productive and competitive. Future studies will examine ROI beyond grants income and beyond the value of e-journal collections.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    Vancouver Island Regional Library Board. (2016). Assessing the economic impact of Vancouver Island Regional Library on our communities.
+                                                    <br><span class="ca-gov-icon-download"></span><a href="http://virl.bc.ca/sites/default/files/documents/Reports/ROI%20Report%20-%20PRINT.pdf">Source</a>
+                                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info"></span>Description</span>
+                                                    <div id="see_tips" class="hidden" >
+                                                        <p >
+                                                            The study shows that Vancouver Island Regional Library had a total economic impact of $94,783,558 in 2015. For every dollar invested, $5.36 in value was received. The return on investment was 335% (mid- point in the calculated value from 149% to 521%). To determine benefits, the economic value of services provided by Vancouver Island Regional Library was measured by comparison (where available) with the market cost of those services. The library used similar methodology to that used by the London Public Library and by the Martin Prosperity Institute for the Toronto Public Library study. The Martin Prosperity Institute developed their methodology based on commonly used valuation methodologies in public sectors. Similar methodology was also used by Halton Hills Public Library, Milton Public Library, and Sault Ste. Marie Public Library. Three components were analyzed: Direct tangible benefits; Direct spending; and Indirect tangible benefits.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <h3 class="orange">RESOURCES FOCUSED ON</h3>
+
+                <div class="half">
+                    <div class="panel panel-standout ">
+                        <div class="panel-heading">
+                            <h2>
+                                <span class="ca-gov-icon-currency"></span> Methods and processes used
+                                in Return on Investment studies
+                            </h2>
+
+                        </div>
+                        <div class="panel-body">
+                            <h4>
+                                Resources focused on methods and processes
+                                about Return on Investment studies
+                            </h4>
+                            <ol>
+                                <li>
+                                    Hider, P. (2008). Using the contingent valuation method for dollar valuations of library services. Library Quarterly, 78(4), 437-458.
+                                    <br>
+                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                    <div id="see_tips" class="hidden">
+                                        <p>
+                                            The article explains the contingent valuation method and provides a study demonstrating one library's experience with applying the method. It explains the history of stated preference techniques to learn how much value people put on a particular service or good, and how that method led to using the contingent valuation method to capture the value of libraries. It identifies limitations while also acknowledging that professionals who understand it can use the approach to produce strong results for libraries. Hider's (2008) article is important because it explains the limitations of using the contingent valuation method to determine return on investment or library value. He notes that professionals who understand the method can produce good results, but it is difficult for inexperienced people to successfully administer a survey. From the abstract: "An application of the contingent valuation method (CVM) for estimating the economic value of a regional public library service is described, and some of the key methodological issues surrounding CVM and other stated preference techniques are discussed with reference to library use and funding contexts... [I]f CVM surveys are carefully designed and administered, they can produce estimates that are as convincing as those produced by other valuation methods."
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Imholz, S. &amp; Arns, J. W. (2007). Worth their weight: An assessment of the evolving field of library valuation. [Report].
+                                    <br><span class="ca-gov-icon-download" ></span><a href="http://www.americansforlibraries.org">
+                                        Source
+                                    </a>
+                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                    <div id="see_tips" class="hidden">
+                                        <p>
+                                            This is a helpful study in understanding the development of library valuation. The contingent valuation method, social return on investment, cost/benefit considerations, capturing intangible benefits, and using professional agencies are mentioned. Due to the age of the study, many of the newer components mentioned in this article are also seen and done well in more recent studies. The summary profiles of 17 studies provide an account of the different approaches and primary focuses libraries have used. While the collection of studies is similar to other aggregated listings, Imholz &amp; Arns (2007) focused on methodologies and analysis used. From the executive summary: "[This report] takes stock of the new work being done in the field of library valuation, puts that work into context, and provides recommendations for building the field in terms of both research and applications... [It recognizes] that new approaches to library advocacy are needed and... must involve "making the case" for the public library in quantitative terms." The report notes the need to find "new ways to express and quantify learning values and cultural benefits." It "presents summary profiles of 17 valuation and impact studies done since 1998... offer[ing] a unique overview of the field." It "does not claim to be definitive, nor could it be in such a dynamic and fast-changing field... The ultimate goal is to provide meaningful answers to communities as they ask what benefits they receive by investing in public libraries."
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Elliot, D. S., Holt, G. E., Hayden, S. W., &amp; Edmonds Holt, L. (2007). Measuring your library's value: How to do a cost-benefit analysis for your public library. Chicago, IL: American Library Association.<br>
+                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                    <div id="see_tips" class="hidden">
+                                        <p>
+                                            This is a helpful book for libraries planning to conduct a return on investment study on their own or through a firm. It clearly explains different methodologies and terms and will help professionals think about and ask important questions before and throughout the research process. The authors ultimately argue that a cost-benefit analysis is the most appropriate method for most libraries, explaining why the contingent value method used in many studies is not the best choice. The authors stress the following: know the purpose and goal of the study, know the target audiences, choose the best methodology for the situation, and be aware that results are not always favorable. Additionally, the authors give advice on how to best communicate final results. In contrast to this book's argument that using the contingent valuation method is not the best choice for library studies, Christopher R. Mcintosh (2013) has written an article, "Library Return on Investment: Defending the Contingent Valuation Method for Public Benefits Estimation." From the back cover: Measuring Your Library's Value, designed to serve large to medium-sized public libraries, gives librarians the tools to conduct a defensible and credible cost-benefit analysis (CBA). This hands-on reference covers the economic basics with librarian-friendly terms and examples, preparing library leaders to collaborate with economist-consultants. Library directors and trustees can use this book to [1] Ascertain whether a CBA is the way to go using checklists of pros and cons [2] Confidently customize the CBA process by viewing survey design elements step-by-step [3] Learn how to calculate the value a community receives from library services [4] Access proven examples for communicating what different community stakeholders need to hear. Authored by members of the team that spent more than a decade developing, testing, and perfecting this methodology, Measuring Your Library's Value is based on research funded by IMLS and PLA.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Berk &amp; Associates. (2005). The Seattle Public Library Central Library: Economics benefits assessment: The transformative power of a library to redefine learning, community and economic development. [Report].
+                                    <br><span class="ca-gov-icon-download" ></span><a href="https://www.spl.org/Documents/branch/CEN/SPLCentral_Library_Economic_Impacts.pdf">Source</a>
+                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                    <div id="see_tips" class="hidden">
+                                        <p>
+                                            The report states "Key findings show that approximately one-third of users visit from out of town, a total of $16 million in net new spending is associated with the library in its first year, and some local business have seen increase in business due to the new library. While the library and community celebrate the library's contribution to the community's success, the library is careful to keep focused on being a good library. The report lists recommendations for future success, noting if the recommendation involves a community partnership." From the executive summary: Following the 2004 opening of Seattle's new Central Library, use statistics dramatically increased, requests for tours and media shots were hard to fulfill, and there were reports of people visiting just to see the library and of restaurants extending hours to accommodate the visitors. This study was commissioned to evaluate the implications for Seattle's economy. By functioning as a highly effective information gateway, public space and tourist destination, Seattle's Central Library has become a significant contributor to Seattle's economy, a catalyst for Downtown revitalization and development and a new icon for the City. Measuring Your Library's Value (Elliot et al, 2007) comments on this study, writing, "This study should interest major urban central libraries, especially those that are contemplating or have recently completed major renovations or the introduction of new services" (p. 15). This report also puts the Seattle Central Library in context of "system-wide improvements under Libraries for All [in which] improvements had already been made to seven neighborhood branches... all of which have contributed to system-wide increased in library use" (Berk &amp; Associates, 2005, p. 12).
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    EOS. (2014, September 15). How libraries can understand and measure ROI. [Blog post].
+                                    <br><span class="ca-gov-icon-download" ></span><a href="http://eos.sirsidynix.com/how-libraries-can-understand-and-measure-roi/">Source</a>
+                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                    <div id="see_tips" class="hidden">
+                                        <p>
+                                            This is a good resource for people who are unfamiliar with the concept of return on investment, and its growing role among libraries. The resource is a blog post by EOS, a company focusing on library automation and knowledge management. Sections include "ROI: Defining value in dollars and cents" (an overview), "Breaking down ROI" (understanding approaches to ROI), "How to express ROI to stakeholders," "How e-books are changing ROI" The post can give staff, the public, and stakeholders a basic understanding of how return on investment is used to measure and present the value of libraries, especially when libraries are looking for funder and community support. It acknowledges that one method does not fit every library system. The section on e-books can be broadened to understanding how to evaluate and understand e-resources in a return on investment study.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Lance, K. C. (2011). Is reference earning its keep? How to do a return on investment study. RSL Research Group. Slideshow presented at the 2011 Texas Library Association conference, Austin, TX.
+                                    <br><span class="ca-gov-icon-download" ></span><a href="http://www.txla.org/sites/tla/files/pdf/handouts/2011/Is_ref_earning_keep.ppt">Source</a>
+                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                    <div id="see_tips" class="hidden">
+                                        <p>
+                                            This is a good review for administrators who are interested in conducting a return on investment study, whether they are conducting it internally or using an external agency.  The resource is a 74-slide PowerPoint explaining considerations a public library needs to make when doing a return on investment study. It includes an overview of methodologies and uses library studies to demonstrate how different methodologies have been used. Although the PowerPoint is missing Lance's full presentation (RSL Research Group, About RLS, http://rslresearch.com/about/), it still provides a good overview of methodologies, definitions, and approaches for libraries to consider when approaching a return on investment study. Lance includes concepts such as halo spending, alternative use, and multipliers. His breakdown of states that used particular methods is a good resource. A very similar pdf document (apparently created for the Nebraska Library Commission) is also available (Lance. (n.d.)). What's it worth to you? How to do a return on investment study for your public library. RSL Research Group.
+                                            <br><span class="ca-gov-icon-download" ></span><a href="https://nlc.nebraska.gov/stats/roi/How_to_do_ROI_Study_2.pdf"></a>).
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Fraser, B. T., Nelson, T. W., &amp; McClure, C. R. (2002). Describing the economic impacts and benefits of Florida public libraries: Findings and methodological applications for future work. Library and Information Science Research 24(3), 211-233.
+                                    <br><span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                    <div id="see_tips" class="hidden">
+                                        <p>
+                                            This article describes the economic impacts and benefits received from public libraries in Florida, indicating that overall public libraries make a significant contribution to the economic development of the state. In addition, this article discusses other efforts that have been undertaken to determine the economic impacts and benefits received from taxpayer investment. The authors present a framework for further study into the economic impacts and benefits received from public libraries, and present some goals and objectives for future studies. Rather than simply focusing on direct benefits for the local community, the authors stress the importance of capturing quantitative and qualitative, direct and indirect benefits for a specific library's users, their region, or their state. The team considered different methodologies and used library data, focus groups, and interviews to create a framework for public libraries to use in the future. They state, "It is hoped that the research reported here and future efforts will provide critical insights to assist public libraries in effecting, demonstrating, and articulating their contributions to economic development" (Fraser, Nelson, &amp; McClure, 2002, p. 212).
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Holt, G. &amp; Elliot, D. (2003). Measuring outcomes: Applying cost-benefit analysis to middle-sized and smaller public libraries. Libary Trends, 51(3) 424–440.
+                                    <br><span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                    <div id="see_tips" class="hidden">
+                                        <p>
+                                            This article includes a good description of the strengths and weaknesses of cost benefit analysis for those stakeholders wanting an in-depth discussion of methodologies. With funding from the Public Library Association, the authors developed a cost-benefit analysis methodology and applied it to five large public library systems. The present article describes their ongoing research to modify their methodologies to make them viable for application to public libraries of much smaller size.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Mcintosh, C. R. (2013). Library return on investment: Defending the contingent valuation method for public benefits estimation. Library &amp; Information Science Research, 35(2), 117-126. doi: 10.1016/j.lisr.2012.11.001
+                                    <br><span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                    <div id="see_tips" class="hidden">
+                                        <p>
+                                            This article states that while most library return on investment studies conducted in the United States rely on "cost savings" approaches to determine the marginal benefits of library services, these methods fail to logically have a meaningful relationship to theoretical benefits estimation. Results from a contingent valuation method technique used in Minnesota indicate that the contingent valuation method leads to more conservative estimates than "cost savings" approaches. Focusing on programs for low income and education households may create higher returns more directly attributable to these services. Unlike the cost savings methods, the contingent valuation method relies on the more accurate measure of "willingness to pay".
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    Lance, K.C. (n.d.) What's it worth to you: How to do a return on investment study for your public library [slide set]. Presented by Keith Curry Lance and the RSL Research Group for the Nebraska Library Commission.
+                                    <br><span class="ca-gov-icon-download" ></span><a href="https://nlc.nebraska.gov/stats/roi/How_to_do_ROI_Study_2.pdf">Source</a>
+                                    <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                    <div id="see_tips" class="hidden">
+                                        <p>
+                                            In this presentation, Lance provides a summary of several large US studies conducted over time, and follows with the steps a library staff can take to embark upon their own return on investment analysis. The presentation pulls together a quick summary of figures as well as simple explanations of the contingent valuation method, market valuation, and time valuation.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+              
+                    <div class="half">
+                        <div class="panel panel-standout ">
+                            <div class="panel-heading">
+                                <h2>
+                                    <span class="ca-gov-icon-people"></span> Social impact
+                                    of libraries
+                                </h2>
+
+                            </div>
+                            <div class="panel-body">
+                                <h4>Resources focused on social impact</h4>
+                                <ol>
+                                    <li>
+                                        Leckie, G. J., &amp; Hopkins, J. (2002). The public place of central libraries: findings from Toronto and Vancouver. Library Quarterly, 72(3), 326-372.<br>
+                                        <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                        <div id="see_tips" class="hidden">
+                                            <p>
+                                                The study found that patrons viewed the library definitively as a safe place for people of all ages and genders to spend time and contribute to their social well-being and personal intellectual development. This is an oft-cited study that considers the impact a public library can have on the cultural fabric of a city as well as patron perceptions of safety. Because of its age, it's interesting to note the finding that patrons primarily accessed the central library in these two cities for their physical book collections. From the abstract: Examines the use of the Toronto Reference Library and the Vancouver Public Library Central Branch by the public in Canada. Role of the public libraries on promoting public culture; Analysis of design aspirations, user profile, user behavior and library staff experiences; Threat of private market on the public libraries.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Pabērza, K. &amp; Rutkauskiene, U. (2010). Outcomes‐based measurement of public access computing in public libraries: A comparative analysis of studies in Latvia and Lithuania. Performance Measurement and Metrics, 11(1), 75-82, doi: 10.1108/14678041011026883<br>
+                                        <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                        <div id="see_tips" class="hidden">
+                                            <p>
+                                                Public access computing in public libraries was perceived to provide both economic and social benefits. Relating to economic benefits, the ability to save money and time was mentioned most often with more than 60 per cent of respondents in both countries noting the financial savings associated with use of public access computing. Relating to social benefits, the authors note benefits associated with improved leisure and culture. Relating to education, the authors note that libraries help users with their studies, provide information on formal and informal education, and facilitate e‐learning. Public access computers also support improved communication, including email and the internet, as mentioned by more than half of the users. The paper reports on the baseline stage of systematic impact assessment programmes being conducted in Latvia and Lithuania as part of their public access computing in public libraries development work, supported by their respective governments and part-funded by the Bill and Melinda Gates Foundation.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Tzu-Tsen Chen1, m., &amp; Hao-Ren Ke1, c. (2017). Public library as a place and breeding ground of social capital: A case of Singang Library. Malaysian Journal Of Library &amp; Information Science, 22(1), 45-58.<br>
+                                        <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                        <div id="see_tips" class="hidden">
+                                            <p>
+                                                This paper asserts that positive correlations exist among library use frequency, perceived outcomes, library as a meeting place, and library for breeding social capital. To the best of our knowledge, this is the first paper that discusses all the concepts together. From the abstract: This paper aims at exploring the perceived outcomes and societal value of public libraries, particularly from the perspective of Singang Library, Taiwan. Survey questionnaires were distributed to Singang Library users, and 387 valid responses were analyzed. The result shows that Singang Library users benefit from library services in 22 areas of daily life, which were collapsed through factor analysis into four major outcome types: daily life information, cultural activities, work related, and reading and learning. For analysis of how users use the library as a meeting place, this study shows that Singang Library is used as five different types of meeting place: square, a place for meeting diverse people, public sphere, joint activities and meta-meeting place. Singang Library as a meeting place contributes to breed bridging social capital among users' network, especially when the library is used as a low intensive meeting place. There are also bonding social capital characteristics among users who visit with their families. This paper also describes the relationship among library use frequency, perceived outcomes, library as a meeting place, and social capital, and the result indicates that the four variables are positively correlated. The data were collected through a questionnaire survey.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Miller, J. (2014). A comparative study of public libraries in Edinburgh and Copenhagen and their potential for social capital creation. Libri: International Journal Of Libraries &amp; Information Services, 64(4), 316-326.<br>
+                                        <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                        <div id="see_tips" class="hidden">
+                                            <p>
+                                                Findings show that library staff in Edinburgh and Copenhagen are actively involved in creating social capital in a number of ways: through facilitating or organizing meetings, providing an informal meeting place, forging links between groups in the community, creating a welcoming environment, and by meeting community educational needs. It was found that Copenhagen and Edinburgh share in many characteristics, but have different attitudes to trust. Conclusions demonstrate that three main factors affect the library's potential to create social capital; the library building and space, the library's staff and volunteers, and the links that the library has with the community. It is recommended that further research should be carried out in the area of library as place and on the identification of factors generating social capital. An exploration of staff views and practices through qualitative interviews gave a deeper insight into how social capital is facilitated. Finally, an analysis and comparison of ways in which Edinburgh and Copenhagen facilitate social capital creation was carried out. From the abstract: Although the concept of social capital can be traced back to 1916, in the past 10 years social capital theory has been linked increasingly to the public library. The purpose of this article is to investigate the library as place and the potential of the public library to create social capital. This comprises the examination of two cases, Edinburgh City Libraries in Edinburgh, Scotland and Københavns Biblioteker in Copenhagen, Denmark in the form of a comparative case study. The methods used to elicit data included qualitative interviews with library managers, observation, and consultation of organizational documentation.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Griffis, M. R., &amp; Johnson, C. A. (2014). Social capital and inclusion in rural public libraries: A qualitative approach. Journal Of Librarianship &amp; Information Science, 46(2), 96-109.<br>
+                                        <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                        <div id="see_tips" class="hidden">
+                                            <p>
+                                                In contrast to the other well-cited studies on public space and social capital, these authors found the library didn't play as prominent a role in rural areas where social networks are developed in a multitude of locations within the geographic community. From the abstract: This paper reports on the qualitative findings of a three-year study of public libraries and social capital conducted in Ontario, Canada. The study sought to establish whether library use was related to levels of social capital. This paper focuses on the rural phase of the study. The researchers visited five rural libraries, all in the southwestern region of the province. The researchers conducted in-depth interviews with library staff members and regular library users. The data suggest that while rural libraries have high potential to create social capital, the overlap of social networks in rural communities renders the library's influence redundant. Moreover, many of the mechanisms that help libraries increase a sense of social cohesion and inclusion among users can also result in exclusion, even if unintentionally. It is clear that the five rural public libraries we examined all have the potential to help create or facilitate social capital in their respective communities, and that in many cases they do. There was ample evidence that rural libraries: 1. provide opportunities for socialization that results in the exchange of information; 2. help integrate newcomers (and, in one case at least, cultural minorities) into the community; 3. symbolize local identity (and, though to a varying extent, civic autonomy); and 4. support not just themselves as a community place but a larger, broader network of community places and organizations.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Vårheim, A. (2014). Trust and the role of the public library in the integration of refugees: The case of a Northern Norwegian city. Journal Of Librarianship &amp; Information Science, 46(1), 62-69.
+                                        <br>
+                                        <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                        <div id="see_tips" class="hidden">
+                                            <p>
+                                                It was found that most refugees in this study were heavy library users and they had a great deal of trust in the library as an institution and a good understanding that everyone was welcome. It appeared that over time the initial trust for the institution didn't carry through into generalized social trust and the author concludes more study is needed. From the abstract: This article discusses how public libraries contribute to the generation of social capital and social trust among refugees participating in library programmes while enrolled in a compulsory government introductory programme to Norwegian language and society. The students' experiences with the library have made them more trusting toward the institution of the public library and library patrons in general. Complementing earlier studies, the paper shows that library programmes for immigrants can contribute to the creation of social trust. Library programmes can play an important part in facilitating and speeding up trust-creating processes, making integration less traumatic, although trust in unknown people (generalized trust) remains low, before, during, and after the completion of the programmes.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Jaeger, P.T., Bertot, J.C., Kodama, C.M., Katz, S.M. &amp; DeCoster, E.J. (2011). Describing and measuring the value of public libraries: The growth of the internet and the evolution of library value. First Monday 16(11).
+                                        <br><span class="ca-gov-icon-download" ></span><a href="http://firstmonday.org/ojs/index.php/fm/article/view/3765/3074">Source</a>
+                                        <span class="tips" id="tips1"> <span class="ca-gov-icon-info" ></span>Description</span>
+                                        <div id="see_tips" class="hidden">
+                                            <p>
+                                                The paper provides a good overview of some of the key challenges in defining and measuring value. From the abstract: By examining varied concepts of value, this paper explores different understandings of public libraries as places and their contributions to society. The paper also discusses various approaches public libraries have taken to illustrate, articulate, and demonstrate their value. After detailing several value demonstration approaches that public libraries are taking currently or could take, this paper discusses the implications of value demonstration approaches for libraries in social and policy contexts.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </main>
+</div>
 
