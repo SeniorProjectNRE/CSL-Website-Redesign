@@ -549,6 +549,7 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\statue.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\sword_performer.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\winchester_mystery_house.jpg" />
+    <Content Include="Content\StateTemplate\images\collections\collection_index.png" />
     <Content Include="Content\StateTemplate\images\contact-top.jpg" />
     <Content Include="Content\StateTemplate\images\contact\LCI.jpg" />
     <Content Include="Content\StateTemplate\images\contact\LCII.jpg" />
@@ -1650,6 +1651,11 @@
     <Content Include="Content\StateTemplate\pdf\public_libraries\TLJ89-1.pdf" />
     <Content Include="Content\StateTemplate\pdf\public_libraries\TPL Economic Impact_Dec2013_LR_FINAL.pdf" />
     <Content Include="Content\StateTemplate\pdf\public_libraries\wilibraryimpact.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toStateEmployees\stateTrainingVideos\CSLVideosA-Z.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toStateEmployees\stateTrainingVideos\CSLVideos_by_Topic.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toStateEmployees\stateTrainingVideos\StudyGuides.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toStateEmployees\stateTrainingVideos\FAQs_on_Borrowing_Training_Videos.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toStateEmployees\stateTrainingVideos\VideoAgreement.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <Content Include="Content\StateTemplate\pdf\crb\Newsletters\20170104.pdf" />
