@@ -6,21 +6,23 @@ using System.Web.Mvc;
 
 namespace StateTemplateV5Beta.Controllers.Grants.LSTA
 {
-    [RoutePrefix("grants/lsta/broadband")]
+    [RoutePrefix("services/to-libraries/broadband")]
     public class BroadbandController : Controller
     {
         // GET: Broadband
         [Route("")]
         public ActionResult Index()
         {
-            return View("~/Views/Grants/LSTA/Broadband/Broadband.cshtml");
+            return View("~/Views/Services/ToLibraries/Broadband/Broadband.cshtml");
         }
 
         // GET: libraries
         [Route("libraries")]
         public ActionResult Libraries()
         {
-            return View("~/Views/Grants/LSTA/Broadband/Libraries.cshtml");
+            return View("~/Views/Services/ToLibraries/Broadband/Libraries.cshtml");
         }
+
+        
     }
 }

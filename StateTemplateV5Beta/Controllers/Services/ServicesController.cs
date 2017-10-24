@@ -51,6 +51,14 @@ namespace StateTemplateV5Beta.Controllers.Services
             return View();
         }
 
+
+        // GET: Interlibrary-Lending
+        [Route("Interlibrary-Lending")]
+        public ActionResult InterlibraryLending()
+        {
+            return View("~/Views/Services/InterlibraryLending.cshtml");
+        }
+
         // GET: To-Public/Local-Libraries
         [Route("to-public/local-libraries")]
         public ActionResult ToPublicLocalLibraries()

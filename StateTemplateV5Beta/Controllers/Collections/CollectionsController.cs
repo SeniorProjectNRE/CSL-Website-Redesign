@@ -24,8 +24,8 @@ namespace StateTemplateV5Beta.Controllers.Collections
         }
 
         // GET: VideoPodcasts
-        [Route("video-podcasts")]
-        public ActionResult VideoPodcasts()
+        [Route("videos-podcasts")]
+        public ActionResult VideosPodcasts()
         {
             return View("VideoPodcasts");
         }
