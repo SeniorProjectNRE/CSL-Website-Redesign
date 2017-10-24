@@ -1,11 +1,140 @@
-﻿
-@{
-    ViewBag.Title = "Reference";
+﻿@{
+    ViewBag.Title = "CSL - Information Services";
+    ViewBag.PageTitle = "Information and Reference Services";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "California State Library Contact Information";
+    ViewBag.Keywords = "Information, Reference, Services";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Reference</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/research-resources">Research</a></li>
+                    <li>Reference</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <div class="two-thirds animate-fadeInUp">
+                        <p>
+                            Everyone is welcome to <a href="/visit-us/locations-and-hours/">visit</a> the California State Library and use our collections.
+                        </p>
+                        <p>
+                            Each <a href="/visit-us/locations-and-hours/">public service location</a> of the library has an information desk.
+                        </p>
+                        <p>
+                            You can use our <a href="http://catalog.library.ca.gov/">Online Catalog</a> to search our collections.
+                        </p>
+                        <p>
+                            Check our <a href="/services/research-resources/">Research Resources</a> to help you get started in your research.
+                        </p>
+
+
+                        <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading1'>
+                                    <h3 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Online Resources</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Full-text journals and newspapers, e-books, genealogy databases, and other online resources augment the collections of the California State Library.
+                                            These online resources are available to all visitors in our <a href="/visit-us/locations-and-hours/">public service locations</a>.
+                                            Please check our <a href="/services/research-resources/additional-resources/">Internet Links</a> for additional online resources.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading2'>
+                                    <h3 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Reference Services</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            There are many ways to contact our skilled librarians who can assist you with your research questions:
+                                        </p>
+                                        <p>
+                                            Use our Ask A Librarian service.
+                                        </p>
+                                        <p>
+                                            Email research requests to:
+                                        </p>
+                                        <ul class="list-overstated">
+                                            <li><a href="http://askstatelibrary.libraryresearch.info/">California History Room</a></li>
+                                            <li><a href="mailto:cslinfo@library.ca.gov">Information Services</a> (General Collection)</li>
+                                            <li><a href="mailto:cslgps@library.ca.gov">Government Publications</a></li>
+                                            <li><a href="mailto:csllaw@library.ca.gov">Law Library</a></li>
+                                            <li><a href="mailto:sutro@library.ca.gov">Sutro Library</a></li>
+                                        </ul>
+                                        <p>
+                                            Call us at <a href="tel:+19166540261">916-654-0261</a>.
+                                        </p>
+                                        <p>
+                                            <a href="/visit-us/locations-and-hours/">Visit</a> the State Library and discuss your research with one of our librarians.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading3'>
+                                    <h3 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Contact Us</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                    <div class='panel-body'>
+                                        <div class="location contact">
+                                            <span class="ca-gov-icon-contact-us"></span>
+                                            <div class="contact">
+                                                <p class="address">
+                                                    Information Services<br>
+                                                    914 Capitol Mall, Room 301<br>
+                                                    Stanley Mosk Library and Courts Building<br>
+                                                    California State Library
+                                                </p>
+
+                                                <p class="other">
+                                                    General Information: <a href="tel:+19166540261">916-654-0261</a><br>
+                                                    Email: <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a><br>
+                                                    <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">Ask A Librarian</a><br>
+                                                    Mailing address: P.O. Box 942837, Sacramento, CA 94237-0001
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="third animate-fadeInUp">
+                        <img src="~/Content/StateTemplate/images/services/researchResources/csl_employee.png" alt="CSL Employee" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

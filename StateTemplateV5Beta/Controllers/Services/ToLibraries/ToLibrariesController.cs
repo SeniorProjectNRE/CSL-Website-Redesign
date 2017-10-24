@@ -30,13 +30,6 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
             return View("~/Views/Services/ToLibraries/Grants.cshtml");
         }
 
-        // GET: Interlibrary-Lending
-        [Route("Interlibrary-Lending")]
-        public ActionResult InterlibraryLending()
-        {
-            return View("~/Views/Services/ToLibraries/InterlibraryLending.cshtml");
-        }
-
         // GET: development-programs-projects
         [Route("development-programs-projects")]
         public ActionResult DevelopmentProgramsProjects()
@@ -49,6 +42,13 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
         public ActionResult ValueLibraries()
         {
             return View("~/Views/Services/ToLibraries/DevelopmentProgramsProjects/ValueLibraries.cshtml");
+        }
+        
+        // GET: erate
+        [Route("broadband-erate")]
+        public ActionResult BroadbandERate()
+        {
+            return View("~/Views/Services/ToLibraries/BroadbandERate.cshtml");
         }
     }
 }

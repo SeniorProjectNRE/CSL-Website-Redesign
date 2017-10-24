@@ -22,6 +22,12 @@ namespace StateTemplateV5Beta.Controllers
             return View();
         }
 
+        [Route("General-Information")]
+        public ActionResult GeneralInformation()
+        {
+            return View();
+        }
+
         [Route("Library-Sections")]
         public ActionResult LibrarySections()
         {

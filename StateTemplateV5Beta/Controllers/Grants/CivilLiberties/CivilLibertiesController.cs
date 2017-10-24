@@ -17,10 +17,10 @@ namespace StateTemplateV5Beta.Controllers.Grants
         }
 
         // GET: about
-        [Route("about")]
-        public ActionResult About()
+        [Route("background")]
+        public ActionResult Background()
         {
-            return View("~/Views/Grants/CivilLiberties/About.cshtml");
+            return View("~/Views/Grants/CivilLiberties/Background.cshtml");
         }
 
         // GET: contacts
@@ -43,6 +43,14 @@ namespace StateTemplateV5Beta.Controllers.Grants
         {
             return View("~/Views/Grants/CivilLiberties/Recipients.cshtml");
         }
+
+        // GET: advisory-committee
+        [Route("advisory-committee")]
+        public ActionResult AdvisoryCommittee()
+        {
+            return View("~/Views/Grants/CivilLiberties/AdvisoryCommittee.cshtml");
+        }
+
 
     }
 }

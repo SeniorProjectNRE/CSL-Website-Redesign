@@ -1,11 +1,87 @@
 ﻿
 @{
-    ViewBag.Title = "Collections";
+    ViewBag.Title = "CSL - Discover Our Collections";
+    ViewBag.PageTitle = "Discover Our Collections";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "California State Library";
+    ViewBag.Keywords = "California, state, Library, collections";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Collections</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li>Our Collections</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <div class="group">
+                    <div class="two-thirds">
+                        <p>
+                            Access to the collections of the California State Library is available from our public service sections:
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="http://phereo.com/californiastatelibrary" target="_blank">3D Collections</a>
+                            </li>
+                            <li>
+                                <a href="/btbl/borrow">Braille and Talking Books</a>
+                            </li>
+                            <li>
+                                <a href="/california-history">California History</a>
+                            </li>
+                            <li>
+                                <a href="/grants/civil-liberties/recipients">California Civil Liberties Public Education Program (CCLPEP)</a>
+                            </li>
+                            <li>
+                                <a href="http://www.archive.org/details/californiastatelibrary" target="_blank">Digital Collections</a>
+                            </li>
+                            <li>
+                                <a href="/government-publications">Federal and State Government Publications</a>
+                            </li>
+                            <li>
+                                <a href="/california-history/genealogy">Genealogy Resources</a>
+                            </li>
+                            <li>
+                                <!-- TOOD: needs view -->
+                                <a href="http://www.library.ca.gov/collections/general_coll.html">General Collections</a>
+                            </li>
+                            <li>
+                                <a href="/law">Law Collection</a>
+                            </li>
+                            <li>
+                                <a href="http://catalog.library.ca.gov/" target="_blank">Library's Catalog</a>
+                            </li>
+                            <li>
+                                <a href="/collections/online-exhibits">Online Exhibits</a>
+                            </li>
+                            <li>
+                                <a href="http://catalog.library.ca.gov/F/?func=find-e-0&local_base=images" target="_blank">Photographs, Art Works, Prints, Drawings</a>
+                            </li>
+                            <li>
+                                <a href="/sutro">Sutro Library</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="third">
+                        <img src="~/Content/StateTemplate/images/collections/collection_index.png" class="animated fadeInRight" alt="California State Library Collections" title="California State Library Collections" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 </div>
 
