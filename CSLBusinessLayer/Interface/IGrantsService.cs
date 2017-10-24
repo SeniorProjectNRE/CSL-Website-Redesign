@@ -22,5 +22,7 @@ namespace CSLBusinessLayer.Interface
         List<string> GetProjectListValues(List<GrantProjectModel> model);
         List<string> GetLibrariesListValues(List<GrantLibraryModel> model);
         List<string> GetYearListValues(List<GrantYearModel> model);
+        List<String> AwardStrings();
+        int GetAwardCategoryFromString(string v);
     }
 }

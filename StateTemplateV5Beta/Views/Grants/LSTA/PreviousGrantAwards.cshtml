@@ -143,8 +143,8 @@
                             <div class="clearfix"></div>
 
                             <div class="half">
-                                @Html.LabelFor(m => m.GetAwardListValues, "Award:")
-                                @Html.DropDownListFor(m => m.GetAwardListValues, new SelectList(Model.GetAwardListValues, "Award"))
+                                @Html.LabelFor(m => m.AwardStrings, "Award:")
+                                @Html.DropDownListFor(m => m.AwardStrings, new SelectList(Model.AwardStrings, "Award"))
                             </div>
 
                             <div class="half">
@@ -215,19 +215,19 @@
         var table = $('#grantsData').DataTable({ rowReorder: { selector: 'td:nth-child(2)' }, responsive: true });
         $('#GetNumListValues').select2();
         $('#GetYearListValues').select2();
-        //$('#GetAwardListValues').select2();
+        $('#AwardStrings').select2();
         $('#GetLibrariesListValues').select2();
         $('#GetProjectListValues').select2();
 
 
-        $("#GetAwardListValues > option:first-child").text('All'); 
+        //$("#AwardStrings > option:first-child").text('All'); 
 
-        $("#GetAwardListValues > option:first-child").val('0'); 
+        //$("#AwardStrings > option:first-child").val('0'); 
 
-        $('#GetAwardListValues').select2();
+        //$('#AwardStrings').select2();
 
-        console.log($("#GetAwardListValues option:selected").text())
-        console.log($("#GetAwardListValues option:selected").val())
+        //console.log($("#AwardStrings option:selected").text())
+        //console.log($("#AwardStrings option:selected").val())
     });
 </script>
 

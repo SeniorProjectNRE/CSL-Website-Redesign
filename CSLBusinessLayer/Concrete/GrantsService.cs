@@ -31,9 +31,38 @@ namespace CSLBusinessLayer.Concrete
             return _dataAccess.GetGrantNumber(grantNum, year, library, project, award);
         }
 
+        //public List<GrantsModel> GetAllGrants(string grantNum, string year, string library, string project, int award)
+        //{
+        //    return _dataAccess.GetAllGrants(grantNum, year, library, project, award);
+        //}
+
         public List<GrantsModel> GetAllGrants(string grantNum, string year, string library, string project, int award)
         {
-            return _dataAccess.GetAllGrants(grantNum, year, library, project, award);
+            DataTable myData = _dataAccess.GetAllGrants(grantNum, year, library, project, award);
+            List<GrantsModel> res = new List<GrantsModel>();
+            GrantsModel grantsModel;
+
+            try
+            {
+                foreach(DataRow row in myData.Rows)
+                {
+                    grantsModel = new GrantsModel()
+                    {
+                        Award = Convert.ToInt32(row["Award"]),
+                        Library = row["Library"].ToString(),
+                        GrantID = row["GrantID"].ToString(),
+                        Project = row["Project"].ToString(),
+                        Year = row["Year"].ToString()
+                    };
+                    res.Add(grantsModel);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+            return res;
         }
 
         public List<GrantLibraryModel> GetAllLibraries(string grantNum, string year, string library, string project, int award)
@@ -49,6 +78,56 @@ namespace CSLBusinessLayer.Concrete
         public List<GrantYearModel> GetAllYears(string grantNum, string year, string library, string project, int award)
         {
             return _dataAccess.GetYear(grantNum, year, library, project, award);
+        }
+
+        public List<string> AwardStrings()
+        {
+            List<string> res = new List<string>();
+            string all = "All";
+            string a = "$0 - $10,000";
+            string b = "$10,000 - $50,000";
+            string c = "$50,000 - $100,000";
+            string d = "$100,000 - $500,000";
+            string e = "$500,000 - $1,000,000";
+            string f = "> $1,000,000";
+            res.Add(all);
+            res.Add(a);
+            res.Add(b);
+            res.Add(c);
+            res.Add(d);
+            res.Add(e);
+            res.Add(f);
+            return res;
+        }
+
+        public int GetAwardCategoryFromString(string award)
+        {
+            int res = 0;
+            switch (award)
+            {
+                case "All":
+                    res = 0;
+                    break;
+                case "$0 - $10,000":
+                    res = 1;
+                    break;
+                case "$10,000 - $50,000":
+                    res = 2;
+                    break;
+                case "$50,000 - $100,000":
+                    res = 3;
+                    break;
+                case "$100,000 - $500,000":
+                    res = 4;
+                    break;
+                case "$500,000 - $1,000,000":
+                    res = 5;
+                    break;
+                case "> $1,000,000":
+                    res = 6;
+                    break;
+            }
+            return res;
         }
 
         public List<int> GetAwardListValues(List<GrantAwardModel> model)

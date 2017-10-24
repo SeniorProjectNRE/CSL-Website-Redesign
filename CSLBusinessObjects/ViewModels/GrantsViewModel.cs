@@ -9,6 +9,7 @@ namespace CSLBusinessObjects.ViewModels
 {
     public class GrantsViewModel
     {
+        public List<GrantsModel> GrantGetAllFromTableList { get; set; }
         public List<GrantNumberModel> GrantNumberList { get; set; }
         public List<GrantYearModel> GrantYearList { get; set; }
         public List<GrantLibraryModel> GrantLibraryList { get; set; }
@@ -26,5 +27,6 @@ namespace CSLBusinessObjects.ViewModels
         public string SelectedProject { get; set; }
         public string SelectedLibrary { get; set; }
         public string SelectedYear { get; set; }
+        public List<string> AwardStrings { get; set; }
     }
 }
