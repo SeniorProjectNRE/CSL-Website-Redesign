@@ -181,9 +181,9 @@
                 <table id="grantsData" >
                     <thead>
                         <tr>
-                            <th>Grant#</th>
-                            <th>Year</th>
                             <th>Library</th>
+                            <th>Grant#</th>
+                            <th>Year</th>                           
                             <th>Project</th>
                             <th>Award</th>
                             <th>Narrative</th>
@@ -193,9 +193,9 @@
                         @foreach (var item in Model.GrantGetAllList)
                         {
                             <tr>
+                                <td>@item.Library</td>
                                 <td>@item.GrantID</td>
                                 <td>@item.Year</td>
-                                <td>@item.Library</td>
                                 <td>@item.Project</td>
                                 <td>@item.Award</td>
                                 <td></td>

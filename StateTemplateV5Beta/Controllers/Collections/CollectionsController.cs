@@ -22,5 +22,12 @@ namespace StateTemplateV5Beta.Controllers.Collections
         {
             return View("Genealogy");
         }
+
+        // GET: VideoPodcasts
+        [Route("video-podcasts")]
+        public ActionResult VideoPodcasts()
+        {
+            return View("VideoPodcasts");
+        }
     }
 }

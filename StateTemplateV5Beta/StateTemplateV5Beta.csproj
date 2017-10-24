@@ -2096,6 +2096,7 @@
     <Content Include="Views\Services\ToLibraries\DevelopmentProgramsProjects\ValueLibraries.cshtml" />
     <Content Include="Views\About\GeneralInformation.cshtml" />
     <Content Include="Views\About\Test.cshtml" />
+    <Content Include="Views\Collections\VideoPodcasts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
