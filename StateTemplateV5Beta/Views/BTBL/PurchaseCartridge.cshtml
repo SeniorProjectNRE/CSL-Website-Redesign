@@ -1,11 +1,51 @@
-﻿
-@{
-    ViewBag.Title = "PurchaseCartridge";
+﻿@{
+    ViewBag.Title = "CSL - BTBL - Purchasing Blank Book Cartridges";
+    ViewBag.PageTitle = "Purchasing Blank Book Cartridges";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "How to purchase blank book cartridges for use with BARD Braille and Audio Reading Download Service. Downloaded NLS talking books Digital Talking Book Machine Digital Book Cartridge USB Cartridge Vendors Blank books empty cartridges";
+    ViewBag.Keywords = "Blank Book Cartridges, Purchase";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>PurchaseCartridge</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/btbl">Braille and Talking Books</a></li>
+                    <li>Purchase Cartridge</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <p>
+                        For listening to downloaded NLS books on the Digital Talking Book Machine, we encourage you to purchase a cartridge similar to the ones you receive from us by mail.
+                    </p>
+                    <p>
+                        As part of your initial cartridge purchase you will need to also obtain a cable that will connect the cartridge to your computer via the USB port. 
+                        You may order a cable from the cartridge vendor or <a href="/btbl/contact/">contact BTBL</a> for one. 
+                        BTBL has been given a limited number of cables and will distribute them at no charge until supplies run out.
+                    </p>
+                    <p>
+                        NLS maintains an updated <a href="https://www.loc.gov/nls/enrollment-equipment/equipment-needed-for-nls-materials/cartridges-cables-for-bard/">list of vendors for purchasing blank cartridges</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

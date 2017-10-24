@@ -1,11 +1,1442 @@
-﻿
-@{
-    ViewBag.Title = "Depositories";
+﻿@{
+    ViewBag.Title = "CSL - State Document Depositories";
+    ViewBag.PageTitle = "State Document Depositories (alpha order by city)";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "A complete list of contact information for all full and selective State Document Depositories listed by city.";
+    ViewBag.Keywords = "Document, Depositories";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Depositories</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/government-publications">Government Publications</a></li>
+                    <li><a href="/government-publications/state-document-depository-program">California Depository Library Program</a></li>
+                    <li>Depositories</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <p>
+                        Below is a list of depository libraries that receive publications produced or distributed by California state agencies.
+                        Libraries designated below as "full" depositories receive copies of each state publication as defined in Government Code section 14902.
+                        The other libraries on the list are selective depositories that receive copies of each publication distributed by the Office of State Publishing, and may request other state documents distributed directly by the issuing agencies.
+                    </p>
+                    <p>
+                        Patrons needing access to or reference assistance concerning California state publications may contact the libraries below using the contact information provided. 
+                        State agencies needing a list of depository libraries for the purposes of distributing their publications should consult the 
+                        <a href="~/Content/StateTemplate/pdf/GovernmentPublications/stateDocumentDepositoryProgram/DepositoryLibrary-Current.pdf">State Document Depositories mailing list</a> (PDF, last updated July 2017).
+                    </p>
+
+                    <div class="orange">
+                        <h3>State Document Depositories (alphabetical order by city)</h3>
+                    </div>
+                    <div class="tab-group">
+                        <span class="ca-gov-icon-favorite"></span>
+                        <!-- Nav tabs - NOTE: UNIQUE ID IS REQUIRED -->
+                        <ul id="homeTabs" class="nav nav-tabs responsive" role="tablist">
+                            <li class="active"><a href="#a" role="tab" data-toggle="tab">A</a></li>
+                            <li><a href="#b" role="tab" data-toggle="tab">B</a></li>
+                            <li><a href="#c" role="tab" data-toggle="tab">C</a></li>
+                            <li><a href="#d" role="tab" data-toggle="tab">D</a></li>
+                            <li><a href="#e" role="tab" data-toggle="tab">E</a></li>
+                            <li><a href="#f" role="tab" data-toggle="tab">F</a></li>
+                            <li><a href="#g" role="tab" data-toggle="tab">G</a></li>
+                            <li><a href="#h" role="tab" data-toggle="tab">H</a></li>
+                            <li><a href="#i" role="tab" data-toggle="tab">I</a></li>
+                            <li><a href="#l" role="tab" data-toggle="tab">L</a></li>
+                            <li><a href="#m" role="tab" data-toggle="tab">M</a></li>
+                            <li><a href="#n" role="tab" data-toggle="tab">N</a></li>
+                            <li><a href="#o" role="tab" data-toggle="tab">O</a></li>
+                            <li><a href="#p" role="tab" data-toggle="tab">P</a></li>
+                            <li><a href="#r" role="tab" data-toggle="tab">R</a></li>
+                            <li><a href="#s" role="tab" data-toggle="tab">S</a></li>
+                            <li><a href="#t" role="tab" data-toggle="tab">T</a></li>
+                            <li><a href="#v" role="tab" data-toggle="tab">V</a></li>
+                            <li><a href="#w" role="tab" data-toggle="tab">W</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content responsive">
+                            <div class="tab-pane active" id="a">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.alhambralibrary.org/">Alhambra Public Library</a></div>
+                                                <div class="address">
+                                                    101 South First Street, Alhambra, CA 91801<br>
+                                                    Phone: <a href="tel:+16265705008">626-570-5008</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="https://library.humboldt.edu/search/govdocs/index.html">Humboldt State University Library</a></div>
+                                                <div class="address">
+                                                    1 Harpst Street, Arcata, CA 95521<br>
+                                                    Phone: <a href="tel:+17078263441">707-826-3441</a><br>
+                                                    Fax: <a href="tel:+17078263440">707-826-3440</a><br>
+                                                    <a href="http://library.humboldt.edu/ask/email.html">Email</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="b">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.csub.edu/library/">Walter W. Stiern Library</a></div>
+                                                <div class="address">
+                                                    California State University, Bakersfield<br> 
+                                                    9001 Stockdale Highway, Bakersfield, CA 93311-1099<br>
+                                                    Phone: <a href="tel:+16616543259">(661) 654-3259</a><br>
+                                                    Fax: <a href="tel:+16616543238">(661) 654-3238</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://kclawlib.org/">Kern County Law Library</a></div>
+                                                <div class="address">
+                                                    1415 Truxtun, Room 301, Bakersfield, CA 93301<br>
+                                                    Phone: <a href="tel:+16618685320">661-868-5320</a><br>
+                                                    Fax: <a href="tel:+16618685368">(661) 868-5368</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.kerncountylibrary.org/">Kern County Library System</a></div>
+                                                <div class="address">
+                                                    701 Truxtun Avenue, Bakersfield, CA 93301-4816<br>
+                                                    Phone: <a href="tel:+16618680770">(661) 868-0770</a><br>
+                                                    Fax: <a href="tel:+16618680799">(661) 868-0799</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.law.berkeley.edu/library/">School of Law Library</a></div>
+                                                <div class="address">
+                                                    Boalt Hall, University of California, Berkeley, Berkeley, CA 94720-7210<br>
+                                                    Phone: <a href="tel:+16618680770">(661) 868-0770</a><br>
+                                                    Fax: <a href="tel:+15106420900">(510) 642-0900</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://kclawlib.org/">Doe Library</a></div>
+                                                <div class="address">
+                                                    University of California, Berkeley (Complete)<br>
+                                                    Berkeley, CA 94720-6000<br>
+                                                    Phone: <a href="tel:+15106426657">(510) 642-6657</a><br>
+                                                    <a href="http://guides.lib.berkeley.edu/government-information">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="c">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www4.csudh.edu/library/">California State University, Dominguez Hills Library</a></div>
+                                                <div class="address">
+                                                    California State University, Dominguez Hills<br>
+                                                    1000 East Victoria Street,  Carson, CA 90747-0005<br>
+                                                    Phone: <a href="tel:+13102433700">(310) 243-3700</a><br>
+                                                    Fax: <a href="tel:+13105164219">(310) 516-4219</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.csuchico.edu/library/gov/index.html">Meriam Library</a></div>
+                                                <div class="address">
+                                                    California State University, Chico (Complete)<br>
+                                                    400 West 1st Street, Chico, CA 95929-0295<br>
+                                                    Phone: <a href="tel:+1(530) 898-5833">(530) 898-5833</a><br>
+                                                    Fax: <a href="tel:+15308984443">(530) 898-4443</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.chulavistaca.gov/departments/library">Chula Vista Public Library</a></div>
+                                                <div class="address">
+                                                    365 F Street, Chula Vista, CA 91910<br>
+                                                    Phone: <a href="tel:+16196915069">(619) 691-5069</a><br>
+                                                    <a href="http://www.chulavistaca.gov/departments/library/contact-us">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://libraries.claremont.edu/gov/">Claremont Colleges Honnold/Mudd Library</a></div>
+                                                <div class="address">
+                                                    800 North Dartmouth Avenue, Claremont, CA 91711-3991<br>
+                                                    Phone: <a href="tel:+19096073959">(909) 607-3959</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="d">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.cityofinglewood.org/depts/library/">University of California, Davis</a></div>
+                                                <div class="address">
+                                                    Mabie Law Library, King Hall, Room 1071, Davis, CA 95616-5201<br>
+                                                    Phone: <a href="tel:+15307523327">(530) 752-3327</a><br>
+                                                    Fax: <a href="tel:+15307528766">(530) 752-8766</a><br>
+                                                    Email: <a href="mailto:lawlibref@ucdavis.edu">lawlibref@ucdavis.edu</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.buttecounty.net/bclibrary/Home.aspx">University of California, Davis (Complete)</a></div>
+                                                <div class="address">
+                                                    Shields Library, 100 North West Quad, Davis, CA 95616-5292<br>
+                                                    Phone: <a href="tel:+15307521624">(530) 752-1624</a><br>
+                                                    Fax: <a href="tel:+15307523148">(530) 752-3148</a><br>
+                                                    <a href="http://www.lib.ucdavis.edu/dept/govinfo/forms/ask.php">Email</a> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="e">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.cityofelcentro.org/library/">El Centro Public Library</a></div>
+                                                <div class="address">
+                                                    1140 N. Imperial Ave., El Centro, CA 92243<br>
+                                                    Phone: <a href="tel:+17603374565">(760) 337-4565</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.humboldtgov.org/1346/Public-Library">Humboldt County Library</a></div>
+                                                <div class="address">
+                                                    1313 Third Street, Eureka, CA 95501-0533<br>
+                                                    Phone: <a href="tel:+17072691900">(707) 269-1900</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="f">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.aclibrary.org/">Fremont Main Library</a></div>
+                                                <div class="address">
+                                                    Alameda County Library<br>
+                                                    2400 Stevenson Blvd., Fremont, CA 94538-2326<br>
+                                                    Phone: <a href="tel:+15107451444">(510) 745-1444</a><br>
+                                                    <a href="http://www.aclibrary.org/research/default.asp?topic=Research&cat=AskaLibrarianEmail">E-mail</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.fresnolibrary.org/ref/govdoc.html">Fresno County Public Library (Complete)</a></div>
+                                                <div class="address">
+                                                    2420 Mariposa Street, Fresno, CA 93721-2285<br>
+                                                    Phone: <a href="tel:+15594883195">(559) 488-3195</a><br>
+                                                    Fax: <a href="5594886735">(559) 488-6735</a><br>
+                                                    <a href="http://www.fresnolibrary.org/ref/webref.html">E-mail</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://libguides.csufresno.edu/govinfocollections">Henry Madden Library</a></div>
+                                                <div class="address">
+                                                    California State University, Fresno<br>
+                                                    5200 North Barton Avenue, Fresno, CA 93740-8014<br>
+                                                    Phone: <a href="tel:+15592782335">(559) 278-2335</a><br>
+                                                    Fax: <a href="tel:+15592786952">(559) 278-6952</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://libraryguides.fullerton.edu/c.php?g=189838">Pollak Library</a></div>
+                                                <div class="address">
+                                                    California State University, Fullerton
+                                                    800 North State College Boulevard, Fullerton, CA 92834-4150<br>
+                                                    Phone: <a href="tel:+17142783449">(714) 278-3449</a><br>
+                                                    E-mail: <a href="mailto:libraryanswers@fullerton.edu">libraryanswers@fullerton.edu</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="g">
+                                <div class="location mini">
+                                    <div class="ca-gov-icon-road-pin"></div>
+                                    <div class="contact">
+                                        <div class="title"><a href="http://ocpl.org/gov/occr/lib/">Orange County Public Library</a></div>
+                                        <div class="address">
+                                            Garden Grove Regional Branch<br>
+                                            11200 Stanford Avenue, Garden Grove, CA 92840-5318<br>
+                                            Phone: <a href="tel:+17145300711">714-530-0711</a><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="h">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.countyofkings.com/services/law-library">Kings County Law Library</a></div>
+                                                <div class="address">
+                                                    1400 West Lacey Boulevard, Building 4, Hanford, CA 93230<br>
+                                                    Phone: <a href="tel:+15595823211">(559) 582-3211 ex. 4430</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://csueastbay.libguides.com/gov">California State University, East Bay</a></div>
+                                                <div class="address">
+                                                    University Libraries<br>
+                                                    25800 Carlos Bee Boulevard, Hayward, CA 94542-3052<br>
+                                                    Phone: <a href="tel:+1(510) 885-3765">(510) 885-3765</a><br>
+                                                    Fax: <a href="tel:+1(510) 885-2049">(510) 885-2049</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="i">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.cityofinglewood.org/depts/library/">Inglewood Public Library</a></div>
+                                                <div class="address">
+                                                    101 West Manchester Boulevard, Inglewood, CA 90301-1771<br>
+                                                    Phone: <a href="tel:+13104125380">(310) 412-5380</a><br>
+                                                    Email: <a href="mailto:publiclibrary@cityofinglewood.org">publiclibrary@cityofinglewood.org</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.buttecounty.net/bclibrary/Home.aspx">University of California, Irvine </a></div>
+                                                <div class="address">
+                                                    Langson Library, Irvine, CA 92697<br>
+                                                    Phone: <a href="tel:+19498244976">(949) 824-4976</a><br>
+                                                    Fax: <a href="tel:+19498243644">(949) 824-3644</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="l">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.colapublib.org/services/govsvcs/internet.html">Lancaster Library</a></div>
+                                                <div class="address">
+                                                    Los Angeles County Public Library, 601 W. Lancaster Blvd., Lancaster, CA 93534<br>
+                                                    Phone: <a href="tel:+16619485029">(661) 948-5029</a><br>
+                                                    Fax: <a href="tel:+16619450480">(661) 945-0480</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://libraries.ucsd.edu/">Geisel Library</a></div>
+                                                <div class="address">
+                                                    University of California, San Diego (Complete)<br>
+                                                    9500 Gilman Drive, La Jolla, CA 92093-0175<br>
+                                                    Phone: <a href="tel:+18585343336">(858) 534-3336</a><br>
+                                                    Fax: <a href="tel:+18585347548">(858) 534-7548</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://csulb.libguides.com/governmentinformation">University Library</a></div>
+                                                <div class="address">
+                                                    California State University, Long Beach<br>
+                                                    1250 Bellflower Boulevard, Long Beach, CA 90840-1901<br>
+                                                    Phone: <a href="tel:+15629854027">(562) 985-4027</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.lbpl.org/">Long Beach Public Library</a></div>
+                                                <div class="address">
+                                                    101 Pacific Avenue, Long Beach, CA 90822-1097<br>
+                                                    Phone: <a href="tel:+15625707500">(562) 570-7500</a><br>
+                                                    Fax: <a href="tel:+15625706956">(562) 570-6956</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.lalawlibrary.org/">Los Angeles County Law Library</a></div>
+                                                <div class="address">
+                                                    301 West 1st Street, Los Angeles, CA 90012-3100<br>
+                                                    Phone: <a href="tel:+12137852513">(213) 785-2513</a><br>
+                                                    <a href="http://www.lalawlibrary.org/index.php/contact.html">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://web.calstatela.edu/library/guides/govpubs.htm">John F. Kennedy Memorial Library</a></div>
+                                                <div class="address">
+                                                    California State University, Los Angeles<br>
+                                                    5151 State University Drive, Los Angeles, CA 90032-8300<br>
+                                                    Phone: <a href="tel:+13233434927">(323) 343-4927</a><br>
+                                                    Fax: <a href="tel:+13233435600">(323) 343-5600</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.courts.ca.gov/2dca.htm">Court of Appeal Library, Second Appellate District</a></div>
+                                                <div class="address">
+                                                    300 S. Spring St., Los Angeles, CA 90013<br>
+                                                    Phone: <a href="tel:+12138307000">(213) 830-7000</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.lapl.org/collections-resources/gov-docs">Central Library</a></div>
+                                                <div class="address">
+                                                    Los Angeles Public Library (Complete)<br>
+                                                    630 West 5th Street, Los Angeles, CA 90071-2002<br>
+                                                    Phone: <a href="tel:+12132287272">(213) 228 7272</a><br>
+                                                    Fax: <a href="tel:+12132287369">(213) 228-7369</a><br>
+                                                    <a href="http://www.lapl.org/about-lapl/contact-us">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.swlaw.edu/library/">Southwestern University School of Law Library</a></div>
+                                                <div class="address">
+                                                    675 South Westmoreland Avenue, Los Angeles, CA 90005-3992<br>
+                                                    Phone: <a href="tel:+12137386725">(213) 738-6725</a><br>
+                                                    Fax: <a href="tel:+12137385792">(213) 738-5792</a><br>
+                                                    Email: <a href="mailto:library@swlaw.edu">library@swlaw.edu</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.law.ucla.edu/library/">Hugh & Hazel Darling Law Library</a></div>
+                                                <div class="address">
+                                                    University of California, Los Angeles<br>
+                                                    405 Hilgard Avenue, Los Angeles, CA 90095-1458<br>
+                                                    Phone: <a href="tel:+13108256414">(310)825-6414</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://guides.library.ucla.edu/govinfo">Charles E. Young Research Library</a></div>
+                                                <div class="address">
+                                                    University of California, Los Angeles (Complete)<br>
+                                                    405 Hilgard Avenue, Los Angeles, CA 90095-1575<br>
+                                                    Phone: <a href="tel:+13108251323">(310) 825-1323</a><br>
+                                                    <a href="http://www.library.ucla.edu/contact">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.usc.edu/libraries/collections/gov_docs/">Von KleinSmid Library</a></div>
+                                                <div class="address">
+                                                    University of Southern California<br>
+                                                    3518 Trousdale Parkway, Los Angeles, CA 90089-0182<br>
+                                                    Phone: <a href="tel:+12137404039">(213) 740-4039</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://weblaw.usc.edu/library/index.cfm">University of Southern California Law School Library</a></div>
+                                                <div class="address">
+                                                    699 Exposition Boulevard, Los Angeles, CA 90089-0072<br>
+                                                    Phone: <a href="tel:+12137406482">(213) 740-6482</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="m">
+                                <div class="location mini">
+                                    <div class="ca-gov-icon-road-pin"></div>
+                                    <div class="contact">
+                                        <div class="title"><a href="http://www.stanislauslibrary.org/">Stanislaus County Library</a></div>
+                                        <div class="address">
+                                            1500 I Street, Modesto, CA 95354-1166<br>
+                                            Phone: <a href="tel:+12095587814">209-558-7814</a><br>
+                                            <a href="http://www.stanislauslibrary.org/find_ask_ref.shtml">Email</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="n">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://countyofnapa.org/library/">Napa City-County Library</a></div>
+                                                <div class="address">
+                                                    580 Coombs Street, Napa, CA 94559-3340<br>
+                                                    Phone: <a href="tel:+17072534235">(707) 253-4235</a><br>
+                                                    Email: <a href="mailto:Library@countyofnapa.org">Library@countyofnapa.org</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://library.csun.edu/GovernmentPublications">Delmar T. Oviatt Library</a></div>
+                                                <div class="address">
+                                                    California State University, Northridge<br>
+                                                    18111 Nordhoff Street, Northridge, CA 91330-8328<br>
+                                                    Phone: <a href="tel:+18186772285">(818) 677-2285</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.colapublib.org/services/govsvcs/internet.html">Norwalk Regional Library</a></div>
+                                                <div class="address">
+                                                    12350 Imperial Highway, Norwalk, CA 90650-3199<br>
+                                                    Phone: <a href="tel:+15628680775">(562) 868-0775</a><br>
+                                                    Fax: <a href="tel:+15629291130">(562) 929-1130</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="o">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.oaklandlibrary.org/">Oakland Public Library</a></div>
+                                                <div class="address">
+                                                    125 14th Street, Oakland, CA 94612-4397<br>
+                                                    Phone: <a href="tel:+15102383138">510-238-3138</a><br>
+                                                    Email: <a href="mailto:eanswers@oaklandlibrary.org">eanswers@oaklandlibrary.org</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://lawlibrary.laverne.edu/resources_online.php#california-5">University of La Verne College of Law Library</a></div>
+                                                <div class="address">
+                                                    320 East D St, Ontario, CA 91764<br>
+                                                    Phone: <a href="tel:+19094602061">909-460-2061</a><br>
+                                                    Fax: <a href="tel:+19094602083">909-460-2083</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.buttecounty.net/bclibrary/Home.aspx">Butte County Library</a></div>
+                                                <div class="address">
+                                                    1820 Mitchell Avenue, Oroville, CA 95966-5387<br>
+                                                    Phone: <a href="tel:+15305387641">(530) 538-7641</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="p">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.ci.pasadena.ca.us/library/">Pasadena Public Library</a></div>
+                                                <div class="address">
+                                                    285 East Walnut Street, Pasadena, CA 91101-1556<br>
+                                                    Phone: <a href="tel:+16267444066">(626) 744-4066</a><br>
+                                                    <a href="http://cityofpasadena.net/library/about_the_library/contact_us/">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://guides.ccclib.org/government">Contra Costa County Library</a></div>
+                                                <div class="address">
+                                                    Central Library<br>
+                                                    1750 Oak Park Boulevard, Pleasant Hill, CA 94523-4497<br>
+                                                    Phone: <a href="tel:+19256466434">(925) 646-6434</a><br>
+                                                    <a href="http://ccclib.org/askaquestion/">E-mail</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.cpp.edu/~library/index.shtml">California State Polytechnic University, Pomona Library</a></div>
+                                                <div class="address"> 
+                                                    3801 W. Temple Ave., Pomona, CA 91768<br>
+                                                    Phone: <a href="tel:+19098693084">(909) 869-3084</a><br>
+                                                    Fax: <a href="tel:+19098696922">(909) 869-6922</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="r">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.shastalibraries.org/spl/index.php?ref=Redding">Shasta Public Libraries, Redding Library</a></div>
+                                                <div class="address">
+                                                    1100 Parkview Ave., Redding, CA 96001<br>
+                                                    Phone: <a href="tel:+15302457252">(530) 245-7252</a><br>
+                                                    Email: <a href="mailto:askus.shasta@librarycatalog.info">askus.shasta@librarycatalog.info</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.akspl.org/">A.K. Smiley Public Library</a></div>
+                                                <div class="address">
+                                                    125 West Vine St., Redlands, CA 92373<br>
+                                                    Phone: <a href="tel:+19097987565">(909) 798-7565</a><br>
+                                                   Email: <a href="mailto:admin@akspl.org">admin@akspl.org</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.redwoodcity.org/library/">Redwood City Public Library</a></div>
+                                                <div class="address">
+                                                    1044 Middlefield Road, Redwood City, CA 94063-1868<br>
+                                                    Phone: <a href="tel:+16507807018">(650) 780-7018</a><br>
+                                                    Phone: <a href="tel:+16507807069">(650) 780-7069</a><br>
+                                                    <a href="http://www.redwoodcity.org/egov/library/director_contact.aspx">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.smclawlibrary.org/">San Mateo County Law Library</a></div>
+                                                <div class="address">
+                                                    710 Hamilton St., Redwood City, CA 94063<br>
+                                                    Phone: <a href="tel:+16503634913">(650) 363-4913</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.ci.richmond.ca.us/index.aspx?NID=105">Richmond Public Library</a></div>
+                                                <div class="address">
+                                                    325 Civic Center Plaza, Richmond, CA 94804-1659<br>
+                                                    Phone: <a href="tel:+15106206561">(510) 620-6561</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.rclawlibrary.org/">Riverside County Law Library</a></div>
+                                                <div class="address">
+                                                    3989 Lemon St., Riverside, CA 92501-4203<br>
+                                                    Phone: <a href="tel:+19099556390">(909) 955-6390</a><br>
+                                                    Fax: <a href="tel:+19099556394">(909) 955-6394</a><br>
+                                                    E-mail: <a href="mailto:lawlibrary.riverside@rclawlibrary.org">lawlibrary.riverside@rclawlibrary.org</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://library.ucr.edu/?view=collections/govpub">Rivera Library</a></div>
+                                                <div class="address">
+                                                    University of California, Riverside<br>
+                                                    900 University Avenue, Riverside, CA 92517-5900<br>
+                                                    Phone: <a href="tel:+19518273226">(951) 827-3226</a><br>
+                                                    <a href="http://library.ucr.edu/view/help/askalibrarian">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="s">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.ss.ca.gov/archives">California State Archives (Complete)</a></div>
+                                                <div class="address">
+                                                    1020 O Street, Sacramento, CA 95814<br>
+                                                    Phone: <a href="tel:+19166532246">(916) 653-2246</a><br>
+                                                    Fax: <a href="tel:+19166537363">(916) 653-7363</a><br>
+                                                    <a href="http://www.ss.ca.gov/archives/about-archives/contact/email-california-state-archives/">E-mail</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.library.ca.gov/gps/index.html">Government Publications Section</a></div>
+                                                <div class="address">
+                                                    California State Library (Complete)<br>
+                                                    900 N Street, Sacramento, CA 95814-4802<br>
+                                                    Phone: <a href="tel:+19166540261">(916) 654-0261</a><br>
+                                                    Fax: <a href="tel:+19163765310">(916) 376-5310</a><br>
+                                                    Email: <a href="mailto:cslgps@library.ca.gov">cslgps@library.ca.gov</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://library.csus.edu/default.asp">California State University, Sacramento Library</a></div>
+                                                <div class="address">
+                                                    2000 State University Drive, Sacramento, CA 95819-6039<br>
+                                                    Phone: <a href="tel:+19162785673">(916) 278-5673</a><br>
+                                                    <a href="http://apps.lib.csus.edu/ask/feedback.php">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://mcgeorge.edu/">Gordon D. Schaber Law Library</a></div>
+                                                <div class="address">
+                                                    University of the Pacific McGeorge School of Law<br>
+                                                    3282 5th Avenue, Sacramento, CA 95817<br>
+                                                    Phone: <a href="tel:+19167397164">(916) 739-7164</a><br>
+                                                    Fax: <a href="tel:+19167397273">(916) 739-7273</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.saclaw.org/index.aspx">Sacramento County Public Law Library</a></div>
+                                                <div class="address">
+                                                    609 9th St., Sacramento, CA 95814<br>
+                                                    Phone: <a href="tel:+19168746012">(916) 874-6012</a><br>
+                                                    Fax: <a href="tel:+19168747050">(916) 874-7050</a><br>
+                                                    <a href="http://www.saclaw.org/contactus.aspx">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.saclibrary.org/">Central Library</a></div>
+                                                <div class="address">
+                                                    Sacramento Public Library<br>
+                                                    828 I Street, Sacramento, CA 95814-2589<br>
+                                                    Phone: <a href="tel:+19162642920">(916) 264-2920</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.lib.csusb.edu/collections/governmentDocuments.html">John M. Pfau Library</a></div>
+                                                <div class="address">
+                                                    California State University, San Bernardino<br>
+                                                    5500 University Parkway, San Bernardino, CA 92407-2397<br>
+                                                    Phone: <a href="tel:+19095375091">(909) 537-5091</a><br>
+                                                    <a href="http://www.questionpoint.org/crs/servlet/org.oclc.home.TFSRedirect?virtcategory=11352">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.sblawlibrary.org/">San Bernardino County Law Library</a></div>
+                                                <div class="address">
+                                                    402 North D Street, San Bernardino, CA 92401-1423<br>
+                                                    Phone: <a href="tel:+19098853020">(909) 885-3020</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://library.valleycollege.edu/">Samuel E. Andrews Library</a></div>
+                                                <div class="address">
+                                                    San Bernardino Valley College Library<br>
+                                                    701 South Mt. Vernon Avenue, San Bernardino, CA 92410<br>
+                                                    Phone: <a href="tel:+19093848289">(909) 384-8289</a><br>
+                                                    Email: <a href="mailto:Refdesk@sbccd.cc.ca.us">Refdesk@sbccd.cc.ca.us</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="https://www.cwsl.edu/student-life/library">California Western School of Law</a></div>
+                                                <div class="address">
+                                                    Law Library <br>
+                                                    25 Cedar St., San Diego, CA 92101-3090<br>
+                                                    Phone: <a href="tel:+16195251419">(619) 525-1419</a><br>
+                                                    Fax: <a href="tel:+16196852918">(619) 685-2918</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://sandiegolawlibrary.org/">San Diego County Public Law Library</a></div>
+                                                <div class="address">
+                                                    1105 Front Street, San Diego, CA 92101-3904<br>
+                                                    Phone: <a href="tel:+16196856552">(619) 685-6552</a><br>
+                                                    Fax: <a href="tel:+16192387716">(619) 238-7716</a><br>
+                                                    Email: <a href="mailto:refdesk@sdlawlibrary.org">refdesk@sdlawlibrary.org</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.sandiego.gov/public-library/index.shtml">Central Library</a></div>
+                                                <div class="address">
+                                                    San Diego Public Library (Complete)<br>
+                                                    330 Park Blvd., San Diego, CA 92101<br>
+                                                    Phone: <a href="tel:+1(619) 236-5800">(619) 236-5800</a><br>
+                                                    <a href="http://www.sandiego.gov/public-library/services/ask/index.shtml">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://library.sdsu.edu/">Malcolm A. Love Library</a></div>
+                                                <div class="address">
+                                                    San Diego State University (Complete)<br>
+                                                    5500 Campanile Drive, San Diego, CA 92182-8050<br>
+                                                    Phone: <a href="tel:+16195946728">(619) 594-6728</a><br>
+                                                    Email: <a href="mailto:eref@mail.sdsu.edu">eref@mail.sdsu.edu</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.sandiego.edu/law/library/">University of San Diego Legal Research Center</a></div>
+                                                <div class="address">
+                                                    5998 Alcala Park, San Diego, CA 92110-2492<br>
+                                                    Phone: <a href="tel:+16192604612">(619) 260-4612</a><br>
+                                                    Email: <a href="mailto:lrcrefer@sandiego.edu">lrcrefer@sandiego.edu</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://library.courtinfo.ca.gov/">California Judicial Center Library</a></div>
+                                                <div class="address">
+                                                    California Supreme Court<br>
+                                                    455 Golden Gate Avenue, San Francisco, CA 94102<br>
+                                                    Phone: <a href="tel:+14158657178">(415) 865-7178</a><br>
+                                                    Fax: <a href="tel:+14158657187">(415) 865-7187</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://law.ggu.edu/law-library">Golden Gate University Law Library</a></div>
+                                                <div class="address">
+                                                    536 Mission Street, San Francisco, CA 94105-2968<br>
+                                                    Phone: <a href="tel:+14154426680">(415) 442-6680</a><br>
+                                                    Fax: <a href="tel:+14155129395">(415) 512-9395</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://sfpl.org/">San Francisco Public Library (Complete)</a></div>
+                                                <div class="address">
+                                                    100 Larkin Street, San Francisco, CA 94102-4705<br>
+                                                    Phone: <a href="tel:+14155574500">(415) 557-4500</a><br>
+                                                    <a href="http://sfpl.org/index.php?pg=2000035901">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.library.sfsu.edu/about/depts/govpubs.php">J. Paul Leonard Library</a></div>
+                                                <div class="address">
+                                                    San Francisco State University<br>
+                                                    1630 Holloway Avenue, San Francisco, CA 94132-4030 <br>
+                                                    Phone: <a href="tel:+14153381557">(415) 338-1557</a><br>
+                                                    Fax: <a href="tel:+14153381504">(415) 338-1504</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://libguides.uchastings.edu/state-local-government">Hastings College of Law Library</a></div>
+                                                <div class="address">
+                                                    University of California<br>
+                                                    200 McAllister Street, San Francisco, CA 94102-4978<br>
+                                                    Phone: <a href="tel:+14155654751">(415) 565-4751</a><br>
+                                                    Fax: <a href="tel:+14156214859">(415) 621-4859</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.usfca.edu/law/library/">Zief Law Library</a></div>
+                                                <div class="address">
+                                                    University of San Francisco<br>
+                                                    2130 Fulton Street, San Francisco, CA 94117-1049<br>
+                                                    Phone: <a href="tel:+14154226773">(415) 422-6773</a><br>
+                                                    Fax: <a href="tel:+14154222345">(415) 422-2345</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://library.sjsu.edu/">Dr. Martin Luther King Jr. Library</a></div>
+                                                <div class="address">
+                                                    San Jose State University<br>
+                                                    150 E. San Fernando St., San Jose, CA 95112<br>
+                                                    Phone: <a href="tel:+14088082100">(408) 808-2100</a><br>
+                                                    <a href="http://answers.sjlibrary.org/q.php">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.sccll.org/">Santa Clara County Law Library</a></div>
+                                                <div class="address">
+                                                    360 North First St., San Jose, CA 95113-1004<br>
+                                                    Phone: <a href="tel:+14082993568">(408) 299-3568</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://discover.lib.calpoly.edu/">Robert F. Kennedy Library</a></div>
+                                                <div class="address">
+                                                    California Polytechnic State University<br>
+                                                    California State Library (Complete)<br>
+                                                    Robert F. Kennedy Library, San Luis Obispo, CA 93407<br>
+                                                    Phone: <a href="tel:+18057562649">(805) 756-2649</a><br>
+                                                    <a href="http://www.ss.ca.gov/archives/about-archives/contact/email-california-state-archives/">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.slolibrary.org/">San Luis Obispo City-County Library</a></div>
+                                                <div class="address">
+                                                    995 Palm St., San Luis Obispo, CA 93403<br>
+                                                    Phone: <a href="tel:+18057815989">(805) 781-5989</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.slocll.org/">San Luis Obispo County Law Library</a></div>
+                                                <div class="address">
+                                                    1050 Monterey St., Room 125, San Luis Obispo, CA 93408<br>
+                                                    Phone: <a href="tel:+18057815855">(805) 781-5855</a><br>
+                                                    Fax: <a href="tel:+18057814172">(805) 781-4172</a><br>
+                                                    Email: <a href="mailto:lawlibrarian@slocll.org">lawlibrarian@slocll.org</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://biblio.csusm.edu/guides/subject-guide/152-Government-Documents/">Kellogg Librar</a></div>
+                                                <div class="address">
+                                                    California State University, San Marcos<br>
+                                                    333 South Twin Oaks Valley Road, San Marcos, CA 92096-0001<br>
+                                                    Phone: <a href="tel:+1(760) 750-4391">(760) 750-4391</a><br>
+                                                    <a href="http://biblio.csusm.edu/contact-us/">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.cityofsanmateo.org/index.aspx?nid=507">San Mateo Public Library</a></div>
+                                                <div class="address">
+                                                    55 West Third Avenue, San Mateo, CA 94402-1592<br>
+                                                    Phone: <a href="tel:+16505227818">(650) 522-7818</a><br>
+                                                    Fax: <a href="tel:+16505227801">(650) 522-7801</a><br>
+                                                    <a href="http://plsinfo.org/ask_a_librarian">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.ocpll.org/government-depository/">Orange County Public Law Library</a></div>
+                                                <div class="address">
+                                                    515 North Flower Street, Santa Ana, CA 92703-2354<br>
+                                                    Phone: <a href="tel:+17148343397">(714) 834-3397</a><br>
+                                                    Fax: <a href="tel:+17148344375">(714) 834-4375</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.countylawlibrary.org/">Santa Barbara County Law Library</a></div>
+                                                <div class="address">
+                                                    Courthouse<br>
+                                                    1100 Anacapa St., Second Floor, Santa Barbara, CA 93101<br>
+                                                    Phone: <a href="tel:+18055682296">(805) 568-2296</a><br>
+                                                    Fax: <a href="tel:+18055682299">(805) 568-2299</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.santabarbaraca.gov/gov/depts/lib/default.asp">Santa Barbara Public Library</a></div>
+                                                <div class="address">
+                                                    40 East Anapamu Street, Santa Barbara, CA 93102<br>
+                                                    Phone: <a href="tel:+18055645604">(805) 564-5604</a><br>
+                                                    Email: <a href="mailto:ReferenceServices@SantaBarbaraCA.gov">ReferenceServices@SantaBarbaraCA.gov</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.library.ucsb.edu/government-information-center">Davidson Library</a></div>
+                                                <div class="address">
+                                                    University of California, Santa Barbara (Complete)<br>
+                                                    Santa Barbara, CA 93106-9010<br>
+                                                    Phone: <a href="tel:+18058938803">(805) 893-8803</a><br>
+                                                    <a href="http://www.library.ucsb.edu/government-information/contact">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.scu.edu/library/services/govdocs/">Santa Clara University Orradre Library</a></div>
+                                                <div class="address">
+                                                    500 El Camino Real, Santa Clara, CA 95053-0500<br>
+                                                    Phone: <a href="tel:+14085545385">(408) 554-5385</a><br>
+                                                    Fax: <a href="tel:+14085542124">(408) 554-2124</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.lawlibrary.org/">Santa Cruz County Law Library</a></div>
+                                                <div class="address">
+                                                    701 Ocean St., Rm. 070, Santa Cruz, CA 95060<br>
+                                                    Phone: <a href="tel:+18314572525">(831) 457-2525</a><br>
+                                                    Fax: <a href="tel:+18314572255">(831) 457-2255</a><br>
+                                                    Email: <a href="mailto:scclawlib@yahoo.com">scclawlib@yahoo.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.santacruzpl.org/">Santa Cruz Public Library</a></div>
+                                                <div class="address">
+                                                    224 Church Street, Santa Cruz, CA 95060<br>
+                                                    Phone: <a href="tel:+18314205730">(831) 420-5730</a><br>
+                                                    <a href="http://www.santacruzpl.org/contact/">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://library.ucsc.edu/gov/">McHenry Library</a></div>
+                                                <div class="address">
+                                                    University of California, Santa Cruz<br>
+                                                    1156 High Street, Santa Cruz, CA 95064-1078<br>
+                                                    Phone: <a href="tel:+18314592347">(831) 459-2347</a><br>
+                                                    <a href="http://library.ucsc.edu/help/ask-a-librarian-email-question-form">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.cityofsantamaria.org/city-government/departments/library">Santa Maria Public Library</a></div>
+                                                <div class="address">
+                                                    421 S. McClelland Street, Santa Maria, CA 93454<br>
+                                                    Phone: <a href="tel:+18059250994">(805) 925-0994</a><br>
+                                                    Email: <a href="mailto:web-LibraryReference@cityofsantamaria.org">web-LibraryReference@cityofsantamaria.org</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.smpl.org/">Santa Monica Public Library</a></div>
+                                                <div class="address">
+                                                    601 Santa Monica Blvd., Santa Monica, CA 90401<br>
+                                                    Phone: <a href="tel:+1(310) 434-2608">(310) 434-2608</a><br>
+                                                    <a href="http://smpl.org/About_Us/Forms/Email_Reference_Question.aspx">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.sonomacountylawlibrary.org/">Sonoma County Law Library</a></div>
+                                                <div class="address">
+                                                    2604 Ventura Ave., Santa Rosa, CA 95403<br>
+                                                    Phone: <a href="tel:+17075652668">(707) 565-2668</a><br>
+                                                    Fax: <a href="tel:+17075651126">(707) 565-1126</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://sonomalibrary.org/">Sonoma County Public Library</a></div>
+                                                <div class="address">
+                                                    211 E St., Santa Rosa, CA 95404-4430<br>
+                                                    Phone: <a href="tel:+17075450831">(707) 545-0831</a><br>
+                                                    Fax: <a href="tel:+17075750437">(707) 575-0437</a><br>
+                                                    <a href="http://ask.sonomalibrary.org/ask">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.co.monterey.ca.us/library/default.htm">Monterey County Free Libraries</a></div>
+                                                <div class="address">
+                                                    Seaside Branch Library<br>
+                                                    550 Harcourt Avenue, Seaside, CA 93955<br>
+                                                    Phone: <a href="tel:+18318992055">(831) 899-2055</a><br>
+                                                    Fax: <a href="tel:+18318992735">(831) 899-2735</a><br>
+                                                    <a href="http://www.co.monterey.ca.us/library/emailform.asp">E-mail</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.law.stanford.edu/organizations/offices/robert-crown-law-library">Robert Crown Law Library</a></div>
+                                                <div class="address">
+                                                    Stanford University<br>
+                                                    559 Nathan Abbott Way, Stanford, CA 94305-8612<br>
+                                                    Phone: <a href="tel:+16507250800">(650) 725-0800</a><br>
+                                                    Fax: <a href="tel:+16507231933">(650) 723-1933</a><br>
+                                                    Email: <a href="mailto:reference@law.stanford.edu">reference@law.stanford.edu</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://library.stanford.edu/green">Green Library</a></div>
+                                                <div class="address">
+                                                    Stanford University Libraries (Complete)<br>
+                                                    Stanford, CA 94305-6004<br>
+                                                    Phone: <a href="tel:+16507251064">(650) 725-1064</a><br>
+                                                    Fax: <a href="tel:+16507233989">(650) 723-3989</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="https://sjclawlibrary.org/">San Joaquin County Law Library</a></div>
+                                                <div class="address">
+                                                    Kress Legal Center, 1st Floor<br>
+                                                    20 N. Sutter St., Stockton, CA 95202<br>
+                                                    Phone: <a href="tel:+12094683920">(209) 468-3920</a><br>
+                                                    Fax: <a href="tel:+12094689968">(209) 468-9968</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.ssjcpl.org/research/specCollections.html">Stockton/San Joaquin County Public Library</a></div>
+                                                <div class="address">
+                                                    605 North El Dorado Street, Stockton, CA 95202<br>
+                                                    Phone: <a href="tel:+1(209) 937-8221">(209) 937-8221</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="t">
+                                <div class="group">
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.toaks.org/library/">Thousand Oaks Library</a></div>
+                                                <div class="address">
+                                                    1401 E. Janss Road, Thousand Oaks, CA 91362<br>
+                                                    Phone: <a href="tel:+18054492660">(805) 449-2660</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="location mini">
+                                            <div class="ca-gov-icon-road-pin"></div>
+                                            <div class="contact">
+                                                <div class="title"><a href="http://www.library.csustan.edu/ahor/govdocs/">California State University, Stanislaus Library</a></div>
+                                                <div class="address">
+                                                    One University Circle, Turlock, CA 95382<br>
+                                                    Phone: <a href="tel:+12096673233">209-667-3233</a><br>
+                                                    Fax: <a href="tel:+12096673164">209-667-3164</a><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="v">
+                                <div class="location mini">
+                                    <div class="ca-gov-icon-road-pin"></div>
+                                    <div class="contact">
+                                        <div class="title"><a href="http://www.vencolawlib.org/">Ventura County Law Library</a></div>
+                                        <div class="address">
+                                            Courthouse<br>
+                                            800 S. Victoria Ave., Ventura, CA 93009-2020<br>
+                                            Phone: <a href="tel:+18056428982">805-642-8982</a><br>
+                                            Fax: <a href="tel:+18056427177">805-642-7177</a><br>
+                                            Email: <a href="mailto:vencolawlib@yahoo.com">vencolawlib@yahoo.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="w">
+                                <div class="location mini">
+                                    <div class="ca-gov-icon-road-pin"></div>
+                                    <div class="contact">
+                                        <div class="title"><a href="http://www.vencolawlib.org/">Anglo-American Acquisition Division</a></div>
+                                        <div class="address">
+                                            Library of Congress (Complete)<br>
+                                            101 Independence Ave S.E., Washington, D.C., 20540-4172<br>
+                                            Phone: <a href="tel:+12027075000">202-707-5000</a><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="list-unstyled p-t-md">
+                        Last updated: July 2017
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
