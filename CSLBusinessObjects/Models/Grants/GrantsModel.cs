@@ -20,7 +20,7 @@ namespace CSLBusinessObjects.Models
         [StringLength(200)]
         public string Project { get; set; }
 
-        public int? Award { get; set; }
+        public string Award { get; set; }
 
         [StringLength(50)]
         public string Year { get; set; }

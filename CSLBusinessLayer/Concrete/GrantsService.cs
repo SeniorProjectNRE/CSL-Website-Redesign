@@ -23,12 +23,54 @@ namespace CSLBusinessLayer.Concrete
 
         public List<GrantAwardModel> GetAllAwards(string grantNum, string year, string library, string project, int award)
         {
-            return _dataAccess.GetAward(grantNum, year, library, project, award);
+            DataTable myData = _dataAccess.GetAward(grantNum, year, library, project, award);
+            List<GrantAwardModel> res = new List<GrantAwardModel>();
+            GrantAwardModel awardModel;
+
+            try
+            {
+                foreach (DataRow row in myData.Rows)
+                {
+                    awardModel = new GrantAwardModel()
+                    {
+                        Award = Convert.ToInt32(row["Award"]),
+                    };
+                    res.Add(awardModel);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+            return res;
         }
 
         public List<GrantNumberModel> GetAllGrantIDs(string grantNum, string year, string library, string project, int award)
         {
-            return _dataAccess.GetGrantNumber(grantNum, year, library, project, award);
+            DataTable myData = _dataAccess.GetGrantNumber(grantNum, year, library, project, award);
+            List<GrantNumberModel> res = new List<GrantNumberModel>();
+            GrantNumberModel numberModel;
+            GrantNumberModel allModel = new GrantNumberModel() { GrantID = "All" };
+            res.Add(allModel);
+
+            try
+            {
+                foreach (DataRow row in myData.Rows)
+                {
+                    numberModel = new GrantNumberModel()
+                    {
+                        GrantID = row["GrantID"].ToString(),
+                    };
+                    res.Add(numberModel);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+            return res;
         }
 
         //public List<GrantsModel> GetAllGrants(string grantNum, string year, string library, string project, int award)
@@ -48,7 +90,7 @@ namespace CSLBusinessLayer.Concrete
                 {
                     grantsModel = new GrantsModel()
                     {
-                        Award = Convert.ToInt32(row["Award"]),
+                        Award = Convert.ToInt32(row["Award"]).ToString("c0"),
                         Library = row["Library"].ToString(),
                         GrantID = row["GrantID"].ToString(),
                         Project = row["Project"].ToString(),
@@ -67,17 +109,83 @@ namespace CSLBusinessLayer.Concrete
 
         public List<GrantLibraryModel> GetAllLibraries(string grantNum, string year, string library, string project, int award)
         {
-            return _dataAccess.GetLibrary(grantNum, year, library, project, award);
+            DataTable myData = _dataAccess.GetLibrary(grantNum, year, library, project, award);
+            List<GrantLibraryModel> res = new List<GrantLibraryModel>();
+            GrantLibraryModel libraryModel;
+            GrantLibraryModel allModel = new GrantLibraryModel() { Library = "All"};
+            res.Add(allModel);
+
+            try
+            {
+                foreach (DataRow row in myData.Rows)
+                {
+                    libraryModel = new GrantLibraryModel()
+                    {
+                        Library = row["Library"].ToString(),
+                    };
+                    res.Add(libraryModel);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+            return res;
         }
 
         public List<GrantProjectModel> GetAllProjects(string grantNum, string year, string library, string project, int award)
         {
-            return _dataAccess.GetProject(grantNum, year, library, project, award);
+            DataTable myData = _dataAccess.GetProject(grantNum, year, library, project, award);
+            List<GrantProjectModel> res = new List<GrantProjectModel>();
+            GrantProjectModel projectModel;
+            GrantProjectModel allModel = new GrantProjectModel() { Project = "All" };
+            res.Add(allModel);
+
+            try
+            {
+                foreach (DataRow row in myData.Rows)
+                {
+                    projectModel = new GrantProjectModel()
+                    {
+                        Project = row["Project"].ToString(),
+                    };
+                    res.Add(projectModel);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+            return res;
         }
 
         public List<GrantYearModel> GetAllYears(string grantNum, string year, string library, string project, int award)
         {
-            return _dataAccess.GetYear(grantNum, year, library, project, award);
+            DataTable myData = _dataAccess.GetYear(grantNum, year, library, project, award);
+            List<GrantYearModel> res = new List<GrantYearModel>();
+            GrantYearModel yearModel;
+            GrantYearModel allModel = new GrantYearModel() { Year = "All" };
+            res.Add(allModel);
+
+            try
+            {
+                foreach (DataRow row in myData.Rows)
+                {
+                    yearModel = new GrantYearModel()
+                    {
+                        Year = row["Year"].ToString(),
+                    };
+                    res.Add(yearModel);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+            return res;
         }
 
         public List<string> AwardStrings()

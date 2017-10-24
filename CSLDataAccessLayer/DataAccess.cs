@@ -103,12 +103,9 @@ namespace CSLDataAccessLayer
         //    return res;
         //}
 
-        public List<GrantAwardModel>GetAward(string grantNum, string year, string library, string project, int award)
+        public DataTable GetAward(string grantNum, string year, string library, string project, int award)
         {
-            List<GrantAwardModel> res = new List<GrantAwardModel>();
-            GrantAwardModel init = new GrantAwardModel() { Award = 0 };
-            res.Add(init);
-            GrantAwardModel grantAward;
+            DataTable res = new DataTable();
 
             string dbConnectionString = _dbConnectionString;
             SqlConnection conn = new SqlConnection(dbConnectionString);
@@ -125,14 +122,9 @@ namespace CSLDataAccessLayer
 
             try
             {
-                using (var reader = cmd.ExecuteReader())
+                using (var da = new SqlDataAdapter(cmd))
                 {
-                    while (reader.Read())
-                    {
-                        grantAward = new GrantAwardModel();
-                        grantAward.Award = Convert.ToInt32(reader["Award"]);
-                        res.Add(grantAward);
-                    }
+                    da.Fill(res);
                 }
             }
             catch (Exception ex)
@@ -188,12 +180,14 @@ namespace CSLDataAccessLayer
         //    return res;
         //}
 
-        public List<GrantNumberModel> GetGrantNumber(string grantNum, string year, string library, string project, int award)
+        public DataTable GetGrantNumber(string grantNum, string year, string library, string project, int award)
         {
-            List<GrantNumberModel> res = new List<GrantNumberModel>();
-            GrantNumberModel init = new GrantNumberModel() { GrantID = "All"};
-            res.Add(init);
-            GrantNumberModel grantNumber;
+            //List<GrantNumberModel> res = new List<GrantNumberModel>();
+            //GrantNumberModel init = new GrantNumberModel() { GrantID = "All"};
+            //res.Add(init);
+            //GrantNumberModel grantNumber;
+
+            DataTable res = new DataTable();
 
             string dbConnectionString = _dbConnectionString;
             SqlConnection conn = new SqlConnection(dbConnectionString);
@@ -210,14 +204,9 @@ namespace CSLDataAccessLayer
 
             try
             {
-                using (var reader = cmd.ExecuteReader())
+                using (var da = new SqlDataAdapter(cmd))
                 {
-                    while (reader.Read())
-                    {
-                        grantNumber = new GrantNumberModel();
-                        grantNumber.GrantID = reader["GrantID"].ToString();
-                        res.Add(grantNumber);
-                    }
+                    da.Fill(res);
                 }
             }
             catch (Exception ex)
@@ -232,12 +221,14 @@ namespace CSLDataAccessLayer
             return res;
         }
 
-        public List<GrantLibraryModel> GetLibrary(string grantNum, string year, string library, string project, int award)
+        public DataTable GetLibrary(string grantNum, string year, string library, string project, int award)
         {
-            List<GrantLibraryModel> res = new List<GrantLibraryModel>();
-            GrantLibraryModel init = new GrantLibraryModel() { Library = "All" };
-            res.Add(init);
-            GrantLibraryModel grantLibrary;
+            //List<GrantLibraryModel> res = new List<GrantLibraryModel>();
+            //GrantLibraryModel init = new GrantLibraryModel() { Library = "All" };
+            //res.Add(init);
+            //GrantLibraryModel grantLibrary;
+
+            DataTable res = new DataTable();
 
             string dbConnectionString = _dbConnectionString;
             SqlConnection conn = new SqlConnection(dbConnectionString);
@@ -254,14 +245,9 @@ namespace CSLDataAccessLayer
 
             try
             {
-                using (var reader = cmd.ExecuteReader())
+                using (var da = new SqlDataAdapter(cmd))
                 {
-                    while (reader.Read())
-                    {
-                        grantLibrary = new GrantLibraryModel();
-                        grantLibrary.Library = reader["Library"].ToString();
-                        res.Add(grantLibrary);
-                    }
+                    da.Fill(res);
                 }
             }
             catch (Exception ex)
@@ -276,12 +262,14 @@ namespace CSLDataAccessLayer
             return res;
         }
 
-        public List<GrantProjectModel> GetProject(string grantNum, string year, string library, string project, int award)
+        public DataTable GetProject(string grantNum, string year, string library, string project, int award)
         {
-            List<GrantProjectModel> res = new List<GrantProjectModel>();
-            GrantProjectModel init = new GrantProjectModel() { Project = "All" };
-            res.Add(init);
-            GrantProjectModel grantProject;
+            //List<GrantProjectModel> res = new List<GrantProjectModel>();
+            //GrantProjectModel init = new GrantProjectModel() { Project = "All" };
+            //res.Add(init);
+            //GrantProjectModel grantProject;
+
+            DataTable res = new DataTable();
 
             string dbConnectionString = _dbConnectionString;
             SqlConnection conn = new SqlConnection(dbConnectionString);
@@ -298,14 +286,9 @@ namespace CSLDataAccessLayer
 
             try
             {
-                using (var reader = cmd.ExecuteReader())
+                using (var da = new SqlDataAdapter(cmd))
                 {
-                    while (reader.Read())
-                    {
-                        grantProject = new GrantProjectModel();
-                        grantProject.Project = reader["Project"].ToString();
-                        res.Add(grantProject);
-                    }
+                    da.Fill(res);
                 }
             }
             catch (Exception ex)
@@ -320,12 +303,14 @@ namespace CSLDataAccessLayer
             return res;
         }
 
-        public List<GrantYearModel> GetYear(string grantNum, string year, string library, string project, int award)
+        public DataTable GetYear(string grantNum, string year, string library, string project, int award)
         {
-            List<GrantYearModel> res = new List<GrantYearModel>();
-            GrantYearModel init = new GrantYearModel() { Year = "All" };
-            res.Add(init);
-            GrantYearModel grantYear;
+            //List<GrantYearModel> res = new List<GrantYearModel>();
+            //GrantYearModel init = new GrantYearModel() { Year = "All" };
+            //res.Add(init);
+            //GrantYearModel grantYear;
+
+            DataTable res = new DataTable();
 
             string dbConnectionString = _dbConnectionString;
             SqlConnection conn = new SqlConnection(dbConnectionString);
@@ -342,14 +327,9 @@ namespace CSLDataAccessLayer
 
             try
             {
-                using (var reader = cmd.ExecuteReader())
+                using (var da = new SqlDataAdapter(cmd))
                 {
-                    while (reader.Read())
-                    {
-                        grantYear = new GrantYearModel();
-                        grantYear.Year = reader["Year"].ToString();
-                        res.Add(grantYear);
-                    }
+                    da.Fill(res);
                 }
             }
             catch (Exception ex)
