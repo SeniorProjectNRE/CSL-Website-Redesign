@@ -20,6 +20,7 @@ namespace CSLDataAccessLayer
             _dbConnectionString = config.ConnectionString;
         }
 
+        #region Grants
         public DataTable GetAllGrants(string grantNum, string year, string library, string project, int award)
         {
             DataTable res = new DataTable();
@@ -343,5 +344,6 @@ namespace CSLDataAccessLayer
 
             return res;
         }
+        #endregion
     }
 }
