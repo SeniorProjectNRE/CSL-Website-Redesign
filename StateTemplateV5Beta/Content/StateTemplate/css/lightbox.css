@@ -1,7 +1,7 @@
 /* Preload images */
 body:after {
-  content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
-  display: none;
+    content: url(/Content/StateTemplate/images/lightbox/close.png) url(/Content/StateTemplate/images/lightbox/loading.gif) url(/Content/StateTemplate/images/lightbox/prev.png) url(/Content/StateTemplate/images/lightbox/next.png);
+    display: none;
 }
 
 body.lb-disable-scrolling {
