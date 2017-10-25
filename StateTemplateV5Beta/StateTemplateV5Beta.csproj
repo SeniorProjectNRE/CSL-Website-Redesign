@@ -1675,6 +1675,7 @@
     <Content Include="Content\StateTemplate\pdf\Collections\Online-Exhibits\MakeTheFutureOurs_sm.pdf" />
     <Content Include="Content\StateTemplate\pdf\GovernmentPublications\stateDocumentDepositoryProgram\DepositoryLibrary-Current.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\Broadband_Data_Dictionary.pdf" />
+    <Content Include="Content\StateTemplate\pdf\workWithUs\Lib_SeniorLib_Flyer.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <Content Include="Content\StateTemplate\pdf\crb\Newsletters\20170104.pdf" />
