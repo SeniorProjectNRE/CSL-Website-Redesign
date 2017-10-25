@@ -2,6 +2,6 @@
 {
     public class LibraryCongressionalModel
     {
-        public int? CongressionalDistrict { get; set; }
+        public string CongressionalDistrict { get; set; }
     }
 }

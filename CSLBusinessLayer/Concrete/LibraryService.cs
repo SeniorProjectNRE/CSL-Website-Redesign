@@ -38,10 +38,10 @@ namespace CSLBusinessLayer.Concrete
                         CLSA = row["CLSA"].ToString(),
                         City = row["City"].ToString(),
                         County = row["County"].ToString(),
-                        Zip = Convert.ToInt32(row["Zip"]),
-                        AssemblyDistrict = Convert.ToInt32(row["AssemblyDistrict"]),
-                        SenateDistrict = Convert.ToInt32(row["SenateDistrict"]),
-                        CongressionalDistrict = Convert.ToInt32(row["CongressionalDistrict"]),
+                        Zip = row["Zip"].ToString(),
+                        AssemblyDistrict = row["AssemblyDistrict"].ToString(),
+                        SenateDistrict = row["SenateDistrict"].ToString(),
+                        CongressionalDistrict = row["CongressionalDistrict"].ToString(),
                         Status = row["Status"].ToString(),
                         StatusCode = row["StatusCode"].ToString()
                         
@@ -63,6 +63,8 @@ namespace CSLBusinessLayer.Concrete
             DataTable myData = _dataAccess.GetAssembly(library, jurisdiction, csla, city, county, zip, assembly, senate, congress, status, code);
             List<LibraryAssemblyModel> res = new List<LibraryAssemblyModel>();
             LibraryAssemblyModel myModel;
+            LibraryAssemblyModel allModel = new LibraryAssemblyModel() { AssemblyDistrict = "All" };
+            res.Add(allModel);
 
             try
             {
@@ -70,7 +72,7 @@ namespace CSLBusinessLayer.Concrete
                 {
                     myModel = new LibraryAssemblyModel()
                     {
-                        AssemblyDistrict = Convert.ToInt32(row["AssemblyDistrict"])
+                        AssemblyDistrict = row["AssemblyDistrict"].ToString()
                     };
                     res.Add(myModel);
                 }
@@ -83,12 +85,12 @@ namespace CSLBusinessLayer.Concrete
             return res;
         }
 
-        public List<int> GetAssemblyListValues(List<LibraryAssemblyModel> model)
+        public List<string> GetAssemblyListValues(List<LibraryAssemblyModel> model)
         {
-            List<int> res = new List<int>();
+            List<string> res = new List<string>();
             foreach (var item in model)
             {
-                int value = (int)item.AssemblyDistrict;
+                string value = item.AssemblyDistrict;
                 res.Add(value);
             }
             return res;
@@ -99,6 +101,8 @@ namespace CSLBusinessLayer.Concrete
             DataTable myData = _dataAccess.GetCity(library, jurisdiction, csla, city, county, zip, assembly, senate, congress, status, code);
             List<LibraryCityModel> res = new List<LibraryCityModel>();
             LibraryCityModel myModel;
+            LibraryCityModel allModel = new LibraryCityModel() { City = "All" };
+            res.Add(allModel);
 
             try
             {
@@ -135,6 +139,8 @@ namespace CSLBusinessLayer.Concrete
             DataTable myData = _dataAccess.GetCLSA(library, jurisdiction, csla, city, county, zip, assembly, senate, congress, status, code);
             List<LibraryCLSAModel> res = new List<LibraryCLSAModel>();
             LibraryCLSAModel myModel;
+            LibraryCLSAModel allModel = new LibraryCLSAModel() { CLSA = "All" };
+            res.Add(allModel);
 
             try
             {
@@ -171,6 +177,8 @@ namespace CSLBusinessLayer.Concrete
             DataTable myData = _dataAccess.GetCode(library, jurisdiction, csla, city, county, zip, assembly, senate, congress, status, code);
             List<LibraryCodeModel> res = new List<LibraryCodeModel>();
             LibraryCodeModel myModel;
+            LibraryCodeModel allModel = new LibraryCodeModel() { StatusCode = "All" };
+            res.Add(allModel);
 
             try
             {
@@ -207,6 +215,8 @@ namespace CSLBusinessLayer.Concrete
             DataTable myData = _dataAccess.GetCongress(library, jurisdiction, csla, city, county, zip, assembly, senate, congress, status, code);
             List<LibraryCongressionalModel> res = new List<LibraryCongressionalModel>();
             LibraryCongressionalModel myModel;
+            LibraryCongressionalModel allModel = new LibraryCongressionalModel() { CongressionalDistrict = "All" };
+            res.Add(allModel);
 
             try
             {
@@ -214,7 +224,7 @@ namespace CSLBusinessLayer.Concrete
                 {
                     myModel = new LibraryCongressionalModel()
                     {
-                        CongressionalDistrict = Convert.ToInt32(row["CongressionalDistrict"])
+                        CongressionalDistrict = row["CongressionalDistrict"].ToString()
                     };
                     res.Add(myModel);
                 }
@@ -227,12 +237,12 @@ namespace CSLBusinessLayer.Concrete
             return res;
         }
 
-        public List<int> GetCongressListValues(List<LibraryCongressionalModel> model)
+        public List<string> GetCongressListValues(List<LibraryCongressionalModel> model)
         {
-            List<int> res = new List<int>();
+            List<string> res = new List<string>();
             foreach (var item in model)
             {
-                int value = (int)item.CongressionalDistrict;
+                string value = item.CongressionalDistrict;
                 res.Add(value);
             }
             return res;
@@ -243,6 +253,8 @@ namespace CSLBusinessLayer.Concrete
             DataTable myData = _dataAccess.GetCounty(library, jurisdiction, csla, city, county, zip, assembly, senate, congress, status, code);
             List<LibraryCountyModel> res = new List<LibraryCountyModel>();
             LibraryCountyModel myModel;
+            LibraryCountyModel allModel = new LibraryCountyModel() { County = "All" };
+            res.Add(allModel);
 
             try
             {
@@ -279,6 +291,8 @@ namespace CSLBusinessLayer.Concrete
             DataTable myData = _dataAccess.GetJurisdiction(library, jurisdiction, csla, city, county, zip, assembly, senate, congress, status, code);
             List<LibraryJurisdictionModel> res = new List<LibraryJurisdictionModel>();
             LibraryJurisdictionModel myModel;
+            LibraryJurisdictionModel allModel = new LibraryJurisdictionModel() { Jurisdiction = "All" };
+            res.Add(allModel);
 
             try
             {
@@ -315,6 +329,8 @@ namespace CSLBusinessLayer.Concrete
             DataTable myData = _dataAccess.GetLibrary(library, jurisdiction, csla, city, county, zip, assembly, senate, congress, status, code);
             List<LibraryLibraryModel> res = new List<LibraryLibraryModel>();
             LibraryLibraryModel myModel;
+            LibraryLibraryModel allModel = new LibraryLibraryModel() { LibraryName = "All" };
+            res.Add(allModel);
 
             try
             {
@@ -351,6 +367,8 @@ namespace CSLBusinessLayer.Concrete
             DataTable myData = _dataAccess.GetSenate(library, jurisdiction, csla, city, county, zip, assembly, senate, congress, status, code);
             List<LibrarySenateModel> res = new List<LibrarySenateModel>();
             LibrarySenateModel myModel;
+            LibrarySenateModel allModel = new LibrarySenateModel() { SenateDistrict = "All" };
+            res.Add(allModel);
 
             try
             {
@@ -358,7 +376,7 @@ namespace CSLBusinessLayer.Concrete
                 {
                     myModel = new LibrarySenateModel()
                     {
-                        SenateDistrict = Convert.ToInt32(row["SenateDistrict"])
+                        SenateDistrict = row["SenateDistrict"].ToString()
                     };
                     res.Add(myModel);
                 }
@@ -371,12 +389,12 @@ namespace CSLBusinessLayer.Concrete
             return res;
         }
 
-        public List<int> GetSenateListValues(List<LibrarySenateModel> model)
+        public List<string> GetSenateListValues(List<LibrarySenateModel> model)
         {
-            List<int> res = new List<int>();
+            List<string> res = new List<string>();
             foreach (var item in model)
             {
-                int value = (int)item.SenateDistrict;
+                string value = item.SenateDistrict;
                 res.Add(value);
             }
             return res;
@@ -387,6 +405,8 @@ namespace CSLBusinessLayer.Concrete
             DataTable myData = _dataAccess.GetStatus(library, jurisdiction, csla, city, county, zip, assembly, senate, congress, status, code);
             List<LibraryStatusModel> res = new List<LibraryStatusModel>();
             LibraryStatusModel myModel;
+            LibraryStatusModel allModel = new LibraryStatusModel() { Status = "All" };
+            res.Add(allModel);
 
             try
             {
@@ -423,6 +443,8 @@ namespace CSLBusinessLayer.Concrete
             DataTable myData = _dataAccess.GetZip(library, jurisdiction, csla, city, county, zip, assembly, senate, congress, status, code);
             List<LibraryZipModel> res = new List<LibraryZipModel>();
             LibraryZipModel myModel;
+            LibraryZipModel allModel = new LibraryZipModel() { Zip = "All" };
+            res.Add(allModel);
 
             try
             {
@@ -430,7 +452,7 @@ namespace CSLBusinessLayer.Concrete
                 {
                     myModel = new LibraryZipModel()
                     {
-                        Zip = Convert.ToInt32(row["Zip"])
+                        Zip = row["Zip"].ToString()
                     };
                     res.Add(myModel);
                 }
@@ -443,12 +465,12 @@ namespace CSLBusinessLayer.Concrete
             return res;
         }
 
-        public List<int> GetZipListValues(List<LibraryZipModel> model)
+        public List<string> GetZipListValues(List<LibraryZipModel> model)
         {
-            List<int> res = new List<int>();
+            List<string> res = new List<string>();
             foreach (var item in model)
             {
-                int value = (int)item.Zip;
+                string value = item.Zip;
                 res.Add(value);
             }
             return res;

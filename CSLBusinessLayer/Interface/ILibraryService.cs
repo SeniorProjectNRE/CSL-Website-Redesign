@@ -22,16 +22,16 @@ namespace CSLBusinessLayer.Interface
         List<LibraryStatusModel> GetStatus(string library, string jurisdiction, string csla, string city, string county, int zip, int assembly, int senate, int congress, string status, string code);
         List<LibraryZipModel> GetZip(string library, string jurisdiction, string csla, string city, string county, int zip, int assembly, int senate, int congress, string status, string code);
         List<LibraryModel> GetAllBroadband(string library, string jurisdiction, string csla, string city, string county, int zip, int assembly, int senate, int congress, string status, string code);
-        List<int> GetAssemblyListValues(List<LibraryAssemblyModel> model);
+        List<string> GetAssemblyListValues(List<LibraryAssemblyModel> model);
         List<string> GetCityListValues(List<LibraryCityModel> model);
         List<string> GetCLSAListValues(List<LibraryCLSAModel> model);
-        List<int> GetCongressListValues(List<LibraryCongressionalModel> model);
+        List<string> GetCongressListValues(List<LibraryCongressionalModel> model);
         List<string> GetCountyListValues(List<LibraryCountyModel> model);
         List<string> GetJurisdictionListValues(List<LibraryJurisdictionModel> model);
         List<string> GetLibraryListValues(List<LibraryLibraryModel> model);
-        List<int> GetSenateListValues(List<LibrarySenateModel> model);
+        List<string> GetSenateListValues(List<LibrarySenateModel> model);
         List<string> GetCodeListValues(List<LibraryCodeModel> model);
         List<string> GetStatusListValues(List<LibraryStatusModel> model);
-        List<int> GetZipListValues(List<LibraryZipModel> model);
+        List<string> GetZipListValues(List<LibraryZipModel> model);
     }
 }

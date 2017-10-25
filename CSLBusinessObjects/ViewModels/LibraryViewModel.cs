@@ -29,10 +29,10 @@ namespace CSLBusinessObjects.ViewModels
         public List<string> GetCountyListValues { get; set; }
         public List<string> GetStatusListValues { get; set; }
         public List<string> GetCodeListValues { get; set; }
-        public List<int> GetZipListValues { get; set; }
-        public List<int> GetAssemblyListValues { get; set; }
-        public List<int> GetSenateListValues { get; set; }
-        public List<int> GetCongressionalListValues { get; set; }
+        public List<string> GetZipListValues { get; set; }
+        public List<string> GetAssemblyListValues { get; set; }
+        public List<string> GetSenateListValues { get; set; }
+        public List<string> GetCongressionalListValues { get; set; }
 
         public int SelectedAssembly { get; set; }
         public string SelectedCity{ get; set; }

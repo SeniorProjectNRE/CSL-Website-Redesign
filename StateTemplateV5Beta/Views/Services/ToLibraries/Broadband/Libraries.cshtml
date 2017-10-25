@@ -27,11 +27,11 @@
                 margin-left: 10px;
             }
 
-        #grantsData_filter label {
+        #broadbandData_filter label {
             color: black;
         }
 
-        #grantsData_length label {
+        #broadbandData_length label {
             color: black;
         }
 
@@ -222,7 +222,7 @@
             <div class="container">
 
 
-                <table id="grantsData">
+                <table id="broadbandData">
                     <thead>
                         <tr>
                             <th>Library</th>
@@ -243,6 +243,7 @@
                                 <td>@item.LibraryName</td>
                                 <td>@item.Jurisdiction</td>
                                 <td>@item.City</td>
+                                <td>@item.County</td>
                                 <td>@item.CLSA</td>
                                 <td>@item.AssemblyDistrict</td>
                                 <td>@item.SenateDistrict</td>
@@ -259,16 +260,23 @@
     </main>
 </div>
 
-@*<script>
+<script>
     $(document).ready(function () {
-        var table = $('#grantsData').DataTable({ rowReorder: { selector: 'td:nth-child(2)' }, responsive: true });
-        $('#GetNumListValues').select2();
-        $('#GetYearListValues').select2();
-        $('#AwardStrings').select2();
-        $('#GetLibrariesListValues').select2();
-        $('#GetProjectListValues').select2();
+        var table = $('#broadbandData').DataTable({ rowReorder: { selector: 'td:nth-child(2)' }, responsive: true });
+        $('#GetLibraryListValues').select2();
+        $('#GetJurisdictionListValues').select2();
+        $('#GetCLSAListValues').select2();
+        $('#GetCityListValues').select2();
+        $('#GetCountyListValues').select2();
+        $('#GetZipListValues').select2();
+        $('#GetAssemblyListValues').select2();
+        $('#GetSenateListValues').select2();
+        $('#GetCongressionalListValues').select2();
+        $('#GetStatusListValues').select2();
+        $('#GetCodeListValues').select2();
+
     });
-</script>*@
+</script>
 
 
 
