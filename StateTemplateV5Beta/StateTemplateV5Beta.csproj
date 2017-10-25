@@ -964,6 +964,8 @@
     <Content Include="Content\StateTemplate\images\top-icons\work-over.jpg" />
     <Content Include="Content\StateTemplate\images\top-icons\work.jpg" />
     <Content Include="Content\StateTemplate\images\visitUs\tours.png" />
+    <Content Include="Content\StateTemplate\images\volunteer\volunteer.jpg" />
+    <Content Include="Content\StateTemplate\images\volunteer\volunteermatch.gif" />
     <Content Include="Content\StateTemplate\images\workWithUs\intern.jpg" />
     <Content Include="Content\StateTemplate\images\workWithUs\volunteer.jpg" />
     <Content Include="Content\StateTemplate\images\workWithUs\working.png" />

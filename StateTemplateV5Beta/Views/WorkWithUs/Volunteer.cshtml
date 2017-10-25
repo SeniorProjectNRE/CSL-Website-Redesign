@@ -1,11 +1,58 @@
 ﻿
 @{
-    ViewBag.Title = "Volunteer";
-}
+    ViewBag.Title = "CSL - Volunteer Program";
+    ViewBag.PageTitle = "CSL Volunteer Program";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "The California State Library has volunteer opportunities that can be located here. Be a part of history by contributing your talents to supporting the information and services provided by one of the oldest cultural institutions in California. You don't need to be a librarian to get involved. If you don't see an opportunity that you are interested in today, check back as more opportunities are always being added.";
+   
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+     
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Volunteer</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb dynamic"></ol>
+                <div class="two-thirds">
+                <h2 class="page-title">@(ViewBag.PageTitle)</h2>
+                <img class="img img-responsive" src="~/Content/StateTemplate/images/volunteer/volunteer.jpg"/>
+                <h3></h3>
+
+                <strong></strong>
+                <p></p>
+                </div>
+                <div class="third">
+                    <div class="involved" title="Get Involved" style="position:absolute; left:655px; top: 160px">
+                        <p class="involved_p" style="padding-top:60px; font-size:1.01em">Make a Difference Volunteer</p>
+                        <form style="padding-left:10px" name="searchTool" method="get" target="_blank" action="http://californialibraries.volunteermatch.org/">
+                            <label style="font-size:11px; color:#6a8844; font-weight: bold" for="zipcode">Zip Code: </label>
+                            <input name="zip" size="6" maxlength="5" type="text">
+                            <input name="submit" value="y" type="hidden">
+                            <input value="Go" name="searchSubmit" alt="Go" class="go" type="submit">
+                        </form>
+                        <p class="involved_p">In partnership with VolunteerMatch</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="panel panel-standout">
+                    <a href="https://libraries.volunteermatch.org/results/opp_detail.jsp?oppid=1471612&_trk_=ss_546e9e852747b1a71f1016ab21cbaadd">
+                        Docent: California History, Art & Architecture 
+                    </a>
+                    <p>
+                        Sacramento, CA<br />
+                        Lead public tours of the recently restored historic California State Library building across the street from the Capitol. We'll train you to assist tour participants in understanding and ...
+                    </p>
+
+                    <a href="http://www.volunteermatch.org/"><img class="insetImage" src="~/Content/StateTemplate/images/volunteer/volunteermatch.gif" /></a>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
