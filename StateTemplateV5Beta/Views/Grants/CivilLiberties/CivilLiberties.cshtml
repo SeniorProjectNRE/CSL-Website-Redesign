@@ -1,11 +1,69 @@
 ﻿
 @{
-    ViewBag.Title = "CivilLiberties";
+    ViewBag.Title = "CSL - California Civil Liberties Public Education Program";
+    ViewBag.PageTitle = "California State Library Education Program";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "The State Librarian appoints an Advisory Committee of the Japanese American community leaders and others involved in civil liberty issues to provide input on the program.";
+
 }
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>CivilLiberties</h2>
+        <div class="container">
+            <div class="section">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/grants">Grants</a></li>
+
+                    <li class="active">CCLPEP</li>
+                </ol>
+
+                <h2 class="page-title">@(ViewBag.PageTitle)</h2>
+                <img class="banner animated fadeInRight" src="~/Content/StateTemplate/images/cclpep/camp.jpg" alt="banner image of camp" />
+                <p>
+                    The California Civil Liberties Public Education Program (California Civil Liberties Program) is a state-funded grant project to sponsor public educational activities and development of educational materials to ensure that the events surrounding the exclusion, forced removal, and internment of civilians and permanent resident aliens of Japanese ancestry will be remembered so that the causes and circumstance of this and similar events may be illuminated and understood. The California Civil Liberties Program is administered by the California State Library.
+
+
+                </p>
+
+               
+            </div>
+            
+            <div class="section">
+                <a href="~/Content/StateTemplate/pdf/cclpep/CivilLibertiesGrantees2016-17PRESS-RELEASE.pdf">Press Release: Civil Liberties FY 2016-17 Grantees Announced</a>
+            </div>
+
+            <div class="section">
+                <h3>Grant Program Links</h3>
+                <img class="insetImage img " src="~/Content/StateTemplate/images/cclpep/kids_big.png" alt="big kids" />
+                <ul  >
+                    <li><a href="~/Content/StateTemplate/pdf/cclpep/CACivilLibertiesPublicEducationProgramFY2016-17GUIDELINES-revised.pdf" target="_blank">Guidelines</a> (PDF)</li>
+                    <li><a href="~/Content/StateTemplate/pdf/cclpep/CivilLibertiesProgramFAQ.pdf" target="_blank">FAQ</a> (PDF)</li>
+                    <li><a href="/grants/civil-liberties/dates">Important Dates for Applicants</a></li>
+                    <li><a href="~/Content/StateTemplate/pdf/cclpep/FinalBeforeYouStart.pdf" target="_blank">Before You Start Your Application</a> (PDF)</li>
+                    <li><a href="/grants/civil-liberties/apply">Submit Your Application</a></li>
+                    <li>Informational Webinar on February 22, 2017 (<a href="~/Content/StateTemplate/pdf/cclpep/CACLPEPInformationWebinarFeb2017.pdf" target="_blank">PDF</a>), (<a href="~/Content/StateTemplate/otherDocuments/cclpep/CivilLibertiesProgramWebinarFeb2017.mp4" target="_blank">Video</a>)</li>
+                    <li><a href="~/Content/StateTemplate/pdf/cclpep/CivilLibertiesPressReleaseFebruary2-2017-revised.pdf" target="_blank">Press Release</a> (PDF)</li>
+                    <li><a href="/grants/civil-liberties/advisory-committee">Advisory Committee</a></li>
+                    <li><a href="/grants/civil-liberties/contacts">Contact Us</a></li>
+                    <!--<li><a href="/grants/civil-liberties/listrecipients.html">CCLPEP Grant List</a></li>
+        <li><a href="about.html">Background and Overview</a></li>
+        <li><a href="about.html">History of the Internment</a></li>-->
+                </ul>
+                <h3>Information about the California Civil Liberties Program</h3>
+                <ul >
+                    <li><a href="/grants/civil-liberties/background">History of the Internment</a></li>
+                    <li><a href="/grants/civil-liberties/background">Background of the California Civil Liberties Public Education Program</a></li>
+                    <li><a href="/grants/civil-liberties/recipients">Past Grantee List, California Civil Liberties Program 1998-2011</a></li>
+                </ul>
+            </div>
     </main>
 </div>
 

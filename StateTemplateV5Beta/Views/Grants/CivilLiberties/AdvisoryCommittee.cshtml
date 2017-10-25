@@ -1,11 +1,63 @@
 ﻿
 @{
-    ViewBag.Title = "AdvisoryCommittee";
+    ViewBag.Title = "CSL - California Civil Liberties advisory committee";
+    ViewBag.PageTitle = "California Civil Liberties Public Education Program – Advisory Committee";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "The State Librarian appoints an Advisory Committee of the Japanese American community leaders and others involved in civil liberty issues to provide input on the program.";
+
 }
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>AdvisoryCommittee</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/grants">Grants</a></li>
+
+                    <li><a href="/grants/civil-liberties">CCLPEP</a></li>
+                    <li class="active">Advisory Committee</li>
+                </ol>
+
+                <h2 class="page-title">@(ViewBag.PageTitle)</h2>
+                <p>The State Librarian appoints an Advisory Committee comprised of leaders of the Japanese American community and others involved in civil liberty issues to provide input on the program. Advisory Committee members to date (in alphabetical order):</p>
+
+                <ul>
+                    <li>
+                        <strong>Marla O. Anderson</strong><br>Judge, Superior Court of Monterey County; Vice Chair of the Executive and Planning Committee for the Judicial Council of California
+                    </li>
+                    <li>
+                        <strong>Patrick Hayashi</strong><br>Retired Associate President of the University of California
+                    </li>
+                    <li>
+                        <strong>Jonathan Kaji</strong><br>President, Kaji &amp; Associates
+                    </li>
+                    <li>
+                        <strong>Mark Katrikh</strong><br>Director, Professional Development Programs, Tools for Tolerance® – Museum of Tolerance
+                    </li>
+                    <li>
+                        <strong>Karen Korematsu</strong><br>Founder &amp; Executive Director, Fred T. Korematsu Institute
+                    </li>
+
+                    <li>
+                        <strong>Diane Matsuda</strong><br>Retired Executive Director, John Burton Foundation
+                    </li>
+                    <li>
+                        <strong>Maricela Rodriguez</strong><br>Program Manager, Healthy California, a program of the California Endowment
+                    </li>
+                    <li>
+                        <strong>Dale Shimasaki</strong><br>CEO, Strategic Education Services and former Executive Director<br>  of the Civil Liberties Public Education Fund
+                    </li>
+                </ul>
+            </div>
+        </div>>
     </main>
 </div>
 

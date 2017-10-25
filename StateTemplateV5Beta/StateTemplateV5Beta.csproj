@@ -555,6 +555,8 @@
     <Content Include="Content\StateTemplate\images\caliorniaHistory\statue.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\sword_performer.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\winchester_mystery_house.jpg" />
+    <Content Include="Content\StateTemplate\images\cclpep\camp.jpg" />
+    <Content Include="Content\StateTemplate\images\cclpep\kids_big.png" />
     <Content Include="Content\StateTemplate\images\collections\collection_index.png" />
     <Content Include="Content\StateTemplate\images\contact-top.jpg" />
     <Content Include="Content\StateTemplate\images\contact\LCI.jpg" />
@@ -1000,6 +1002,7 @@
     <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\BTBLDescriptiveVideoCatalogSupp2017.mp3" />
     <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\BTBLDescriptiveVideoCatalogsVHS.mp3" />
     <Content Include="Content\StateTemplate\otherDocuments\btbl\PatronHandbook2014.mp3" />
+    <Content Include="Content\StateTemplate\otherDocuments\cclpep\CivilLibertiesProgramWebinarFeb2017.mp4" />
     <Content Include="Content\StateTemplate\otherDocuments\services\nls_that_all_may_read.mp4" />
     <Content Include="Content\StateTemplate\otherDocuments\services\PatronHandbook2014.mp3" />
     <Content Include="Content\StateTemplate\sample\images\150x100.gif" />
@@ -1676,6 +1679,12 @@
     <Content Include="Content\StateTemplate\pdf\GovernmentPublications\stateDocumentDepositoryProgram\DepositoryLibrary-Current.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\Broadband_Data_Dictionary.pdf" />
     <Content Include="Content\StateTemplate\pdf\workWithUs\Lib_SeniorLib_Flyer.pdf" />
+    <Content Include="Content\StateTemplate\pdf\cclpep\CACivilLibertiesPublicEducationProgramFY2016-17GUIDELINES-revised.pdf" />
+    <Content Include="Content\StateTemplate\pdf\cclpep\CACLPEPInformationWebinarFeb2017.pdf" />
+    <Content Include="Content\StateTemplate\pdf\cclpep\CivilLibertiesGrantees2016-17PRESS-RELEASE.pdf" />
+    <Content Include="Content\StateTemplate\pdf\cclpep\CivilLibertiesPressReleaseFebruary2-2017-revised.pdf" />
+    <Content Include="Content\StateTemplate\pdf\cclpep\CivilLibertiesProgramFAQ.pdf" />
+    <Content Include="Content\StateTemplate\pdf\cclpep\FinalBeforeYouStart.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <Content Include="Content\StateTemplate\pdf\crb\Newsletters\20170104.pdf" />
