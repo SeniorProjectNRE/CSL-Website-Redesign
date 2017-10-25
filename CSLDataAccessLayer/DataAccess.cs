@@ -26,7 +26,7 @@ namespace CSLDataAccessLayer
 
             string dbConnectionString = _dbConnectionString;
             SqlConnection conn = new SqlConnection(dbConnectionString);
-            SqlCommand cmd = new SqlCommand("[dbo].[uspSeeAllGrants]", conn);
+            SqlCommand cmd = new SqlCommand("[grant].[uspSeeAllGrants]", conn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
@@ -63,7 +63,7 @@ namespace CSLDataAccessLayer
 
         //    string dbConnectionString = _dbConnectionString;
         //    SqlConnection conn = new SqlConnection(dbConnectionString);
-        //    SqlCommand cmd = new SqlCommand("[dbo].[uspSeeAllGrants]", conn);
+        //    SqlCommand cmd = new SqlCommand("[grant].[uspSeeAllGrants]", conn);
         //    cmd.CommandType = CommandType.StoredProcedure;
 
         //    if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
@@ -109,7 +109,7 @@ namespace CSLDataAccessLayer
 
             string dbConnectionString = _dbConnectionString;
             SqlConnection conn = new SqlConnection(dbConnectionString);
-            SqlCommand cmd = new SqlCommand("[dbo].[uspFillAwardDDL]", conn);
+            SqlCommand cmd = new SqlCommand("[grant].[uspFillAwardDDL]", conn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
@@ -147,7 +147,7 @@ namespace CSLDataAccessLayer
 
         //    string dbConnectionString = _dbConnectionString;
         //    SqlConnection conn = new SqlConnection(dbConnectionString);
-        //    SqlCommand cmd = new SqlCommand("[dbo].[uspSeeAllGrants]", conn);
+        //    SqlCommand cmd = new SqlCommand("[grant].[uspSeeAllGrants]", conn);
         //    cmd.CommandType = CommandType.StoredProcedure;
 
         //    if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
@@ -191,7 +191,7 @@ namespace CSLDataAccessLayer
 
             string dbConnectionString = _dbConnectionString;
             SqlConnection conn = new SqlConnection(dbConnectionString);
-            SqlCommand cmd = new SqlCommand("[dbo].[uspFillGrantDDL]", conn);
+            SqlCommand cmd = new SqlCommand("[grant].[uspFillGrantDDL]", conn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
@@ -232,7 +232,7 @@ namespace CSLDataAccessLayer
 
             string dbConnectionString = _dbConnectionString;
             SqlConnection conn = new SqlConnection(dbConnectionString);
-            SqlCommand cmd = new SqlCommand("[dbo].[uspFillLibraryDDL]", conn);
+            SqlCommand cmd = new SqlCommand("[grant].[uspFillLibraryDDL]", conn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
@@ -273,7 +273,7 @@ namespace CSLDataAccessLayer
 
             string dbConnectionString = _dbConnectionString;
             SqlConnection conn = new SqlConnection(dbConnectionString);
-            SqlCommand cmd = new SqlCommand("[dbo].[uspFillProjectDDL]", conn);
+            SqlCommand cmd = new SqlCommand("[grant].[uspFillProjectDDL]", conn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
@@ -314,7 +314,7 @@ namespace CSLDataAccessLayer
 
             string dbConnectionString = _dbConnectionString;
             SqlConnection conn = new SqlConnection(dbConnectionString);
-            SqlCommand cmd = new SqlCommand("[dbo].[uspFillYearDDL]", conn);
+            SqlCommand cmd = new SqlCommand("[grant].[uspFillYearDDL]", conn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
