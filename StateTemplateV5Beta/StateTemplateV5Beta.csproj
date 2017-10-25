@@ -631,6 +631,10 @@
     <Content Include="Content\StateTemplate\images\icons\symbol.png" />
     <Content Include="Content\StateTemplate\images\icons\talkingbooks.png" />
     <Content Include="Content\StateTemplate\images\icons\tours.png" />
+    <Content Include="Content\StateTemplate\images\lightbox\close.png" />
+    <Content Include="Content\StateTemplate\images\lightbox\loading.gif" />
+    <Content Include="Content\StateTemplate\images\lightbox\next.png" />
+    <Content Include="Content\StateTemplate\images\lightbox\prev.png" />
     <Content Include="Content\StateTemplate\images\online_exhibits\banner_inside.jpg" />
     <Content Include="Content\StateTemplate\images\online_exhibits\cagoldrush.jpg" />
     <Content Include="Content\StateTemplate\images\online_exhibits\cartoon.jpg" />
@@ -999,6 +1003,7 @@
     <Content Include="Content\StateTemplate\js\libs\select2.min.js" />
     <Content Include="Content\StateTemplate\js\libs\selectivizr-min.js" />
     <Content Include="Content\StateTemplate\js\libs\typedarray.js" />
+    <Content Include="Content\StateTemplate\js\placeholders.min.js" />
     <Content Include="Content\StateTemplate\js\search.js" />
     <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\BTBLDescriptiveVideoCatalogsDVD.mp3" />
     <Content Include="Content\StateTemplate\otherDocuments\btbl\dvs\BTBLDescriptiveVideoCatalogsSupp2013.mp3" />
