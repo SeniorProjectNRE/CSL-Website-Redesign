@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSLBusinessObjects.Models
 {
-    public class Library
+    public class LibraryModel
     {
         [StringLength(50)]
         public string OutletID { get; set; }
