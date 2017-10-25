@@ -579,6 +579,8 @@
     <Content Include="Content\StateTemplate\images\csl_logo_big.png" />
     <Content Include="Content\StateTemplate\images\CSL_pic.png" />
     <Content Include="Content\StateTemplate\images\CSL_picj.jpg" />
+    <Content Include="Content\StateTemplate\images\digitizedResources\1.png" />
+    <Content Include="Content\StateTemplate\images\digitizedResources\2.png" />
     <Content Include="Content\StateTemplate\images\exhibit\1.jpg" />
     <Content Include="Content\StateTemplate\images\exhibit\1_001.jpg" />
     <Content Include="Content\StateTemplate\images\exhibit\1_002.jpg" />
@@ -1685,6 +1687,13 @@
     <Content Include="Content\StateTemplate\pdf\cclpep\CivilLibertiesPressReleaseFebruary2-2017-revised.pdf" />
     <Content Include="Content\StateTemplate\pdf\cclpep\CivilLibertiesProgramFAQ.pdf" />
     <Content Include="Content\StateTemplate\pdf\cclpep\FinalBeforeYouStart.pdf" />
+    <Content Include="Content\StateTemplate\pdf\digitizedResources\January-FebruaryBooklist.pdf" />
+    <Content Include="Content\StateTemplate\pdf\digitizedResources\July-AugDisplay %281%29.pdf" />
+    <Content Include="Content\StateTemplate\pdf\digitizedResources\July-AugDisplay.pdf" />
+    <Content Include="Content\StateTemplate\pdf\digitizedResources\March-AprilDisplay.pdf" />
+    <Content Include="Content\StateTemplate\pdf\digitizedResources\May-JuneDisplay.pdf" />
+    <Content Include="Content\StateTemplate\pdf\digitizedResources\November-DecemberBooklist.pdf" />
+    <Content Include="Content\StateTemplate\pdf\digitizedResources\OctoberBooklist.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <Content Include="Content\StateTemplate\pdf\crb\Newsletters\20170104.pdf" />
@@ -2114,6 +2123,7 @@
     <Content Include="Views\Grants\InnovationStation.cshtml" />
     <Content Include="Views\Grants\LibraryServicesTechnologyAct.cshtml" />
     <Content Include="Views\Services\ToLibraries\BroadbandERate.cshtml" />
+    <Content Include="Views\CaliforniaHistory\DigitizedResources.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
