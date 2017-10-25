@@ -73,11 +73,6 @@ namespace CSLBusinessLayer.Concrete
             return res;
         }
 
-        //public List<GrantsModel> GetAllGrants(string grantNum, string year, string library, string project, int award)
-        //{
-        //    return _dataAccess.GetAllGrants(grantNum, year, library, project, award);
-        //}
-
         public List<GrantsModel> GetAllGrants(string grantNum, string year, string library, string project, int award)
         {
             DataTable myData = _dataAccess.GetAllGrants(grantNum, year, library, project, award);
