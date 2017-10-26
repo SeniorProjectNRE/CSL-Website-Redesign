@@ -655,6 +655,10 @@
     <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
     <Content Include="Content\StateTemplate\images\services\PublicServices.png" />
     <Content Include="Content\StateTemplate\images\services\researchResources\csl_employee.png" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeInvestment.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeResults.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\icon.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\quoteIcon.png" />
     <Content Include="Content\StateTemplate\images\services\researchResources\PTRC.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\ASutro.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\coloringbook.jpg" />
@@ -1690,6 +1694,11 @@
     <Content Include="Content\StateTemplate\pdf\Collections\Online-Exhibits\MakeTheFutureOurs_sm.pdf" />
     <Content Include="Content\StateTemplate\pdf\GovernmentPublications\stateDocumentDepositoryProgram\DepositoryLibrary-Current.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\Broadband_Data_Dictionary.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\Infographic.pdf" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\15-02_CaliforniaPublicLibraryBroadbandGrantApplication_REV.docx" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\15-02_Branch_Broadband_Grant_Guidelines_REV.docx" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\CaliforniaPublicLibraryBroadbandProjectUpdate03042015.pptx" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\LightingupLibraries_HighspeedInternetReport_150424.pdf" />
     <Content Include="Content\StateTemplate\pdf\workWithUs\Lib_SeniorLib_Flyer.pdf" />
     <Content Include="Content\StateTemplate\pdf\cclpep\CACivilLibertiesPublicEducationProgramFY2016-17GUIDELINES-revised.pdf" />
     <Content Include="Content\StateTemplate\pdf\cclpep\CACLPEPInformationWebinarFeb2017.pdf" />
