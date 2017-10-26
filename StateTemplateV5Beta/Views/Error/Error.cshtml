@@ -1,11 +1,26 @@
 ﻿
 @{
     ViewBag.Title = "Error";
+    ViewBag.ScreenHeight = @Request.Browser.ScreenPixelsHeight.ToString() + "px";
+
 }
+<style>
+    .section-danger {
+        min-height: 300%
+    }
+</style>
+
 
 <div id="main-content" class="main-content" style="background-color:red">
-    <main class="main-primary" style="background-color:red">
-        <h2>Error</h2>
+    <main class="main-primary">
+        <div class="section section-danger" >
+            <div class="container">
+                <h2>Error</h2>
+                <h3>
+                    @Request.Url.OriginalString is not a valid URL, please look it over and either enter in a working URL, or click here to return <a href="/">HOME</a>
+                </h3>
+            </div>
+        </div>
     </main>
 </div>
 
