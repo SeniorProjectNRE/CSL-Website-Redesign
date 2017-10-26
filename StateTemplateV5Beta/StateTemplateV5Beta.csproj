@@ -655,6 +655,7 @@
     <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
     <Content Include="Content\StateTemplate\images\services\PublicServices.png" />
     <Content Include="Content\StateTemplate\images\services\researchResources\csl_employee.png" />
+    <Content Include="Content\StateTemplate\images\services\researchResources\PTRC.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\ASutro.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\coloringbook.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\countryFlags\Afghanistan.gif" />

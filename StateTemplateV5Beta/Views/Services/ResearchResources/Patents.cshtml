@@ -1,11 +1,155 @@
 ﻿
 @{
-    ViewBag.Title = "Patents";
+    ViewBag.Title = "CSL - Patent and Trademark Resource Center (PTRC)";
+    ViewBag.PageTitle = "Patent and Trademark Resource Center";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "Designated by the United States Patent and Trademark Office, we offer patent and trademark search training, scam prevention and other USPTO and foreign materials.";
+    ViewBag.Keywords = "California, state, Library, patent, trademark, resource, center";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Patents</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/research">Research</a></li>
+                    <li style="text-transform:none;">Patent and Trademark Resarch Center</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+            </div>
+            <div class="container">
+                <div class="group">
+                    <div class="two-thirds">
+                        <!-- Bullets -->
+                        <ul class="list-understated">
+                            <li>Are you curious about patents?</li>
+                            <li>Would you like to learn about trademarks?</li>
+                            <li>Would you like some help to get started?</li>
+                        </ul>
+                    </div>
+                    <div class="third text-center">
+                        <!-- Logo -->
+                            <a href="http://www.uspto.gov/learning-and-resources/support-centers/patent-and-trademark-resource-centers-ptrcs" target="_blank"><img src="~/Content/StateTemplate/images/services/researchResources/PTRC.jpg" title="Patent and Trademark resource center logo" alt="PTRC logo" style="width:195px;" /></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Paragraphs -->
+                <br />
+                <p>
+                    The California State Library has been a <a href="http://www.uspto.gov/" target="_blank">United States Patent and Trademark Office (USPTO)</a> designated <a href="http://www.uspto.gov/learning-and-resources/support-centers/patent-and-trademark-resource-centers-ptrcs" target="_blank">Patent and Trademark Resource Center (PTRC)</a>, originally called a Patent and Trademark Depository Library, since 1979. Library staff can assist with general questions and provide assistance and instruction in the use of patent and trademark resources.
+                </p>
+                <p>
+                    We provide access to the electronic and print patent and trademark resources the USPTO makes available to PTRCs and the public, all of which are available at no cost. For instance, we have a current collection of full-color <a href="https://www.uspto.gov/patents-getting-started/patent-basics/types-patent-applications/general-information-about-35-usc-161" target="_blank">plant patents</a> available in print and we have dedicated computers, with extended time limits, to perform patent searches.
+                </p>
+                <p>
+                    Please note that staff cannot perform patent or trademark searches for individuals and cannot give legal advice. For legal advice, please contact a registered <a href="https://oedci.uspto.gov/OEDCI/" target="_blank">patent attorney or agent</a>. More specialized questions should be directed to the USPTO.
+                </p>
+            </div>
+            <div class="container">
+                <!-- Accordion -->
+                <div class="panel-group" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Patents
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                                <p>
+                                    Do you have an idea or invention that you want to patent? Read up on the basics of the United States patent process and learn how to perform a thorough patent search.
+                                </p>
+                                <ul>
+                                    <li><a href="http://www.uspto.gov/patents-getting-started/general-information-concerning-patents" target="_blank">General Information Concerning Patents</a></li>
+                                    <li><a href="http://www.uspto.gov/learning-and-resources/support-centers/patent-and-trademark-resource-centers-ptrc/resources/seven" target="_blank">7 Step U.S. Patent Search Strategy Guide</a></li>
+                                    <li><a href="http://www.uspto.gov/video/cbt/ptrcsearching/" target="_blank">How to Conduct a Preliminary U.S. Patent Search: a Step by Step Strategy</a> (Tutorial Video)</li>
+                                    <li><a href="http://www.uspto.gov/web/offices/pac/mpep/index.html" target="_blank">Manual of Patent Examining Procedure (MPEP)</a></li>
+                                    <li><a href="http://patft.uspto.gov/netahtml/PTO/search-bool.html" target="_blank">Search USPTO Patent Full Text and Image Database (PatFT)</a></li>
+                                    <li><a href="http://appft.uspto.gov/netahtml/PTO/search-bool.html" target="_blank">Search USPTO Patent Application Full Text and Image Database (AppFT)</a></li>
+                                    <li><a href="http://www.epo.org/searching/free/espacenet.html" target="_blank">Search Foreign Patents</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    Trademarks
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <p>
+                                    Do you want to protect your company name or logo in the United States? Read up on trademark basics and search to see if someone already has trademarked your name or design. Or learn more about trademarking your name in <a href="http://www.sos.ca.gov/business-programs/ts/" target="_blank">California from the Secretary of State</a>.
+                                </p>
+                                <ul>
+                                    <li><a href="https://www.uspto.gov/sites/default/files/documents/BasicFacts.pdf" target="_blank">Basic Facts about Trademarks</a></li>
+                                    <li><a href="http://www.uspto.gov/trademarks-getting-started/trademark-process#step1" target="_blank">Trademark Process</a></li>
+                                    <li><a href="http://www.uspto.gov/trademarks-getting-started/process-overview/trademark-information-network">Watch informative videos on all aspects of the trademark process from the Trademark Information Network</a></li>
+                                    <li><a href="http://tess2.uspto.gov/tmdb/dscm/index.htm" target="_blank">USPTO Design Search Code Manual</a></li>
+                                    <li><a href="http://tess2.uspto.gov" target="_blank">Trademark Electronic Search System (TESS)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading3">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    Scam Prevention
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body">
+                                <p>
+                                    Because patent and trademark information is publically available, the USPTO has resources available to help rights holders protect themselves from popular scams including unsolicited communication that at first glance appear to be "official" but are not actually from the USPTO. Learn how to protect yourself and your intellectual property with information from the USPTO about <a href="https://www.uspto.gov/patents-getting-started/using-legal-services/scam-prevention" target="_blank">Scam Prevention</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading4">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                    Contact Us
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                            <div class="panel-body">
+                                <p>
+                                    Library staff can be contacted by email at <a href="mailto:cslgps@library.ca.gov">cslgps@library.ca.gov</a> or by phone at 916-654-0261, Monday through Friday, 9:30 a.m. to 4:00 p.m., excluding state holidays.
+                                </p>
+                                <p>
+                                    Contacting us by email or phone before visiting us in person is strongly recommended. It is not uncommon for patent and trademark assistance to involve more than a short conversation. If additional time is needed, an option to make an appointment with library staff is available.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 </div>
 
