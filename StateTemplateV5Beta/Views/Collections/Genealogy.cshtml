@@ -1,11 +1,216 @@
 ﻿
 @{
-    ViewBag.Title = "Genealogy";
+    ViewBag.Title = "";
+    ViewBag.PageTitle = "Welcome to the Genealogy Hub";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "";
+
 }
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Genealogy</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collection</a></li>
+
+                    <li class="active">Genealogy</li>
+                </ol>
+
+                <h2 class="page-title">@(ViewBag.PageTitle)</h2>
+                <div class="two-thirds">
+                    <p>
+                        Welcome! Start your research by using the <a href="/collections/genealogy/toolkit">California State Library Genealogy Toolkit</a> (useful links and chart creator), visiting one of our reading rooms (listed below), <a href="http://catalog.library.ca.gov/" target="_blank">consulting our catalog</a>, or using our <a href="http://askstatelibrary.libraryresearch.info/" target="_blank">Ask a Librarian</a> feature.
+                    </p>
+
+                    <p class="regular">
+                        All California State Library reading rooms are free and open to the public.
+                    </p>
+                    <div class="section">
+                    <h3 class="orange">Sacramento</h3>
+                    <div style="padding-left:10px;">
+
+                        <h4>Stanley Mosk Library and Courts Building</h4>
+
+                        <div class="panel-group" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Bernard E. Witkin State Law Library </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <p>
+                                            Within the <a href="/law">Witkin Law Library</a> collection, you will find:
+                                        </p>
+                                        <ul>
+                                            <li>Attorney / state bar directories</li>
+                                            <li>State and federal court cases</li>
+                                            <li>"West's California Reporter"</li>
+                                            <li>State and federal court directories</li>
+                                            <li>Legislative directories</li>
+                                            <li>Legislative histories</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Government Publications</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+
+                                        <p>
+                                            Within the <a href="/government-publications/">Government Publications</a> room, you will find California State Government and Federal Government publications, which include:
+                                        </p>
+                                        <ul>
+                                            <li>Agency and departmental annual and special reports, directories, newsletters, maps, records and publications</li>
+                                            <li>Agency and licensing board directories, reports, and rosters</li>
+                                            <li>Commission, committee, and task force reports and minutes</li>
+                                            <li>Congressional hearing indexes</li>
+                                            <li>Military registers, directories, and journals</li>
+                                            <li>U.S. patent database and indexes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Information Services</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+
+                                        <p>
+                                            <a href="/services/to-state-employees">Information Services</a>, our General Collection Resources, contains:
+                                        </p>
+                                        <ul>
+                                            <li>Annual proceedings and membership summaries</li>
+                                            <li>Industry and commercial newsletters</li>
+                                            <li>Industry trade journals</li>
+                                            <li>Genealogy handbooks and guides</li>
+                                            <li>General directories</li>
+                                            <li>Military registers, directories, and journals</li>
+                                            <li>National newspapers</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <h4>Library Annex</h4>
+
+                        <div class="panel-group" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingfour">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapsefour" aria-expanded="true" aria-controls="collapsefour">California History Room</a>
+                                    </h4>
+                                </div>
+                                <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+                                    <div class="panel-body">
+                                        <p>
+                                            Within <a href="/california-history/">California History Room</a>, you will find specialized genealogy resources, including:
+                                        </p>
+                                        <ul>
+                                            <li>California information file</li>
+                                            <li>Research guides and specialized indexes</li>
+                                            <li>City and county directories</li>
+                                            <li>Telephone directories</li>
+                                            <li>California newspapers</li>
+                                            <li>City and county histories</li>
+                                            <li>Image files</li>
+                                            <li>Manuscript collections</li>
+                                            <li>Genealogy, historical, and lineage society publications</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="section">
+                        <h3 class="orange">San Francisco</h3>
+                        <div style="padding-left:10px;">
+                            <h4>
+                                Sutro Library (5th floor of J. Paul Leonard Library)
+                                San Francisco State University
+                            </h4>
+
+                            <div class="panel-group" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingfive">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">California History Room</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfive">
+                                        <div class="panel-body">
+                                            <p>
+                                                Within the special collections of <a href="/sutro">Sutro Library</a>, you will find:
+                                            </p>
+                                            <ul>
+                                                <li>Telephone and city directories</li>
+                                                <li>Family and local histories</li>
+                                                <li>Vital, tax, voting, and property records</li>
+                                                <li>Military and business registries</li>
+                                                <li>Periodicals from surname associations and historical and genealogical societies</li>
+                                                <li>Surname and local history card files</li>
+                                                <li>Daughters of the American Revolution publications</li>
+                                                <li>Foreign language materials</li>
+                                                <li>Guides, handbooks, indexes, finding aids and other materials related to domestic and international research.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="third">
+                    <div class="autoLoop carousel owl-carousel carousel-content">
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/collections/genealogy/slide4.jpg" alt="genealogy image " />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/collections/genealogy/slide5.jpg" alt="genealogy image " />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/collections/genealogy/slide6.jpg" alt="genealogy image " />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/collections/genealogy/slide7.jpg" alt="genealogy image " />
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
     </main>
 </div>
 

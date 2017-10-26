@@ -72,6 +72,13 @@ namespace StateTemplateV5Beta.Controllers
             return View();
         }
 
+        // GET: digitized-resources
+        [Route("digitized-resources")]
+        public ActionResult DigitizedResources()
+        {
+            return View();
+        }
+
         // GET: ephemera
         [Route("ephemera")]
         public ActionResult Ephemera()

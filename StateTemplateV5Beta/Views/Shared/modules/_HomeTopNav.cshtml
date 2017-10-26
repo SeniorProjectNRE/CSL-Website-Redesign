@@ -41,7 +41,13 @@ Options are: megadropdown dropdown singlelevel
         Version 2010.11.30
         -->
         <style>
-            label {
+            #head-search label {
+                font-weight: normal;
+                padding-right: 5px !important;
+                color: #fff;
+                font-weight: bold !important;
+            }
+            .head_search_label {
                 font-weight: normal;
                 padding-right: 5px !important;
                 color: #fff;
@@ -57,7 +63,7 @@ Options are: megadropdown dropdown singlelevel
             }
         </style>
         <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-        <script type="text/javascript" src="/js/placeholders.min.js"></script>
+        <script type="text/javascript" src="~/Content/StateTemplate/js/placeholders.min.js"></script>
         <script type="text/javascript">
             google.load('search', '1');
             google.setOnLoadCallback(function () {
@@ -83,17 +89,17 @@ Options are: megadropdown dropdown singlelevel
             <form id="control" action="/serp.html">
                 <div id="radio_container">
                     <input type="radio" name="which" id="head_srch_local" value="local" class="radiobutton" checked="checked" />
-                    <label for="head_srch_local" accesskey="l" id="head_srch_l_lbl">This Website</label>
+                    <label class="head_search_label" for="head_srch_local" accesskey="l" id="head_srch_l_lbl">This Website</label>
                     <input type="radio" name="which" id="head_srch_catalog" value="catalog" class="radiobutton" />
-                    <label for="head_srch_catalog" accesskey="g" id="head_srch_g_lbl">Catalog</label>
+                    <label class="head_search_label" for="head_srch_catalog" accesskey="g" id="head_srch_g_lbl">Catalog</label>
                     <input type="radio" name="which" id="head_srch_btbl" value="btbl" class="radiobutton" />
-                    <label for="head_srch_btbl" accesskey="c" id="head_srch_c_lbl">Talking Books</label>
+                    <label class="head_search_label" for="head_srch_btbl" accesskey="c" id="head_srch_c_lbl">Talking Books</label>
                 </div>
             </form>
             <form id="local_form" method="get" action="http://www.google.com/cse">
                 <!-- the form action will be changed using javascript -->
                 <div class="textfield_container">
-                    <label for="search_local_textfield" accesskey="s" class="hidden">Search this site: </label>
+                    <label   for="search_local_textfield" accesskey="s" class="hidden">Search this site: </label>
                     <input type="text" name="q" id="search_local_textfield" size="60" value="Search This Site" onfocus="if(this.value=='Search This Site')this.value=''" onblur="if(this.value=='')this.value='Search This Site'" />
                     <input type="hidden" name="cx" value="001779225245372747843:l2ikrt_n56e" /> <!-- update this value with your search engine unique ID. Submit a request to the OTech Service Desk if you don't already know your unique search engine ID. -->
                     <input type="hidden" name="cof" value="" /> <!-- this value will be set using javascript -->
@@ -108,9 +114,9 @@ Options are: megadropdown dropdown singlelevel
 
             <form id="catalog_form" class="hidden" method="get" action="http://catalog.library.ca.gov/F/?" target="_blank" onsubmit="changeURL();">
                 <div class="textfield_catalog_container">
-                    <label for="search_catalog_textfield" accesskey="s" class="hidden">Catalog search: </label>
+                    <label   for="search_catalog_textfield" accesskey="s" class="hidden">Catalog search: </label>
                     <input type="hidden" name="func" value="find-b" />
-                    <label for="catalogOptions" class="hidden">Catalog Search Options: </label>
+                    <label  for="catalogOptions" class="hidden">Catalog Search Options: </label>
                     <select id="catalogOptions" name="find_code" width="100%">
                         <option value=WRD selected="selected">Words anywhere</option>
                         <option value=WTI>Title words</option>
@@ -350,7 +356,7 @@ Options are: megadropdown dropdown singlelevel
     Version 2010.11.30
     -->
     <style>
-        label {
+        .head_search_label {
             font-weight: normal;
             padding-right: 10px;
         }
@@ -378,7 +384,7 @@ Options are: megadropdown dropdown singlelevel
         }
     </style>
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="/js/placeholders.min.js"></script>
+    <script type="text/javascript" src="~/Content/StateTemplate/js/placeholders.min.js"></script>
     <script type="text/javascript">
         google.load('search', '1');
         google.setOnLoadCallback(function () {
@@ -407,11 +413,11 @@ Options are: megadropdown dropdown singlelevel
                 <form id="control" action="/serp.html">
                     <div id="radio_container">
                         <input type="radio" name="which" id="head_srch_local" value="local" class="radiobutton" checked="checked" />
-                        <label for="head_srch_local" accesskey="l" id="head_srch_l_lbl">Website</label>
+                        <label class="head_search_label" for="head_srch_local" accesskey="l" id="head_srch_l_lbl">Website</label>
                         <input type="radio" name="which" id="head_srch_catalog" value="catalog" class="radiobutton" />
-                        <label for="head_srch_catalog" accesskey="g" id="head_srch_g_lbl">Catalog</label>
+                        <label class="head_search_label" for="head_srch_catalog" accesskey="g" id="head_srch_g_lbl">Catalog</label>
                         <input type="radio" name="which" id="head_srch_btbl" value="btbl" class="radiobutton" />
-                        <label for="head_srch_btbl" accesskey="c" id="head_srch_c_lbl">Talking Books</label>
+                        <label class="head_search_label" for="head_srch_btbl" accesskey="c" id="head_srch_c_lbl">Talking Books</label>
                     </div>
                 </form>
             </div>
@@ -432,9 +438,9 @@ Options are: megadropdown dropdown singlelevel
                 </form>
                 <form id="catalog_form" class="hidden" method="get" action="http://catalog.library.ca.gov/F/?" target="_blank" onsubmit="changeURL();">
                     <div class="textfield_catalog_container">
-                        <label for="search_catalog_textfield" accesskey="s" class="hidden">Catalog search: </label>
+                        <label c  for="search_catalog_textfield" accesskey="s" class="hidden">Catalog search: </label>
                         <input type="hidden" name="func" value="find-b" />
-                        <label for="catalogOptions" class="hidden">Catalog Search Options: </label>
+                        <label  for="catalogOptions" class="hidden">Catalog Search Options: </label>
                         <select id="catalogOptions" name="find_code">
                             <option value=WRD selected="selected">Words anywhere</option>
                             <option value=WTI>Title words</option>

@@ -1,10 +1,72 @@
 ﻿
 @{
-    ViewBag.Title = "Contacts";
+    ViewBag.Title = "CSL - Civil Liberties - Contacts";
+    ViewBag.PageTitle = "California Civil Liberties Public Education Program – Contact Information";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Contacts for the California Civil Liberties program at the California State Library.";
+
 }
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Contacts</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/grants">Grants</a></li>
+
+                    <li><a href="/grants/civil-liberties">CCLPEP</a></li>
+                    <li class="active">Contact Us</li>
+                </ol>
+
+                <h2 class="page-title">@(ViewBag.PageTitle)</h2>
+                <p>
+                    For additional information about California Civil Liberties Public Education Program, contact:
+
+                </p>
+                <h3><span class="ca-gov-icon-phone"></span> Phone:</h3>
+                <p>
+                    Mary Beth Barber<br />
+                    Special Projects and Assistant to the State Librarian<br />
+                    Office of the State Librarian<br />
+                    Phone: (916) 323-9758<br />
+                    <a href="mailto:Marybeth.Barber@library.ca.gov">Marybeth.Barber@library.ca.gov</a><br />
+
+                </p>
+
+                <h3><span class="ca-gov-icon-mail"></span> Mailing Address:</h3>
+                <p>
+                    California State Library
+                    <br />
+                    P.O. Box 942837
+                    <br />
+                    Sacramento, CA 94237-0001
+
+                    <br />
+
+                </p>
+
+                <h3><span class="ca-gov-icon-mail"></span> Physical  Address:</h3>
+                <p>
+                    California State Library
+                    <br />
+                    900 N Street, Room 155
+
+                    <br />
+                    Sacramento, CA 95814
+
+                    <br />
+
+                </p>
+
+            </div>
+        </div>
     </main>
 </div>

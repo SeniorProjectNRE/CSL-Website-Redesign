@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewBag.Title = "CSL-Digitized Resources-California History Room";
+    ViewBag.PageTitle = "Digitized Resources-California History Room";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Doing research on California? Read about its state symbols, former capitals and the gold rush. Then look at some of the items the California State Library has digitized!";
+
+}
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+</head>
+
+<div id="main-content" class="main-content">
+    <main class="main-primary">
+        <div class="container">
+            <div class="section">
+                <div class="two-thirds">
+                    <ol class="breadcrumb">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/collections">Our Collection</a></li>
+                        <li><a href="/california-history/">California History</a></li>
+                        <li class="active">Digitized Resources</li>
+                    </ol>
+
+                    <h2 class="page-title">@(ViewBag.PageTitle)</h2>
+
+                    <p>
+                        Looking for California history resources but can't visit the library just yet? We have lots of items for online researchers! Check out our pages on California State <a href="/california-history/state-symbols">symbols</a> and <a href="/california-history/previous-ca-capitals">capitals</a>, the <a href="/california-history/cagoldrush">gold rush</a> and more! If you wish to use our images or other items from our collection in your work, please visit our <a href="/california-history/permission">permission to use</a> page for further instructions. Feel free to <a href="mailto:cslcal@library.ca.gov">contact us</a> if you have any questions.
+                    </p>
+
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Digitizing News</a>
+                                </h3>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><a href="~/Content/StateTemplate/pdf/digitizedResources/July-AugDisplay.pdf" target="_blank">Recently digitized display</a> (PDF)</li>
+                                        <li><a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(SU%20ct%20(Postcards)%20AND%20(ENT%20ct%20(September%202017)%20%20AND%20(IMG%20ct%20*))&amp;TN=CALINFO&amp;RF=webdisplayCOLLAB&amp;DF=webdisplayCOLLAB&amp;AC=QBE_Query" target="_blank">Recently digitized images</a></li>
+                                        <li><a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=find%20(FI%20ct%20((Textual%20File/Vertical%20File/VF/TF)!MSS)%20AND%20(ENT%20ct(%E2%80%98July%202017%E2%80%99)%20AND%20IMG%20ct(*))&amp;TN=CALINFO&amp;RF=webdisplayCOLLAB&amp;DF=webdisplayCOLLAB&amp;AC=QBE_Query" target="_blank">Recently digitized ephemera</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">General Digital Resources</a>
+                                </h3>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><a href="/california-history/previous-ca-capitals">California Capitals</a></li>
+                                        <li><a href="/california-history/cagoldrush">California Gold Rush</a></li>
+                                        <li><a href="/california-history/state-symbols">California Symbols</a></li>
+                                        <li><a href="https://archive.org/details/californiastatelibrary?" target="_blank">Digitized Books and Magazines</a></li>
+                                        <li><a href="https://calisphere.org/institution/51/collections/" target="_blank">Digitized Images</a></li>
+                                        <li><a href="http://phereo.com/californiastatelibrary" target="_blank">Digitized Stereographs</a></li>
+                                        <li><a href="/collections/online-exhibits">Online Exhibits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">More Digital Resources</a>
+                                </h3>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><a href="~/Content/StateTemplate/pdf/digitizedResources/OctoberBooklist.pdf" target="_blank">A Thirst for History – Wine in California</a> (PDF)</li>
+                                        <li><a href="~/Content/StateTemplate/pdf/digitizedResources/November-DecemberBooklist.pdf" target="_blank">Hollywood Movie Stars</a> (PDF)</li>
+                                        <li><a href="~/Content/StateTemplate/pdf/digitizedResources/January-FebruaryBooklist.pdf" target="_blank">Mining in California</a> (PDF)</li>
+                                        <li><a href="~/Content/StateTemplate/pdf/digitizedResources/March-AprilDisplay.pdf" target="_blank">Horses and Horse Racing in California</a> (PDF)</li>
+                                        <li><a href="~/Content/StateTemplate/pdf/digitizedResources/May-JuneDisplay.pdf" target="_blank">Wildflowers in California</a> (PDF)</li>
+                                        <li><a href="~/Content/StateTemplate/pdf/digitizedResources/July-AugDisplay.pdf" target="_blank">Make Love Not War: California in the 1960's</a> (PDF)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingfour">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">Other Remote Access Options</a>
+                                </h3>
+                            </div>
+                            <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+                                <div class="panel-body">
+                                    <p>
+                                        Not finding what you need? Don't give up! In addition to the above resources, the images in our online catalog and in the California Information File II, we also offer a variety of remote research options including <a href="/california-history/photocopy">copying services</a> and <a href="/services/Borrowing">inter-library loan services</a>. We also suggest that you consult our rich collection of <a href="/california-history/research-guides">research guides</a> as they often provide tips on how to locate and access specific resources remotely. If you have questions about any of these options please contact us.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="third">
+                    <div class="autoLoop carousel owl-carousel carousel-content">
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/digitizedResources/1.png" alt="Resource image 1" />
+                        </div>
+
+                        <div class="item">
+                            <img src="~/Content/StateTemplate/images/digitizedResources/2.png" alt="Resource image 2" />
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
