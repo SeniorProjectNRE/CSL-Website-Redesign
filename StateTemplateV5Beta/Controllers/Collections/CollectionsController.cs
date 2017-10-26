@@ -20,7 +20,14 @@ namespace StateTemplateV5Beta.Controllers.Collections
         [Route("genealogy")]
         public ActionResult Genealogy()
         {
-            return View("Genealogy");
+            return View("~/Views/Collections/Genealogy/Genealogy.cshtml");
+        }
+
+        // GET: Genealogy
+        [Route("genealogy/links")]
+        public ActionResult Links()
+        {
+            return View("~/Views/Collections/Genealogy/Links.cshtml");
         }
 
         // GET: VideoPodcasts

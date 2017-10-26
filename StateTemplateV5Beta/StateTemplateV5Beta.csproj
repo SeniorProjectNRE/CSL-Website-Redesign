@@ -1998,7 +1998,7 @@
     <Content Include="Views\Librarian\Apply.cshtml" />
     <Content Include="Views\Jobs\Jobs.cshtml" />
     <Content Include="Views\Collections\Collections.cshtml" />
-    <Content Include="Views\Collections\Genealogy.cshtml" />
+    <Content Include="Views\Collections\Genealogy\Genealogy.cshtml" />
     <Content Include="Views\Collections\OnlineExhibits\OnlineExhibits.cshtml" />
     <Content Include="Views\Collections\OnlineExhibits\Hayden.cshtml" />
     <Content Include="Views\Collections\Publications\Publications.cshtml" />
@@ -2147,6 +2147,7 @@
     <Content Include="Views\Grants\LibraryServicesTechnologyAct.cshtml" />
     <Content Include="Views\Services\ToLibraries\BroadbandERate.cshtml" />
     <Content Include="Views\CaliforniaHistory\DigitizedResources.cshtml" />
+    <Content Include="Views\Collections\Genealogy\Links.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
