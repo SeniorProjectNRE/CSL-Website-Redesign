@@ -1,11 +1,50 @@
 ﻿
 @{
-    ViewBag.Title = "Recipients";
+    ViewBag.Title = "CSL - Civil Liberties - Program Recipients";
+    ViewBag.PageTitle = "Grants Awarded – California Civil Liberties Public Education Program and Collection";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "Recipients of the California Civil Liberties program grants.";
+    ViewBag.Keywords = "Civil Liberties, Program, Recipients";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Recipients</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/grants">Grants</a></li>
+                    <li><a href="/grants/civil-liberties">CCLPEP</a></li>
+                    <li>Recipients</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <p>
+                        Not every California Civil Liberties Program project resulted in a tangible product that could be included in the California State Library catalog.
+                        Projects that resulted in <a href="http://catalog.library.ca.gov/F/?func=find-c&ccl_term=wck=clpep" target="_blank">books, films, curriculum, etc., have been cataloged</a>.
+                    <p>
+                        <a href="~/Content/StateTemplate/pdf/grants/civilLiberties/CCLPEPGrantsFY98-99 thruFY10-11.pdf" target="_blank">California Civil Liberties Public Education Program Grants FY 98/99 through FY 10/11</a> (PDF)
+                    </p>
+                    <p>
+                        To search for a specific project from the list, enter the project number in the search box next to "Type word or phrase" on
+                        <a href="http://catalog.library.ca.gov/F/?func=find-b-0" target="_blank">this page of the catalog</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
-

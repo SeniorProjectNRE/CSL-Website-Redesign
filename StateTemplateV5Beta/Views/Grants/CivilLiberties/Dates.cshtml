@@ -1,11 +1,93 @@
 ﻿
 @{
-    ViewBag.Title = "Dates";
+    ViewBag.Title = "CSL - Civil Liberties - Important Dates";
+    ViewBag.PageTitle = "Important Dates for Applicants";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "Important dates for applying for the California Civil Liberties program.";
+    ViewBag.Keywords = "Important, Dates, Applying";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Dates</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/grants">Grants</a></li>
+                    <li><a href="/grants/civil-liberties">CCLPEP</a></li>
+                    <li>Important Dates</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="orange">
+                    <h3>February 1, 2017</h3>
+                </div>
+                <p>
+                    <a href="~/Content/StateTemplate/pdf/grants/civilLiberties/CACivilLibertiesPublicEducationProgramFY2016-17GUIDELINES.pdf">Guidelines</a> 
+                    and <a href="/grants/civil-liberties/apply/">Application</a> available.
+                </p>
+
+                <div class="orange">
+                    <h3>February 22, 2017</h3>
+                </div>
+                <p>
+                    Informational webinar – optional 
+                    (<a href="https://cc.readytalk.com/registration/#/?meeting=lfui4jlx7nou&campaign=5j9gkapkzmim">Sign Up</a>)
+                </p>
+
+                <div class="orange">
+                    <h3>March 20, 2017</h3>
+                </div>
+                <p>
+                    <b>Application Deadline</b>
+                </p>
+
+                <div class="orange">
+                    <h3>Mid-March to mid-April, 2017</h3>
+                </div>
+                <p>
+                <p>
+                    <a href="/grants/civil-liberties/advisory-committee/">Advisory Panel</a> review
+                </p>
+
+                </p>
+
+                <div class="orange">
+                    <h3>April 15, 2017</h3>
+                </div>
+                <p>
+                <p>
+                    Funding notifications
+                </p>
+
+                </p>
+
+                <div class="orange">
+                    <h3>Spring 2017 until June 30, 2018</h3>
+                </div>
+                <p>
+                    Funded activity period
+                </p>
+                <p>
+                    Questions? Please contact Mary Beth Barber, 
+                    <a href="mailto:Marybeth.barber@library.ca.gov">Marybeth.barber@library.ca.gov</a> 
+                    or <a href="tel:+19163239758">916-323-9758</a>.
+                </p>
+            </div>
+        </div>
     </main>
 </div>
 

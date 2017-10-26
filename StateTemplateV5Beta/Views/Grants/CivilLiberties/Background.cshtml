@@ -1,11 +1,78 @@
-﻿
-@{
-    ViewBag.Title = "About";
+﻿@{
+    ViewBag.Title = "CSL - Civil Liberties - About the Program";
+    ViewBag.PageTitle = "California Civil Liberties Public Education Program - Background and History of the Internment";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "Learn the background of the California Civil Liberties program at the State Library.";
+    ViewBag.Keywords = "Background, Liberties, program";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Background</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/grants">Grants</a></li>
+                    <li><a href="/grants/civil-liberties">CCLPEP</a></li>
+                    <li>Background</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="orange">
+                    <h3>Background and Overview</h3>
+                </div>
+                <p>
+                    The California Civil Liberties Public Education Program (CCLPEP) was created with the passage of the California Civil Liberties Public Education Act 
+                    (AB1915 <a href="~/Content/StateTemplate/pdf/grants/civilLiberties/ab_1915_bill_19980918_chaptered.pdf" target="_blank">pdf</a>, 
+                    <a href="http://www.leginfo.ca.gov/pub/97-98/bill/asm/ab_1901-1950/ab_1915_bill_19980918_chaptered.html" target="_blank">html</a>) in 1998. 
+                    The legislation was authored by Assembly Member Mike Honda and was renewed in 2000 
+                    (AB1914 <a href="~/Content/StateTemplate/pdf/grants/civilLiberties/ab_1914_bill_20000719_chaptered.pdf" target="_blank">pdf</a>, 
+                    <a href="http://www.leginfo.ca.gov/pub/99-00/bill/asm/ab_1901-1950/ab_1914_bill_20000719_chaptered.html" target="_blank">html</a>) by Assembly Member George Nakano. 
+                    In 2003, Assembly Member Wilma Chan and others led the way for the Legislature to continue the program by removing the termination date and making CCLPEP subject to annual budget authorizations, making it a permanent state program.
+                </p>
+
+                <p>
+                    "The purpose of the California Civil Liberties Public Education Act is to sponsor public educational activities and development of educational materials to ensure that the events surrounding the exclusion, 
+                    forced removal, and internment of civilians and permanent resident aliens of Japanese ancestry will be remembered, 
+                    and so that the causes and circumstance of this and similar events may be illuminated and understood."  - Education Code Section 13000.  (a)
+                </p>
+
+                <p>
+                    From FY 98/99 thru FY 10/11, the CCLPEP provided competitive grants for public educational activities and for the development of educational materials to ensure that the events surrounding the exclusion, forced removal, and incarceration of civilians and permanent resident aliens of Japanese ancestry will be remembered and so that causes and circumstances of this and similar events may be illuminated and understood. 
+                    During this time 366 grants were awarded, totaling $8,845,303.
+                </p>
+
+
+                <div class="orange">
+                    <h3>History of the Internment</h3>
+                </div>
+                <p>
+                    Prior to World War II, California was the home to more Japanese Americans than any other state. 
+                    On February 19, 1942, just weeks after the United States entered the Pacific War, President Franklin D. Roosevelt signed Executive Order 9066. 
+                    This order gave the Secretary of War the authority to exclude any and all persons, citizens, and aliens from designated areas in order to provide for security against sabotage and espionage. 
+                    As a result of this executive order, the lives of thousands of Californians were affected.
+                </p>
+
+                <p>
+                    Over 120,000 United States citizens of Japanese ancestry and permanent resident aliens from Japan were removed by the Army and were first taken to "assembly centers," which were temporary quarters at racetracks and fairgrounds. 
+                    They were later taken to "relocation camps," which were bleak barrack camps, mostly in desolate areas of the West. Some families spent years living under these conditions and suffered enormous personal and economic damages and losses.
+                </p>
+
+            </div>
+        </div>
     </main>
 </div>
 

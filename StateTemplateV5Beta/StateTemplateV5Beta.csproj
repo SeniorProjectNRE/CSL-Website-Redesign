@@ -1694,6 +1694,10 @@
     <Content Include="Content\StateTemplate\pdf\Collections\Online-Exhibits\MakeTheFutureOurs_sm.pdf" />
     <Content Include="Content\StateTemplate\pdf\GovernmentPublications\stateDocumentDepositoryProgram\DepositoryLibrary-Current.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\Broadband_Data_Dictionary.pdf" />
+    <Content Include="Content\StateTemplate\pdf\grants\civilLiberties\CCLPEPGrantsFY98-99 thruFY10-11.pdf" />
+    <Content Include="Content\StateTemplate\pdf\grants\civilLiberties\CACivilLibertiesPublicEducationProgramFY2016-17GUIDELINES.pdf" />
+    <Content Include="Content\StateTemplate\pdf\grants\civilLiberties\ab_1914_bill_20000719_chaptered.pdf" />
+    <Content Include="Content\StateTemplate\pdf\grants\civilLiberties\ab_1915_bill_19980918_chaptered.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\Infographic.pdf" />
     <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\15-02_CaliforniaPublicLibraryBroadbandGrantApplication_REV.docx" />
     <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\15-02_Branch_Broadband_Grant_Guidelines_REV.docx" />
