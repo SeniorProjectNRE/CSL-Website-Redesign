@@ -643,8 +643,6 @@
     <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
     <Content Include="Content\StateTemplate\images\services\PublicServices.png" />
     <Content Include="Content\StateTemplate\images\services\researchResources\csl_employee.png" />
-    <Content Include="Content\StateTemplate\images\services\toLibraries\12.jpg" />
-    <Content Include="Content\StateTemplate\images\services\toLibraries\531.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeInvestment.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeResults.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\icon.jpg" />
