@@ -69,6 +69,8 @@
     <Compile Include="Models\SLAA\SLAAYearModel.cs" />
     <Compile Include="Models\SLAA\SLAAAgencyModel.cs" />
     <Compile Include="Models\SLAA\SLAAModel.cs" />
+    <Compile Include="Models\SuccessModel.cs" />
+    <Compile Include="Models\SutroClassModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Grants\GrantAwardModel.cs" />
     <Compile Include="Models\Grants\GrantCategoryModel.cs" />

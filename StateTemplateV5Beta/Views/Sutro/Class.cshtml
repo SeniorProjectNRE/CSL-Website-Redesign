@@ -1,11 +1,129 @@
-﻿
+﻿@model CSLBusinessObjects.Models.SutroClassModel
 @{
-    ViewBag.Title = "Class";
+    ViewBag.Title = "CSL - Classes in Sutro Library";
+    ViewBag.PageTitle = "Arranging to use our collections";
+    ViewBag.Author = "Matthew Loller";
+    ViewBag.Description = "California State Library Replace with: Arrange for a class visit at the Sutro Library";
+    ViewBag.Keywords = "";
 }
+
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <style>
+        .required{
+            color:red
+        }
+    </style>
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Class</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/collections">Collections</a></li>
+                    <li><a href="/sutro">Sutro</a></li>
+                    <li><a href="/sutro/visiting">Visiting</a></li>
+                    <li>Signup to Bring Class</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <br />
+
+                @if (Model != null && !string.IsNullOrEmpty(Model.SuccessMessage))
+                { <div class="alert-success">@Model.SuccessMessage</div> }
+   
+            </div>
+        </div>
+
+        @if (Model == null) { 
+        <div class="section">
+            <div class="container">
+
+                <p>Instructors can arrange for a library class in the Sutro by completing the form below:<span class="required">&nbsp;(* Required Field)</span></p>
+                <br />
+
+                <div class="group">
+                    @using (Html.BeginForm("Class", "Sutro", FormMethod.Post))
+                    {
+                        
+                        <div>
+                            <div class="full-width">
+                                @Html.LabelFor(m => m.Instructor)
+                                @Html.TextBoxFor(m => m.Instructor)
+                            </div>
+                            <div class="full-width">
+                                @Html.LabelFor(m => m.InstructorEmail)
+                                @Html.TextBoxFor(m => m.InstructorEmail)
+                            </div>
+                            <div class="full-width">
+                                @Html.LabelFor(m => m.InstructorDepartment)
+                                @Html.TextBoxFor(m => m.InstructorDepartment)
+                            </div>
+                            <div class="full-width">
+                                @Html.LabelFor(m => m.CourseNumandTitle)
+                                @Html.TextBoxFor(m => m.CourseNumandTitle)
+                            </div>
+                            <div class="full-width">
+                                <span class="required">*</span>@Html.LabelFor(m => m.Frequency)
+                                @Html.TextBoxFor(m => m.Frequency, new { style="width:300px; height:150px" })
+                                @Html.ValidationMessage("Frequency", new { @class = "text-danger" })
+                            </div>
+                            <div class="full-width">
+                                <span class="required">*</span>@Html.LabelFor(m => m.StudentAmount)
+                                @Html.TextBoxFor(m => m.StudentAmount)
+                                @Html.ValidationMessage("StudentAmount", new { @class = "text-danger" })
+                            </div>
+                            <div class="full-width">
+                                <span class="required">*</span>@Html.LabelFor(m => m.ClassTimeLength)
+                                @Html.TextBoxFor(m => m.ClassTimeLength)
+                                @Html.ValidationMessage("ClassTimeLength", new { @class = "text-danger" })
+                            </div>
+                            <div class="full-width">
+                                <span class="required">*</span>@Html.LabelFor(m => m.DoesAssignmentExist)
+                                @Html.TextBoxFor(m => m.DoesAssignmentExist, new { style = "width:300px; height:150px" })
+                                @Html.ValidationMessage("DoesAssignmentExist", new { @class = "text-danger" })
+                            </div>
+                            <div class="full-width">
+                                <span class="required">*</span>@Html.LabelFor(m => m.Materials)
+                                @Html.TextBoxFor(m => m.Materials, new { style = "width:300px; height:150px" })
+                                @Html.ValidationMessage("Materials", new { @class = "text-danger" })
+                            </div>
+                            <div class="full-width">
+                                <div class="g-recaptcha" data-sitekey="6Lf0XzYUAAAAAFm7yZHSL7K98voPXytgpy4O2zsU"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="pull-right">
+                                <input type="submit" value="Submit" />
+                            </div>
+                        </div>
+                    }
+                </div>
+           </div>
+        </div>
+        }
+        else
+        {
+            <div class="section section-overstated">
+                <div class="container">
+                    <div class="row pull-right">
+                        <div class="btn btn-primary" onclick="location.href='@Url.Action("Class", "Sutro")'">Submit new form</div>
+                        <div class="btn btn-primary" onclick="location.href='@Url.Action("Index", "Sutro")'">Visit Sutro!</div>
+                    </div>
+                </div>
+            </div>
+
+        }
     </main>
 </div>
 

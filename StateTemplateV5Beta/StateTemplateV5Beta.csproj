@@ -2145,7 +2145,6 @@
     <Content Include="Views\Services\ToLibraries\DevelopmentProgramsProjects\DevelopmentProgramsProjects.cshtml" />
     <Content Include="Views\Services\ToLibraries\DevelopmentProgramsProjects\ValueLibraries.cshtml" />
     <Content Include="Views\About\GeneralInformation.cshtml" />
-    <Content Include="Views\About\Test.cshtml" />
     <Content Include="Views\Collections\VideosPodcasts.cshtml" />
     <Content Include="Views\Grants\CivilLiberties\AdvisoryCommittee.cshtml" />
     <Content Include="Views\Grants\InnovationStation.cshtml" />
