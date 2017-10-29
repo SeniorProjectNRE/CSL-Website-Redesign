@@ -27,11 +27,11 @@
                 margin-left: 10px;
             }
 
-        #grantsData_filter label {
+        #broadbandData_filter label {
             color: black;
         }
 
-        #grantsData_length label {
+        #broadbandData_length label {
             color: black;
         }
 
@@ -48,7 +48,7 @@
         }
 
         .filterForms > div > label {
-            width: 75px;
+            width: 120px;
         }
 
         #tablebody > tr:nth-last-child(even) {
@@ -140,34 +140,69 @@
                         <div class="form-group filterForms">
 
                             <div class="half">
-                                @Html.LabelFor(m => m.GetNumListValues, "Grant #:")
-                                @Html.DropDownListFor(m => m.GetNumListValues, new SelectList(Model.GetNumListValues, "GrantID"))
+                                @Html.LabelFor(m => m.GetLibraryListValues, "Library:")
+                                @Html.DropDownListFor(m => m.GetLibraryListValues, new SelectList(Model.GetLibraryListValues, "GrantID"))
                             </div>
 
                             <div class="half">
-                                @Html.LabelFor(m => m.GetYearListValues, "Year:")
-                                @Html.DropDownListFor(m => m.GetYearListValues, new SelectList(Model.GetYearListValues, "Year"))
+                                @Html.LabelFor(m => m.GetJurisdictionListValues, "Jurisdiction:")
+                                @Html.DropDownListFor(m => m.GetJurisdictionListValues, new SelectList(Model.GetJurisdictionListValues, "Year"))
                             </div>
 
                             <div class="clearfix"></div>
 
                             <div class="half">
-                                @Html.LabelFor(m => m.AwardStrings, "Award:")
-                                @Html.DropDownListFor(m => m.AwardStrings, new SelectList(Model.AwardStrings, "Award"))
+                                @Html.LabelFor(m => m.GetCLSAListValues, "System:")
+                                @Html.DropDownListFor(m => m.GetCLSAListValues, new SelectList(Model.GetCLSAListValues, "Project"))
                             </div>
 
                             <div class="half">
-                                @Html.LabelFor(m => m.GetLibrariesListValues, "Library:")
-                                @Html.DropDownListFor(m => m.GetLibrariesListValues, new SelectList(Model.GetLibrariesListValues, "Library"))
+                                @Html.LabelFor(m => m.GetCityListValues, "City:")
+                                @Html.DropDownListFor(m => m.GetCityListValues, new SelectList(Model.GetCityListValues, "Award"))
                             </div>
 
                             <div class=" clearfix"></div>
 
                             <div class="half">
-                                @Html.LabelFor(m => m.GetProjectListValues, "Project:")
-                                @Html.DropDownListFor(m => m.GetProjectListValues, new SelectList(Model.GetProjectListValues, "Project"))
+                                @Html.LabelFor(m => m.GetCountyListValues, "County:")
+                                @Html.DropDownListFor(m => m.GetCountyListValues, new SelectList(Model.GetCountyListValues, "Library"))
                             </div>
 
+                            <div class="half">
+                                @Html.LabelFor(m => m.GetZipListValues, "Zip Code:")
+                                @Html.DropDownListFor(m => m.GetZipListValues, new SelectList(Model.GetZipListValues, "Project"))
+                            </div>
+
+                            <div class=" clearfix"></div>
+
+                            <div class="half">
+                                @Html.LabelFor(m => m.GetAssemblyListValues, "Assembly:")
+                                @Html.DropDownListFor(m => m.GetAssemblyListValues, new SelectList(Model.GetAssemblyListValues, "Library"))
+                            </div>
+
+                            <div class="half">
+                                @Html.LabelFor(m => m.GetSenateListValues, "Senate:")
+                                @Html.DropDownListFor(m => m.GetSenateListValues, new SelectList(Model.GetSenateListValues, "Project"))
+                            </div>
+
+                            <div class=" clearfix"></div>
+
+                            <div class="half">
+                                @Html.LabelFor(m => m.GetCongressionalListValues, "Congressional:")
+                                @Html.DropDownListFor(m => m.GetCongressionalListValues, new SelectList(Model.GetCongressionalListValues, "Library"))
+                            </div>
+
+                            <div class="half">
+                                @Html.LabelFor(m => m.GetStatusListValues, "Connection Status:")
+                                @Html.DropDownListFor(m => m.GetStatusListValues, new SelectList(Model.GetStatusListValues, "Project"))
+                            </div>
+
+                            <div class=" clearfix"></div>
+
+                            <div class="half">
+                                @Html.LabelFor(m => m.GetCodeListValues, "Status Code:")
+                                @Html.DropDownListFor(m => m.GetCodeListValues, new SelectList(Model.GetCodeListValues, "Project"))
+                            </div>
 
                             <div class=" clearfix"></div>
 
@@ -187,7 +222,7 @@
             <div class="container">
 
 
-                <table id="grantsData">
+                <table id="broadbandData">
                     <thead>
                         <tr>
                             <th>Library</th>
@@ -202,15 +237,18 @@
                         </tr>
                     </thead>
                     <tbody id="tablebody">
-                        @foreach (var item in Model.GrantGetAllList)
+                        @foreach (var item in Model.GetAllLibraries)
                         {
                             <tr>
-                                <td>@item.Library</td>
-                                <td>@item.GrantID</td>
-                                <td>@item.Year</td>
-                                <td>@item.Project</td>
-                                <td>@item.Award</td>
-                                <td></td>
+                                <td>@item.LibraryName</td>
+                                <td>@item.Jurisdiction</td>
+                                <td>@item.City</td>
+                                <td>@item.County</td>
+                                <td>@item.CLSA</td>
+                                <td>@item.AssemblyDistrict</td>
+                                <td>@item.SenateDistrict</td>
+                                <td>@item.CongressionalDistrict</td>
+                                <td>@item.Status &nbsp;<span class="ca-gov-icon-question-fill"></span></td>
                             </tr>
                         }
                     </tbody>
@@ -222,16 +260,23 @@
     </main>
 </div>
 
-@*<script>
+<script>
     $(document).ready(function () {
-        var table = $('#grantsData').DataTable({ rowReorder: { selector: 'td:nth-child(2)' }, responsive: true });
-        $('#GetNumListValues').select2();
-        $('#GetYearListValues').select2();
-        $('#AwardStrings').select2();
-        $('#GetLibrariesListValues').select2();
-        $('#GetProjectListValues').select2();
+        var table = $('#broadbandData').DataTable({ rowReorder: { selector: 'td:nth-child(2)' }, responsive: true });
+        $('#GetLibraryListValues').select2();
+        $('#GetJurisdictionListValues').select2();
+        $('#GetCLSAListValues').select2();
+        $('#GetCityListValues').select2();
+        $('#GetCountyListValues').select2();
+        $('#GetZipListValues').select2();
+        $('#GetAssemblyListValues').select2();
+        $('#GetSenateListValues').select2();
+        $('#GetCongressionalListValues').select2();
+        $('#GetStatusListValues').select2();
+        $('#GetCodeListValues').select2();
+
     });
-</script>*@
+</script>
 
 
 

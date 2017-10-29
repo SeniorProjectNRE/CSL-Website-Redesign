@@ -21,6 +21,19 @@ namespace CSLBusinessObjects.ViewModels
         public List<LibraryStatusModel> GetStatusList { get; set; }
         public List<LibraryZipModel> GetZipList { get; set; }
         public List<LibraryModel> GetAllLibraries { get; set; }
+
+        public List<string> GetCityListValues { get; set; }
+        public List<string> GetLibraryListValues { get; set; }
+        public List<string> GetJurisdictionListValues { get; set; }
+        public List<string> GetCLSAListValues { get; set; }
+        public List<string> GetCountyListValues { get; set; }
+        public List<string> GetStatusListValues { get; set; }
+        public List<string> GetCodeListValues { get; set; }
+        public List<string> GetZipListValues { get; set; }
+        public List<string> GetAssemblyListValues { get; set; }
+        public List<string> GetSenateListValues { get; set; }
+        public List<string> GetCongressionalListValues { get; set; }
+
         public int SelectedAssembly { get; set; }
         public string SelectedCity{ get; set; }
         public string SelectedCLSA { get; set; }

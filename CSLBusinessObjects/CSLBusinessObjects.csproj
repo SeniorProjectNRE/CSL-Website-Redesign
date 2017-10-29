@@ -36,6 +36,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.12.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.12\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -63,12 +66,18 @@
     <Compile Include="Models\Library\LibraryCityModel.cs" />
     <Compile Include="Models\Library\LibraryAssemblyModel.cs" />
     <Compile Include="Models\Library\LibraryModel.cs" />
+    <Compile Include="Models\SLAA\SLAAYearModel.cs" />
+    <Compile Include="Models\SLAA\SLAAAgencyModel.cs" />
+    <Compile Include="Models\SLAA\SLAAModel.cs" />
+    <Compile Include="Models\SuccessModel.cs" />
+    <Compile Include="Models\SutroClassModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Grants\GrantAwardModel.cs" />
     <Compile Include="Models\Grants\GrantCategoryModel.cs" />
     <Compile Include="Models\Grants\GrantLibraryModel.cs" />
     <Compile Include="Models\Grants\GrantNumberModel.cs" />
     <Compile Include="Models\Grants\GrantProjectModel.cs" />
+    <Compile Include="ViewModels\SLAAViewModel.cs" />
     <Compile Include="ViewModels\GrantsViewModel.cs" />
     <Compile Include="Models\Grants\GrantYearModel.cs" />
     <Compile Include="ViewModels\LibraryViewModel.cs" />

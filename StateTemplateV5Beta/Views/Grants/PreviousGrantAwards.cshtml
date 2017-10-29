@@ -1,11 +1,10 @@
 ﻿@model CSLBusinessObjects.ViewModels.GrantsViewModel
 
 @{
-    ViewBag.Title = "CSL - LSTA Grant Awards";
+    ViewBag.Title = "CSL - Current and Previous Library Services and Technology Act (LSTA) Grant Awards";
     ViewBag.PageTitle = "All Grant Awards";
     ViewBag.Author = "Matthew Loller";
-    ViewBag.Description = "All Grant Awards";
-    ViewBag.Keywords = "";
+    ViewBag.Description = "This database contains applications and final narrative reports for funded Library Services and Technology Act (LSTA) projects in California since 2010.";
 }
 
 <head>
@@ -213,12 +212,18 @@
 
 <script>
     $(document).ready(function () {
-        var table = $('#grantsData').DataTable({ rowReorder: { selector: 'td:nth-child(2)' }, responsive: true });
+        var table = $('#grantsData').DataTable({
+            rowReorder: { selector: 'td:nth-child(2)' },
+
+            responsive: true,
+        });
         $('#GetNumListValues').select2();
         $('#GetYearListValues').select2();
         $('#AwardStrings').select2();
         $('#GetLibrariesListValues').select2();
         $('#GetProjectListValues').select2();
+
+        
 
 
         //$("#AwardStrings > option:first-child").text('All'); 

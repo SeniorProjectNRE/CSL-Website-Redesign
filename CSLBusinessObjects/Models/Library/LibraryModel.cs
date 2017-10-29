@@ -28,7 +28,7 @@ namespace CSLBusinessObjects.Models
         [StringLength(50)]
         public string City { get; set; }
 
-        public int? Zip { get; set; }
+        public string Zip { get; set; }
 
         public int? Zip4 { get; set; }
 
@@ -38,11 +38,11 @@ namespace CSLBusinessObjects.Models
         [StringLength(50)]
         public string State { get; set; }
 
-        public int? AssemblyDistrict { get; set; }
+        public string AssemblyDistrict { get; set; }
 
-        public int? SenateDistrict { get; set; }
+        public string SenateDistrict { get; set; }
 
-        public int? CongressionalDistrict { get; set; }
+        public string CongressionalDistrict { get; set; }
 
         [StringLength(50)]
         public string CLSA { get; set; }

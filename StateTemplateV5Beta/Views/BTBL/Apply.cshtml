@@ -1,8 +1,8 @@
 ﻿@{
-    ViewBag.Title = "Application for BTBL Service";
+    ViewBag.Title = "CSL - BTBL - Application for BTBL Service";
+    ViewBag.PageTitle = "Application for BTBL Service";
     ViewBag.Author = "Jonathan Shaw";
-    ViewBag.Description = "Apply for braile or talking book library service here.";
-    ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, Apply, BTBL, Braile, Talking Book, Service";
+    ViewBag.Description = "Eligibility requirements and sign-up application to become a patron of the Braille and Talking Book Library BTBL service. We serve residents of the counties of Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Glenn, Humboldt, Inyo, Lake, Lassen, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Placer, Plumas, Sacramento, San Benito, San Joaquin, San Mateo, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tuolumne, Yolo, and Yuba. Applicants must be permanently or temporarily: Legally blind, with vision in the better eye of 2/2 or less with corrective glasses, or have a visual field no greater than 2 degrees in diameter, or be unable to see well enough or focus long enough to read standard print, even with corrective glasses, or be unable to handle print books or turn pages because of a physical disability, or be certified by a medical doctor as having a reading disability such as dyslexia due to an organic dysfunction that is severe enough to prevent reading in the usual manner.";
 }
 
 <head>
@@ -17,116 +17,55 @@
     <div class="container">
         <main class="main-primary">
             <div class="section">
-                <ol class="breadcrumb dynamic"></ol>
-                <h2 class="page-title">@ViewBag.Title</h2>
-            </div>
-            <div class="section" style="margin-top:-50px;">
+                <ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/btbl/">Braille and Talking books</a></li><li class="active">Apply for Services</li></ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+          
                 <h3>Before Applying</h3>
                 <p>
                     Please make sure you live in our Service Area and meet the Eligibility Requirements listed below. After BTBL has received your application, a staff member will call within 5 business days to introduce you to our service before it begins.
                 </p>
             </div>
-            <div class="section" style="margin-top:-35px;">
-                <h3>
-                    Applications
-                </h3>
-                <div class="section half">
-                    <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true" style="margin-top:-16px;">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingy">
-                                <h3 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapsey" aria-expanded="true" aria-controls="collapsey">For Individuals</a>
-                                </h3>
-                            </div>
-                            <div id="collapsey" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    <div class="section half">
-                                        <p align="center" style="margin-top:-15px; margin-bottom:-18px;">
-                                            <a href="~/Content/StateTemplate/otherDocuments/btbl/BTBLIndividualApplicationRev8-17.docx">
-                                                Word document
-                                            </a>
-                                        </p>
-                                    </div>
-                                    <div class="section half">
-                                        <p align="center" style="margin-top:-15px; margin-bottom:-18px;">
-                                            <a href="~/Content/StateTemplate/pdf/btbl/BTBLIndividualApplicationRev8-17.pdf">
-                                                PDF file
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="container">
+                <div class="panel panel-standout highlight">
+                    <div class="panel-heading">
+                        <h2><span class="ca-gov-icon-info"></span> Applications</h2>
+
+                    </div>
+
+                    <div class="panel-body">
+
+                        <div class="half">
+                            <p>
+                                For Individuals (<a href="~/Content/StateTemplate/otherDocuments/btbl/BTBLIndividualApplicationRev8-17.docx">Word </a>),
+                                (<a href="~/Content/StateTemplate/pdf/btbl/BTBLIndividualApplicationRev8-17.pdf">PDF</a>)
+                            </p>
+                            <p>
+                                For Institutions (<a href="~/Content/StateTemplate/otherDocuments/btbl/new_institution_application-klas-arial-new_logo.doc">Word</a>), (<a href="~/Content/StateTemplate/pdf/btbl/new_institution_application-klas-arial-new_logo.pdf">PDF</a>)
+                            </p>
+                            <p>
+                                En Español (<a href="~/Content/StateTemplate/otherDocuments/btbl/new_institution_application-klas-arial-new_logo.doc">PDF</a>)
+                            </p>
                         </div>
-                        <br/>
-                        <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwo">
-                                    <h3 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">For Institutions</a>
-                                    </h3>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="panel-body">
-                                        <div class="section half">
-                                            <p align="center" style="margin-top:-15px; margin-bottom:-18px;">
-                                                <a href="~/Content/StateTemplate/otherDocuments/btbl/new_institution_application-klas-arial-new_logo.doc">
-                                                    Word document
-                                                </a>
-                                            </p>
-                                        </div>
-                                        <div class="section half">
-                                            <p align="center" style="margin-top:-15px; margin-bottom:-18px;">
-                                                <a href="~/Content/StateTemplate/pdf/btbl/new_institution_application-klas-arial-new_logo.pdf">
-                                                    PDF file
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br/>
-                        <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree">
-                                    <h3 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">En Español</a>
-                                    </h3>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body">
-                                        <div class="section">
-                                            <p align="center" style="margin-top:-15px; margin-bottom:-18px;">
-                                                <a href="~/Content/StateTemplate/otherDocuments/btbl/new_institution_application-klas-arial-new_logo.doc">
-                                                    PDF file
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="half">
+                            <p>
+                                <strong>
+                                    Mail completed application to:
+                                </strong>
+                                <br />
+                                BTBL<br />
+                                P.O. Box 942837<br />
+                                Sacramento, CA 94237-0001<br />
+                                <br />
+                                <strong>
+                                    Fax completed application to:
+                                </strong>
+                                <br />
+                                (916) 654-1119
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="section half">
-                    <p align="center" style="margin-top:10px;">
-                        <strong>
-                            Mail completed application to:
-                        </strong>
-                        <br />
-                        BTBL<br/>
-                        P.O. Box 942837<br/>
-                        Sacramento, CA 94237-0001<br/>
-                        <br/>
-                        <strong>
-                            Fax completed application to: 
-                        </strong>
-                        <br/>
-                        (916) 654-1119
-                    </p>
-                </div>
-            </div>
-            <div class="section" style="margin-top: -35px;">
+            
                 <h3>
                     Service Area
                 </h3>
@@ -136,15 +75,14 @@
                 <p>
                     Residents of San Francisco City should contact the <a href="https://sfpl.org/index.php?pg=0200002301">Library for the Blind and Print Disabled</a> in San Francisco. Residents of Fresno, Madera, Kings, and Tulare Counties should contact the <a href="http://www.fresnolibrary.org/tblb/">Fresno Talking Book Library for the Blind</a>. Southern California residents should contact the <a href="http://www.brailleinstitute.org/library.html">Braille Institute Library</a> in Los Angeles. Other U.S. residents should search for their network library using the NLS <a href="http://www.loc.gov/nls/braille-audio-reading-materials/find-a-local-library/">Find Your Library</a> directory.
                 </p>
-            </div>
-            <div class="section" style="margin-top: -35px;">
+            
                 <h3>
                     Eligibility Requirements
                 </h3>
                 <p>
                     To be eligible for our service, a person must have a certified authority confirm that she/he is permanently or temporarily:
                 </p>
-                <ul style="margin-top:23px; margin-bottom:30px;">
+                <ul>
                     <li>
                         Legally blind, with vision in the better eye of 20/200 or less with corrective glasses, or
                     </li>
@@ -167,7 +105,7 @@
                 <p>
                     *In case of reading disability from organic dysfunction, certified authority is defined by federal regulations as doctors of medicine or doctors of osteopathy who may consult with colleagues in associated disciplines. For more information, see NLS Factsheet <a href="https://www.loc.gov/nls/about/eligibility-for-nls-services/talking-books-reading-disabilities/">Talking Books and Reading Disabilities</a>.
                 </p>
-                <br/>
+                <br />
             </div>
         </main>
     </div>

@@ -2,6 +2,6 @@
 {
     public class LibraryAssemblyModel
     {
-        public int? AssemblyDistrict { get; set; }
+        public string AssemblyDistrict { get; set; }
     }
 }
