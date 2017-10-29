@@ -1,11 +1,249 @@
 ﻿
 @{
-    ViewBag.Title = "LibrarySections";
+    ViewBag.Title = "CSL - Sections of the California State Library";
+    ViewBag.PageTitle = "Sections of the California State Library";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "Sections of the California State Library";
 }
 
+<head>
+    <title>@(ViewBag.Title)</title>
+
+</head>
+
 <div id="main-content" class="main-content">
+
     <main class="main-primary">
-        <h2>LibrarySections</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About Library</a></li>
+
+                    <li class="active">Library Section</li>
+                </ol>
+
+                <h2 class="page-title" >@ViewBag.Title</h2>
+
+
+                <div class='panel-group' role='tablist' aria-multiselectable='true'>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading1'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Braille and Talking Book Library</a>
+                            </h3>
+                        </div>
+                        <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                            <div class='panel-body'>
+                                <p>
+                                    The California State Library's <a href="/btbl">Braille and Talking Book Library (BTBL)</a> is a Free service which cooperates with the Library of Congress, <a href="http://www.loc.gov/nls" target="_blank">National Library Service for the Blind and Physically Handicapped (NLS)</a> to serve residents of Northern California who are unable to read conventional print due to a visual, physical, or organic reading disability (such as dyslexia). Talking (audio) and braille books and magazines by postage-free mail, downloadable books and magazines via desktop or mobile app, descriptive videos, and audio playback equipment are available for loan — FREE OF CHARGE — to eligible patrons. The BTBL collection of recreational fiction and nonfiction materials reflects a public library's collection intended for Northern Californians with print disabilities. In addition to circulating braille and audio items via Free Matter for the Blind postal subsidy and electronically, BTBL provides readers advisory and reference services by phone, email, or in-person in our Reading Room in Sacramento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading2'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>California History</a>
+                            </h3>
+                        </div>
+                        <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                            <div class='panel-body'>
+                                <p>
+                                    The <a href="/california-history">California History Room's</a> collections strongly demonstrate the state's illustrious and colorful past. Our collections cover all aspects of life in the state from prehistoric times to the present day and for all fifty-eight counties. In addition to the book collection, there are photographs, maps, manuscripts, diaries, newspapers, periodicals, sheet music, post cards, microforms, posters, pamphlets, programs and other materials. While representative in all subject areas relating to California, the collection is particularly strong in the Gold Rush period, Sacramento, San Francisco, the Mother Lode, ethnic studies, mines and mining, genealogy, biography and popular culture.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading3'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>California Research Bureau</a>
+                            </h3>
+                        </div>
+                        <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                            <div class='panel-body'>
+                                <p>
+                                    Since 1991, the <a href="/crb">California Research Bureau</a> has provided independent, nonpartisan, timely and confidential policy research or analysis to its clients: the Legislature, the Governor's Office and other Constitutional Officers. The Research Bureau's team of librarians and researchers provide policy research, 50-state reviews, academic and media summaries, data analysis and much more. The Research Bureau also provides two weekly newsletters: Lunch with a Side of Research runs Mondays with a listing of free policy/research lunch events; <a href="/crb/newsletters/">Studies in the News</a> runs Wednesdays, providing recent studies that may be useful to policy discussions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading4'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Capitol Branch</a>
+                            </h3>
+                        </div>
+                        <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                            <div class='panel-body'>
+                                <p>
+                                    For the convenience of members and staff of the Legislature and Governor's Office needing research help or assistance with library services, the California Research Bureau staffs an office inside the State Capitol at Room 5210 Monday through Friday, 9 a.m. to 5 p.m. The Capitol office can also be reached by telephone, <a href="tel:+9163192691">(916) 319-2691</a>, or by email, <a href="mailto:crb@library.ca.gov">crb@library.ca.gov</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading5'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>Communications Office</a>
+                            </h3>
+                        </div>
+                        <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                            <div class='panel-body'>
+                                <p>
+                                    The California State Library's Communications Office handles media inquiries and disseminates news about the library through press releases and on the library's social media sites. The office also manages the library's public events and schedules docent-led tours of the historic Library and Courts Building.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading6'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>Government Publications Section</a>
+                            </h3>
+                        </div>
+                        <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
+                            <div class='panel-body'>
+                                <p>
+                                    The <a href="/government-publications/">Government Publications Section</a> provides the public with free and open access to government information, providing a single primary location for government documents and information assistance. We are the regional depository of the <a href="/government-publications/federal-depository/">Federal Depository Library Program (FDLP)</a> in California and a full depository for California state government publications distributed under the Library Distribution Act. Our <a href="/services/research-resources/patents/">Patent and Trademark Resource Center</a> librarians offer patent search training and information from the U.S. Patent and Trademark Office.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading7'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse7' aria-expanded='false' aria-controls='collapse7'>Human Resource Services</a>
+                            </h3>
+                        </div>
+                        <div id='collapse7' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading7'>
+                            <div class='panel-body'>
+                                <p>
+                                    The California State Library's Human Resources Services Office (HRSO) provides full-service human resources services for employees and management including consultation in the areas of recruitment, pay and benefits, employee training and development, health and safety, and labor relations. The HRSO also assists individuals interested in fulfilling career opportunities at the California State Library. For more information on internships, volunteer, and career opportunities, visit our <a href="/work-with-us/jobs">Jobs</a> page.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading8'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse8' aria-expanded='false' aria-controls='collapse8'>Information Services Section</a>
+                            </h3>
+                        </div>
+                        <div id='collapse8' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading8'>
+                            <div class='panel-body'>
+                                <p>
+                                    The Information Services Section provides books and other materials on a wide variety of topics of interest to both state government employees and the general public. Reference and bibliographic materials in all subjects fields except Californiana and the law are available here.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading9'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse9' aria-expanded='false' aria-controls='collapse9'>Library Development Services Bureau</a>
+                            </h3>
+                        </div>
+                        <div id='collapse9' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading9'>
+                            <div class='panel-body'>
+                                <p>
+                                    The Library Development Services (LDS) Bureau administers state and federal grant programs for California's libraries; works to enhance library collaboration and resource-sharing, and provides consulting services to public libraries and associated groups and organizations. These activities help to support existing library programs, develop innovative new programs, extend and enhance library services across the state, and gain the greatest benefit from funding sources.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading10'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse10' aria-expanded='false' aria-controls='collapse10'>Preservation</a>
+                            </h3>
+                        </div>
+                        <div id='collapse10' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading10'>
+                            <div class='panel-body'>
+                                <p>The Preservation Unit is responsible for the conservation, preservation, and digitization of the library's collections to ensure their continued access and use.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading11'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse11' aria-expanded='false' aria-controls='collapse11'>State Librarian's Office</a>
+                            </h3>
+                        </div>
+                        <div id='collapse11' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading11'>
+                            <div class='panel-body'>
+                                <p>The Office of the State Librarian handles inquiries about and correspondence to State Librarian Greg Lucas and Deputy State Librarian Narinder Sufi. The office is located in the Stanley Mosk Library and Courts Building, Room 200, 914 Capitol Mall, Sacramento, CA 95814, and is open weekdays, 8 a.m to 5 p.m.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading12'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse12' aria-expanded='false' aria-controls='collapse12'>State Library Services Bureau</a>
+                            </h3>
+                        </div>
+                        <div id='collapse12' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading12'>
+                            <div class='panel-body'>
+                                <p>
+                                    The State Library Services Bureau is the "operations side" of the California State Library and provides information through the Braille and Talking Book Library, the California History Section, Information Services, the Government Publications Section, the Witkin State Law Library, and the Sutro Library (in San Francisco). The bureau is also responsible for the acquisition, cataloging, maintenance, and preservation of the State Library's collections.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                     
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading14'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse14' aria-expanded='false' aria-controls='collapse14'>Sutro Library</a>
+                            </h3>
+                        </div>
+                        <div id='collapse14' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading14'>
+                            <div class='panel-body'>
+                                <p>
+                                    The <a href="/sutro">Sutro Library</a> acquires, preserves, and makes accessible rare and unique resources for scholarship and education of students, faculty, and independent researchers.  With over 90,000 volumes of rare books and 100,000 pamphlets, broadsides, photographs and maps, visitors will find information relevant to all academic disciplines.  The Sutro Library also holds one of the largest genealogy collections west of Salt Lake City so patrons are encouraged to explore their family history and local genealogy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading15'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse15' aria-expanded='false' aria-controls='collapse15'>Witkin State Law Library of California</a>
+                            </h3>
+                        </div>
+                        <div id='collapse15' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading15'>
+                            <div class='panel-body'>
+                                <p>
+                                    The <a href="/law">Witkin State Law Library</a> offers an extensive collection of primary and secondary sources with a focus on California law. Primary sources from California's beginnings aid the Legislature and state agencies in tracing legislative or regulatory histories, and practice guides and court briefs aid lawyers and those proceeding pro se. Our rare and frequently consulted collections include virtually all California Senate and Assembly Bills dating back to 1867, superseded California Codes, and the California Code of Regulations Supplement and Notice Register. Extending beyond California, we have materials relating to other states, federal legislation, and even historical and international law.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <p  >
+                    For more information, please see our <a href="/crb/staff/">Staff Contacts list</a>.
+                </p>
+
+            </div>
+        </div>
     </main>
 </div>
 
