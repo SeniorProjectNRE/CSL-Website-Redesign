@@ -1,9 +1,8 @@
 ﻿@{
-    ViewBag.Title = "Broadband Initiative";
+    ViewBag.Title = "CSL - High-Speed Broadband in California's Libraries Initiative";
     ViewBag.PageTitle = "High-Speed Broadband in California Libraries";
     ViewBag.Author = "Jonathan Shaw";
-    ViewBag.Description = "Find information about the initiative here, including figures and goals.";
-    ViewBag.Keywords = "California, State, Library, broadband, initiative, high, speed, high-speed, goal, investment, result, impact";
+    ViewBag.Description = "The Broadband Initiative brings high-speed broadband to California public libraries by connecting them to the California Research and Education Network (CalREN)—a high-capacity 3,800-mile fiber-optic-based network designed to meet the unique requirements of over 20 million users.";
 }
 
 <head>
@@ -17,12 +16,12 @@
     <main class="main-primary">
         <div class="container">
                 <ol class="breadcrumb dynamic"></ol>
-                <h2 class="page-title" style="margin-bottom: 2px;">
+                <h2 class="page-title" >
                     @ViewBag.PageTitle
                 </h2>
         </div>
         <div class="container">
-            <div class="section" style="margin-bottom:-20px;">
+            <div class="section"  ">
                 <h3>
                     Project Goal
                 </h3>
@@ -35,15 +34,21 @@
                     Investment Since 2014
                 </h3>
                 <br/>
-                <img src="~/Content/StateTemplate/images/services/toLibraries/BroadbandInitiativeInvestment.jpg" style="width:100%" alt="" class="animated fadeInLeft" />
+                <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/BroadbandInitiativeInvestment.jpg"   class="animated fadeInLeft  img-responsive" />
             </div>
             <div class="section">
                 <h3>
                     Results and Impact
                 </h3>
                 <br/>
-                <img src="~/Content/StateTemplate/images/services/toLibraries/BroadbandInitiativeResults.jpg" style="width:100%" alt="" class="animated fadeInLeft" />
-            </div>
+                <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/BroadbandInitiativeResults.jpg"   class="animated fadeInLeft img-responsive" />
+                <div class="half">
+                    <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/531.jpg" class="animated fadeInRight img-responsive " />
+                </div>
+                <div class="half">
+                    <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/12.jpg" class="animated   img-responsive fadeInLeft " />
+                </div>
+</div>
             <div class="two-thirds">
                 <h4>
                     Staff in connected libraries report** that:
@@ -79,9 +84,9 @@
                 </ul>
             </div>
             <div class="one-third">
-                <div class="panel panel-understated" style="margin-top:25px;">
+                <div class="panel panel-understated">
                     <div class="panel-heading" align="center">
-                        <h4>Broadband Searchable Database</h4>
+                        <h4><a href="/services/to-libraries/broadband">Broadband Searchable Database</a></h4>
                     </div>
                     <div class="panel-body">
                         <p>
@@ -89,9 +94,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="section" style="margin-top: -20px;">
-                    <a href="~/Content/StateTemplate/pdf/services/toLibraries/Infographic.pdf" style="margin-right: 30px">
-                        <img src="~/Content/StateTemplate/images/services/toLibraries/icon.jpg" />
+                <div class="section"  >
+                    <a href="~/Content/StateTemplate/pdf/services/toLibraries/Infographic.pdf"  >
+                        <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/icon.jpg" />
                     </a>
                     <a href="~/Content/StateTemplate/pdf/services/toLibraries/Infographic.pdf">
                         Download
@@ -103,9 +108,26 @@
 
         <br/>
 
+        <style>
+            p.testimonialPara {
+                 font-family:'Times New Roman', Times, serif; 
+                 background-color: ivory; 
+                 font-style: italic; 
+                 margin-top: 7px; 
+                 margin-bottom: 30px;
+            }
+
+            img.testimonialImg {
+                width:3%; 
+                height:3%; 
+                margin-top:-17px; 
+                margin-right: -4px;  
+                opacity: 0.3;
+            }
+        </style>
         <div class="container">
             <div class="section">
-                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel-group"  role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h3 class="panel-title">
@@ -115,44 +137,44 @@
                         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body indent-outer">
                                 <div class="indent-inner">
-                                    <p style="font-family:'Times New Roman', Times, serif; background-color: ivory; font-style: italic; margin-top: 7px; margin-bottom: 30px;">
-                                        <img src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" style="width:3%; height:3%; margin-top:-17px; margin-right: -4px;  opacity: 0.3;" />
+                                    <p class="testimonialPara">
+                                        <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" class="testimonialImg" />
                                         Along with having slow internet before CalREN, our library also had not replaced computers for many years due to budget cuts. We have leveraged the new high speed fiber to begin replacing computers and formed a stronger relationship with our County IT department... The connection to CalREN has raised the profile of the library with the county as it's widely recognized that the best way to take advantage of this opportunity is to invest in computers to match the capability.
                                     </p>
-                                    <p style="font-family:'Times New Roman', Times, serif; background-color: ivory; font-style: italic; margin-top: 7px; margin-bottom: 30px;">
-                                        <img src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" style="width:3%; height:3%; margin-top:-17px; margin-right: -4px; opacity: 0.3;" />
+                                    <p class="testimonialPara">
+                                        <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" class="testimonialImg"/>
                                         The broadband has allowed groups to work together on projects without being dropped from the network... These groups are also able to utilize all of our study rooms.
                                     </p>
-                                    <p style="font-family:'Times New Roman', Times, serif; background-color: ivory; font-style: italic; margin-top: 7px; margin-bottom: 30px;">
-                                        <img src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" style="width:3%; height:3%; margin-top:-17px; margin-right: -4px; opacity: 0.3;" />
+                                    <p class="testimonialPara">
+                                        <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" class="testimonialImg"/>
                                         Staff are spending so much less time responding to concerns over slow internet connection speeds and other related troubleshooting that they are freed up to spend more time addressing the information needs of our patrons.
                                     </p>
-                                    <p style="font-family:'Times New Roman', Times, serif; background-color: ivory; font-style: italic; margin-top: 7px; margin-bottom: 30px;">
-                                        <img src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" style="width:3%; height:3%; margin-top:-17px; margin-right: -4px; opacity: 0.3;" />
+                                    <p class="testimonialPara">
+                                        <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" class="testimonialImg"/>
                                         We recently began a partnership with a local professor and UCSD's Osher Lifelong Learning Institute and have begun monthly streaming lectures. In the past we would never have done a live streaming event with the unreliability of the internet connection.
                                     </p>
-                                    <p style="font-family:'Times New Roman', Times, serif; background-color: ivory; font-style: italic; margin-top: 7px; margin-bottom: 30px;">
-                                        <img src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" style="width:3%; height:3%; margin-top:-17px; margin-right: -4px; opacity: 0.3;" />
+                                    <p class="testimonialPara">
+                                        <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" class="testimonialImg"/>
                                         The teen department has also utilized the extra bandwidth to support new programs.
                                     </p>
-                                    <p style="font-family:'Times New Roman', Times, serif; background-color: ivory; font-style: italic; margin-top: 7px; margin-bottom: 30px;">
-                                        <img src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" style="width:3%; height:3%; margin-top:-17px; margin-right: -4px; opacity: 0.3;" />
+                                    <p class="testimonialPara">
+                                        <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" class="testimonialImg"/>
                                         The CENIC broadband, combined with the new wifi equipment (that takes advantage of the increased internet speed) has finally allowed us to offer the level of wifi service necessary to accommodate all the patrons in the building to use data heavy websites that use streaming video.
                                     </p>
-                                    <p style="font-family:'Times New Roman', Times, serif; background-color: ivory; font-style: italic; margin-top: 7px; margin-bottom: 30px;">
-                                        <img src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" style="width:3%; height:3%; margin-top:-17px; margin-right: -4px; opacity: 0.3;" />
+                                    <p class="testimonialPara">
+                                        <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" class="testimonialImg"/>
                                         Staff can now attend webinars or training in any of the community or board rooms in the building because of the strengthened signal made possible by the CENIC broadband connection. This was not possible in the past.
                                     </p>
-                                    <p style="font-family:'Times New Roman', Times, serif; background-color: ivory; font-style: italic; margin-top: 7px; margin-bottom: 30px;">
-                                        <img src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" style="width:3%; height:3%; margin-top:-17px; margin-right: -4px; opacity: 0.3;" />
+                                    <p class="testimonialPara">
+                                        <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" class="testimonialImg"/>
                                         Complaints and frustration from the public regarding their own Internet use at our workstations were frequent and occasionally, heated. With the new CENIC Broadband, those complaints are almost non-existent. The public is 100% happier and the staff is happier & relieved.
                                     </p>
-                                    <p style="font-family:'Times New Roman', Times, serif; background-color: ivory; font-style: italic; margin-top: 7px; margin-bottom: 30px;">
-                                        <img src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" style="width:3%; height:3%; margin-top:-17px; margin-right: -4px; opacity: 0.3;" />
+                                    <p class="testimonialPara">
+                                        <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" class="testimonialImg"/>
                                         Our computer lab has become so popular both with the public and other city departments that it is difficult to keep up with demand for use. The calendar is almost always full with open labs, classes for the public, classes for our adult literacy program, classes for the school district's special education class, and training sessions for various city departments.
                                     </p>
-                                    <p style="font-family:'Times New Roman', Times, serif; background-color: ivory; font-style: italic; margin-top: 7px; margin-bottom: 13px;">
-                                        <img src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" style="width:3%; height:3%; margin-top:-17px; margin-right: -4px; opacity: 0.3;" />
+                                    <p class="testimonialPara">
+                                        <img alt="broadband image" src="~/Content/StateTemplate/images/services/toLibraries/quoteIcon.png" class="testimonialImg"/>
                                         The average wait time for a public computer is now only 5 min (down from a previous high of 30-60+ minute wait-times). Because of the improved speed of the network connection, people finish what they're doing faster.
                                     </p>
                                 </div>
@@ -168,7 +190,7 @@
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="panel-body indent-outer">
                                 <div class="indent-inner">
-                                    <p style="margin-top: 7px;">
+                                    <p  >
                                         <strong>94 library jurisdictions</strong> have received grant funding to help them connect to broadband. <strong>Up to 15</strong> new library jurisdictions will receive grants in 2017.
                                     </p>
                                     <p>
@@ -187,23 +209,23 @@
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body indent-outer">
                                 <div class="indent-inner">
-                                    <div style="margin-top: 7px;">
+                                    <div  >
                                         <strong>
                                             Corporation for Education Network Initiatives in California (CENIC):
                                         </strong>
-                                        <p style="margin-left: 15px; margin-bottom: 14px;">
+                                        <p>
                                             The nonprofit organization that operates CalREN.
                                         </p>
                                         <strong>
                                             CALIFA:
                                         </strong>
-                                        <p style="margin-left: 15px; margin-bottom: 14px;">
+                                        <p  >
                                             A nonprofit library membership consortium and the project's aggregator. Califa is the project's fiscal, contracting, and billing agent and supports participating libraries.
                                         </p>
                                         <strong>
                                             Southern California Library Cooperatove:
                                         </strong>
-                                        <p style="margin-left: 15px;">
+                                        <p  >
                                             A consortium of 38 independent city, county, and special district public libraries. The Southern California Library Cooperative administers the project's Technology Improvement Grant funds and supports participating libraries.
                                         </p>
                                     </div>
@@ -220,7 +242,7 @@
                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                             <div class="panel-body indent-outer">
                                 <div class="indent-inner">
-                                    <p style="margin-top: 10px;">
+                                    <p  >
                                         <a href="~/Content/StateTemplate/otherDocuments/services/toLibraries/15-02_CaliforniaPublicLibraryBroadbandGrantApplication_REV.docx">
                                             Technology Improvement Grant Application Form (Word)
                                         </a>
@@ -230,10 +252,10 @@
                                             Technology Improvement Grant Guidelines (Word)
                                         </a>
                                     </p>
-                                    <h4 style="margin-top: 25px;">
+                                    <h4  >
                                         Application Deadline: January 31, 2017
                                     </h4>
-                                    <p style="margin-top: -20px; margin-left: 30px;">
+                                    <p  >
                                         If you have questions about applying for a grant, please contact Diane Satchwell of the Southern California Library Cooperative at
                                         <a href="mailto:broadband@socallibraries.org">
                                             broadband@socallibraries.org
@@ -252,7 +274,7 @@
                         <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                             <div class="panel-body indent-outer">
                                 <div class="indent-inner">
-                                    <p style="margin-top: 10px;">
+                                    <p >
                                         <a href="~/Content/StateTemplate/otherDocuments/services/toLibraries/CaliforniaPublicLibraryBroadbandProjectUpdate03042015.pptx">
                                             California Public Library Broadband Project Update
                                         </a>
@@ -277,7 +299,7 @@
                         <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                             <div class="panel-body indent-outer">
                                 <div class="indent-inner">
-                                    <p style="margin-top: 10px;">
+                                    <p >
                                         Please visit the Califa website for further information, including: a project summary and background; list of key facts; E-rate and CTF information and documents; FAQs for project participants; steps to connect to CalREN; glossary of broadband terms; statewide reports and publications; and broadband press archives.
                                     </p>
                                     <p>
