@@ -30,6 +30,13 @@ namespace StateTemplateV5Beta.Controllers.Collections
             return View("~/Views/Collections/Genealogy/Links.cshtml");
         }
 
+        // GET: Genealogy
+        [Route("genealogy/toolkit")]
+        public ActionResult Toolkit()
+        {
+            return View("~/Views/Collections/Genealogy/Toolkit.cshtml");
+        }
+
         // GET: VideoPodcasts
         [Route("videos-podcasts")]
         public ActionResult VideosPodcasts()

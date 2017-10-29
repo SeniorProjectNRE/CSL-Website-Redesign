@@ -2148,6 +2148,8 @@
     <Content Include="Views\Services\ToLibraries\BroadbandERate.cshtml" />
     <Content Include="Views\CaliforniaHistory\DigitizedResources.cshtml" />
     <Content Include="Views\Collections\Genealogy\Links.cshtml" />
+    <Content Include="Views\Collections\Genealogy\Toolkit.cshtml" />
+    <Content Include="Views\Services\AdditionalResources.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
