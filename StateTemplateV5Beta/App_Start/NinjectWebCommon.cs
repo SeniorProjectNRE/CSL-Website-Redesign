@@ -69,6 +69,7 @@ namespace StateTemplateV5Beta.App_Start
 
             kernel.Bind<IGrantsService>().To<GrantsService>();
             kernel.Bind<ILibraryService>().To<LibraryService>();
+            kernel.Bind<ISLAAService>().To<SLAAService>();
             DBConnectionConfig config = new DBConnectionConfig() { ConnectionString = ConfigurationManager.ConnectionStrings["CSLDataModel"].ConnectionString };
             kernel.Bind<IDataAccess>().To<DataAccess>().WithConstructorArgument("config", config);
         }        

@@ -36,6 +36,12 @@ namespace CSLDataAccessLayer
         DataTable GetAllBroadband(string library, string jurisdiction, string csla, string city, string county, int zip, int assembly, int senate, int congress, string status, string code);
         #endregion
 
+        #region SLAA
+        DataTable GetAllSLAA(int year, string code);
+        DataTable GetAgencyCode(int year, string code);
+        DataTable GetYear(int year, string code);
+        #endregion
+
 
     }
 }

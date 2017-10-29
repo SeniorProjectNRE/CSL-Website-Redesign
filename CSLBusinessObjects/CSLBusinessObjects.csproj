@@ -63,12 +63,16 @@
     <Compile Include="Models\Library\LibraryCityModel.cs" />
     <Compile Include="Models\Library\LibraryAssemblyModel.cs" />
     <Compile Include="Models\Library\LibraryModel.cs" />
+    <Compile Include="Models\SLAA\SLAAYearModel.cs" />
+    <Compile Include="Models\SLAA\SLAAAgencyModel.cs" />
+    <Compile Include="Models\SLAA\SLAAModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Grants\GrantAwardModel.cs" />
     <Compile Include="Models\Grants\GrantCategoryModel.cs" />
     <Compile Include="Models\Grants\GrantLibraryModel.cs" />
     <Compile Include="Models\Grants\GrantNumberModel.cs" />
     <Compile Include="Models\Grants\GrantProjectModel.cs" />
+    <Compile Include="ViewModels\SLAAViewModel.cs" />
     <Compile Include="ViewModels\GrantsViewModel.cs" />
     <Compile Include="Models\Grants\GrantYearModel.cs" />
     <Compile Include="ViewModels\LibraryViewModel.cs" />

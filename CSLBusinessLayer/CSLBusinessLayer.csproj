@@ -42,8 +42,10 @@
   <ItemGroup>
     <Compile Include="Concrete\GrantsService.cs" />
     <Compile Include="Concrete\LibraryService.cs" />
+    <Compile Include="Concrete\SLAAService.cs" />
     <Compile Include="Interface\IGrantsService.cs" />
     <Compile Include="Interface\ILibraryService.cs" />
+    <Compile Include="Interface\ISLAAService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

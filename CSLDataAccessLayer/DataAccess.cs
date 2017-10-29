@@ -809,6 +809,109 @@ namespace CSLDataAccessLayer
 
             return res;
         }
+
+
+        #endregion
+
+        #region SLAA
+        public DataTable GetAllSLAA(int year, string code)
+        {
+            DataTable res = new DataTable();
+
+            string dbConnectionString = _dbConnectionString;
+            SqlConnection conn = new SqlConnection(dbConnectionString);
+            SqlCommand cmd = new SqlCommand("[slaa].[uspSeeAllCases]", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            if (code != null) { cmd.Parameters.AddWithValue("@AgencyCodeFilter", code); }
+            if (year != 0) { cmd.Parameters.AddWithValue("@YearFilter", year); }
+
+            conn.Open();
+
+            try
+            {
+                using (var da = new SqlDataAdapter(cmd))
+                {
+                    da.Fill(res);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return res;
+        }
+
+        public DataTable GetAgencyCode(int year, string code)
+        {
+            DataTable res = new DataTable();
+
+            string dbConnectionString = _dbConnectionString;
+            SqlConnection conn = new SqlConnection(dbConnectionString);
+            SqlCommand cmd = new SqlCommand("[slaa].[uspFillAgencyDDL]", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            if (code != null) { cmd.Parameters.AddWithValue("@AgencyCodeFilter", code); }
+            if (year != 0) { cmd.Parameters.AddWithValue("@YearFilter", year); }
+
+            conn.Open();
+
+            try
+            {
+                using (var da = new SqlDataAdapter(cmd))
+                {
+                    da.Fill(res);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return res;
+        }
+
+        public DataTable GetYear(int year, string code)
+        {
+            DataTable res = new DataTable();
+
+            string dbConnectionString = _dbConnectionString;
+            SqlConnection conn = new SqlConnection(dbConnectionString);
+            SqlCommand cmd = new SqlCommand("[slaa].[uspFillYearDDL]", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            if (code != null) { cmd.Parameters.AddWithValue("@AgencyCodeFilter", code); }
+            if (year != 0) { cmd.Parameters.AddWithValue("@YearFilter", year); }
+
+            conn.Open();
+
+            try
+            {
+                using (var da = new SqlDataAdapter(cmd))
+                {
+                    da.Fill(res);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return res;
+        }
         #endregion
 
     }

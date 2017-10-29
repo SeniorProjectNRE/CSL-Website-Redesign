@@ -42,9 +42,9 @@ namespace CSLBusinessLayer.Concrete
                         AssemblyDistrict = row["AssemblyDistrict"].ToString(),
                         SenateDistrict = row["SenateDistrict"].ToString(),
                         CongressionalDistrict = row["CongressionalDistrict"].ToString(),
-                        Status = row["Status"].ToString(),
-                        StatusCode = row["StatusCode"].ToString()
-                        
+                        Status = row["Status"].ToString() + ": " + row["StatusCode"].ToString()
+                        //StatusCode = row["StatusCode"].ToString()
+
 
                     };
                     res.Add(myModel);
@@ -426,6 +426,20 @@ namespace CSLBusinessLayer.Concrete
 
             return res;
         }
+
+        //public List<string> GetStatusAndCodes(List<string> status, List<string> code)
+        //{
+        //    List<string> myStatus = status;
+        //    List<string> myCode = code;
+        //    List<string> res = new List<string>();
+        //    string statusAndCode;
+        //    for(int i = 0; i < myStatus.Count(); i++)
+        //    {
+        //        statusAndCode = myStatus[i] + ": " + myCode[i];
+        //        res.Add(statusAndCode);
+        //    }
+        //    return res;
+        //}
 
         public List<string> GetStatusListValues(List<LibraryStatusModel> model)
         {

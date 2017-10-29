@@ -212,12 +212,18 @@
 
 <script>
     $(document).ready(function () {
-        var table = $('#grantsData').DataTable({ rowReorder: { selector: 'td:nth-child(2)' }, responsive: true });
+        var table = $('#grantsData').DataTable({
+            rowReorder: { selector: 'td:nth-child(2)' },
+
+            responsive: true,
+        });
         $('#GetNumListValues').select2();
         $('#GetYearListValues').select2();
         $('#AwardStrings').select2();
         $('#GetLibrariesListValues').select2();
         $('#GetProjectListValues').select2();
+
+        
 
 
         //$("#AwardStrings > option:first-child").text('All'); 

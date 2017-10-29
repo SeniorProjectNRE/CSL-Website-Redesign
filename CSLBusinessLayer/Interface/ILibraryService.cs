@@ -33,5 +33,6 @@ namespace CSLBusinessLayer.Interface
         List<string> GetCodeListValues(List<LibraryCodeModel> model);
         List<string> GetStatusListValues(List<LibraryStatusModel> model);
         List<string> GetZipListValues(List<LibraryZipModel> model);
+        //List<string> GetStatusAndCodes(List<string> status, List<string> code);
     }
 }
