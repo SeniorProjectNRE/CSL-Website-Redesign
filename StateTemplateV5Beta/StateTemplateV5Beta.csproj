@@ -660,6 +660,17 @@
     <Content Include="Content\StateTemplate\images\services\toLibraries\icon.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\quoteIcon.png" />
     <Content Include="Content\StateTemplate\images\services\researchResources\PTRC.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toStateEmployees\art_legislators.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toStateEmployees\borrowing_materials.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toStateEmployees\card.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toStateEmployees\employee_training.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toStateEmployees\interlibrary_borrowing.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toStateEmployees\online_catalogs.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toStateEmployees\online_resources.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toStateEmployees\reference_assistance.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toStateEmployees\research.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toStateEmployees\state_docs.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toStateEmployees\state_employees_top.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\ASutro.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\coloringbook.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\countryFlags\Afghanistan.gif" />
