@@ -27,16 +27,17 @@
                 margin-left: 10px;
             }
 
-        #broadbandData_filter label {
+        #grantsData_filter label {
             color: black;
         }
 
-        #broadbandData_length label {
+        #grantsData_length label {
             color: black;
         }
 
         .filterForms select {
             width: 250px;
+            max-width: 90%;
             overflow: hidden;
             white-space: pre;
             text-overflow: ellipsis;
@@ -48,7 +49,7 @@
         }
 
         .filterForms > div > label {
-            width: 120px;
+            width: 100%;
         }
 
         #tablebody > tr:nth-last-child(even) {
@@ -202,6 +203,7 @@
                             <div class="half">
                                 @Html.LabelFor(m => m.GetCodeListValues, "Status Code:")
                                 @Html.DropDownListFor(m => m.GetCodeListValues, new SelectList(Model.GetCodeListValues, "Project"))
+                                 <span class="ca-gov-icon-question-fill" data-toggle='tooltip' title='After you select a Connection Status filter and hover over a Status Code in the left dropdown menu, the definition of that status code will be shown here'></span>
                             </div>
 
                             <div class=" clearfix"></div>
