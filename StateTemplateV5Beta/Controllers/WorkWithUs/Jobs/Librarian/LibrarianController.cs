@@ -27,17 +27,21 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
             return View("~/Views/WorkWithUs/Jobs/Librarian/Librarian.cshtml");
         }
 
+        [HttpGet]
         [Route("apply")]
         public ActionResult Apply()
         {
             return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml");
         }
 
+        [HttpPost]
         [Route("apply")]
         public ActionResult Apply(LibrarianModel model)
         {
-            string pdfTemplate = "~/Content/StateTemplate/pdf/";
-            _examService.FillForm(model, );
+            string pdfTemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/LibAppFinal.pdf";
+            string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + model.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
+
+            _examService.FillForm(model, pdfTemplate, newFile);
             return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml");
         }
     }

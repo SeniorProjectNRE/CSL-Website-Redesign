@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Hosting;
 
 namespace CSLBusinessLayer.Concrete
 {
@@ -17,9 +18,9 @@ namespace CSLBusinessLayer.Concrete
             string res = null;
             try
             {
-                using (PdfReader pdfReader = new PdfReader(pdfTemplate))
+                using (PdfReader pdfReader = new PdfReader(HostingEnvironment.MapPath(pdfTemplate)))
                 {
-                    using (FileStream pdfFileStream = new FileStream(newFile, FileMode.Create))
+                    using (FileStream pdfFileStream = new FileStream(HostingEnvironment.MapPath(newFile), FileMode.Create))
                     {
                         using (PdfStamper pdfStamper = new PdfStamper(pdfReader, pdfFileStream))
                         {
@@ -33,11 +34,7 @@ namespace CSLBusinessLayer.Concrete
                     }
                 }
             }
-            catch
-            {
-
-            }
-            finally
+            catch(Exception ex)
             {
 
             }
