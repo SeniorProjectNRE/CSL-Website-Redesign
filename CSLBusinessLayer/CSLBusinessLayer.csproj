@@ -49,6 +49,7 @@
     <Compile Include="Concrete\LibraryService.cs" />
     <Compile Include="Concrete\SLAAService.cs" />
     <Compile Include="Interface\IEmailService.cs" />
+    <Compile Include="Interface\IExamService.cs" />
     <Compile Include="Interface\IGrantsService.cs" />
     <Compile Include="Interface\ILibraryService.cs" />
     <Compile Include="Interface\ISLAAService.cs" />

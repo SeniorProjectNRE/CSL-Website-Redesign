@@ -1,4 +1,6 @@
-﻿using iTextSharp.text.pdf;
+﻿using CSLBusinessLayer.Interface;
+using CSLBusinessObjects.Models.Exams;
+using iTextSharp.text.pdf;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace CSLBusinessLayer.Concrete
 {
-    public class ExamService
+    public class ExamService : IExamService
     {
-        public string FillForm(string pdfTemplate , string newFile)
+        public string FillForm(LibrarianModel model, string pdfTemplate, string newFile)
         {
             string res = null;
             try
@@ -25,8 +27,8 @@ namespace CSLBusinessLayer.Concrete
 
                             //set pdf form fields
                             //basic info
-                            //pdfFormFields.SetField("Name", )
-
+                            pdfFormFields.SetField("Name", model.Name);
+                            pdfStamper.FormFlattening = true;
                         }
                     }
                 }

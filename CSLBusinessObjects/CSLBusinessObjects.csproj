@@ -44,6 +44,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigModels\DBConnectionConfig.cs" />
+    <Compile Include="Models\Exams\LibrarianModel.cs" />
     <Compile Include="Models\Grants\GrantsModel.cs" />
     <Compile Include="Models\Library\LibraryZipModel.cs" />
     <Compile Include="Models\Library\LibraryStatusModel.cs" />

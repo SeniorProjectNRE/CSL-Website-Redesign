@@ -1,11 +1,134 @@
-﻿@{
+﻿@model CSLBusinessObjects.Models.Exams.LibrarianModel
+@{
     ViewBag.Title = "Apply";
 }
 
-<!DOCTYPE html>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Apply</h2>
+        
+        <div class="section section-standout">
+            <div class="container">
+                <div class="group">
+                    @using (Html.BeginForm("Apply", "Librarian", FormMethod.Post))
+                    {
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.IsLibrarian, "Librarian")
+                                @Html.RadioButtonFor(m => m.IsLibrarian, "Librarian")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.IsSeniorLibrarian, "SeniorLibrarian")
+                                @Html.RadioButtonFor(m => m.IsSeniorLibrarian, "SeniorLibrarian")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Name, "Name")
+                                @Html.TextAreaFor(m => m.Name, "Name")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Email, "Email")
+                                @Html.TextAreaFor(m => m.Email, "Email")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.HasExperience, "Experience")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.SearchStrategies, "SearchStrategies")
+                                @Html.TextAreaFor(m => m.SearchStrategies, "SearchStrategies")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameSearchStrategies, "NameSearchStrategies")
+                                @Html.TextAreaFor(m => m.NameSearchStrategies, "NameSearchStrategies")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailSearchStrategies, "EmailSearchStrategies")
+                                @Html.TextAreaFor(m => m.EmailSearchStrategies, "EmailSearchStrategies")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumSearchStrategies, "PhoneNumSearchStrategies")
+                                @Html.TextAreaFor(m => m.PhoneNumSearchStrategies, "PhoneNumSearchStrategies")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Q1, "Q1")
+                                @Html.TextAreaFor(m => m.Q1, "Q1")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameQ1, "NameQ1")
+                                @Html.TextAreaFor(m => m.NameQ1, "NameQ1")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailQ1, "EmailQ1")
+                                @Html.TextAreaFor(m => m.EmailQ1, "EmailQ1")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumQ1, "PhoneNumQ1")
+                                @Html.TextAreaFor(m => m.PhoneNumQ1, "PhoneNumQ1")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                <input type="file" name="file"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Signature, "Signature")
+                                @Html.TextAreaFor(m => m.Signature, "Signature")
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="form-group">
+                            <div class="pull-right">
+                                <input type="submit" value="Filter" />
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+        </div>
+
     </main>
 </div>
