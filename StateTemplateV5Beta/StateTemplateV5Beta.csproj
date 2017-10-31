@@ -663,6 +663,7 @@
     <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeInvestment.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeResults.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\icon.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\money-bag.png" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\quoteIcon.png" />
     <Content Include="Content\StateTemplate\images\services\researchResources\PTRC.jpg" />
     <Content Include="Content\StateTemplate\images\sutro-images\ASutro.jpg" />
