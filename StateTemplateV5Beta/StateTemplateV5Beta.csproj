@@ -1722,6 +1722,15 @@
     <Content Include="Content\StateTemplate\pdf\digitizedResources\May-JuneDisplay.pdf" />
     <Content Include="Content\StateTemplate\pdf\digitizedResources\November-DecemberBooklist.pdf" />
     <Content Include="Content\StateTemplate\pdf\digitizedResources\OctoberBooklist.pdf" />
+    <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\LibAppFinal.pdf" />
+    <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\LPAAppFinal.pdf" />
+    <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\LPCAppFinal.pdf" />
+    <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\LTA_I_AppFinal.pdf" />
+    <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\LTA_II_AppFinal.pdf" />
+    <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\PLAppFinal.pdf" />
+    <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\SenLibAppFinal.pdf" />
+    <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\SL1AppFinal.pdf" />
+    <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\SL2AppFinal.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <Content Include="Content\StateTemplate\pdf\crb\Newsletters\20170104.pdf" />

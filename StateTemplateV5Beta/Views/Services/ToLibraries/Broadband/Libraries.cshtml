@@ -13,7 +13,7 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-    <link href='~/Content/StateTemplate/css/select2.min.css' rel='stylesheet' type='text/css'>
+    <link href='~/Content/StateTemplate/css/select2.min.css' rel='stylesheet' type='text/css'> 
     <script src='/Content/StateTemplate/js/libs/select2.min.js' type="text/javascript"></script>
 
     <link href='~/Content/StateTemplate/css/responsive.dataTables.min.css' rel='stylesheet' type='text/css'>
@@ -27,16 +27,17 @@
                 margin-left: 10px;
             }
 
-        #broadbandData_filter label {
+        #grantsData_filter label {
             color: black;
         }
 
-        #broadbandData_length label {
+        #grantsData_length label {
             color: black;
         }
 
         .filterForms select {
             width: 250px;
+            max-width: 90%;
             overflow: hidden;
             white-space: pre;
             text-overflow: ellipsis;
@@ -48,7 +49,7 @@
         }
 
         .filterForms > div > label {
-            width: 120px;
+            width: 100%;
         }
 
         #tablebody > tr:nth-last-child(even) {
@@ -202,6 +203,7 @@
                             <div class="half">
                                 @Html.LabelFor(m => m.GetCodeListValues, "Status Code:")
                                 @Html.DropDownListFor(m => m.GetCodeListValues, new SelectList(Model.GetCodeListValues, "Project"))
+                                 <span class="ca-gov-icon-question-fill" data-toggle='tooltip' title='After you select a Connection Status filter and hover over a Status Code in the left dropdown menu, the definition of that status code will be shown here'></span>
                             </div>
 
                             <div class=" clearfix"></div>
@@ -248,7 +250,141 @@
                                 <td>@item.AssemblyDistrict</td>
                                 <td>@item.SenateDistrict</td>
                                 <td>@item.CongressionalDistrict</td>
-                                <td>@item.Status &nbsp;<span class="ca-gov-icon-question-fill"></span></td>
+                                <td>
+                                @{ 
+
+
+                                    string output = item.Status;
+                                    string className = "status";
+                                    string tooltip = "";
+                                    if (item.Status.Contains("Not Connected to CalREN"))
+                                    {
+                                        className += "NC";
+
+                                        if (item.Status.Contains(": MS"))
+                                        {
+                                            className += "MS";
+                                        }
+                                        else if (item.Status.Contains(": NCLSA"))
+                                        {
+                                            className += "NCLSA";
+                                            tooltip = "Libraries that are not connected to CalREN and are not eligible to participate in the Lighting Up Libraries project because they are not a full member of a regional cooperative that is governed by the California Library Services Act";
+                                        }
+                                        else if (item.Status.Contains(": NP"))
+                                        {
+                                            className += "NP";
+                                            tooltip = "Libraries that are not connected to CalREN and are not pursuing connectivity at this time";
+                                        }
+                                        else if (item.Status.Contains(": Y0"))
+                                        {
+                                            className += "Y0";
+                                        }
+                                        else if (item.Status.Contains(": Y1"))
+                                        {
+                                            className += "Y1";
+                                        }
+                                        else if (item.Status.Contains(": Y2"))
+                                        {
+                                            className += "Y2";
+                                        }
+                                        else if (item.Status.Contains(": Y3"))
+                                        {
+                                            className += "Y3";
+                                        }
+                                        else if (item.Status.Contains(": Y4"))
+                                        {
+                                            //in the js this class name was span.statusNCPY4
+                                            // in the database there are currently no y4 codes
+                                            // i think the P in the NC'P'Y4 is a typo
+                                            className += "Y4";
+                                            tooltip = "Libraries that are not yet connected to CalREN but might participate in year 4(starting mid - 2017)";
+
+                                        }
+
+                                    }
+                                    else if (item.Status.Contains("Connecting to CalREN"))
+                                    {
+                                        className += "Cing";
+
+                                        if (item.Status.Contains(": MS"))
+                                        {
+                                            className += "MS";
+                                        }
+                                        else if (item.Status.Contains(": NCLSA"))
+                                        {
+                                            className += "NCLSA";
+                                        }
+                                        else if (item.Status.Contains(": NP"))
+                                        {
+                                            className += "NP";
+                                        }
+                                        else if (item.Status.Contains(": Y0"))
+                                        {
+                                            className += "Y0";
+                                        }
+                                        else if (item.Status.Contains(": Y1"))
+                                        {
+                                            className += "Y1";
+                                            tooltip = "Libraries that are in the process of connecting to CalREN and began participating in the Lighting Up Libraries project in Year 1 (2014) ";
+                                        }
+                                        else if (item.Status.Contains(": Y2"))
+                                        {
+                                            className += "Y2";
+                                            tooltip = "Libraries that are in the process of connecting to CalREN and began participating in the Lighting Up Libraries project in Year 2 (2015)";
+                                        }
+                                        else if (item.Status.Contains(": Y3"))
+                                        {
+                                            className += "Y3";
+                                            tooltip = "Libraries that are in the process of connecting to CalREN and began participating in the Lighting Up Libraries project in Year 3 (2016)";
+                                        }
+                                    }
+                                    else
+                                    {
+                                        className += "Ced";
+
+                                        if (item.Status.Contains(": MS"))
+                                        {
+                                            className += "MS";
+                                            tooltip = "Libraries that have connected to CalREN since 2014 but did not connect through the Lighting Up Libraries project. Although these libraries did not obtain their connection through the project, typically they benefit from project activities";
+
+                                        }
+                                        else if (item.Status.Contains(": NCLSA"))
+                                        {
+                                            className += "NCLSA";
+                                        }
+                                        else if (item.Status.Contains(": NP"))
+                                        {
+                                            className += "NP";
+                                        }
+                                        else if (item.Status.Contains(": Y0"))
+                                        {
+                                            className += "Y0";
+                                            tooltip = "Libraries that connected to CalREN before the start of the Lighting Up Libraries project";
+                                        }
+                                        else if (item.Status.Contains(": Y1"))
+                                        {
+                                            className += "Y1";
+                                            tooltip = "Libraries that are connected to CalREN and began participating in the Lighting Up Libraries project in Year 1 (2014)";
+                                        }
+                                        else if (item.Status.Contains(": Y2"))
+                                        {
+                                            className += "Y2";
+                                            tooltip = "Libraries that are connected to CalREN and began participating in the Lighting Up Libraries project in Year 2 (2015)";
+                                        }
+                                        else if (item.Status.Contains(": Y3"))
+                                        {
+                                            className += "Y3";
+                                            tooltip = "Libraries that are connected to CalREN and began participating in the Lighting Up Libraries project in Year 3 (2016)";
+                                        }
+
+                                    }
+
+                                    output += " <span class='"+className+ " ca-gov-icon-question-fill ' data-toggle='tooltip' title='"+tooltip+"'></span>";
+
+                                    @Html.Raw(output);
+                                }
+
+                                </td>
                             </tr>
                         }
                     </tbody>
@@ -259,6 +395,7 @@
 
     </main>
 </div>
+
 
 <script>
     $(document).ready(function () {

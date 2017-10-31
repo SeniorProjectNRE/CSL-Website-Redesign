@@ -19,6 +19,21 @@
         .required{
             color:red
         }
+
+        .myform > div > label, .myform > div > input {
+            min-width:55%;
+            display:inline-block;
+        }
+
+            .myform > div > input {
+            width: 250px;
+            max-width:90%;
+        }
+
+        .myform > div > textarea {
+            width: 100%;
+        }
+
     </style>
 </head>
 
@@ -55,7 +70,7 @@
                     @using (Html.BeginForm("Class", "Sutro", FormMethod.Post))
                     {
                         
-                        <div>
+                        <div class="myform">
                             <div class="full-width">
                                 @Html.LabelFor(m => m.Instructor)
                                 @Html.TextBoxFor(m => m.Instructor)
@@ -73,8 +88,9 @@
                                 @Html.TextBoxFor(m => m.CourseNumandTitle)
                             </div>
                             <div class="full-width">
-                                <span class="required">*</span>@Html.LabelFor(m => m.Frequency)
-                                @Html.TextBoxFor(m => m.Frequency, new { style="width:300px; height:150px" })
+                                <span class="required">*</span>
+                                @Html.LabelFor(m => m.Frequency)
+                                @Html.TextAreaFor(m => m.Frequency)
                                 @Html.ValidationMessage("Frequency", new { @class = "text-danger" })
                             </div>
                             <div class="full-width">
@@ -89,14 +105,15 @@
                             </div>
                             <div class="full-width">
                                 <span class="required">*</span>@Html.LabelFor(m => m.DoesAssignmentExist)
-                                @Html.TextBoxFor(m => m.DoesAssignmentExist, new { style = "width:300px; height:150px" })
+                                @Html.TextAreaFor(m => m.DoesAssignmentExist)
                                 @Html.ValidationMessage("DoesAssignmentExist", new { @class = "text-danger" })
                             </div>
                             <div class="full-width">
                                 <span class="required">*</span>@Html.LabelFor(m => m.Materials)
-                                @Html.TextBoxFor(m => m.Materials, new { style = "width:300px; height:150px" })
+                                @Html.TextAreaFor(m => m.Materials)
                                 @Html.ValidationMessage("Materials", new { @class = "text-danger" })
                             </div>
+                            <div class="clearfix"></div>
                             <div class="full-width">
                                 <div class="g-recaptcha" data-sitekey="6Lf0XzYUAAAAAFm7yZHSL7K98voPXytgpy4O2zsU"></div>
                             </div>
