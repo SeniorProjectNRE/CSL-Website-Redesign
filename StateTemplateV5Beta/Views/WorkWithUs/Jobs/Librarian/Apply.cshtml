@@ -1,11 +1,904 @@
 ﻿@{
     ViewBag.Title = "Apply";
+    ViewBag.PageTitle = "Librarian and Senior Librarian Supplemental Application";
 }
+<head>
+    <script>
 
-<!DOCTYPE html>
+        function showHideExams() {
+            var selectedItems = "";
+            $("[id*=MainContent_examChkBoxList] input:checked").each(function () {
+                if (selectedItems == "") {
+                    selectedItems += $(this).val();
+                } else {
+                    selectedItems += " " + $(this).val();
+                }
+                console.log(selectedItems);
+            });
+
+            if (selectedItems == "0") {
+                $('.libEducation').show();
+                $('.senLibEducation').hide();
+                $('#senLibInfoExperience').hide();
+                $('#libFuncExperience').show();
+                $('#senLibFuncExperience').hide();
+                $('.tab-SenLib-question').hide();
+            }
+            else if (selectedItems == "1") {
+                $('.libEducation').hide();
+                $('.senLibEducation').show();
+                $('#senLibInfoExperience').show();
+                $('#libFuncExperience').hide();
+                $('#senLibFuncExperience').show();
+                $('.tab-SenLib-question').show();
+
+            }
+            else if (selectedItems == "0 1") {
+                $('.libEducation').hide();
+                $('.senLibEducation').show();
+                $('#senLibInfoExperience').show();
+                $('#libFuncExperience').show();
+                $('#senLibFuncExperience').show();
+                $('.tab-SenLib-question').show();
+
+            }
+            else if (selectedItems == "") {
+                $('.senLibEducation').hide();
+                $('.libEducation').hide();
+                $('#senLibInfoExperience').hide();
+                $('#libFuncExperience').hide();
+                $('#senLibFuncExperience').hide();
+                $('.tab-SenLib-question').hide();
+            }
+        }
+
+        $(document).ready(function () {
+            $('.basicInfoExperience').hide();
+            $('.tab-SenLib-question').hide();
+
+            showHideExams();
+        });
+    </script>
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Apply</h2>
+        <div class="section">
+            <div class="container">
+
+                <h2>@ViewBag.PageTitle</h2>
+
+                <form role="form">
+                    <div class='panel-group' role='tablist' aria-multiselectable='true'>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading1'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Step 1: Instructions</a>
+                                </h3>
+                            </div>
+                            <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                <div class='panel-body'>
+                                    <p>
+                                        Thank you for your interest in a position of Librarian and Senior Librarian at the California State Library.
+                                    </p>
+                                    <p>
+                                        In order to be considered for these jobs, it is first necessary for you to take and pass a civil service examination
+                                        with a score that is among the highest of the applicants who take the test.
+                                    </p>
+                                    <p>
+                                        Along with submission of a detailed resume, completion of this supplemental application is the examination process.
+                                        This supplemental application solicits specific information about your experience and background that is directly
+                                        relevant to these jobs.
+                                    </p>
+                                    <p>
+                                        Please answer each question, clearly, concisely, and truthfully on the attached form. Failure to follow these instructions will result in elimination from the examination process.
+                                        <strong>
+                                            Please note that there is no save function in this exam and it must be completed in one seating. We recommend that you review the questions and prepare your responses
+                                            before starting the exam.
+                                        </strong>
+                                    </p>
+                                    <p>
+                                        There is no deadline for submission of your application materials.  This examination process will be available
+                                        throughout the year.  As vacancies occur, all individuals who have submitted their information and passed the
+                                        examination will be notified of the next steps to be considered for any available position.
+                                    </p>
+                                    <p>
+                                        The information you provide will be evaluated by a team of subject matter specialists who will rate your responses
+                                        on the quality and clarity of your writing as demonstrated by your responses, as well as the breadth and depth of
+                                        your relevant experience.  You will be given an overall score on this supplemental application and this will
+                                        determine your placement on the list of those who pass the examination.  You will be notified in writing of your
+                                        exam results.
+                                    </p>
+                                    <p>
+                                        If you pass the examination, you may then apply for and be considered for individual job vacancies in this
+                                        classification.   In addition, the Department may contact you directly as vacancies occur.
+                                    </p>
+                                    <p>
+                                        If you are selected to be considered for hire into a vacancy, you will be invited to participate in a comprehensive
+                                        hiring interview process consisting of the following:
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            Submission of a standard state application
+                                        </li>
+                                        <li>
+                                            A visual resume where you will be asked to make a five minute stand-up presentation discussing your experience and qualifications for the job
+                                        </li>
+                                        <li>
+                                            A set of interview questions designed to explore your specific qualifications
+                                        </li>
+                                    </ol>
+                                    <p>
+                                        If you have any questions, please contact us at <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or (916) 654-0202.
+                                    </p>
+                                    <br>
+                                    <div style="text-align:center; font-weight:bold;">
+                                        <p><strong>We wish you luck in the process.</strong></p>
+                                    </div>
+                                    <br>
+                                    <a class="btn btn-default pull-right" role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Next</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading2'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Step 2: Examinations</a>
+                                </h3>
+                            </div>
+                            <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                <div class='panel-body'>
+
+                                    <p>
+                                        Please indicate the examination(s) you wish to take.  You may apply for and take one or two
+                                        examinations provided that you meet the minimum education and experience requirements for each classification.
+                                    </p>
+                                    <div id="examChkBoxContainer">
+                                        <div id="MainContent_examChkBoxList">
+                                            <!--librarian checkbox open librarian questions-->
+                                            <div class="checkbox">
+                                                <label> 
+                                                    <input id="MainContent_examChkBoxList_0" type="checkbox" name="ctl00$MainContent$examChkBoxList$0" value="0" onclick="showHideExams()">
+                                                    Librarian
+                                                </label>
+                                            </div>
+                                            <!--senior librarian checkbox open seniorlibrarian questions-->
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input id="MainContent_examChkBoxList_1" type="checkbox" name="ctl00$MainContent$examChkBoxList$1" value="1" onclick="showHideExams()">Senior Librarian
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <a class="btn btn-default pull-right" role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Next</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading3'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Step 3: Basic Information</a>
+                                </h3>
+                            </div>
+                            <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                <div class='panel-body'>
+                                    <div id="nameEmailContainer">
+                                        <div id="basicInfoName" class="form-group half">
+                                            <label><span class="required-label">*</span>Name: </label>
+                                            <input class="form-control" name="ctl00$MainContent$txtName" type="text" id="MainContent_txtName">
+                                        </div>
+                                        <div id="basicInfoEmail " class="form-group half">
+                                            <label><span class="required-label">*</span>E-mail: </label>
+                                            <input class="form-control" name="ctl00$MainContent$txtEmail" type="text" id="MainContent_txtEmail">
+                                        </div>
+                                    </div>
+                                    <div id="basicInfoEducation">
+                                        <div class="libEducation" style="display: none;">
+                                            <p>
+                                                <strong>
+                                                    Please affirm that you meet the following educational requirement:  equivalent to graduation from a college or university and completion of a graduate degree from an accredited library school. (Registration as a graduate student in a library
+                                                    school will admit applicants to the examination, but evidence of completion of the required graduate degree must be submitted before an applicant can be considered eligible for appointment)
+                                                </strong>
+                                            </p>
+
+                                            <div id="MainContent_rblEducation" class="radio">
+                                                <label for="MainContent_rblEducation_0"><input id="MainContent_rblEducation_0" type="radio" name="ctl00$MainContent$rblEducation" value="1">Yes</label>
+                                                <label for="MainContent_rblEducation_1"> <input id="MainContent_rblEducation_1" type="radio" name="ctl00$MainContent$rblEducation" value="0">No</label>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="senLibEducation" style="display: none;">
+                                            <p>
+                                                <strong>
+                                                    Please affirm that you meet the following educational requirement:  equivalent to graduation from a college or
+                                                    university and completion of a graduate degree from an accredited library school.
+                                                </strong>
+                                            </p>
+
+                                            <div id="MainContent_rblEducation" class="radio">
+                                                <label for="MainContent_rblEducation_0"><input id="MainContent_rblEducation_0" type="radio" name="ctl00$MainContent$rblEducation" value="1">Yes</label>
+                                                <label for="MainContent_rblEducation_1"> <input id="MainContent_rblEducation_1" type="radio" name="ctl00$MainContent$rblEducation" value="0">No</label>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="libEducation" style="display: none;">
+                                            <div class="checkbox">
+                                                <label><span class="required-label">*</span>
+                                                    <input id="MainContent_boxRegistered" type="checkbox" name="ctl00$MainContent$boxRegistered">
+                                                    If not, check here if you are a registered graduate student in a library school.
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div id="senLibInfoExperience" class="basicInfoExperience" style="display: none;">
+                                        <p>
+                                            <strong style="text-decoration: underline;">Senior Librarian</strong>
+                                        </p>
+                                        <p>
+                                            <em>
+                                                Please describe the way in which your experience meets the minimum requirements for participation in this examination.
+                                            </em>
+                                        </p>
+
+                                        <div class="radio" id="MainContent_rblSenLibExperience">
+                                            <label for="MainContent_rblSenLibExperience_0"><input id="MainContent_rblSenLibExperience_0" type="radio" name="ctl00$MainContent$rblSenLibExperience" value="0">Two years in the California state service performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Librarian</a></label>
+                                            <label for="MainContent_rblSenLibExperience_1"><input id="MainContent_rblSenLibExperience_1" type="radio" name="ctl00$MainContent$rblSenLibExperience" value="1">Three years of increasingly responsible and varied professional library experience such as cataloging, reference work, library service projects, and the selection of library materials, at least one year of which must have included regular use of computerized databases</label>
+
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <div id="libFuncExperience">
+                                        <p>
+                                            Please describe your highest level of experience in each of the following library functions for Librarian:
+                                        </p>
+                                        <label class="text-accent-p2"><span class="required-label">*</span>
+                                            Standard Search Strategies
+                                        </label>
+                                        <textarea maxlength="900" class="form-control" name="ctl00$MainContent$txtSearch" id="MainContent_txtSearch"></textarea> <span>900 character limit</span>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtSearchContact" type="text" id="MainContent_txtSearchContact" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtSearchEmail" type="text" id="MainContent_txtSearchEmail" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtSearchPhone" type="text" id="MainContent_txtSearchPhone" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                Bibliographic Information Sources
+                                            </label>
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtBibliographic" id="MainContent_txtBibliographic" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtBibliographicContact" type="text" id="MainContent_txtBibliographicContact" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtBibliographicEmail" type="text" id="MainContent_txtBibliographicEmail" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtBibliographicPhone" type="text" id="MainContent_txtBibliographicPhone" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                Computerized Databases
+                                            </label>
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtDatabase" id="MainContent_txtDatabase" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtDatabaseContact" type="text" id="MainContent_txtDatabaseContact" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtDatabaseEmail" type="text" id="MainContent_txtDatabaseEmail" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtDatabasePhone" type="text" id="MainContent_txtDatabasePhone" class="form-control">
+                                        </div>
+                                    </div>
+
+
+
+                                    <div id="senLibFuncExperience" style="display:none">
+                                        <p>
+                                            <em>
+                                                Please describe your highest level of experience in each of the following library functions for Senior Librarian:
+                                            </em>
+                                        </p>
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                Collection Development
+                                            </label>
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtCollection" id="MainContent_txtCollection" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtCollectionContact" type="text" id="MainContent_txtCollectionContact" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtCollectionEmail" type="text" id="MainContent_txtCollectionEmail" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtCollectionPhone" type="text" id="MainContent_txtCollectionPhone" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                Acquisitions
+                                            </label>
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtAcquisition" id="MainContent_txtAcquisition" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtAcquisitionContact" type="text" id="MainContent_txtAcquisitionContact" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtAcquisitionEmail" type="text" id="MainContent_txtAcquisitionEmail" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtAcquisitionPhone" type="text" id="MainContent_txtAcquisitionPhone" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                Cataloging and Classification
+                                            </label>
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtCataloging" id="MainContent_txtCataloging" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtCatalogingContact" type="text" id="MainContent_txtCatalogingContact" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtCatalogingEmail" type="text" id="MainContent_txtCatalogingEmail" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtCatalogingPhone" type="text" id="MainContent_txtCatalogingPhone" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                Reference
+                                            </label>
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtReference" id="MainContent_txtReference" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtReferenceContact" type="text" id="MainContent_txtReferenceContact" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtReferenceEmail" type="text" id="MainContent_txtReferenceEmail" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtReferencePhone" type="text" id="MainContent_txtReferencePhone" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                Circulation
+                                            </label>
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtCirculation" id="MainContent_txtCirculation" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtCirculationContact" type="text" id="MainContent_txtCirculationContact" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtCirculationEmail" type="text" id="MainContent_txtCirculationEmail" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtCirculationPhone" type="text" id="MainContent_txtCirculationPhone" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                Preservation of Library Material
+                                            </label>
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtPreservation" id="MainContent_txtPreservation" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtPreservationContact" type="text" id="MainContent_txtPreservationContact" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtPreservationEmail" type="text" id="MainContent_txtPreservationEmail" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtPreservationPhone" type="text" id="MainContent_txtPreservationPhone" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                Specialized Function or Collection (eg. law, medical, Braille and talking book library, etc.)
+                                            </label>
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtSpecialized" id="MainContent_txtSpecialized" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtSpecializedContact" type="text" id="MainContent_txtSpecializedContact" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtSpecializedEmail" type="text" id="MainContent_txtSpecializedEmail" class="form-control">
+
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtSpecializedPhone" type="text" id="MainContent_txtSpecializedPhone" class="form-control">
+                                        </div>
+                                        <br>
+                                        <a class="btn btn-default pull-right" role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Next</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading4'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Step 4: Questions</a>
+                                </h3>
+                            </div>
+                            <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                                <div class='panel-body'>
+
+                                    <div class="tab-question">
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                1. Please describe the strategies and techniques you would use to create and foster a customer service focus in a library setting.
+                                            </label>
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtQ1Desc" id="MainContent_txtQ1Desc" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ1Contact" type="text" id="MainContent_txtQ1Contact" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ1Email" type="text" id="MainContent_txtQ1Email" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ1Phone" type="text" id="MainContent_txtQ1Phone" class="form-control">
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="tab-question">
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                2. Please describe the methods you use to stay abreast of best practices and the latest trends in library services and technology, for example, any association affiliations, conferences, seminars attended, training attended or given, or any other resources utilized.
+                                            </label>
+
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtQ2Desc" id="MainContent_txtQ2Desc" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ2Contact" type="text" id="MainContent_txtQ2Contact" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ2Email" type="text" id="MainContent_txtQ2Email" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ2Phone" type="text" id="MainContent_txtQ2Phone" class="form-control">
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="tab-question">
+
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                3. Please describe the techniques and strategies that you would use to establish and maintain cooperative relationships with library patrons, coworkers, and the public.
+                                            </label>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtQ3Desc" id="MainContent_txtQ3Desc" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ3Contact" type="text" id="MainContent_txtQ3Contact" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ3Email" type="text" id="MainContent_txtQ3Email" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ3Phone" type="text" id="MainContent_txtQ3Phone" class="form-control">
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="tab-question">
+
+
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                4. Please describe the social and library trends that have impacted the way people communicate and seek information.
+                                            </label>
+
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtQ4Desc" id="MainContent_txtQ4Desc" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ4Contact" type="text" id="MainContent_txtQ4Contact" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ4Email" type="text" id="MainContent_txtQ4Email" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ4Phone" type="text" id="MainContent_txtQ4Phone" class="form-control">
+                                        </div>
+                                    </div>
+                                    <hr />
+
+                                    <div class="tab-question">
+
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                5. Please describe your experience in forming and/or working with teams or fostering teamwork among co-workers. Be specific about the nature of the team, its purpose or goals, and your role in the process.
+                                            </label>
+
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtQ5Desc" id="MainContent_txtQ5Desc" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ5Contact" type="text" id="MainContent_txtQ5Contact" class="form-control">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ5Email" type="text" id="MainContent_txtQ5Email" class="form-control">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ5Phone" type="text" id="MainContent_txtQ5Phone" class="form-control">
+                                        </div><hr />
+                                    </div>
+
+
+                                    <div class="tab-question">
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                6. Please describe your public speaking experience before large or small groups. This does not have to be in a library setting.</strong>
+                                            </label>
+
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtQ6Desc" id="MainContent_txtQ6Desc" class="form-control"></textarea><span>900 characters limit</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ6Contact" type="text" id="MainContent_txtQ6Contact" class="form-control">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ6Email" type="text" id="MainContent_txtQ6Email" class="form-control">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ6Phone" type="text" id="MainContent_txtQ6Phone" class="form-control">
+                                        </div>
+                                        <hr />
+                                    </div>
+
+
+                                    <div class="tab-SenLib-question" style="display: block;">
+
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                7. Please describe your experience as a “lead” over other employees. Discuss how “lead” responsibilities are different from “supervision” and what techniques you used to guide and train employees assigned to you.
+                                            </label>
+
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtQ7Desc" id="MainContent_txtQ7Desc" class="form-control"></textarea><span>900 characters limit</span>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ7Contact" type="text" id="MainContent_txtQ7Contact" class="form-control">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ7Email" type="text" id="MainContent_txtQ7Email" class="form-control">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ7Phone" type="text" id="MainContent_txtQ7Phone" class="form-control">
+                                        </div>
+                                        <hr />
+                                    </div>
+
+                                    <div class="tab-SenLib-question" style="display: block;">
+
+                                        <div class="form-group">
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
+                                                8. Please describe any expertise or experience that you have working with specialized collections. Be specific about the nature and size of the collection.
+                                            </label>
+
+                                            <textarea maxlength="900" name="ctl00$MainContent$txtQ8Desc" id="MainContent_txtQ8Desc" class="form-control"></textarea><span>900 characters limit</span>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Name of person who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ8Contact" type="text" id="MainContent_txtQ8Contact" class="form-control">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                E-mail of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ8Email" type="text" id="MainContent_txtQ8Email" class="form-control">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label><span class="required-label">*</span>
+                                                Phone Number of person listed above who can verify this experience:
+                                            </label>
+                                            <input name="ctl00$MainContent$txtQ8Phone" type="text" id="MainContent_txtQ8Phone" class="form-control">
+                                        </div>
+                                    </div>
+
+
+                                    <br>
+                                    <a class="btn btn-default pull-right" role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>Next</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading5'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>Step 5: Resume</a>
+                                </h3>
+                            </div>
+                            <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                                <div class='panel-body'>
+
+                                    <p>
+                                        Please submit your current resume in .docx or .pdf format under 5 MB. Your resume must include your most recent
+                                        employment and because a standard state application is not requested at this time, the resume must also <strong>
+                                            include
+                                            complete "to" and "from" dates (month/day/year), time base including number of hours worked per week, job titles,
+                                            and relevant college degree completed
+                                        </strong>. Resumes received without this information will result in rejection of your
+                                        application.
+                                    </p>
+                                    <p>
+                                        Click on the browse button to locate the file. If you have an older version of Word that only produces .doc files,
+                                        there are many free tools online to convert to PDF.
+                                    </p>
+                                    <label><span class="required-label">*</span>Resume</label><input type="file" name="ctl00$MainContent$fileUploadResume" id="MainContent_fileUploadResume">
+
+                                    <br>
+                                    <a class="btn btn-default pull-right" role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>Next</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading6'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>Step 6: Signature</a>
+                                </h3>
+                            </div>
+                            <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
+                                <div class='panel-body'>
+
+                                    <div class="tab-body">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input id="MainContent_boxAgree" type="checkbox" name="ctl00$MainContent$boxAgree">
+                                                <span class="required-label">*</span> By checking this box, I hereby certify under penalty of perjury that the information I have entered on this
+                                                application is true and complete to the best of my knowledge. I further understand that all information is subject
+                                                to verification and that any false, incomplete, or incorrect statements may result in my disqualification from the
+                                                examination process or dismissal from employment with the State of California. I authorize the employers and
+                                                educational institutions identified on this application to release any information they may have concerning my
+                                                employment or education to the State of California.
+                                            </label>
+                                        </div>
+                                        <div class="form-group half">
+                                            <label><span class="required-label">*</span>Signature: </label>
+                                            <input name="ctl00$MainContent$txtSignature" type="text" value="Type your full name here" id="MainContent_txtSignature" onfocus="if (this.value === 'Type your full name here') {this.value = ''};" onblur="if (this.value === '') {this.value = 'Type your full name here'};" class="form-control">
+                                        </div>
+                                        <div class="form-group half">
+                                            <label><span class="required-label">*</span>Date: </label>
+                                            <input class="form-control" name="ctl00$MainContent$txtDate" type="text" id="MainContent_txtDate">
+                                        </div>
+
+
+                                        <!--add captcha here-->
+
+                                        <div class="buttonsContainer">
+                                           
+                                            <button class="btn btn-default" type="submit" name="ctl00$MainContent$btnSubmit" value="Submit" id="MainContent_btnSubmit">Submit</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form> 
+            </div>
+        </div>
     </main>
+
 </div>
