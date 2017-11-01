@@ -66,7 +66,7 @@ namespace StateTemplateV5Beta.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-
+            kernel.Bind<IExamService>().To<ExamService>();
             kernel.Bind<IGrantsService>().To<GrantsService>();
             kernel.Bind<ILibraryService>().To<LibraryService>();
             kernel.Bind<ISLAAService>().To<SLAAService>();
