@@ -38,6 +38,11 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
         [Route("apply")]
         public ActionResult Apply(LibrarianModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml");
+            }
+
             string pdfTemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/LibAppFinal.pdf";
             string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + model.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
 

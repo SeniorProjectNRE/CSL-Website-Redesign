@@ -6,11 +6,58 @@ using System.Text;
 using System.Threading.Tasks;
 using CSLBusinessObjects.Models;
 using System.Net.Mail;
+using System.Web;
+using System.IO;
+using CSLBusinessObjects.Models.Exams;
 
 namespace CSLBusinessLayer.Concrete
 {
     public class EmailService : IEmailService
     {
+        public SuccessModel SendLibrarianExamEmail(string file, LibrarianModel model)
+        {
+            SuccessModel res;
+
+            // Command line argument must the the SMTP host.
+            SmtpClient client = new SmtpClient();
+            client.Port = 587;
+            client.Host = "smtp.gmail.com";
+            client.EnableSsl = true;
+            client.Timeout = 10000;
+            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            client.UseDefaultCredentials = false;
+            client.Credentials = new System.Net.NetworkCredential("seniorprojectteamnre@gmail.com", "Testing!23");
+
+            Attachment pdf = new Attachment(file);
+
+            MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", "Exam Submission", file);
+            mm.IsBodyHtml = true;
+            mm.BodyEncoding = UTF8Encoding.UTF8;
+            mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+
+            mm.Attachments.Add(pdf);
+            foreach (var item in model.ResumeUpload)
+            {
+                if (item != null && item.ContentLength > 0)
+                {
+                    try
+                    {
+                        string fileName = Path.GetFileName(item.FileName);
+                        var attachment = new Attachment(item.InputStream, fileName);
+                        mm.Attachments.Add(attachment);
+                    }
+                    catch (Exception) { }
+                }
+            }
+
+            client.Send(mm);
+
+            File.Delete(file);
+            
+            res = new SuccessModel() { SuccessMessage = "Form has been successfully submitted" };
+            return res;
+        }
+
         public SuccessModel SendSutroClassEmail(SutroClassModel model)
         {
             SuccessModel res;
