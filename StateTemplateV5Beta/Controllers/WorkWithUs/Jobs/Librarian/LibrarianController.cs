@@ -47,6 +47,7 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
             string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + model.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
 
             _examService.FillForm(model, pdfTemplate, newFile);
+            _emailService.SendLibrarianExamEmail(newFile, model);
             return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml");
         }
     }
