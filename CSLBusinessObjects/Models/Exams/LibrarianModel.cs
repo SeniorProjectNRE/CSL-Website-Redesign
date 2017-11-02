@@ -298,11 +298,11 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumQ8 { get; set; }
         #endregion
 
-        #region Upload
-        [Display(Name = "")]
-        [Required(ErrorMessage = "Please upload your resume")]
-        public IEnumerable<HttpPostedFileBase> ResumeUpload { get; set; }
-        #endregion
+        //#region Upload
+        //[Display(Name = "")]
+        //[Required(ErrorMessage = "Please upload your resume")]
+        //public IEnumerable<HttpPostedFileBase> ResumeUpload { get; set; }
+        //#endregion
 
         #region Sign
         [Display(Name = "By checking this box, I hereby certify under penalty of perjury that the information I have entered on this application is true and complete to the best of my knowledge. I further understand that all information is subject to verification and that any false, incomplete, or incorrect statements may result in my disqualification from the examination process or dismissal from employment with the State of California. I authorize the employers and educational institutions identified on this application to release any information they may have concerning my employment or education to the State of California.")]

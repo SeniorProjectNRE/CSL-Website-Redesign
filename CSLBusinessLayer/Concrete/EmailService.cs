@@ -36,19 +36,19 @@ namespace CSLBusinessLayer.Concrete
             mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
 
             mm.Attachments.Add(pdf);
-            foreach (var item in model.ResumeUpload)
-            {
-                if (item != null && item.ContentLength > 0)
-                {
-                    try
-                    {
-                        string fileName = Path.GetFileName(item.FileName);
-                        var attachment = new Attachment(item.InputStream, fileName);
-                        mm.Attachments.Add(attachment);
-                    }
-                    catch (Exception) { }
-                }
-            }
+            //foreach (var item in model.ResumeUpload)
+            //{
+            //    if (item != null && item.ContentLength > 0)
+            //    {
+            //        try
+            //        {
+            //            string fileName = Path.GetFileName(item.FileName);
+            //            var attachment = new Attachment(item.InputStream, fileName);
+            //            mm.Attachments.Add(attachment);
+            //        }
+            //        catch (Exception) { }
+            //    }
+            //}
 
             client.Send(mm);
 
