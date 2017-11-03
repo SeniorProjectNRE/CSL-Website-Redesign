@@ -866,6 +866,90 @@
                                     </div>
                                 </div>
                             </div>
+
+
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading5'>
+                                    <h3 class='panel-title'>
+                                        <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>Step 5: Resume</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                                    <div class='panel-body'>
+
+                                        <p>
+                                            Please submit your current resume in .docx or .pdf format under 5 MB. Your resume must include your most recent
+                                            employment and because a standard state application is not requested at this time, the resume must also <strong>
+                                                include
+                                                complete "to" and "from" dates (month/day/year), time base including number of hours worked per week, job titles,
+                                                and relevant college degree completed
+                                            </strong>. Resumes received without this information will result in rejection of your
+                                            application.
+                                        </p>
+                                        <p>
+                                            Click on the browse button to locate the file. If you have an older version of Word that only produces .doc files,
+                                            there are many free tools online to convert to PDF.
+                                        </p>
+
+                                        <span class="required-label">*</span> 
+                                        @Html.LabelFor(m => m.ResumeUpload)
+                                        <input type="file" name="file" />
+                                        @Html.ValidationMessage("ResumeUpload", new { @class = "text-danger" })
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading6'>
+                                    <h3 class='panel-title'>
+                                        <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>Step 6: Signature</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
+
+                                    <div class='panel-body'>
+
+                                        <div class="tab-body">
+                                            <div class="checkbox">
+                                                <label class="normal">
+                                                    @Html.RadioButtonFor(m=> m.isCertified, new { type = "checkbox" })
+                                                    <span class="required-label">*</span> By checking this box, I hereby certify under penalty of perjury that the information I have entered on this
+                                                    application is true and complete to the best of my knowledge. I further understand that all information is subject
+                                                    to verification and that any false, incomplete, or incorrect statements may result in my disqualification from the
+                                                    examination process or dismissal from employment with the State of California. I authorize the employers and
+                                                    educational institutions identified on this application to release any information they may have concerning my
+                                                    employment or education to the State of California.
+                                                </label>
+                                                @Html.ValidationMessage("isCertified", new { @class = "text-danger" })
+                                            </div>
+                                            <div class="form-group half">
+                                                <span class="required-label">*</span>@Html.LabelFor(m=>m.Signature)
+                                                @Html.TextBoxFor(m=>m.Signature, new{type="text", @class="form-control"})
+                                                @Html.ValidationMessage("Signature", new { @class = "text-danger" })
+                                            </div>
+                                            <div class="form-group half">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Date)
+                                                @Html.TextBoxFor(m => m.Date, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("Date", new { @class = "text-danger" })
+                                            </div>
+
+
+                                            <!--add captcha here-->
+
+                                            <div class="form-group">
+                                                <div class="pull-right">
+                                                    <button type="submit" value="Submit"class="btn btn-default pull-right" >Submit</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div><!--end accordion-->
                     }
                 </div>
