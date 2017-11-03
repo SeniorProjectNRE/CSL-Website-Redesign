@@ -10,7 +10,7 @@
         <div class="section section-standout">
             <div class="container">
                 <div class="group">
-                    @using (Html.BeginForm("Apply", "Librarian", FormMethod.Post))
+                    @using (Html.BeginForm("Apply", "Librarian", FormMethod.Post, new { enctype = "multipart/form-data" }))
                     {
                         @Html.ValidationSummary(false, "", new { @class = "text-danger" })
 
@@ -619,11 +619,13 @@
                             </div>
                         </div>
 
-                        @*<div class="form-group">
+                        <div class="form-group">
                             <div class="half">
+                                @Html.LabelFor(m => m.ResumeUpload)
                                 <input type="file" name="file"/>
+                                @Html.ValidationMessage("ResumeUpload", new { @class = "text-danger" })
                             </div>
-                        </div>*@
+                        </div>
 
                         <div class="form-group">
                             <div class="half">
