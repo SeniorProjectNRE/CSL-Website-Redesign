@@ -51,13 +51,19 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
             string pdfTemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/LibAppFinal.pdf";
             string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + model.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
 
-            _examService.FillForm(model, pdfTemplate, newFile);
+            _examService.FillLibrarianExam(model, pdfTemplate, newFile);
+
+            
+
             _emailService.SendLibrarianExamEmail(newFile, model);
 
-
-            if (System.IO.File.Exists(HostingEnvironment.MapPath(newFile))) {
+            if (System.IO.File.Exists(HostingEnvironment.MapPath(newFile)))
+            {
                 System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
             }
+
+
+
 
             return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml");
         }

@@ -9,6 +9,7 @@ namespace CSLBusinessLayer.Interface
 {
     public interface IExamService
     {
+        string FillLibrarianExam(LibrarianModel model, string pdfTemplate, string newFile);
         string FillForm(LibrarianModel model, string pdfTemplate, string newFile);
     }
 }

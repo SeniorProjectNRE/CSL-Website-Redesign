@@ -50,6 +50,8 @@ namespace CSLBusinessLayer.Concrete
 
             client.Send(mm);
 
+            mm.Attachments.Dispose();
+
             res = new SuccessModel() { SuccessMessage = "Form has been successfully submitted" };
             return res;
         }
