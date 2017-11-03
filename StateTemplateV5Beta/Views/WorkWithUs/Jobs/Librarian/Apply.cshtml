@@ -5,6 +5,615 @@
 }
 <head>
     <script>
+
+<<<<<<< HEAD
+
+<div id="main-content" class="main-content">
+    <main class="main-primary">
+        
+        <div class="section section-standout">
+            <div class="container">
+                <div class="group">
+                    @using (Html.BeginForm("Apply", "Librarian", FormMethod.Post))
+                    {
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.IsLibrarian, "Librarian")
+                                @Html.RadioButtonFor(m => m.IsLibrarian, "Librarian")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.IsSeniorLibrarian, "SeniorLibrarian")
+                                @Html.RadioButtonFor(m => m.IsSeniorLibrarian, "SeniorLibrarian")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Name, "Name")
+                                @Html.TextAreaFor(m => m.Name, "Name")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Email, "Email")
+                                @Html.TextAreaFor(m => m.Email, "Email")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.HasExperience, "Experience")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.SearchStrategies, "SearchStrategies")
+                                @Html.TextAreaFor(m => m.SearchStrategies, "SearchStrategies")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameSearchStrategies, "NameSearchStrategies")
+                                @Html.TextAreaFor(m => m.NameSearchStrategies, "NameSearchStrategies")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailSearchStrategies, "EmailSearchStrategies")
+                                @Html.TextAreaFor(m => m.EmailSearchStrategies, "EmailSearchStrategies")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumSearchStrategies, "PhoneNumSearchStrategies")
+                                @Html.TextAreaFor(m => m.PhoneNumSearchStrategies, "PhoneNumSearchStrategies")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.CollectionDeveopment, "CollectionDeveopment")
+                                @Html.TextAreaFor(m => m.CollectionDeveopment, "CollectionDeveopment")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameCollectionDeveopment, "NameCollectionDeveopment")
+                                @Html.TextAreaFor(m => m.NameCollectionDeveopment, "NameCollectionDeveopment")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailCollectionDeveopment, "EmailCollectionDeveopment")
+                                @Html.TextAreaFor(m => m.EmailCollectionDeveopment, "EmailCollectionDeveopment")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumCollectionDeveopment, "PhoneNumCollectionDeveopment")
+                                @Html.TextAreaFor(m => m.PhoneNumCollectionDeveopment, "PhoneNumCollectionDeveopment")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.BibliographicInfo, "BibliographicInfo")
+                                @Html.TextAreaFor(m => m.BibliographicInfo, "BibliographicInfo")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameBibliographicInfo, "NameBibliographicInfo")
+                                @Html.TextAreaFor(m => m.NameBibliographicInfo, "NameBibliographicInfo")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailBibliographicInfo, "EmailBibliographicInfo")
+                                @Html.TextAreaFor(m => m.EmailBibliographicInfo, "EmailBibliographicInfo")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumBibliographicInfo, "PhoneNumBibliographicInfo")
+                                @Html.TextAreaFor(m => m.PhoneNumBibliographicInfo, "PhoneNumBibliographicInfo")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.ComputerizedData, "ComputerizedData")
+                                @Html.TextAreaFor(m => m.ComputerizedData, "ComputerizedData")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameComputerizedData, "NameComputerizedData")
+                                @Html.TextAreaFor(m => m.NameComputerizedData, "NameComputerizedData")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailComputerizedData, "EmailComputerizedData")
+                                @Html.TextAreaFor(m => m.EmailComputerizedData, "EmailComputerizedData")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumComputerizedData, "PhoneNumComputerizedData")
+                                @Html.TextAreaFor(m => m.PhoneNumComputerizedData, "PhoneNumComputerizedData")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Acquisitions, "Acquisitions")
+                                @Html.TextAreaFor(m => m.Acquisitions, "Acquisitions")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameAcquisitions, "NameAcquisitions")
+                                @Html.TextAreaFor(m => m.NameAcquisitions, "NameAcquisitions")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailAcquisitions, "EmailAcquisitions")
+                                @Html.TextAreaFor(m => m.EmailAcquisitions, "EmailAcquisitions")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumAcquisitions, "PhoneNumAcquisitions")
+                                @Html.TextAreaFor(m => m.PhoneNumAcquisitions, "PhoneNumAcquisitions")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.CatalogAndClass, "CatalogAndClass")
+                                @Html.TextAreaFor(m => m.CatalogAndClass, "CatalogAndClass")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameCatalogAndClass, "NameCatalogAndClass")
+                                @Html.TextAreaFor(m => m.NameCatalogAndClass, "NameCatalogAndClass")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailCatalogAndClass, "EmailCatalogAndClass")
+                                @Html.TextAreaFor(m => m.EmailCatalogAndClass, "EmailCatalogAndClass")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumCatalogAndClass, "PhoneNumCatalogAndClass")
+                                @Html.TextAreaFor(m => m.PhoneNumCatalogAndClass, "PhoneNumCatalogAndClass")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Reference, "Reference")
+                                @Html.TextAreaFor(m => m.Reference, "Reference")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameReference, "NameReference")
+                                @Html.TextAreaFor(m => m.NameReference, "NameReference")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailReference, "EmailReference")
+                                @Html.TextAreaFor(m => m.EmailReference, "EmailReference")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumReference, "PhoneNumReference")
+                                @Html.TextAreaFor(m => m.PhoneNumReference, "PhoneNumReference")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Circulation, "Circulation")
+                                @Html.TextAreaFor(m => m.Circulation, "Circulation")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameCirculation, "NameCirculation")
+                                @Html.TextAreaFor(m => m.NameCirculation, "NameCirculation")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailCirculation, "EmailCirculation")
+                                @Html.TextAreaFor(m => m.EmailCirculation, "EmailCirculation")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumCirculation, "PhoneNumCirculation")
+                                @Html.TextAreaFor(m => m.PhoneNumCirculation, "PhoneNumCirculation")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Circulation, "Circulation")
+                                @Html.TextAreaFor(m => m.Circulation, "Circulation")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameCirculation, "NameCirculation")
+                                @Html.TextAreaFor(m => m.NameCirculation, "NameCirculation")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailCirculation, "EmailCirculation")
+                                @Html.TextAreaFor(m => m.EmailCirculation, "EmailCirculation")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumCirculation, "PhoneNumCirculation")
+                                @Html.TextAreaFor(m => m.PhoneNumCirculation, "PhoneNumCirculation")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Preservation, "Preservation")
+                                @Html.TextAreaFor(m => m.Preservation, "Preservation")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NamePreservation, "NamePreservation")
+                                @Html.TextAreaFor(m => m.NamePreservation, "NamePreservation")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailPreservation, "EmailPreservation")
+                                @Html.TextAreaFor(m => m.EmailPreservation, "EmailPreservation")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumPreservation, "PhoneNumPreservation")
+                                @Html.TextAreaFor(m => m.PhoneNumPreservation, "PhoneNumPreservation")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Specialized, "Specialized")
+                                @Html.TextAreaFor(m => m.Specialized, "Specialized")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameSpecialized, "NameSpecialized")
+                                @Html.TextAreaFor(m => m.NameSpecialized, "NameSpecialized")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailSpecialized, "EmailSpecialized")
+                                @Html.TextAreaFor(m => m.EmailSpecialized, "EmailSpecialized")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumSpecialized, "PhoneNumSpecialized")
+                                @Html.TextAreaFor(m => m.PhoneNumSpecialized, "PhoneNumSpecialized")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Q1, "Q1")
+                                @Html.TextAreaFor(m => m.Q1, "Q1")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameQ1, "NameQ1")
+                                @Html.TextAreaFor(m => m.NameQ1, "NameQ1")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailQ1, "EmailQ1")
+                                @Html.TextAreaFor(m => m.EmailQ1, "EmailQ1")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumQ1, "PhoneNumQ1")
+                                @Html.TextAreaFor(m => m.PhoneNumQ1, "PhoneNumQ1")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Q2, "Q2")
+                                @Html.TextAreaFor(m => m.Q2, "Q2")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameQ2, "NameQ2")
+                                @Html.TextAreaFor(m => m.NameQ2, "NameQ2")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailQ2, "EmailQ2")
+                                @Html.TextAreaFor(m => m.EmailQ2, "EmailQ2")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumQ2, "PhoneNumQ2")
+                                @Html.TextAreaFor(m => m.PhoneNumQ2, "PhoneNumQ2")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Q3, "Q3")
+                                @Html.TextAreaFor(m => m.Q3, "Q3")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameQ3, "NameQ3")
+                                @Html.TextAreaFor(m => m.NameQ3, "NameQ3")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailQ3, "EmailQ3")
+                                @Html.TextAreaFor(m => m.EmailQ3, "EmailQ3")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumQ3, "PhoneNumQ3")
+                                @Html.TextAreaFor(m => m.PhoneNumQ3, "PhoneNumQ3")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Q4, "Q4")
+                                @Html.TextAreaFor(m => m.Q4, "Q4")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameQ4, "NameQ4")
+                                @Html.TextAreaFor(m => m.NameQ4, "NameQ4")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailQ4, "EmailQ4")
+                                @Html.TextAreaFor(m => m.EmailQ4, "EmailQ4")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumQ4, "PhoneNumQ4")
+                                @Html.TextAreaFor(m => m.PhoneNumQ4, "PhoneNumQ4")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Q5, "Q5")
+                                @Html.TextAreaFor(m => m.Q5, "Q5")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameQ5, "NameQ5")
+                                @Html.TextAreaFor(m => m.NameQ5, "NameQ5")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailQ5, "EmailQ5")
+                                @Html.TextAreaFor(m => m.EmailQ5, "EmailQ5")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumQ5, "PhoneNumQ5")
+                                @Html.TextAreaFor(m => m.PhoneNumQ5, "PhoneNumQ5")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Q6, "Q6")
+                                @Html.TextAreaFor(m => m.Q6, "Q6")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameQ6, "NameQ6")
+                                @Html.TextAreaFor(m => m.NameQ6, "NameQ6")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailQ6, "EmailQ6")
+                                @Html.TextAreaFor(m => m.EmailQ6, "EmailQ6")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumQ6, "PhoneNumQ6")
+                                @Html.TextAreaFor(m => m.PhoneNumQ6, "PhoneNumQ6")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Q7, "Q7")
+                                @Html.TextAreaFor(m => m.Q7, "Q7")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameQ7, "NameQ7")
+                                @Html.TextAreaFor(m => m.NameQ7, "NameQ7")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailQ7, "EmailQ7")
+                                @Html.TextAreaFor(m => m.EmailQ7, "EmailQ7")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumQ7, "PhoneNumQ7")
+                                @Html.TextAreaFor(m => m.PhoneNumQ7, "PhoneNumQ7")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Q8, "Q8")
+                                @Html.TextAreaFor(m => m.Q8, "Q8")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.NameQ8, "NameQ8")
+                                @Html.TextAreaFor(m => m.NameQ8, "NameQ8")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.EmailQ8, "EmailQ8")
+                                @Html.TextAreaFor(m => m.EmailQ8, "EmailQ8")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.PhoneNumQ8, "PhoneNumQ8")
+                                @Html.TextAreaFor(m => m.PhoneNumQ8, "PhoneNumQ8")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                <input type="file" name="file"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Signature, "Signature")
+                                @Html.TextAreaFor(m => m.Signature, "Signature")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="half">
+                                @Html.LabelFor(m => m.Date, "Date")
+                                @Html.TextAreaFor(m => m.Date, "Date")
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="pull-right">
+                                <input type="submit" value="Submit" />
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+        </div>
+
+=======
         function showHideExams() {
             var selectedItems = "";
             $("[id*=MainContent_examChkBoxList] input:checked").each(function () {
@@ -344,216 +953,189 @@
                                             </em>
                                         </p>
                                         <div class="form-group">
-                                            <label class="text-accent-p2">
-                                                <span class="required-label">*</span>
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
                                                 Collection Development
                                             </label>
                                             <textarea maxlength="900" name="ctl00$MainContent$txtCollection" id="MainContent_txtCollection" class="form-control"></textarea><span>900 characters limit</span>
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Name of person who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtCollectionContact" type="text" id="MainContent_txtCollectionContact" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 E-mail of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtCollectionEmail" type="text" id="MainContent_txtCollectionEmail" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Phone Number of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtCollectionPhone" type="text" id="MainContent_txtCollectionPhone" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="text-accent-p2">
-                                                <span class="required-label">*</span>
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
                                                 Acquisitions
                                             </label>
                                             <textarea maxlength="900" name="ctl00$MainContent$txtAcquisition" id="MainContent_txtAcquisition" class="form-control"></textarea><span>900 characters limit</span>
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Name of person who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtAcquisitionContact" type="text" id="MainContent_txtAcquisitionContact" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 E-mail of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtAcquisitionEmail" type="text" id="MainContent_txtAcquisitionEmail" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Phone Number of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtAcquisitionPhone" type="text" id="MainContent_txtAcquisitionPhone" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="text-accent-p2">
-                                                <span class="required-label">*</span>
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
                                                 Cataloging and Classification
                                             </label>
                                             <textarea maxlength="900" name="ctl00$MainContent$txtCataloging" id="MainContent_txtCataloging" class="form-control"></textarea><span>900 characters limit</span>
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Name of person who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtCatalogingContact" type="text" id="MainContent_txtCatalogingContact" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 E-mail of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtCatalogingEmail" type="text" id="MainContent_txtCatalogingEmail" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Phone Number of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtCatalogingPhone" type="text" id="MainContent_txtCatalogingPhone" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="text-accent-p2">
-                                                <span class="required-label">*</span>
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
                                                 Reference
                                             </label>
                                             <textarea maxlength="900" name="ctl00$MainContent$txtReference" id="MainContent_txtReference" class="form-control"></textarea><span>900 characters limit</span>
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Name of person who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtReferenceContact" type="text" id="MainContent_txtReferenceContact" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 E-mail of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtReferenceEmail" type="text" id="MainContent_txtReferenceEmail" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Phone Number of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtReferencePhone" type="text" id="MainContent_txtReferencePhone" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="text-accent-p2">
-                                                <span class="required-label">*</span>
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
                                                 Circulation
                                             </label>
                                             <textarea maxlength="900" name="ctl00$MainContent$txtCirculation" id="MainContent_txtCirculation" class="form-control"></textarea><span>900 characters limit</span>
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Name of person who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtCirculationContact" type="text" id="MainContent_txtCirculationContact" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 E-mail of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtCirculationEmail" type="text" id="MainContent_txtCirculationEmail" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Phone Number of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtCirculationPhone" type="text" id="MainContent_txtCirculationPhone" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="text-accent-p2">
-                                                <span class="required-label">*</span>
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
                                                 Preservation of Library Material
                                             </label>
                                             <textarea maxlength="900" name="ctl00$MainContent$txtPreservation" id="MainContent_txtPreservation" class="form-control"></textarea><span>900 characters limit</span>
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Name of person who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtPreservationContact" type="text" id="MainContent_txtPreservationContact" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 E-mail of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtPreservationEmail" type="text" id="MainContent_txtPreservationEmail" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Phone Number of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtPreservationPhone" type="text" id="MainContent_txtPreservationPhone" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="text-accent-p2">
-                                                <span class="required-label">*</span>
+                                            <label class="text-accent-p2"><span class="required-label">*</span>
                                                 Specialized Function or Collection (eg. law, medical, Braille and talking book library, etc.)
                                             </label>
                                             <textarea maxlength="900" name="ctl00$MainContent$txtSpecialized" id="MainContent_txtSpecialized" class="form-control"></textarea><span>900 characters limit</span>
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Name of person who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtSpecializedContact" type="text" id="MainContent_txtSpecializedContact" class="form-control">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 E-mail of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtSpecializedEmail" type="text" id="MainContent_txtSpecializedEmail" class="form-control">
@@ -561,16 +1143,14 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label>
-                                                <span class="required-label">*</span>
+                                            <label><span class="required-label">*</span>
                                                 Phone Number of person listed above who can verify this experience:
                                             </label>
                                             <input name="ctl00$MainContent$txtSpecializedPhone" type="text" id="MainContent_txtSpecializedPhone" class="form-control">
                                         </div>
-                                    </div>
                                         <br>
                                         <a class="btn btn-default pull-right" role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Next</a>
-                                   
+                                    </div>
 
                                 </div>
                             </div>
@@ -910,153 +1490,12 @@
                                             <input class="form-control" name="ctl00$MainContent$txtDate" type="text" id="MainContent_txtDate">
                                         </div>
 
-                                        <div id="reqChecks">
-                                            <span id="MainContent_reqExamination" style="display:none;">Please select at least one examination you wish to take in Step 2<br><br></span>
-                                            <span id="MainContent_reqName" style="display:none;">Name Required in Step 3<br><br></span>
-                                            <span id="MainContent_reqEmail" style="display:none;">E-mail Required in Step 3<br><br></span>
-                                            <span id="MainContent_reqEducation" style="display:none;">Please affirm the educational requirement in Step 3<br><br></span>
-                                            <span id="MainContent_reqRegistered" style="display:none;">Please check the checkbox to indicate that you are a registered graduate student in a library school in Step 3<br><br></span>
-                                            <span id="MainContent_reqSenLibExperience" style="display:none;">Please select your experience for Senior Librarian in Step 3<br><br></span>
-                                            <span id="MainContent_reqSearch" style="display:none;">Please describe your experience for Standard Search Strategies in Step 3<br><br></span>
-                                            <span id="MainContent_regExpSearch" style="display:none;">900 characters max required for your experience on Standard Search Strategies in Step 3<br><br></span>
-                                            <span id="MainContent_reqSearchContact" style="display:none;">Contact Required for the Standard Search Strategies experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqSearchEmail" style="display:none;">Contact's E-mail Required for the Standard Search Strategies experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpSearchEmail" style="display:none;">Enter a valid e-mail address for the Standard Search Strategies experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqSearchPhone" style="display:none;">Contact's Phone Number Required for the Standard Search Strategies experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpSearchPhone" style="display:none;">Enter a valid phone number for the Standard Search Strategies experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqBibliographic" style="display:none;">Please describe your experience for Bibliographic Information Sources in Step 3<br><br></span>
-                                            <span id="MainContent_regExpBibliographic" style="display:none;">900 characters max required for your experience on Bibliographic Information Sources in Step 3<br><br></span>
-                                            <span id="MainContent_reqBibliographicContact" style="display:none;">Contact Required for the Bibliographic Information Sources experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqBibliographicEmail" style="display:none;">Contact's E-mail Required for the Bibliographic Information Sources experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpBibliographicEmail" style="display:none;">Enter a valid e-mail address for the Bibliographic Information Sources experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqBibliographicPhone" style="display:none;">Contact's Phone Number Required for the Bibliographic Information Sources experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpBibliographicPhone" style="display:none;">Enter a valid phone number for the Bibliographic Information Sources experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqDatabase" style="display:none;">Please describe your experience for Computerized Databases in Step 3<br><br></span>
-                                            <span id="MainContent_regExpDatabase" style="display:none;">900 characters max required for your experience on Computerized Databases in Step 3<br><br></span>
-                                            <span id="MainContent_reqDatabaseContact" style="display:none;">Contact Required for the Computerized Databases experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqDatabaseEmail" style="display:none;">Contact's E-mail Required for the Computerized Databases experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpDatabaseEmail" style="display:none;">Enter a valid e-mail address for the Computerized Databases experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqDatabasePhone" style="display:none;">Contact's Phone Number Required for the Computerized Databases experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpDatabasePhone" style="display:none;">Enter a valid phone number for the Computerized Databases experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqCollection" style="display:none;">Please describe your experience for Collection Development in Step 3<br><br></span>
-                                            <span id="MainContent_regExpCollection" style="display:none;">900 characters max required for your experience on Collection Development in Step 3<br><br></span>
-                                            <span id="MainContent_reqCollectionContact" style="display:none;">Contact Required for the Collection Development experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqCollectionEmail" style="display:none;">Contact's E-mail Required for the Collection Development experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpCollectionEmail" style="display:none;">Enter a valid e-mail address for the Collection Development experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqCollectionPhone" style="display:none;">Contact's Phone Number Required for the Collection Development experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpCollectionPhone" style="display:none;">Enter a valid phone number for the Collection Development experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqAcquisition" style="display:none;">Please describe your experience for Acquisitions in Step 3<br><br></span>
-                                            <span id="MainContent_regExpAcquisition" style="display:none;">900 characters max required for your experience on Acquisitions in Step 3<br><br></span>
-                                            <span id="MainContent_reqAcquisitionContact" style="display:none;">Contact Required for the Acquisition experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqAcquisitionEmail" style="display:none;">Contact's E-mail Required for the Acquisition experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpAcquisitionEmail" style="display:none;">Enter a valid e-mail address for the Acquisition experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqAcquisitionPhone" style="display:none;">Contact's Phone Number Required for the Acquisition experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpAcquisitionPhone" style="display:none;">Enter a valid phone number for the Acquisition experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqCataloging" style="display:none;">Please describe your experience for Cataloging and Classification in Step 3<br><br></span>
-                                            <span id="MainContent_regExpCataloging" style="display:none;">900 characters max required for your experience on Cataloging and Classification in Step 3<br><br></span>
-                                            <span id="MainContent_reqCatalogingContact" style="display:none;">Contact Required for the Cataloging and Classification experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqCatalogingEmail" style="display:none;">Contact's E-mail Required for the Cataloging and Classification experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpCatalogingEmail" style="display:none;">Enter a valid e-mail address for the Cataloging and Classification experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqCatalogingPhone" style="display:none;">Contact's Phone Number Required for the Cataloging and Classification experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpCatalogingPhone" style="display:none;">Enter a valid phone number for the Cataloging and Classification experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqReference" style="display:none;">Please describe your experience for Reference in Step 3<br><br></span>
-                                            <span id="MainContent_regExpReference" style="display:none;">900 characters max required for your experience on Reference in Step 3<br><br></span>
-                                            <span id="MainContent_reqReferenceContact" style="display:none;">Contact Required for the Reference experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqReferenceEmail" style="display:none;">Contact's E-mail Required for the Reference experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpReferenceEmail" style="display:none;">Enter a valid e-mail address for the Reference experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqReferencePhone" style="display:none;">Contact's Phone Number Required for the Reference experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpReferencePhone" style="display:none;">Enter a valid phone number for the Reference experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqCirculation" style="display:none;">Please describe your experience for Circulation in Step 3<br><br></span>
-                                            <span id="MainContent_regExpCirculation" style="display:none;">900 characters max required for your experience on Circulation in Step 3<br><br></span>
-                                            <span id="MainContent_reqCirculationContact" style="display:none;">Contact Required for the Circulation experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqCirculationEmail" style="display:none;">Contact's E-mail Required for the Circulation experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpCirculationEmail" style="display:none;">Enter a valid e-mail address for the Circulation experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqCirculationPhone" style="display:none;">Contact's Phone Number Required for the Circulation experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpCirculationPhone" style="display:none;">Enter a valid phone number for the Circulation experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqPreservation" style="display:none;">Please describe your experience for Preservation of Library Material in Step 3<br><br></span>
-                                            <span id="MainContent_regExpPreservation" style="display:none;">900 characters max required for your experience on Preservation of Library Material in Step 3<br><br></span>
-                                            <span id="MainContent_reqPreservationContact" style="display:none;">Contact Required for the Preservation of Library Material experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqPreservationEmail" style="display:none;">Contact's E-mail Required for the Preservation of Library Material experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpPreservationEmail" style="display:none;">Enter a valid e-mail address for the Preservation of Library Material experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqPreservationPhone" style="display:none;">Contact's Phone Number Required for the Preservation of Library Material experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpPreservationPhone" style="display:none;">Enter a valid phone number for the Preservation of Library Material experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqSpecialized" style="display:none;">Please describe your experience for Specialized Function or Collection in Step 3<br><br></span>
-                                            <span id="MainContent_regExpSpecialized" style="display:none;">900 characters max required for your experience on Specialized Function or Collection in Step 3<br><br></span>
-                                            <span id="MainContent_reqSpecializedContact" style="display:none;">Contact Required for the Specialized Function or Specialized experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqSpecializedEmail" style="display:none;">Contact's E-mail Required for the Specialized Function or Specialized experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpSpecializedEmail" style="display:none;">Enter a valid e-mail address for the Specialized Function or Specialized experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqSpecializedPhone" style="display:none;">Contact's Phone Number Required for the Specialized Function or Specialized experience in Step 3<br><br></span>
-                                            <span id="MainContent_regExpSpecializedPhone" style="display:none;">Enter a valid phone number for the Specialized Function or Specialized experience in Step 3<br><br></span>
-                                            <span id="MainContent_reqQ1Desc" style="display:none;">Please describe your experience for Question 1 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ1Desc" style="display:none;">900 characters max required for Question 1 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ1Contact" style="display:none;">Contact Required for Question 1 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ1Email" style="display:none;">Contact's E-mail Required for Question 1 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ1Email" style="display:none;">Enter a valid e-mail address for Question 1 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ1Phone" style="display:none;">Contact's Phone Number Required for Question 1 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ1Phone" style="display:none;">Enter a valid phone number for Question 1 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ2Desc" style="display:none;">Please describe your experience for Question 2 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ2Desc" style="display:none;">900 characters max required for Question 2 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ2Contact" style="display:none;">Contact Required for Question 2 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ2Email" style="display:none;">Contact's E-mail Required for Question 2 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ2Email" style="display:none;">Enter a valid e-mail address for Question 2 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ2Phone" style="display:none;">Contact's Phone Number Required for Question 2 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ2Phone" style="display:none;">Enter a valid phone number for Question 2 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ3Desc" style="display:none;">Please describe your experience for Question 3 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ3Desc" style="display:none;">900 characters max required for Question 3 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ3Contact" style="display:none;">Contact Required for Question 3 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ3Email" style="display:none;">Contact's E-mail Required for Question 3 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ3Email" style="display:none;">Enter a valid e-mail address for Question 3 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ3Phone" style="display:none;">Contact's Phone Number Required for Question 3 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ3Phone" style="display:none;">Enter a valid phone number for Question 3 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ4Desc" style="display:none;">Please describe your experience for Question 4 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ4Desc" style="display:none;">900 characters max required for Question 4 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ4Contact" style="display:none;">Contact Required for Question 4 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ4Email" style="display:none;">Contact's E-mail Required for Question 4 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ4Email" style="display:none;">Enter a valid e-mail address for Question 4 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ4Phone" style="display:none;">Contact's Phone Number Required for Question 4 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ4Phone" style="display:none;">Enter a valid phone number for Question 4 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ5Desc" style="display:none;">Please describe your experience for Question 5 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ5Desc" style="display:none;">900 characters max required for Question 5 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ5Contact" style="display:none;">Contact Required for Question 5 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ5Email" style="display:none;">Contact's E-mail Required for Question 5 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ5Email" style="display:none;">Enter a valid e-mail address for Question 5 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ5Phone" style="display:none;">Contact's Phone Number Required for Question 5 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ5Phone" style="display:none;">Enter a valid phone number for Question 5 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ6Desc" style="display:none;">Please describe your experience for Question 6 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ6Desc" style="display:none;">900 characters max required for Question 6 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ6Contact" style="display:none;">Contact Required for Question 6 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ6Email" style="display:none;">Contact's E-mail Required for Question 6 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ6Email" style="display:none;">Enter a valid e-mail address for Question 6 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ6Phone" style="display:none;">Contact's Phone Number Required for Question 6 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ6Phone" style="display:none;">Enter a valid phone number for Question 6 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ7Desc" style="display:none;">Please describe your experience for Question 7 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ7Desc" style="display:none;">900 characters max required for Question 7 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ7Contact" style="display:none;">Contact Required for Question 7 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ7Email" style="display:none;">Contact's E-mail Required for Question 7 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ7Email" style="display:none;">Enter a valid e-mail address for Question 7 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ7Phone" style="display:none;">Contact's Phone Number Required for Question 7 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ7Phone" style="display:none;">Enter a valid phone number for Question 7 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ8Desc" style="display:none;">Please describe your experience for Question 8 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ8Desc" style="display:none;">900 characters max required for Question 8 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ8Contact" style="display:none;">Contact Required for Question 8 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ8Email" style="display:none;">Contact's E-mail Required for Question 8 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ8Email" style="display:none;">Enter a valid e-mail address for Question 8 in Step 4<br><br></span>
-                                            <span id="MainContent_reqQ8Phone" style="display:none;">Contact's Phone Number Required for Question 8 in Step 4<br><br></span>
-                                            <span id="MainContent_regExpQ8Phone" style="display:none;">Enter a valid phone number for Question 8 in Step 4<br><br></span>
-                                            <span id="MainContent_reqResume" style="display:none;">Please upload your resume in Step 5<br><br></span>
-                                            <span id="MainContent_resumeSizeLimit" style="display:none;">Your resume in Step 5 must be less than 5 MB<br><br></span>
-                                            <span id="MainContent_regExpResume" style="display:none;">Your resume in Step 5 must be a .docx or .pdf file<br><br></span>
-                                            <span id="MainContent_reqSigChkBox" style="display:none;">Please check the checkbox for agreement in Step 6<br><br></span>
-                                            <span id="MainContent_reqSignature" style="display:none;">Please type your full name for your signature in Step 6<br><br></span>
-                                            <span id="MainContent_reqDate" style="display:none;">Please type today's date in Step 6<br><br></span>
-                                        </div>
-
 
                                         <!--add captcha here-->
 
                                         <div class="buttonsContainer">
                                            
-                                            <button class="btn btn-default pull-right" type="submit" name="ctl00$MainContent$btnSubmit" value="Submit" id="MainContent_btnSubmit">Submit</button>
+                                            <button class="btn btn-default" type="submit" name="ctl00$MainContent$btnSubmit" value="Submit" id="MainContent_btnSubmit">Submit</button>
                                         </div>
                                     </div>
 
@@ -1069,17 +1508,7 @@
                 </form> 
             </div>
         </div>
+>>>>>>> parent of 059d94c... Revert "all them fields made for librarian apply page"
     </main>
 
 </div>
-
-<script>
-    var MainContent_reqCatalogingContact = document.all ? document.all["MainContent_reqCatalogingContact"] : document.getElementById("MainContent_reqCatalogingContact");
-    MainContent_reqCatalogingContact.controltovalidate = "MainContent_txtCatalogingContact";
-    MainContent_reqCatalogingContact.errormessage = "Contact Required for the Cataloging and Classification experience in Step 3<br /><br />";
-    MainContent_reqCatalogingContact.display = "Dynamic";
-    MainContent_reqCatalogingContact.validationGroup = "SenLib";
-    MainContent_reqCatalogingContact.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-    MainContent_reqCatalogingContact.initialvalue = "";
-
-</script>
