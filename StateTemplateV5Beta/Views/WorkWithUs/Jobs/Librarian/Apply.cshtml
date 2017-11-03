@@ -1,658 +1,310 @@
 ﻿@model CSLBusinessObjects.Models.Exams.LibrarianModel
 @{
     ViewBag.Title = "Apply";
+    ViewBag.PageTitle = "Librarian and Senior Librarian Supplemental Application";
 }
 
+<head>
+    <style>
+        label.normal {
+            font-weight: 200;
+        }
+    </style>
+    <script>
+        function showHideExams() {
 
+            // if neither picked value = 0
+            // if librarian picked value = 1
+            // if senior librarian picked value = 2
+            // if both picked = 3
+
+            var selectedItems = 0;
+            {
+                //both
+                if (document.getElementById('SeniorLibrarian').checked == true && document.getElementById('Librarian').checked == true) {
+                    selectedItems = 3;
+                }
+                //neither
+                else if (document.getElementById('SeniorLibrarian').checked == false && document.getElementById('Librarian').checked == false) {
+                    selectedItems = 0;
+                }
+                //librarian checked
+                else if (document.getElementById('SeniorLibrarian').checked == false && document.getElementById('Librarian').checked == true) {
+                    selectedItems = 1;
+                }
+                //senior librarian checked
+                else if (document.getElementById('SeniorLibrarian').checked == true && document.getElementById('Librarian').checked == false) {
+                    selectedItems = 2;
+                }
+
+                console.log("selectedItems = " + selectedItems);
+            }
+
+            if (selectedItems == 1) {
+                $('.libEducation').show();
+                $('.senLibEducation').hide();
+                $('#senLibInfoExperience').hide();
+                $('#libFuncExperience').show();
+                $('#senLibFuncExperience').hide();
+                $('.tab-SenLib-question').hide();
+            }
+            else if (selectedItems == 2) {
+                $('.libEducation').hide();
+                $('.senLibEducation').show();
+                $('#senLibInfoExperience').show();
+                $('#libFuncExperience').hide();
+                $('#senLibFuncExperience').show();
+                $('.tab-SenLib-question').show();
+
+            }
+            else if (selectedItems == 3) {
+                $('.libEducation').hide();
+                $('.senLibEducation').show();
+                $('#senLibInfoExperience').show();
+                $('#libFuncExperience').show();
+                $('#senLibFuncExperience').show();
+                $('.tab-SenLib-question').show();
+
+            }
+            else if (selectedItems == 0) {
+                $('.senLibEducation').hide();
+                $('.libEducation').hide();
+                $('#senLibInfoExperience').hide();
+                $('#libFuncExperience').hide();
+                $('#senLibFuncExperience').hide();
+                $('.tab-SenLib-question').hide();
+            }
+        }
+
+        $(document).ready(function () {
+            $('.basicInfoExperience').hide();
+            $('.tab-SenLib-question').hide();
+
+            showHideExams();
+        });
+    </script>
+
+</head>
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        
-        <div class="section section-standout">
+
+        <div class="section">
             <div class="container">
+
+                <ol class="breadcrumb dynamic"></ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
                 <div class="group">
                     @using (Html.BeginForm("Apply", "Librarian", FormMethod.Post, new { enctype = "multipart/form-data" }))
                     {
                         @Html.ValidationSummary(false, "", new { @class = "text-danger" })
 
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.IsLibrarian)
-                                @Html.RadioButtonFor(m => m.IsLibrarian, true, "Librarian")
-                                @Html.ValidationMessage("Librarian", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.IsSeniorLibrarian)
-                                @Html.RadioButtonFor(m => m.IsSeniorLibrarian, true, "SeniorLibrarian")
-                                @Html.ValidationMessage("SeniorLibrarian", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Name)
-                                @Html.TextBoxFor(m => m.Name, "Name")
-                                @Html.ValidationMessage("Name", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Email)
-                                @Html.TextBoxFor(m => m.Email, "Email")
-                                @Html.ValidationMessage("Email", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.HasExperience)
-                                @Html.RadioButtonFor(m => m.HasExperience, true, "Experience") Yes
-                                @Html.RadioButtonFor(m => m.HasExperience, true, "Experience") Yes but different
-                                @Html.ValidationMessage("Experience", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.SearchStrategies)
-                                @Html.TextBoxFor(m => m.SearchStrategies, "SearchStrategies")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameSearchStrategies)
-                                @Html.TextBoxFor(m => m.NameSearchStrategies, "NameSearchStrategies")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailSearchStrategies)
-                                @Html.TextBoxFor(m => m.EmailSearchStrategies, "EmailSearchStrategies")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumSearchStrategies)
-                                @Html.TextBoxFor(m => m.PhoneNumSearchStrategies, "PhoneNumSearchStrategies")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.CollectionDeveopment)
-                                @Html.TextBoxFor(m => m.CollectionDeveopment, "CollectionDeveopment")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameCollectionDeveopment)
-                                @Html.TextBoxFor(m => m.NameCollectionDeveopment, "NameCollectionDeveopment")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailCollectionDeveopment)
-                                @Html.TextBoxFor(m => m.EmailCollectionDeveopment, "EmailCollectionDeveopment")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumCollectionDeveopment)
-                                @Html.TextBoxFor(m => m.PhoneNumCollectionDeveopment, "PhoneNumCollectionDeveopment")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.BibliographicInfo)
-                                @Html.TextBoxFor(m => m.BibliographicInfo, "BibliographicInfo")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameBibliographicInfo)
-                                @Html.TextBoxFor(m => m.NameBibliographicInfo, "NameBibliographicInfo")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailBibliographicInfo)
-                                @Html.TextBoxFor(m => m.EmailBibliographicInfo, "EmailBibliographicInfo")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumBibliographicInfo)
-                                @Html.TextBoxFor(m => m.PhoneNumBibliographicInfo, "PhoneNumBibliographicInfo")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.ComputerizedData)
-                                @Html.TextBoxFor(m => m.ComputerizedData, "ComputerizedData")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameComputerizedData)
-                                @Html.TextBoxFor(m => m.NameComputerizedData, "NameComputerizedData")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailComputerizedData)
-                                @Html.TextBoxFor(m => m.EmailComputerizedData, "EmailComputerizedData")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumComputerizedData)
-                                @Html.TextBoxFor(m => m.PhoneNumComputerizedData, "PhoneNumComputerizedData")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Acquisitions)
-                                @Html.TextBoxFor(m => m.Acquisitions, "Acquisitions")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameAcquisitions)
-                                @Html.TextBoxFor(m => m.NameAcquisitions, "NameAcquisitions")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailAcquisitions)
-                                @Html.TextBoxFor(m => m.EmailAcquisitions, "EmailAcquisitions")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumAcquisitions)
-                                @Html.TextBoxFor(m => m.PhoneNumAcquisitions, "PhoneNumAcquisitions")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.CatalogAndClass)
-                                @Html.TextBoxFor(m => m.CatalogAndClass, "CatalogAndClass")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameCatalogAndClass)
-                                @Html.TextBoxFor(m => m.NameCatalogAndClass, "NameCatalogAndClass")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailCatalogAndClass)
-                                @Html.TextBoxFor(m => m.EmailCatalogAndClass, "EmailCatalogAndClass")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumCatalogAndClass)
-                                @Html.TextBoxFor(m => m.PhoneNumCatalogAndClass, "PhoneNumCatalogAndClass")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Reference)
-                                @Html.TextBoxFor(m => m.Reference, "Reference")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameReference)
-                                @Html.TextBoxFor(m => m.NameReference, "NameReference")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailReference)
-                                @Html.TextBoxFor(m => m.EmailReference, "EmailReference")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumReference)
-                                @Html.TextBoxFor(m => m.PhoneNumReference, "PhoneNumReference")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Circulation)
-                                @Html.TextBoxFor(m => m.Circulation, "Circulation")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameCirculation)
-                                @Html.TextBoxFor(m => m.NameCirculation, "NameCirculation")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailCirculation)
-                                @Html.TextBoxFor(m => m.EmailCirculation, "EmailCirculation")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumCirculation)
-                                @Html.TextBoxFor(m => m.PhoneNumCirculation, "PhoneNumCirculation")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Circulation)
-                                @Html.TextBoxFor(m => m.Circulation, "Circulation")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameCirculation)
-                                @Html.TextBoxFor(m => m.NameCirculation, "NameCirculation")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailCirculation)
-                                @Html.TextBoxFor(m => m.EmailCirculation, "EmailCirculation")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumCirculation)
-                                @Html.TextBoxFor(m => m.PhoneNumCirculation, "PhoneNumCirculation")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Preservation)
-                                @Html.TextBoxFor(m => m.Preservation, "Preservation")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NamePreservation)
-                                @Html.TextBoxFor(m => m.NamePreservation, "NamePreservation")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailPreservation)
-                                @Html.TextBoxFor(m => m.EmailPreservation, "EmailPreservation")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumPreservation)
-                                @Html.TextBoxFor(m => m.PhoneNumPreservation, "PhoneNumPreservation")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Specialized)
-                                @Html.TextBoxFor(m => m.Specialized, "Specialized")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameSpecialized)
-                                @Html.TextBoxFor(m => m.NameSpecialized, "NameSpecialized")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailSpecialized)
-                                @Html.TextBoxFor(m => m.EmailSpecialized, "EmailSpecialized")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumSpecialized)
-                                @Html.TextBoxFor(m => m.PhoneNumSpecialized, "PhoneNumSpecialized")
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Q1)
-                                @Html.TextBoxFor(m => m.Q1)
-                                @Html.ValidationMessage("Q1", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameQ1)
-                                @Html.TextBoxFor(m => m.NameQ1)
-                                @Html.ValidationMessage("NameQ1", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailQ1)
-                                @Html.TextBoxFor(m => m.EmailQ1, "EmailQ1")
-                                @Html.ValidationMessage("EmailQ1", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ1)
-                                @Html.TextBoxFor(m => m.PhoneNumQ1, "PhoneNumQ1")
-                                @Html.ValidationMessage("PhoneNumQ1", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Q2)
-                                @Html.TextBoxFor(m => m.Q2, "Q2")
-                                @Html.ValidationMessage("Q2", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameQ2)
-                                @Html.TextBoxFor(m => m.NameQ2, "NameQ2")
-                                @Html.ValidationMessage("NameQ2", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailQ2)
-                                @Html.TextBoxFor(m => m.EmailQ2, "EmailQ2")
-                                @Html.ValidationMessage("EmailQ2", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ2)
-                                @Html.TextBoxFor(m => m.PhoneNumQ2, "PhoneNumQ2")
-                                @Html.ValidationMessage("PhoneNumQ2", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Q3)
-                                @Html.TextBoxFor(m => m.Q3, "Q3")
-                                @Html.ValidationMessage("Q3", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameQ3)
-                                @Html.TextBoxFor(m => m.NameQ3, "NameQ3")
-                                @Html.ValidationMessage("NameQ3", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailQ3)
-                                @Html.TextBoxFor(m => m.EmailQ3, "EmailQ3")
-                                @Html.ValidationMessage("EmailQ3", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ3)
-                                @Html.TextBoxFor(m => m.PhoneNumQ3, "PhoneNumQ3")
-                                @Html.ValidationMessage("PhoneNumQ3", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Q4)
-                                @Html.TextBoxFor(m => m.Q4, "Q4")
-                                @Html.ValidationMessage("Q4", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameQ4)
-                                @Html.TextBoxFor(m => m.NameQ4, "NameQ4")
-                                @Html.ValidationMessage("NameQ4", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailQ4)
-                                @Html.TextBoxFor(m => m.EmailQ4, "EmailQ4")
-                                @Html.ValidationMessage("EmailQ4", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ4)
-                                @Html.TextBoxFor(m => m.PhoneNumQ4, "PhoneNumQ4")
-                                @Html.ValidationMessage("PhoneNumQ4", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Q5)
-                                @Html.TextBoxFor(m => m.Q5, "Q5")
-                                @Html.ValidationMessage("Q5", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameQ5)
-                                @Html.TextBoxFor(m => m.NameQ5, "NameQ5")
-                                @Html.ValidationMessage("NameQ5", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailQ5)
-                                @Html.TextBoxFor(m => m.EmailQ5, "EmailQ5")
-                                @Html.ValidationMessage("EmailQ5", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ5)
-                                @Html.TextBoxFor(m => m.PhoneNumQ5, "PhoneNumQ5")
-                                @Html.ValidationMessage("PhoneNumQ5", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Q6)
-                                @Html.TextBoxFor(m => m.Q6, "Q6")
-                                @Html.ValidationMessage("Q6", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameQ6)
-                                @Html.TextBoxFor(m => m.NameQ6, "NameQ6")
-                                @Html.ValidationMessage("NameQ6", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailQ6)
-                                @Html.TextBoxFor(m => m.EmailQ6, "EmailQ6")
-                                @Html.ValidationMessage("EmailQ6", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ6)
-                                @Html.TextBoxFor(m => m.PhoneNumQ6, "PhoneNumQ6")
-                                @Html.ValidationMessage("PhoneNumQ6", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Q7)
-                                @Html.TextBoxFor(m => m.Q7, "Q7")
-                                @Html.ValidationMessage("Q7", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameQ7)
-                                @Html.TextBoxFor(m => m.NameQ7, "NameQ7")
-                                @Html.ValidationMessage("NameQ7", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailQ7)
-                                @Html.TextBoxFor(m => m.EmailQ7, "EmailQ7")
-                                @Html.ValidationMessage("EmailQ7", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ7)
-                                @Html.TextBoxFor(m => m.PhoneNumQ7, "PhoneNumQ7")
-                                @Html.ValidationMessage("PhoneNumQ7", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Q8)
-                                @Html.TextBoxFor(m => m.Q8, "Q8")
-                                @Html.ValidationMessage("Q8", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.NameQ8)
-                                @Html.TextBoxFor(m => m.NameQ8, "NameQ8")
-                                @Html.ValidationMessage("NameQ8", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.EmailQ8)
-                                @Html.TextBoxFor(m => m.EmailQ8, "EmailQ8")
-                                @Html.ValidationMessage("EmailQ8", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ8)
-                                @Html.TextBoxFor(m => m.PhoneNumQ8, "PhoneNumQ8")
-                                @Html.ValidationMessage("PhoneNumQ8", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.ResumeUpload)
-                                <input type="file" name="file"/>
-                                @Html.ValidationMessage("ResumeUpload", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Signature)
-                                @Html.TextBoxFor(m => m.Signature, "Signature")
-                                @Html.ValidationMessage("Signature", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="half">
-                                @Html.LabelFor(m => m.Date)
-                                @Html.TextBoxFor(m => m.Date, "Date")
-                                @Html.ValidationMessage("Date", new { @class = "text-danger" })
+                        <div class='panel-group' role='tablist' aria-multiselectable='true'>
+
+                            <div class='panel panel-default'>
+
+                                <div class='panel-heading' role='tab' id='heading1'>
+                                    <h3 class='panel-title'>
+                                        <a role='button' data-toggle='collapse' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Step 1: Instructions</a>
+                                    </h3>
+                                </div>
+
+                                <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                    <div class="panel-body">
+                                        <p>
+                                            Thank you for your interest in a position of Librarian and Senior Librarian at the California State Library.
+                                        </p>
+                                        <p>
+                                            In order to be considered for these jobs, it is first necessary for you to take and pass a civil service examination
+                                            with a score that is among the highest of the applicants who take the test.
+                                        </p>
+                                        <p>
+                                            Along with submission of a detailed resume, completion of this supplemental application is the examination process.
+                                            This supplemental application solicits specific information about your experience and background that is directly
+                                            relevant to these jobs.
+                                        </p>
+                                        <p>
+                                            Please answer each question, clearly, concisely, and truthfully on the attached form. Failure to follow these instructions will result in elimination from the examination process.
+                                            <strong>
+                                                Please note that there is no save function in this exam and it must be completed in one seating. We recommend that you review the questions and prepare your responses
+                                                before starting the exam.
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            There is no deadline for submission of your application materials.  This examination process will be available
+                                            throughout the year.  As vacancies occur, all individuals who have submitted their information and passed the
+                                            examination will be notified of the next steps to be considered for any available position.
+                                        </p>
+                                        <p>
+                                            The information you provide will be evaluated by a team of subject matter specialists who will rate your responses
+                                            on the quality and clarity of your writing as demonstrated by your responses, as well as the breadth and depth of
+                                            your relevant experience.  You will be given an overall score on this supplemental application and this will
+                                            determine your placement on the list of those who pass the examination.  You will be notified in writing of your
+                                            exam results.
+                                        </p>
+                                        <p>
+                                            If you pass the examination, you may then apply for and be considered for individual job vacancies in this
+                                            classification.   In addition, the Department may contact you directly as vacancies occur.
+                                        </p>
+                                        <p>
+                                            If you are selected to be considered for hire into a vacancy, you will be invited to participate in a comprehensive
+                                            hiring interview process consisting of the following:
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                Submission of a standard state application
+                                            </li>
+                                            <li>
+                                                A visual resume where you will be asked to make a five minute stand-up presentation discussing your experience and qualifications for the job
+                                            </li>
+                                            <li>
+                                                A set of interview questions designed to explore your specific qualifications
+                                            </li>
+                                        </ol>
+                                        <p>
+                                            If you have any questions, please contact us at <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or (916) 654-0202.
+                                        </p>
+                                        <br>
+                                        <div style="text-align:center; font-weight:bold;">
+                                            <p><strong>We wish you luck in the process.</strong></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading2'>
+                                    <h3 class='panel-title'>
+                                        <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Step 2: Examinations</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                    <div class="panel-body">
+
+                                        <p>
+                                            Please indicate the examination(s) you wish to take.  You may apply for and take one or two
+                                            examinations provided that you meet the minimum education and experience requirements for each classification.
+                                        </p>
+
+                                        <div id="examChkBoxContainer">
+                                            <div id="MainContent_examChkBoxList">
+                                                <!--librarian checkbox open librarian questions-->
+                                                <div class="checkbox">
+                                                    <label>
+                                                        @Html.RadioButtonFor(m => m.IsLibrarian, true, new { id = "Librarian", type = "checkbox", onclick = "showHideExams()" })
+                                                        Librarian
+                                                    </label>
+                                                </div>
+                                                <!--senior librarian checkbox open seniorlibrarian questions-->
+                                                <div class="checkbox">
+                                                    <label>
+                                                        @Html.RadioButtonFor(m => m.IsSeniorLibrarian, true, new { id = "SeniorLibrarian", type = "checkbox", onclick = "showHideExams()" })
+                                                        Senior Librarian
+                                                    </label>
+                                                </div>
+                                                @Html.ValidationMessage("Librarian", new { @class = "text-danger" })
+                                                @Html.ValidationMessage("SeniorLibrarian", new { @class = "text-danger" })
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="pull-right">
-                                <input type="submit" value="Submit" />
+
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading3'>
+                                    <h3 class='panel-title'>
+                                        <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Step 3: Basic Information</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                    <div class="panel-body">
+
+                                        <div id="nameEmailContainer">
+
+                                            <div id="basicInfoName" class="form-group half">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Name)
+                                                @Html.TextBoxFor(m => m.Name, "Name", new { @class = "form-control", })
+
+                                                @Html.ValidationMessage("Name", new { @class = "text-danger" })
+
+
+                                            </div>
+
+                                            <div id="basicInfoEmail " class="form-group half">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Email)
+                                                @Html.TextBoxFor(m => m.Email, "Email", new { @class = "form-control", type = "email" })
+                                                @Html.ValidationMessage("Email", new { @class = "text-danger" })
+                                            </div>
+
+                                        </div>
+                                        <br />
+                                        <div id="basicInfoEducation">
+
+                                            <div class="libEducation" style="display: none;">
+                                                <!--double check-->
+                                                <div class="form-group half">
+                                                    @Html.LabelFor(m => m.HasEducation)
+
+                                                    <div class="checkbox" id="MainContent_rblEducation">
+                                                        <label>
+                                                            @Html.RadioButtonFor(m => m.HasEducation, true)Yes
+                                                        </label>
+
+                                                        <label>
+                                                            @Html.RadioButtonFor(m => m.HasEducation, false)No
+                                                        </label>
+                                                        @Html.ValidationMessage("HasEducation", new { @class = "text-danger" })
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="senLibEducation">
+                                                <div class="form-group half">
+                                                    @Html.LabelFor(m => m.HasEducation)
+
+                                                    <div class="checkbox" id="MainContent_rblEducation">
+                                                        <label>
+                                                            @Html.RadioButtonFor(m => m.HasEducation, true)Yes
+                                                        </label>
+
+                                                        <label>
+                                                            @Html.RadioButtonFor(m => m.HasEducation, false)No
+                                                        </label>
+                                                        @Html.ValidationMessage("HasEducation", new { @class = "text-danger" })
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="libEducation" style="display: none;">
+                                            <div class="checkbox">
+
+                                                <label class="normal">
+                                                    @Html.RadioButtonFor(m => m.IfNot, true, new { type = "checkbox" }) <span class="required-label">*</span>If not, check here if you are a registered graduate student in a library school.
+                                                </label>
+                                            </div>
+                                            @Html.ValidationMessage("IfNot", new { @class = "text-danger" })
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
+
+
                         </div>
                     }
                 </div>
             </div>
-
         </div>
-
     </main>
 </div>

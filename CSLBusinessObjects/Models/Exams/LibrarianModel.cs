@@ -51,16 +51,16 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumSearchStrategies { get; set; }
 
         [Display(Name = "Collection Development")]
-        public string CollectionDeveopment { get; set; }
+        public string CollectionDevelopment { get; set; }
 
         [Display(Name = "Name of person who can verify this experience:")]
-        public string NameCollectionDeveopment { get; set; }
+        public string NameCollectionDevelopment { get; set; }
 
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
-        public string EmailCollectionDeveopment { get; set; }
+        public string EmailCollectionDevelopment { get; set; }
 
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
-        public string PhoneNumCollectionDeveopment { get; set; }
+        public string PhoneNumCollectionDevelopment { get; set; }
 
         [Display(Name = "Bibliographic Information Sources")]
         public string BibliographicInfo{ get; set; }
