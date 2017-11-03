@@ -2008,8 +2008,6 @@
     <Content Include="Views\CaliforniaHistory\Visiting.cshtml" />
     <Content Include="Views\WorkWithUs\WorkWithUs.cshtml" />
     <Content Include="Views\WorkWithUs\Volunteer.cshtml" />
-    <Content Include="Views\Librarian\Librarian.cshtml" />
-    <Content Include="Views\Librarian\Apply.cshtml" />
     <Content Include="Views\Jobs\Jobs.cshtml" />
     <Content Include="Views\Collections\Collections.cshtml" />
     <Content Include="Views\Collections\Genealogy\Genealogy.cshtml" />

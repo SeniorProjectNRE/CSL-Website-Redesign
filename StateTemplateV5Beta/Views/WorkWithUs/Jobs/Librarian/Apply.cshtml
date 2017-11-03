@@ -10,591 +10,636 @@
         <div class="section section-standout">
             <div class="container">
                 <div class="group">
-                    @using (Html.BeginForm("Apply", "Librarian", FormMethod.Post))
+                    @using (Html.BeginForm("Apply", "Librarian", FormMethod.Post, new { enctype = "multipart/form-data" }))
                     {
+                        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.IsLibrarian, "Librarian")
-                                @Html.RadioButtonFor(m => m.IsLibrarian, "Librarian")
+                                @Html.LabelFor(m => m.IsLibrarian)
+                                @Html.RadioButtonFor(m => m.IsLibrarian, true, "Librarian")
+                                @Html.ValidationMessage("Librarian", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.IsSeniorLibrarian, "SeniorLibrarian")
-                                @Html.RadioButtonFor(m => m.IsSeniorLibrarian, "SeniorLibrarian")
+                                @Html.LabelFor(m => m.IsSeniorLibrarian)
+                                @Html.RadioButtonFor(m => m.IsSeniorLibrarian, true, "SeniorLibrarian")
+                                @Html.ValidationMessage("SeniorLibrarian", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Name, "Name")
-                                @Html.TextAreaFor(m => m.Name, "Name")
+                                @Html.LabelFor(m => m.Name)
+                                @Html.TextBoxFor(m => m.Name, "Name")
+                                @Html.ValidationMessage("Name", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Email, "Email")
-                                @Html.TextAreaFor(m => m.Email, "Email")
+                                @Html.LabelFor(m => m.Email)
+                                @Html.TextBoxFor(m => m.Email, "Email")
+                                @Html.ValidationMessage("Email", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.HasExperience, "Experience")
+                                @Html.LabelFor(m => m.HasExperience)
+                                @Html.RadioButtonFor(m => m.HasExperience, true, "Experience") Yes
+                                @Html.RadioButtonFor(m => m.HasExperience, true, "Experience") Yes but different
+                                @Html.ValidationMessage("Experience", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.SearchStrategies, "SearchStrategies")
-                                @Html.TextAreaFor(m => m.SearchStrategies, "SearchStrategies")
+                                @Html.LabelFor(m => m.SearchStrategies)
+                                @Html.TextBoxFor(m => m.SearchStrategies, "SearchStrategies")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameSearchStrategies, "NameSearchStrategies")
-                                @Html.TextAreaFor(m => m.NameSearchStrategies, "NameSearchStrategies")
+                                @Html.LabelFor(m => m.NameSearchStrategies)
+                                @Html.TextBoxFor(m => m.NameSearchStrategies, "NameSearchStrategies")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailSearchStrategies, "EmailSearchStrategies")
-                                @Html.TextAreaFor(m => m.EmailSearchStrategies, "EmailSearchStrategies")
+                                @Html.LabelFor(m => m.EmailSearchStrategies)
+                                @Html.TextBoxFor(m => m.EmailSearchStrategies, "EmailSearchStrategies")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumSearchStrategies, "PhoneNumSearchStrategies")
-                                @Html.TextAreaFor(m => m.PhoneNumSearchStrategies, "PhoneNumSearchStrategies")
+                                @Html.LabelFor(m => m.PhoneNumSearchStrategies)
+                                @Html.TextBoxFor(m => m.PhoneNumSearchStrategies, "PhoneNumSearchStrategies")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.CollectionDeveopment, "CollectionDeveopment")
-                                @Html.TextAreaFor(m => m.CollectionDeveopment, "CollectionDeveopment")
+                                @Html.LabelFor(m => m.CollectionDeveopment)
+                                @Html.TextBoxFor(m => m.CollectionDeveopment, "CollectionDeveopment")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameCollectionDeveopment, "NameCollectionDeveopment")
-                                @Html.TextAreaFor(m => m.NameCollectionDeveopment, "NameCollectionDeveopment")
+                                @Html.LabelFor(m => m.NameCollectionDeveopment)
+                                @Html.TextBoxFor(m => m.NameCollectionDeveopment, "NameCollectionDeveopment")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailCollectionDeveopment, "EmailCollectionDeveopment")
-                                @Html.TextAreaFor(m => m.EmailCollectionDeveopment, "EmailCollectionDeveopment")
+                                @Html.LabelFor(m => m.EmailCollectionDeveopment)
+                                @Html.TextBoxFor(m => m.EmailCollectionDeveopment, "EmailCollectionDeveopment")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumCollectionDeveopment, "PhoneNumCollectionDeveopment")
-                                @Html.TextAreaFor(m => m.PhoneNumCollectionDeveopment, "PhoneNumCollectionDeveopment")
+                                @Html.LabelFor(m => m.PhoneNumCollectionDeveopment)
+                                @Html.TextBoxFor(m => m.PhoneNumCollectionDeveopment, "PhoneNumCollectionDeveopment")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.BibliographicInfo, "BibliographicInfo")
-                                @Html.TextAreaFor(m => m.BibliographicInfo, "BibliographicInfo")
+                                @Html.LabelFor(m => m.BibliographicInfo)
+                                @Html.TextBoxFor(m => m.BibliographicInfo, "BibliographicInfo")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameBibliographicInfo, "NameBibliographicInfo")
-                                @Html.TextAreaFor(m => m.NameBibliographicInfo, "NameBibliographicInfo")
+                                @Html.LabelFor(m => m.NameBibliographicInfo)
+                                @Html.TextBoxFor(m => m.NameBibliographicInfo, "NameBibliographicInfo")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailBibliographicInfo, "EmailBibliographicInfo")
-                                @Html.TextAreaFor(m => m.EmailBibliographicInfo, "EmailBibliographicInfo")
+                                @Html.LabelFor(m => m.EmailBibliographicInfo)
+                                @Html.TextBoxFor(m => m.EmailBibliographicInfo, "EmailBibliographicInfo")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumBibliographicInfo, "PhoneNumBibliographicInfo")
-                                @Html.TextAreaFor(m => m.PhoneNumBibliographicInfo, "PhoneNumBibliographicInfo")
+                                @Html.LabelFor(m => m.PhoneNumBibliographicInfo)
+                                @Html.TextBoxFor(m => m.PhoneNumBibliographicInfo, "PhoneNumBibliographicInfo")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.ComputerizedData, "ComputerizedData")
-                                @Html.TextAreaFor(m => m.ComputerizedData, "ComputerizedData")
+                                @Html.LabelFor(m => m.ComputerizedData)
+                                @Html.TextBoxFor(m => m.ComputerizedData, "ComputerizedData")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameComputerizedData, "NameComputerizedData")
-                                @Html.TextAreaFor(m => m.NameComputerizedData, "NameComputerizedData")
+                                @Html.LabelFor(m => m.NameComputerizedData)
+                                @Html.TextBoxFor(m => m.NameComputerizedData, "NameComputerizedData")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailComputerizedData, "EmailComputerizedData")
-                                @Html.TextAreaFor(m => m.EmailComputerizedData, "EmailComputerizedData")
+                                @Html.LabelFor(m => m.EmailComputerizedData)
+                                @Html.TextBoxFor(m => m.EmailComputerizedData, "EmailComputerizedData")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumComputerizedData, "PhoneNumComputerizedData")
-                                @Html.TextAreaFor(m => m.PhoneNumComputerizedData, "PhoneNumComputerizedData")
+                                @Html.LabelFor(m => m.PhoneNumComputerizedData)
+                                @Html.TextBoxFor(m => m.PhoneNumComputerizedData, "PhoneNumComputerizedData")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Acquisitions, "Acquisitions")
-                                @Html.TextAreaFor(m => m.Acquisitions, "Acquisitions")
+                                @Html.LabelFor(m => m.Acquisitions)
+                                @Html.TextBoxFor(m => m.Acquisitions, "Acquisitions")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameAcquisitions, "NameAcquisitions")
-                                @Html.TextAreaFor(m => m.NameAcquisitions, "NameAcquisitions")
+                                @Html.LabelFor(m => m.NameAcquisitions)
+                                @Html.TextBoxFor(m => m.NameAcquisitions, "NameAcquisitions")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailAcquisitions, "EmailAcquisitions")
-                                @Html.TextAreaFor(m => m.EmailAcquisitions, "EmailAcquisitions")
+                                @Html.LabelFor(m => m.EmailAcquisitions)
+                                @Html.TextBoxFor(m => m.EmailAcquisitions, "EmailAcquisitions")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumAcquisitions, "PhoneNumAcquisitions")
-                                @Html.TextAreaFor(m => m.PhoneNumAcquisitions, "PhoneNumAcquisitions")
+                                @Html.LabelFor(m => m.PhoneNumAcquisitions)
+                                @Html.TextBoxFor(m => m.PhoneNumAcquisitions, "PhoneNumAcquisitions")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.CatalogAndClass, "CatalogAndClass")
-                                @Html.TextAreaFor(m => m.CatalogAndClass, "CatalogAndClass")
+                                @Html.LabelFor(m => m.CatalogAndClass)
+                                @Html.TextBoxFor(m => m.CatalogAndClass, "CatalogAndClass")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameCatalogAndClass, "NameCatalogAndClass")
-                                @Html.TextAreaFor(m => m.NameCatalogAndClass, "NameCatalogAndClass")
+                                @Html.LabelFor(m => m.NameCatalogAndClass)
+                                @Html.TextBoxFor(m => m.NameCatalogAndClass, "NameCatalogAndClass")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailCatalogAndClass, "EmailCatalogAndClass")
-                                @Html.TextAreaFor(m => m.EmailCatalogAndClass, "EmailCatalogAndClass")
+                                @Html.LabelFor(m => m.EmailCatalogAndClass)
+                                @Html.TextBoxFor(m => m.EmailCatalogAndClass, "EmailCatalogAndClass")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumCatalogAndClass, "PhoneNumCatalogAndClass")
-                                @Html.TextAreaFor(m => m.PhoneNumCatalogAndClass, "PhoneNumCatalogAndClass")
+                                @Html.LabelFor(m => m.PhoneNumCatalogAndClass)
+                                @Html.TextBoxFor(m => m.PhoneNumCatalogAndClass, "PhoneNumCatalogAndClass")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Reference, "Reference")
-                                @Html.TextAreaFor(m => m.Reference, "Reference")
+                                @Html.LabelFor(m => m.Reference)
+                                @Html.TextBoxFor(m => m.Reference, "Reference")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameReference, "NameReference")
-                                @Html.TextAreaFor(m => m.NameReference, "NameReference")
+                                @Html.LabelFor(m => m.NameReference)
+                                @Html.TextBoxFor(m => m.NameReference, "NameReference")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailReference, "EmailReference")
-                                @Html.TextAreaFor(m => m.EmailReference, "EmailReference")
+                                @Html.LabelFor(m => m.EmailReference)
+                                @Html.TextBoxFor(m => m.EmailReference, "EmailReference")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumReference, "PhoneNumReference")
-                                @Html.TextAreaFor(m => m.PhoneNumReference, "PhoneNumReference")
+                                @Html.LabelFor(m => m.PhoneNumReference)
+                                @Html.TextBoxFor(m => m.PhoneNumReference, "PhoneNumReference")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Circulation, "Circulation")
-                                @Html.TextAreaFor(m => m.Circulation, "Circulation")
+                                @Html.LabelFor(m => m.Circulation)
+                                @Html.TextBoxFor(m => m.Circulation, "Circulation")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameCirculation, "NameCirculation")
-                                @Html.TextAreaFor(m => m.NameCirculation, "NameCirculation")
+                                @Html.LabelFor(m => m.NameCirculation)
+                                @Html.TextBoxFor(m => m.NameCirculation, "NameCirculation")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailCirculation, "EmailCirculation")
-                                @Html.TextAreaFor(m => m.EmailCirculation, "EmailCirculation")
+                                @Html.LabelFor(m => m.EmailCirculation)
+                                @Html.TextBoxFor(m => m.EmailCirculation, "EmailCirculation")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumCirculation, "PhoneNumCirculation")
-                                @Html.TextAreaFor(m => m.PhoneNumCirculation, "PhoneNumCirculation")
+                                @Html.LabelFor(m => m.PhoneNumCirculation)
+                                @Html.TextBoxFor(m => m.PhoneNumCirculation, "PhoneNumCirculation")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Circulation, "Circulation")
-                                @Html.TextAreaFor(m => m.Circulation, "Circulation")
+                                @Html.LabelFor(m => m.Circulation)
+                                @Html.TextBoxFor(m => m.Circulation, "Circulation")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameCirculation, "NameCirculation")
-                                @Html.TextAreaFor(m => m.NameCirculation, "NameCirculation")
+                                @Html.LabelFor(m => m.NameCirculation)
+                                @Html.TextBoxFor(m => m.NameCirculation, "NameCirculation")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailCirculation, "EmailCirculation")
-                                @Html.TextAreaFor(m => m.EmailCirculation, "EmailCirculation")
+                                @Html.LabelFor(m => m.EmailCirculation)
+                                @Html.TextBoxFor(m => m.EmailCirculation, "EmailCirculation")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumCirculation, "PhoneNumCirculation")
-                                @Html.TextAreaFor(m => m.PhoneNumCirculation, "PhoneNumCirculation")
+                                @Html.LabelFor(m => m.PhoneNumCirculation)
+                                @Html.TextBoxFor(m => m.PhoneNumCirculation, "PhoneNumCirculation")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Preservation, "Preservation")
-                                @Html.TextAreaFor(m => m.Preservation, "Preservation")
+                                @Html.LabelFor(m => m.Preservation)
+                                @Html.TextBoxFor(m => m.Preservation, "Preservation")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NamePreservation, "NamePreservation")
-                                @Html.TextAreaFor(m => m.NamePreservation, "NamePreservation")
+                                @Html.LabelFor(m => m.NamePreservation)
+                                @Html.TextBoxFor(m => m.NamePreservation, "NamePreservation")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailPreservation, "EmailPreservation")
-                                @Html.TextAreaFor(m => m.EmailPreservation, "EmailPreservation")
+                                @Html.LabelFor(m => m.EmailPreservation)
+                                @Html.TextBoxFor(m => m.EmailPreservation, "EmailPreservation")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumPreservation, "PhoneNumPreservation")
-                                @Html.TextAreaFor(m => m.PhoneNumPreservation, "PhoneNumPreservation")
+                                @Html.LabelFor(m => m.PhoneNumPreservation)
+                                @Html.TextBoxFor(m => m.PhoneNumPreservation, "PhoneNumPreservation")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Specialized, "Specialized")
-                                @Html.TextAreaFor(m => m.Specialized, "Specialized")
+                                @Html.LabelFor(m => m.Specialized)
+                                @Html.TextBoxFor(m => m.Specialized, "Specialized")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameSpecialized, "NameSpecialized")
-                                @Html.TextAreaFor(m => m.NameSpecialized, "NameSpecialized")
+                                @Html.LabelFor(m => m.NameSpecialized)
+                                @Html.TextBoxFor(m => m.NameSpecialized, "NameSpecialized")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailSpecialized, "EmailSpecialized")
-                                @Html.TextAreaFor(m => m.EmailSpecialized, "EmailSpecialized")
+                                @Html.LabelFor(m => m.EmailSpecialized)
+                                @Html.TextBoxFor(m => m.EmailSpecialized, "EmailSpecialized")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumSpecialized, "PhoneNumSpecialized")
-                                @Html.TextAreaFor(m => m.PhoneNumSpecialized, "PhoneNumSpecialized")
+                                @Html.LabelFor(m => m.PhoneNumSpecialized)
+                                @Html.TextBoxFor(m => m.PhoneNumSpecialized, "PhoneNumSpecialized")
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Q1, "Q1")
-                                @Html.TextAreaFor(m => m.Q1, "Q1")
+                                @Html.LabelFor(m => m.Q1)
+                                @Html.TextBoxFor(m => m.Q1)
+                                @Html.ValidationMessage("Q1", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameQ1, "NameQ1")
-                                @Html.TextAreaFor(m => m.NameQ1, "NameQ1")
+                                @Html.LabelFor(m => m.NameQ1)
+                                @Html.TextBoxFor(m => m.NameQ1)
+                                @Html.ValidationMessage("NameQ1", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailQ1, "EmailQ1")
-                                @Html.TextAreaFor(m => m.EmailQ1, "EmailQ1")
+                                @Html.LabelFor(m => m.EmailQ1)
+                                @Html.TextBoxFor(m => m.EmailQ1, "EmailQ1")
+                                @Html.ValidationMessage("EmailQ1", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ1, "PhoneNumQ1")
-                                @Html.TextAreaFor(m => m.PhoneNumQ1, "PhoneNumQ1")
+                                @Html.LabelFor(m => m.PhoneNumQ1)
+                                @Html.TextBoxFor(m => m.PhoneNumQ1, "PhoneNumQ1")
+                                @Html.ValidationMessage("PhoneNumQ1", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Q2, "Q2")
-                                @Html.TextAreaFor(m => m.Q2, "Q2")
+                                @Html.LabelFor(m => m.Q2)
+                                @Html.TextBoxFor(m => m.Q2, "Q2")
+                                @Html.ValidationMessage("Q2", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameQ2, "NameQ2")
-                                @Html.TextAreaFor(m => m.NameQ2, "NameQ2")
+                                @Html.LabelFor(m => m.NameQ2)
+                                @Html.TextBoxFor(m => m.NameQ2, "NameQ2")
+                                @Html.ValidationMessage("NameQ2", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailQ2, "EmailQ2")
-                                @Html.TextAreaFor(m => m.EmailQ2, "EmailQ2")
+                                @Html.LabelFor(m => m.EmailQ2)
+                                @Html.TextBoxFor(m => m.EmailQ2, "EmailQ2")
+                                @Html.ValidationMessage("EmailQ2", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ2, "PhoneNumQ2")
-                                @Html.TextAreaFor(m => m.PhoneNumQ2, "PhoneNumQ2")
+                                @Html.LabelFor(m => m.PhoneNumQ2)
+                                @Html.TextBoxFor(m => m.PhoneNumQ2, "PhoneNumQ2")
+                                @Html.ValidationMessage("PhoneNumQ2", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Q3, "Q3")
-                                @Html.TextAreaFor(m => m.Q3, "Q3")
+                                @Html.LabelFor(m => m.Q3)
+                                @Html.TextBoxFor(m => m.Q3, "Q3")
+                                @Html.ValidationMessage("Q3", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameQ3, "NameQ3")
-                                @Html.TextAreaFor(m => m.NameQ3, "NameQ3")
+                                @Html.LabelFor(m => m.NameQ3)
+                                @Html.TextBoxFor(m => m.NameQ3, "NameQ3")
+                                @Html.ValidationMessage("NameQ3", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailQ3, "EmailQ3")
-                                @Html.TextAreaFor(m => m.EmailQ3, "EmailQ3")
+                                @Html.LabelFor(m => m.EmailQ3)
+                                @Html.TextBoxFor(m => m.EmailQ3, "EmailQ3")
+                                @Html.ValidationMessage("EmailQ3", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ3, "PhoneNumQ3")
-                                @Html.TextAreaFor(m => m.PhoneNumQ3, "PhoneNumQ3")
+                                @Html.LabelFor(m => m.PhoneNumQ3)
+                                @Html.TextBoxFor(m => m.PhoneNumQ3, "PhoneNumQ3")
+                                @Html.ValidationMessage("PhoneNumQ3", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Q4, "Q4")
-                                @Html.TextAreaFor(m => m.Q4, "Q4")
+                                @Html.LabelFor(m => m.Q4)
+                                @Html.TextBoxFor(m => m.Q4, "Q4")
+                                @Html.ValidationMessage("Q4", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameQ4, "NameQ4")
-                                @Html.TextAreaFor(m => m.NameQ4, "NameQ4")
+                                @Html.LabelFor(m => m.NameQ4)
+                                @Html.TextBoxFor(m => m.NameQ4, "NameQ4")
+                                @Html.ValidationMessage("NameQ4", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailQ4, "EmailQ4")
-                                @Html.TextAreaFor(m => m.EmailQ4, "EmailQ4")
+                                @Html.LabelFor(m => m.EmailQ4)
+                                @Html.TextBoxFor(m => m.EmailQ4, "EmailQ4")
+                                @Html.ValidationMessage("EmailQ4", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ4, "PhoneNumQ4")
-                                @Html.TextAreaFor(m => m.PhoneNumQ4, "PhoneNumQ4")
+                                @Html.LabelFor(m => m.PhoneNumQ4)
+                                @Html.TextBoxFor(m => m.PhoneNumQ4, "PhoneNumQ4")
+                                @Html.ValidationMessage("PhoneNumQ4", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Q5, "Q5")
-                                @Html.TextAreaFor(m => m.Q5, "Q5")
+                                @Html.LabelFor(m => m.Q5)
+                                @Html.TextBoxFor(m => m.Q5, "Q5")
+                                @Html.ValidationMessage("Q5", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameQ5, "NameQ5")
-                                @Html.TextAreaFor(m => m.NameQ5, "NameQ5")
+                                @Html.LabelFor(m => m.NameQ5)
+                                @Html.TextBoxFor(m => m.NameQ5, "NameQ5")
+                                @Html.ValidationMessage("NameQ5", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailQ5, "EmailQ5")
-                                @Html.TextAreaFor(m => m.EmailQ5, "EmailQ5")
+                                @Html.LabelFor(m => m.EmailQ5)
+                                @Html.TextBoxFor(m => m.EmailQ5, "EmailQ5")
+                                @Html.ValidationMessage("EmailQ5", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ5, "PhoneNumQ5")
-                                @Html.TextAreaFor(m => m.PhoneNumQ5, "PhoneNumQ5")
+                                @Html.LabelFor(m => m.PhoneNumQ5)
+                                @Html.TextBoxFor(m => m.PhoneNumQ5, "PhoneNumQ5")
+                                @Html.ValidationMessage("PhoneNumQ5", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Q6, "Q6")
-                                @Html.TextAreaFor(m => m.Q6, "Q6")
+                                @Html.LabelFor(m => m.Q6)
+                                @Html.TextBoxFor(m => m.Q6, "Q6")
+                                @Html.ValidationMessage("Q6", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameQ6, "NameQ6")
-                                @Html.TextAreaFor(m => m.NameQ6, "NameQ6")
+                                @Html.LabelFor(m => m.NameQ6)
+                                @Html.TextBoxFor(m => m.NameQ6, "NameQ6")
+                                @Html.ValidationMessage("NameQ6", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailQ6, "EmailQ6")
-                                @Html.TextAreaFor(m => m.EmailQ6, "EmailQ6")
+                                @Html.LabelFor(m => m.EmailQ6)
+                                @Html.TextBoxFor(m => m.EmailQ6, "EmailQ6")
+                                @Html.ValidationMessage("EmailQ6", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ6, "PhoneNumQ6")
-                                @Html.TextAreaFor(m => m.PhoneNumQ6, "PhoneNumQ6")
+                                @Html.LabelFor(m => m.PhoneNumQ6)
+                                @Html.TextBoxFor(m => m.PhoneNumQ6, "PhoneNumQ6")
+                                @Html.ValidationMessage("PhoneNumQ6", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Q7, "Q7")
-                                @Html.TextAreaFor(m => m.Q7, "Q7")
+                                @Html.LabelFor(m => m.Q7)
+                                @Html.TextBoxFor(m => m.Q7, "Q7")
+                                @Html.ValidationMessage("Q7", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameQ7, "NameQ7")
-                                @Html.TextAreaFor(m => m.NameQ7, "NameQ7")
+                                @Html.LabelFor(m => m.NameQ7)
+                                @Html.TextBoxFor(m => m.NameQ7, "NameQ7")
+                                @Html.ValidationMessage("NameQ7", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailQ7, "EmailQ7")
-                                @Html.TextAreaFor(m => m.EmailQ7, "EmailQ7")
+                                @Html.LabelFor(m => m.EmailQ7)
+                                @Html.TextBoxFor(m => m.EmailQ7, "EmailQ7")
+                                @Html.ValidationMessage("EmailQ7", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ7, "PhoneNumQ7")
-                                @Html.TextAreaFor(m => m.PhoneNumQ7, "PhoneNumQ7")
+                                @Html.LabelFor(m => m.PhoneNumQ7)
+                                @Html.TextBoxFor(m => m.PhoneNumQ7, "PhoneNumQ7")
+                                @Html.ValidationMessage("PhoneNumQ7", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Q8, "Q8")
-                                @Html.TextAreaFor(m => m.Q8, "Q8")
+                                @Html.LabelFor(m => m.Q8)
+                                @Html.TextBoxFor(m => m.Q8, "Q8")
+                                @Html.ValidationMessage("Q8", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.NameQ8, "NameQ8")
-                                @Html.TextAreaFor(m => m.NameQ8, "NameQ8")
+                                @Html.LabelFor(m => m.NameQ8)
+                                @Html.TextBoxFor(m => m.NameQ8, "NameQ8")
+                                @Html.ValidationMessage("NameQ8", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.EmailQ8, "EmailQ8")
-                                @Html.TextAreaFor(m => m.EmailQ8, "EmailQ8")
+                                @Html.LabelFor(m => m.EmailQ8)
+                                @Html.TextBoxFor(m => m.EmailQ8, "EmailQ8")
+                                @Html.ValidationMessage("EmailQ8", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.PhoneNumQ8, "PhoneNumQ8")
-                                @Html.TextAreaFor(m => m.PhoneNumQ8, "PhoneNumQ8")
+                                @Html.LabelFor(m => m.PhoneNumQ8)
+                                @Html.TextBoxFor(m => m.PhoneNumQ8, "PhoneNumQ8")
+                                @Html.ValidationMessage("PhoneNumQ8", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
+                                @Html.LabelFor(m => m.ResumeUpload)
                                 <input type="file" name="file"/>
+                                @Html.ValidationMessage("ResumeUpload", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Signature, "Signature")
-                                @Html.TextAreaFor(m => m.Signature, "Signature")
+                                @Html.LabelFor(m => m.Signature)
+                                @Html.TextBoxFor(m => m.Signature, "Signature")
+                                @Html.ValidationMessage("Signature", new { @class = "text-danger" })
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="half">
-                                @Html.LabelFor(m => m.Date, "Date")
-                                @Html.TextAreaFor(m => m.Date, "Date")
+                                @Html.LabelFor(m => m.Date)
+                                @Html.TextBoxFor(m => m.Date, "Date")
+                                @Html.ValidationMessage("Date", new { @class = "text-danger" })
                             </div>
                         </div>
 

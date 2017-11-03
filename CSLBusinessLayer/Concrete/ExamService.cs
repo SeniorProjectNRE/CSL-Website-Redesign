@@ -13,12 +13,12 @@ namespace CSLBusinessLayer.Concrete
 {
     public class ExamService : IExamService
     {
-        public string FillForm(LibrarianModel model, string pdfTemplate, string newFile)
+        public string FillLibrarianExam(LibrarianModel model, string pdfTemplate, string newFile)
         {
             string res = null;
             try
             {
-                using (PdfReader pdfReader = new PdfReader(HostingEnvironment.MapPath(pdfTemplate)))
+                using (PdfReader pdfReader = new PdfReader(System.IO.File.ReadAllBytes(HostingEnvironment.MapPath(pdfTemplate))))
                 {
                     using (FileStream pdfFileStream = new FileStream(HostingEnvironment.MapPath(newFile), FileMode.Create))
                     {
@@ -168,11 +168,52 @@ namespace CSLBusinessLayer.Concrete
                             pdfFormFields.SetField("Date", model.Date);
 
                             pdfStamper.FormFlattening = true;
+                            pdfStamper.Close();
+                            pdfReader.Close();
+                            pdfFileStream.Close();
+                        }
+                        pdfFileStream.Close();
+                    }
+                    pdfReader.Close();
+                }
+            }
+            catch(Exception ex)
+            {
+
+            }
+            return res;
+        }
+
+        public string FillForm(LibrarianModel model, string pdfTemplate, string newFile)
+        {
+            string res = null;
+            try
+            {
+                using (PdfReader pdfReader = new PdfReader(HostingEnvironment.MapPath(pdfTemplate)))
+                {
+                    using (FileStream pdfFileStream = new FileStream(HostingEnvironment.MapPath(newFile), FileMode.Create))
+                    {
+                        using (PdfStamper pdfStamper = new PdfStamper(pdfReader, pdfFileStream))
+                        {
+                            AcroFields pdfFormFields = pdfStamper.AcroFields;
+
+                            //set pdf form fields
+                            //basic info
+                            pdfFormFields.SetField("Name", model.Name);
+                            pdfFormFields.SetField("Email", model.Email);
+                            pdfFormFields.SetField("Education", model.HasEducation.ToString());
+
+                            //many more fields go here
+                            //..
+                            //..
+                            //..
+
+                            pdfStamper.FormFlattening = true;
                         }
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }

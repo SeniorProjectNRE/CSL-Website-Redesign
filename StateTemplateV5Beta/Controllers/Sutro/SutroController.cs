@@ -44,7 +44,6 @@ namespace StateTemplateV5Beta.Controllers.Sutro
         [Route("class")]
         public ActionResult Class()
         {
-            //SutroClassModel model = new SutroClassModel() { SuccessMessage = null};
             return View();
         }
 
