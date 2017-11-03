@@ -245,7 +245,7 @@
                                         <div id="basicInfoEducation">
 
                                             <div class="libEducation" style="display: none;">
-                                                
+
                                                 <div class="form-group">
                                                     @Html.LabelFor(m => m.HasEducation)
 
@@ -323,24 +323,28 @@
                                                 @Html.LabelFor(m => m.SearchStrategies, new { @class = "text-accent-p2" })
                                                 @Html.TextAreaFor(m => m.SearchStrategies, new { maxlength = "900", @class = "form-control" })
                                                 <span>900 character limit</span>
+                                                @Html.ValidationMessage("SearchStrategies", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.NameSearchStrategies)
                                                 @Html.TextBoxFor(m => m.NameSearchStrategies, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("NameSearchStrategies", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailSearchStrategies)
                                                 @Html.TextBoxFor(m => m.EmailSearchStrategies, new { type = "email", @class = "form-control" })
+                                                @Html.ValidationMessage("EmailSearchStrategies", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.PhoneNumSearchStrategies)
                                                 @Html.TextBoxFor(m => m.PhoneNumSearchStrategies, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("PhoneNumSearchStrategies", new { @class = "text-danger" })
                                             </div>
                                             <!--end SearchStrategies-->
                                             <!--BibliographicInfo-->
@@ -349,24 +353,28 @@
                                                 @Html.LabelFor(m => m.BibliographicInfo, new { @class = "text-accent-p2" })
                                                 @Html.TextAreaFor(m => m.BibliographicInfo, new { maxlength = "900", @class = "form-control" })
                                                 <span>900 character limit</span>
+                                                @Html.ValidationMessage("BibliographicInfo", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.NameBibliographicInfo)
                                                 @Html.TextBoxFor(m => m.NameBibliographicInfo, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("NameBibliographicInfo", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailBibliographicInfo)
                                                 @Html.TextBoxFor(m => m.EmailBibliographicInfo, new { type = "email", @class = "form-control" })
+                                                @Html.ValidationMessage("EmailBibliographicInfo", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.PhoneNumBibliographicInfo)
                                                 @Html.TextBoxFor(m => m.PhoneNumBibliographicInfo, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("PhoneNumBibliographicInfo", new { @class = "text-danger" })
                                             </div>
                                             <!--end BibliographicInfo-->
                                             <!--ComputerizedData-->
@@ -375,24 +383,28 @@
                                                 @Html.LabelFor(m => m.ComputerizedData, new { @class = "text-accent-p2" })
                                                 @Html.TextAreaFor(m => m.ComputerizedData, new { maxlength = "900", @class = "form-control" })
                                                 <span>900 character limit</span>
+                                                @Html.ValidationMessage("ComputerizedData", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.NameComputerizedData)
                                                 @Html.TextBoxFor(m => m.NameComputerizedData, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("NameComputerizedData", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailComputerizedData)
                                                 @Html.TextBoxFor(m => m.EmailComputerizedData, new { type = "email", @class = "form-control" })
+                                                @Html.ValidationMessage("EmailComputerizedData", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.PhoneNumComputerizedData)
                                                 @Html.TextBoxFor(m => m.PhoneNumComputerizedData, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("PhoneNumComputerizedData", new { @class = "text-danger" })
                                             </div>
                                             <!--end ComputerizedData-->
 
@@ -414,24 +426,28 @@
                                                 @Html.LabelFor(m => m.CollectionDevelopment, new { @class = "text-accent-p2" })
                                                 @Html.TextAreaFor(m => m.CollectionDevelopment, new { maxlength = "900", @class = "form-control" })
                                                 <span>900 character limit</span>
+                                                @Html.ValidationMessage("CollectionDevelopment", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.NameCollectionDevelopment)
                                                 @Html.TextBoxFor(m => m.NameCollectionDevelopment, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("NameCollectionDevelopment", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailCollectionDevelopment)
                                                 @Html.TextBoxFor(m => m.EmailCollectionDevelopment, new { type = "email", @class = "form-control" })
+                                                @Html.ValidationMessage("EmailCollectionDevelopment", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.PhoneNumCollectionDevelopment)
                                                 @Html.TextBoxFor(m => m.PhoneNumCollectionDevelopment, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("PhoneNumCollectionDevelopment", new { @class = "text-danger" })
                                             </div>
                                             <!--end CollectionDevelopment-->
                                             <!--Acquisitions-->
@@ -440,24 +456,28 @@
                                                 @Html.LabelFor(m => m.Acquisitions, new { @class = "text-accent-p2" })
                                                 @Html.TextAreaFor(m => m.Acquisitions, new { maxlength = "900", @class = "form-control" })
                                                 <span>900 character limit</span>
+                                                @Html.ValidationMessage("Acquisitions", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.NameAcquisitions)
                                                 @Html.TextBoxFor(m => m.NameAcquisitions, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("NameAcquisitions", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailAcquisitions)
                                                 @Html.TextBoxFor(m => m.EmailAcquisitions, new { type = "email", @class = "form-control" })
+                                                @Html.ValidationMessage("EmailAcquisitions", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.PhoneNumAcquisitions)
                                                 @Html.TextBoxFor(m => m.PhoneNumAcquisitions, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("PhoneNumAcquisitions", new { @class = "text-danger" })
                                             </div>
                                             <!--end Acquisitions-->
                                             <!--CatalogAndClass-->
@@ -466,24 +486,28 @@
                                                 @Html.LabelFor(m => m.CatalogAndClass, new { @class = "text-accent-p2" })
                                                 @Html.TextAreaFor(m => m.CatalogAndClass, new { maxlength = "900", @class = "form-control" })
                                                 <span>900 character limit</span>
+                                                @Html.ValidationMessage("CatalogAndClass", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.NameCatalogAndClass)
                                                 @Html.TextBoxFor(m => m.NameCatalogAndClass, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("NameCatalogAndClass", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailCatalogAndClass)
                                                 @Html.TextBoxFor(m => m.EmailCatalogAndClass, new { type = "email", @class = "form-control" })
+                                                @Html.ValidationMessage("EmailCatalogAndClass", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.PhoneNumCatalogAndClass)
                                                 @Html.TextBoxFor(m => m.PhoneNumCatalogAndClass, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("PhoneNumCatalogAndClass", new { @class = "text-danger" })
                                             </div>
                                             <!--end CatalogAndClass-->
                                             <!--Reference-->
@@ -492,24 +516,28 @@
                                                 @Html.LabelFor(m => m.Reference, new { @class = "text-accent-p2" })
                                                 @Html.TextAreaFor(m => m.Reference, new { maxlength = "900", @class = "form-control" })
                                                 <span>900 character limit</span>
+                                                @Html.ValidationMessage("Reference", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.NameReference)
                                                 @Html.TextBoxFor(m => m.NameReference, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("NameReference", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailReference)
                                                 @Html.TextBoxFor(m => m.EmailReference, new { type = "email", @class = "form-control" })
+                                                @Html.ValidationMessage("EmailReference", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.PhoneNumReference)
                                                 @Html.TextBoxFor(m => m.PhoneNumReference, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("PhoneNumReference", new { @class = "text-danger" })
                                             </div>
                                             <!--end Reference-->
                                             <!--Circulation-->
@@ -518,24 +546,28 @@
                                                 @Html.LabelFor(m => m.Circulation, new { @class = "text-accent-p2" })
                                                 @Html.TextAreaFor(m => m.Circulation, new { maxlength = "900", @class = "form-control" })
                                                 <span>900 character limit</span>
+                                                @Html.ValidationMessage("Circulation", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.NameCirculation)
                                                 @Html.TextBoxFor(m => m.NameCirculation, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("NameCirculation", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailCirculation)
                                                 @Html.TextBoxFor(m => m.EmailCirculation, new { type = "email", @class = "form-control" })
+                                                @Html.ValidationMessage("EmailCirculation", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.PhoneNumCirculation)
                                                 @Html.TextBoxFor(m => m.PhoneNumCirculation, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("PhoneNumCirculation", new { @class = "text-danger" })
                                             </div>
                                             <!--end Circulation-->
                                             <!--Preservation-->
@@ -544,24 +576,28 @@
                                                 @Html.LabelFor(m => m.Preservation, new { @class = "text-accent-p2" })
                                                 @Html.TextAreaFor(m => m.Preservation, new { maxlength = "900", @class = "form-control" })
                                                 <span>900 character limit</span>
+                                                @Html.ValidationMessage("Preservation", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.NamePreservation)
                                                 @Html.TextBoxFor(m => m.NamePreservation, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("NamePreservation", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailPreservation)
                                                 @Html.TextBoxFor(m => m.EmailPreservation, new { type = "email", @class = "form-control" })
+                                                @Html.ValidationMessage("EmailPreservation", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.PhoneNumPreservation)
                                                 @Html.TextBoxFor(m => m.PhoneNumPreservation, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("PhoneNumPreservation", new { @class = "text-danger" })
                                             </div>
                                             <!--end Preservation-->
                                             <!--Specialized-->
@@ -570,24 +606,28 @@
                                                 @Html.LabelFor(m => m.Specialized, new { @class = "text-accent-p2" })
                                                 @Html.TextAreaFor(m => m.Specialized, new { maxlength = "900", @class = "form-control" })
                                                 <span>900 character limit</span>
+                                                @Html.ValidationMessage("Specialized", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.NameSpecialized)
                                                 @Html.TextBoxFor(m => m.NameSpecialized, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("NameSpecialized", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailSpecialized)
                                                 @Html.TextBoxFor(m => m.EmailSpecialized, new { type = "email", @class = "form-control" })
+                                                @Html.ValidationMessage("EmailSpecialized", new { @class = "text-danger" })
                                             </div>
 
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.PhoneNumSpecialized)
                                                 @Html.TextBoxFor(m => m.PhoneNumSpecialized, new { type = "text", @class = "form-control" })
+                                                @Html.ValidationMessage("PhoneNumSpecialized", new { @class = "text-danger" })
                                             </div>
                                             <!--end Specialized-->
 
@@ -597,8 +637,235 @@
                                 </div>
                             </div>
 
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading4'>
+                                    <h3 class='panel-title'>
+                                        <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Step 4: Questions</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                                    <div class='panel-body'>
+
+                                        <!--Q1-->
+                                        <div class="tab-question-Q1">
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Q1, new { @class = "text-accent-p2" })
+                                                @Html.TextAreaFor(m => m.Q1, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.NameQ1)
+                                                @Html.TextAreaFor(m => m.NameQ1, new { type = "text", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.EmailQ1)
+                                                @Html.TextAreaFor(m => m.EmailQ1, new { type = "Email", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.PhoneNumQ1)
+                                                @Html.TextAreaFor(m => m.PhoneNumQ1, new { type = "text", @class = "form-control" })
+                                            </div>
+                                            <hr />
+                                        </div>
+
+                                        <!--Q2-->
+                                        <div class="tab-question-Q2">
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Q2, new { @class = "text-accent-p2" })
+                                                @Html.TextAreaFor(m => m.Q2, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.NameQ2)
+                                                @Html.TextAreaFor(m => m.NameQ2, new { type = "text", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.EmailQ2)
+                                                @Html.TextAreaFor(m => m.EmailQ2, new { type = "Email", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.PhoneNumQ2)
+                                                @Html.TextAreaFor(m => m.PhoneNumQ2, new { type = "text", @class = "form-control" })
+                                            </div>
+                                            <hr />
+                                        </div>
+
+                                        <!--Q3-->
+                                        <div class="tab-question-Q3">
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Q3, new { @class = "text-accent-p2" })
+                                                @Html.TextAreaFor(m => m.Q3, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.NameQ3)
+                                                @Html.TextAreaFor(m => m.NameQ3, new { type = "text", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.EmailQ3)
+                                                @Html.TextAreaFor(m => m.EmailQ3, new { type = "Email", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.PhoneNumQ3)
+                                                @Html.TextAreaFor(m => m.PhoneNumQ3, new { type = "text", @class = "form-control" })
+                                            </div>
+                                            <hr />
+                                        </div>
+
+                                        <!--Q4-->
+                                        <div class="tab-question-Q4">
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Q4, new { @class = "text-accent-p2" })
+                                                @Html.TextAreaFor(m => m.Q4, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.NameQ4)
+                                                @Html.TextAreaFor(m => m.NameQ4, new { type = "text", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.EmailQ4)
+                                                @Html.TextAreaFor(m => m.EmailQ4, new { type = "Email", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.PhoneNumQ4)
+                                                @Html.TextAreaFor(m => m.PhoneNumQ4, new { type = "text", @class = "form-control" })
+                                            </div>
+                                            <hr />
+                                        </div>
+
+                                        <!--Q5-->
+                                        <div class="tab-question-Q5">
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Q5, new { @class = "text-accent-p2" })
+                                                @Html.TextAreaFor(m => m.Q5, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.NameQ5)
+                                                @Html.TextAreaFor(m => m.NameQ5, new { type = "text", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.EmailQ5)
+                                                @Html.TextAreaFor(m => m.EmailQ5, new { type = "Email", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.PhoneNumQ5)
+                                                @Html.TextAreaFor(m => m.PhoneNumQ5, new { type = "text", @class = "form-control" })
+                                            </div>
+                                            <hr />
+                                        </div>
+
+                                        <!--Q6-->
+                                        <div class="tab-question-Q6">
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Q6, new { @class = "text-accent-p2" })
+                                                @Html.TextAreaFor(m => m.Q6, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.NameQ6)
+                                                @Html.TextAreaFor(m => m.NameQ6, new { type = "text", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.EmailQ6)
+                                                @Html.TextAreaFor(m => m.EmailQ6, new { type = "Email", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.PhoneNumQ6)
+                                                @Html.TextAreaFor(m => m.PhoneNumQ6, new { type = "text", @class = "form-control" })
+                                            </div>
+                                            <hr />
+                                        </div>
+
+                                        <!--Q7-->
+                                        <div class="tab-question-Q7 tab-SenLib-question" style="display: block;">
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Q7, new { @class = "text-accent-p2" })
+                                                @Html.TextAreaFor(m => m.Q7, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.NameQ7)
+                                                @Html.TextAreaFor(m => m.NameQ7, new { type = "text", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.EmailQ7)
+                                                @Html.TextAreaFor(m => m.EmailQ7, new { type = "Email", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.PhoneNumQ7)
+                                                @Html.TextAreaFor(m => m.PhoneNumQ7, new { type = "text", @class = "form-control" })
+                                            </div>
+                                            <hr />
+                                        </div>
+
+                                        <!--Q8-->
+                                        <div class="tab-question-Q8 tab-SenLib-question" style="display: block;">
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Q8, new { @class = "text-accent-p2" })
+                                                @Html.TextAreaFor(m => m.Q8, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.NameQ8)
+                                                @Html.TextAreaFor(m => m.NameQ8, new { type = "text", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.EmailQ8)
+                                                @Html.TextAreaFor(m => m.EmailQ8, new { type = "Email", @class = "form-control" })
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="required-label">*</span>
+                                                @Html.LabelFor(m => m.PhoneNumQ8)
+                                                @Html.TextAreaFor(m => m.PhoneNumQ8, new { type = "text", @class = "form-control" })
+                                            </div>
+                                            <hr />
+                                        </div>
 
 
+                                    </div>
+                                </div>
+                            </div>
                         </div><!--end accordion-->
                     }
                 </div>
