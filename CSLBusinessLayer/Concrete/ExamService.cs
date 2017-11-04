@@ -32,6 +32,18 @@ namespace CSLBusinessLayer.Concrete
                             pdfFormFields.SetField("Email", model.Email);
                             pdfFormFields.SetField("Education", model.HasEducation.ToString());
 
+                            if(model.HasEducation == true)
+                            {
+                                pdfFormFields.SetField("LPAOneYearExp", "On");
+                            }
+                            if(model.HasEducation == false)
+                            {
+                                pdfFormFields.SetField("LPATwoYearExp", "On");
+                            }
+                            if(model.IfNot == true)
+                            {
+                                pdfFormFields.SetField("LPAFiveYearExp", "On");
+                            }
                             //If rblExperience.SelectedValue = 0 Then
                             //pdfFormFields.SetField("LPAOneYearExp", "On")
                             //End If
@@ -41,6 +53,8 @@ namespace CSLBusinessLayer.Concrete
                             //If rblExperience.SelectedValue = 2 Then
                             //pdfFormFields.SetField("LPAFiveYearExp", "On")
                             //End If
+
+
 
                             //' Question 1
                             //If rblQ1.SelectedValue = 0 Then
