@@ -178,7 +178,7 @@
             <div class="container">
 
 
-                <table id="grantsData" >
+                <table id="grantsData" style="width:100%" class="display responsive nowrap"   cellspacing="0">
                     <thead>
                         <tr>
                             <th>Library</th>
@@ -212,19 +212,18 @@
 
 <script>
     $(document).ready(function () {
+
         var table = $('#grantsData').DataTable({
             rowReorder: { selector: 'td:nth-child(2)' },
-
-            responsive: true,
+            
         });
+
         $('#GetNumListValues').select2();
         $('#GetYearListValues').select2();
         $('#AwardStrings').select2();
         $('#GetLibrariesListValues').select2();
         $('#GetProjectListValues').select2();
-
-        
-
+         
 
         //$("#AwardStrings > option:first-child").text('All'); 
 
