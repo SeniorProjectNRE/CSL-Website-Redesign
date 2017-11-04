@@ -662,6 +662,7 @@
     <Content Include="Content\StateTemplate\images\services\toLibraries\Buildings.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeInvestment.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeResults.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\erate_banner.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\icon.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\money-bag.png" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\quoteIcon.png" />
@@ -1732,6 +1733,7 @@
     <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\SenLibAppFinal.pdf" />
     <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\SL1AppFinal.pdf" />
     <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\SL2AppFinal.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\FSCSID.PDF" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <Content Include="Content\StateTemplate\pdf\crb\Newsletters\20170104.pdf" />
