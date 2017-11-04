@@ -227,7 +227,7 @@
 
                                             <div id="basicInfoName" class="form-group half">
                                                 <span class="required-label">*</span>@Html.LabelFor(m => m.Name)
-                                                @Html.TextBoxFor(m => m.Name, "Name", new { @class = "form-control", })
+                                                @Html.TextBoxFor(m => m.Name, "Name", new { @class = "form-control",  placeholder = "John Doe" })
 
                                                 @Html.ValidationMessage("Name", new { @class = "text-danger" })
 
@@ -236,7 +236,7 @@
 
                                             <div id="basicInfoEmail " class="form-group half">
                                                 <span class="required-label">*</span>@Html.LabelFor(m => m.Email)
-                                                @Html.TextBoxFor(m => m.Email, "Email", new { @class = "form-control", type = "email" })
+                                                @Html.TextBoxFor(m => m.Email, "Email", new { @class = "form-control", type = "email", placeholder = "example@example.com" })
                                                 @Html.ValidationMessage("Email", new { @class = "text-danger" })
                                             </div>
 
@@ -265,7 +265,7 @@
 
                                             <div class="senLibEducation">
                                                 <div class="form-group">
-                                                    @Html.LabelFor(m => m.HasEducation)
+                                                    
 
                                                     <div class="checkbox">
                                                         <p>
@@ -336,7 +336,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailSearchStrategies)
-                                                @Html.TextBoxFor(m => m.EmailSearchStrategies, new { type = "email", @class = "form-control" })
+                                                @Html.TextBoxFor(m => m.EmailSearchStrategies, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
                                                 @Html.ValidationMessage("EmailSearchStrategies", new { @class = "text-danger" })
                                             </div>
 
@@ -366,7 +366,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailBibliographicInfo)
-                                                @Html.TextBoxFor(m => m.EmailBibliographicInfo, new { type = "email", @class = "form-control" })
+                                                @Html.TextBoxFor(m => m.EmailBibliographicInfo, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
                                                 @Html.ValidationMessage("EmailBibliographicInfo", new { @class = "text-danger" })
                                             </div>
 
@@ -396,7 +396,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailComputerizedData)
-                                                @Html.TextBoxFor(m => m.EmailComputerizedData, new { type = "email", @class = "form-control" })
+                                                @Html.TextBoxFor(m => m.EmailComputerizedData, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
                                                 @Html.ValidationMessage("EmailComputerizedData", new { @class = "text-danger" })
                                             </div>
 
@@ -439,7 +439,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailCollectionDevelopment)
-                                                @Html.TextBoxFor(m => m.EmailCollectionDevelopment, new { type = "email", @class = "form-control" })
+                                                @Html.TextBoxFor(m => m.EmailCollectionDevelopment, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
                                                 @Html.ValidationMessage("EmailCollectionDevelopment", new { @class = "text-danger" })
                                             </div>
 
@@ -469,7 +469,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailAcquisitions)
-                                                @Html.TextBoxFor(m => m.EmailAcquisitions, new { type = "email", @class = "form-control" })
+                                                @Html.TextBoxFor(m => m.EmailAcquisitions, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
                                                 @Html.ValidationMessage("EmailAcquisitions", new { @class = "text-danger" })
                                             </div>
 
@@ -499,7 +499,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailCatalogAndClass)
-                                                @Html.TextBoxFor(m => m.EmailCatalogAndClass, new { type = "email", @class = "form-control" })
+                                                @Html.TextBoxFor(m => m.EmailCatalogAndClass, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
                                                 @Html.ValidationMessage("EmailCatalogAndClass", new { @class = "text-danger" })
                                             </div>
 
@@ -529,7 +529,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailReference)
-                                                @Html.TextBoxFor(m => m.EmailReference, new { type = "email", @class = "form-control" })
+                                                @Html.TextBoxFor(m => m.EmailReference, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
                                                 @Html.ValidationMessage("EmailReference", new { @class = "text-danger" })
                                             </div>
 
@@ -559,7 +559,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailCirculation)
-                                                @Html.TextBoxFor(m => m.EmailCirculation, new { type = "email", @class = "form-control" })
+                                                @Html.TextBoxFor(m => m.EmailCirculation, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
                                                 @Html.ValidationMessage("EmailCirculation", new { @class = "text-danger" })
                                             </div>
 
@@ -589,7 +589,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailPreservation)
-                                                @Html.TextBoxFor(m => m.EmailPreservation, new { type = "email", @class = "form-control" })
+                                                @Html.TextBoxFor(m => m.EmailPreservation, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
                                                 @Html.ValidationMessage("EmailPreservation", new { @class = "text-danger" })
                                             </div>
 
@@ -619,7 +619,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailSpecialized)
-                                                @Html.TextBoxFor(m => m.EmailSpecialized, new { type = "email", @class = "form-control" })
+                                                @Html.TextBoxFor(m => m.EmailSpecialized, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
                                                 @Html.ValidationMessage("EmailSpecialized", new { @class = "text-danger" })
                                             </div>
 
@@ -662,7 +662,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailQ1)
-                                                @Html.TextAreaFor(m => m.EmailQ1, new { type = "Email", @class = "form-control" })
+                                                @Html.TextAreaFor(m => m.EmailQ1, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
                                             </div>
 
                                             <div class="form-group">
@@ -689,7 +689,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailQ2)
-                                                @Html.TextAreaFor(m => m.EmailQ2, new { type = "Email", @class = "form-control" })
+                                                @Html.TextAreaFor(m => m.EmailQ2, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
                                             </div>
 
                                             <div class="form-group">
@@ -716,7 +716,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailQ3)
-                                                @Html.TextAreaFor(m => m.EmailQ3, new { type = "Email", @class = "form-control" })
+                                                @Html.TextAreaFor(m => m.EmailQ3, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
                                             </div>
 
                                             <div class="form-group">
@@ -743,7 +743,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailQ4)
-                                                @Html.TextAreaFor(m => m.EmailQ4, new { type = "Email", @class = "form-control" })
+                                                @Html.TextAreaFor(m => m.EmailQ4, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
                                             </div>
 
                                             <div class="form-group">
@@ -770,7 +770,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailQ5)
-                                                @Html.TextAreaFor(m => m.EmailQ5, new { type = "Email", @class = "form-control" })
+                                                @Html.TextAreaFor(m => m.EmailQ5, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
                                             </div>
 
                                             <div class="form-group">
@@ -797,7 +797,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailQ6)
-                                                @Html.TextAreaFor(m => m.EmailQ6, new { type = "Email", @class = "form-control" })
+                                                @Html.TextAreaFor(m => m.EmailQ6, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
                                             </div>
 
                                             <div class="form-group">
@@ -824,7 +824,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailQ7)
-                                                @Html.TextAreaFor(m => m.EmailQ7, new { type = "Email", @class = "form-control" })
+                                                @Html.TextAreaFor(m => m.EmailQ7, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
                                             </div>
 
                                             <div class="form-group">
@@ -851,7 +851,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailQ8)
-                                                @Html.TextAreaFor(m => m.EmailQ8, new { type = "Email", @class = "form-control" })
+                                                @Html.TextAreaFor(m => m.EmailQ8, new { type = "Email", @class = "form-control" ,placeholder = "example@example.com" })
                                             </div>
 
                                             <div class="form-group">
@@ -931,7 +931,7 @@
                                             </div>
                                             <div class="form-group half">
                                                 <span class="required-label">*</span>@Html.LabelFor(m => m.Date)
-                                                @Html.TextBoxFor(m => m.Date, new { type = "text", @class = "form-control" })
+                                                @Html.TextBoxFor(m => m.Date, new { type = "text", @class = "form-control", placeholder = "MM/DD/YYYY" })
                                                 @Html.ValidationMessage("Date", new { @class = "text-danger" })
                                             </div>
 
