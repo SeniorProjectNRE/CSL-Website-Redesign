@@ -43,7 +43,21 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
         {
             if (!ModelState.IsValid)
             {
-                return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml");
+                if (model.IsLibrarian == true && model.IsSeniorLibrarian == false)
+                {
+                    ModelState.Remove("Q7");
+                    ModelState.Remove("NameQ7");
+                    ModelState.Remove("EmailQ7");
+                    ModelState.Remove("PhoneNumQ7");
+                    ModelState.Remove("Q8");
+                    ModelState.Remove("NameQ8");
+                    ModelState.Remove("EmailQ8");
+                    ModelState.Remove("PhoneNumQ8");
+                }
+                if (!ModelState.IsValid)
+                {
+                    return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml");
+                }
             }
 
             model.ResumeUpload = file;

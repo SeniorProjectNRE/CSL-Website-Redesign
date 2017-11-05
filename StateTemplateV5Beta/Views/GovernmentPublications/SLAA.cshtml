@@ -140,7 +140,7 @@
             <div class="container">
 
 
-                <table id="slaaData">
+                <table id="slaaData"  style="width:100%" class="display responsive nowrap"   cellspacing="0">
                     <thead>
                         <tr>
                             <th>Year</th>
@@ -167,9 +167,8 @@
 <script>
     $(document).ready(function () {
         var table = $('#slaaData').DataTable({
-            rowReorder: { selector: 'td:nth-child(2)' },
-
-            responsive: true,
+            rowReorder: { selector: 'td:nth-child(2)' }
+     
         });
         $('#GetYearListValues').select2();
         $('#GetAgencyListValues').select2();

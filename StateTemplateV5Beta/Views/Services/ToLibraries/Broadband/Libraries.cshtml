@@ -224,7 +224,7 @@
             <div class="container">
 
 
-                <table id="broadbandData">
+                <table id="broadbandData"  style="width:100%" class="display responsive nowrap"   cellspacing="0">
                     <thead>
                         <tr>
                             <th>Library</th>
@@ -399,7 +399,7 @@
 
 <script>
     $(document).ready(function () {
-        var table = $('#broadbandData').DataTable({ rowReorder: { selector: 'td:nth-child(2)' }, responsive: true });
+        var table = $('#broadbandData').DataTable({ rowReorder: { selector: 'td:nth-child(2)' } });
         $('#GetLibraryListValues').select2();
         $('#GetJurisdictionListValues').select2();
         $('#GetCLSAListValues').select2();
