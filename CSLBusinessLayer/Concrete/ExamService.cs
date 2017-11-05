@@ -41,6 +41,18 @@ namespace CSLBusinessLayer.Concrete
                             //If rblExperience.SelectedValue = 2 Then
                             //pdfFormFields.SetField("LPAFiveYearExp", "On")
                             //End If
+                            if(model.HasEducation == true)
+                            {
+                                pdfFormFields.SetField("LPAOneYearExp", "On");
+                            }
+                            if (model.HasEducation == false)
+                            {
+                                pdfFormFields.SetField("LPATwoYearExp", "On");
+                            }
+                            if (model.IfNot == true)
+                            {
+                                pdfFormFields.SetField("LPAFiveYearExp", "On");
+                            }
 
                             //' Question 1
                             //If rblQ1.SelectedValue = 0 Then
