@@ -1,11 +1,99 @@
-﻿
-@{
-    ViewBag.Title = "ERate";
+﻿@{
+    ViewBag.Title = "E-Rate and California Teleconnect Fund (CTF) Information for Libraries";
+    ViewBag.Author = "Jonathan Shaw";
+    ViewBag.Banner = "erate_banner.jpg";
+    ViewBag.Description = "";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>ERate</h2>
+        <div class="container">
+            <div class="section">
+                <ol class="breadcrumb dynamic"></ol>
+                <h2 class="page-title" id="title">@ViewBag.Title</h2>
+                <img src="~/Content/StateTemplate/images/services/toLibraries/@(ViewBag.Banner)" style="width:100%" alt="" class="animated fadeInLeft" />
+            </div>
+            <div class="section">
+                <p>
+                    The Schools and Libraries Division (SLD) of the Universal Service Administrative Company (USAC) provides affordable access to telecommunications services for all eligible schools and libraries in the United States. The USAC is a not-for-profit corporation appointed by the Federal Communications Commission (FCC) to ensure that the benefits of telecommunications services reach students and communities across the country. The Program provides discounts on telecommunications services, Internet access and internal connections.
+                </p>
+                <p>
+                    Complete application information is avaiable at:<br/>
+                    <a href="http://www.districtdispatch.org/wp-content/uploads/2014/07/summary_of_major_e-rate_changes.pdf">
+                        http://www.districtdispatch.org/wp-content/uploads/2014/07/summary_of_major_e-rate_changes.pdf
+                    </a>
+                </p>
+                <p>
+                    The SLD has significantly improved and streamlined the online application process and corrected many problems you may have encountered in the past. See the full text of the FCC Report and Order at:<br/>
+                    <a href="http://www.districtdispatch.org/wp-content/uploads/2014/07/summary_of_major_e-rate_changes.pdf">
+                        https://apps.fcc.gov/edocs_public/attachmatch/FCC-14-99A1.pdf.
+                    </a>
+                </p>
+                <h3>
+                    California Teleconnect Fund
+                </h3>
+                <p>
+                    The California Public Utility Commission maintains a discount program for libraries similar to that offered through the E-Rate. As of January, 2006, they apply the E-Rate discount first before applying the California Teleconnect Fund.
+                </p>
+                <h3>
+                    Resources
+                </h3>
+                <div class="indent-outer">
+                    <div class="indent-inner">
+                        <p>
+                            <a href="~/Content/StateTemplate/pdf/services/toLibraries/FSCSID.PDF">
+                                Library FSCS ID for Form 471
+                            </a>
+                            (PDF)
+                        </p>
+                        <p>
+                            <a href="https://www.ala.org/advocacy/telecom/erate">
+                                ALA E-Rate and Universal Service
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://data1.cde.ca.gov/dataquest/">
+                                National School Lunch Program (NSLP) Participation Data for California School Districts
+                            </a>
+                        </p>
+                        <p>
+                            <a href="http://www.universalservice.org/sl/">
+                                Universal Service Administrative Company (USAC) - Schools and Library Division (SLD)
+                            </a>
+                        </p>
+                        <p>
+                            <a href="http://www.slforms.universalservice.org/EMailResponse/EMail_Intro.aspx">
+                                SLD Email Online Response Form
+                            </a>
+                            (SLD Help Line: 1-888-203-8100)
+                        </p>
+                        <p>
+                            <a href="https://www.corp.att.com/erate/">
+                                AT&T E-Rate Information
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.cde.ca.gov/ls/et/ft/index.asp">
+                                California Department of Education E-Rate Program
+                            </a>
+                        </p>
+                        <p>
+                            For further information, contact Annly Roman at
+                            <a href="mailto:Annly.Roman@library.ca.gov">
+                                Annly.Roman@library.ca.gov
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
