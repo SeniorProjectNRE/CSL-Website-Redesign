@@ -10,6 +10,8 @@
             font-weight: 200;
         }
     </style>
+@if (Model.Success == false)
+{
     <script>
         function showHideExams() {
 
@@ -47,14 +49,6 @@
                 $('#libFuncExperience').show();
                 $('#senLibFuncExperience').hide();
                 $('.tab-SenLib-question').hide();
-                //$("#Q7").attr('data-val', false);
-                //$("#NameQ7").attr('data-val', false);
-                //$("#EmailQ7").attr('data-val', false);
-                //$("#PhoneNumQ7").attr('data-val', false);
-                //$("#Q8").attr('data-val', false);
-                //$("#NameQ8").attr('data-val', false);
-                //$("#EmailQ8").attr('data-val', false);
-                //$("#PhoneNumQ8").attr('data-val', false);
             }
             else if (selectedItems == 2) {
                 $('.libEducation').hide();
@@ -93,7 +87,7 @@
     </script>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+}
 </head>
 <div id="main-content" class="main-content">
     <main class="main-primary">
@@ -104,7 +98,8 @@
                 <ol class="breadcrumb dynamic"></ol>
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
 
-                <div class="group">
+                @if(Model.Success == false) { 
+                    <div class="group">
                     @using (Html.BeginForm("Apply", "Librarian", FormMethod.Post, new { enctype = "multipart/form-data" }))
                     {
                         @Html.ValidationSummary(false, "", new { @class = "text-danger" })
@@ -237,7 +232,7 @@
 
                                             <div id="basicInfoName" class="form-group half">
                                                 <span class="required-label">*</span>@Html.LabelFor(m => m.Name)
-                                                @Html.TextBoxFor(m => m.Name, "Name", new { @class = "form-control",  placeholder = "John Doe" })
+                                                @Html.TextBoxFor(m => m.Name, "Name", new { @class = "form-control", placeholder = "John Doe" })
 
                                                 @Html.ValidationMessage("Name", new { @class = "text-danger" })
 
@@ -861,7 +856,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailQ8)
-                                                @Html.TextAreaFor(m => m.EmailQ8, new { type = "Email", @class = "form-control" ,placeholder = "example@example.com" })
+                                                @Html.TextAreaFor(m => m.EmailQ8, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
                                             </div>
 
                                             <div class="form-group">
@@ -905,7 +900,6 @@
                                         @Html.LabelFor(m => m.ResumeUpload)
                                         <input type="file" name="file" />
                                         @Html.ValidationMessage("ResumeUpload", new { @class = "text-danger" })
-                                        @Html.ValidationMessage("FileName", new { @class = "text-danger" })
 
 
                                     </div>
@@ -925,7 +919,7 @@
                                         <div class="tab-body">
                                             <div class="checkbox">
                                                 <label class="normal">
-                                                    @Html.RadioButtonFor(m=> m.isCertified, true, new { type = "checkbox" })
+                                                    @Html.RadioButtonFor(m => m.isCertified, true, new { type = "checkbox" })
                                                     <span class="required-label">*</span> By checking this box, I hereby certify under penalty of perjury that the information I have entered on this
                                                     application is true and complete to the best of my knowledge. I further understand that all information is subject
                                                     to verification and that any false, incomplete, or incorrect statements may result in my disqualification from the
@@ -936,8 +930,8 @@
                                                 @Html.ValidationMessage("isCertified", new { @class = "text-danger" })
                                             </div>
                                             <div class="form-group half">
-                                                <span class="required-label">*</span>@Html.LabelFor(m=>m.Signature)
-                                                @Html.TextBoxFor(m=>m.Signature, new{type="text", @class="form-control"})
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Signature)
+                                                @Html.TextBoxFor(m => m.Signature, new { type = "text", @class = "form-control" })
                                                 @Html.ValidationMessage("Signature", new { @class = "text-danger" })
                                             </div>
                                             <div class="form-group half">
@@ -957,8 +951,8 @@
                             
                             <div class="section">
                                 <div class="container">
-                                    <div class="two-thirds"></div>
-                                    <div class="third">
+                                    <div class="half"></div>
+                                    <div class="half">
                                         <div class="section">
                                             <div class="full-width">
                                                 <div class="pull-right">
@@ -979,6 +973,27 @@
                         </div><!--end accordion-->
                     }
                 </div>
+                }
+                @if (Model.Success == true)
+                {
+                    <div class="section">
+                        <p>
+                            Congratulations! You have successfully submitted your Resume and Supplemental Application materials for the
+                            California State Library's Librarian open examination. If you do <strong>not</strong> recieve a follow-up e-mail from
+                            us within 5 business days, please contact us at <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or (916) 654-0202.
+                            This e-mail will include information regarding the next steps in the examination and hiring process.
+                        </p>
+
+                        <p>
+                            Until then, please connect with us on: <a href="https://www.facebook.com/CAStateLibrary/">Facebook</a> | <a href="https://twitter.com/castatelibrary">Twitter</a> | <a href="http://californiastatelibrary.tumblr.com/">Blog</a> | <a href="https://www.pinterest.com/castatelibrary/">Pinterest</a>
+                            and visit us <a href="">here</a>
+                        </p>
+
+                        <p>Thank you for your interest in the California State Library</p>
+
+                        <h3><a href="/home">Back to Home Page</a></h3>
+                    </div>
+                }
             </div>
         </div>
     </main>

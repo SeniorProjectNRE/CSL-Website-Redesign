@@ -25,7 +25,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string Name { get; set; }
 
         [Display(Name = "E-mail: ")]
-      //  [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
         [Required(ErrorMessage = "E-mail Required in basic info")]
         public string Email { get; set; }
 
@@ -169,12 +169,12 @@ namespace CSLBusinessObjects.Models.Exams
         public string NameQ1 { get; set; }
 
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
-       // [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
         [Required(ErrorMessage = "Contact's E-mail Required for Question 1")]
         public string EmailQ1 { get; set; }
 
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
-       // [Required(ErrorMessage = "Contact's Phone Number Required for Question 1")]
+        [Required(ErrorMessage = "Contact's Phone Number Required for Question 1")]
         public string PhoneNumQ1 { get; set; }
 
         [Display(Name = "2. Please describe the methods you use to stay abreast of best practices and the latest trends in library services and technology, for example, any association affiliations, conferences, seminars attended, training attended or given, or any other resources utilized.")]
@@ -186,7 +186,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string NameQ2 { get; set; }
 
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
-      //  [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
         [Required(ErrorMessage = "Contact's E-mail Required for Question 2")]
         public string EmailQ2 { get; set; }
 
@@ -203,7 +203,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string NameQ3 { get; set; }
 
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
-       // [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
         [Required(ErrorMessage = "Contact's E-mail Required for Question 3")]
         public string EmailQ3 { get; set; }
 
@@ -220,7 +220,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string NameQ4 { get; set; }
 
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
-       // [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
         [Required(ErrorMessage = "Contact's E-mail Required for Question 4")]
         public string EmailQ4 { get; set; }
 
@@ -237,7 +237,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string NameQ5 { get; set; }
 
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
-      //  [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
         [Required(ErrorMessage = "Contact's E-mail Required for Question 5")]
         public string EmailQ5 { get; set; }
 
@@ -254,7 +254,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string NameQ6 { get; set; }
 
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
-       // [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
         [Required(ErrorMessage = "Contact's E-mail Required for Question 6")]
         public string EmailQ6 { get; set; }
 
@@ -271,7 +271,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string NameQ7 { get; set; }
 
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
-      //  [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
         [Required(ErrorMessage = "Contact's E-mail Required for Question 7")]
         public string EmailQ7 { get; set; }
 
@@ -288,7 +288,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string NameQ8 { get; set; }
 
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
-       // [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
         [Required(ErrorMessage = "Contact's E-mail Required for Question 8")]
         public string EmailQ8 { get; set; }
 
@@ -299,20 +299,9 @@ namespace CSLBusinessObjects.Models.Exams
 
         #region Upload
         [Display(Name = "Resume")]
-        [Required(ErrorMessage = "Please upload your resume in .pdf or .doc/docx format")]
+        //[Required(ErrorMessage = "Please upload your resume in .pdf or .doc/docx format")]
         public HttpPostedFileBase ResumeUpload { get; set; }
 
-        //[FileExtensions(Extensions = ".pdf, .doc, .docx", ErrorMessage = "Please upload your resume in .pdf or .doc/docx format")]
-        //public string FileName
-        //{
-        //    get
-        //    {
-        //        if (ResumeUpload != null)
-        //            return ResumeUpload.FileName;
-        //        else
-        //            return "";
-        //    }
-        //}
         #endregion
 
         #region Sign
@@ -327,6 +316,10 @@ namespace CSLBusinessObjects.Models.Exams
         [Display(Name = "Date: ")]
         [Required(ErrorMessage = "Please type today's date")]
         public string Date { get; set; }
+
+        public bool IsCaptcha { get; set; }
+
+        public bool Success { get; set; }
         #endregion
 
         
