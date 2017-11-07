@@ -92,6 +92,8 @@
         });
     </script>
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 <div id="main-content" class="main-content">
     <main class="main-primary">
@@ -903,8 +905,9 @@
                                         @Html.LabelFor(m => m.ResumeUpload)
                                         <input type="file" name="file" />
                                         @Html.ValidationMessage("ResumeUpload", new { @class = "text-danger" })
+                                        @Html.ValidationMessage("FileName", new { @class = "text-danger" })
 
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -922,7 +925,7 @@
                                         <div class="tab-body">
                                             <div class="checkbox">
                                                 <label class="normal">
-                                                    @Html.RadioButtonFor(m=> m.isCertified, new { type = "checkbox" })
+                                                    @Html.RadioButtonFor(m=> m.isCertified, true, new { type = "checkbox" })
                                                     <span class="required-label">*</span> By checking this box, I hereby certify under penalty of perjury that the information I have entered on this
                                                     application is true and complete to the best of my knowledge. I further understand that all information is subject
                                                     to verification and that any false, incomplete, or incorrect statements may result in my disqualification from the
@@ -944,25 +947,34 @@
                                             </div>
 
 
-                                            <!--add captcha here-->
 
-                                            @*<div class="form-group">
-                                                <div class="pull-right">
-                                                    <button type="submit" value="Submit" class="btn btn-default pull-right" >Submit</button>
-                                                </div>
-                                            </div>*@
-
-                                            <div class="form-group">
-                                                <div class="pull-right">
-                                                    <input type="submit" value="Submit" class="btn btn-default pull-right"/>
-                                                </div>
-                                            </div>
 
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
+                            
+                            <div class="section">
+                                <div class="container">
+                                    <div class="two-thirds"></div>
+                                    <div class="third">
+                                        <div class="section">
+                                            <div class="full-width">
+                                                <div class="pull-right">
+                                                    <div class="g-recaptcha" data-sitekey="6Lf0XzYUAAAAAFm7yZHSL7K98voPXytgpy4O2zsU"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="pull-right">
+                                                <input type="submit" value="Submit" class="btn btn-default pull-right" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
 
                         </div><!--end accordion-->
                     }

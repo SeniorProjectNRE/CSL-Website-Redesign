@@ -159,7 +159,6 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumSpecialized { get; set; }
         #endregion
 
-
         #region Questions
         [Display(Name = "1. Please describe the strategies and techniques you would use to create and foster a customer service focus in a library setting.")]
         [Required(ErrorMessage = "Please describe your experience for Question 1")]
@@ -300,8 +299,20 @@ namespace CSLBusinessObjects.Models.Exams
 
         #region Upload
         [Display(Name = "Resume")]
-        //[Required(ErrorMessage = "Please upload your resume")]
+        [Required(ErrorMessage = "Please upload your resume in .pdf or .doc/docx format")]
         public HttpPostedFileBase ResumeUpload { get; set; }
+
+        //[FileExtensions(Extensions = ".pdf, .doc, .docx", ErrorMessage = "Please upload your resume in .pdf or .doc/docx format")]
+        //public string FileName
+        //{
+        //    get
+        //    {
+        //        if (ResumeUpload != null)
+        //            return ResumeUpload.FileName;
+        //        else
+        //            return "";
+        //    }
+        //}
         #endregion
 
         #region Sign
@@ -317,5 +328,7 @@ namespace CSLBusinessObjects.Models.Exams
         [Required(ErrorMessage = "Please type today's date")]
         public string Date { get; set; }
         #endregion
+
+        
     }
 }

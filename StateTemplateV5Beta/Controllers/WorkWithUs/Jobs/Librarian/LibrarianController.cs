@@ -60,7 +60,13 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
                 }
             }
 
-            model.ResumeUpload = file;
+            string ext = Path.GetExtension(file.FileName);
+            if (ext == ".pdf" || ext == ".doc" || ext == ".docx")
+            {
+                model.ResumeUpload = file;
+            }
+            else model.ResumeUpload = null;
+            
 
             string pdfTemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/LibAppFinal.pdf";
             string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + model.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
