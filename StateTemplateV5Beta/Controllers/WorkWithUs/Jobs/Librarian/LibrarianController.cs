@@ -45,13 +45,16 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
         [Route("apply")]
         public ActionResult Apply(LibrarianModel model, HttpPostedFileBase file)
         {
-
-            string ext = Path.GetExtension(file.FileName);
-            if (ext == ".pdf" || ext == ".doc" || ext == ".docx")
+            if(file != null)
             {
-                model.ResumeUpload = file;
+                string ext = Path.GetExtension(file.FileName);
+                if (ext == ".pdf" || ext == ".doc" || ext == ".docx")
+                {
+                    model.ResumeUpload = file;
+                }
+                else model.ResumeUpload = null;
             }
-            else model.ResumeUpload = null;
+            
 
             if (!ModelState.IsValid)
             {
