@@ -192,13 +192,37 @@
                     <tbody id="tablebody">
                         @foreach (var item in Model.GrantGetAllList)
                         {
+                            ViewBag.pathApp = "~/Content/StateTemplate/pdf/grantpdf/application/" + item.GrantID + ".pdf";
+                            ViewBag.pathAL = "~/Content/StateTemplate/pdf/grantpdf/award-letter/" + item.GrantID + "_AL.pdf";
+                            ViewBag.pathNAR = "~/Content/StateTemplate/pdf/grantpdf/narrative-report/" + item.GrantID + "_NAR2.pdf";
                             <tr>
                                 <td>@item.Library</td>
-                                <td>@item.GrantID</td>
+                                @if (System.IO.File.Exists(Server.MapPath(@ViewBag.pathApp)))
+                                {
+                                    <td><a href="@Url.Content(@ViewBag.pathApp)">@item.GrantID</a></td>
+                                }
+                                else
+                                {
+                                    <td>@item.GrantID</td>
+                                }
                                 <td>@item.Year</td>
                                 <td>@item.Project</td>
-                                <td>@item.Award</td>
-                                <td></td>
+                                @if (System.IO.File.Exists(Server.MapPath(@ViewBag.pathAL)))
+                                {
+                                    <td><a href="@Url.Content(@ViewBag.pathAL)">@item.Award</a></td>
+                                }
+                                else
+                                {
+                                    <td>@item.Award</td>
+                                }
+                                @if (System.IO.File.Exists(Server.MapPath(@ViewBag.pathNAR)))
+                                {
+                                    <td><a href="@Url.Content(@ViewBag.pathNAR)">Click here for narritive report</a></td>
+                                }
+                                else
+                                {
+                                    <td></td>
+                                }
                             </tr>
                         }
                     </tbody>

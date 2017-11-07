@@ -15,9 +15,9 @@ namespace CSLBusinessLayer.Concrete
 {
     public class EmailService : IEmailService
     {
-        public SuccessModel SendLibrarianExamEmail(string file, LibrarianModel model)
+        public bool SendLibrarianExamEmail(string file, LibrarianModel model)
         {
-            SuccessModel res;         
+            bool res;         
 
             // Command line argument must the the SMTP host.
             SmtpClient client = new SmtpClient();
@@ -52,7 +52,7 @@ namespace CSLBusinessLayer.Concrete
 
             mm.Attachments.Dispose();
 
-            res = new SuccessModel() { SuccessMessage = "Form has been successfully submitted" };
+            res = true;
             return res;
         }
 
