@@ -92,7 +92,7 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
                 }
 
                 string pdfLibrarianTemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/LibAppFinal.pdf";
-                string pdfSeniorLibrarianTemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/LibAppFinal.pdf";
+                string pdfSeniorLibrarianTemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/SenLibAppFinal.pdf";
                 string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + model.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
 
                 if (model.IsLibrarian == true && model.IsSeniorLibrarian == false)
@@ -101,7 +101,7 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
                 }
                 else if (model.IsSeniorLibrarian == true)
                 {
-                    //_examService.FillSeniorLibrarianExam(model, pdfSeniorLibrarianTemplate, newFile);
+                    _examService.FillSeniorLibrarianExam(model, pdfSeniorLibrarianTemplate, newFile);
                 }
 
                 bool res = _emailService.SendLibrarianExamEmail(newFile, model);
