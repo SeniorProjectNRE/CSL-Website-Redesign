@@ -898,8 +898,10 @@
 
                                         <span class="required-label">*</span> 
                                         @Html.LabelFor(m => m.ResumeUpload)
-                                        <input type="file" name="file" />
+                                        @*<input type="file" name="file" />*@
+                                        @Html.TextBoxFor(m => m.ResumeUpload, new { type = "file", name = "file" })
                                         @Html.ValidationMessage("ResumeUpload", new { @class = "text-danger" })
+                                        
 
 
                                     </div>

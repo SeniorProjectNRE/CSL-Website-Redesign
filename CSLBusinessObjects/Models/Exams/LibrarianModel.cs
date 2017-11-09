@@ -299,7 +299,7 @@ namespace CSLBusinessObjects.Models.Exams
 
         #region Upload
         [Display(Name = "Resume")]
-        //[Required(ErrorMessage = "Please upload your resume in .pdf or .doc/docx format")]
+        [Required(ErrorMessage = "Please upload your resume in .pdf or .doc/docx format")]
         public HttpPostedFileBase ResumeUpload { get; set; }
 
         #endregion
