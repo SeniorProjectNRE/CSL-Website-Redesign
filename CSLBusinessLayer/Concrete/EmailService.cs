@@ -29,7 +29,13 @@ namespace CSLBusinessLayer.Concrete
             client.UseDefaultCredentials = false;
             client.Credentials = new System.Net.NetworkCredential("seniorprojectteamnre@gmail.com", "Testing!23");
 
-            MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", "Exam Submission", file);
+            string subject;
+            if (model.IsLibrarian = true && model.IsSeniorLibrarian == false)
+            {
+                subject = "New Librarian Supplemental Application - " + model.Name;
+            } else subject = "New Senior Librarian Supplemental Application - " + model.Name;
+
+            MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", subject, LibrarianExamEmailBuilder(model));
             mm.IsBodyHtml = true;
             mm.BodyEncoding = UTF8Encoding.UTF8;
             mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
@@ -92,6 +98,12 @@ namespace CSLBusinessLayer.Concrete
                          "<br /><b>How long your class session at the Sutro will be (half hour, an hour, etc.): </b>" + model.ClassTimeLength +
                          "<br /><b>Is there an assignment, paper, or project the students will have to complete using Special Collections materials during the quarter? Is group study a requirement?: </b>" + model.DoesAssignmentExist +
                          "<br /><b>List of the materials to be used (please allow at least 3-4 days before the date of the scheduled class meeting): </b>" + model.Materials;
+            return res;
+        }
+
+        private string LibrarianExamEmailBuilder(LibrarianModel model)
+        {
+            string res = "<b>Please send a confirmation e-mail back to " + model.Name + " at: " + model.Email + " </b>";
             return res;
         }
     }
