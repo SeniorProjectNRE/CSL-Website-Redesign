@@ -2008,6 +2008,7 @@
     <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\CaliforniaPublicLibraryBroadbandProjectUpdate03042015.pptx" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\CaliforniaPublicLibraryDirectory0917.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\CaliforniaPublicLibraryHeadquartersDirectory0917.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\2017CaliforniaLibraryLaws.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
@@ -2306,6 +2307,7 @@
     <Content Include="Views\Services\AdditionalResources.cshtml" />
     <Content Include="Views\Services\ToLibraries\ImmigrantAlliance.cshtml" />
     <Content Include="Views\Services\ToLibraries\LibraryDirectory.cshtml" />
+    <Content Include="Views\Services\ToLibraries\LibraryLaws.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

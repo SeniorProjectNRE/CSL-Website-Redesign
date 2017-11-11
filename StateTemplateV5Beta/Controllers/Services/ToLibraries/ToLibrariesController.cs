@@ -64,5 +64,12 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
         {
             return View("~/Views/Services/ToLibraries/LibraryDirectory.cshtml");
         }
+
+        // GET: LibraryLaws
+        [Route("library-laws")]
+        public ActionResult LibraryLaws()
+        {
+            return View("~/Views/Services/ToLibraries/LibraryLaws.cshtml");
+        }
     }
 }
