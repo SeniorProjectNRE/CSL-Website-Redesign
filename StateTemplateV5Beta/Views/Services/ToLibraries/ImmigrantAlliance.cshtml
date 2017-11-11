@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "CSL - California Immigrant Alliance Project";
+    ViewBag.PageTitle = "California Immigrant Alliance Project";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "Public libraries play a key role in welcoming and educating immigrants. The Immigrant Alliance Project was created to support California public libraries as they create, enhance, and extend services to immigrants and their families.";
+    ViewBag.Keywords = "Immigrant, Alliance, Project";
+}
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<div id="main-content" class="main-content">
+    <main class="main-primary">
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/to-libraries">Libraries</a></li>
+                    <li>Immigrant Alliance</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <div class="two-thirds animate-fadeInUp">
+                        <p>
+                            California is home to more than 10 million immigrants. The latest available data show that nearly 27% of California's population is foreign born, about twice the US percentage overall.
+                        </p>
+
+                        <p>
+                            Public libraries play a key role in welcoming and educating immigrants. The Immigrant Alliance Project was created to support libraries as they create, enhance, and extend services to immigrants and their families.
+                        </p>
+
+                        <p>
+                            Activities for FY2017-18 for the Immigrant Alliance will be announced soon.
+                        </p>
+
+                        <p>
+                            Contact: <a href="mailto:janet.coles@library.ca.gov">Janet Coles</a>
+                        </p>
+                    </div>
+
+                    <div class="third animate-fadeInUp">
+                        <img src="~/Content/StateTemplate/images/services/toLibraries/alliance.png" alt="Alliance Project" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
