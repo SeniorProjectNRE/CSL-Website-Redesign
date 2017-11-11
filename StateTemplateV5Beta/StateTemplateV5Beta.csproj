@@ -655,6 +655,15 @@
     <Content Include="Content\StateTemplate\images\online_exhibits\top_ladies.jpg" />
     <Content Include="Content\StateTemplate\images\online_exhibits\upgrade.jpg" />
     <Content Include="Content\StateTemplate\images\services\borrowing\library_card_catalog.png" />
+    <Content Include="Content\StateTemplate\images\services\careerOnline\career_online_logo.jpg" />
+    <Content Include="Content\StateTemplate\images\services\careerOnline\CSL_logo.jpg" />
+    <Content Include="Content\StateTemplate\images\services\harwood\icon_pdf.png" />
+    <Content Include="Content\StateTemplate\images\services\harwood\icon_pdf_over.png" />
+    <Content Include="Content\StateTemplate\images\services\harwood\icon_video.png" />
+    <Content Include="Content\StateTemplate\images\services\harwood\icon_video_over.png" />
+    <Content Include="Content\StateTemplate\images\services\harwood\icon_www.png" />
+    <Content Include="Content\StateTemplate\images\services\harwood\icon_www_over.png" />
+    <Content Include="Content\StateTemplate\images\services\harwood\person.jpg" />
     <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
     <Content Include="Content\StateTemplate\images\services\PublicServices.png" />
     <Content Include="Content\StateTemplate\images\services\researchResources\csl_employee.png" />
@@ -1731,6 +1740,7 @@
     <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\SenLibAppFinal.pdf" />
     <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\SL1AppFinal.pdf" />
     <Content Include="Content\StateTemplate\pdf\ExamPDFTemplates\SL2AppFinal.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\career_online\COHSInfoNov2017.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
     <Content Include="Content\StateTemplate\pdf\crb\Newsletters\20170104.pdf" />
