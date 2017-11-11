@@ -662,6 +662,7 @@
     <Content Include="Content\StateTemplate\images\services\toLibraries\Buildings.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeInvestment.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeResults.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\CARevealed\ca_revealed.png" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\erate_banner.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\icon.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\money-bag.png" />

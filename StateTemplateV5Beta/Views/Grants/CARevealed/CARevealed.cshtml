@@ -1,11 +1,142 @@
 ﻿
 @{
-    ViewBag.Title = "CARevealed";
+    ViewBag.Title = "CSL - California Revealed Initiative";
+    ViewBag.PageTitle = "California Revealed Initiative";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "California Revealed is a State Library initiative to help California's public libraries and their partner local heritage groups digitize, preserve, and make available online, historically significant California local history resources.";
+    ViewBag.Keywords = "California, state, Library, revealed, initiative";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>CARevealed</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/to-libraries">To Libraries</a></li>
+                    <li>California Revealed Initiative</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <h3>About</h3>
+                <div class="group">
+                    <div class="two-thirds">
+                        <!-- About Paragraph -->
+                        <p>
+                            <strong>California Revealed</strong> is a State Library initiative to help California's public libraries, in partnership with other local heritage groups, digitize, preserve, and serve online historically significant Californiana (e.g., books, documents, audiovisual recordings). Participating libraries identify and select from their collections, create discovery metadata for the selected materials, and send materials together with associated metadata to a digital preservation service managed by the <a href="http://calpreservation.org/" target="_blank">California Preservation Program</a> (CPP).
+                        </p>
+                    </div>
+                    <div class="third">
+                        <!-- IMG -->
+                        <img src="~/Content/StateTemplate/images/services/toLibraries/CARevealed/ca_revealed.png" alt="CA Revealed" title="CA Revealed" style="width:220px"/>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- LIST -->
+                <br />
+                <p>The CPP digital preservation service:</p>
+                <ul>
+                    <li>inspects the condition of materials received from participating libraries</li>
+                    <li>confirms materials received against their associated metadata</li>
+                    <li>processes and sends materials to digitization service providers</li>
+                    <li>performs quality control on digital objects received from service providers</li>
+                    <li>uploads digital objects and their metadata to the California Revealed digital asset management system for online access</li>
+                    <li>provides digital preservation</li>
+                </ul>
+                <p>
+                    See <a href="http://calpreservation.org/california-revealed/" target="_blank">California Revealed</a> for information on participation in the project.
+                </p>
+                <p>
+                    Phase 1 of California Revealed, a planning phase, was completed in October 2016. The current phase, November 2016 forward, is focused on production and is dedicated to accomplishing digitization, digital preservation, and digital access goals identified in the first phase of the project.
+                </p>
+                <br />
+
+                <!-- FOR PARTICIPANTS -->
+                <h3>For Participants</h3>
+                <ul>
+                    <li><a href="https://youtu.be/nbFcpGdsqbk" target="_blank">Phase I Kickoff Webinar</a> (July 14, 2016), (Video)</li>
+                    <li><a href="https://youtu.be/ud7bpFL17rs" target="_blank">Phase I Copyright and Intellectual Property Webinar</a> (July 15, 2016), (Video)</li>
+                    <li><a href="/services/libraries/RobinChandler-CA_RevealedLegalIssuesAnsweringFAQSWebinar20160826.mp4" target="_blank">Phase I Legal Issues Answering FAQs Webinar</a> (August 26, 2016), (Video)</li>
+                    <li><a href="/services/libraries/RobinChandler-CA_RevealedLegalIssues_FairUse-Orphan-Works&RiskTolerance20160829.mp4" target="_blank">Phase I Legal Issues: Fair Use, Orphan Works, & Risk Tolerance</a> (August 29, 2016), (Video)</li>
+                </ul>
+                <p>
+                    Listserv: <a href="mailto:list@lists.carevealed.org">list@lists.carevealed.org</a>. Please contact <a href="mailto:janet.coles@library.ca.gov">Janet Coles</a> to subscribe.
+                </p>
+                <br />
+                <!-- RESOURCES -->
+                <h3>Resources</h3>
+                <h4>Legal Issues Resources</h4>
+                <ul>
+                    @*<li><a href="ca-rev-oral-hist.html">About Oral Histories and Other Sound Recordings</a></li>
+                    <li><a href="ca-rev-orphanworks.html">About Orphan Works</a></li>
+                    <li><a href="ca-rev-perm-doc.html">About Permission Documents</a></li>
+                    <li><a href="ca-rev-loc-gov-rec.html">About Local Government Records</a></li>
+                    <li><a href="ca-rev-legal-consid.html">Copyright & Legal Considerations FAQ</a></li>
+                    <li><a href="ca-rev-ownership.html">Determining Copyright Ownership</a></li>
+                    <li><a href="ca-rev-fairuse.html">Fair Use and the California Revealed Project</a></li>
+                    <li><a href="ca-rev-riskmngt.html">Risk Management and the California Revealed Project</a></li>*@
+
+                    <li><a href="/grants/ca-revealed/oral-histories">About Oral Histories and Other Sound Recordings</a></li>
+                    <li><a href="/grants/ca-revealed/orphan-works">About Orphan Works</a></li>
+                    <li><a href="/grants/ca-revealed/permission">About Permission Documents</a></li>
+                    <li><a href="/grants/ca-revealed/local-govt-records">About Local Government Records</a></li>
+                    <li><a href="/grants/ca-revealed/legal-consideration">Copyright & Legal Considerations FAQ</a></li>
+                    <li><a href="/grants/ca-revealed/ownership">Determining Copyright Ownership</a></li>
+                    <li><a href="/grants/ca-revealed/fair-use">Fair Use and the California Revealed Project</a></li>
+                    <li><a href="/grants/ca-revealed/risk-management">Risk Management and the California Revealed Project</a></li>
+                </ul>
+                <br />
+                <!-- RELATED PROJECTS -->
+                <h3>Related Projects</h3>
+                <ul>
+                    <li><a href="http://cdnc.ucr.edu/cgi-bin/cdnc" target="_blank">California Digital Newspaper Collection (CDNC)</a></li>
+                    <li><a href="http://calpreservation.org/projects/audiovisual-preservation/" target="_blank">California Audiovisual Preservation Project (CAVPP)</a></li>
+                </ul>
+                <br />
+            </div>
+            <div class="container">
+                <!-- CONTACT -->
+                <div class="panel panel-understated">
+                    <div class="panel-heading"><h3>For further information, please contact:</h3></div>
+                    <div class="panel-body">
+                        <div class="group">
+                            <div class="half">
+                                <p class="regular">
+                                    <strong>Barclay Ogden</strong><br />
+                                    Project Manager, California Revealed<br />
+                                    California Preservation Program<br />
+                                    <span class="ca-gov-icon-email"></span> <a href="mailto:bogden@library.berkeley.edu">bogden@library.berkeley.edu</a>
+                                </p>
+
+                            </div>
+                            <div class="half">
+                                <p class="regular">
+                                    <strong>Janet Coles</strong><br />
+                                    Library Programs Consultant<br />
+                                    California State Library<br />
+                                    <span class="ca-gov-icon-phone"></span> 916-651-0981<br />
+                                    <span class="ca-gov-icon-email"></span> <a href="mailto:janet.coles@library.ca.gov">janet.coles@library.ca.gov</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
