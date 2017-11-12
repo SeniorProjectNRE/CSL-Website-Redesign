@@ -1,11 +1,283 @@
 ﻿
 @{
-    ViewBag.Title = "Permission";
+    ViewBag.Title = "CSL - California Revealed About Permission Documents ";
+    ViewBag.PageTitle = "About Permission Documents ";
+    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Description = "This page gives details about how to develop permissions and release forms for the purposes of obtaining the rights to use local history resources for digitization projects. ";
 }
 
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+</head>
+
+<style>
+    .indent {
+        margin-left: 10px;
+    }
+</style>
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Permission</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">services</a></li>
+                    <li><a href="~/services/to-libraries/">To Libraries</a></li>
+                    <li><a href="~/library-dev-services/">Library Development Programs and Projects</a></li>
+
+                    <li><a href="~/services/to-libraries/ca-revealed">California Revealed</a></li>
+
+                    <li class="active">Permission </li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <p>(© 2016, Gretchen McCord)<span class="required-label">*</span></p>
+            </div>
+        </div>
+        <div class="section section-danger">
+            <div class="container">
+                <p><strong>Important Legal Notice:</strong> Resources provided by the California Revealed project provide only legal information, not legal advice. Although prepared by a copyright attorney, <strong><em>nothing in these web pages or documents should be considered legal advice.</em></strong></p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class='panel-group' role='tablist' aria-multiselectable='true'>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading1'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>We have a donor form. Do we also need a release or a license?</a>
+                            </h3>
+                        </div>
+                        <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                            <div class='panel-body'>
+                                <p>
+                                    What's the difference between a "license," a "release," a "donor form," or a "grant of permission?" For our purposes, nothing. A <strong><em>license</em></strong> is a document granting <strong><em>permission</em></strong> to use a copyright-protected work, and vice versa. Many librarians and others use the term <strong><em>release</em></strong> to refer to the same thing. Although a <strong><em>donor form</em></strong> can cover many issues, what we're interested in is whether it grants you a license, aka, permission. So don't get hung up on these labels!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading2'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>What rights do I need for projects like California Revealed?</a>
+                            </h3>
+                        </div>
+                        <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                            <div class='panel-body'>
+                                <p>
+                                    Copyright actually consists of a "bundle" of distinct rights to (1) reproduce the work, (2) create derivatives (a new work based on the original) of the work, (3) distribute copies to the public, (4) publicly display the work, and (5) publicly perform the work. Note that these rights are not format- or medium-specific; for example, photocopying, scanning, photographing, and even writing out text by hand all constitute "reproductions." Among other things, that means that, unless otherwise limited in the agreement, the grant of a general reproduction right allows a library to continue to reproduce the work in various formats/mediums to accommodate evolving technology – in other words, to "reformat" the work as necessary.
+                                </p>
+                                <p>
+                                    For the California Revealed project, you need the rights to:
+                                </p>
+                                <ol>
+                                    <li>reproduce the work, which allows you to copy the work in any way, including scanning or otherwise digitizing it;</li>
+                                    <li>publicly display, or if an audio or audiovisual work, publicly perform, the work, which allows you to post it online; and</li>
+                                    <li>distribute copies to the public, which allows you to make the work available for users to download.</li>
+                                </ol>
+                                <p>
+                                    The law is not yet entirely clear as to what constitutes a distribution in all online contexts. Posting an image to a website is clearly a public display, but if users can "right click and copy" to download it, is it also a distribution? In attempting to clarify anything, the law considers intent. So a good general rule of thumb is: If it's pretty clear that the website intends for users to be able to download an item, such as providing a button that says "click here to download," it is a distribution.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading3'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Who should sign the permission document?</a>
+                            </h3>
+                        </div>
+                        <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                            <div class='panel-body'>
+                                <p>
+                                    The document must be signed by the copyright owner or their agent. If it is signed by anyone else, it is not effective.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading4'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>What if there is more than one copyright owner?</a>
+                            </h3>
+                        </div>
+                        <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                            <div class='panel-body'>
+                                <p>A "joint work" is a work prepared by two or more authors with the intention that their contributions be merged into inseparable or interdependent parts of a unitary whole. "Joint authors" are considered co-owners of the copyright in the work, with each owning an equal share. Either can exploit the joint work in any way – selling copies, licensing third party uses, etc., or even transfer their copyright – without permission of the other, as long as that person equally shares any profits from the exploitation. This means that you need obtain permission from only one joint owner.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading5'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>Is the permission I have sufficient?</a>
+                            </h3>
+                        </div>
+                        <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                            <div class='panel-body'>
+                                <p>
+                                    If you already have a document granting permission to use a work, check it closely to be sure it (1) clearly applies to the specific work(s) of interest, (2) grants the specific rights you need, and (3) is signed by the copyright owner or their agent (see <a href="~/services/to-libraries/ca-revealed/ownership">Determining Copyright Ownership</a>). Ask yourself: Would a stranger who knows nothing about our situation be able to read the document and know without a doubt to which work(s) it applies and which rights it grants?
+                                </p><p>
+                                    Note that determining the legal significance or meaning of any document requires considering the document as a whole and understanding how different provisions relate to each other. Watch for any limitations, restrictions, or requirements that might weaken what otherwise appears to be a broad license.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading6'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>We are writing a new form for future use. What should it say?</a>
+                            </h3>
+                        </div>
+                        <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
+                            <div class='panel-body'>
+                                <p>
+                                    Keep the same guiding rule of thumb in mind: A stranger who knows nothing about the situation should be able to read the document and know without a doubt that it grants to you the right to do what you are doing with the work you are using.
+                                </p>
+                                <p>
+                                    An ideal document will address the following (the examples provided below are only examples and should not be considered "correct" language; before adopting a new permission form, you should consult your institution's legal counsel to ensure that it is appropriate and acceptable for your institution):
+                                </p>
+                                <p>
+                                    <strong>1. Identification of the work(s)</strong>
+                                </p>
+                                <p>
+                                    If standard bibliographic information is available, use it to identify the work(s). Otherwise, describe the work in as much detail as possible, with the goal that a stranger (such as a judge in a courtroom) would have no doubt to which work(s) the document applies.
+                                </p>
+                                <p>
+                                    It may not be practical to individually identify each work contained in a larger collection, e.g., a sizeable collection of photographs. Nonetheless, it is important to identify the works as specifically as possible. If possible, attach to the permissions document a copy of the works or identifying documentation.
+                                </p>
+                                <p>
+                                    <strong>2. Identification of rights granted</strong>
+                                </p>
+                                <p>
+                                    The rights needed for the California Revealed project are explained above. Because a copyright owner may grant only some but not all of those rights, an ideal document will specify, using the above or similar language, which of these rights are being granted.
+                                </p>
+                                <p>
+                                    However, being <em>too</em> specific in how you will act on those rights may become limiting. For example, specifying a particular format or medium may exclude the ability to use the work in other formats or media; even if you have only one specific use in mind today, that limitation could cause problems in the future, as unanticipated changes occur in technology, user behavior, or simply your needs.
+                                </p>
+                                <p class="indent">
+                                    <strong>EXAMPLE:</strong><br>
+                                    <strong>Narrow:</strong> "Grantor grants to Library the right to publicly display the Work on Library's website."<br><br>
+                                    <strong>Broader but potentially ambiguous regarding unanticipated situations:</strong> "Grantor grants to Library the right to publicly display the Work."<br><br>
+                                    <strong>Broader and unambiguous:</strong> "Grantor grants to Library the right to publicly display the Work in any format or medium."
+                                </p>
+                                <p>
+                                    <strong>3. Termination of the license granted</strong>
+                                </p>
+                                <p>
+                                    If the document does not specify a termination date or otherwise indicate that it is for a limited time period, it will most likely be considered to be perpetual. However, it never hurts to specifically state that the license is perpetual.
+                                </p>
+                                <p>
+                                    In comparison, if the document is silent as to the ability of the grantor to terminate the agreement, it is possible—however unlikely—that a grantor could at least attempt to revoke the license granted.
+                                </p>
+                                <p>
+                                    Thus, an ideal grant will state that the grant of rights granted is both perpetual and irrevocable.
+                                </p>
+                                <p class="indent">
+                                    <strong>EXAMPLE:</strong><br>
+                                    "Grantor grants to Library a perpetual and irrevocable license to reproduce, distribute to the public, and publicly perform or display the Work in any format or medium."
+                                </p>
+                                <p>
+                                    <strong>4. Representations and warranties</strong>
+                                </p>
+                                <p>
+                                    A document signed by someone other than the true copyright owner (or their agent), can not grant the rights it purports to grant. However, you may not be able to determine with certainty who owns the copyright. In some cases, especially with donors, the grantor may honestly but incorrectly believe they own the copyright. Having the grantor "represent and warrant" (basically, promise in a legally binding way) that they own the copyright helps protect your institution should it turn out they actually do not.
+                                </p>
+                                <p class="indent">
+                                    <strong>EXAMPLE:</strong><br>
+                                    "Grantor represents and warrants that she owns all the rights granted in this agreement and has the legal right to make this grant."
+                                </p>
+                                <p>
+                                    <strong>5. Indemnification</strong>
+                                </p>
+                                <p>
+                                    Representations and warranties may relieve you from liability for intentional infringement should the grantor turn out not to be the actual copyright owner, but they don't completely take you off the hook. Since copyright infringement is a strict liability tort, your institution could still be liable for damages for infringement. Just as important, if the rightful owner is particularly aggressive, your institution may have to expend resources in dealing with the owner.
+                                </p>
+                                <p>
+                                    Including an indemnity clause in your document makes the grantor legally responsible for paying any costs specified in the indemnification clause.
+                                </p>
+                                <p class="indent">
+                                    <strong>EXAMPLE:</strong><br>
+                                    Grantor agrees to indemnify Grantee and hold it harmless from any and all losses, damages, liabilities, costs, charges, and expenses, including reasonable fees of attorneys of Grantee's choosing, arising out of any breach of any of Grantor’s representations and warranties contained in this agreement and any third-party claims relating to the matters covered by these representations and warranties.
+                                </p>
+                                <p>
+                                    From a practical perspective, of course, an indemnification clause is only as helpful as the grantor's bank account is plentiful.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading7'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse7' aria-expanded='false' aria-controls='collapse7'>What if the copyright owner insists on using their own document?</a>
+                            </h3>
+                        </div>
+                        <div id='collapse7' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading7'>
+                            <div class='panel-body'>
+                                <p>  Most importantly: Be sure you understand what the document says! If in doubt, consult your institution's legal counsel. (Don't rely on the copyright owner; the document may not mean what they think and intend it to mean.)</p>
+
+                                <p> Analyze the document regarding the tips provided here. In addition, consider whether any limitations it may contain are acceptable. For example, a permissions document may specify how long a work may be used, how many copies may be made, or to whom it may be distributed, displayed, or performed.</p>
+
+                                <p> Do not agree to the document unless you are willing to abide by its terms. When you enter into a contract on behalf of your institution, your institution is bound by it, regardless of whether you have read it or not, or understand it or not.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='panel panel-default'>
+                        <div class='panel-heading' role='tab' id='heading8'>
+                            <h3 class='panel-title'>
+                                <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse8' aria-expanded='false' aria-controls='collapse8'>What should we watch out for?</a>
+                            </h3>
+                        </div>
+                        <div id='collapse8' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading8'>
+                            <div class='panel-body'>
+                                <p>
+                                    Determining the legal significance or meaning of any document requires considering the document as a whole. This means that (1) even "bad" language might not be so bad if it is "corrected" and (2) even "good" language can be undermined. Below are some examples.
+                                </p>
+                                <p>
+                                    The word "use:" A grant of the right "to use" a work that does not describe the use in more detail is ambiguous, making reliance on the grant potentially risky. However, if that grant is modified appropriately, the problem can be resolved.
+                                </p>
+                                <p class="indent">
+                                    <strong>EXAMPLE:</strong><br>
+                                    <strong>Ambiguous:</strong> "Licensor grants to Licensee the right to use the Work for non-commercial purposes only."<br>
+                                    <strong>Better:</strong> "Licensor grants to Licensee the right to use the Work for non-commercial purposes only. This grant includes the rights to reproduce, create derivatives, distribute to the public, and publicly perform or display the Work."
+                                </p>
+                                <p>
+                                    Granting rights to a non-existing entity: As important as it is to be sure the person or entity purporting to grant the rights actually has the right to do so, it is equally important to identify a legal entity as the recipient.
+                                </p>
+                                <p class="indent">
+                                    <strong>EXAMPLE:</strong><br>
+                                    <strong>Ambiguous:</strong> "Donor grants to the George Washington Reading Room the rights to copy and publicly display the Work." (Presumably, the intended grantee was the library in which the reading room is housed.)
+                                </p>
+                                <p>
+                                    Granting a license in addition to an assignment: If the document assigns the entire copyright, the assignee owns the copyright, so they do not need an additional license to use it. Including the language of both introduces questions of what has actually been granted.
+                                </p>
+                                <p class="indent">
+                                    <strong>EXAMPLE:</strong><br>
+                                    <strong>Sufficient in itself:</strong> "Donor assigns all copyrights in the Work to Library."
+                                    <strong>Ambiguous:</strong> "Donor assigns all copyrights in the Work to Library. Donor grants to Library the rights to copy, publicly display, and provide public access to the Work."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <br />
+                <p><span class="required-label">*</span> This page copyright 2016, Gretchen McCord. Content may be copied and used on an individual basis for non-commercial purposes only but may not be modified or broadly distributed without permission. For example, you may link to this page (linking does not infringe copyright), but you may not copy and paste the following content on another page.</p>
+            </div>
+        </div>
     </main>
 </div>
 
