@@ -669,6 +669,7 @@
     <Content Include="Content\StateTemplate\images\services\toLibraries\money-bag.png" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\quoteIcon.png" />
     <Content Include="Content\StateTemplate\images\services\researchResources\PTRC.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\zipbooks.jpg" />
     <Content Include="Content\StateTemplate\images\services\toStateEmployees\art_legislators.jpg" />
     <Content Include="Content\StateTemplate\images\services\toStateEmployees\borrowing_materials.jpg" />
     <Content Include="Content\StateTemplate\images\services\toStateEmployees\card.jpg" />
