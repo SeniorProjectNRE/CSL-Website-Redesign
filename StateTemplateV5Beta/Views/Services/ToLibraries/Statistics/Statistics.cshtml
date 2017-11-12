@@ -1,0 +1,125 @@
+﻿@{
+    ViewBag.Title = "CSL - California Library Statistics";
+    ViewBag.PageTitle = "California Library Statistics";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "The State Library annually collects California Library Statistics, a compilation of statistical data from public libraries throughout the state. Information about this public library survey and links to statistical reports are available on this page.";
+    ViewBag.Keywords = "Statistics";
+}
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<div id="main-content" class="main-content">
+    <main class="main-primary">
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/to-libraries">To Libraries</a></li>
+                    <li>Public Library Statistics</li>
+                </ol>
+
+                <!--
+                    Update links for:
+                        Prior Years Archive
+                        California Demographic Profiles: By Library Jurisdiction and County
+                -->
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <p>
+                        <b>The State Library annually collects California Library Statistics, a compilation of statistical data from public libraries throughout the state.</b>
+                    </p>
+
+                    <p>
+                        <b>California's 2016-17 Public Library Survey will be open for data input from September 18, 2017 to October 30, 2017.</b>
+                    </p>
+                    <div class="two-thirds">
+                        <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading1'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Resources for Completing the Public Library Survey</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                    <div class='panel-body'>
+                                        <ul class="list-overstated">
+                                            <li><a href="~/Content/StateTemplate/pdf/services/toLibraries/CA-2017-Instructions-for-Survey.pdf" target="_blank">Survey Instructions</a></li>
+                                            <li><a href="~/Content/StateTemplate/pdf/services/toLibraries/CA_Survey_2017.pdf" target="_blank">Blank Survey Form</a></li>
+                                            <li><a href="~/Content/StateTemplate/pdf/services/toLibraries/CountingElectronicItemsforCAPLS.pdf" target="_blank">Counting Electronic Items for the California Public Library Survey</a></li>
+                                            <li><a href="~/Content/StateTemplate/pdf/services/toLibraries/CountingSuccessfulRetrievalofElectronicInformationforCAPLS.pdf" target="_blank">Counting Successful Retrieval of Information for the California Public Library Survey</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading2'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Archived Webinars</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                    <div class='panel-body'>
+                                        <ul class="list-overstated">
+                                            <li><a href="http://cc.readytalk.com/play?id=esjyoc" target="_blank">Public Library Survey 2017</a></li>
+                                            <li><a href="https://infopeople.org/civicrm/event/info?reset=1&id=245" target="_blank">Public Library Statistics: Collecting, Finding, Using</a></li>
+                                            <li><a href="https://infopeople.org/civicrm/event/info?reset=1&id=464" target="_blank">Making it Count: California Public Library Statistics Online</a></li>
+                                            <li><a href="https://infopeople.org/civicrm/event/info?reset=1&id=604" target="_blank">Public Library Survey 2016</a></li>
+                                        </ul>
+
+                                        <p>
+                                            Contact the State Data Coordinator, Janet Coles, (<a href="mailto:Janet.Coles@library.ca.gov">Janet.Coles@library.ca.gov</a>) <br />or <a href="tel:+9166510981">(916) 651-0981</a> to obtain additional information.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading3'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Most Recent Statistics</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            <a href="/services/to-libraries/statistics/summary/">California Public Libraries At a Glance</a>: Facts about California's Public Libraries.
+                                        </p>
+
+                                        <p>
+                                            The most recent California Library Statistics are found on the <a href="http://www.californialibrarystatistics.com/" target="_blank">California Library Statistics Portal</a>.
+                                        </p>
+
+                                        <p>
+                                            <a href="http://www.library.ca.gov/lds/librarystatsarchive.html">Prior Years Archive</a>
+                                        </p>
+                                        <p>
+                                            <a href="http://www.library.ca.gov/lds/demographicprofiles/index.html">California Demographic Profiles: By Library Jurisdiction and County</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="third">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+

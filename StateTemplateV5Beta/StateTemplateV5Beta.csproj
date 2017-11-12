@@ -200,6 +200,7 @@
     <Compile Include="Controllers\Services\Statistics\StatisticsController.cs" />
     <Compile Include="Controllers\Services\ToLibraries\CALibraryServicesAct\Board\BoardController.cs" />
     <Compile Include="Controllers\Services\ToLibraries\CALibraryServicesAct\CALibraryServicesActController.cs" />
+    <Compile Include="Controllers\Services\ToLibraries\Statistics\StatisticsController.cs" />
     <Compile Include="Controllers\Services\ToLibraries\ToLibrariesController.cs" />
     <Compile Include="Controllers\Services\ToStateEmployees\ToStateEmployeesController.cs" />
     <Compile Include="Controllers\SiteMap\SiteMapController.cs" />
@@ -2009,6 +2010,10 @@
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\CaliforniaPublicLibraryDirectory0917.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\CaliforniaPublicLibraryHeadquartersDirectory0917.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\2017CaliforniaLibraryLaws.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\CA-2017-Instructions-for-Survey.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\CA_Survey_2017.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\CountingElectronicItemsforCAPLS.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\CountingSuccessfulRetrievalofElectronicInformationforCAPLS.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
@@ -2308,6 +2313,8 @@
     <Content Include="Views\Services\ToLibraries\ImmigrantAlliance.cshtml" />
     <Content Include="Views\Services\ToLibraries\LibraryDirectory.cshtml" />
     <Content Include="Views\Services\ToLibraries\LibraryLaws.cshtml" />
+    <Content Include="Views\Services\ToLibraries\Statistics\Statistics.cshtml" />
+    <Content Include="Views\Services\ToLibraries\Statistics\Summary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
