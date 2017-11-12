@@ -71,5 +71,12 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
         {
             return View("~/Views/Services/ToLibraries/LibraryLaws.cshtml");
         }
+
+        // GET: zip-books
+        [Route("zip-books")]
+        public ActionResult ZipBooks()
+        {
+            return View("~/Views/Services/ToLibraries/ZipBooks.cshtml");
+        }
     }
 }
