@@ -8,15 +8,18 @@ using System.Web;
 
 namespace CSLBusinessObjects.Models.Exams
 {
-    public class LibrarianModel
+    public class SupervisingLibrarianModel
     {
 
         #region Examinations
-        [Display(Name = "Librarian")]
-        public bool IsLibrarian { get; set; }
+        [Display(Name = "Supervising Librarian I")]
+        public bool IsSupervisingLibrarianI { get; set; }
 
-        [Display(Name = "Senior Librarian")]
-        public bool IsSeniorLibrarian { get; set; }
+        [Display(Name = "Supervising Librarian II")]
+        public bool IsSupervisingLibrarianII { get; set; }
+
+        [Display(Name = "Principal Librarian")]
+        public bool IsPrincipalLibrarian { get; set; }
         #endregion
 
         #region BasicInfo
@@ -32,24 +35,14 @@ namespace CSLBusinessObjects.Models.Exams
         [Display(Name = "Please affirm that you meet the following educational requirement: equivalent to graduation from a college or university and completion of a graduate degree from an accredited library school. (Registration as a graduate student in a library school will admit applicants to the examination, but evidence of completion of the required graduate degree must be submitted before an applicant can be considered eligible for appointment)")]
         public bool HasEducation { get; set; }
 
-        [Display(Name = "If not, check here if you are a registered graduate student in a library school.")]
-        public bool IfNot { get; set; }
+        [Display(Name = "Please describe the way in which your experience meets the minimum requirements for participation in this examination.")]
+        public bool HasExperienceSLI { get; set; }
 
         [Display(Name = "Please describe the way in which your experience meets the minimum requirements for participation in this examination.")]
-        public bool HasExperience { get; set; }
+        public bool HasExperienceSLII { get; set; }
 
-        [Display(Name = "Standard Search Strategies")]
-        public string SearchStrategies { get; set; }
-
-        [Display(Name = "Name of person who can verify this experience:")]
-        public string NameSearchStrategies { get; set; }
-
-        [Display(Name = "E-mail of person listed above who can verify this experience:")]
-        public string EmailSearchStrategies { get; set; }
-
-        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number in Basic Info")]
-        [Display(Name = "Phone Number of person listed above who can verify this experience:")]
-        public string PhoneNumSearchStrategies { get; set; }
+        [Display(Name = "Please describe the way in which your experience meets the minimum requirements for participation in this examination.")]
+        public bool HasExperiencePL { get; set; }
 
         [Display(Name = "Collection Development")]
         public string CollectionDevelopment { get; set; }
@@ -65,7 +58,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumCollectionDevelopment { get; set; }
 
         [Display(Name = "Bibliographic Information Sources")]
-        public string BibliographicInfo { get; set; }
+        public string BibliographicInfo{ get; set; }
 
         [Display(Name = "Name of person who can verify this experience:")]
         public string NameBibliographicInfo { get; set; }
@@ -104,7 +97,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumAcquisitions { get; set; }
 
         [Display(Name = "Cataloging and Classification")]
-        public string CatalogAndClass { get; set; }
+        public string CatalogAndClass{ get; set; }
 
         [Display(Name = "Name of person who can verify this experience:")]
         public string NameCatalogAndClass { get; set; }
@@ -170,7 +163,10 @@ namespace CSLBusinessObjects.Models.Exams
         #endregion
 
         #region Questions
-        [Display(Name = "1. Please describe the strategies and techniques you would use to create and foster a customer service focus in a library setting.")]
+        [Display(Name = "1. Please rate your experience in creating and fostering a customer service focus in a library setting.")]
+        public bool RateQ1 { get; set; }
+
+        [Display(Name = "Please describe your experience in creating and fostering a customer service focus in a library setting that supports your self-rating. Be specific about the strategies and techniques you used and which proved to be the most successful.")]
         [Required(ErrorMessage = "Please describe your experience for Question 1")]
         public string Q1 { get; set; }
 
@@ -188,7 +184,11 @@ namespace CSLBusinessObjects.Models.Exams
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 1")]
         public string PhoneNumQ1 { get; set; }
 
-        [Display(Name = "2. Please describe the methods you use to stay abreast of best practices and the latest trends in library services and technology, for example, any association affiliations, conferences, seminars attended, training attended or given, or any other resources utilized.")]
+
+        [Display(Name = "2. Please rate your knowledge and experience in establishing standard competencies among staff to ensure that staff members are evaluated equally and fairly.")]
+        public bool RateQ2 { get; set; }
+
+        [Display(Name = "Please describe your experience in establishing standard staff competencies that supports your self-rating. Be specific about the competencies, how they were developed, and how you implemented and monitored them.")]
         [Required(ErrorMessage = "Please describe your experience for Question 2")]
         public string Q2 { get; set; }
 
@@ -206,7 +206,11 @@ namespace CSLBusinessObjects.Models.Exams
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 2")]
         public string PhoneNumQ2 { get; set; }
 
-        [Display(Name = "3. Please describe the techniques and strategies that you would use to establish and maintain cooperative relationships with library patrons, coworkers, and the public.")]
+
+        [Display(Name = "3. Please rate your experience with the development and/or revision of library policies and procedures.")]
+        public bool RateQ3 { get; set; }
+
+        [Display(Name = "Please describe your professional library experience that supports your rating. Discuss the subject of the policy or procedure, the problem to be addressed and the way in which the policy addressed this problem. Please be specific regarding your role in the process.")]
         [Required(ErrorMessage = "Please describe your experience for Question 3")]
         public string Q3 { get; set; }
 
@@ -224,7 +228,11 @@ namespace CSLBusinessObjects.Models.Exams
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 3")]
         public string PhoneNumQ3 { get; set; }
 
-        [Display(Name = "4. Please describe the social and library trends that have impacted the way people communicate and seek information.")]
+
+        [Display(Name = "4. Please rate your experience in developing and maintaining a discrimination and harassment free work environment. ")]
+        public bool RateQ4 { get; set; }
+
+        [Display(Name = "Please describe your experience that supports your rating. Discuss the number and composition of the workforce in which you worked and what you specifically did to create a discrimination and harassment free workplace.")]
         [Required(ErrorMessage = "Please describe your experience for Question 4")]
         public string Q4 { get; set; }
 
@@ -242,7 +250,11 @@ namespace CSLBusinessObjects.Models.Exams
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 4")]
         public string PhoneNumQ4 { get; set; }
 
-        [Display(Name = "5. Please describe your experience in forming and/or working with teams or fostering teamwork among co-workers. Be specific about the nature of the team, its purpose or goals, and your role in the process.")]
+
+        [Display(Name = "5. Please rate your experience in forming and/or working with teams or fostering teamwork among co-workers or work units.")]
+        public bool RateQ5 { get; set; }
+
+        [Display(Name = "Please describe your experience that supports your rating. Be specific about the nature of the team, its purpose or goals, and your role in the process.")]
         [Required(ErrorMessage = "Please describe your experience for Question 5")]
         public string Q5 { get; set; }
 
@@ -260,7 +272,11 @@ namespace CSLBusinessObjects.Models.Exams
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 5")]
         public string PhoneNumQ5 { get; set; }
 
-        [Display(Name = "6. Please describe your public speaking experience before large or small groups. This does not have to be in a library setting.")]
+
+        [Display(Name = "6. Please rate your experience in developing and using conflict resolution strategies.")]
+        public bool RateQ6 { get; set; }
+
+        [Display(Name = "Please describe your experience that supports your rating. Be specific about the situation in which you developed and/or used conflict resolution strategies and your role in the process.")]
         [Required(ErrorMessage = "Please describe your experience for Question 6")]
         public string Q6 { get; set; }
 
@@ -277,7 +293,11 @@ namespace CSLBusinessObjects.Models.Exams
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 6")]
         public string PhoneNumQ6 { get; set; }
 
-        [Display(Name = "7. Please describe your experience as a “lead” over other employees. Discuss how “lead” responsibilities are different from “supervision” and what techniques you used to guide and train employees assigned to you.")]
+
+        [Display(Name = "7. Please rate your experience in supervising other employees.")]
+        public bool RateQ7 { get; set; }
+
+        [Display(Name = "Please describe your experience that supports your rating. Be specific about the number and types of employees supervised, directly or indirectly, and the breadth and scope of functions they performed.")]
         [Required(ErrorMessage = "Please describe your experience for Question 7")]
         public string Q7 { get; set; }
 
@@ -295,7 +315,11 @@ namespace CSLBusinessObjects.Models.Exams
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 7")]
         public string PhoneNumQ7 { get; set; }
 
-        [Display(Name = "8. Please describe any expertise or experience that you have working with specialized collections. Be specific about the nature and size of the collection.")]
+
+        [Display(Name = "Please describe the methods you use to stay abreast of best practices and the latest trends in library services and technology, for example, any association affiliations, conferences, seminars attended, training attended or given, or any other resources utilized.")]
+        public bool RateQ8 { get; set; }
+
+        [Display(Name = "Discuss your role in any associations (eg. member, officer) and the extent of your participation in conferences, seminars, or training programs (eg. organizer, participant, speaker, etc.)")]
         [Required(ErrorMessage = "Please describe your experience for Question 8")]
         public string Q8 { get; set; }
 
@@ -312,6 +336,94 @@ namespace CSLBusinessObjects.Models.Exams
         [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 8")]
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 8")]
         public string PhoneNumQ8 { get; set; }
+
+
+        [Display(Name = "9. Please rate your experience managing a library budget.")]
+        public bool RateQ9 { get; set; }
+
+        [Display(Name = "Please describe your experience that supports your rating. Be specific about the size and complexity of the budget, whether it was for a unit/section/division/department/organization, and your role in the process.")]
+        [Required(ErrorMessage = "Please describe your experience for Question 9")]
+        public string Q9 { get; set; }
+
+        [Display(Name = "Name of person who can verify this experience:")]
+        [Required(ErrorMessage = "Contact Required for Question 9")]
+        public string NameQ9 { get; set; }
+
+        [Display(Name = "E-mail of person listed above who can verify this experience:")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [Required(ErrorMessage = "Contact's E-mail Required for Question 9")]
+        public string EmailQ9 { get; set; }
+
+        [Display(Name = "Phone Number of person listed above who can verify this experience:")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 9")]
+        [Required(ErrorMessage = "Contact's Phone Number Required for Question 9")]
+        public string PhoneNumQ9 { get; set; }
+
+
+        [Display(Name = "10. Please rate your experience in developing and/or implementing strategic goals and objectives.")]
+        public bool RateQ10 { get; set; }
+
+        [Display(Name = "Please describe your experience that supports your rating. Be specific about the setting in which you engaged in strategic planning, the types of goals and objectives that were formulated and your role in the process.")]
+        [Required(ErrorMessage = "Please describe your experience for Question 10")]
+        public string Q10 { get; set; }
+
+        [Display(Name = "Name of person who can verify this experience:")]
+        [Required(ErrorMessage = "Contact Required for Question 10")]
+        public string NameQ10 { get; set; }
+
+        [Display(Name = "E-mail of person listed above who can verify this experience:")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [Required(ErrorMessage = "Contact's E-mail Required for Question 10")]
+        public string EmailQ10 { get; set; }
+
+        [Display(Name = "Phone Number of person listed above who can verify this experience:")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 10")]
+        [Required(ErrorMessage = "Contact's Phone Number Required for Question 10")]
+        public string PhoneNumQ10 { get; set; }
+
+
+        [Display(Name = "11. Please rate your skill and experience as a leader (as opposed to a manager).")]
+        public bool RateQ11 { get; set; }
+
+        [Display(Name = "Please describe your experience that supports your rating. Be specific about your leadership traits and how you demonstrate the elements of effective leadership.")]
+        [Required(ErrorMessage = "Please describe your experience for Question 11")]
+        public string Q11 { get; set; }
+
+        [Display(Name = "Name of person who can verify this experience:")]
+        [Required(ErrorMessage = "Contact Required for Question 11")]
+        public string NameQ11 { get; set; }
+
+        [Display(Name = "E-mail of person listed above who can verify this experience:")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [Required(ErrorMessage = "Contact's E-mail Required for Question 11")]
+        public string EmailQ11 { get; set; }
+
+        [Display(Name = "Phone Number of person listed above who can verify this experience:")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 11")]
+        [Required(ErrorMessage = "Contact's Phone Number Required for Question 11")]
+        public string PhoneNumQ11 { get; set; }
+
+
+        [Display(Name = "12. Please rate your experience in the development, implementation, and or evaluation of library program criteria.")]
+        public bool RateQ12 { get; set; }
+
+        [Display(Name = "Please describe your experience that supports your rating. Be specific about the program, the criteria and/or metrics you developed and implemented and your assessment of their effectiveness as evaluative tools.")]
+        [Required(ErrorMessage = "Please describe your experience for Question 12")]
+        public string Q12 { get; set; }
+
+        [Display(Name = "Name of person who can verify this experience:")]
+        [Required(ErrorMessage = "Contact Required for Question 12")]
+        public string NameQ12 { get; set; }
+
+        [Display(Name = "E-mail of person listed above who can verify this experience:")]
+        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
+        [Required(ErrorMessage = "Contact's E-mail Required for Question 12")]
+        public string EmailQ12 { get; set; }
+
+        [Display(Name = "Phone Number of person listed above who can verify this experience:")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 12")]
+        [Required(ErrorMessage = "Contact's Phone Number Required for Question 12")]
+        public string PhoneNumQ12 { get; set; }
         #endregion
 
         #region Upload
@@ -340,6 +452,6 @@ namespace CSLBusinessObjects.Models.Exams
         public bool Success { get; set; }
         #endregion
 
-
+        
     }
 }
