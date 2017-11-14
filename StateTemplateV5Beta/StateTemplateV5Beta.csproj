@@ -608,6 +608,7 @@
     <Content Include="Content\StateTemplate\images\gps\cdlp_logo.jpg" />
     <Content Include="Content\StateTemplate\images\gps\fdlp_logo.jpg" />
     <Content Include="Content\StateTemplate\images\gps\ptrc_logo.jpg" />
+    <Content Include="Content\StateTemplate\images\grants\LSTA\IMLS_Logo_square.jpg" />
     <Content Include="Content\StateTemplate\images\home\3d.jpg" />
     <Content Include="Content\StateTemplate\images\home\3d_.jpg" />
     <Content Include="Content\StateTemplate\images\home\book.jpg" />
@@ -2004,6 +2005,11 @@
     <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\15-02_CaliforniaPublicLibraryBroadbandGrantApplication_REV.docx" />
     <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\15-02_Branch_Broadband_Grant_Guidelines_REV.docx" />
     <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\CaliforniaPublicLibraryBroadbandProjectUpdate03042015.pptx" />
+    <Content Include="Content\StateTemplate\pdf\grants\LSTA\LSTADescription.pdf" />
+    <Content Include="Content\StateTemplate\pdf\grants\LSTA\CaliforniaFiveYearPlan2018-2022.pdf" />
+    <Content Include="Content\StateTemplate\pdf\grants\LSTA\LSTAEvaluation2013-2016.pdf" />
+    <Content Include="Content\StateTemplate\pdf\grants\LSTA\LSTA5YearPlan2013-2017.pdf" />
+    <Content Include="Content\StateTemplate\pdf\grants\LSTA\LSTAEvaluation2006-2011.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
