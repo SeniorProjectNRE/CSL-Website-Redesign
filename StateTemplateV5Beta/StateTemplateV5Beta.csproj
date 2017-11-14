@@ -658,6 +658,7 @@
     <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
     <Content Include="Content\StateTemplate\images\services\PublicServices.png" />
     <Content Include="Content\StateTemplate\images\services\researchResources\csl_employee.png" />
+    <Content Include="Content\StateTemplate\images\services\researchResources\top.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\California.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\Buildings.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeInvestment.jpg" />
@@ -2301,6 +2302,7 @@
     <Content Include="Views\Collections\Genealogy\Links.cshtml" />
     <Content Include="Views\Collections\Genealogy\Toolkit.cshtml" />
     <Content Include="Views\Services\AdditionalResources.cshtml" />
+    <Content Include="Views\Services\Research.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

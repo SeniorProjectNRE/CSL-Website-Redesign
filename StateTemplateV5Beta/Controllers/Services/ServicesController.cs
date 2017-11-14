@@ -51,6 +51,13 @@ namespace StateTemplateV5Beta.Controllers.Services
             return View();
         }
 
+        // GET: Research
+        [Route("Research")]
+        public ActionResult Research()
+        {
+            return View();
+        }
+
         // GET: To-Public
         [Route("To-Public")]
         public ActionResult ToPublic()
