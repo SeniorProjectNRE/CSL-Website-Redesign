@@ -1,0 +1,261 @@
+﻿@{
+    ViewBag.Title = "";
+    ViewBag.PageTitle = "Genealogy Toolkit";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "";
+    ViewBag.Keywords = "Genealogy, Toolkit";
+}
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<div id="main-content" class="main-content">
+    <main class="main-primary">
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/collections/genealogy">Genealogy</a></li>
+                    <li>Toolkit</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <!--Fix links for "CSL Chart Creator" and "California State Library"-->
+                <!--Description and Title are missing-->
+
+                <div class="group">
+                    <ul class="list-overstated">
+                        <li><a href="/collections/genealogy/links/">Helpful Links</a></li>
+                    </ul>
+
+
+                    <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading1'>
+                                <h4 class='panel-title'>
+                                    <a class='collapsed' role='button' data-toggle='collapse' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Getting Started</a>
+                                </h4>
+                            </div>
+                            <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                <div class='panel-body'>
+                                    <div class="orange">
+                                        <h5>Record Levels, Types, and Formats to consider</h5>
+                                    </div>
+                                    <p class="list-unstyled p-t-md">
+                                        A person's unofficial and official recorded presence changes over time. 
+                                        Genealogical records can be personal, familial, business, municipal, county, state, federal, or international.
+                                    </p>
+                                    <p>
+                                        Information about a person can come in many formats, including written (books, directories, letters, newspapers, books, blogs), 
+                                        audio (oral histories, movies, interviews), 
+                                        visual (photographs, home movies, artwork), 
+                                        or even inanimate objects, such as heirlooms and keepsakes (jewelry, trophies, awards, etc.).
+                                    </p>
+                                    <p>
+                                        <b>Types of Records:</b>
+                                    </p>
+                                    <div class="group">
+                                        <div class="half">
+                                            <ul class="list-overstated">
+                                                <li>Address books</li>
+                                                <li>Bibles or other Family Books</li>
+                                                <li>Business and Professional Licenses</li>
+                                                <li><a href="/collections/genealogy/links/">Cemeteries, Burials, and Cremations</a></li>
+                                                <li>Census</li>
+                                                <li>Church Membership </li>
+                                                <li>City and Telephone Directories</li>
+                                                <li>Court and Legal (Civil and Criminal)</li>
+                                                <li>Education (K-12; University)</li>
+                                                <li>Employment, Financial, and Business</li>
+                                                <li>Family Reunions</li>
+                                                <li>Health, Hospital, and Insurance</li>
+                                                <li>Heirlooms, Keepsakes and Personal Mementos</li>
+                                                <li>Identification or Membership Cards</li>
+                                                <li><a href="/collections/genealogy/links/">Immigration and Passenger Lists</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="half">
+                                            <ul class="list-overstated">
+                                                <li><a href="/collections/genealogy/links/">International Agencies</a></li>
+                                                <li><a href="/collections/genealogy/links/">Land and Mining Deeds and Maps</a></li>
+                                                <li>Local Histories</li>
+                                                <li><a href="/collections/genealogy/links/">Military Service</a></li>
+                                                <li>Naturalization</li>
+                                                <li><a href="/collections/genealogy/links/">Newspapers</a></li>
+                                                <li>Passports and Travel</li>
+                                                <li>Pension and Pension Applications</li>
+                                                <li>Photographs</li>
+                                                <li>Probates and Wills</li>
+                                                <li>Social and Professional Associations</li>
+                                                <li>Tax and Assessor</li>
+                                                <li><a href="/collections/genealogy/links/">Vital Records (Birth, Marriage, Divorce, Death)</a></li>
+                                                <li>Voter Registration</li>
+                                                <li>Yearbooks</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading2'>
+                                <h4 class='panel-title'>
+                                    <a class='collapsed' role='button' data-toggle='collapse' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Genealogy Chart Creator</a>
+                                </h4>
+                            </div>
+                            <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                <div class='panel-body'>
+                                    <p>
+                                        <b>Create your own free genealogy charts! 5 Easy Steps! No software needed!</b>
+                                    </p>
+                                    <ul class="list-overstated">
+                                        <li>Open the <a href="/collections/genealogy">Genealogy Chart Page</a></li>
+                                        <li>Choose which charts you would like to create (Pedigree Chart and/or Family Group Sheet)</li>
+                                        <li>Using the generation tabs at the top of the page (as well as the Back and Next buttons at the bottom of the page to navigate between sections), 
+                                        type in what you know for each person for up to four generations of a single family.</li>
+                                        <li>Click "Finish" to generate your family history chart and/or your family group sheet.</li>
+                                        <li>You will be prompted to open or save the charts. Be sure to save the charts to your home computer drive (or your own flash drive if at CSL). 
+                                        Your information will not be saved by the library.</li>
+                                    </ul>
+                                    <p>
+                                        <b>Note:</b>
+                                    </p>
+                                    <ul class="list-overstated">
+                                        <li>You have one hour to complete each set of charts.</li>
+                                        <li>Your information <u>will not</u> be saved by the California State Library.</li>
+                                    </ul>                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading3'>
+                                <h4 class='panel-title'>
+                                    <a class='collapsed' role='button' data-toggle='collapse' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Genealogy Tips & Strategies</a>
+                                </h4>
+                            </div>
+                            <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                <div class='panel-body'>
+                                    <p>
+                                        If you are a beginner, advanced, or seasoned researcher, here are a few tips for researching your own family history.
+                                    </p>
+                                    <div class="group">
+                                        <div class="third">
+                                            <p>
+                                                <b>Organize what you already know:</b>
+                                            </p>
+                                            <ul class="list-overstated">
+                                                <li>
+                                                    Genealogy is based on putting a person in a certain place at a certain point in time.
+                                                    Write down everything you know about the ancestors you are researching (names, dates, places, for births, marriages, deaths, as well as occupations).
+                                                </li>
+                                                <li>
+                                                    Construct a family tree chart and family group sheet for each branch of your family using the <a href="">CSL Chart Creator</a>.
+                                                    Charts help show which family members are missing.
+                                                </li>
+                                                <li>
+                                                    Construct a timeline based on the dates and places you know for certain. This shows where your time/place gaps are.
+                                                </li>
+                                                <li>
+                                                    Write down a few specific details you want to know, but always focus on one detail or question at a time.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="third">
+                                            <p>
+                                                <b>Look for what you want to know:</b>
+                                            </p>
+                                            <ul class="list-overstated">
+                                                <li>
+                                                    Start with <a href="/collections/genealogy/links/">general search websites</a> to see if anyone else has already started researching your family tree. 
+                                                    (Visit search websites periodically as new information comes online frequently.)
+                                                </li>
+                                                <li>
+                                                    Consult a <b>Record Selection Table</b> if you are uncertain where to look for specific information.
+                                                </li>
+                                                <li>
+                                                    Remember that spelling changes over time as do place names. 
+                                                    Be open to phonetic possibilities and cast a wide net. 
+                                                    If the name is close and the age and place are right, make a note of that person and that record.
+                                                </li>
+                                                <li>
+                                                    Bookmark useful sites on your web browser (sometimes there are great sites hidden within sites).
+                                                </li>
+                                                <li>
+                                                    Take good notes and keep files organized (document where you've looked for each detail).
+                                                </li>
+                                                <li>
+                                                    Genealogical research without source citations (where you found something) is considered hearsay. 
+                                                    Document your sources.
+                                                </li>
+                                                <li>
+                                                    Remember: Not everything you find online is accurate or complete. 
+                                                    You may need to look at several records to help determine what information is most likely accurate.
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="third">
+                                            <p>
+                                                <b>Ask for help:</b>
+                                            </p>
+                                            <ul class="list-overstated">
+                                                <li>
+                                                    Visit your local library to GET A LIBRARY CARD and ask the Reference Librarian for help. 
+                                                    Librarians are familiar with digital and hard copy resources, and can access interlibrary loan features for items not held locally.
+                                                </li>
+                                                <li>
+                                                    Learn how to use Finding Aids – library and online tools that help you find items which are not catalogued individually.
+                                                </li>
+                                                <li>
+                                                    Visit the <a href="">California State Library</a> or your local library or use the 
+                                                    <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">Ask a Librarian</a> service for assistance.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading4'>
+                                <h4 class='panel-title'>
+                                    <a class='collapsed' role='button' data-toggle='collapse' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Record Selection Tables</a>
+                                </h4>
+                            </div>
+                            <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                                <div class='panel-body'>
+                                    <p>
+                                        Record Selection Tables are very helpful if you know the location of your family, but are missing certain details.
+                                    </p>
+                                    <p>
+                                        These tables list types of resources where you might locate a certain fact or detail. 
+                                        Military record selection tables are unique because military records contain different types of information depending on when and why they were created.
+                                    </p>
+                                    <ul class="list-overstated">
+                                        <li><a href="/collections/genealogy/links/">U.S. Record Selection Table</a></li>
+                                        <li><a href="/collections/genealogy/links/">U.S. Military Selection Table</a></li>
+                                        <li><a href="/collections/genealogy/links/">List of Global Record Selection Tables</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
