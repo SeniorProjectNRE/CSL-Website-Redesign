@@ -101,7 +101,7 @@
                 @if (Model.Success == false)
                 {
                     <div class="group">
-                        @using (Html.BeginForm("Apply", "Librarian", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        @using (Html.BeginForm("Apply", "SupervisingLibrarian", FormMethod.Post, new { enctype = "multipart/form-data" }))
                         {
                             @Html.ValidationSummary(false, "", new { @class = "text-danger" })
 
