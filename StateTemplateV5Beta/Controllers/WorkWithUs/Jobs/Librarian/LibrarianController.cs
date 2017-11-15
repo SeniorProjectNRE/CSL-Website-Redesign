@@ -47,17 +47,6 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
         {
             try
             {
-                if (file != null)
-                {
-                    string ext = Path.GetExtension(file.FileName);
-                    if (ext == ".pdf" || ext == ".doc" || ext == ".docx")
-                    {
-                        model.ResumeUpload = file;
-                    }
-                    else model.ResumeUpload = null;
-                }
-
-
                 if (!ModelState.IsValid)
                 {
                     if (model.IsLibrarian == true && model.IsSeniorLibrarian == false)
@@ -75,6 +64,16 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
                     {
                         return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
                     }
+                }
+
+                if (file != null)
+                {
+                    string ext = Path.GetExtension(file.FileName);
+                    if (ext == ".pdf" || ext == ".doc" || ext == ".docx")
+                    {
+                        model.ResumeUpload = file;
+                    }
+                    else model.ResumeUpload = null;
                 }
 
                 var response = Request["g-recaptcha-response"];
@@ -113,7 +112,8 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
 
                 ModelState.Clear();
                 model.Success = res;
-                return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
+                //return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
+                return RedirectToAction("success", "jobs");
             }
             catch (Exception ex)
             {

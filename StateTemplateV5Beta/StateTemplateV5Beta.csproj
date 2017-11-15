@@ -1711,6 +1711,7 @@
     <Content Include="Views\Collections\Genealogy\Links.cshtml" />
     <Content Include="Views\Collections\Genealogy\Toolkit.cshtml" />
     <Content Include="Views\Services\AdditionalResources.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\Success.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
