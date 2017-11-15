@@ -1,11 +1,67 @@
-﻿
-@{
-    ViewBag.Title = "LibraryDevelopmentServices";
+﻿@{
+    ViewBag.Title = "CSL - Library Development Services Bureau";
+    ViewBag.PageTitle = "Library Development Services Bureau";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "The Library Development Services (LDS) Bureau administers state and federal grant programs for California’s libraries; works to enhance library collaboration and resource-sharing, and provides consulting services to public libraries and associated groups and organizations. These activities help to support existing library programs, develop innovative new programs, extend and enhance library services across the state, and gain the greatest benefit from funding sources.";
+    ViewBag.Keywords = "Development, Services, Bureau";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>LibraryDevelopmentServices</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li>Library Development Services</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <p>
+                        The Library Development Services (LDS) Bureau provides leadership, grants and other assistance to California's libraries and literacy communities to improve services for all Californians. The Bureau supports general consulting for development of programs; administers grants and aid for service improvements; collaborates with local, state and federal agencies to develop and implement programs; collects, compiles and disseminates library statistics and directories; and works to enhance resource-sharing.
+                    </p>
+
+                    <p>
+                        These activities help California's libraries maintain and support existing programs and services; implement new methods for delivering cost-effective library services; extend library services; gain the greatest benefit from existing funding sources; and develop partnerships to enhance capacity. See Services to Libraries for more information about LDS services, projects and programs.
+                    </p>
+
+                    <div class="third">
+                        <div class="panel panel-understated">
+                            <div class="panel-heading">
+                                <h4>Library Development Services</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    California State Library<br>
+                                    State Library Building<br>
+                                    900 N Street, Fourth Floor<br>
+                                    Sacramento, CA 95814-4800<br>
+                                    Phone: <a href="tel:+19166535217">(916) 653-5217</a><br>
+                                    Email: <a href="mailto:csllds@library.ca.gov">csllds@library.ca.gov</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="two-thirds">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
