@@ -32,7 +32,7 @@ namespace CSLBusinessObjects.Models.Exams
         [Required(ErrorMessage = "E-mail Required in basic info")]
         public string Email { get; set; }
 
-        [Display(Name = "Please affirm that you meet the following educational requirement: equivalent to graduation from a college or university and completion of a graduate degree from an accredited library school. (Registration as a graduate student in a library school will admit applicants to the examination, but evidence of completion of the required graduate degree must be submitted before an applicant can be considered eligible for appointment)")]
+        [Display(Name = "Please affirm that you meet the following educational requirement: equivalent to graduation from a college or university and completion of a graduate degree from an accredited library school, or a library media credential issued by a teacher-credentialing commission authorizing service in California; or a graduate degree in a relevant or appropriate field.")]
         public bool HasEducation { get; set; }
 
         [Display(Name = "Please describe the way in which your experience meets the minimum requirements for participation in this examination.")]
@@ -58,7 +58,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumCollectionDevelopment { get; set; }
 
         [Display(Name = "Bibliographic Information Sources")]
-        public string BibliographicInfo{ get; set; }
+        public string BibliographicInfo { get; set; }
 
         [Display(Name = "Name of person who can verify this experience:")]
         public string NameBibliographicInfo { get; set; }
@@ -97,7 +97,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumAcquisitions { get; set; }
 
         [Display(Name = "Cataloging and Classification")]
-        public string CatalogAndClass{ get; set; }
+        public string CatalogAndClass { get; set; }
 
         [Display(Name = "Name of person who can verify this experience:")]
         public string NameCatalogAndClass { get; set; }
@@ -316,26 +316,12 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumQ7 { get; set; }
 
 
-        [Display(Name = "Please describe the methods you use to stay abreast of best practices and the latest trends in library services and technology, for example, any association affiliations, conferences, seminars attended, training attended or given, or any other resources utilized.")]
+        [Display(Name = "8. Please describe the methods you use to stay abreast of best practices and the latest trends in library services and technology, for example, any association affiliations, conferences, seminars attended, training attended or given, or any other resources utilized.")]
         public bool RateQ8 { get; set; }
 
         [Display(Name = "Discuss your role in any associations (eg. member, officer) and the extent of your participation in conferences, seminars, or training programs (eg. organizer, participant, speaker, etc.)")]
         [Required(ErrorMessage = "Please describe your experience for Question 8")]
         public string Q8 { get; set; }
-
-        [Display(Name = "Name of person who can verify this experience:")]
-        [Required(ErrorMessage = "Contact Required for Question 8")]
-        public string NameQ8 { get; set; }
-
-        [Display(Name = "E-mail of person listed above who can verify this experience:")]
-        [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
-        [Required(ErrorMessage = "Contact's E-mail Required for Question 8")]
-        public string EmailQ8 { get; set; }
-
-        [Display(Name = "Phone Number of person listed above who can verify this experience:")]
-        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 8")]
-        [Required(ErrorMessage = "Contact's Phone Number Required for Question 8")]
-        public string PhoneNumQ8 { get; set; }
 
 
         [Display(Name = "9. Please rate your experience managing a library budget.")]
@@ -452,6 +438,6 @@ namespace CSLBusinessObjects.Models.Exams
         public bool Success { get; set; }
         #endregion
 
-        
+
     }
 }
