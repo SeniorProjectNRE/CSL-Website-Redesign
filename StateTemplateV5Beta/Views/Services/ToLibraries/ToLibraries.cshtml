@@ -1,11 +1,181 @@
 ﻿
 @{
-    ViewBag.Title = "ToLibraries";
+    ViewBag.Title = "CSL - Library Services for California Public Libraries";
+    ViewBag.PageTitle = "Library Services for California Public Libraries";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "California State Library";
+    ViewBag.Keywords = "California, state, Library, services";
 }
 
-<div id="main-content" class="main-content">
-    <main class="main-primary">
-        <h2>ToLibraries</h2>
-    </main>
-</div>
+@*
+    NOTE: http://www.library.ca.gov/lds/index.html doesn't have a mapping in the page tracker. 
+    The hyperlink associated with this link has been commented out and replaced with text.
+*@
 
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<div id="main-content" class="main-content">
+    <div class="section">
+        <div class="container">
+            <main class="main-primary">
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li>To Libraries</li>
+                </ol>
+                <h1 id="title-page">@ViewBag.PageTitle</h1>
+                <img id="page-banner" src="~/Content/StateTemplate/images/services/toLibraries/top.jpg" style="width:100%;" alt="" />
+                <p style="padding-top:40px">
+                    The State Library supports California's libraries through a variety of programs and services including interlibrary loan, financial support programs, library consulting services and publications such as the <a href="/services/to-libraries/library-directory">California Library Directory</a>. Many of these services are provided through the Library Development Services Bureau.<!--<a href="http://www.library.ca.gov/lds/index.html">Library Development Services Bureau</a>-->
+                </p>
+                <!--<p>
+                    Who may apply for a State Library Card? California State employees, state legislative staff, appointed state officials and board members, officials and employees of the State Court, and faculty and staff of the University of California or California State University.  Obtain a State Library Card by <a href="https://www.library.ca.gov/apply/">applying online</a> or calling <a href="tel:+19166540261">(916) 654-0261</a>.
+                </p>-->
+                <br />
+                <div class="group">
+                    <div class="third">
+                        <div class="card card-default">
+                            <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toLibraries/grants.jpg" alt="Grants" />
+                            <div class="card-block">
+                                <h4 class="card-title">Grants</h4>
+                                <p>The California State Library administers federal and state funding programs – the Library and Technology Act, the California Civil Liberties Public Education Program, and the California Library Services Act – related to library development and cooperation, and civil liberties public education. Look for current funding opportunities and check out our funding calendar for upcoming deadlines.</p>
+                                <a href="/grants/" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <div class="card card-default">
+                            <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toLibraries/programs.jpg" alt="A stack of paper" />
+                            <div class="card-block">
+                                <h4 class="card-title">Library Development Programs and Projects</h4>
+                                <p>The California State Library manages grants programs and develops support projects designed to assist libraries as they reimagine and sustain existing library programs, connect with their communities, foster partnerships, test and implement new technologies, and extend and enhance their library services.</p>
+                                <a href="/services/to-libraries/development-programs-projects/" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <div class="card card-default">
+                            <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toLibraries/cabels.jpg" alt="Cabels" />
+                            <div class="card-block">
+                                <h4 class="card-title">High Speed Broadband in California’s Libraries</h4>
+                                <p>California’s public libraries provide free public internet services to the communities that they serve, but require robust, high-speed broadband internet connections to continue meeting public demands. The goal of this California State Library Initiative is to bring high-speed broadband to all California public libraries by connecting them to the California Research and Education Network (CalREN)—a high-capacity fiber-optic-based network designed to meet the unique requirements of educational and research institutions in California.</p>
+                                <a href="/services/to-libraries/broadband" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="third">
+                        <div class="card card-default">
+                            <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toLibraries/erate.jpg" alt="servers" />
+                            <div class="card-block">
+                                <h4 class="card-title">E-Rate and California Teleconnect Fund (CTF) Information for Libraries</h4>
+                                <p>E-rate and the CTF are programs that provide discounts on broadband and telecommunications services to public libraries. Although there are differences in eligible services and discount rates, it is possible for libraries to receive significant discounts on broadband and telecommunications costs by using both E-rate and CTF discounts.</p>
+                                <a href="/services/to-libraries/e-rate" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <div class="card card-default">
+                            <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toLibraries/comingsoon.jpg" alt="Statistics" />
+                            <div class="card-block">
+                                <h4 class="card-title">California Library Statistics</h4>
+                                <p>The State Library annually collects California Library Statistics, a compilation of statistical data from public libraries throughout the state. This data is part of a national public library data collection conducted by the Institute for Museum and Library Services, which provides comparative statistics for libraries across the country.</p>
+                                <a href="/services/to-libraries/statistics" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <div class="card card-default">
+                            <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toLibraries/libdir.jpg" alt="California map" />
+                            <div class="card-block">
+                                <h4 class="card-title">California Library Directory</h4>
+                                <p>The California Library Directory is derived from California Library Statistics data, and includes location and service information for main and branch public libraries, as well as a headquarters directory and online interactive map. </p>
+                                <a href="/services/to-libraries/library-directory" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="third">
+                        <div class="card card-default">
+                            <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toLibraries/comingsoon.jpg" alt="" />
+                            <div class="card-block">
+                                <h4 class="card-title">California Library Laws</h4>
+                                <p>California Library Laws is a selective guide to state laws and related materials that most directly affect the everyday operations of public libraries and organizations that work with public libraries. It is intended as a convenient reference, not as a replacement for the annotated codes or for legal advice</p>
+                                <a href="/services/to-libraries/laws-public-library-organization/" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <div class="card card-default">
+                            <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toLibraries/liborg.jpg" alt="" />
+                            <div class="card-block">
+                                <h4 class="card-title">California Library Organization</h4>
+                                <p>California state law (Education Code Title 1, Chapter 6) governs the establishment of public libraries. The State Library has developed an overview of the process, California Public Library Organization, to assist local governments on questions concerning how public libraries in California are created and funded.</p>
+                                <a href="~/Content/StateTemplate/pdf/services/toLibraries/CAPubLibOrg_2013.pdf" target="_blank" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <div class="card card-default">
+                            <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toLibraries/cooperate.jpg" alt="connected libraries" />
+                            <div class="card-block">
+                                <h4 class="card-title">Cooperative Systems and CLSA</h4>
+                                <p>California public libraries engaged in cooperative efforts with neighboring libraries are supported with state funding through the Communications and Delivery Program of the California Library Services Act (CLSA), specifically designed to assist and encourage such interlibrary cooperation. The program is administered by the 13-member California Library Services Board, and the funds are allocated to California Cooperative Library Systems on an annual basis.</p>
+                                <a href="/services/to-libraries/ca-library-services-act/" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="third">
+                        <div class="card card-default">
+                            <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toLibraries/interlibrary.jpg" alt="Books on the shelf" />
+                            <div class="card-block">
+                                <h4 class="card-title">Interlibrary Lending</h4>
+                                <p>California State Library cardholders may request items not available in the California State Library's collections from other libraries through the Interlibrary Loan Service. Other libraries will generally loan materials that they circulate to their own borrowers. Often excluded are: textbooks, reference books, course reserve books, rare books, recently published books, microfilm, dissertations, technical reports, and audiovisual material. Libraries usually supply a scanned PDF copy of a journal article rather than loan a journal.</p>
+                                <a href="/services/interlibrary-lending" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <div class="card card-default">
+                            <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toLibraries/fdlp.jpg" alt="FDLP logo" />
+                            <div class="card-block">
+                                <h4 class="card-title">Federal Depository Library Program</h4>
+                                <p>The California State Library is responsible for carrying out the provisions of the Act by developing and maintaining standards for depository libraries, granting depository status to libraries, and administering the depository program. Today a total of 105 libraries statewide participate in this program.</p>
+                                <a href="/government-publications/federal-depository" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <div class="card card-default">
+                            <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toLibraries/docs.jpg" alt="state docs" />
+                            <div class="card-block">
+                                <h4 class="card-title">State Documents Collection and Depository Library Program</h4>
+                                <p>Since 1850, the California State Library has collected legislative proceedings, hearings, and research reports; state agency reports; environmental impact reports; budgets and financial reports; statistical compilations; directories and organization charts; and periodicals.</p>
+                                <a href="/government-publications/state-document-depository-program" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <div class="spacer"></div>
+                <!--<p>
+                    For more information about State Library services and resources available to California state government officials and employees, visit us at: <a href="http://www.library.ca.gov/services/online-resources.html">http://www.library.ca.gov/services/online-resources.html</a>; or contact the Information Services Section, by telephone: <a href="tel:+19166540261">916-654-0261</a>; or by email: <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a>. Members and staff of the Legislature and Governor’s Office may contact the California Research Bureau for information and assistance in accessing library resources and research services, by telephone: <a href="tel:+19163192691">916-319-2691</a>; or by email: <a href="mailto:crb@library.ca.gov">crb@library.ca.gov</a>.
+                </p>-->
+
+                <div class="spacer"></div>
+            </main>
+        </div>
+    </div></div>

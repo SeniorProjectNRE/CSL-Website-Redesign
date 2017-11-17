@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSLBusinessObjects.Models.Exams;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -20,7 +21,8 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.SupervisingLibrarian
         [Route("Apply")]
         public ActionResult Apply()
         {
-            return View("~/Views/WorkWithUs/Jobs/SupervisingLibrarian/Apply.cshtml");
+            SupervisingLibrarianModel model = new SupervisingLibrarianModel();
+            return View("~/Views/WorkWithUs/Jobs/SupervisingLibrarian/Apply.cshtml",model);
         }
     }
 }

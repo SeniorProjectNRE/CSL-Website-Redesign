@@ -47,6 +47,7 @@ namespace CSLBusinessObjects.Models.Exams
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
         public string EmailSearchStrategies { get; set; }
 
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number in Basic Info")]
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
         public string PhoneNumSearchStrategies { get; set; }
 
@@ -59,11 +60,12 @@ namespace CSLBusinessObjects.Models.Exams
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
         public string EmailCollectionDevelopment { get; set; }
 
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number in Basic Info")]
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
         public string PhoneNumCollectionDevelopment { get; set; }
 
         [Display(Name = "Bibliographic Information Sources")]
-        public string BibliographicInfo{ get; set; }
+        public string BibliographicInfo { get; set; }
 
         [Display(Name = "Name of person who can verify this experience:")]
         public string NameBibliographicInfo { get; set; }
@@ -71,6 +73,7 @@ namespace CSLBusinessObjects.Models.Exams
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
         public string EmailBibliographicInfo { get; set; }
 
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number in Basic Info")]
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
         public string PhoneNumBibliographicInfo { get; set; }
 
@@ -83,6 +86,7 @@ namespace CSLBusinessObjects.Models.Exams
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
         public string EmailComputerizedData { get; set; }
 
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number in Basic Info")]
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
         public string PhoneNumComputerizedData { get; set; }
 
@@ -95,11 +99,12 @@ namespace CSLBusinessObjects.Models.Exams
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
         public string EmailAcquisitions { get; set; }
 
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number in Basic Info")]
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
         public string PhoneNumAcquisitions { get; set; }
 
         [Display(Name = "Cataloging and Classification")]
-        public string CatalogAndClass{ get; set; }
+        public string CatalogAndClass { get; set; }
 
         [Display(Name = "Name of person who can verify this experience:")]
         public string NameCatalogAndClass { get; set; }
@@ -107,6 +112,7 @@ namespace CSLBusinessObjects.Models.Exams
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
         public string EmailCatalogAndClass { get; set; }
 
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number in Basic Info")]
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
         public string PhoneNumCatalogAndClass { get; set; }
 
@@ -119,6 +125,7 @@ namespace CSLBusinessObjects.Models.Exams
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
         public string EmailReference { get; set; }
 
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number in Basic Info")]
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
         public string PhoneNumReference { get; set; }
 
@@ -131,6 +138,7 @@ namespace CSLBusinessObjects.Models.Exams
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
         public string EmailCirculation { get; set; }
 
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number in Basic Info")]
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
         public string PhoneNumCirculation { get; set; }
 
@@ -143,6 +151,7 @@ namespace CSLBusinessObjects.Models.Exams
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
         public string EmailPreservation { get; set; }
 
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number in Basic Info")]
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
         public string PhoneNumPreservation { get; set; }
 
@@ -155,6 +164,7 @@ namespace CSLBusinessObjects.Models.Exams
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
         public string EmailSpecialized { get; set; }
 
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number in Basic Info")]
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
         public string PhoneNumSpecialized { get; set; }
         #endregion
@@ -174,6 +184,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string EmailQ1 { get; set; }
 
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 1")]
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 1")]
         public string PhoneNumQ1 { get; set; }
 
@@ -191,6 +202,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string EmailQ2 { get; set; }
 
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 2")]
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 2")]
         public string PhoneNumQ2 { get; set; }
 
@@ -208,6 +220,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string EmailQ3 { get; set; }
 
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 3")]
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 3")]
         public string PhoneNumQ3 { get; set; }
 
@@ -225,6 +238,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string EmailQ4 { get; set; }
 
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 4")]
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 4")]
         public string PhoneNumQ4 { get; set; }
 
@@ -242,6 +256,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string EmailQ5 { get; set; }
 
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 6")]
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 5")]
         public string PhoneNumQ5 { get; set; }
 
@@ -276,6 +291,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string EmailQ7 { get; set; }
 
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 7")]
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 7")]
         public string PhoneNumQ7 { get; set; }
 
@@ -293,6 +309,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string EmailQ8 { get; set; }
 
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 8")]
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 8")]
         public string PhoneNumQ8 { get; set; }
         #endregion
@@ -314,6 +331,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string Signature { get; set; }
 
         [Display(Name = "Date: ")]
+        [RegularExpression(@"^\d{1,2}\/\d{1,2}\/\d{4}$", ErrorMessage = "Please enter a valid date.")]
         [Required(ErrorMessage = "Please type today's date")]
         public string Date { get; set; }
 
@@ -322,6 +340,6 @@ namespace CSLBusinessObjects.Models.Exams
         public bool Success { get; set; }
         #endregion
 
-        
+
     }
 }

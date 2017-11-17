@@ -10,84 +10,83 @@
             font-weight: 200;
         }
     </style>
-@if (Model.Success == false)
-{
+
     <script>
-        function showHideExams() {
+            function showHideExams() {
 
-            // if neither picked value = 0
-            // if librarian picked value = 1
-            // if senior librarian picked value = 2
-            // if both picked = 3
+                // if neither picked value = 0
+                // if librarian picked value = 1
+                // if senior librarian picked value = 2
+                // if both picked = 3
 
-            var selectedItems = 0;
-            {
-                //both
-                if (document.getElementById('SeniorLibrarian').checked == true && document.getElementById('Librarian').checked == true) {
-                    selectedItems = 3;
-                }
-                //neither
-                else if (document.getElementById('SeniorLibrarian').checked == false && document.getElementById('Librarian').checked == false) {
-                    selectedItems = 0;
-                }
-                //librarian checked
-                else if (document.getElementById('SeniorLibrarian').checked == false && document.getElementById('Librarian').checked == true) {
-                    selectedItems = 1;
-                }
-                //senior librarian checked
-                else if (document.getElementById('SeniorLibrarian').checked == true && document.getElementById('Librarian').checked == false) {
-                    selectedItems = 2;
+                var selectedItems = 0;
+                {
+                    //both
+                    if (document.getElementById('SeniorLibrarian').checked == true && document.getElementById('Librarian').checked == true) {
+                        selectedItems = 3;
+                    }
+                    //neither
+                    else if (document.getElementById('SeniorLibrarian').checked == false && document.getElementById('Librarian').checked == false) {
+                        selectedItems = 0;
+                    }
+                    //librarian checked
+                    else if (document.getElementById('SeniorLibrarian').checked == false && document.getElementById('Librarian').checked == true) {
+                        selectedItems = 1;
+                    }
+                    //senior librarian checked
+                    else if (document.getElementById('SeniorLibrarian').checked == true && document.getElementById('Librarian').checked == false) {
+                        selectedItems = 2;
+                    }
+
+                    console.log("selectedItems = " + selectedItems);
                 }
 
-                console.log("selectedItems = " + selectedItems);
+                if (selectedItems == 1) {
+                    $('.libEducation').show();
+                    $('.senLibEducation').hide();
+                    $('#senLibInfoExperience').hide();
+                    $('#libFuncExperience').show();
+                    $('#senLibFuncExperience').hide();
+                    $('.tab-SenLib-question').hide();
+                }
+                else if (selectedItems == 2) {
+                    $('.libEducation').hide();
+                    $('.senLibEducation').show();
+                    $('#senLibInfoExperience').show();
+                    $('#libFuncExperience').hide();
+                    $('#senLibFuncExperience').show();
+                    $('.tab-SenLib-question').show();
+
+                }
+                else if (selectedItems == 3) {
+                    $('.libEducation').hide();
+                    $('.senLibEducation').show();
+                    $('#senLibInfoExperience').show();
+                    $('#libFuncExperience').show();
+                    $('#senLibFuncExperience').show();
+                    $('.tab-SenLib-question').show();
+
+                }
+                else if (selectedItems == 0) {
+                    $('.senLibEducation').hide();
+                    $('.libEducation').hide();
+                    $('#senLibInfoExperience').hide();
+                    $('#libFuncExperience').hide();
+                    $('#senLibFuncExperience').hide();
+                    $('.tab-SenLib-question').hide();
+                }
             }
 
-            if (selectedItems == 1) {
-                $('.libEducation').show();
-                $('.senLibEducation').hide();
-                $('#senLibInfoExperience').hide();
-                $('#libFuncExperience').show();
-                $('#senLibFuncExperience').hide();
+            $(document).ready(function () {
+                $('.basicInfoExperience').hide();
                 $('.tab-SenLib-question').hide();
-            }
-            else if (selectedItems == 2) {
-                $('.libEducation').hide();
-                $('.senLibEducation').show();
-                $('#senLibInfoExperience').show();
-                $('#libFuncExperience').hide();
-                $('#senLibFuncExperience').show();
-                $('.tab-SenLib-question').show();
 
-            }
-            else if (selectedItems == 3) {
-                $('.libEducation').hide();
-                $('.senLibEducation').show();
-                $('#senLibInfoExperience').show();
-                $('#libFuncExperience').show();
-                $('#senLibFuncExperience').show();
-                $('.tab-SenLib-question').show();
-
-            }
-            else if (selectedItems == 0) {
-                $('.senLibEducation').hide();
-                $('.libEducation').hide();
-                $('#senLibInfoExperience').hide();
-                $('#libFuncExperience').hide();
-                $('#senLibFuncExperience').hide();
-                $('.tab-SenLib-question').hide();
-            }
-        }
-
-        $(document).ready(function () {
-            $('.basicInfoExperience').hide();
-            $('.tab-SenLib-question').hide();
-
-            showHideExams();
-        });
+                showHideExams();
+            });
     </script>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-}
+
 </head>
 <div id="main-content" class="main-content">
     <main class="main-primary">
@@ -98,8 +97,8 @@
                 <ol class="breadcrumb dynamic"></ol>
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
 
-                @if(Model.Success == false) { 
-                    <div class="group">
+
+                <div class="group">
                     @using (Html.BeginForm("Apply", "Librarian", FormMethod.Post, new { enctype = "multipart/form-data" }))
                     {
                         @Html.ValidationSummary(false, "", new { @class = "text-danger" })
@@ -270,7 +269,7 @@
 
                                             <div class="senLibEducation">
                                                 <div class="form-group">
-                                                   <label for="HasEducation">Please affirm that you meet the following educational requirement: equivalent to graduation from a college or university and completion of a graduate degree from an accredited library school.</label>
+                                                    <label for="HasEducation">Please affirm that you meet the following educational requirement: equivalent to graduation from a college or university and completion of a graduate degree from an accredited library school.</label>
 
                                                     <div class="checkbox">
                                                         <p>
@@ -896,12 +895,12 @@
                                             there are many free tools online to convert to PDF.
                                         </p>
 
-                                        <span class="required-label">*</span> 
+                                        <span class="required-label">*</span>
                                         @Html.LabelFor(m => m.ResumeUpload)
                                         @*<input type="file" name="file" />*@
                                         @Html.TextBoxFor(m => m.ResumeUpload, new { type = "file", name = "file" })
                                         @Html.ValidationMessage("ResumeUpload", new { @class = "text-danger" })
-                                        
+
 
 
                                     </div>
@@ -950,7 +949,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="section">
                                 <div class="container">
                                     <div class="half"></div>
@@ -970,32 +969,12 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
 
                         </div><!--end accordion-->
                     }
                 </div>
-                }
-                @if (Model.Success == true)
-                {
-                    <div class="section">
-                        <p>
-                            Congratulations! You have successfully submitted your Resume and Supplemental Application materials for the
-                            California State Library's Librarian open examination. If you do <strong>not</strong> recieve a follow-up e-mail from
-                            us within 5 business days, please contact us at <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or (916) 654-0202.
-                            This e-mail will include information regarding the next steps in the examination and hiring process.
-                        </p>
 
-                        <p>
-                            Until then, please connect with us on: <a href="https://www.facebook.com/CAStateLibrary/">Facebook</a> | <a href="https://twitter.com/castatelibrary">Twitter</a> | <a href="http://californiastatelibrary.tumblr.com/">Blog</a> | <a href="https://www.pinterest.com/castatelibrary/">Pinterest</a>
-                            and visit us <a href="">here</a>
-                        </p>
-
-                        <p>Thank you for your interest in the California State Library</p>
-
-                        <h3><a href="/home">Back to Home Page</a></h3>
-                    </div>
-                }
             </div>
         </div>
     </main>

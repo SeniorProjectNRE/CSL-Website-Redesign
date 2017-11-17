@@ -15,5 +15,12 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs
         {
             return View("~/Views/WorkWithUs/Jobs/Jobs.cshtml");
         }
+
+        // GET: Success
+        [Route("success")]
+        public ActionResult Success()
+        {
+            return View("~/Views/WorkWithUs/Jobs/Success.cshtml");
+        }
     }
 }

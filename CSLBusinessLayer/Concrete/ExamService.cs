@@ -31,7 +31,6 @@ namespace CSLBusinessLayer.Concrete
                             #region BasicInfo
                             pdfFormFields.SetField("Name", model.Name);
                             pdfFormFields.SetField("Email", model.Email);
-                            pdfFormFields.SetField("Education", model.HasEducation.ToString());
 
                             if (model.HasEducation == true)
                             {
@@ -140,7 +139,15 @@ namespace CSLBusinessLayer.Concrete
                             #region BasicInfo
                             pdfFormFields.SetField("Name", model.Name);
                             pdfFormFields.SetField("Email", model.Email);
-                            pdfFormFields.SetField("Education", model.HasEducation.ToString());
+
+                            if (model.HasEducation == true)
+                            {
+                                pdfFormFields.SetField("EduYes", "On");
+                            }
+                            if (model.HasEducation == false)
+                            {
+                                pdfFormFields.SetField("EduNo", "On");
+                            }
 
                             if (model.HasExperience == true)
                             {
