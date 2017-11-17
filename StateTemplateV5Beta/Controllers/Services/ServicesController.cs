@@ -16,6 +16,13 @@ namespace StateTemplateV5Beta.Controllers.Services
             return View("Services");
         }
 
+        // GET: AdditionalResources
+        [Route("Additional-Resources")]
+        public ActionResult AdditionalResources()
+        {
+            return View();
+        }
+
         // GET: Apply
         [Route("Apply")]
         public ActionResult Apply()
@@ -40,6 +47,13 @@ namespace StateTemplateV5Beta.Controllers.Services
         // GET: Policies
         [Route("Policies")]
         public ActionResult Policies()
+        {
+            return View();
+        }
+
+        // GET: Research
+        [Route("Research")]
+        public ActionResult Research()
         {
             return View();
         }

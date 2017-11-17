@@ -10,87 +10,82 @@
             font-weight: 200;
         }
     </style>
+
     <script>
-        function showHideExams() {
+            function showHideExams() {
 
-            // if neither picked value = 0
-            // if librarian picked value = 1
-            // if senior librarian picked value = 2
-            // if both picked = 3
+                // if neither picked value = 0
+                // if librarian picked value = 1
+                // if senior librarian picked value = 2
+                // if both picked = 3
 
-            var selectedItems = 0;
-            {
-                //both
-                if (document.getElementById('SeniorLibrarian').checked == true && document.getElementById('Librarian').checked == true) {
-                    selectedItems = 3;
-                }
-                //neither
-                else if (document.getElementById('SeniorLibrarian').checked == false && document.getElementById('Librarian').checked == false) {
-                    selectedItems = 0;
-                }
-                //librarian checked
-                else if (document.getElementById('SeniorLibrarian').checked == false && document.getElementById('Librarian').checked == true) {
-                    selectedItems = 1;
-                }
-                //senior librarian checked
-                else if (document.getElementById('SeniorLibrarian').checked == true && document.getElementById('Librarian').checked == false) {
-                    selectedItems = 2;
+                var selectedItems = 0;
+                {
+                    //both
+                    if (document.getElementById('SeniorLibrarian').checked == true && document.getElementById('Librarian').checked == true) {
+                        selectedItems = 3;
+                    }
+                    //neither
+                    else if (document.getElementById('SeniorLibrarian').checked == false && document.getElementById('Librarian').checked == false) {
+                        selectedItems = 0;
+                    }
+                    //librarian checked
+                    else if (document.getElementById('SeniorLibrarian').checked == false && document.getElementById('Librarian').checked == true) {
+                        selectedItems = 1;
+                    }
+                    //senior librarian checked
+                    else if (document.getElementById('SeniorLibrarian').checked == true && document.getElementById('Librarian').checked == false) {
+                        selectedItems = 2;
+                    }
+
+                    console.log("selectedItems = " + selectedItems);
                 }
 
-                console.log("selectedItems = " + selectedItems);
+                if (selectedItems == 1) {
+                    $('.libEducation').show();
+                    $('.senLibEducation').hide();
+                    $('#senLibInfoExperience').hide();
+                    $('#libFuncExperience').show();
+                    $('#senLibFuncExperience').hide();
+                    $('.tab-SenLib-question').hide();
+                }
+                else if (selectedItems == 2) {
+                    $('.libEducation').hide();
+                    $('.senLibEducation').show();
+                    $('#senLibInfoExperience').show();
+                    $('#libFuncExperience').hide();
+                    $('#senLibFuncExperience').show();
+                    $('.tab-SenLib-question').show();
+
+                }
+                else if (selectedItems == 3) {
+                    $('.libEducation').hide();
+                    $('.senLibEducation').show();
+                    $('#senLibInfoExperience').show();
+                    $('#libFuncExperience').show();
+                    $('#senLibFuncExperience').show();
+                    $('.tab-SenLib-question').show();
+
+                }
+                else if (selectedItems == 0) {
+                    $('.senLibEducation').hide();
+                    $('.libEducation').hide();
+                    $('#senLibInfoExperience').hide();
+                    $('#libFuncExperience').hide();
+                    $('#senLibFuncExperience').hide();
+                    $('.tab-SenLib-question').hide();
+                }
             }
 
-            if (selectedItems == 1) {
-                $('.libEducation').show();
-                $('.senLibEducation').hide();
-                $('#senLibInfoExperience').hide();
-                $('#libFuncExperience').show();
-                $('#senLibFuncExperience').hide();
+            $(document).ready(function () {
+                $('.basicInfoExperience').hide();
                 $('.tab-SenLib-question').hide();
-                //$("#Q7").attr('data-val', false);
-                //$("#NameQ7").attr('data-val', false);
-                //$("#EmailQ7").attr('data-val', false);
-                //$("#PhoneNumQ7").attr('data-val', false);
-                //$("#Q8").attr('data-val', false);
-                //$("#NameQ8").attr('data-val', false);
-                //$("#EmailQ8").attr('data-val', false);
-                //$("#PhoneNumQ8").attr('data-val', false);
-            }
-            else if (selectedItems == 2) {
-                $('.libEducation').hide();
-                $('.senLibEducation').show();
-                $('#senLibInfoExperience').show();
-                $('#libFuncExperience').hide();
-                $('#senLibFuncExperience').show();
-                $('.tab-SenLib-question').show();
 
-            }
-            else if (selectedItems == 3) {
-                $('.libEducation').hide();
-                $('.senLibEducation').show();
-                $('#senLibInfoExperience').show();
-                $('#libFuncExperience').show();
-                $('#senLibFuncExperience').show();
-                $('.tab-SenLib-question').show();
-
-            }
-            else if (selectedItems == 0) {
-                $('.senLibEducation').hide();
-                $('.libEducation').hide();
-                $('#senLibInfoExperience').hide();
-                $('#libFuncExperience').hide();
-                $('#senLibFuncExperience').hide();
-                $('.tab-SenLib-question').hide();
-            }
-        }
-
-        $(document).ready(function () {
-            $('.basicInfoExperience').hide();
-            $('.tab-SenLib-question').hide();
-
-            showHideExams();
-        });
+                showHideExams();
+            });
     </script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 <div id="main-content" class="main-content">
@@ -101,6 +96,7 @@
 
                 <ol class="breadcrumb dynamic"></ol>
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
+
 
                 <div class="group">
                     @using (Html.BeginForm("Apply", "Librarian", FormMethod.Post, new { enctype = "multipart/form-data" }))
@@ -235,7 +231,7 @@
 
                                             <div id="basicInfoName" class="form-group half">
                                                 <span class="required-label">*</span>@Html.LabelFor(m => m.Name)
-                                                @Html.TextBoxFor(m => m.Name, "Name", new { @class = "form-control",  placeholder = "John Doe" })
+                                                @Html.TextBoxFor(m => m.Name, "Name", new { @class = "form-control", placeholder = "John Doe" })
 
                                                 @Html.ValidationMessage("Name", new { @class = "text-danger" })
 
@@ -273,7 +269,7 @@
 
                                             <div class="senLibEducation">
                                                 <div class="form-group">
-                                                   <label for="HasEducation">Please affirm that you meet the following educational requirement: equivalent to graduation from a college or university and completion of a graduate degree from an accredited library school.</label>
+                                                    <label for="HasEducation">Please affirm that you meet the following educational requirement: equivalent to graduation from a college or university and completion of a graduate degree from an accredited library school.</label>
 
                                                     <div class="checkbox">
                                                         <p>
@@ -859,7 +855,7 @@
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.EmailQ8)
-                                                @Html.TextAreaFor(m => m.EmailQ8, new { type = "Email", @class = "form-control" ,placeholder = "example@example.com" })
+                                                @Html.TextAreaFor(m => m.EmailQ8, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
                                             </div>
 
                                             <div class="form-group">
@@ -899,12 +895,14 @@
                                             there are many free tools online to convert to PDF.
                                         </p>
 
-                                        <span class="required-label">*</span> 
+                                        <span class="required-label">*</span>
                                         @Html.LabelFor(m => m.ResumeUpload)
-                                        <input type="file" name="file" />
+                                        @*<input type="file" name="file" />*@
+                                        @Html.TextBoxFor(m => m.ResumeUpload, new { type = "file", name = "file" })
                                         @Html.ValidationMessage("ResumeUpload", new { @class = "text-danger" })
 
-                                        
+
+
                                     </div>
                                 </div>
                             </div>
@@ -922,7 +920,7 @@
                                         <div class="tab-body">
                                             <div class="checkbox">
                                                 <label class="normal">
-                                                    @Html.RadioButtonFor(m=> m.isCertified, new { type = "checkbox" })
+                                                    @Html.RadioButtonFor(m => m.isCertified, true, new { type = "checkbox" })
                                                     <span class="required-label">*</span> By checking this box, I hereby certify under penalty of perjury that the information I have entered on this
                                                     application is true and complete to the best of my knowledge. I further understand that all information is subject
                                                     to verification and that any false, incomplete, or incorrect statements may result in my disqualification from the
@@ -933,8 +931,8 @@
                                                 @Html.ValidationMessage("isCertified", new { @class = "text-danger" })
                                             </div>
                                             <div class="form-group half">
-                                                <span class="required-label">*</span>@Html.LabelFor(m=>m.Signature)
-                                                @Html.TextBoxFor(m=>m.Signature, new{type="text", @class="form-control"})
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Signature)
+                                                @Html.TextBoxFor(m => m.Signature, new { type = "text", @class = "form-control" })
                                                 @Html.ValidationMessage("Signature", new { @class = "text-danger" })
                                             </div>
                                             <div class="form-group half">
@@ -944,13 +942,7 @@
                                             </div>
 
 
-                                            <!--add captcha here-->
 
-                                            <div class="form-group">
-                                                <div class="pull-right">
-                                                    <button type="submit" value="Submit"class="btn btn-default pull-right" >Submit</button>
-                                                </div>
-                                            </div>
 
                                         </div>
 
@@ -958,9 +950,31 @@
                                 </div>
                             </div>
 
+                            <div class="section">
+                                <div class="container">
+                                    <div class="half"></div>
+                                    <div class="half">
+                                        <div class="section">
+                                            <div class="full-width">
+                                                <div class="pull-right">
+                                                    <div class="g-recaptcha" data-sitekey="6Lf0XzYUAAAAAFm7yZHSL7K98voPXytgpy4O2zsU"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="pull-right">
+                                                <input type="submit" value="Submit" class="btn btn-default pull-right" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div><!--end accordion-->
                     }
                 </div>
+
             </div>
         </div>
     </main>

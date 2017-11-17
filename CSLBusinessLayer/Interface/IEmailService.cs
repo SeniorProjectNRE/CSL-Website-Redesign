@@ -11,7 +11,8 @@ namespace CSLBusinessLayer.Interface
 {
     public interface IEmailService
     {
-        SuccessModel SendSutroClassEmail(SutroClassModel model);
-        SuccessModel SendLibrarianExamEmail(string file, LibrarianModel model);
+        bool SendSutroClassEmail(SutroClassModel model);
+        bool SendLibrarianExamEmail(string file, LibrarianModel model);
+        bool SendSupervisingLibrarianExamEmail(string file, SupervisingLibrarianModel model);
     }
 }

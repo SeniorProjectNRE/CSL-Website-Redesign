@@ -1,11 +1,307 @@
 ﻿
 @{
-    ViewBag.Title = "FairUse";
+    ViewBag.Title = "CSL - California Revealed Initiative Copyright and Fair Use Information";
+    ViewBag.PageTitle = "Fair Use and the California Revealed Project";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "The principle of fair use in United States copyright law is explained as it relates to digitization projects.";
+    ViewBag.Keywords = "California, state, Library, revealed, initiative, copyright, fair, use";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>FairUse</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/to-libraries">To Libraries</a></li>
+                    <li><a href="/services/to-libraries/development-programs-projects" style="text-transform:none">Library Development Programs and Projects</a></li>
+                    <li><a href="/grants/ca-revealed">California Revealed</a></li>
+                    <li>Fair Use</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <h3><span style="font-size:0.8em; font-weight:normal">(&copy; 2016, Gretchen McCord)</span><span style="color:red; font-size:0.8em">*</span></h3>
+                <div class="panel panel-standout highlight">
+                    <div class="panel-heading">
+                        <h3><span class="ca-gov-icon-info"></span> Important Legal Notice</h3>
+                    </div>
+                    <div class="panel-body">
+                        Resources provided by the California Revealed project provide only legal information, not legal advice. Although prepared by a copyright attorney, <strong><em>nothing in these web pages or documents should be considered legal advice.</em></strong>
+                    </div>
+                </div>
+
+                <!-- Accordions -->
+                <div class="panel-group" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Introduction to Fair Use
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                                <p>
+                                    Many people mistakenly believe that the purpose of copyright law is to protect the rights of copyright owners. As the Constitution makes clear, the purpose of copyright is actually to "promote the progress of science and the useful arts," or, in other words, to promote the growth of the body of human knowledge and the creation of new works expressing that knowledge.
+                                </p>
+                                <p>
+                                    Our laws accomplish this goal with a combination of granting exclusive rights to creators and placing limitations on those rights. Granting creators the rights to control the use of their works provides incentive for creating the works. Limiting those rights (through statutory exceptions to an owner's rights such as Section 108, the public domain, and fair use) allows others to use protected works so that they may build upon them and themselves contribute to the progress of knowledge.
+                                </p>
+                                <p>
+                                    The purpose of fair use is to provide a flexible tool to help achieve that goal. Copyright law is all about maintaining the balance between the rights of copyright owners and limitations on those rights (which can be thought of as the rights of users of protected works), and fair use is a key tool in doing that.
+                                </p>
+                                <p>
+                                    <strong><em>The ultimate question of fair use asks: Would allowing this use go further towards promoting the goal of copyright law than would disallowing the use?</em></strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    The Fair Use Analysis
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <p>
+                                    Fair use is a subjective analysis, specific to the facts of each particular situation. It is determined on a case-by-case basis by assessing the factors explained below. Fair use is an issue of assessing risk rather than finding definitive answers; risk often cannot be eliminated entirely.
+                                </p>
+                                <p>
+                                    Although the lack of definitive answers can be frustrating, it is the flexibility of fair use that makes it such a valuable tool. If fair use law consisted of a laundry list of specific uses to be allowed (for example, copying up to a certain percentage of a work), it would be very confining, because some situations require greater use than others to promote the goals of copyright law. Remember that the ultimate question asked by fair use is: "Would allowing this use go further towards promoting the goal of copyright law than would disallowing the use?"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading3">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    The Factors
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body">
+                                <p>
+                                    In conducting a fair use analysis, a court must consider four factors delineated in Section 107 of the Copyright Act. It may consider other factors as well, if it determines them to be relevant. All factors must be considered in the context of the big picture of the situation at issue; it is not simply a matter of adding up how many factors favor and disfavor fair use.
+                                </p>
+                                <p>
+                                    Both the individual factors and the fair use analysis as a whole should be viewed on a spectrum. Some uses are clearly fair or unfair, but many are somewhere in between.
+                                </p>
+                                <p>
+                                    <strong>Factor 1: Purpose and Character of the Use</strong>
+                                </p>
+                                <p>
+                                    This factor first considers whether the purpose and/or character of the use is closer to being non-profit educational or commercial and will favor fair use for those uses closer to the non-profit educational end of the spectrum. Note that this factor is about the use itself, not the nature of the institution making the use.
+                                </p>
+                                <p>
+                                    The first factor also considers whether the use is transformative. A transformative use is one that "Serves a new and different function from the original work and is not a substitute for it." The question is not whether the use changes the actual work, but whether the use itself supersedes the use for the original by "add[ing] something new, with further purpose or different character, altering the first with new expression, meaning, or message." Google's copying of millions of books for the purpose of creating a full-text search engine (which displays only a limited number of brief snippets from any one book and so does not act as a substitute for the books themselves) is an example of a transformative use.
+                                </p>
+                                <p>
+                                    Transformative uses strongly favor fair use, because they further the goal of copyright law (promoting the creation of new works) without causing significant harm to the copyright owner (rarely is there a current marketplace for a transformative use).
+                                </p>
+                                <p>
+                                    <strong>Factor 2: Nature of the Work Used</strong>
+                                </p>
+                                <p>
+                                    This factor also considers two questions. It will favor fair use if the work used is more factual in nature, <em>e.g.</em>, a newspaper article, than creative, <em>e.g.</em>, a photograph. However, if the work is unpublished, it will disfavor fair use, probably even for factual works.
+                                </p>
+                                <p>
+                                    <strong>Factor 3: Amount and Substantiality of the Portion Used</strong>
+                                </p>
+                                <p>
+                                    The questions posed under this factor are whether the defendant (user) has used more than was necessary to achieve the purpose of the use and whether she has used a different portion of the work than is necessary to achieve the purpose. As a rule of thumb, if the defendant has a justifiable reason for using the amount and the specific content she used, this factor will favor fair use (or at least be deemed neutral, <em>i.e.</em>, to not disfavor fair use).
+                                </p>
+                                <p>
+                                    <strong>Factor 4: Effect of the Use on the Potential Market for or Value of the Work</strong>
+                                </p>
+                                <p>
+                                    The case-by-case nature of the fair use analysis means that if the same precise scenario occurs at two different institutions or at two different times, the outcome of the fair use analysis will, by definition, be the same. The fourth factor asks whether the copyright owner will be substantially adversely affected if this very specific use is allowed every time the very specific situation arises. Note that this factor is not a question of whether the defendant actually made money from the use, or whether the plaintiff actually lost money.
+                                </p>
+                                <p>
+                                    It is important to correctly identify the market(s) at issue under this factor. Generally speaking, that would be the marketplace most analogous to the use being made. For example, the primary market to consider for a performance of a movie would be the market for performance rights rather than sales of DVDs (though the latter might be considered and given less weight than the former). If no marketplace exists for the use at issue, this factor will favor fair use. For example, because a transformative use uses a work in a new way that is different from the original use of the work, it is likely that no established marketplace will exist for a transformative use.
+                                </p>
+                                <p>
+                                    A recent case provides a good example of a court identifying the pertinent marketplace very specifically. Three academic publishers accused Georgia State University of infringing their copyrights by including scanned chapters from almost one hundred books in an electronic reserve system. The Eleventh Circuit differentiated between those works for which a licensing system for that use was in place and those for which no such system had been established:
+                                </p>
+                                <blockquote>
+                                    <p>
+                                        Absent evidence to the contrary, if a copyright holder has not made a license available to use a particular work in a particular manner, ... there is little damage to the publisher's market when someone makes use of the work in that way without obtaining a license, and hence the fourth factor should generally weigh in favor of fair use. <em>Cambridge University Press v. Patton, 769</em> F.3d 1232, 118 (11th Cir. 2014).
+                                    </p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading4">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                    Fair Use and the California Revealed Project
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                            <div class="panel-body">
+                                <p>
+                                    Although the law generally anticipates that fair use will be applied on a case-by-case basis, it is often not practical to go through the analysis for each work in a collection, and indeed, the law does not necessarily require it. Rather than thinking of "case-by-case" as meaning work-by-work, think of it as assessing fair use situation-by-situation. If the works constituting one collection all share the same facts that are pertinent to the fair use analysis, assessing the collection as a whole will be sufficient. An easy example is an archive of a single newspaper for which nothing has changed over the years of coverage that would affect the fair use analysis (e.g., if more recent issues are available through a commercial licensing mechanism but older issues are not, those two sub-groups should be analyzed separately).
+                                </p>
+                                <p>
+                                    <strong>Factor 1 (Purpose and character of the use)</strong>
+                                </p>
+                                <p>
+                                    When applied to the inclusion of a work in the California Revealed project, the first factor will almost always, if not always, favor fair use, because, although including a work in the project is not a non-profit educational use per se (as defined under copyright law), doing so falls much closer to that end of the spectrum than the commercial end. (It is not necessary that the use also be considered transformative, and, under current law, it is unlikely that it will be, since users ultimately will be using the works for the same purpose as did original users, e.g., reading a newspaper article or viewing a photograph, albeit through different technology.)
+                                </p>
+                                <p>
+                                    <strong>Factor 2 (Nature of the work)</strong>
+                                </p>
+                                <p>
+                                    The outcome of the second factor will vary, given the range of works that will be included in the project. This factor will favor fair use in some cases and disfavor fair use in others. However, courts often hold this factor to be less important in the overall analysis than the other factors.
+                                </p>
+                                <p>
+                                    <strong>Factor 3 (Amount and substantiality of the portion used)</strong>
+                                </p>
+                                <p>
+                                    In most, if not all, cases, the third factor will either favor fair use or be considered neutral (<em>i.e.</em>, neither favor nor disfavor), because achieving your purpose (educating the public about local history through the use of primary materials) will almost always require providing access to the entirety of the documents. Remember the rule of thumb: If you can justify why you used the amount and specific content you used, this factor is not likely to disfavor fair use.
+                                </p>
+                                <p>
+                                    <strong>Factor 4 (Effect of the use on the potential market for or value of the work)</strong>
+                                </p>
+                                <p>
+                                    Many, if not most, of the works being digitized for the California Revealed project probably have little, if any, market value, in which case this factor will most likely favor fair use. However, keep in mind the significance of an established licensing mechanism for a work. For example, major newspapers usually have an established process for licensing the use of individual newspaper articles, thus creating a specific marketplace, but this is much less likely to be the case for smaller, local newspapers. In the former case, this factor would disfavor fair use, while in the latter, it is would likely favor fair use.
+                                </p>
+                                <p>
+                                    <strong>Additional Factors</strong>
+                                </p>
+                                <p>
+                                    As noted above, in making its ultimate determination of whether a use should be considered fair, a court may take into account any additional factors it considers to be relevant. Often, that takes the form of broad questions about the degree to which defendant's use serves the public good, that is, whether the use would generate social or cultural benefits greater than the cost imposed on the copyright owner. The mission and function of the California Revealed project&mdash;to preserve, provide public access to, and document historical documents&mdash;should be considered a clear public good, which will strengthen the fair use argument.
+                                </p>
+                                <p>
+                                    <strong>Conclusion</strong>
+                                </p>
+                                <p>
+                                    Taking all of the above factors into consideration, it seems likely that the case for fair use will be strong for a significant portion of works being considered for the California Revealed project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading5">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                    About Fair Use Tools
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                            <div class="panel-body">
+                                <p>
+                                    Several sets of guidelines, statements of best practices, and other tools have been developed over the years to help interpret and apply fair use in specific situations. As is true for any tool or information resource, the value of these tools varies tremendously, and it is important to think critically before relying on them. In some cases, the authors of these tools misunderstand fair use themselves; this is true for any resource stating that copyright law does or does not allow specific amounts as fair use (<em>e.g.</em>, 10% or 250 words). Such numbers may constitute useful guidelines, but they do <em>not</em> reflect actual law.
+                                </p>
+                                <p>
+                                    Thinking critically also means considering the source—not only how qualified they are to explain the law, but also any agenda or bias they may have. For example, an entity representing users of protected works, such as the American Library Association, will have a very different perspective on fair use than will a licensing company who represents copyright owners, such as the Copyright Clearance Center. It is in the former's interest to interpret fair use broadly and to encourage its use, while the interest of the latter is to interpret fair use narrowly and perhaps even to discourage its use.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading6">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                    Tools: Using Best Practices to Minimize Your Risk
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                            <div class="panel-body">
+                                <p>
+                                    Most librarians (and others) have learned to approach fair use by asking, "Is what I want to do a fair use?" A more productive approach is to ask instead: "What steps can I take to increase the likelihood that my use will be considered fair?" By taking a proactive rather than reactive approach, you empower yourself, your colleagues, and your institution; increase your options for relying fair use; and reduce your risk.
+                                </p>
+                                <p>
+                                    Several statements of best practices for fair use in different contexts are available to help you. Although they vary in format and approach, they all explain how fair use applies to certain situations in general and, most helpfully, provide steps you can take to craft your situation to increase the likelihood that your use will be considered fair.
+                                </p>
+                                <p>
+                                    Most applicable to the work of the California Revealed project, Principle Four of the <a href="http://www.arl.org/focus-areas/copyright-ip/fair-use/code-of-best-practices#.VenDirxViko" target="_blank">ARL Code of Best Practices in Fair Use for Academic and Research Libraries</a> addresses creating digital collections of archival and special collections materials. Principle Four provides several "limitations" and "enhancements" to strengthen your fair use position, such as:
+                                </p>
+                                <ul>
+                                    <li>Providing access to published works that are available in unused copies on the commercial market at reasonable prices should be undertaken only with careful consideration, if at all. ...[A]ccess to unique aspects of [such copies] will be supportable under fair use.</li>
+                                    <li>The fair use case will be even stronger where items to be digitized consist largely of works ... whose owners are not exploiting the material commercially and likely could not be located to seek permission for new uses. </li>
+                                    <li>Libraries should also provide copyright owners with a simple tool for registering objections to online use, and respond to such objections promptly.</li>
+                                </ul>
+                                <p>
+                                    The California Revealed consultant team strongly encourages all participating libraries to download a (free) copy of the ARL Code and to review Principle Four.
+                                </p>
+                                <p>
+                                    Other statements of best practices that might be helpful for the project include:
+                                </p>
+                                <ul>
+                                    <li><a href="http://www.cmsimpact.org/sites/default/files/documents/pages/vra_fairuse_statement.pdf" target="_blank">Statement of the Fair Use of Images for Teaching, Research, and Study</a> (Visual Resources Association)</li>
+                                    <li><a href="http://www.cmsimpact.org/fair-use/best-practices/code-best-practices-fair-use-online-video" target="_blank">Code of Best Practices in Fair Use for Online Video</a> (Center for Media and Social Impact, 2008)</li>
+                                    <li><a href="http://cmsimpact.org/code/statement-best-practices-fair-use-collections-containing-orphan-works-libraries-archives-memory-institutions/" target="_blank">Statement of Best Practices in Fair Use of Collections Containing Orphan Works for Libraries, Archives, and other Memory Institutions</a> (Center for Media and Social Impact, 2014)</li>
+                                </ul>
+                                <p>
+                                    A more thorough list of statements of best practices can be found on the <a href="http://www.cmsimpact.org/fair-use/best-practices" target="_blank">Center for Media and Social Impact website</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading7">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                    Tools: Fair Use Evaluator and Checklist
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                            <div class="panel-body">
+                                <p>
+                                    Two general fair use tools that may be helpful are the <a href="http://librarycopyright.net/resources/fairuse/" target="_blank">Fair Use Evaluator</a> from the ALA Copyright Advisory Network and the <a href="https://copyright.columbia.edu/basics/fair-use/fair-use-checklist.html" target="_blank">Fair Use Checklist</a> from Columbia University. Just remember that these are tools to help guide your thinking and your analysis, not substitutes for thinking through a fair use analysis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading8">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                                    Tools: Fair Use "Guidelines"
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                            <div class="panel-body">
+                                <p>
+                                    No accepted set of quantitative guidelines addresses the types of uses being made in the California Revealed project. However, because many librarians have been taught that portions of guidelines are actually part of copyright law, we feel it is important to briefly address them here.
+                                </p>
+                                <p>
+                                    As opposed to statements of best practice, which address fair use in a somewhat subjective way, accepted and established "guidelines" provide quantitative measures of what constitutes the minimum amount of use that would be considered fair use. They are widely misunderstood to be a statement of law and/or to constitute the maximum use that would be considered fair use. Remember: <strong><em>The law of fair use does not include specific, quantified amounts!</em></strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <p>
+                    <span style="color:red">*</span>
+                    This page copyright 2016, Gretchen McCord. Content may be copied and used on an individual basis for non-commercial purposes only but may not be modified or broadly distributed without permission. For example, you may link to this page (linking does not infringe copyright), but you may not copy and paste the following content on another page.
+                </p>
+            </div>
+        </div>
     </main>
 </div>
 

@@ -15,70 +15,141 @@ namespace CSLBusinessLayer.Concrete
 {
     public class EmailService : IEmailService
     {
-        public SuccessModel SendLibrarianExamEmail(string file, LibrarianModel model)
+        public bool SendLibrarianExamEmail(string file, LibrarianModel model)
         {
-            SuccessModel res;         
-
-            // Command line argument must the the SMTP host.
-            SmtpClient client = new SmtpClient();
-            client.Port = 587;
-            client.Host = "smtp.gmail.com";
-            client.EnableSsl = true;
-            client.Timeout = 10000;
-            client.DeliveryMethod = SmtpDeliveryMethod.Network;
-            client.UseDefaultCredentials = false;
-            client.Credentials = new System.Net.NetworkCredential("seniorprojectteamnre@gmail.com", "Testing!23");
-
-            MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", "Exam Submission", file);
-            mm.IsBodyHtml = true;
-            mm.BodyEncoding = UTF8Encoding.UTF8;
-            mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
-
-
-
-            mm.Attachments.Add(new Attachment(HostingEnvironment.MapPath(file)));
-            if (model.ResumeUpload != null && model.ResumeUpload.ContentLength > 0)
+            try
             {
-                try
+                // Command line argument must the SMTP host.
+                SmtpClient client = new SmtpClient();
+                client.Port = 587;
+                client.Host = "smtp.gmail.com";
+                client.EnableSsl = true;
+                client.Timeout = 10000;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new System.Net.NetworkCredential("seniorprojectteamnre@gmail.com", "Testing!23");
+
+                string subject;
+                if (model.IsLibrarian = true && model.IsSeniorLibrarian == false)
                 {
-                    string fileName = Path.GetFileName(model.ResumeUpload.FileName);
-                    var attachment = new Attachment(model.ResumeUpload.InputStream, fileName);
-                    mm.Attachments.Add(attachment);
+                    subject = "New Librarian Supplemental Application - " + model.Name;
                 }
-                catch (Exception) { }
+                else subject = "New Senior Librarian Supplemental Application - " + model.Name;
+
+                MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", subject, LibrarianExamEmailBuilder(model));
+                mm.IsBodyHtml = true;
+                mm.BodyEncoding = UTF8Encoding.UTF8;
+                mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+
+
+
+                mm.Attachments.Add(new Attachment(HostingEnvironment.MapPath(file)));
+                if (model.ResumeUpload != null && model.ResumeUpload.ContentLength > 0)
+                {
+                    try
+                    {
+                        string fileName = Path.GetFileName(model.ResumeUpload.FileName);
+                        var attachment = new Attachment(model.ResumeUpload.InputStream, fileName);
+                        mm.Attachments.Add(attachment);
+                    }
+                    catch (Exception) { }
+                }
+
+                client.Send(mm);
+
+                mm.Attachments.Dispose();
+
+                return true;
             }
-
-            client.Send(mm);
-
-            mm.Attachments.Dispose();
-
-            res = new SuccessModel() { SuccessMessage = "Form has been successfully submitted" };
-            return res;
+            catch
+            {
+                return false;
+            }
         }
 
-        public SuccessModel SendSutroClassEmail(SutroClassModel model)
+        public bool SendSupervisingLibrarianExamEmail(string file, SupervisingLibrarianModel model)
         {
-            SuccessModel res;
+            try
+            {
+                // Command line argument must the SMTP host.
+                SmtpClient client = new SmtpClient();
+                client.Port = 587;
+                client.Host = "smtp.gmail.com";
+                client.EnableSsl = true;
+                client.Timeout = 10000;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new System.Net.NetworkCredential("seniorprojectteamnre@gmail.com", "Testing!23");
 
-            // Command line argument must the the SMTP host.
-            SmtpClient client = new SmtpClient();
-            client.Port = 587;
-            client.Host = "smtp.gmail.com";
-            client.EnableSsl = true;
-            client.Timeout = 10000;
-            client.DeliveryMethod = SmtpDeliveryMethod.Network;
-            client.UseDefaultCredentials = false;
-            client.Credentials = new System.Net.NetworkCredential("seniorprojectteamnre@gmail.com", "Testing!23");
+                string subject;
+                if (model.IsSupervisingLibrarianI = true && model.IsSupervisingLibrarianII == false && model.IsPrincipalLibrarian == false)
+                {
+                    subject = "New Supervising Librarian I Supplemental Application - " + model.Name;
+                }
+                else if (model.IsSupervisingLibrarianI = false && model.IsSupervisingLibrarianII == true && model.IsPrincipalLibrarian == false)
+                {
+                    subject = "New Supervising Librarian II Supplemental Application - " + model.Name;
+                }
+                else subject = "New Principal Librarian Supplemental Application - " + model.Name;
 
-            MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", "Sutro Reservation Request", SutroClassEmailBuilder(model));
-            mm.IsBodyHtml = true;
-            mm.BodyEncoding = UTF8Encoding.UTF8;
-            mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+                MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", subject, SupervisingLibrarianExamEmailBuilder(model));
+                mm.IsBodyHtml = true;
+                mm.BodyEncoding = UTF8Encoding.UTF8;
+                mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
 
-            client.Send(mm);
 
-            res = new SuccessModel() { SuccessMessage = "Form has been successfully submitted" };
-            return res;
+
+                mm.Attachments.Add(new Attachment(HostingEnvironment.MapPath(file)));
+                if (model.ResumeUpload != null && model.ResumeUpload.ContentLength > 0)
+                {
+                    try
+                    {
+                        string fileName = Path.GetFileName(model.ResumeUpload.FileName);
+                        var attachment = new Attachment(model.ResumeUpload.InputStream, fileName);
+                        mm.Attachments.Add(attachment);
+                    }
+                    catch (Exception) { }
+                }
+
+                client.Send(mm);
+
+                mm.Attachments.Dispose();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool SendSutroClassEmail(SutroClassModel model)
+        {
+            try
+            {
+                // Command line argument must the the SMTP host.
+                SmtpClient client = new SmtpClient();
+                client.Port = 587;
+                client.Host = "smtp.gmail.com";
+                client.EnableSsl = true;
+                client.Timeout = 10000;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new System.Net.NetworkCredential("seniorprojectteamnre@gmail.com", "Testing!23");
+
+                MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", "Sutro Reservation Request", SutroClassEmailBuilder(model));
+                mm.IsBodyHtml = true;
+                mm.BodyEncoding = UTF8Encoding.UTF8;
+                mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+
+                client.Send(mm);
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         private string SutroClassEmailBuilder(SutroClassModel model)
@@ -92,6 +163,18 @@ namespace CSLBusinessLayer.Concrete
                          "<br /><b>How long your class session at the Sutro will be (half hour, an hour, etc.): </b>" + model.ClassTimeLength +
                          "<br /><b>Is there an assignment, paper, or project the students will have to complete using Special Collections materials during the quarter? Is group study a requirement?: </b>" + model.DoesAssignmentExist +
                          "<br /><b>List of the materials to be used (please allow at least 3-4 days before the date of the scheduled class meeting): </b>" + model.Materials;
+            return res;
+        }
+
+        private string LibrarianExamEmailBuilder(LibrarianModel model)
+        {
+            string res = "<b>Please send a confirmation e-mail back to " + model.Name + " at: " + model.Email + " </b>";
+            return res;
+        }
+
+        private string SupervisingLibrarianExamEmailBuilder(SupervisingLibrarianModel model)
+        {
+            string res = "<b>Please send a confirmation e-mail back to " + model.Name + " at: " + model.Email + " </b>";
             return res;
         }
     }

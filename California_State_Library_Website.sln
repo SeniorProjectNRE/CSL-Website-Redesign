@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateTemplateV5Beta", "StateTemplateV5Beta\StateTemplateV5Beta.csproj", "{FAFB0CB7-7922-4BDD-AF3A-EACCD37D431C}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSLBusinessObjects", "CSLBusinessObjects\CSLBusinessObjects.csproj", "{BF8D7BE7-D333-4AA8-B599-BA59F0A5D52F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSLDataAccessLayer", "CSLDataAccessLayer\CSLDataAccessLayer.csproj", "{375216EC-3D17-4540-9CD2-B6F693E4EFC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSL.Tests", "CSL.Tests\CSL.Tests.csproj", "{5050038A-391D-4DB0-BA9A-59162DB62D43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{375216EC-3D17-4540-9CD2-B6F693E4EFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{375216EC-3D17-4540-9CD2-B6F693E4EFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{375216EC-3D17-4540-9CD2-B6F693E4EFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5050038A-391D-4DB0-BA9A-59162DB62D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5050038A-391D-4DB0-BA9A-59162DB62D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5050038A-391D-4DB0-BA9A-59162DB62D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5050038A-391D-4DB0-BA9A-59162DB62D43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
