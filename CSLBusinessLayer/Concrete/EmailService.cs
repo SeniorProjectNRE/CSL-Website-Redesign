@@ -67,6 +67,62 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
+        public bool SendSupervisingLibrarianExamEmail(string file, SupervisingLibrarianModel model)
+        {
+            try
+            {
+                // Command line argument must the SMTP host.
+                SmtpClient client = new SmtpClient();
+                client.Port = 587;
+                client.Host = "smtp.gmail.com";
+                client.EnableSsl = true;
+                client.Timeout = 10000;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new System.Net.NetworkCredential("seniorprojectteamnre@gmail.com", "Testing!23");
+
+                string subject;
+                if (model.IsSupervisingLibrarianI = true && model.IsSupervisingLibrarianII == false && model.IsPrincipalLibrarian == false)
+                {
+                    subject = "New Supervising Librarian I Supplemental Application - " + model.Name;
+                }
+                else if (model.IsSupervisingLibrarianI = false && model.IsSupervisingLibrarianII == true && model.IsPrincipalLibrarian == false)
+                {
+                    subject = "New Supervising Librarian II Supplemental Application - " + model.Name;
+                }
+                else subject = "New Principal Librarian Supplemental Application - " + model.Name;
+
+                MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", subject, SupervisingLibrarianExamEmailBuilder(model));
+                mm.IsBodyHtml = true;
+                mm.BodyEncoding = UTF8Encoding.UTF8;
+                mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+
+
+
+                mm.Attachments.Add(new Attachment(HostingEnvironment.MapPath(file)));
+                if (model.ResumeUpload != null && model.ResumeUpload.ContentLength > 0)
+                {
+                    try
+                    {
+                        string fileName = Path.GetFileName(model.ResumeUpload.FileName);
+                        var attachment = new Attachment(model.ResumeUpload.InputStream, fileName);
+                        mm.Attachments.Add(attachment);
+                    }
+                    catch (Exception) { }
+                }
+
+                client.Send(mm);
+
+                mm.Attachments.Dispose();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
         public bool SendSutroClassEmail(SutroClassModel model)
         {
             try
@@ -111,6 +167,12 @@ namespace CSLBusinessLayer.Concrete
         }
 
         private string LibrarianExamEmailBuilder(LibrarianModel model)
+        {
+            string res = "<b>Please send a confirmation e-mail back to " + model.Name + " at: " + model.Email + " </b>";
+            return res;
+        }
+
+        private string SupervisingLibrarianExamEmailBuilder(SupervisingLibrarianModel model)
         {
             string res = "<b>Please send a confirmation e-mail back to " + model.Name + " at: " + model.Email + " </b>";
             return res;

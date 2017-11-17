@@ -13,5 +13,6 @@ namespace CSLBusinessLayer.Interface
     {
         bool SendSutroClassEmail(SutroClassModel model);
         bool SendLibrarianExamEmail(string file, LibrarianModel model);
+        bool SendSupervisingLibrarianExamEmail(string file, SupervisingLibrarianModel model);
     }
 }
