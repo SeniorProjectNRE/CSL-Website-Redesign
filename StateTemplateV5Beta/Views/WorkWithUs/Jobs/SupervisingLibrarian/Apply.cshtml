@@ -359,6 +359,16 @@
                                                 </em>
 
                                                 <div class="radio">
+                                                    <script>
+                                                        $(document).ready(function () {
+                                                            $("#SL2OneYearExp").attr('name', 'sl2radio');
+                                                            $("#SL2ThreeYearExp").attr('name', 'sl2radio');
+                                                            $("#SL2FourYearExp").attr('name', 'sl2radio');
+                                                            console.log("changed name of radio buttons");
+                                                        });
+                                                    </script>
+
+
                                                     @*@Html.LabelFor(m => m.SL2OneYearExp)*@
                                                     <label>@Html.RadioButtonFor(m => m.SL2OneYearExp, true, "SL2OneYearExp") One year in the California state service performing professional librarian duties at ta level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Senior Librarian</a> or a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a></label>
                                                     <label> @Html.RadioButtonFor(m => m.SL2ThreeYearExp, true, "SL2ThreeYearExp") Three years of experience performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Librarian</a></label>
@@ -379,6 +389,14 @@
                                                 </em>
 
                                                 <div class="radio">
+                                                    <script>
+                                                        $(document).ready(function () {
+                                                            $("#PLOneYearExp").attr('name', 'plradio');
+                                                            $("#PLTwoYearExp").attr('name', 'plradio');
+                                                            $("#PLFiveYearExp").attr('name', 'plradio');
+                                                            console.log("changed name of radio buttons");
+                                                        });
+                                                    </script>
                                                     @*@Html.LabelFor(m => m.PLOneYearExp)*@
                                                     <label>@Html.RadioButtonFor(m => m.PLOneYearExp, true, "PLOneYearExp") One year in the California state service performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian II</a></label>
                                                     <label> @Html.RadioButtonFor(m => m.PLTwoYearExp, true, "PLTwoYearExp") Two years of experience performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a> or a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Senior Librarian</a></label>
@@ -622,19 +640,73 @@
                                     <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
                                         <div class='panel-body'>
 
+                                            <script>
+                                                        $(document).ready(function () {
+
+                                                            console.log("changed name of question radio buttons");
+
+                                                            $("#Q1None").attr('name', 'q1');
+                                                            $("#Q1Limited").attr('name', 'q1');
+                                                            $("#Q1Considerable").attr('name', 'q1');
+
+                                                            $("#Q2None").attr('name', 'q2');
+                                                            $("#Q2Limited").attr('name', 'q2');
+                                                            $("#Q2Considerable").attr('name', 'q2');
+
+                                                            $("#Q3None").attr('name', 'q3');
+                                                            $("#Q3Limited").attr('name', 'q3');
+                                                            $("#Q3Considerable").attr('name', 'q3');
+
+                                                            $("#Q4None").attr('name', 'q4');
+                                                            $("#Q4Limited").attr('name', 'q4');
+                                                            $("#Q4Considerable").attr('name', 'q4');
+
+                                                            $("#Q5None").attr('name', 'q5');
+                                                            $("#Q5Limited").attr('name', 'q5');
+                                                            $("#Q5Considerable").attr('name', 'q5');
+
+                                                            $("#Q6None").attr('name', 'q6');
+                                                            $("#Q6Limited").attr('name', 'q6');
+                                                            $("#Q6Considerable").attr('name', 'q6');
+
+                                                            $("#Q7None").attr('name', 'q7');
+                                                            $("#Q7Limited").attr('name', 'q7');
+                                                            $("#Q7Considerable").attr('name', 'q7');
+
+                                                            $("#Q9None").attr('name', 'q9');
+                                                            $("#Q9Limited").attr('name', 'q9');
+                                                            $("#Q9Considerable").attr('name', 'q9');
+
+                                                            $("#Q10None").attr('name', 'q10');
+                                                            $("#Q10Limited").attr('name', 'q10');
+                                                            $("#Q10Considerable").attr('name', 'q10');
+
+                                                            $("#Q11None").attr('name', 'q11');
+                                                            $("#Q11Limited").attr('name', 'q11');
+                                                            $("#Q11Considerable").attr('name', 'q11');
+
+                                                            $("#Q12None").attr('name', 'q12');
+                                                            $("#Q12Limited").attr('name', 'q12');
+                                                            $("#Q12Considerable").attr('name', 'q12');
+                                                            
+
+                                                        });
+                                            </script>
+
                                             <!--Q1-->
                                             <div class="tab-question-Q1">
 
                                                 <p>
-                                                    @Html.LabelFor(m => m.RateQ1, new { @class = "text-accent-p2" })
+                                                    @Html.LabelFor(m => m.Q1None, new { @class = "text-accent-p2" })
                                                 </p>
 
-                                                <div class="container">
-                                                    <p>@Html.RadioButtonFor(m => m.RateQ1, true, "RateQ1") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ1, true, "RateQ1") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ1, true, "RateQ1") Considerable</p>
-                                                    @Html.ValidationMessage("RateQ1", new { @class = "text-danger" })
-
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q1None, true, "Q1None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q1Limited, true, "Q1Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q1Considerable, true, "Q1Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q1None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q1Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q1Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
@@ -668,14 +740,17 @@
                                             <div class="tab-question-Q2">
 
                                                 <p>
-                                                    @Html.LabelFor(m => m.RateQ2, new { @class = "text-accent-p2" })
+                                                    @Html.LabelFor(m => m.Q2None, new { @class = "text-accent-p2" })
                                                 </p>
 
-                                                <div class="container">
-                                                    <p>@Html.RadioButtonFor(m => m.RateQ2, true, "RateQ2") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ2, true, "RateQ2") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ2, true, "RateQ2") Considerable</p>
-                                                    @Html.ValidationMessage("RateQ2", new { @class = "text-danger" })
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q2None, true, "Q2None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q2Limited, true, "Q2Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q2Considerable, true, "Q2Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q2None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q2Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q2Considerable", new { @class = "text-danger" })
+
                                                 </div>
 
 
@@ -708,16 +783,17 @@
                                             <!--Q3-->
                                             <div class="tab-question-Q3">
                                                 <p>
-                                                    @Html.LabelFor(m => m.RateQ3, new { @class = "text-accent-p2" })
+                                                    @Html.LabelFor(m => m.Q3None, new { @class = "text-accent-p2" })
                                                 </p>
 
-                                                <div class="container">
-                                                    <p>@Html.RadioButtonFor(m => m.RateQ3, true, "RateQ3") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ3, true, "RateQ3") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ3, true, "RateQ3") Considerable</p>
-                                                    @Html.ValidationMessage("RateQ3", new { @class = "text-danger" })
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q3None, true, "Q3None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q3Limited, true, "Q3Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q3Considerable, true, "Q3Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q3None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q3Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q3Considerable", new { @class = "text-danger" })
                                                 </div>
-
 
                                                 <div class="form-group">
                                                     <span class="required-label">*</span>
@@ -749,14 +825,18 @@
                                             <div class="tab-question-Q4">
 
                                                 <p>
-                                                    @Html.LabelFor(m => m.RateQ4, new { @class = "text-accent-p2" })
+                                                    @Html.LabelFor(m => m.Q4None, new { @class = "text-accent-p2" })
                                                 </p>
 
-                                                <div class="container">
-                                                    <p>@Html.RadioButtonFor(m => m.RateQ4, true, "RateQ4") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ4, true, "RateQ4") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ4, true, "RateQ4") Considerable</p>
-                                                    @Html.ValidationMessage("RateQ4", new { @class = "text-danger" })
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q4None, true, "Q4None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q4Limited, true, "Q4Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q4Considerable, true, "Q4Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q4None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q4Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q4Considerable", new { @class = "text-danger" })
+
+
                                                 </div>
 
 
@@ -788,15 +868,16 @@
                                             <!--Q5-->
                                             <div class="tab-question-Q5">
                                                 <p>
-                                                    @Html.LabelFor(m => m.RateQ5, new { @class = "text-accent-p2" })
+                                                    @Html.LabelFor(m => m.Q5None, new { @class = "text-accent-p2" })
                                                 </p>
 
-                                                <div class="container">
-                                                    <p>@Html.RadioButtonFor(m => m.RateQ5, true, "RateQ5") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ5, true, "RateQ5") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ5, true, "RateQ5") Considerable</p>
-                                                    @Html.ValidationMessage("RateQ5", new { @class = "text-danger" })
-
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q5None, true, "Q5None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q5Limited, true, "Q5Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q5Considerable, true, "Q5Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q5None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q5Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q5Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
@@ -827,16 +908,17 @@
                                             <!--Q6-->
                                             <div class="tab-question-Q6">
                                                 <p>
-                                                    @Html.LabelFor(m => m.RateQ6, new { @class = "text-accent-p2" })
+                                                    @Html.LabelFor(m => m.Q6None, new { @class = "text-accent-p2" })
                                                 </p>
 
-                                                <div class="container">
-                                                    <p>@Html.RadioButtonFor(m => m.RateQ6, true, "RateQ6") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ6, true, "RateQ6") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ6, true, "RateQ6") Considerable</p>
-                                                    @Html.ValidationMessage("RateQ6", new { @class = "text-danger" })
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q6None, true, "Q6None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q6Limited, true, "Q6Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q6Considerable, true, "Q6Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q6None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q6Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q6Considerable", new { @class = "text-danger" })
                                                 </div>
-
 
                                                 <div class="form-group">
                                                     <span class="required-label">*</span>@Html.LabelFor(m => m.Q6)
@@ -866,15 +948,18 @@
                                             <!--Q7-->
                                             <div class="tab-question-Q7">
                                                 <p>
-                                                    @Html.LabelFor(m => m.RateQ7, new { @class = "text-accent-p2" })
+                                                    @Html.LabelFor(m => m.Q7None, new { @class = "text-accent-p2" })
                                                 </p>
 
-                                                <div class="container">
-                                                    <p>@Html.RadioButtonFor(m => m.RateQ7, true, "RateQ7") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ7, true, "RateQ7") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ7, true, "RateQ7") Considerable</p>
-                                                    @Html.ValidationMessage("RateQ7", new { @class = "text-danger" })
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q7None, true, "Q7None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q7Limited, true, "Q7Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q7Considerable, true, "Q7Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q7None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q7Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q7Considerable", new { @class = "text-danger" })
                                                 </div>
+
 
                                                 <div class="form-group">
                                                     <span class="required-label">*</span>@Html.LabelFor(m => m.Q7)
@@ -903,6 +988,10 @@
 
                                             <!--Q8-->
                                             <div class="tab-question-Q8">
+                                                <p>
+                                                    <label class = "text-accent-p2" >8. Please describe the methods you use to stay abreast of best practices and the latest trends in library services and technology, for example, any association affiliations, conferences, seminars attended, training attended or given, or any other resources utilized.</label>
+                                                </p>
+
                                                 <div class="form-group">
                                                     <span class="required-label">*</span>@Html.LabelFor(m => m.Q8)
                                                     @Html.TextAreaFor(m => m.Q8, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
@@ -913,15 +1002,18 @@
 
                                             <!--Q9-->
                                             <div class="tab-question-Q9 tab-SL2-question">
+
                                                 <p>
-                                                    @Html.LabelFor(m => m.RateQ9, new { @class = "text-accent-p2" })
+                                                    @Html.LabelFor(m => m.Q9None, new { @class = "text-accent-p2" })
                                                 </p>
 
-                                                <div class="container">
-                                                    <p>@Html.RadioButtonFor(m => m.RateQ9, true, "RateQ9") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ9, true, "RateQ9") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ9, true, "RateQ9") Considerable</p>
-                                                    @Html.ValidationMessage("RateQ9", new { @class = "text-danger" })
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q9None, true, "Q9None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q9Limited, true, "Q9Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q9Considerable, true, "Q9Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q9None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q9Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q9Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
@@ -951,15 +1043,18 @@
 
                                             <!--Q10-->
                                             <div class="tab-question-Q10 tab-SL2-question">
+
                                                 <p>
-                                                    @Html.LabelFor(m => m.RateQ10, new { @class = "text-accent-p2" })
+                                                    @Html.LabelFor(m => m.Q10None, new { @class = "text-accent-p2" })
                                                 </p>
 
-                                                <div class="container">
-                                                    <p>@Html.RadioButtonFor(m => m.RateQ10, true, "RateQ10") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ10, true, "RateQ10") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ10, true, "RateQ10") Considerable</p>
-                                                    @Html.ValidationMessage("RateQ10", new { @class = "text-danger" })
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q10None, true, "Q10None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q10Limited, true, "Q10Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q10Considerable, true, "Q10Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q10None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q10Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q10Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
@@ -989,15 +1084,18 @@
 
                                             <!--Q11-->
                                             <div class="tab-question-Q11 tab-PL-question">
+
                                                 <p>
-                                                    @Html.LabelFor(m => m.RateQ11, new { @class = "text-accent-p2" })
+                                                    @Html.LabelFor(m => m.Q11None, new { @class = "text-accent-p2" })
                                                 </p>
 
-                                                <div class="container">
-                                                    <p>@Html.RadioButtonFor(m => m.RateQ11, true, "RateQ11") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ11, true, "RateQ11") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ11, true, "RateQ11") Considerable</p>
-                                                    @Html.ValidationMessage("RateQ11", new { @class = "text-danger" })
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q11None, true, "Q11None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q11Limited, true, "Q11Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q11Considerable, true, "Q11Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q11None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q11Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q11Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
@@ -1027,15 +1125,18 @@
 
                                             <!--Q12-->
                                             <div class="tab-question-Q12 tab-PL-question">
+
                                                 <p>
-                                                    @Html.LabelFor(m => m.RateQ12, new { @class = "text-accent-p2" })
+                                                    @Html.LabelFor(m => m.Q12None, new { @class = "text-accent-p2" })
                                                 </p>
 
-                                                <div class="container">
-                                                    <p>@Html.RadioButtonFor(m => m.RateQ12, true, "RateQ12") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ12, true, "RateQ12") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.RateQ12, true, "RateQ12") Considerable</p>
-                                                    @Html.ValidationMessage("RateQ12", new { @class = "text-danger" })
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q12None, true, "Q12None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q12Limited, true, "Q12Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q12Considerable, true, "Q12Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q12None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q12Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q12Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
@@ -1195,5 +1296,6 @@
             </div>
         </div>
     </main>
+    
 </div>
 
