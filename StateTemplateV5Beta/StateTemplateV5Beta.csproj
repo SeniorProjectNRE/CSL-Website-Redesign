@@ -703,6 +703,9 @@
     <Content Include="Content\StateTemplate\images\services\toLibraries\public_library_program.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\quoteIcon.png" />
     <Content Include="Content\StateTemplate\images\services\researchResources\PTRC.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\Statistics\book.png" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\Statistics\lib.png" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\Statistics\people.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\top.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\zipbooks.jpg" />
     <Content Include="Content\StateTemplate\images\services\toStateEmployees\art_legislators.jpg" />
