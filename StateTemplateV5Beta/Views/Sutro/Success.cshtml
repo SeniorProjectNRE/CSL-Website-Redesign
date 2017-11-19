@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Success";
+}
+
+<div id="main-content" class="main-content ">
+    <main class="main-primary">
+
+        <div class="section ">
+
+
+            <div class="container">
+                <ol class="breadcrumb dynamic"></ol>
+                @*<h2 class="page-title">@ViewBag.PageTitle</h2>*@
+            </div>
+
+            <div class="alert-success">
+                <h3>Form Submission has been a success</h3>
+                <br />
+                <div class="section section-overstated">
+                    <div class="container">
+                        <div class="row pull-right">
+                            <div class="btn btn-primary" onclick="location.href='@Url.Action("Class", "Sutro")'">Submit new form</div>
+                            <div class="btn btn-primary" onclick="location.href='@Url.Action("Index", "Sutro")'">Visit Sutro!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+</div>

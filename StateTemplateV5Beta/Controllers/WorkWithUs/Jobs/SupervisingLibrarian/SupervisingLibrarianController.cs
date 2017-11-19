@@ -47,17 +47,36 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.SupervisingLibrarian
             {
                 if (!ModelState.IsValid)
                 {
-                    //if (model.IsLibrarian == true && model.IsSeniorLibrarian == false)
-                    //{
-                    //    ModelState.Remove("Q7");
-                    //    ModelState.Remove("NameQ7");
-                    //    ModelState.Remove("EmailQ7");
-                    //    ModelState.Remove("PhoneNumQ7");
-                    //    ModelState.Remove("Q8");
-                    //    ModelState.Remove("NameQ8");
-                    //    ModelState.Remove("EmailQ8");
-                    //    ModelState.Remove("PhoneNumQ8");
-                    //}
+                    if (model.IsSupervisingLibrarianI == true && model.IsSupervisingLibrarianII == false && model.IsPrincipalLibrarian == false)
+                    {
+                        ModelState.Remove("Q9");
+                        ModelState.Remove("NameQ9");
+                        ModelState.Remove("EmailQ9");
+                        ModelState.Remove("PhoneNumQ9");
+                        ModelState.Remove("Q10");
+                        ModelState.Remove("NameQ10");
+                        ModelState.Remove("EmailQ10");
+                        ModelState.Remove("PhoneNumQ10");
+                        ModelState.Remove("Q11");
+                        ModelState.Remove("NameQ11");
+                        ModelState.Remove("EmailQ11");
+                        ModelState.Remove("PhoneNumQ11");
+                        ModelState.Remove("Q12");
+                        ModelState.Remove("NameQ12");
+                        ModelState.Remove("EmailQ12");
+                        ModelState.Remove("PhoneNumQ12");
+                    }
+                    if (model.IsSupervisingLibrarianI == false && model.IsSupervisingLibrarianII == true && model.IsPrincipalLibrarian == false)
+                    {
+                        ModelState.Remove("Q11");
+                        ModelState.Remove("NameQ11");
+                        ModelState.Remove("EmailQ11");
+                        ModelState.Remove("PhoneNumQ11");
+                        ModelState.Remove("Q12");
+                        ModelState.Remove("NameQ12");
+                        ModelState.Remove("EmailQ12");
+                        ModelState.Remove("PhoneNumQ12");
+                    }
                     if (!ModelState.IsValid)
                     {
                         return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
@@ -88,16 +107,16 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.SupervisingLibrarian
                     return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
                 }
 
-                string pdfSupervisingLibrarianITemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/LibAppFinal.pdf";
-                string pdfSupervisingLibrarianIITemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/SenLibAppFinal.pdf";
-                string pdfPrincipalLibrarianTemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/SenLibAppFinal.pdf";
+                string pdfSupervisingLibrarianITemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/SL1AppFinal.pdf";
+                string pdfSupervisingLibrarianIITemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/SL2AppFinal.pdf";
+                string pdfPrincipalLibrarianTemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/PLAppFinal.pdf";
                 string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + model.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
 
                 if (model.IsSupervisingLibrarianI = true && model.IsSupervisingLibrarianII == false && model.IsPrincipalLibrarian == false)
                 {
                     _examService.FillSupervisingLibrarianIExam(model, pdfSupervisingLibrarianITemplate, newFile);
                 }
-                else if (model.IsSupervisingLibrarianI = false && model.IsSupervisingLibrarianII == true && model.IsPrincipalLibrarian == false)
+                else if (model.IsSupervisingLibrarianII == true && model.IsPrincipalLibrarian == false)
                 {
                     _examService.FillSupervisingLibrarianIIExam(model, pdfSupervisingLibrarianIITemplate, newFile);
                 } else _examService.FillPrincipalLibrarianExam(model, pdfPrincipalLibrarianTemplate, newFile);
@@ -111,7 +130,6 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.SupervisingLibrarian
 
                 ModelState.Clear();
                 model.Success = res;
-                //return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
                 return RedirectToAction("success", "jobs");
             }
             catch (Exception ex)
