@@ -341,7 +341,7 @@
                                                 </em>
 
                                                 <div class="radio">
-                                                    @Html.LabelFor(m => m.HasExperienceSLI)
+                                                    @*@Html.LabelFor(m => m.HasExperienceSLI)*@
                                                     <label>@Html.RadioButtonFor(m => m.HasExperienceSLI, true, "ExperienceSI") Two years in the California state service performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Librarian</a></label>
                                                     <label> @Html.RadioButtonFor(m => m.HasExperienceSLI, true, "ExperienceSI") Three years of increasingly responsible and varied professional library experience such as cataloging, reference work, library service projects, and the selection of library materials, at least one year of which must have included regular use of computerized databases</label>
                                                     @Html.ValidationMessage("ExperienceSI", new { @class = "text-danger" })
@@ -355,15 +355,15 @@
                                                 </p>
 
                                                 <em>
-                                                    @Html.LabelFor(m => m.HasExperienceSLII, new { @class = "normal" })
+                                                    @Html.LabelFor(m => m.SL2OneYearExp, new { @class = "normal" })
                                                 </em>
 
                                                 <div class="radio">
-                                                    @Html.LabelFor(m => m.HasExperienceSLII)
-                                                    <label>@Html.RadioButtonFor(m => m.HasExperienceSLII, true, "ExperienceSII") One year in the California state service performing professional librarian duties at ta level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Senior Librarian</a> or a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a></label>
-                                                    <label> @Html.RadioButtonFor(m => m.HasExperienceSLII, true, "ExperienceSII") Three years of experience performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Librarian</a></label>
-                                                    <label> @Html.RadioButtonFor(m => m.HasExperienceSLII, true, "ExperienceSII") Four years of increasingly responsible and varied professional library experience such as having charge of a small library or subordinate section of a major library, at least one year of which shall have been comparable in level of responsibility to a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a></label>
-                                                    @Html.ValidationMessage("ExperienceSII", new { @class = "text-danger" })
+                                                    @*@Html.LabelFor(m => m.SL2OneYearExp)*@
+                                                    <label>@Html.RadioButtonFor(m => m.SL2OneYearExp, true, "SL2OneYearExp") One year in the California state service performing professional librarian duties at ta level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Senior Librarian</a> or a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a></label>
+                                                    <label> @Html.RadioButtonFor(m => m.SL2ThreeYearExp, true, "SL2ThreeYearExp") Three years of experience performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Librarian</a></label>
+                                                    <label> @Html.RadioButtonFor(m => m.SL2FourYearExp, true, "SL2FourYearExp") Four years of increasingly responsible and varied professional library experience such as having charge of a small library or subordinate section of a major library, at least one year of which shall have been comparable in level of responsibility to a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a></label>
+                                                    @Html.ValidationMessage("SL2OneYearExp", new { @class = "text-danger" })
                                                 </div>
                                             </div>
 
@@ -375,15 +375,15 @@
                                                 </p>
 
                                                 <em>
-                                                    @Html.LabelFor(m => m.HasExperiencePL, new { @class = "normal" })
+                                                    @Html.LabelFor(m => m.PLOneYearExp, new { @class = "normal" })
                                                 </em>
 
                                                 <div class="radio">
-                                                    @Html.LabelFor(m => m.HasExperiencePL)
-                                                    <label>@Html.RadioButtonFor(m => m.HasExperiencePL, true, "ExperiencePL") One year in the California state service performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian II</a></label>
-                                                    <label> @Html.RadioButtonFor(m => m.HasExperiencePL, true, "ExperiencePL") Two years of experience performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a> or a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Senior Librarian</a></label>
-                                                    <label> @Html.RadioButtonFor(m => m.HasExperiencePL, true, "ExperiencePL") Five years of increasingly responsible and varied professional library experience, at least two years of which shall have been comparable in level of responsibility to a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian II</a> in charge of a major section of a large library or a large independent branch library</label>
-                                                    @Html.ValidationMessage("ExperiencePL", new { @class = "text-danger" })
+                                                    @*@Html.LabelFor(m => m.PLOneYearExp)*@
+                                                    <label>@Html.RadioButtonFor(m => m.PLOneYearExp, true, "PLOneYearExp") One year in the California state service performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian II</a></label>
+                                                    <label> @Html.RadioButtonFor(m => m.PLTwoYearExp, true, "PLTwoYearExp") Two years of experience performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a> or a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Senior Librarian</a></label>
+                                                    <label> @Html.RadioButtonFor(m => m.PLFiveYearExp, true, "PLFiveYearExp") Five years of increasingly responsible and varied professional library experience, at least two years of which shall have been comparable in level of responsibility to a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian II</a> in charge of a major section of a large library or a large independent branch library</label>
+                                                    @Html.ValidationMessage("PLOneYearExp", new { @class = "text-danger" })
                                                 </div>
 
                                             </div>
@@ -903,11 +903,6 @@
 
                                             <!--Q8-->
                                             <div class="tab-question-Q8">
-                                                <p>
-                                                    @Html.LabelFor(m => m.RateQ8, new { @class = "text-accent-p2" })
-                                                </p>
-
-
                                                 <div class="form-group">
                                                     <span class="required-label">*</span>@Html.LabelFor(m => m.Q8)
                                                     @Html.TextAreaFor(m => m.Q8, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>

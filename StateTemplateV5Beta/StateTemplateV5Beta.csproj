@@ -1817,6 +1817,7 @@
     <Content Include="Views\Services\ToLibraries\Statistics\Summary.cshtml" />
     <Content Include="Views\Services\ToLibraries\ZipBooks.cshtml" />
     <Content Include="Views\WorkWithUs\Jobs\Success.cshtml" />
+    <Content Include="Views\Sutro\Success.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
