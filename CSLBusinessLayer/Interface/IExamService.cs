@@ -17,5 +17,7 @@ namespace CSLBusinessLayer.Interface
         bool FillPrincipalLibrarianExam(SupervisingLibrarianModel model, string pdfPrincipalLibrarianTemplate, string newFile);
         bool FillLPAExam(LPAModel model, string pdfLPAtemplate, string newFile);
         bool FillLPCExam(LPCModel model, string pdfLPAtemplate, string newFile);
+        bool FillLTAIExam(LTAModel model, string pdfLTAITemplate, string newFile);
+        bool FillLTAIIExam(LTAModel model, string pdfLTAIITemplate, string newFile);
     }
 }

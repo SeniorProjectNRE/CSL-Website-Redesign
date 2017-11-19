@@ -16,5 +16,6 @@ namespace CSLBusinessLayer.Interface
         bool SendSupervisingLibrarianExamEmail(string file, SupervisingLibrarianModel model);
         bool SendLPAExamEmail(string newFile, LPAModel model);
         bool SendLPCExamEmail(string newFile, LPCModel model);
+        bool SendLTAExamEmail(string newFile, LTAModel model);
     }
 }
