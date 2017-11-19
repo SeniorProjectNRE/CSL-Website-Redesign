@@ -186,7 +186,7 @@ namespace CSLBusinessLayer.Concrete
 
                 string subject = "New Library Programs Consultant Supplemental Application - " + model.Name;
 
-                MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", subject, LPAExamEmailBuilder(model));
+                MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", subject, LPCExamEmailBuilder(model));
                 mm.IsBodyHtml = true;
                 mm.BodyEncoding = UTF8Encoding.UTF8;
                 mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;

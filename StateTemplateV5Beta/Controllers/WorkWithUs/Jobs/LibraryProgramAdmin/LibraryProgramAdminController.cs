@@ -70,10 +70,10 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.LibraryProgramAdmin
 
                 if (model.IsCaptcha == false)
                 {
-                    return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
+                    return View("~/Views/WorkWithUs/Jobs/LibraryProgramAdmin/Apply.cshtml", model);
                 }
 
-                string pdfLPAtemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/SL1AppFinal.pdf";
+                string pdfLPAtemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/LPAAppFinal.pdf";
                 string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + model.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
 
                 _examService.FillLPAExam(model, pdfLPAtemplate, newFile);
