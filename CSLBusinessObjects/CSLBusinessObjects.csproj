@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigModels\DBConnectionConfig.cs" />
+    <Compile Include="Models\Exams\LPAModel.cs" />
     <Compile Include="Models\Exams\SupervisingLibrarianModel.cs" />
     <Compile Include="Models\Exams\LibrarianModel.cs" />
     <Compile Include="Models\Grants\GrantsModel.cs" />
