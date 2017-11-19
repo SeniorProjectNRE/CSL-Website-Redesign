@@ -1415,6 +1415,159 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
+        public bool FillLTAIExam(LTAModel model, string pdfTemplate, string newFile)
+        {
+            try
+            {
+                using (PdfReader pdfReader = new PdfReader(System.IO.File.ReadAllBytes(HostingEnvironment.MapPath(pdfTemplate))))
+                {
+                    using (FileStream pdfFileStream = new FileStream(HostingEnvironment.MapPath(newFile), FileMode.Create))
+                    {
+                        using (PdfStamper pdfStamper = new PdfStamper(pdfReader, pdfFileStream))
+                        {
+                            AcroFields pdfFormFields = pdfStamper.AcroFields;
+
+                            //set pdf form fields
+                            //basic info
+                            #region BasicInfo
+                            pdfFormFields.SetField("Name", model.Name);
+                            pdfFormFields.SetField("Email", model.Email);
+
+                            if (model.HasExperienceLTAII == true)
+                            {
+                                pdfFormFields.SetField("LTA1Degree", "On");
+                            }
+                            if (model.HasExperienceLTAI == false)
+                            {
+                                pdfFormFields.SetField("LTA1TwoYearExp", "On");
+                            }
+
+                            //Cataloging Experience
+                            pdfFormFields.SetField("CatalogingExp", model.Cataloging);
+                            pdfFormFields.SetField("CatalogingContact", model.NameCataloging);
+                            pdfFormFields.SetField("CatalogingEmail", model.EmailCataloging);
+                            pdfFormFields.SetField("CatalogingPhone", model.PhoneNumCataloging);
+
+                            //Acquisition Experience
+                            pdfFormFields.SetField("AcquisitionExp", model.Acquisitions);
+                            pdfFormFields.SetField("AcquisitionContact", model.NameAcquisitions);
+                            pdfFormFields.SetField("AcquisitionEmail", model.EmailAcquisitions);
+                            pdfFormFields.SetField("AcquisitionPhone", model.PhoneNumAcquisitions);
+
+                            //Reserves Experience
+                            pdfFormFields.SetField("ReservesExp", model.Reserves);
+                            pdfFormFields.SetField("ReservesContact", model.NameReserves);
+                            pdfFormFields.SetField("ReservesEmail", model.EmailReserves);
+                            pdfFormFields.SetField("ReservesPhone", model.PhoneNumReserves);
+
+                            //Reference Experience
+                            pdfFormFields.SetField("ReferenceExp", model.Reference);
+                            pdfFormFields.SetField("ReferenceContact", model.NameReference);
+                            pdfFormFields.SetField("ReferenceEmail", model.EmailReference);
+                            pdfFormFields.SetField("ReferencePhone", model.PhoneNumReference);
+
+                            //Preservation Experience
+                            pdfFormFields.SetField("PreservationExp", model.Preservation);
+                            pdfFormFields.SetField("PreservationContact", model.NamePreservation);
+                            pdfFormFields.SetField("PreservationEmail", model.EmailPreservation);
+                            pdfFormFields.SetField("PreservationPhone", model.PhoneNumPreservation);
+
+                            //Reader Advisory Service Experience
+                            pdfFormFields.SetField("ReaderAdvisoryExp", model.ReaderAdvisoryService);
+                            pdfFormFields.SetField("ReaderAdvisoryContact", model.NameReaderAdvisoryService);
+                            pdfFormFields.SetField("ReaderAdvisoryEmail", model.EmailReaderAdvisoryService);
+                            pdfFormFields.SetField("ReaderAdvisoryPhone", model.PhoneNumReaderAdvisoryService);
+
+                            //Interlibrary Loans Experience
+                            pdfFormFields.SetField("InterlibraryLoansExp", model.InterlibraryLoans);
+                            pdfFormFields.SetField("InterlibraryLoansContact", model.NameInterlibraryLoans);
+                            pdfFormFields.SetField("InterlibraryLoansEmail", model.EmailInterlibraryLoans);
+                            pdfFormFields.SetField("InterlibraryLoansPhone", model.PhoneNumInterlibraryLoans);
+
+                            //Circulation Experience
+                            pdfFormFields.SetField("CirculationExp", model.Circulation);
+                            pdfFormFields.SetField("CirculationContact", model.NameCirculation);
+                            pdfFormFields.SetField("CirculationEmail", model.EmailCirculation);
+                            pdfFormFields.SetField("CirculationPhone", model.PhoneNumCirculation);
+                            #endregion
+
+                            #region Questions
+                            if (model.Q1None == true)
+                            {
+                                pdfFormFields.SetField("Q1None", "On");
+                            }
+                            if (model.Q1Limited == true)
+                            {
+                                pdfFormFields.SetField("Q1Limited", "On");
+                            }
+                            if (model.Q1Considerable == true)
+                            {
+                                pdfFormFields.SetField("Q1Considerable", "On");
+                            }
+                            pdfFormFields.SetField("Q1Description", model.Q1);
+                            pdfFormFields.SetField("Q1Contact", model.NameQ1);
+                            pdfFormFields.SetField("Q1Email", model.EmailQ1);
+                            pdfFormFields.SetField("Q1Phone", model.PhoneNumQ1);
+
+                            if (model.Q2None == true)
+                            {
+                                pdfFormFields.SetField("Q2None", "On");
+                            }
+                            if (model.Q2Limited == true)
+                            {
+                                pdfFormFields.SetField("Q2Limited", "On");
+                            }
+                            if (model.Q2Considerable == true)
+                            {
+                                pdfFormFields.SetField("Q2Considerable", "On");
+                            }
+                            pdfFormFields.SetField("Q2Description", model.Q2);
+                            pdfFormFields.SetField("Q2Contact", model.NameQ2);
+                            pdfFormFields.SetField("Q2Email", model.EmailQ2);
+                            pdfFormFields.SetField("Q2Phone", model.PhoneNumQ2);
+
+                            if (model.Q3None == true)
+                            {
+                                pdfFormFields.SetField("Q3None", "On");
+                            }
+                            if (model.Q3Limited == true)
+                            {
+                                pdfFormFields.SetField("Q3Limited", "On");
+                            }
+                            if (model.Q3Considerable == true)
+                            {
+                                pdfFormFields.SetField("Q3Considerable", "On");
+                            }
+                            pdfFormFields.SetField("Q3Description", model.Q3);
+                            pdfFormFields.SetField("Q3Contact", model.NameQ3);
+                            pdfFormFields.SetField("Q3Email", model.EmailQ3);
+                            pdfFormFields.SetField("Q3Phone", model.PhoneNumQ3);
+                            #endregion
+
+                            if (model.isCertified == true)
+                            {
+                                pdfFormFields.SetField("SigChkBox", "On");
+                            }
+                            pdfFormFields.SetField("Signature", model.Signature);
+                            pdfFormFields.SetField("Date", model.Date);
+
+                            pdfStamper.FormFlattening = true;
+                            pdfStamper.Close();
+                            pdfReader.Close();
+                            pdfFileStream.Close();
+                        }
+                        pdfFileStream.Close();
+                    }
+                    pdfReader.Close();
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
         public bool FillLTAIIExam(LTAModel model, string pdfTemplate, string newFile)
         {
             try
