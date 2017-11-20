@@ -1,11 +1,216 @@
-﻿
-@{
-    ViewBag.Title = "About";
+﻿@{
+    ViewBag.Title = "CSL - California Library Services Act";
+    ViewBag.PageTitle = "California Library Services Act (CLSA)";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "";
+    ViewBag.Keywords = "CLSA";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>About</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/to-libraries">To Libraries</a></li>
+                    <li><a href="/services/to-libraries/ca-library-services-act">Library Services Act</a></li>
+                    <li class="active">About</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <p>
+                        California public libraries engaged in cooperative efforts with neighboring libraries are supported through one funded program of the California Library Services Act (CLSA), specifically designed to assist and encourage such interlibrary cooperation. 
+                        The program is administered by the 13-member California Library Services Board. 
+                        Prior to FY 2011/12, the funding was provided to California public and non-public (not for profit) libraries for sharing resources. 
+                        Currently, state funding is allocated to <a href="/services/to-libraries/ca-library-services-act/systems/">California Cooperative Library Systems</a>.
+                    </p>
+
+                    <div class="half list-unstyled p-t-md">
+                        <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading1'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Transaction Based Reimbursements</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Although state funding was eliminated in July 2011, the program has supported reimbursement of local libraries for a portion of the costs they incur when they extend lending services beyond their normal clientele. 
+                                            The two service components authorized in the California Library Services Act (CLSA) for the Transaction Based Reimbursements (TBR) Program are:
+                                        </p>
+
+                                        <ul class="list-overstated"> 
+                                            <li>
+                                                <b>Direct Loan: </b>
+                                                Over-the-counter loan of material by a California public library to a resident of some other California public library jurisdiction.
+                                                Direct loans are reimbursed on a net imbalance basis.
+                                                A participating public library is reimbursed for the handling costs of those loans made to non-residents that exceed the number of loans made by all other public libraries to the participating library's own residents.
+                                                The Direct Loan Program has two provisions of service:
+
+                                                <ul class="list-overstated">
+                                                    <li>
+                                                        Equal Access: If the public library has agreed to participate in the Equal Access provision of CLSA, it is obligated to provide non-resident over-the-counter loan service to residents of
+                                                        public libraries that belong to the same CLSA <i>Cooperative Library System</i> as the lending library.
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="list-overstated">
+                                                    <li>
+                                                        Universal Borrowing: If the public library has agreed to participate in the Universal Borrowing provision of CLSA, it is obligated to provide over-the-counter loan service to the residents of all other California public library jurisdictions.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <b>Interlibrary Loan:</b> 
+                                                Lending of material from one library to another as a result of a user request for the item. 
+                                                Public libraries as well as non-public libraries (i.e., public and private academic libraries, not-for-profit corporate libraries, school libraries, etc.) are reimbursed only when the borrowing library is a California public library. 
+                                                Public libraries are reimbursed for loans made to each other and to eligible non-public libraries. 
+                                                As in the Direct Loan program, only handling costs are reimbursed.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading2'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>System Reference</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Supports coordinated reference service provided through each of eight Cooperative Library Systems. 
+                                            This is second level reference which a local public library is unable to provide directly to its patrons because of the lack of local resources to fully address all questions asked. 
+                                            In addition, this program supports efforts to provide training to local librarians and para professional staff with an emphasis on basic services that can be provided using common reference tools found in small public libraries. 
+                                            The purpose is to provide as much service as possible at the level where the patron first makes contact with the library and to provide cost-effective backup resources where these are needed.
+                                        </p>
+
+                                        <p>
+                                            On January 1, 2013, this section of CLSA will be repealed by Senate Bill 1044.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading3'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>System Communications and Delivery</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Supports the cost of providing communications and delivery systems that enable the sharing of resources through interlibrary loans and the rapid interchange of information by telephone, fax, U.S. Mail, courier services, and van deliveries. 
+                                            In recent fiscal years, nearly 2.6 million messages and over 14.6 million items have been annually delivered with the support of this program.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading4'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Statewide Data Base</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Although state funding was eliminated in July 2005, the program has supported the payment of annual subsidies as follows: $69 for local OCLC access, payable to individual public libraries; 
+                                            $550 towards the opening up access to the local catalog via Z39.50, payable to individual public libraries; and $5500 towards the ongoing costs of operating a regional resource sharing server, payable to CLSA Cooperative Library Systems. 
+                                            In addition to subsidies, the following targeted one-time grants were provided, depending on funds available:
+                                        </p>
+
+                                        <ul class="list-overstated">
+                                            <li>competitive grants up to $10,000 each to individual public libraries for retrospective conversion</li>
+                                            <li>competitive matching grants up to $10,000 each, with a required 100% local match, to individual public libraries for catalog enhancement or enrichment</li>
+                                            <li>competitive grants up to $7,500 each to individual public libraries for Z39.50 server software acquisition and installation</li>
+                                        </ul>
+
+                                        <p>
+                                            Before state funding was eliminated for the CLSA Statewide Data Base, it contained, through OCLC, it contained over 22.2 million location records. 
+                                            A subsequent OCLC FirstSearch WorldCat subset known as the California Libraries Catalog was started in 2004/05 using an LSTA grant. 
+                                            This federally funded project contained 1221 libraries, 15.8 million bibliographic records, and 76.4 million location records prior to losing Federal funding.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="half list-unstyled p-t-md">
+                        <div class='panel-group' id='example-accordion' role='tablist' aria-multiselectable='true'>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading5'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>Consolidations and Affiliations</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Supports the consolidation of two or more public library jurisdictions into a single library agency. 
+                                            Newly consolidated library jurisdictions are awarded twenty thousand dollars for each of two years, provided that notice of the consolidation is filed within one year after the consolidation. 
+                                            When two cooperative systems consolidate, a grant of ten thousand dollars is awarded for each of two years following the consolidation. 
+                                            This program also supports public library affiliation into an existing cooperative library system. 
+                                            Although affiliation grants are no longer available, the State Board must be notified by the filing of a notice of intent by the cooperative system; 
+                                            and the joining public library must file an affiliation authorization to the State Board.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading6'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>State Reference Centers</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Provides for the establishment of two or more statewide reference centers which provide statewide service. 
+                                            It also specifies that one or more of the state reference centers be designated as a "...repository for collections specially relevant to economically disadvantaged and non English-speaking persons." 
+                                            This program is not funded.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading7'>
+                                    <h4 class='panel-title'>
+                                        <a class='collapsed' role='button' data-toggle='collapse' href='#collapse7' aria-expanded='false' aria-controls='collapse7'>Statewide Communications and Delivery</a>
+                                    </h4>
+                                </div>
+                                <div id='collapse7' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading7'>
+                                    <div class='panel-body'>
+                                        <p>
+                                            Provides for the establishment and maintenance of a communications and delivery network between and among cooperative systems, state reference centers, independent public libraries and all other libraries participating in the program authorized by the CLSA. 
+                                            This program is not funded.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
