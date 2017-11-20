@@ -187,6 +187,7 @@
     <Compile Include="Controllers\Grants\CivilLiberties\CivilLibertiesController.cs" />
     <Compile Include="Controllers\Grants\GrantsController.cs" />
     <Compile Include="Controllers\Grants\ApplyController.cs" />
+    <Compile Include="Controllers\Grants\LibraryServicesTechnologyAct\LibraryServicesTechnologyActController.cs" />
     <Compile Include="Controllers\Services\ToLibraries\Broadband\BroadbandController.cs" />
     <Compile Include="Controllers\Grants\CARevealed\CARevealedController.cs" />
     <Compile Include="Controllers\Grants\PLStaffEducationProgram\PLStaffEducationProgramController.cs" />
@@ -656,9 +657,14 @@
     <Content Include="Content\StateTemplate\images\online_exhibits\top_governors.jpg" />
     <Content Include="Content\StateTemplate\images\online_exhibits\top_ladies.jpg" />
     <Content Include="Content\StateTemplate\images\online_exhibits\upgrade.jpg" />
+    <Content Include="Content\StateTemplate\images\services\borrowing.jpg" />
     <Content Include="Content\StateTemplate\images\services\borrowing\library_card_catalog.png" />
+    <Content Include="Content\StateTemplate\images\services\btbl.jpg" />
     <Content Include="Content\StateTemplate\images\services\careerOnline\career_online_logo.jpg" />
     <Content Include="Content\StateTemplate\images\services\careerOnline\CSL_logo.jpg" />
+    <Content Include="Content\StateTemplate\images\services\comingsoon.jpg" />
+    <Content Include="Content\StateTemplate\images\services\employee.jpg" />
+    <Content Include="Content\StateTemplate\images\services\gen-public.jpg" />
     <Content Include="Content\StateTemplate\images\services\harwood\icon_pdf.png" />
     <Content Include="Content\StateTemplate\images\services\harwood\icon_pdf_over.png" />
     <Content Include="Content\StateTemplate\images\services\harwood\icon_video.png" />
@@ -666,10 +672,14 @@
     <Content Include="Content\StateTemplate\images\services\harwood\icon_www.png" />
     <Content Include="Content\StateTemplate\images\services\harwood\icon_www_over.png" />
     <Content Include="Content\StateTemplate\images\services\harwood\person.jpg" />
+    <Content Include="Content\StateTemplate\images\services\online.jpg" />
     <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
+    <Content Include="Content\StateTemplate\images\services\public.jpg" />
     <Content Include="Content\StateTemplate\images\services\PublicServices.png" />
+    <Content Include="Content\StateTemplate\images\services\research.jpg" />
     <Content Include="Content\StateTemplate\images\services\researchResources\csl_employee.png" />
     <Content Include="Content\StateTemplate\images\services\researchResources\top.jpg" />
+    <Content Include="Content\StateTemplate\images\services\services.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\cabels.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\alliance.png" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\California.jpg" />
@@ -690,8 +700,12 @@
     <Content Include="Content\StateTemplate\images\services\toLibraries\liborg.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\money-bag.png" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\programs.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\public_library_program.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\quoteIcon.png" />
     <Content Include="Content\StateTemplate\images\services\researchResources\PTRC.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\Statistics\book.png" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\Statistics\lib.png" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\Statistics\people.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\top.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\zipbooks.jpg" />
     <Content Include="Content\StateTemplate\images\services\toStateEmployees\art_legislators.jpg" />
@@ -1513,6 +1527,16 @@
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\CA_Survey_2017.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\CountingElectronicItemsforCAPLS.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\CountingSuccessfulRetrievalofElectronicInformationforCAPLS.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\1112AwardsPLSEP.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\1213AwardsPLSEP.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\1314AwardsPLSEP.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\1415Awards-PLSEP.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\2015-16_recipients.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\2016-17PLSEP_recipients.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\PLSEPLSSTAppInst1415.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\PLSEPNewStAppInst1415.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\SamplePLSEPLSSTApp1415.pdf" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\SamplePLSEPNewStApp1415.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
@@ -1817,6 +1841,8 @@
     <Content Include="Views\Services\ToLibraries\Statistics\Summary.cshtml" />
     <Content Include="Views\Services\ToLibraries\ZipBooks.cshtml" />
     <Content Include="Views\WorkWithUs\Jobs\Success.cshtml" />
+    <Content Include="Views\Grants\LibraryServicesTechnologyAct\Manage.cshtml" />
+    <Content Include="Views\Services\ToLibraries\LibraryStaffEducationPogram.cshtml" />
     <Content Include="Views\Sutro\Success.cshtml" />
   </ItemGroup>
   <ItemGroup>
