@@ -285,6 +285,14 @@
     <Content Include="Content\StateTemplate\favicon.ico" />
     <Content Include="Content\StateTemplate\fonts\CaGov.svg" />
     <Content Include="Content\StateTemplate\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\StateTemplate\images\about\executiveStaff\AlexVassar.jpg" />
+    <Content Include="Content\StateTemplate\images\about\executiveStaff\AnneNeville.jpg" />
+    <Content Include="Content\StateTemplate\images\about\executiveStaff\female.jpg" />
+    <Content Include="Content\StateTemplate\images\about\executiveStaff\GregLucas.jpg" />
+    <Content Include="Content\StateTemplate\images\about\executiveStaff\MikeMartinez.jpg" />
+    <Content Include="Content\StateTemplate\images\about\executiveStaff\NarinderSufi.jpg" />
+    <Content Include="Content\StateTemplate\images\about\executiveStaff\top.jpg" />
+    <Content Include="Content\StateTemplate\images\about\executiveStaff\WendyHopkins.jpg" />
     <Content Include="Content\StateTemplate\images\about\hist_building\1.jpg" />
     <Content Include="Content\StateTemplate\images\about\hist_building\10.jpg" />
     <Content Include="Content\StateTemplate\images\about\hist_building\11.jpg" />
