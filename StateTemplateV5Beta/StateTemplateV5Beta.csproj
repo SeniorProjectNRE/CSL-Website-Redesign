@@ -627,6 +627,7 @@
     <Content Include="Content\StateTemplate\images\gps\fdlp_logo.jpg" />
     <Content Include="Content\StateTemplate\images\gps\ptrc_logo.jpg" />
     <Content Include="Content\StateTemplate\images\grants\LSTA\IMLS_Logo_square.jpg" />
+    <Content Include="Content\StateTemplate\images\grants\top.jpg" />
     <Content Include="Content\StateTemplate\images\home\3d.jpg" />
     <Content Include="Content\StateTemplate\images\home\3d_.jpg" />
     <Content Include="Content\StateTemplate\images\home\book.jpg" />
