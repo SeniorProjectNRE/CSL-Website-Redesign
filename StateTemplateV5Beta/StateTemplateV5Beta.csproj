@@ -574,6 +574,11 @@
     <Content Include="Content\StateTemplate\images\collections\history.jpg" />
     <Content Include="Content\StateTemplate\images\collections\online.jpg" />
     <Content Include="Content\StateTemplate\images\collections\onlinecol.jpg" />
+    <Content Include="Content\StateTemplate\images\collections\onlineCollections\3d.jpg" />
+    <Content Include="Content\StateTemplate\images\collections\onlineCollections\digital.jpg" />
+    <Content Include="Content\StateTemplate\images\collections\onlineCollections\online-exhibits.jpg" />
+    <Content Include="Content\StateTemplate\images\collections\onlineCollections\photo.jpg" />
+    <Content Include="Content\StateTemplate\images\collections\onlineCollections\top.jpg" />
     <Content Include="Content\StateTemplate\images\collections\sutro1.jpg" />
     <Content Include="Content\StateTemplate\images\collections\top.jpg" />
     <Content Include="Content\StateTemplate\images\collections\video.jpg" />
@@ -1854,6 +1859,7 @@
     <Content Include="Views\Grants\LibraryServicesTechnologyAct\Manage.cshtml" />
     <Content Include="Views\Services\ToLibraries\LibraryStaffEducationPogram.cshtml" />
     <Content Include="Views\Sutro\Success.cshtml" />
+    <Content Include="Views\Collections\OnlineCollections.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
