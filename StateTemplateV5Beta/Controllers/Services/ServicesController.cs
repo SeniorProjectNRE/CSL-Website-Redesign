@@ -62,7 +62,7 @@ namespace StateTemplateV5Beta.Controllers.Services
         [Route("To-Public")]
         public ActionResult ToPublic()
         {
-            return View();
+            return View("~/Views/Services/ToPublic/ToPublic.cshtml");
         }
 
 
