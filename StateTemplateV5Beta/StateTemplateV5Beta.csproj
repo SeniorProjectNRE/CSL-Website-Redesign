@@ -582,6 +582,7 @@
     <Content Include="Content\StateTemplate\images\collections\sutro1.jpg" />
     <Content Include="Content\StateTemplate\images\collections\top.jpg" />
     <Content Include="Content\StateTemplate\images\collections\video.jpg" />
+    <Content Include="Content\StateTemplate\images\collections\videosPodcasts\top.jpg" />
     <Content Include="Content\StateTemplate\images\contact-top.jpg" />
     <Content Include="Content\StateTemplate\images\contact\LCI.jpg" />
     <Content Include="Content\StateTemplate\images\contact\LCII.jpg" />

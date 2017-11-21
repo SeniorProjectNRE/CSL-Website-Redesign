@@ -49,7 +49,7 @@ namespace StateTemplateV5Beta.Controllers.Collections
         [Route("videos-podcasts")]
         public ActionResult VideosPodcasts()
         {
-            return View("VideoPodcasts");
+            return View("VideosPodcasts");
         }
     }
 }

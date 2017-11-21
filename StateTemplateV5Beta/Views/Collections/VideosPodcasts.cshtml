@@ -1,10 +1,96 @@
 ﻿
 @{
-    ViewBag.Title = "VideoPodcasts";
+    ViewBag.Title = "CSL - Videos and Podcasts from the California State Library";
+    ViewBag.PageTitle = "Our Collections";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "Watch video on a variety of topics and listen to audio of haiku readings and more produced by the California State Library.";
+    ViewBag.Keywords = "California, state, Library, videos, podcasts";
 }
-<div id="main-content" class="main-content">
-    <main class="main-primary">
-        <h2>VideoPodcasts</h2>
-    </main> 
-</div>
 
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<style>
+    .blue-div h3 {
+        color: white;
+    }
+
+    .box-with-border {
+        width: 100%;
+        float: none;
+    }
+</style>
+
+<div id="main-content" class="main-content">
+    <div class="container">
+        <main class="main-primary">
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active"><a href="/collections/">Our Collections</a></li>
+                <li class="active">Videos/Podcasts</li>
+            </ol>
+            <h1 id="title-page">Videos/Podcasts</h1>
+            <img id="page-banner" src="~/Content/StateTemplate/images/collections/videosPodcasts/top.jpg" style="width:100%" alt="Podcasts & Videos" title="Podcasts & Videos" />
+            <div class="spacer"></div>
+            <p>
+                Find podcasts and video produced by the California State Library.
+            </p>
+        </main>
+    </div>
+    <div class="blue-div">
+        <div class="threecolumns">
+            <h2>Featured Video</h2>
+            <div class="threecolumns">
+                <div class="today-img">
+                    <iframe class="blue-video" src="https://www.youtube.com/embed/tvBEFbftTOo" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="today-article">
+                    <h3 class="white-title" style="padding-top:0; font-size:1.4em; margin-top:0">
+                        Today in California: Aimee Crocker
+                    </h3>
+                    <hr class="white-hr" style="margin-left:20px; margin-right:0" />
+                    <p class="white-p">
+                        California State Librarian Greg Lucas speaks with Aimee Crocker in 1936.  Aimee Crocker grew up in Sacramento and was well known for her unconventional lifestyle.  In her conversation with the State Librarian, you will hear about one of the loves of her life – Kaa, her boa constrictor.  Aimee Crocker is portrayed by Connie Clark.
+                    </p>
+                </div>
+                <div id="today" class="clear-white-button">
+                    <a href="https://www.youtube.com/user/CSLmultimedia/videos?live_view=500&flow=grid&view=0&sort=dd" target="_blank" rel="noopener noreferrer">MORE VIDEOS</a>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="half">
+            <h2 class="orange">Featured Audio</h2>
+            <p>
+                This first podcast by the American Haiku Archives (AHA), presents an overview of the archive—the largest public collection of haiku-related materials outside Japan. Poets Garry Gay and Patricia Machmiller discuss the AHA’s founding in 1996, and describe some of the treasures in the AHA’s collection. They also read selections of their own haiku and announce the names of their fellow AHA board members. In appreciation of his work on behalf of the AHA, Michael Dylan Welch’s poems are read. The podcast closes with readings of two linked poems co-written by Michael and Garry. This podcast was hosted by Gene Larson and recorded on April 13, 2017 at the California State Library.
+            </p>
+            <div class="animate-fadeInLeft">
+                <div class="box-with-border">
+                    <a href="/collections/videos-podcasts">MORE PODCASTS</a>
+                </div>
+            </div>
+        </div>
+        <div class="half" style="text-align:center">
+            <h3 style="color:#0a5b82">Listen now!</h3>
+            <!-- TODO: Image left out of project -->
+            <img src="http://www.library.ca.gov/images/content/podcasts/Haiku-readers.jpg" />
+            <audio id="geneHaikuAudio" controls>
+                <!-- TODO: MP3 left out of project -->
+                <source src="http://www.library.ca.gov/podcast/files/HaikuPodcast_1_Gene_Patricia_Gary.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="spacer"></div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</div>
