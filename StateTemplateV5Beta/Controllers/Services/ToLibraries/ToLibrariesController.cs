@@ -93,5 +93,12 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
             return View("~/Views/Services/ToLibraries/StatisticsDirectories.cshtml");
         }
 
+        // GET: laws-public-library-organization
+        [Route("laws-public-library-organization")]
+        public ActionResult LawsPublicLibraryOrganization()
+        {
+            return View("~/Views/Services/ToLibraries/LawsPublicLibraryOrganization.cshtml");
+        }
+
     }
 }
