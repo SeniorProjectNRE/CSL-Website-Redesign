@@ -721,6 +721,7 @@
     <Content Include="Content\StateTemplate\images\services\toLibraries\grants.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\icon.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\interlibrary.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\ldp\top.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\libdir.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\liborg.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\money-bag.png" />
