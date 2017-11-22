@@ -1873,6 +1873,7 @@
     <Content Include="Views\Collections\OnlineCollections.cshtml" />
     <Content Include="Views\Services\ToLibraries\StatisticsDirectories.cshtml" />
     <Content Include="Views\Services\ToLibraries\LawsPublicLibraryOrganization.cshtml" />
+    <Content Include="Views\Services\ToLibraries\CooperativeSystemsClsa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

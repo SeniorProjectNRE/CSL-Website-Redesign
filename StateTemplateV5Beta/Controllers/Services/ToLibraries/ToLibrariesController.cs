@@ -100,5 +100,12 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
             return View("~/Views/Services/ToLibraries/LawsPublicLibraryOrganization.cshtml");
         }
 
+        // GET: cooperative-systems-clsa
+        [Route("cooperative-systems-clsa")]
+        public ActionResult CooperativeSystemsClsa()
+        {
+            return View("~/Views/Services/ToLibraries/CooperativeSystemsClsa.cshtml");
+        }
+
     }
 }
