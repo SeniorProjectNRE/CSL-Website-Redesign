@@ -27,7 +27,7 @@
 
                 <div class="group">
                     @using (Html.BeginForm("Apply", "LibraryProgramAdmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
-                        {
+                    {
                         @Html.ValidationSummary(false, "", new { @class = "text-danger" })
 
                         <div class='panel-group' role='tablist' aria-multiselectable='true'>
@@ -140,8 +140,6 @@
 
                                         <div id="basicInfoEducation">
 
-
-
                                             <div class="form-group">
                                                 @Html.LabelFor(m => m.HasEducation)
 
@@ -163,18 +161,6 @@
 
                                         <div class="basicInfoExperience">
 
-                                            <br>
-
-                                            @Html.LabelFor(m => m.HasEducation)
-
-
-                                            <div class="radio">
-
-                                                <label>@Html.RadioButtonFor(m => m.HasEducation, true, "HasEducation") Yes</label>
-                                                <label> @Html.RadioButtonFor(m => m.HasEducation, true, "HasEducation") No</label>
-                                                @Html.ValidationMessage("HasEducation", new { @class = "text-danger" })
-                                            </div>
-
 
                                             @Html.LabelFor(m => m.LPAOneYearExp)
 
@@ -182,14 +168,14 @@
                                             <div class="radio">
 
                                                 <script>
-    $(document).ready(function () {
+                                                    $(document).ready(function () {
 
-        console.log("changed name of question radio buttons");
+                                                        console.log("changed name of question radio buttons");
 
-        $("#LPAOneYearExp").attr('name', 'lpaexp');
-        $("#LPATwoYearExp").attr('name', 'lpaexp');
-        $("#LPAFiveYearExp").attr('name', 'lpaexp');
-    });
+                                                        $("#LPAOneYearExp").attr('name', 'lpaexp');
+                                                        $("#LPATwoYearExp").attr('name', 'lpaexp');
+                                                        $("#LPAFiveYearExp").attr('name', 'lpaexp');
+                                                    });
                                                 </script>
                                                 <label>@Html.RadioButtonFor(m => m.LPAOneYearExp, true, "LPAOneYearExp") One year of experience in the California state service performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/Pages/2958.aspx">Library Programs Consultant</a> or a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Principal Librarian</a></label>
 
@@ -206,13 +192,7 @@
                                                 @Html.ValidationMessage("LPAFiveYearExp", new { @class = "text-danger" })
                                             </div>
                                         </div>
-
-                                        <p>
-                                            Please see the <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Class Specification</a> for a description of the Senior Librarian, Supervising Librarian I, and Supervising Librarian II jobs.
-                                        </p>
-
-
-
+                                    
                                         <br>
 
                                     </div><!--end panel body for accoridon #3-->
@@ -230,39 +210,39 @@
                                     <div class='panel-body'>
 
                                         <script>
-                                                        $(document).ready(function () {
+                                            $(document).ready(function () {
 
-                                                            console.log("changed name of question radio buttons");
+                                                console.log("changed name of question radio buttons");
 
-                                                            $("#Q1None").attr('name', 'q1');
-                                                            $("#Q1Limited").attr('name', 'q1');
-                                                            $("#Q1Considerable").attr('name', 'q1');
+                                                $("#Q1None").attr('name', 'q1');
+                                                $("#Q1Limited").attr('name', 'q1');
+                                                $("#Q1Considerable").attr('name', 'q1');
 
-                                                            $("#Q2None").attr('name', 'q2');
-                                                            $("#Q2Limited").attr('name', 'q2');
-                                                            $("#Q2Considerable").attr('name', 'q2');
+                                                $("#Q2None").attr('name', 'q2');
+                                                $("#Q2Limited").attr('name', 'q2');
+                                                $("#Q2Considerable").attr('name', 'q2');
 
-                                                            $("#Q3None").attr('name', 'q3');
-                                                            $("#Q3Limited").attr('name', 'q3');
-                                                            $("#Q3Considerable").attr('name', 'q3');
+                                                $("#Q3None").attr('name', 'q3');
+                                                $("#Q3Limited").attr('name', 'q3');
+                                                $("#Q3Considerable").attr('name', 'q3');
 
-                                                            $("#Q4None").attr('name', 'q4');
-                                                            $("#Q4Limited").attr('name', 'q4');
-                                                            $("#Q4Considerable").attr('name', 'q4');
+                                                $("#Q4None").attr('name', 'q4');
+                                                $("#Q4Limited").attr('name', 'q4');
+                                                $("#Q4Considerable").attr('name', 'q4');
 
-                                                            $("#Q5None").attr('name', 'q5');
-                                                            $("#Q5Limited").attr('name', 'q5');
-                                                            $("#Q5Considerable").attr('name', 'q5');
+                                                $("#Q5None").attr('name', 'q5');
+                                                $("#Q5Limited").attr('name', 'q5');
+                                                $("#Q5Considerable").attr('name', 'q5');
 
-                                                            $("#Q6None").attr('name', 'q6');
-                                                            $("#Q6Limited").attr('name', 'q6');
-                                                            $("#Q6Considerable").attr('name', 'q6');
+                                                $("#Q6None").attr('name', 'q6');
+                                                $("#Q6Limited").attr('name', 'q6');
+                                                $("#Q6Considerable").attr('name', 'q6');
 
-                                                            $("#Q7None").attr('name', 'q7');
-                                                            $("#Q7Limited").attr('name', 'q7');
-                                                            $("#Q7Considerable").attr('name', 'q7');
+                                                $("#Q7None").attr('name', 'q7');
+                                                $("#Q7Limited").attr('name', 'q7');
+                                                $("#Q7Considerable").attr('name', 'q7');
 
-                                                        });
+                                            });
                                         </script>
 
                                         <!--Q1-->
@@ -687,7 +667,7 @@
                             </div>
 
                         </div><!--end accordion-->
-                        }
+                    }
                 </div>
             </div>
         </div>

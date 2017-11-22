@@ -111,7 +111,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumQ3 { get; set; }
 
 
-        [Display(Name = "4. 4. Please rate your experience in the development, implementation, and or evaluation of library program criteria.")]
+        [Display(Name = "4. Please rate your experience in the development, implementation, and or evaluation of library program criteria.")]
         public bool Q4None { get; set; }
 
         public bool Q4Limited { get; set; }
