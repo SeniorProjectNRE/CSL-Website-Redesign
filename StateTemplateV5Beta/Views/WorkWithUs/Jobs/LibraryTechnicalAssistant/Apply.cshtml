@@ -3,7 +3,7 @@
     ViewBag.Title = "Apply";
     ViewBag.PageTitle = "CSL - Library Technical Assistant I and II Exam Supplemental Application";
 
-ViewBag.Author = "Matt Loller, Alan Cleetus";
+    ViewBag.Author = "Matt Loller, Alan Cleetus";
     ViewBag.Description = "In order to be considered for these jobs, it is first necessary for you to take and pass a civil service examination with a score that is among the highest of the applicants who take the test. Along with submission of a detailed resume, completion of this supplemental application is the examination process. This supplemental application solicits specific information about your experience and background that is directly relevant to these jobs. Thank you for your interest in the position of Library Programs Consultant at the California State Library.";
 }
 
@@ -18,73 +18,73 @@ ViewBag.Author = "Matt Loller, Alan Cleetus";
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
 
-   
-        <script>
-            function showHideExams() {
 
-                var selectedItems = "";
-                
-                    //""
-                    if (document.getElementById('IsLTAI').checked == false &&
-                        document.getElementById('IsLTAII').checked == false &&
-                        == false) {
-                        selectedItems = "";
-                    }
-                    //"0"
-                    else if (document.getElementById('IsLTAI').checked == true &&
-                        document.getElementById('IsLTAII').checked == false) {
-                        selectedItems = "0";
-                    }
-                    //"1"
-                    else if (document.getElementById('IsLTAI').checked == false &&
-                        document.getElementById('IsLTAII').checked == true ) {
-                        selectedItems = "1";
-                    }
-                    //"0 1"
-                    else if (document.getElementById('IsLTAI').checked == true &&
-                        document.getElementById('IsLTAII').checked == true ) {
-                        selectedItems = "0 1";
-                    }
-                    
+    <script>
+        function showHideExams() {
 
-                    console.log("selectedItems = " + selectedItems);
-                
+            var selectedItems = "";
 
-
-                if (selectedItems == "0") {
-                    $('#LTA1InfoExperience').show();
-                    $('#LTA2InfoExperience').hide();
-                    $('.tab-LTA1-question').show();
-                    $('.tab-LTA2-question').hide();
-                } else if (selectedItems == "1") {
-                    $('#LTA1InfoExperience').hide();
-                    $('#LTA2InfoExperience').show();
-                    $('.tab-LTA1-question').show();
-                    $('.tab-LTA2-question').show();
-                } else if (selectedItems == "0 1") {
-                    $('#LTA1InfoExperience').show();
-                    $('#LTA2InfoExperience').show();
-                    $('.tab-LTA1-question').show();
-                    $('.tab-LTA2-question').show();
-                } else if (selectedItems == "") {
-                    $('#LTA1InfoExperience').hide();
-                    $('#LTA2InfoExperience').hide();
-                    $('.tab-LTA1-question').hide();
-                    $('.tab-LTA2-question').hide();
-                }
+            //""
+            if (document.getElementById('IsLTAI').checked == false &&
+                document.getElementById('IsLTAII').checked == false) {
+                selectedItems = "";
             }
-            $(document).ready(function () {
+            //"0"
+            else if (document.getElementById('IsLTAI').checked == true &&
+                document.getElementById('IsLTAII').checked == false) {
+                selectedItems = "0";
+            }
+            //"1"
+            else if (document.getElementById('IsLTAI').checked == false &&
+                document.getElementById('IsLTAII').checked == true) {
+                selectedItems = "1";
+            }
+            //"0 1"
+            else if (document.getElementById('IsLTAI').checked == true &&
+                document.getElementById('IsLTAII').checked == true) {
+                selectedItems = "0 1";
+            }
+
+
+            console.log("selectedItems = " + selectedItems);
+
+
+
+            if (selectedItems == "0") {
+                $('#LTA1InfoExperience').show();
+                $('#LTA2InfoExperience').hide();
+                $('.tab-LTA1-question').show();
+                $('.tab-LTA2-question').hide();
+            } else if (selectedItems == "1") {
                 $('#LTA1InfoExperience').hide();
-                $('#LTA2InfoExperience').hide(); 
+                $('#LTA2InfoExperience').show();
+                $('.tab-LTA1-question').show();
+                $('.tab-LTA2-question').show();
+            } else if (selectedItems == "0 1") {
+                $('#LTA1InfoExperience').show();
+                $('#LTA2InfoExperience').show();
+                $('.tab-LTA1-question').show();
+                $('.tab-LTA2-question').show();
+            } else if (selectedItems == "") {
+                $('#LTA1InfoExperience').hide();
+                $('#LTA2InfoExperience').hide();
                 $('.tab-LTA1-question').hide();
                 $('.tab-LTA2-question').hide();
+            }
 
-                showHideExams();
-            });
-        </script>
+        }
+        $(document).ready(function () {
+            $('#LTA1InfoExperience').hide();
+            $('#LTA2InfoExperience').hide();
+            $('.tab-LTA1-question').hide();
+            $('.tab-LTA2-question').hide();
 
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
+            showHideExams();
+        });
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <div id="main-content" class="main-content">
@@ -96,466 +96,462 @@ ViewBag.Author = "Matt Loller, Alan Cleetus";
                 <ol class="breadcrumb dynamic"></ol>
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
 
-                    <div class="group">
-                        @using (Html.BeginForm("Apply", "LibraryTechnicalAssistant", FormMethod.Post, new { enctype = "multipart/form-data" }))
-                        {
-                            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                <div class="group">
+                    @using (Html.BeginForm("Apply", "LibraryTechnicalAssistant", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
 
-                            <div class='panel-group' role='tablist' aria-multiselectable='true'>
+                        <div class='panel-group' role='tablist' aria-multiselectable='true'>
 
-                                <div class='panel panel-default'>
+                            <div class='panel panel-default'>
 
-                                    <div class='panel-heading' role='tab' id='heading1'>
-                                        <h3 class='panel-title'>
-                                            <a role='button' data-toggle='collapse' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Step 1: Instructions</a>
-                                        </h3>
-                                    </div>
-
-                                    <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
-                                        <div class="panel-body">
-                                            <p>
-                                                Thank you for your interest in a position of Library Technical Assistant I and Library Technical Assistant II at the California State Library.
-                                            </p>
-                                            <p>
-                                                In order to be considered for these jobs, it is first necessary for you to take and pass a civil service examination with a score that is among the highest of the applicants who take the test.
-                                            </p>
-                                            <p>
-                                                Along with submission of a detailed resume, completion of this supplemental application is the examination process. This supplemental application solicits specific information about your experience and background that is directly relevant to these jobs.
-                                            </p>
-                                            <p>
-                                                Please answer each question, clearly, concisely, and truthfully on the attached form. Failure to follow these instructions will result in elimination from the examination process.                                                 <strong>                                                                  Please note that there is no save function in this exam and it must be completed in one seating. We recommend that you review the questions and prepare your responses before starting the exam.
-                                                </strong>
-                                            </p>
-                                            <p>
-                                                There is no deadline for submission of your application materials. This examination process will be available throughout the year. As vacancies occur, all individuals who have submitted their information and passed the examination will be notified of the next steps to be considered for any available position. 
-                                            </p>
-                                            <p>
-                                                The information you provide will be evaluated by a team of subject matter specialists who will rate your responses on the quality and clarity of your writing as demonstrated by your responses, as well as the breadth and depth of your relevant experience. You will be given an overall score on this supplemental application and this will determine your placement on the list of those who pass the examination. You will be notified in writing of your exam results.
-
-
-                                            </p>
-                                            <p>
-                                                If you pass the examination, you may then apply for and be considered for individual job vacancies in this classification. In addition, the Department may contact you directly as vacancies occur.
-
-
-                                            </p>
-                                            <p>
-                                                If you are selected to be considered for hire into a vacancy, you will be invited to participate in a comprehensive hiring interview process consisting of the following:
-
-
-                                            </p>
-                                            <ol>
-                                                <li>
-                                                    Submission of a standard state application
-
-                                                </li>
-                                                <li>
-                                                    A visual resume where you will be asked to make a five minute stand-up presentation discussing your experience and qualifications for the job
-
-                                                </li>
-                                                <li>
-                                                    A set of interview questions designed to explore your specific qualifications
-
-                                                </li>
-                                            </ol>
-                                            <p>
-                                                If you have any questions, please contact us at <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or (916) 654-0202.
-                                            </p>
-                                            <br>
-                                            <div style="text-align:center; font-weight:bold;">
-                                                <p><strong>We wish you luck in the process.</strong></p>
-                                            </div>
-
-                                        </div>
-                                    </div>
+                                <div class='panel-heading' role='tab' id='heading1'>
+                                    <h3 class='panel-title'>
+                                        <a role='button' data-toggle='collapse' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Step 1: Instructions</a>
+                                    </h3>
                                 </div>
 
-                                <div class='panel panel-default'>
-                                    <div class='panel-heading' role='tab' id='heading2'>
-                                        <h3 class='panel-title'>
-                                            <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Step 2: Examinations</a>
-                                        </h3>
-                                    </div>
-                                    <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
-                                        <div class="panel-body">
+                                <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+                                    <div class="panel-body">
+                                        <p>
+                                            Thank you for your interest in a position of Library Technical Assistant I and Library Technical Assistant II at the California State Library.
+                                        </p>
+                                        <p>
+                                            In order to be considered for these jobs, it is first necessary for you to take and pass a civil service examination with a score that is among the highest of the applicants who take the test.
+                                        </p>
+                                        <p>
+                                            Along with submission of a detailed resume, completion of this supplemental application is the examination process. This supplemental application solicits specific information about your experience and background that is directly relevant to these jobs.
+                                        </p>
+                                        <p>
+                                            Please answer each question, clearly, concisely, and truthfully on the attached form. Failure to follow these instructions will result in elimination from the examination process.                                                 <strong>
+                                                Please note that there is no save function in this exam and it must be completed in one seating. We recommend that you review the questions and prepare your responses before starting the exam.
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            There is no deadline for submission of your application materials. This examination process will be available throughout the year. As vacancies occur, all individuals who have submitted their information and passed the examination will be notified of the next steps to be considered for any available position.
+                                        </p>
+                                        <p>
+                                            The information you provide will be evaluated by a team of subject matter specialists who will rate your responses on the quality and clarity of your writing as demonstrated by your responses, as well as the breadth and depth of your relevant experience. You will be given an overall score on this supplemental application and this will determine your placement on the list of those who pass the examination. You will be notified in writing of your exam results.
 
-                                            <p>
-                                                Please indicate the examination(s) you wish to take. You may apply for and take one or two examinations provided that you meet the minimum education and experience requirements for each classification.
-                                            </p>
 
-                                            <div id="examChkBoxContainer">
-                                                <div id="MainContent_examChkBoxList">
+                                        </p>
+                                        <p>
+                                            If you pass the examination, you may then apply for and be considered for individual job vacancies in this classification. In addition, the Department may contact you directly as vacancies occur.
 
-                                                    <!--Library Technical Assistant I-->
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            @Html.RadioButtonFor(m => m.IsLTAI, true, new { id = "IsLTAI", type = "checkbox", onclick = "showHideExams()" })
-                                                            Library Technical Assistant I
-                                                        </label>
-                                                    </div>
 
-                                                    <!--Library Technical Assistant II-->
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            @Html.RadioButtonFor(m => m.IsLTAII, true, new { id = "IsLTAII", type = "checkbox", onclick = "showHideExams()" })
-                                                            Library Technical Assistant II
-                                                        </label>
-                                                    </div>
+                                        </p>
+                                        <p>
+                                            If you are selected to be considered for hire into a vacancy, you will be invited to participate in a comprehensive hiring interview process consisting of the following:
 
-                                                    @Html.ValidationMessage("IsLTAI", new { @class = "text-danger" })
-                                                    @Html.ValidationMessage("IsLTAII", new { @class = "text-danger" }) 
 
-                                                </div>
-                                            </div>
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                Submission of a standard state application
 
+                                            </li>
+                                            <li>
+                                                A visual resume where you will be asked to make a five minute stand-up presentation discussing your experience and qualifications for the job
+
+                                            </li>
+                                            <li>
+                                                A set of interview questions designed to explore your specific qualifications
+
+                                            </li>
+                                        </ol>
+                                        <p>
+                                            If you have any questions, please contact us at <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or (916) 654-0202.
+                                        </p>
+                                        <br>
+                                        <div style="text-align:center; font-weight:bold;">
+                                            <p><strong>We wish you luck in the process.</strong></p>
                                         </div>
 
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class='panel panel-default'>
-                                    <div class='panel-heading' role='tab' id='heading3'>
-                                        <h3 class='panel-title'>
-                                            <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Step 3: Basic Information</a>
-                                        </h3>
-                                    </div>
-                                    <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
-                                        <div class="panel-body">
-
-                                            <div id="nameEmailContainer">
-
-                                                <div id="basicInfoName" class="form-group half">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Name)
-                                                    @Html.TextBoxFor(m => m.Name, "Name", new { @class = "form-control", placeholder = "John Doe" })
-
-                                                    @Html.ValidationMessage("Name", new { @class = "text-danger" })
-
-
-                                                </div>
-
-                                                <div id="basicInfoEmail " class="form-group half">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Email)
-                                                    @Html.TextBoxFor(m => m.Email, "Email", new { @class = "form-control", type = "email", placeholder = "example@example.com" })
-                                                    @Html.ValidationMessage("Email", new { @class = "text-danger" })
-                                                </div>
-
-                                            </div>
-
-                                            <br>
-
-                                            <div id="LTA1InfoExperience" class="basicInfoExperience">
-
-                                                <br>
-                                                <p>
-                                                    <strong style="text-decoration: underline;">Library Technical Assistant I</strong>
-                                                </p>
-
-                                                <em>
-                                                    @Html.LabelFor(m => m.HasExperienceLTAI, new { @class = "normal" })
-                                                </em>
-
-                                                <div class="radio">
-                                                    <label>@Html.RadioButtonFor(m => m.HasExperienceLTAI, true, "HasExperienceLTAI") Equivalent to completion of the requirements for an Associate of Arts degree in Library Science</label>
-                                                    <label> @Html.RadioButtonFor(m => m.HasExperienceLTAI, true, "HasExperienceLTAI")Two years of increasingly responsible sub-professional library experience, including work in book acquisition, cataloging, reference, and compilation of bibliographies
-</label>
-                                                    @Html.ValidationMessage("HasExperienceLTAI", new { @class = "text-danger" })
-                                                </div>
-                                            </div>
-
-                                            <div id="LTA2InfoExperience" class="basicInfoExperience">
-                                                <br>
-                                                <p>
-                                                    <strong style="text-decoration: underline;">Library Technical Assistant II</strong>
-                                                </p>
-
-                                                <em>
-                                                    @Html.LabelFor(m => m.HasExperienceLTAII, new { @class = "normal" })
-                                                </em>
-
-                                                <div class="radio">
-                                                  
-                                                    <label>@Html.RadioButtonFor(m => m.HasExperienceLTAII, true, "HasExperienceLTAII")                                                         One year of experience in California state service performing the duties of a <a href="http://www.calhr.ca.gov/state-hr-professionals/Pages/1307.aspx" target="_blank">Library Technical Assistant I</a></label>
-                                                    <label>@Html.RadioButtonFor(m => m.HasExperienceLTAII, true, "HasExperienceLTAII")Experience: One year of increasingly responsible subprofessional library experience, including work in book acquisition, cataloging, reference, and compilation of bibliographies; and<br >
-
-                                                    Education: Equivalent to completion of the requirements for an Associate of Arts degree in Library Science. (Additional qualifying experience may be substituted for the required education on a year-for-year basis.)</label>
-                                                     
-                                                    @Html.ValidationMessage("HasExperienceLTAII", new { @class = "text-danger" })
-                                                </div>
-                                            </div>
-
-                                           
-                                            <br>
-                                            <div id="libFuncExperience">
-                                                <p>
-                                                    <em>
-                                                        Please describe your highest level of experience in each of the following library functions:
-                                                    </em>
-                                                </p>
-                                                <!--CollectionDevelopment-->
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.Cataloging, new { @class = "text-accent-p2" })
-                                                    @Html.TextAreaFor(m => m.Cataloging, new { maxlength = "900", @class = "form-control" })
-                                                    <span>900 character limit</span>
-                                                    @Html.ValidationMessage("Cataloging", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameCataloging)
-                                                    @Html.TextBoxFor(m => m.NameCataloging, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("NameCataloging", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailCataloging)
-                                                    @Html.TextBoxFor(m => m.EmailCataloging, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
-                                                    @Html.ValidationMessage("EmailCataloging", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumCataloging)
-                                                    @Html.TextBoxFor(m => m.PhoneNumCataloging, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("PhoneNumCataloging", new { @class = "text-danger" })
-                                                </div>
-                                                <!--end Cataloging-->
-
-                                                <!--Circulation-->
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.Circulation, new { @class = "text-accent-p2" })
-                                                    @Html.TextAreaFor(m => m.Circulation, new { maxlength = "900", @class = "form-control" })
-                                                    <span>900 character limit</span>
-                                                    @Html.ValidationMessage("Circulation", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameCirculation)
-                                                    @Html.TextBoxFor(m => m.NameCirculation, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("NameCirculation", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailCirculation)
-                                                    @Html.TextBoxFor(m => m.EmailCirculation, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
-                                                    @Html.ValidationMessage("EmailCirculation", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumCirculation)
-                                                    @Html.TextBoxFor(m => m.PhoneNumCirculation, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("PhoneNumCirculation", new { @class = "text-danger" })
-                                                </div>
-                                                <!--end Circulation-->
-
-                                                <!--Reserves-->
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.Reserves, new { @class = "text-accent-p2" })
-                                                    @Html.TextAreaFor(m => m.Reserves, new { maxlength = "900", @class = "form-control" })
-                                                    <span>900 character limit</span>
-                                                    @Html.ValidationMessage("Reserves", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameReserves)
-                                                    @Html.TextBoxFor(m => m.NameReserves, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("NameReserves", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailReserves)
-                                                    @Html.TextBoxFor(m => m.EmailReserves, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
-                                                    @Html.ValidationMessage("EmailReserves", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumReserves)
-                                                    @Html.TextBoxFor(m => m.PhoneNumReserves, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("PhoneNumReserves", new { @class = "text-danger" })
-                                                </div>
-                                                <!--end Reserves-->
-
-                                                <!--Reference-->
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.Reference, new { @class = "text-accent-p2" })
-                                                    @Html.TextAreaFor(m => m.Reference, new { maxlength = "900", @class = "form-control" })
-                                                    <span>900 character limit</span>
-                                                    @Html.ValidationMessage("Reference", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameReference)
-                                                    @Html.TextBoxFor(m => m.NameReference, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("NameReference", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailReference)
-                                                    @Html.TextBoxFor(m => m.EmailReference, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
-                                                    @Html.ValidationMessage("EmailReference", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumReference)
-                                                    @Html.TextBoxFor(m => m.PhoneNumReference, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("PhoneNumReference", new { @class = "text-danger" })
-                                                </div>
-                                                <!--end Reference-->
-
-                                                <!--ReaderAdvisoryService-->
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.ReaderAdvisoryService, new { @class = "text-accent-p2" })
-                                                    @Html.TextAreaFor(m => m.ReaderAdvisoryService, new { maxlength = "900", @class = "form-control" })
-                                                    <span>900 character limit</span>
-                                                    @Html.ValidationMessage("ReaderAdvisoryService", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameReaderAdvisoryService)
-                                                    @Html.TextBoxFor(m => m.NameReaderAdvisoryService, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("NameReaderAdvisoryService", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailReaderAdvisoryService)
-                                                    @Html.TextBoxFor(m => m.EmailReaderAdvisoryService, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
-                                                    @Html.ValidationMessage("EmailReaderAdvisoryService", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumReaderAdvisoryService)
-                                                    @Html.TextBoxFor(m => m.PhoneNumReaderAdvisoryService, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("PhoneNumReaderAdvisoryService", new { @class = "text-danger" })
-                                                </div>
-                                                <!--end ReaderAdvisoryService-->
-
-
-                                                <!--InterlibraryLoans-->
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.InterlibraryLoans, new { @class = "text-accent-p2" })
-                                                    @Html.TextAreaFor(m => m.InterlibraryLoans, new { maxlength = "900", @class = "form-control" })
-                                                    <span>900 character limit</span>
-                                                    @Html.ValidationMessage("InterlibraryLoans", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameInterlibraryLoans)
-                                                    @Html.TextBoxFor(m => m.NameInterlibraryLoans, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("NameInterlibraryLoans", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailInterlibraryLoans)
-                                                    @Html.TextBoxFor(m => m.EmailInterlibraryLoans, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
-                                                    @Html.ValidationMessage("EmailInterlibraryLoans", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumInterlibraryLoans)
-                                                    @Html.TextBoxFor(m => m.PhoneNumInterlibraryLoans, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("PhoneNumInterlibraryLoans", new { @class = "text-danger" })
-                                                </div>
-                                                <!--end InterlibraryLoans-->
-
-                                                <!--Acquisitions-->
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.Acquisitions, new { @class = "text-accent-p2" })
-                                                    @Html.TextAreaFor(m => m.Acquisitions, new { maxlength = "900", @class = "form-control" })
-                                                    <span>900 character limit</span>
-                                                    @Html.ValidationMessage("Acquisitions", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameAcquisitions)
-                                                    @Html.TextBoxFor(m => m.NameAcquisitions, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("NameAcquisitions", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailAcquisitions)
-                                                    @Html.TextBoxFor(m => m.EmailAcquisitions, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
-                                                    @Html.ValidationMessage("EmailAcquisitions", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumAcquisitions)
-                                                    @Html.TextBoxFor(m => m.PhoneNumAcquisitions, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("PhoneNumAcquisitions", new { @class = "text-danger" })
-                                                </div>
-                                                <!--end Acquisitions-->
-
-                                                <!--Preservation-->
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.Preservation, new { @class = "text-accent-p2" })
-                                                    @Html.TextAreaFor(m => m.Preservation, new { maxlength = "900", @class = "form-control" })
-                                                    <span>900 character limit</span>
-                                                    @Html.ValidationMessage("Preservation", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NamePreservation)
-                                                    @Html.TextBoxFor(m => m.NamePreservation, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("NamePreservation", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailPreservation)
-                                                    @Html.TextBoxFor(m => m.EmailPreservation, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
-                                                    @Html.ValidationMessage("EmailPreservation", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumPreservation)
-                                                    @Html.TextBoxFor(m => m.PhoneNumPreservation, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("PhoneNumPreservation", new { @class = "text-danger" })
-                                                </div>
-                                                <!--end Preservation-->
-
-
-                                            </div>
-                                        </div><!--end panel body for accoridon #3-->
-                                    </div>
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading2'>
+                                    <h3 class='panel-title'>
+                                        <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse2' aria-expanded='false' aria-controls='collapse2'>Step 2: Examinations</a>
+                                    </h3>
                                 </div>
+                                <div id='collapse2' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading2'>
+                                    <div class="panel-body">
 
-                                <div class='panel panel-default'>
-                                    <div class='panel-heading' role='tab' id='heading4'>
-                                        <h3 class='panel-title'>
-                                            <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Step 4: Questions</a>
-                                        </h3>
+                                        <p>
+                                            Please indicate the examination(s) you wish to take. You may apply for and take one or two examinations provided that you meet the minimum education and experience requirements for each classification.
+                                        </p>
+
+                                        <div id="examChkBoxContainer">
+                                            <div id="MainContent_examChkBoxList">
+
+                                                <!--Library Technical Assistant I-->
+                                                <div class="checkbox">
+                                                    <label>
+                                                        @Html.RadioButtonFor(m => m.IsLTAI, true, new { id = "IsLTAI", type = "checkbox", onclick = "showHideExams()" })
+                                                        Library Technical Assistant I
+                                                    </label>
+                                                </div>
+
+                                                <!--Library Technical Assistant II-->
+                                                <div class="checkbox">
+                                                    <label>
+                                                        @Html.RadioButtonFor(m => m.IsLTAII, true, new { id = "IsLTAII", type = "checkbox", onclick = "showHideExams()" })
+                                                        Library Technical Assistant II
+                                                    </label>
+                                                </div>
+
+                                                @Html.ValidationMessage("IsLTAI", new { @class = "text-danger" })
+                                                @Html.ValidationMessage("IsLTAII", new { @class = "text-danger" })
+
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
-                                        <div class='panel-body'>
 
-                                            <script>
+                                </div>
+                            </div>
+
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading3'>
+                                    <h3 class='panel-title'>
+                                        <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse3' aria-expanded='false' aria-controls='collapse3'>Step 3: Basic Information</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse3' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading3'>
+                                    <div class="panel-body">
+
+                                        <div id="nameEmailContainer">
+
+                                            <div id="basicInfoName" class="form-group half">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Name)
+                                                @Html.TextBoxFor(m => m.Name, "Name", new { @class = "form-control", placeholder = "John Doe" })
+
+                                                @Html.ValidationMessage("Name", new { @class = "text-danger" })
+
+
+                                            </div>
+
+                                            <div id="basicInfoEmail " class="form-group half">
+                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Email)
+                                                @Html.TextBoxFor(m => m.Email, "Email", new { @class = "form-control", type = "email", placeholder = "example@example.com" })
+                                                @Html.ValidationMessage("Email", new { @class = "text-danger" })
+                                            </div>
+
+                                        </div>
+
+                                        <br>
+
+                                        <div id="LTA1InfoExperience" class="basicInfoExperience">
+
+                                            <br>
+                                            <p>
+                                                <strong style="text-decoration: underline;">Library Technical Assistant I</strong>
+                                            </p>
+
+                                            <em>
+                                                @Html.LabelFor(m => m.HasExperienceLTAI, new { @class = "normal" })
+                                            </em>
+
+                                            <div class="radio">
+                                                <label>@Html.RadioButtonFor(m => m.HasExperienceLTAI, true, "HasExperienceLTAI") Equivalent to completion of the requirements for an Associate of Arts degree in Library Science</label>
+                                                <label>
+                                                    @Html.RadioButtonFor(m => m.HasExperienceLTAI, true, "HasExperienceLTAI")Two years of increasingly responsible sub-professional library experience, including work in book acquisition, cataloging, reference, and compilation of bibliographies
+                                                </label>
+                                                @Html.ValidationMessage("HasExperienceLTAI", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+                                        <div id="LTA2InfoExperience" class="basicInfoExperience">
+                                            <br>
+                                            <p>
+                                                <strong style="text-decoration: underline;">Library Technical Assistant II</strong>
+                                            </p>
+
+                                            <em>
+                                                @Html.LabelFor(m => m.HasExperienceLTAII, new { @class = "normal" })
+                                            </em>
+
+                                            <div class="radio">
+
+                                                <label>@Html.RadioButtonFor(m => m.HasExperienceLTAII, true, "HasExperienceLTAII")                                                         One year of experience in California state service performing the duties of a <a href="http://www.calhr.ca.gov/state-hr-professionals/Pages/1307.aspx" target="_blank">Library Technical Assistant I</a></label>
+                                                <label>
+                                                    @Html.RadioButtonFor(m => m.HasExperienceLTAII, true, "HasExperienceLTAII")Experience: One year of increasingly responsible subprofessional library experience, including work in book acquisition, cataloging, reference, and compilation of bibliographies; <strong>and</strong><br><br>
+
+                                                Education: Equivalent to completion of the requirements for an Associate of Arts degree in Library Science. (Additional qualifying experience may be substituted for the required education on a year-for-year basis.)
+                                            </label>
+
+                                            @Html.ValidationMessage("HasExperienceLTAII", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+                                    <br>
+                                    <div id="libFuncExperience">
+                                        <p>
+                                            <em>
+                                                Please describe your highest level of experience in each of the following library functions:
+                                            </em>
+                                        </p>
+                                        <!--CollectionDevelopment-->
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.Cataloging, new { @class = "text-accent-p2" })
+                                            @Html.TextAreaFor(m => m.Cataloging, new { maxlength = "900", @class = "form-control" })
+                                            <span>900 character limit</span>
+                                            @Html.ValidationMessage("Cataloging", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NameCataloging)
+                                            @Html.TextBoxFor(m => m.NameCataloging, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("NameCataloging", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailCataloging)
+                                            @Html.TextBoxFor(m => m.EmailCataloging, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
+                                            @Html.ValidationMessage("EmailCataloging", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumCataloging)
+                                            @Html.TextBoxFor(m => m.PhoneNumCataloging, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("PhoneNumCataloging", new { @class = "text-danger" })
+                                        </div>
+                                        <!--end Cataloging-->
+                                        <!--Circulation-->
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.Circulation, new { @class = "text-accent-p2" })
+                                            @Html.TextAreaFor(m => m.Circulation, new { maxlength = "900", @class = "form-control" })
+                                            <span>900 character limit</span>
+                                            @Html.ValidationMessage("Circulation", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NameCirculation)
+                                            @Html.TextBoxFor(m => m.NameCirculation, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("NameCirculation", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailCirculation)
+                                            @Html.TextBoxFor(m => m.EmailCirculation, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
+                                            @Html.ValidationMessage("EmailCirculation", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumCirculation)
+                                            @Html.TextBoxFor(m => m.PhoneNumCirculation, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("PhoneNumCirculation", new { @class = "text-danger" })
+                                        </div>
+                                        <!--end Circulation-->
+                                        <!--Reserves-->
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.Reserves, new { @class = "text-accent-p2" })
+                                            @Html.TextAreaFor(m => m.Reserves, new { maxlength = "900", @class = "form-control" })
+                                            <span>900 character limit</span>
+                                            @Html.ValidationMessage("Reserves", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NameReserves)
+                                            @Html.TextBoxFor(m => m.NameReserves, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("NameReserves", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailReserves)
+                                            @Html.TextBoxFor(m => m.EmailReserves, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
+                                            @Html.ValidationMessage("EmailReserves", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumReserves)
+                                            @Html.TextBoxFor(m => m.PhoneNumReserves, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("PhoneNumReserves", new { @class = "text-danger" })
+                                        </div>
+                                        <!--end Reserves-->
+                                        <!--Reference-->
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.Reference, new { @class = "text-accent-p2" })
+                                            @Html.TextAreaFor(m => m.Reference, new { maxlength = "900", @class = "form-control" })
+                                            <span>900 character limit</span>
+                                            @Html.ValidationMessage("Reference", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NameReference)
+                                            @Html.TextBoxFor(m => m.NameReference, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("NameReference", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailReference)
+                                            @Html.TextBoxFor(m => m.EmailReference, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
+                                            @Html.ValidationMessage("EmailReference", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumReference)
+                                            @Html.TextBoxFor(m => m.PhoneNumReference, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("PhoneNumReference", new { @class = "text-danger" })
+                                        </div>
+                                        <!--end Reference-->
+                                        <!--ReaderAdvisoryService-->
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.ReaderAdvisoryService, new { @class = "text-accent-p2" })
+                                            @Html.TextAreaFor(m => m.ReaderAdvisoryService, new { maxlength = "900", @class = "form-control" })
+                                            <span>900 character limit</span>
+                                            @Html.ValidationMessage("ReaderAdvisoryService", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NameReaderAdvisoryService)
+                                            @Html.TextBoxFor(m => m.NameReaderAdvisoryService, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("NameReaderAdvisoryService", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailReaderAdvisoryService)
+                                            @Html.TextBoxFor(m => m.EmailReaderAdvisoryService, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
+                                            @Html.ValidationMessage("EmailReaderAdvisoryService", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumReaderAdvisoryService)
+                                            @Html.TextBoxFor(m => m.PhoneNumReaderAdvisoryService, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("PhoneNumReaderAdvisoryService", new { @class = "text-danger" })
+                                        </div>
+                                        <!--end ReaderAdvisoryService-->
+                                        <!--InterlibraryLoans-->
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.InterlibraryLoans, new { @class = "text-accent-p2" })
+                                            @Html.TextAreaFor(m => m.InterlibraryLoans, new { maxlength = "900", @class = "form-control" })
+                                            <span>900 character limit</span>
+                                            @Html.ValidationMessage("InterlibraryLoans", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NameInterlibraryLoans)
+                                            @Html.TextBoxFor(m => m.NameInterlibraryLoans, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("NameInterlibraryLoans", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailInterlibraryLoans)
+                                            @Html.TextBoxFor(m => m.EmailInterlibraryLoans, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
+                                            @Html.ValidationMessage("EmailInterlibraryLoans", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumInterlibraryLoans)
+                                            @Html.TextBoxFor(m => m.PhoneNumInterlibraryLoans, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("PhoneNumInterlibraryLoans", new { @class = "text-danger" })
+                                        </div>
+                                        <!--end InterlibraryLoans-->
+                                        <!--Acquisitions-->
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.Acquisitions, new { @class = "text-accent-p2" })
+                                            @Html.TextAreaFor(m => m.Acquisitions, new { maxlength = "900", @class = "form-control" })
+                                            <span>900 character limit</span>
+                                            @Html.ValidationMessage("Acquisitions", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NameAcquisitions)
+                                            @Html.TextBoxFor(m => m.NameAcquisitions, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("NameAcquisitions", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailAcquisitions)
+                                            @Html.TextBoxFor(m => m.EmailAcquisitions, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
+                                            @Html.ValidationMessage("EmailAcquisitions", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumAcquisitions)
+                                            @Html.TextBoxFor(m => m.PhoneNumAcquisitions, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("PhoneNumAcquisitions", new { @class = "text-danger" })
+                                        </div>
+                                        <!--end Acquisitions-->
+                                        <!--Preservation-->
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.Preservation, new { @class = "text-accent-p2" })
+                                            @Html.TextAreaFor(m => m.Preservation, new { maxlength = "900", @class = "form-control" })
+                                            <span>900 character limit</span>
+                                            @Html.ValidationMessage("Preservation", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NamePreservation)
+                                            @Html.TextBoxFor(m => m.NamePreservation, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("NamePreservation", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailPreservation)
+                                            @Html.TextBoxFor(m => m.EmailPreservation, new { type = "email", @class = "form-control", placeholder = "example@example.com" })
+                                            @Html.ValidationMessage("EmailPreservation", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumPreservation)
+                                            @Html.TextBoxFor(m => m.PhoneNumPreservation, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("PhoneNumPreservation", new { @class = "text-danger" })
+                                        </div>
+                                        <!--end Preservation-->
+
+
+                                    </div>
+                                </div><!--end panel body for accoridon #3-->
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading4'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse4' aria-expanded='false' aria-controls='collapse4'>Step 4: Questions</a>
+                                </h3>
+                            </div>
+                            <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
+                                <div class='panel-body'>
+
+                                    <script>
                                                         $(document).ready(function () {
 
                                                             console.log("changed name of question radio buttons");
@@ -579,345 +575,327 @@ ViewBag.Author = "Matt Loller, Alan Cleetus";
                                                             $("#Q5None").attr('name', 'q5');
                                                             $("#Q5Limited").attr('name', 'q5');
                                                             $("#Q5Considerable").attr('name', 'q5');
-                                                
+
 
                                                         });
-                                            </script>
+                                    </script>
 
-                                            <!--Q1-->
-                                            <div class="tab-LTA1-question tab-question-Q1">
+                                    <!--Q1-->
+                                    <div class="tab-LTA1-question tab-question-Q1">
 
-                                                <p>
-                                                    @Html.LabelFor(m => m.Q1None, new { @class = "text-accent-p2" })
-                                                </p>
+                                        <p>
+                                            @Html.LabelFor(m => m.Q1None, new { @class = "text-accent-p2" })
+                                        </p>
 
-                                                <div class="container radio">
-                                                    <p>@Html.RadioButtonFor(m => m.Q1None, true, "Q1None") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.Q1Limited, true, "Q1Limited") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.Q1Considerable, true, "Q1Considerable") Considerable</p>
-                                                    @Html.ValidationMessage("Q1None", new { @class = "text-danger" })
-                                                    @Html.ValidationMessage("Q1Limited", new { @class = "text-danger" })
-                                                    @Html.ValidationMessage("Q1Considerable", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.Q1)
-                                                    @Html.TextAreaFor(m => m.Q1, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameQ1)
-                                                    @Html.TextAreaFor(m => m.NameQ1, new { type = "text", @class = "form-control" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailQ1)
-                                                    @Html.TextAreaFor(m => m.EmailQ1, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumQ1)
-                                                    @Html.TextAreaFor(m => m.PhoneNumQ1, new { type = "text", @class = "form-control" })
-                                                </div>
-
-                                                <hr />
-                                            </div>
-
-                                            <!--Q2-->
-                                            <div class="tab-LTA1-question tab-question-Q2">
-
-                                                <p>
-                                                    @Html.LabelFor(m => m.Q2None, new { @class = "text-accent-p2" })
-                                                </p>
-
-                                                <div class="container radio">
-                                                    <p>@Html.RadioButtonFor(m => m.Q2None, true, "Q2None") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.Q2Limited, true, "Q2Limited") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.Q2Considerable, true, "Q2Considerable") Considerable</p>
-                                                    @Html.ValidationMessage("Q2None", new { @class = "text-danger" })
-                                                    @Html.ValidationMessage("Q2Limited", new { @class = "text-danger" })
-                                                    @Html.ValidationMessage("Q2Considerable", new { @class = "text-danger" })
-
-                                                </div>
-
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.Q2)
-                                                    @Html.TextAreaFor(m => m.Q2, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameQ2)
-                                                    @Html.TextAreaFor(m => m.NameQ2, new { type = "text", @class = "form-control" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailQ2)
-                                                    @Html.TextAreaFor(m => m.EmailQ2, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumQ2)
-                                                    @Html.TextAreaFor(m => m.PhoneNumQ2, new { type = "text", @class = "form-control" })
-                                                </div>
-                                                <hr />
-                                            </div>
-
-                                            <!--Q3-->
-                                            <div class="tab-LTA1-question tab-question-Q3">
-                                                <p>
-                                                    @Html.LabelFor(m => m.Q3None, new { @class = "text-accent-p2" })
-                                                </p>
-
-                                                <div class="container radio">
-                                                    <p>@Html.RadioButtonFor(m => m.Q3None, true, "Q3None") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.Q3Limited, true, "Q3Limited") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.Q3Considerable, true, "Q3Considerable") Considerable</p>
-                                                    @Html.ValidationMessage("Q3None", new { @class = "text-danger" })
-                                                    @Html.ValidationMessage("Q3Limited", new { @class = "text-danger" })
-                                                    @Html.ValidationMessage("Q3Considerable", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.Q3)
-                                                    @Html.TextAreaFor(m => m.Q3, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameQ3)
-                                                    @Html.TextAreaFor(m => m.NameQ3, new { type = "text", @class = "form-control" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailQ3)
-                                                    @Html.TextAreaFor(m => m.EmailQ3, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumQ3)
-                                                    @Html.TextAreaFor(m => m.PhoneNumQ3, new { type = "text", @class = "form-control" })
-                                                </div>
-                                                <hr />
-                                            </div>
-
-                                            <!--Q4-->
-                                            <div class="tab-LTA2-question tab-question-Q4">
-
-                                                <p>
-                                                    @Html.LabelFor(m => m.Q4None, new { @class = "text-accent-p2" })
-                                                </p>
-
-                                                <div class="container radio">
-                                                    <p>@Html.RadioButtonFor(m => m.Q4None, true, "Q4None") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.Q4Limited, true, "Q4Limited") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.Q4Considerable, true, "Q4Considerable") Considerable</p>
-                                                    @Html.ValidationMessage("Q4None", new { @class = "text-danger" })
-                                                    @Html.ValidationMessage("Q4Limited", new { @class = "text-danger" })
-                                                    @Html.ValidationMessage("Q4Considerable", new { @class = "text-danger" })
-
-
-                                                </div>
-
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q4)
-                                                    @Html.TextAreaFor(m => m.Q4, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameQ4)
-                                                    @Html.TextAreaFor(m => m.NameQ4, new { type = "text", @class = "form-control" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailQ4)
-                                                    @Html.TextAreaFor(m => m.EmailQ4, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumQ4)
-                                                    @Html.TextAreaFor(m => m.PhoneNumQ4, new { type = "text", @class = "form-control" })
-                                                </div>
-                                                <hr />
-                                            </div>
-
-                                            <!--Q5-->
-                                            <div class="tab-LTA2-question tab-question-Q5">
-                                                <p>
-                                                    @Html.LabelFor(m => m.Q5None, new { @class = "text-accent-p2" })
-                                                </p>
-
-                                                <div class="container radio">
-                                                    <p>@Html.RadioButtonFor(m => m.Q5None, true, "Q5None") None</p>
-                                                    <p> @Html.RadioButtonFor(m => m.Q5Limited, true, "Q5Limited") Limited</p>
-                                                    <p> @Html.RadioButtonFor(m => m.Q5Considerable, true, "Q5Considerable") Considerable</p>
-                                                    @Html.ValidationMessage("Q5None", new { @class = "text-danger" })
-                                                    @Html.ValidationMessage("Q5Limited", new { @class = "text-danger" })
-                                                    @Html.ValidationMessage("Q5Considerable", new { @class = "text-danger" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q5)
-                                                    @Html.TextAreaFor(m => m.Q5, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameQ5)
-                                                    @Html.TextAreaFor(m => m.NameQ5, new { type = "text", @class = "form-control" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailQ5)
-                                                    @Html.TextAreaFor(m => m.EmailQ5, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumQ5)
-                                                    @Html.TextAreaFor(m => m.PhoneNumQ5, new { type = "text", @class = "form-control" })
-                                                </div>
-                                                <hr />
-                                            </div>
-
-
+                                        <div class="container radio">
+                                            <p>@Html.RadioButtonFor(m => m.Q1None, true, "Q1None") None</p>
+                                            <p> @Html.RadioButtonFor(m => m.Q1Limited, true, "Q1Limited") Limited</p>
+                                            <p> @Html.RadioButtonFor(m => m.Q1Considerable, true, "Q1Considerable") Considerable</p>
+                                            @Html.ValidationMessage("Q1None", new { @class = "text-danger" })
+                                            @Html.ValidationMessage("Q1Limited", new { @class = "text-danger" })
+                                            @Html.ValidationMessage("Q1Considerable", new { @class = "text-danger" })
                                         </div>
-                                    </div>
-                                </div>
 
-
-                                <div class='panel panel-default'>
-                                    <div class='panel-heading' role='tab' id='heading5'>
-                                        <h3 class='panel-title'>
-                                            <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>Step 5: Resume</a>
-                                        </h3>
-                                    </div>
-                                    <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
-                                        <div class='panel-body'>
-
-                                            <p>
-                                                Please submit your current resume in .docx or .pdf format under 5 MB. Your resume must include your most recent
-                                                employment and because a standard state application is not requested at this time, the resume must also <strong>
-                                                    include
-                                                    complete "to" and "from" dates (month/day/year), time base including number of hours worked per week, job titles,
-                                                    and relevant college degree completed
-                                                </strong>. Resumes received without this information will result in rejection of your
-                                                application.
-                                            </p>
-                                            <p>
-                                                Click on the browse button to locate the file. If you have an older version of Word that only produces .doc files,
-                                                there are many free tools online to convert to PDF.
-                                            </p>
-
+                                        <div class="form-group">
                                             <span class="required-label">*</span>
-                                            @Html.LabelFor(m => m.ResumeUpload)
-                                            <input type="file" name="file" />
-                                            @Html.ValidationMessage("ResumeUpload", new { @class = "text-danger" })
+                                            @Html.LabelFor(m => m.Q1)
+                                            @Html.TextAreaFor(m => m.Q1, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NameQ1)
+                                            @Html.TextAreaFor(m => m.NameQ1, new { type = "text", @class = "form-control" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailQ1)
+                                            @Html.TextAreaFor(m => m.EmailQ1, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumQ1)
+                                            @Html.TextAreaFor(m => m.PhoneNumQ1, new { type = "text", @class = "form-control" })
+                                        </div>
+
+                                        <hr />
+                                    </div>
+
+                                    <!--Q2-->
+                                    <div class="tab-LTA1-question tab-question-Q2">
+
+                                        <p>
+                                            @Html.LabelFor(m => m.Q2None, new { @class = "text-accent-p2" })
+                                        </p>
+
+                                        <div class="container radio">
+                                            <p>@Html.RadioButtonFor(m => m.Q2None, true, "Q2None") None</p>
+                                            <p> @Html.RadioButtonFor(m => m.Q2Limited, true, "Q2Limited") Limited</p>
+                                            <p> @Html.RadioButtonFor(m => m.Q2Considerable, true, "Q2Considerable") Considerable</p>
+                                            @Html.ValidationMessage("Q2None", new { @class = "text-danger" })
+                                            @Html.ValidationMessage("Q2Limited", new { @class = "text-danger" })
+                                            @Html.ValidationMessage("Q2Considerable", new { @class = "text-danger" })
+
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.Q2)
+                                            @Html.TextAreaFor(m => m.Q2, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NameQ2)
+                                            @Html.TextAreaFor(m => m.NameQ2, new { type = "text", @class = "form-control" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailQ2)
+                                            @Html.TextAreaFor(m => m.EmailQ2, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumQ2)
+                                            @Html.TextAreaFor(m => m.PhoneNumQ2, new { type = "text", @class = "form-control" })
+                                        </div>
+                                        <hr />
+                                    </div>
+
+                                    <!--Q3-->
+                                    <div class="tab-LTA1-question tab-question-Q3">
+                                        <p>
+                                            @Html.LabelFor(m => m.Q3None, new { @class = "text-accent-p2" })
+                                        </p>
+
+                                        <div class="container radio">
+                                            <p>@Html.RadioButtonFor(m => m.Q3None, true, "Q3None") None</p>
+                                            <p> @Html.RadioButtonFor(m => m.Q3Limited, true, "Q3Limited") Limited</p>
+                                            <p> @Html.RadioButtonFor(m => m.Q3Considerable, true, "Q3Considerable") Considerable</p>
+                                            @Html.ValidationMessage("Q3None", new { @class = "text-danger" })
+                                            @Html.ValidationMessage("Q3Limited", new { @class = "text-danger" })
+                                            @Html.ValidationMessage("Q3Considerable", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.Q3)
+                                            @Html.TextAreaFor(m => m.Q3, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NameQ3)
+                                            @Html.TextAreaFor(m => m.NameQ3, new { type = "text", @class = "form-control" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailQ3)
+                                            @Html.TextAreaFor(m => m.EmailQ3, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumQ3)
+                                            @Html.TextAreaFor(m => m.PhoneNumQ3, new { type = "text", @class = "form-control" })
+                                        </div>
+                                        <hr />
+                                    </div>
+
+                                    <!--Q4-->
+                                    <div class="tab-LTA2-question tab-question-Q4">
+
+                                        <p>
+                                            @Html.LabelFor(m => m.Q4None, new { @class = "text-accent-p2" })
+                                        </p>
+
+                                        <div class="container radio">
+                                            <p>@Html.RadioButtonFor(m => m.Q4None, true, "Q4None") None</p>
+                                            <p> @Html.RadioButtonFor(m => m.Q4Limited, true, "Q4Limited") Limited</p>
+                                            <p> @Html.RadioButtonFor(m => m.Q4Considerable, true, "Q4Considerable") Considerable</p>
+                                            @Html.ValidationMessage("Q4None", new { @class = "text-danger" })
+                                            @Html.ValidationMessage("Q4Limited", new { @class = "text-danger" })
+                                            @Html.ValidationMessage("Q4Considerable", new { @class = "text-danger" })
 
 
                                         </div>
+
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>@Html.LabelFor(m => m.Q4)
+                                            @Html.TextAreaFor(m => m.Q4, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NameQ4)
+                                            @Html.TextAreaFor(m => m.NameQ4, new { type = "text", @class = "form-control" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailQ4)
+                                            @Html.TextAreaFor(m => m.EmailQ4, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumQ4)
+                                            @Html.TextAreaFor(m => m.PhoneNumQ4, new { type = "text", @class = "form-control" })
+                                        </div>
+                                        <hr />
                                     </div>
+
+                                    <!--Q5-->
+                                    <div class="tab-LTA2-question tab-question-Q5">
+                                        <p>
+                                            @Html.LabelFor(m => m.Q5None, new { @class = "text-accent-p2" })
+                                        </p>
+
+                                        <div class="container radio">
+                                            <p>@Html.RadioButtonFor(m => m.Q5None, true, "Q5None") None</p>
+                                            <p> @Html.RadioButtonFor(m => m.Q5Limited, true, "Q5Limited") Limited</p>
+                                            <p> @Html.RadioButtonFor(m => m.Q5Considerable, true, "Q5Considerable") Considerable</p>
+                                            @Html.ValidationMessage("Q5None", new { @class = "text-danger" })
+                                            @Html.ValidationMessage("Q5Limited", new { @class = "text-danger" })
+                                            @Html.ValidationMessage("Q5Considerable", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>@Html.LabelFor(m => m.Q5)
+                                            @Html.TextAreaFor(m => m.Q5, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.NameQ5)
+                                            @Html.TextAreaFor(m => m.NameQ5, new { type = "text", @class = "form-control" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.EmailQ5)
+                                            @Html.TextAreaFor(m => m.EmailQ5, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="required-label">*</span>
+                                            @Html.LabelFor(m => m.PhoneNumQ5)
+                                            @Html.TextAreaFor(m => m.PhoneNumQ5, new { type = "text", @class = "form-control" })
+                                        </div>
+                                        <hr />
+                                    </div>
+
+
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class='panel panel-default'>
-                                    <div class='panel-heading' role='tab' id='heading6'>
-                                        <h3 class='panel-title'>
-                                            <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>Step 6: Signature</a>
-                                        </h3>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading5'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse5' aria-expanded='false' aria-controls='collapse5'>Step 5: Resume</a>
+                                </h3>
+                            </div>
+                            <div id='collapse5' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading5'>
+                                <div class='panel-body'>
+
+                                    <p>
+                                        Please submit your current resume in .docx or .pdf format under 5 MB. Your resume must include your most recent
+                                        employment and because a standard state application is not requested at this time, the resume must also <strong>
+                                            include
+                                            complete "to" and "from" dates (month/day/year), time base including number of hours worked per week, job titles,
+                                            and relevant college degree completed
+                                        </strong>. Resumes received without this information will result in rejection of your
+                                        application.
+                                    </p>
+                                    <p>
+                                        Click on the browse button to locate the file. If you have an older version of Word that only produces .doc files,
+                                        there are many free tools online to convert to PDF.
+                                    </p>
+
+                                    <span class="required-label">*</span>
+                                    @Html.LabelFor(m => m.ResumeUpload)
+                                    <input type="file" name="file" />
+                                    @Html.ValidationMessage("ResumeUpload", new { @class = "text-danger" })
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='panel panel-default'>
+                            <div class='panel-heading' role='tab' id='heading6'>
+                                <h3 class='panel-title'>
+                                    <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse6' aria-expanded='false' aria-controls='collapse6'>Step 6: Signature</a>
+                                </h3>
+                            </div>
+                            <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
+
+                                <div class='panel-body'>
+
+                                    <div class="tab-body">
+                                        <div class="checkbox">
+                                            <label class="normal">
+                                                @Html.RadioButtonFor(m => m.isCertified, true, new { type = "checkbox" })
+                                                <span class="required-label">*</span>  By checking this box, I hereby certify under penalty of perjury that the information I have entered on this application is true and complete to the best of my knowledge. I further understand that all information is subject to verification and that any false, incomplete, or incorrect statements may result in my disqualification from the examination process or dismissal from employment with the State of California. I authorize the employers and educational institutions identified on this application to release any information they may have concerning my employment or education to the State of California.
+                                            </label>
+                                            @Html.ValidationMessage("isCertified", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="form-group half">
+                                            <span class="required-label">*</span>@Html.LabelFor(m => m.Signature)
+                                            @Html.TextBoxFor(m => m.Signature, new { type = "text", @class = "form-control" })
+                                            @Html.ValidationMessage("Signature", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="form-group half">
+                                            <span class="required-label">*</span>@Html.LabelFor(m => m.Date)
+                                            @Html.TextBoxFor(m => m.Date, new { type = "text", @class = "form-control", placeholder = "MM/DD/YYYY" })
+                                            @Html.ValidationMessage("Date", new { @class = "text-danger" })
+                                        </div>
+
+
+
+
                                     </div>
-                                    <div id='collapse6' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading6'>
 
-                                        <div class='panel-body'>
+                                </div>
+                            </div>
+                        </div>
 
-                                            <div class="tab-body">
-                                                <div class="checkbox">
-                                                    <label class="normal">
-                                                        @Html.RadioButtonFor(m => m.isCertified, true, new { type = "checkbox" })
-                                                        <span class="required-label">*</span>  By checking this box, I hereby certify under penalty of perjury that the information I have entered on this application is true and complete to the best of my knowledge. I further understand that all information is subject to verification and that any false, incomplete, or incorrect statements may result in my disqualification from the examination process or dismissal from employment with the State of California. I authorize the employers and educational institutions identified on this application to release any information they may have concerning my employment or education to the State of California.
-                                                    </label>
-                                                    @Html.ValidationMessage("isCertified", new { @class = "text-danger" })
-                                                </div>
-                                                <div class="form-group half">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Signature)
-                                                    @Html.TextBoxFor(m => m.Signature, new { type = "text", @class = "form-control" })
-                                                    @Html.ValidationMessage("Signature", new { @class = "text-danger" })
-                                                </div>
-                                                <div class="form-group half">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Date)
-                                                    @Html.TextBoxFor(m => m.Date, new { type = "text", @class = "form-control", placeholder = "MM/DD/YYYY" })
-                                                    @Html.ValidationMessage("Date", new { @class = "text-danger" })
-                                                </div>
-
-
-
-
+                        <div class="section">
+                            <div class="container">
+                                <div class="half"></div>
+                                <div class="half">
+                                    <div class="section">
+                                        <div class="full-width">
+                                            <div class="pull-right">
+                                                <div class="g-recaptcha" data-sitekey="6Lf0XzYUAAAAAFm7yZHSL7K98voPXytgpy4O2zsU"></div>
                                             </div>
+                                        </div>
+                                    </div>
 
+                                    <div class="form-group">
+                                        <div class="pull-right">
+                                            <input type="submit" value="Submit" class="btn btn-default pull-right" />
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="section">
-                                    <div class="container">
-                                        <div class="half"></div>
-                                        <div class="half">
-                                            <div class="section">
-                                                <div class="full-width">
-                                                    <div class="pull-right">
-                                                        <div class="g-recaptcha" data-sitekey="6Lf0XzYUAAAAAFm7yZHSL7K98voPXytgpy4O2zsU"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <div class="pull-right">
-                                                    <input type="submit" value="Submit" class="btn btn-default pull-right" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div><!--end accordion-->
-                        }
-                    </div>
-              
-                    <div class="section">
-                        <p class="regular">
-                            Congratulations!  You have successfully submitted your Resume and Supplemental Application materials for the California State
-                            Library’s Library Technical Assistant I, Library Technical Assistant II  open examination.  If you do
-                            <strong style="text-decoration: underline;">not</strong> receive a follow-up e-mail from us within 5 business days,
-                            please contact us at <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or (916) 654-0202.
-                            This e-mail will include information regarding the next steps in the examination and hiring process.
-                        </p>
+                    </div><!--end accordion-->
+                    }
+                </div>
 
 
-                        <p class="regular">
-                            Until then, please connect with us on: <a href="https://www.facebook.com/CAStateLibrary">Facebook</a> | <a href="https://twitter.com/castatelibrary">Twitter</a> | <a href="http://californiastatelibrary.tumblr.com/">Blog</a> | <a href="https://www.pinterest.com/castatelibrary/">Pinterest</a>
-                            and visit us <a href="">here</a>
-                        </p>
 
-                        <p>Thank you for your interest in the California State Library</p>
-
-                        <h3><a href="/home">Back to Home Page</a></h3>
-                    </div>
-               
             </div>
         </div>
     </main>
