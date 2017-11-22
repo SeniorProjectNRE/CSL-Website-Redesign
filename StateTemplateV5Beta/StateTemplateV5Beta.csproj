@@ -1871,6 +1871,7 @@
     <Content Include="Views\Services\ToLibraries\LibraryStaffEducationPogram.cshtml" />
     <Content Include="Views\Sutro\Success.cshtml" />
     <Content Include="Views\Collections\OnlineCollections.cshtml" />
+    <Content Include="Views\Services\ToLibraries\StatisticsDirectories.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -85,5 +85,13 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
         {
             return View("~/Views/Services/ToLibraries/LibraryStaffEducationPogram.cshtml");
         }
+
+        // GET: statistics-directories
+        [Route("statistics-directories")]
+        public ActionResult StatisticsDirectories()
+        {
+            return View("~/Views/Services/ToLibraries/StatisticsDirectories.cshtml");
+        }
+
     }
 }
