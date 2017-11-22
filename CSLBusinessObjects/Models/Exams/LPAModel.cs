@@ -158,7 +158,7 @@ namespace CSLBusinessObjects.Models.Exams
         public string EmailQ5 { get; set; }
 
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
-        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 6")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 5")]
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 5")]
         public string PhoneNumQ5 { get; set; }
 
@@ -219,17 +219,17 @@ namespace CSLBusinessObjects.Models.Exams
         public string Q8 { get; set; }
 
         [Display(Name = "Name of person who can verify this experience:")]
-        [Required(ErrorMessage = "Contact Required for Question 9")]
+        [Required(ErrorMessage = "Contact Required for Question 8")]
         public string NameQ8 { get; set; }
 
         [Display(Name = "E-mail of person listed above who can verify this experience:")]
         [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
-        [Required(ErrorMessage = "Contact's E-mail Required for Question 9")]
+        [Required(ErrorMessage = "Contact's E-mail Required for Question 8")]
         public string EmailQ8 { get; set; }
 
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
-        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 9")]
-        [Required(ErrorMessage = "Contact's Phone Number Required for Question 9")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 8")]
+        [Required(ErrorMessage = "Contact's Phone Number Required for Question 8")]
         public string PhoneNumQ8 { get; set; }
         #endregion
 
