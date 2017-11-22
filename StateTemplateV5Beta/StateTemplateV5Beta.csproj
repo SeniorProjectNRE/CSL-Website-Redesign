@@ -1067,7 +1067,12 @@
     <Content Include="Content\StateTemplate\images\top-icons\visit.jpg" />
     <Content Include="Content\StateTemplate\images\top-icons\work-over.jpg" />
     <Content Include="Content\StateTemplate\images\top-icons\work.jpg" />
+    <Content Include="Content\StateTemplate\images\visitUs\events.jpg" />
+    <Content Include="Content\StateTemplate\images\visitUs\exhibits.jpg" />
+    <Content Include="Content\StateTemplate\images\visitUs\hours.jpg" />
+    <Content Include="Content\StateTemplate\images\visitUs\top.jpg" />
     <Content Include="Content\StateTemplate\images\visitUs\tours.png" />
+    <Content Include="Content\StateTemplate\images\visitUs\tours1.jpg" />
     <Content Include="Content\StateTemplate\images\volunteer\involved.jpg" />
     <Content Include="Content\StateTemplate\images\volunteer\volunteer.jpg" />
     <Content Include="Content\StateTemplate\images\volunteer\volunteermatch.gif" />
