@@ -62,6 +62,8 @@ namespace CSL.Tests.DataAccess
             testRow1["Project"] = project;
             testRow1["Award"] = award;
 
+            myTable.Rows.Add(testRow1);
+
             return myTable;
 
         }
