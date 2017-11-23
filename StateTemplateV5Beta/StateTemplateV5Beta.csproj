@@ -414,6 +414,14 @@
     <Content Include="Content\StateTemplate\images\CAGoldRush\section11.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section12.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section13.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section1\captain_morgan.png" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section1\jewett.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section1\mashall_1.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section1\mashall_2.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section1\mashall_3.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section1\parsons.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section1\unsigned_letter.png" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section1\yalesummi_tribe.png" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section2.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section3.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section4.jpg" />
