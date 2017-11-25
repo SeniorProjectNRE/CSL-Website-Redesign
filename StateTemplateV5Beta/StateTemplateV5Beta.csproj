@@ -1537,6 +1537,7 @@
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\PLSEPNewStAppInst1415.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\SamplePLSEPLSSTApp1415.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\SamplePLSEPNewStApp1415.pdf" />
+    <Content Include="Content\StateTemplate\otherDocuments\btbl\spanishapplication.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
