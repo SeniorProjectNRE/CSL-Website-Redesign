@@ -31,11 +31,16 @@ namespace CSL.Tests.BusinessLayer
         public void Service_GetGrantNumTest()
         {
             List<GrantNumberModel> myList = new List<GrantNumberModel>();
-            GrantNumberModel myModel = new GrantNumberModel() { GrantID = "8000" };
+            GrantNumberModel myModelAll = new GrantNumberModel() { GrantID = "All" };
+            GrantNumberModel myModel = new GrantNumberModel() { GrantID = "8000"};
+            myList.Add(myModelAll);
             myList.Add(myModel);
-            List<GrantNumberModel> res = _grant.GetAllGrantIDs(myModel.GrantID, "testYear", "testLibrary", "testProject", 1);
+            List<GrantNumberModel> res = _grant.GetAllGrantIDs(myModel.GrantID, "testYear", "testLibrary", "testProject", 0);
 
-            CollectionAssert.ReferenceEquals(myList, res);
+            for (int i = 0; i < res.Count; i++)
+            {
+                Assert.ReferenceEquals(myList[i], res[i]);
+            }
         }
 
         //Test for the method GetAllAwards in GrantsServices.cs in CSLBusinessLayer
