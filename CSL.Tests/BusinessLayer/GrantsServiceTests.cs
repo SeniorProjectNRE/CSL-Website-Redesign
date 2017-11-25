@@ -32,10 +32,14 @@ namespace CSL.Tests.BusinessLayer
         {
             List<GrantNumberModel> myList = new List<GrantNumberModel>();
             GrantNumberModel myModel = new GrantNumberModel() { GrantID = "8000" };
+            myList.Add(new GrantNumberModel() { GrantID = "All" });
             myList.Add(myModel);
             List<GrantNumberModel> res = _grant.GetAllGrantIDs(myModel.GrantID, "testYear", "testLibrary", "testProject", 1);
 
-            CollectionAssert.ReferenceEquals(myList, res);
+            for (int i = 0; i < res.Count; i++)
+            {
+                Assert.ReferenceEquals(myList[i], res[i]);
+            }
         }
 
         //Test for the method GetAllAwards in GrantsServices.cs in CSLBusinessLayer
@@ -47,7 +51,10 @@ namespace CSL.Tests.BusinessLayer
             myList.Add(myModel);
             List<GrantAwardModel> res = _grant.GetAllAwards("testNum", "testYear", "testLibrary", "testProject", (int)myModel.Award);
 
-            CollectionAssert.ReferenceEquals(myList, res);
+            for (int i = 0; i < res.Count; i++)
+            {
+                Assert.ReferenceEquals(myList[i], res[i]);
+            }
         }
 
         //Test for the method GetAllGrants in GrantsServices.cs in CSLBusinessLayer
@@ -61,7 +68,10 @@ namespace CSL.Tests.BusinessLayer
             int.TryParse(myModel.Award, out award);
             List<GrantsModel> res = _grant.GetAllGrants(myModel.GrantID, myModel.Year, myModel.Library, myModel.Project, award);
 
-            CollectionAssert.ReferenceEquals(myList, res);
+            for (int i = 0; i < res.Count; i++)
+            {
+                Assert.ReferenceEquals(myList[i], res[i]);
+            }
         }
 
         //Test for the method GetAllLibraries in GrantsServices.cs in CSLBusinessLayer
@@ -70,10 +80,14 @@ namespace CSL.Tests.BusinessLayer
         {
             List<GrantLibraryModel> myList = new List<GrantLibraryModel>();
             GrantLibraryModel myModel = new GrantLibraryModel() { Library = "aaa"};
+            myList.Add(new GrantLibraryModel() { Library = "All" });
             myList.Add(myModel);
             List<GrantLibraryModel> res = _grant.GetAllLibraries("testNum", "testYear", myModel.Library, "testProject", 1);
 
-            CollectionAssert.ReferenceEquals(myList, res);
+            for (int i = 0; i < res.Count; i++)
+            {
+                Assert.ReferenceEquals(myList[i], res[i]);
+            }
         }
 
         //Test for the method GetAllProjects in GrantsServices.cs in CSLBusinessLayer
@@ -82,10 +96,14 @@ namespace CSL.Tests.BusinessLayer
         {
             List<GrantProjectModel> myList = new List<GrantProjectModel>();
             GrantProjectModel myModel = new GrantProjectModel() { Project = "bbb" };
+            myList.Add(new GrantProjectModel() { Project = "All" });
             myList.Add(myModel);
             List<GrantProjectModel> res = _grant.GetAllProjects("testNum", "testYear", "testLibrary", myModel.Project, 1);
 
-            CollectionAssert.ReferenceEquals(myList, res);
+            for (int i = 0; i < res.Count; i++)
+            {
+                Assert.ReferenceEquals(myList[i], res[i]);
+            }
         }
 
         //Test for the method GetAllYears in GrantsServices.cs in CSLBusinessLayer
@@ -94,10 +112,14 @@ namespace CSL.Tests.BusinessLayer
         {
             List<GrantYearModel> myList = new List<GrantYearModel>();
             GrantYearModel myModel = new GrantYearModel() { Year = "1" };
+            myList.Add(new GrantYearModel() { Year = "All" });
             myList.Add(myModel);
             List<GrantYearModel> res = _grant.GetAllYears("testNum", myModel.Year, "testLibrary", "testProject", 1);
 
-            CollectionAssert.ReferenceEquals(myList, res);
+            for (int i = 0; i < res.Count; i++)
+            {
+                Assert.ReferenceEquals(myList[i], res[i]);
+            }
         }
 
         //Test for the method GetAwardCategoryFromString in GrantsServices.cs in CSLBusinessLayer
@@ -105,37 +127,37 @@ namespace CSL.Tests.BusinessLayer
         public void Service_GetAwardCategoryTest()
         {
             int test = 1;
-            string testInput = "100";
+            string testInput = "$0 - $10,000";
             int res = _grant.GetAwardCategoryFromString(testInput);
 
             Assert.AreEqual(test, res);
 
             test = 2;
-            testInput = "15000";
+            testInput = "$10,000 - $50,000";
             res = _grant.GetAwardCategoryFromString(testInput);
 
             Assert.AreEqual(test, res);
 
             test = 3;
-            testInput = "55000";
+            testInput = "$50,000 - $100,000";
             res = _grant.GetAwardCategoryFromString(testInput);
 
             Assert.AreEqual(test, res);
 
             test = 4;
-            testInput = "155000";
+            testInput = "$100,000 - $500,000";
             res = _grant.GetAwardCategoryFromString(testInput);
 
             Assert.AreEqual(test, res);
 
             test = 5;
-            testInput = "555000";
+            testInput = "$500,000 - $1,000,000";
             res = _grant.GetAwardCategoryFromString(testInput);
 
             Assert.AreEqual(test, res);
 
             test = 6;
-            testInput = "1555000";
+            testInput = "> $1,000,000";
             res = _grant.GetAwardCategoryFromString(testInput);
 
             Assert.AreEqual(test, res);
