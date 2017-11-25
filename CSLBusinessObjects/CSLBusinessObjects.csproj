@@ -54,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigModels\DBConnectionConfig.cs" />
+    <Compile Include="Models\Exams\LPCModel.cs" />
+    <Compile Include="Models\Exams\LPAModel.cs" />
+    <Compile Include="Models\Exams\LTAModel.cs" />
     <Compile Include="Models\Exams\SupervisingLibrarianModel.cs" />
     <Compile Include="Models\Exams\LibrarianModel.cs" />
     <Compile Include="Models\Grants\GrantsModel.cs" />
@@ -73,6 +76,7 @@
     <Compile Include="Models\SLAA\SLAAAgencyModel.cs" />
     <Compile Include="Models\SLAA\SLAAModel.cs" />
     <Compile Include="Models\SuccessModel.cs" />
+    <Compile Include="Models\MailingListModel.cs" />
     <Compile Include="Models\SutroClassModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Grants\GrantAwardModel.cs" />

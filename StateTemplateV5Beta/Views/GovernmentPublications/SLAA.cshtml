@@ -150,8 +150,16 @@
                     <tbody id="tablebody">
                         @foreach (var item in Model.SLAAGetAllFromTableList)
                         {
+                            ViewBag.pathSLAA = "~/Content/StateTemplate/pdf/slaa-pdf/SLAA_" + item.AgencyCode +"_"+ item.Year +".pdf";
                             <tr>
-                                <td>@item.Year</td>
+                                @if (System.IO.File.Exists(Server.MapPath(@ViewBag.pathSLAA)))
+                                {
+                                    <td><a href="@Url.Content(@ViewBag.pathSLAA)">@item.Year</a></td>
+                                }
+                                else
+                                {
+                                    <td>@item.Year</td>
+                                }
                                 <td>@item.AgencyName</td>
                             </tr>
                         }

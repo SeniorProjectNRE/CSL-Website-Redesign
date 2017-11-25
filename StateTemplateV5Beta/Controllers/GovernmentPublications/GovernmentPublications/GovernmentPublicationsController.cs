@@ -26,6 +26,13 @@ namespace StateTemplateV5Beta.Controllers.GovernmentPublications
             return View("~/Views/GovernmentPublications/GovernmentPublications.cshtml");
         }
 
+        // GET: Publications
+        [Route("ca-publications")]
+        public ActionResult CAPublications()
+        {
+            return View("~/Views/GovernmentPublications/CAPublications.cshtml");
+        }
+
         // GET: SLAA
         [HttpGet]
         [Route("slaa")]

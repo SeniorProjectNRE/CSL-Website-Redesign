@@ -82,11 +82,11 @@ namespace StateTemplateV5Beta.Controllers.Grants
         }
 
         // GET:manage
-        [Route("manage")]
-        public ActionResult Manage()
-        {
-            return View();
-        }
+        //[Route("manage")]
+        //public ActionResult Manage()
+        //{
+        //    return View();
+        //}
 
         // GET: mental-health
         [Route("mental-health")]
@@ -263,10 +263,10 @@ namespace StateTemplateV5Beta.Controllers.Grants
         }
 
         // GET: /library-services-technology-act
-        [Route("library-services-technology-act")]
-        public ActionResult LibraryServicesTechnologyAct()
-        {
-            return View();
-        }
+        //[Route("library-services-technology-act")]
+        //public ActionResult LibraryServicesTechnologyAct()
+        //{
+        //    return View();
+        //}
     }
 }

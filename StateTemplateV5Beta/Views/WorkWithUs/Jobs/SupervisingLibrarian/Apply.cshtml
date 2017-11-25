@@ -12,79 +12,125 @@
     </style>
     @if (Model.Success == false)
     {
-        @*<script>
+        <script>
             function showHideExams() {
 
-                // if neither picked value = 0
-                // if librarian picked value = 1
-                // if senior librarian picked value = 2
-                // if both picked = 3
-
-                var selectedItems = 0;
+                var selectedItems = "";
                 {
-                    //both
-                    if (document.getElementById('SeniorLibrarian').checked == true && document.getElementById('Librarian').checked == true) {
-                        selectedItems = 3;
+                    //""
+                    if (document.getElementById('SupervisingLibrarian1').checked == false &&
+                        document.getElementById('SupervisingLibrarian2').checked == false &&
+                        document.getElementById('PrincipalLibrarian').checked == false) {
+                        selectedItems = "";
                     }
-                    //neither
-                    else if (document.getElementById('SeniorLibrarian').checked == false && document.getElementById('Librarian').checked == false) {
-                        selectedItems = 0;
+                    //"0"
+                    else if (document.getElementById('SupervisingLibrarian1').checked == true &&
+                        document.getElementById('SupervisingLibrarian2').checked == false &&
+                        document.getElementById('PrincipalLibrarian').checked == false) {
+                        selectedItems = "0";
                     }
-                    //librarian checked
-                    else if (document.getElementById('SeniorLibrarian').checked == false && document.getElementById('Librarian').checked == true) {
-                        selectedItems = 1;
+                    //"1"
+                    else if (document.getElementById('SupervisingLibrarian1').checked == false &&
+                        document.getElementById('SupervisingLibrarian2').checked == true &&
+                        document.getElementById('PrincipalLibrarian').checked == false) {
+                        selectedItems = "1";
                     }
-                    //senior librarian checked
-                    else if (document.getElementById('SeniorLibrarian').checked == true && document.getElementById('Librarian').checked == false) {
-                        selectedItems = 2;
+                    //"2"
+                    else if (document.getElementById('SupervisingLibrarian1').checked == false &&
+                        document.getElementById('SupervisingLibrarian2').checked == false &&
+                        document.getElementById('PrincipalLibrarian').checked == true) {
+                        selectedItems = "2";
+                    }
+                    //"0 1"
+                    else if (document.getElementById('SupervisingLibrarian1').checked == true &&
+                        document.getElementById('SupervisingLibrarian2').checked == true &&
+                        document.getElementById('PrincipalLibrarian').checked == false) {
+                        selectedItems = "0 1";
+                    }
+                    //"0 2"
+                    else if (document.getElementById('SupervisingLibrarian1').checked == true &&
+                        document.getElementById('SupervisingLibrarian2').checked == false &&
+                        document.getElementById('PrincipalLibrarian').checked == true) {
+                        selectedItems = "0 2";
+                    }
+                    //"1 2"
+                    else if (document.getElementById('SupervisingLibrarian1').checked == false &&
+                        document.getElementById('SupervisingLibrarian2').checked == true &&
+                        document.getElementById('PrincipalLibrarian').checked == true) {
+                        selectedItems = "1 2";
+                    }
+                    //"0 1 2"
+                    else if (document.getElementById('SupervisingLibrarian1').checked == true &&
+                        document.getElementById('SupervisingLibrarian2').checked == true &&
+                        document.getElementById('PrincipalLibrarian').checked == true) {
+                        selectedItems = "0 1 2";
                     }
 
                     console.log("selectedItems = " + selectedItems);
                 }
 
-                if (selectedItems == 1) {
-                    $('.libEducation').show();
-                    $('.senLibEducation').hide();
-                    $('#senLibInfoExperience').hide();
-                    $('#libFuncExperience').show();
-                    $('#senLibFuncExperience').hide();
-                    $('.tab-SenLib-question').hide();
-                }
-                else if (selectedItems == 2) {
-                    $('.libEducation').hide();
-                    $('.senLibEducation').show();
-                    $('#senLibInfoExperience').show();
-                    $('#libFuncExperience').hide();
-                    $('#senLibFuncExperience').show();
-                    $('.tab-SenLib-question').show();
 
+                if (selectedItems == "0") {
+                    $('#SL1InfoExperience').show();
+                    $('#SL2InfoExperience').hide();
+                    $('#PLInfoExperience').hide();
+                    $('.tab-SL2-question').hide();
+                    $('.tab-PL-question').hide();
+                } else if (selectedItems == "1") {
+                    $('#SL1InfoExperience').hide();
+                    $('#SL2InfoExperience').show();
+                    $('#PLInfoExperience').hide();
+                    $('.tab-SL2-question').show();
+                    $('.tab-PL-question').hide();
+                } else if (selectedItems == "2") {
+                    $('#SL1InfoExperience').hide();
+                    $('#SL2InfoExperience').hide();
+                    $('#PLInfoExperience').show();
+                    $('.tab-SL2-question').show();
+                    $('.tab-PL-question').show();
+                } else if (selectedItems == "0 1") {
+                    $('#SL1InfoExperience').show();
+                    $('#SL2InfoExperience').show();
+                    $('#PLInfoExperience').hide();
+                    $('.tab-SL2-question').show();
+                    $('.tab-PL-question').hide();
+                } else if (selectedItems == "0 2") {
+                    $('#SL1InfoExperience').show();
+                    $('#SL2InfoExperience').hide();
+                    $('#PLInfoExperience').show();
+                    $('.tab-SL2-question').show();
+                    $('.tab-PL-question').show();
+                } else if (selectedItems == "1 2") {
+                    $('#SL1InfoExperience').hide();
+                    $('#SL2InfoExperience').show();
+                    $('#PLInfoExperience').show();
+                    $('.tab-SL2-question').show();
+                    $('.tab-PL-question').show();
+                } else if (selectedItems == "0 1 2") {
+                    $('#SL1InfoExperience').show();
+                    $('#SL2InfoExperience').show();
+                    $('#PLInfoExperience').show();
+                    $('.tab-SL2-question').show();
+                    $('.tab-PL-question').show();
+                } else if (selectedItems == "") {
+                    $('#SL1InfoExperience').hide();
+                    $('#SL2InfoExperience').hide();
+                    $('#PLInfoExperience').hide();
+                    $('.tab-SL2-question').hide();
+                    $('.tab-PL-question').hide();
                 }
-                else if (selectedItems == 3) {
-                    $('.libEducation').hide();
-                    $('.senLibEducation').show();
-                    $('#senLibInfoExperience').show();
-                    $('#libFuncExperience').show();
-                    $('#senLibFuncExperience').show();
-                    $('.tab-SenLib-question').show();
 
-                }
-                else if (selectedItems == 0) {
-                    $('.senLibEducation').hide();
-                    $('.libEducation').hide();
-                    $('#senLibInfoExperience').hide();
-                    $('#libFuncExperience').hide();
-                    $('#senLibFuncExperience').hide();
-                    $('.tab-SenLib-question').hide();
-                }
             }
-
             $(document).ready(function () {
-                $('.basicInfoExperience').hide();
-                $('.tab-SenLib-question').hide();
+                $('#SL1InfoExperience').hide();
+                $('#SL2InfoExperience').hide();
+                $('#PLInfoExperience').hide();
+                $('.tab-SL2-question').hide();
+                $('.tab-PL-question').hide();
 
                 showHideExams();
             });
-            </script>*@
+        </script>
 
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     }
@@ -195,25 +241,28 @@
 
                                             <div id="examChkBoxContainer">
                                                 <div id="MainContent_examChkBoxList">
+
                                                     <!--super librarian 1 checkbox open superlibrarian1 questions-->
                                                     <div class="checkbox">
                                                         <label>
                                                             @Html.RadioButtonFor(m => m.IsSupervisingLibrarianI, true, new { id = "SupervisingLibrarian1", type = "checkbox", onclick = "showHideExams()" })
-                                                            Librarian
+                                                            Supervising Librarian I
                                                         </label>
                                                     </div>
+
                                                     <!--super librarian 2 checkbox open superlibrarian2 questions-->
                                                     <div class="checkbox">
                                                         <label>
                                                             @Html.RadioButtonFor(m => m.IsSupervisingLibrarianII, true, new { id = "SupervisingLibrarian2", type = "checkbox", onclick = "showHideExams()" })
-                                                            Senior Librarian
+                                                            Supervising Librarian II
                                                         </label>
                                                     </div>
+
                                                     <!--Principal Librarian checkbox open PrincipalLibrarian questions-->
                                                     <div class="checkbox">
                                                         <label>
                                                             @Html.RadioButtonFor(m => m.IsPrincipalLibrarian, true, new { id = "PrincipalLibrarian", type = "checkbox", onclick = "showHideExams()" })
-                                                            Senior Librarian
+                                                            Principal Librarian
                                                         </label>
                                                     </div>
                                                     @Html.ValidationMessage("Librarian", new { @class = "text-danger" })
@@ -255,52 +304,36 @@
                                                 </div>
 
                                             </div>
-                                            <br />
+                                            <br>
+
                                             <div id="basicInfoEducation">
 
-                                                <div class="libEducation" style="display: none;">
 
-                                                    <div class="form-group">
-                                                        @Html.LabelFor(m => m.HasEducation)
 
-                                                        <div class="checkbox" id="MainContent_rblEducation">
-                                                            <p>
-                                                                @Html.RadioButtonFor(m => m.HasEducation, true) Yes
-                                                            </p>
+                                                <div class="form-group">
+                                                    @Html.LabelFor(m => m.HasEducation)
 
-                                                            <p>
-                                                                @Html.RadioButtonFor(m => m.HasEducation, false) No
-                                                            </p>
-                                                            @Html.ValidationMessage("HasEducation", new { @class = "text-danger" })
-                                                        </div>
+                                                    <div class="checkbox" id="MainContent_rblEducation">
+                                                        <p>
+                                                            @Html.RadioButtonFor(m => m.HasEducation, true) Yes
+                                                        </p>
 
+                                                        <p>
+                                                            @Html.RadioButtonFor(m => m.HasEducation, false) No
+                                                        </p>
+                                                        @Html.ValidationMessage("HasEducation", new { @class = "text-danger" })
                                                     </div>
-                                                </div>
 
-                                                <div class="senLibEducation">
-                                                    <div class="form-group">
-
-
-                                                        <div class="checkbox">
-                                                            <p>
-                                                                @Html.RadioButtonFor(m => m.HasEducation, true) Yes
-                                                            </p>
-
-                                                            <p>
-                                                                @Html.RadioButtonFor(m => m.HasEducation, false) No
-                                                            </p>
-                                                            @Html.ValidationMessage("HasEducation", new { @class = "text-danger" })
-                                                        </div>
-                                                    </div>
                                                 </div>
 
                                             </div>
 
-                                            <br>
 
-                                            <div id="senLibInfoExperience" class="basicInfoExperience" style="display: none;">
+                                            <div id="SL1InfoExperience" class="basicInfoExperience">
+
+                                                <br>
                                                 <p>
-                                                    <strong style="text-decoration: underline;">Senior Librarian</strong>
+                                                    <strong style="text-decoration: underline;">Supervising Librarian I</strong>
                                                 </p>
 
                                                 <em>
@@ -308,53 +341,73 @@
                                                 </em>
 
                                                 <div class="radio">
-                                                    @Html.LabelFor(m => m.HasExperienceSLI)
+                                                    @*@Html.LabelFor(m => m.HasExperienceSLI)*@
                                                     <label>@Html.RadioButtonFor(m => m.HasExperienceSLI, true, "ExperienceSI") Two years in the California state service performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Librarian</a></label>
                                                     <label> @Html.RadioButtonFor(m => m.HasExperienceSLI, true, "ExperienceSI") Three years of increasingly responsible and varied professional library experience such as cataloging, reference work, library service projects, and the selection of library materials, at least one year of which must have included regular use of computerized databases</label>
                                                     @Html.ValidationMessage("ExperienceSI", new { @class = "text-danger" })
                                                 </div>
                                             </div>
 
-                                            <br>
-                                            <div id="senLibInfoExperience" class="basicInfoExperience" style="display: none;">
+                                            <div id="SL2InfoExperience" class="basicInfoExperience">
+                                                <br>
                                                 <p>
-                                                    <strong style="text-decoration: underline;">Senior Librarian</strong>
+                                                    <strong style="text-decoration: underline;">Supervising Librarian II</strong>
                                                 </p>
 
                                                 <em>
-                                                    @Html.LabelFor(m => m.HasExperienceSLII, new { @class = "normal" })
+                                                    @Html.LabelFor(m => m.SL2OneYearExp, new { @class = "normal" })
                                                 </em>
 
                                                 <div class="radio">
-                                                    @Html.LabelFor(m => m.HasExperienceSLII)
-                                                    <label>@Html.RadioButtonFor(m => m.HasExperienceSLII, true, "ExperienceSII") One year in the California state service performing professional librarian duties at ta level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Senior Librarian</a> or a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a></label>
-                                                    <label> @Html.RadioButtonFor(m => m.HasExperienceSLII, true, "ExperienceSII") Three years of experience performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Librarian</a></label>
-                                                    <label> @Html.RadioButtonFor(m => m.HasExperienceSLII, true, "ExperienceSII") Four years of increasingly responsible and varied professional library experience such as having charge of a small library or subordinate section of a major library, at least one year of which shall have been comparable in level of responsibility to a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a></label>
-                                                    @Html.ValidationMessage("ExperienceSII", new { @class = "text-danger" })
+                                                    <script>
+                                                        $(document).ready(function () {
+                                                            $("#SL2OneYearExp").attr('name', 'sl2radio');
+                                                            $("#SL2ThreeYearExp").attr('name', 'sl2radio');
+                                                            $("#SL2FourYearExp").attr('name', 'sl2radio');
+                                                            console.log("changed name of radio buttons");
+                                                        });
+                                                    </script>
+
+
+                                                    @*@Html.LabelFor(m => m.SL2OneYearExp)*@
+                                                    <label>@Html.RadioButtonFor(m => m.SL2OneYearExp, true, "SL2OneYearExp") One year in the California state service performing professional librarian duties at ta level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Senior Librarian</a> or a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a></label>
+                                                    <label> @Html.RadioButtonFor(m => m.SL2ThreeYearExp, true, "SL2ThreeYearExp") Three years of experience performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Librarian</a></label>
+                                                    <label> @Html.RadioButtonFor(m => m.SL2FourYearExp, true, "SL2FourYearExp") Four years of increasingly responsible and varied professional library experience such as having charge of a small library or subordinate section of a major library, at least one year of which shall have been comparable in level of responsibility to a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a></label>
+                                                    @Html.ValidationMessage("SL2OneYearExp", new { @class = "text-danger" })
                                                 </div>
                                             </div>
-                                            <br>
 
-                                            <div id="senLibInfoExperience" class="basicInfoExperience" style="display: none;">
+                                            <div id="PLInfoExperience" class="basicInfoExperience">
+
+                                                <br>
                                                 <p>
-                                                    <strong style="text-decoration: underline;">Senior Librarian</strong>
+                                                    <strong style="text-decoration: underline;">Principal Librarian</strong>
                                                 </p>
 
                                                 <em>
-                                                    @Html.LabelFor(m => m.HasExperiencePL, new { @class = "normal" })
+                                                    @Html.LabelFor(m => m.PLOneYearExp, new { @class = "normal" })
                                                 </em>
 
                                                 <div class="radio">
-                                                    @Html.LabelFor(m => m.HasExperiencePL)
-                                                    <label>@Html.RadioButtonFor(m => m.HasExperiencePL, true, "ExperiencePL") One year in the California state service performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian II</a></label>
-                                                    <label> @Html.RadioButtonFor(m => m.HasExperiencePL, true, "ExperiencePL") Two years of experience performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a> or a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Senior Librarian</a></label>
-                                                    <label> @Html.RadioButtonFor(m => m.HasExperiencePL, true, "ExperiencePL") Five years of increasingly responsible and varied professional library experience, at least two years of which shall have been comparable in level of responsibility to a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian II</a> in charge of a major section of a large library or a large independent branch library</label>
-                                                    @Html.ValidationMessage("ExperiencePL", new { @class = "text-danger" })
+                                                    <script>
+                                                        $(document).ready(function () {
+                                                            $("#PLOneYearExp").attr('name', 'plradio');
+                                                            $("#PLTwoYearExp").attr('name', 'plradio');
+                                                            $("#PLFiveYearExp").attr('name', 'plradio');
+                                                            console.log("changed name of radio buttons");
+                                                        });
+                                                    </script>
+                                                    @*@Html.LabelFor(m => m.PLOneYearExp)*@
+                                                    <label>@Html.RadioButtonFor(m => m.PLOneYearExp, true, "PLOneYearExp") One year in the California state service performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian II</a></label>
+                                                    <label> @Html.RadioButtonFor(m => m.PLTwoYearExp, true, "PLTwoYearExp") Two years of experience performing professional librarian duties at a level of responsibility equivalent to that of a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian I</a> or a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Senior Librarian</a></label>
+                                                    <label> @Html.RadioButtonFor(m => m.PLFiveYearExp, true, "PLFiveYearExp") Five years of increasingly responsible and varied professional library experience, at least two years of which shall have been comparable in level of responsibility to a <a href="http://www.calhr.ca.gov/state-hr-professionals/pages/2951.aspx">Supervising Librarian II</a> in charge of a major section of a large library or a large independent branch library</label>
+                                                    @Html.ValidationMessage("PLOneYearExp", new { @class = "text-danger" })
                                                 </div>
-                                            </div>
-                                            <br>
 
-                                            <div id="libFuncExperience" style="display:none">
+                                            </div>
+
+                                            <br>
+                                            <div id="libFuncExperience">
                                                 <p>
                                                     <em>
                                                         Please describe your highest level of experience in each of the following library functions for Librarian:
@@ -587,24 +640,78 @@
                                     <div id='collapse4' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading4'>
                                         <div class='panel-body'>
 
+                                            <script>
+                                                        $(document).ready(function () {
+
+                                                            console.log("changed name of question radio buttons");
+
+                                                            $("#Q1None").attr('name', 'q1');
+                                                            $("#Q1Limited").attr('name', 'q1');
+                                                            $("#Q1Considerable").attr('name', 'q1');
+
+                                                            $("#Q2None").attr('name', 'q2');
+                                                            $("#Q2Limited").attr('name', 'q2');
+                                                            $("#Q2Considerable").attr('name', 'q2');
+
+                                                            $("#Q3None").attr('name', 'q3');
+                                                            $("#Q3Limited").attr('name', 'q3');
+                                                            $("#Q3Considerable").attr('name', 'q3');
+
+                                                            $("#Q4None").attr('name', 'q4');
+                                                            $("#Q4Limited").attr('name', 'q4');
+                                                            $("#Q4Considerable").attr('name', 'q4');
+
+                                                            $("#Q5None").attr('name', 'q5');
+                                                            $("#Q5Limited").attr('name', 'q5');
+                                                            $("#Q5Considerable").attr('name', 'q5');
+
+                                                            $("#Q6None").attr('name', 'q6');
+                                                            $("#Q6Limited").attr('name', 'q6');
+                                                            $("#Q6Considerable").attr('name', 'q6');
+
+                                                            $("#Q7None").attr('name', 'q7');
+                                                            $("#Q7Limited").attr('name', 'q7');
+                                                            $("#Q7Considerable").attr('name', 'q7');
+
+                                                            $("#Q9None").attr('name', 'q9');
+                                                            $("#Q9Limited").attr('name', 'q9');
+                                                            $("#Q9Considerable").attr('name', 'q9');
+
+                                                            $("#Q10None").attr('name', 'q10');
+                                                            $("#Q10Limited").attr('name', 'q10');
+                                                            $("#Q10Considerable").attr('name', 'q10');
+
+                                                            $("#Q11None").attr('name', 'q11');
+                                                            $("#Q11Limited").attr('name', 'q11');
+                                                            $("#Q11Considerable").attr('name', 'q11');
+
+                                                            $("#Q12None").attr('name', 'q12');
+                                                            $("#Q12Limited").attr('name', 'q12');
+                                                            $("#Q12Considerable").attr('name', 'q12');
+                                                            
+
+                                                        });
+                                            </script>
+
                                             <!--Q1-->
                                             <div class="tab-question-Q1">
-                                                <div id="" class="basicInfoExperience" style="display: none;">
-                                                    <em>
-                                                        @Html.LabelFor(m => m.RateQ1, new { @class = "normal" })
-                                                    </em>
 
-                                                    <div class="radio">
-                                                        @Html.LabelFor(m => m.RateQ1)
-                                                        <label>@Html.RadioButtonFor(m => m.RateQ1, true, "RateQ1") None</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ1, true, "RateQ1") Limited</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ1, true, "RateQ1") Considerable</label>
-                                                        @Html.ValidationMessage("RateQ1", new { @class = "text-danger" })
-                                                    </div>
+                                                <p>
+                                                    @Html.LabelFor(m => m.Q1None, new { @class = "text-accent-p2" })
+                                                </p>
+
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q1None, true, "Q1None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q1Limited, true, "Q1Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q1Considerable, true, "Q1Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q1None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q1Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q1Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q1, new { @class = "text-accent-p2" })
+                                                    <span class="required-label">*</span>
+                                                    @Html.LabelFor(m => m.Q1)
                                                     @Html.TextAreaFor(m => m.Q1, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
                                                 </div>
 
@@ -625,28 +732,31 @@
                                                     @Html.LabelFor(m => m.PhoneNumQ1)
                                                     @Html.TextAreaFor(m => m.PhoneNumQ1, new { type = "text", @class = "form-control" })
                                                 </div>
+
                                                 <hr />
                                             </div>
 
                                             <!--Q2-->
                                             <div class="tab-question-Q2">
 
-                                                <div id="" class="basicInfoExperience" style="display: none;">
-                                                    <em>
-                                                        @Html.LabelFor(m => m.RateQ2, new { @class = "normal" })
-                                                    </em>
+                                                <p>
+                                                    @Html.LabelFor(m => m.Q2None, new { @class = "text-accent-p2" })
+                                                </p>
 
-                                                    <div class="radio">
-                                                        @Html.LabelFor(m => m.RateQ2)
-                                                        <label>@Html.RadioButtonFor(m => m.RateQ2, true, "RateQ2") None</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ2, true, "RateQ2") Limited</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ2, true, "RateQ2") Considerable</label>
-                                                        @Html.ValidationMessage("RateQ2", new { @class = "text-danger" })
-                                                    </div>
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q2None, true, "Q2None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q2Limited, true, "Q2Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q2Considerable, true, "Q2Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q2None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q2Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q2Considerable", new { @class = "text-danger" })
+
                                                 </div>
 
+
                                                 <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q2, new { @class = "text-accent-p2" })
+                                                    <span class="required-label">*</span>
+                                                    @Html.LabelFor(m => m.Q2)
                                                     @Html.TextAreaFor(m => m.Q2, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
                                                 </div>
 
@@ -672,22 +782,22 @@
 
                                             <!--Q3-->
                                             <div class="tab-question-Q3">
-                                                <div id="" class="basicInfoExperience" style="display: none;">
-                                                    <em>
-                                                        @Html.LabelFor(m => m.RateQ3, new { @class = "normal" })
-                                                    </em>
+                                                <p>
+                                                    @Html.LabelFor(m => m.Q3None, new { @class = "text-accent-p2" })
+                                                </p>
 
-                                                    <div class="radio">
-                                                        @Html.LabelFor(m => m.RateQ3)
-                                                        <label>@Html.RadioButtonFor(m => m.RateQ3, true, "RateQ3") None</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ3, true, "RateQ3") Limited</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ3, true, "RateQ3") Considerable</label>
-                                                        @Html.ValidationMessage("RateQ3", new { @class = "text-danger" })
-                                                    </div>
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q3None, true, "Q3None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q3Limited, true, "Q3Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q3Considerable, true, "Q3Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q3None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q3Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q3Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q3, new { @class = "text-accent-p2" })
+                                                    <span class="required-label">*</span>
+                                                    @Html.LabelFor(m => m.Q3)
                                                     @Html.TextAreaFor(m => m.Q3, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
                                                 </div>
 
@@ -713,22 +823,25 @@
 
                                             <!--Q4-->
                                             <div class="tab-question-Q4">
-                                                <div id="" class="basicInfoExperience" style="display: none;">
-                                                    <em>
-                                                        @Html.LabelFor(m => m.RateQ4, new { @class = "normal" })
-                                                    </em>
 
-                                                    <div class="radio">
-                                                        @Html.LabelFor(m => m.RateQ4)
-                                                        <label>@Html.RadioButtonFor(m => m.RateQ4, true, "RateQ4") None</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ4, true, "RateQ4") Limited</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ4, true, "RateQ4") Considerable</label>
-                                                        @Html.ValidationMessage("RateQ4", new { @class = "text-danger" })
-                                                    </div>
+                                                <p>
+                                                    @Html.LabelFor(m => m.Q4None, new { @class = "text-accent-p2" })
+                                                </p>
+
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q4None, true, "Q4None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q4Limited, true, "Q4Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q4Considerable, true, "Q4Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q4None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q4Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q4Considerable", new { @class = "text-danger" })
+
+
                                                 </div>
 
+
                                                 <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q4, new { @class = "text-accent-p2" })
+                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q4)
                                                     @Html.TextAreaFor(m => m.Q4, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
                                                 </div>
 
@@ -754,22 +867,21 @@
 
                                             <!--Q5-->
                                             <div class="tab-question-Q5">
-                                                <div id="" class="basicInfoExperience" style="display: none;">
-                                                    <em>
-                                                        @Html.LabelFor(m => m.RateQ5, new { @class = "normal" })
-                                                    </em>
+                                                <p>
+                                                    @Html.LabelFor(m => m.Q5None, new { @class = "text-accent-p2" })
+                                                </p>
 
-                                                    <div class="radio">
-                                                        @Html.LabelFor(m => m.RateQ5)
-                                                        <label>@Html.RadioButtonFor(m => m.RateQ5, true, "RateQ5") None</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ5, true, "RateQ5") Limited</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ5, true, "RateQ5") Considerable</label>
-                                                        @Html.ValidationMessage("RateQ5", new { @class = "text-danger" })
-                                                    </div>
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q5None, true, "Q5None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q5Limited, true, "Q5Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q5Considerable, true, "Q5Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q5None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q5Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q5Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q5, new { @class = "text-accent-p2" })
+                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q5)
                                                     @Html.TextAreaFor(m => m.Q5, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
                                                 </div>
 
@@ -795,22 +907,21 @@
 
                                             <!--Q6-->
                                             <div class="tab-question-Q6">
-                                                <div id="" class="basicInfoExperience" style="display: none;">
-                                                    <em>
-                                                        @Html.LabelFor(m => m.RateQ6, new { @class = "normal" })
-                                                    </em>
+                                                <p>
+                                                    @Html.LabelFor(m => m.Q6None, new { @class = "text-accent-p2" })
+                                                </p>
 
-                                                    <div class="radio">
-                                                        @Html.LabelFor(m => m.RateQ6)
-                                                        <label>@Html.RadioButtonFor(m => m.RateQ6, true, "RateQ6") None</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ6, true, "RateQ6") Limited</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ6, true, "RateQ6") Considerable</label>
-                                                        @Html.ValidationMessage("RateQ6", new { @class = "text-danger" })
-                                                    </div>
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q6None, true, "Q6None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q6Limited, true, "Q6Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q6Considerable, true, "Q6Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q6None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q6Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q6Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q6, new { @class = "text-accent-p2" })
+                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q6)
                                                     @Html.TextAreaFor(m => m.Q6, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
                                                 </div>
 
@@ -835,23 +946,23 @@
                                             </div>
 
                                             <!--Q7-->
-                                            <div class="tab-question-Q7" style="display: block;">
-                                                <div id="" class="basicInfoExperience" style="display: none;">
-                                                    <em>
-                                                        @Html.LabelFor(m => m.RateQ7, new { @class = "normal" })
-                                                    </em>
+                                            <div class="tab-question-Q7">
+                                                <p>
+                                                    @Html.LabelFor(m => m.Q7None, new { @class = "text-accent-p2" })
+                                                </p>
 
-                                                    <div class="radio">
-                                                        @Html.LabelFor(m => m.RateQ7)
-                                                        <label>@Html.RadioButtonFor(m => m.RateQ7, true, "RateQ7") None</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ7, true, "RateQ7") Limited</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ7, true, "RateQ7") Considerable</label>
-                                                        @Html.ValidationMessage("RateQ7", new { @class = "text-danger" })
-                                                    </div>
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q7None, true, "Q7None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q7Limited, true, "Q7Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q7Considerable, true, "Q7Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q7None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q7Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q7Considerable", new { @class = "text-danger" })
                                                 </div>
 
+
                                                 <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q7, new { @class = "text-accent-p2" })
+                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q7)
                                                     @Html.TextAreaFor(m => m.Q7, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
                                                 </div>
 
@@ -876,64 +987,37 @@
                                             </div>
 
                                             <!--Q8-->
-                                            <div class="tab-question-Q8" style="display: block;">
-                                                <div id="" class="basicInfoExperience" style="display: none;">
-                                                    <em>
-                                                        @Html.LabelFor(m => m.RateQ8, new { @class = "normal" })
-                                                    </em>
-
-                                                    <div class="radio">
-                                                        @Html.LabelFor(m => m.RateQ8)
-                                                        <label>@Html.RadioButtonFor(m => m.RateQ8, true, "RateQ8") None</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ8, true, "RateQ8") Limited</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ8, true, "RateQ8") Considerable</label>
-                                                        @Html.ValidationMessage("RateQ8", new { @class = "text-danger" })
-                                                    </div>
-                                                </div>
+                                            <div class="tab-question-Q8">
+                                                <p>
+                                                    <label class = "text-accent-p2" >8. Please describe the methods you use to stay abreast of best practices and the latest trends in library services and technology, for example, any association affiliations, conferences, seminars attended, training attended or given, or any other resources utilized.</label>
+                                                </p>
 
                                                 <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q8, new { @class = "text-accent-p2" })
+                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q8)
                                                     @Html.TextAreaFor(m => m.Q8, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
                                                 </div>
 
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.NameQ8)
-                                                    @Html.TextAreaFor(m => m.NameQ8, new { type = "text", @class = "form-control" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.EmailQ8)
-                                                    @Html.TextAreaFor(m => m.EmailQ8, new { type = "Email", @class = "form-control", placeholder = "example@example.com" })
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <span class="required-label">*</span>
-                                                    @Html.LabelFor(m => m.PhoneNumQ8)
-                                                    @Html.TextAreaFor(m => m.PhoneNumQ8, new { type = "text", @class = "form-control" })
-                                                </div>
                                                 <hr />
                                             </div>
 
                                             <!--Q9-->
-                                            <div class="tab-question-Q9" style="display: block;">
-                                                <div id="" class="basicInfoExperience" style="display: none;">
-                                                    <em>
-                                                        @Html.LabelFor(m => m.RateQ9, new { @class = "normal" })
-                                                    </em>
+                                            <div class="tab-question-Q9 tab-SL2-question">
 
-                                                    <div class="radio">
-                                                        @Html.LabelFor(m => m.RateQ9)
-                                                        <label>@Html.RadioButtonFor(m => m.RateQ9, true, "RateQ9") None</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ9, true, "RateQ9") Limited</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ9, true, "RateQ9") Considerable</label>
-                                                        @Html.ValidationMessage("RateQ9", new { @class = "text-danger" })
-                                                    </div>
+                                                <p>
+                                                    @Html.LabelFor(m => m.Q9None, new { @class = "text-accent-p2" })
+                                                </p>
+
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q9None, true, "Q9None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q9Limited, true, "Q9Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q9Considerable, true, "Q9Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q9None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q9Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q9Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q9, new { @class = "text-accent-p2" })
+                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q9)
                                                     @Html.TextAreaFor(m => m.Q9, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
                                                 </div>
 
@@ -958,23 +1042,23 @@
                                             </div>
 
                                             <!--Q10-->
-                                            <div class="tab-question-Q10" style="display: block;">
-                                                <div id="" class="basicInfoExperience" style="display: none;">
-                                                    <em>
-                                                        @Html.LabelFor(m => m.RateQ10, new { @class = "normal" })
-                                                    </em>
+                                            <div class="tab-question-Q10 tab-SL2-question">
 
-                                                    <div class="radio">
-                                                        @Html.LabelFor(m => m.RateQ10)
-                                                        <label>@Html.RadioButtonFor(m => m.RateQ10, true, "RateQ10") None</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ10, true, "RateQ10") Limited</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ10, true, "RateQ10") Considerable</label>
-                                                        @Html.ValidationMessage("RateQ10", new { @class = "text-danger" })
-                                                    </div>
+                                                <p>
+                                                    @Html.LabelFor(m => m.Q10None, new { @class = "text-accent-p2" })
+                                                </p>
+
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q10None, true, "Q10None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q10Limited, true, "Q10Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q10Considerable, true, "Q10Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q10None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q10Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q10Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q10, new { @class = "text-accent-p2" })
+                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q10)
                                                     @Html.TextAreaFor(m => m.Q10, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
                                                 </div>
 
@@ -999,23 +1083,23 @@
                                             </div>
 
                                             <!--Q11-->
-                                            <div class="tab-question-Q11" style="display: block;">
-                                                <div id="" class="basicInfoExperience" style="display: none;">
-                                                    <em>
-                                                        @Html.LabelFor(m => m.RateQ11, new { @class = "normal" })
-                                                    </em>
+                                            <div class="tab-question-Q11 tab-PL-question">
 
-                                                    <div class="radio">
-                                                        @Html.LabelFor(m => m.RateQ11)
-                                                        <label>@Html.RadioButtonFor(m => m.RateQ11, true, "RateQ11") None</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ11, true, "RateQ11") Limited</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ11, true, "RateQ11") Considerable</label>
-                                                        @Html.ValidationMessage("RateQ11", new { @class = "text-danger" })
-                                                    </div>
+                                                <p>
+                                                    @Html.LabelFor(m => m.Q11None, new { @class = "text-accent-p2" })
+                                                </p>
+
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q11None, true, "Q11None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q11Limited, true, "Q11Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q11Considerable, true, "Q11Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q11None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q11Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q11Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q11, new { @class = "text-accent-p2" })
+                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q11)
                                                     @Html.TextAreaFor(m => m.Q11, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
                                                 </div>
 
@@ -1040,23 +1124,23 @@
                                             </div>
 
                                             <!--Q12-->
-                                            <div class="tab-question-Q12" style="display: block;">
-                                                <div id="" class="basicInfoExperience" style="display: none;">
-                                                    <em>
-                                                        @Html.LabelFor(m => m.RateQ12, new { @class = "normal" })
-                                                    </em>
+                                            <div class="tab-question-Q12 tab-PL-question">
 
-                                                    <div class="radio">
-                                                        @Html.LabelFor(m => m.RateQ12)
-                                                        <label>@Html.RadioButtonFor(m => m.RateQ12, true, "RateQ12") None</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ12, true, "RateQ12") Limited</label>
-                                                        <label> @Html.RadioButtonFor(m => m.RateQ12, true, "RateQ12") Considerable</label>
-                                                        @Html.ValidationMessage("RateQ12", new { @class = "text-danger" })
-                                                    </div>
+                                                <p>
+                                                    @Html.LabelFor(m => m.Q12None, new { @class = "text-accent-p2" })
+                                                </p>
+
+                                                <div class="container radio">
+                                                    <p>@Html.RadioButtonFor(m => m.Q12None, true, "Q12None") None</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q12Limited, true, "Q12Limited") Limited</p>
+                                                    <p> @Html.RadioButtonFor(m => m.Q12Considerable, true, "Q12Considerable") Considerable</p>
+                                                    @Html.ValidationMessage("Q12None", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q12Limited", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("Q12Considerable", new { @class = "text-danger" })
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q12, new { @class = "text-accent-p2" })
+                                                    <span class="required-label">*</span>@Html.LabelFor(m => m.Q12)
                                                     @Html.TextAreaFor(m => m.Q12, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
                                                 </div>
 
@@ -1191,10 +1275,10 @@
                 {
                     <div class="section">
                         <p class="regular">
-                            Congratulations!  You have successfully submitted your Resume and Supplemental Application materials for the California State 
-                            Library’s Supervising Librarian I, Supervising Librarian II, Principal Librarian open examination.  If you do 
+                            Congratulations!  You have successfully submitted your Resume and Supplemental Application materials for the California State
+                            Library’s Supervising Librarian I, Supervising Librarian II, Principal Librarian open examination.  If you do
                             <strong style="text-decoration: underline;">not</strong> receive a follow-up e-mail from us within 5 business days,
-                            please contact us at <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or (916) 654-0202.  
+                            please contact us at <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or (916) 654-0202.
                             This e-mail will include information regarding the next steps in the examination and hiring process.
                         </p>
 
@@ -1212,5 +1296,6 @@
             </div>
         </div>
     </main>
+    
 </div>
 

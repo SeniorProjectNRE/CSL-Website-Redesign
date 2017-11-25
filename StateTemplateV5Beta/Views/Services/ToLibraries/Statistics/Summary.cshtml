@@ -1,11 +1,111 @@
-﻿
-@{
-    ViewBag.Title = "Summary";
+﻿@{
+    ViewBag.Title = "CSL - California's Public Libraries at a Glance";
+    ViewBag.PageTitle = "California's Public Libraries at a Glance (FY 2015 - 16 data)";
+    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Description = "This page provides general statistics about California's public libraries and their services to the public.";
+    ViewBag.Keywords = "statistics, data";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Summary</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/to-libraries">To Libraries</a></li>
+                    <li><a href="/services/to-libraries/statistics/"> Public Library Statistics</a></li>
+                    <li class="active">Summary</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <div class="panel panel-default photo-left">
+                        <div class="panel-heading">
+                            <h4>Locations, staffing and facilities</h4>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-overstated">
+                                <li>184 jurisdictions</li>
+                                <li>1119 libraries</li>
+                                <li>16,598 staff</li>
+                                <li>1,707 volunteer FTE per week</li>
+                            </ul>
+                            <div class="photo" style="background-image: url(../../../../Content/StateTemplate/images/services/toLibraries/Statistics/lib.png); width: 100px; height: 115px; top: 40px; left:50px" alt="Library"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default photo-left">
+                        <div class="panel-heading">
+                            <h4>Collections and Circulation</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="half">
+                                <ul class="list-overstated">
+                                    <li>82,185,788 total collection items (physical and digital)</li>
+                                    <li>Total collection use: 278,070,945</li>
+                                    <li>Total collection expenditures: $131,437,165</li>
+                                    <li>Physical item circulation: 177,370,168</li>
+                                </ul>
+                            </div>
+
+                            <div class="half">
+                                <ul class="list-overstated">
+                                    <li>Children's books held: 2,360,016</li>
+                                    <li>Young adult books held: 3,216,006</li>
+                                    <li>Interlibrary loans made: 3,526,193</li>
+                                    <li>Interlibrary loans borrowed: 3,297,841</li>
+                                </ul>
+                            </div>
+                            <div class="photo" style="background-image: url(../../../../Content/StateTemplate/images/services/toLibraries/Statistics/book.png); width: 100px; height: 115px; top: 40px; left:50px" alt="Book"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default photo-left">
+                        <div class="panel-heading">
+                            <h4>Public use</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="half">
+                                <ul class="list-overstated">
+                                    <li>154,544,298 library visits</li>
+                                    <li>19,251,121 reference questions</li>
+                                    <li>117,332 adult programs; 1,766,166 program attendance</li>
+                                    <li>8,921 young adult programs; 600,033 program attendance</li>
+                                </ul>
+                            </div>
+
+                            <div class="half">
+                                <ul class="list-overstated">
+                                    <li>231,824 children's programs; 7,450,369 program attendance</li>
+                                    <li>29,126,038 annual uses of public internet computers</li>
+                                    <li>128,278,588 virtual visits to library websites</li>
+                                </ul>
+                            </div>
+                            <div class="photo" style="background-image: url(../../../../Content/StateTemplate/images/services/toLibraries/Statistics/people.jpg); width: 100px; height: 115px; top: 40px; left:50px" alt="People"></div>
+                        </div>
+                    </div>
+
+                    <p>
+                        For more statistics on California's public libraries, visit the California Public Library Statistics portal at <a href="http://www.californialibrarystatistics.com" target="_blank"">http://www.californialibrarystatistics.com</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
