@@ -1686,7 +1686,7 @@
     <Content Include="Views\Collections\OnlineExhibits\OnlineExhibits.cshtml" />
     <Content Include="Views\Collections\OnlineExhibits\Hayden.cshtml" />
     <Content Include="Views\Collections\Publications\Publications.cshtml" />
-    <Content Include="Views\Collections\Publications\CAPublications.cshtml" />
+    <Content Include="Views\GovernmentPublications\CAPublications.cshtml" />
     <Content Include="Views\Collections\Publications\LibraryLaws.cshtml" />
     <Content Include="Views\Contact\Contact.cshtml" />
     <Content Include="Views\CRB\Newsletters.cshtml" />
