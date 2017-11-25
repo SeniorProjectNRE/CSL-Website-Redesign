@@ -24,7 +24,7 @@ namespace StateTemplateV5Beta.Controllers.Grants
         }
 
         // GET: contacts
-        [Route("contacts")]
+        [Route("contact")]
         public ActionResult Contacts()
         {
             return View("~/Views/Grants/CivilLiberties/Contacts.cshtml");
