@@ -1,7 +1,9 @@
 ﻿@model CSLBusinessObjects.Models.Exams.LPCModel
 @{
     ViewBag.Title = "Apply";
-    ViewBag.PageTitle = "Library Programs Consultant Supplemental Application";
+    ViewBag.PageTitle = "CSL - Library Programs Consultant Exam Supplemental Application";
+    ViewBag.Author = "Matt Loller, Alan Cleetus";
+    ViewBag.Description = "In order to be considered for these jobs, it is first necessary for you to take and pass a civil service examination with a score that is among the highest of the applicants who take the test. Along with submission of a detailed resume, completion of this supplemental application is the examination process. This supplemental application solicits specific information about your experience and background that is directly relevant to these jobs. Thank you for your interest in the position of Library Programs Consultant at the California State Library.";
 }
 
 <head>
@@ -11,6 +13,9 @@
         }
     </style>
 
+    <title>@ViewBag.Title</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -22,7 +27,7 @@
         <div class="section">
             <div class="container">
 
-                <ol class="breadcrumb dynamic"></ol>
+                <ol class="breadcrumb "><li><a href="/">Home</a></li><li><a href="/work-with-us/">work with us</a></li><li><a href="/work-with-us/jobs/">jobs</a></li><li><a href="/work-with-us/jobs/library-program-consultant/">library program consultant exam</a></li><li class="active">apply</li></ol>
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
 
                 <div class="group">
@@ -168,17 +173,6 @@
 
                                             <br>
 
-                                            @Html.LabelFor(m => m.HasEducation)
-
-
-                                            <div class="radio">
-
-                                                <label>@Html.RadioButtonFor(m => m.HasEducation, true, "HasEducation") Yes</label>
-                                                <label> @Html.RadioButtonFor(m => m.HasEducation, true, "HasEducation") No</label>
-                                                @Html.ValidationMessage("HasEducation", new { @class = "text-danger" })
-                                            </div>
-
-
                                             @Html.LabelFor(m => m.OneYearExp)
 
 
@@ -259,13 +253,9 @@
                                                             $("#Q5Limited").attr('name', 'q5');
                                                             $("#Q5Considerable").attr('name', 'q5');
 
-                                                            $("#Q6None").attr('name', 'q6');
-                                                            $("#Q6Limited").attr('name', 'q6');
-                                                            $("#Q6Considerable").attr('name', 'q6');
-
-                                                            $("#Q7None").attr('name', 'q7');
-                                                            $("#Q7Limited").attr('name', 'q7');
-                                                            $("#Q7Considerable").attr('name', 'q7');
+                                                            $("#Q7Average").attr('name', 'q7');
+                                                            $("#Q7AboveAverage").attr('name', 'q7');
+                                                            $("#Q7Outstanding").attr('name', 'q7');
 
                                                         });
                                         </script>
@@ -500,24 +490,18 @@
                                         <!--Q7-->
                                         <div class="tab-question-Q7">
                                             <p>
-                                                @Html.LabelFor(m => m.Q7None, new { @class = "text-accent-p2" })
+                                                @Html.LabelFor(m => m.Q7Average, new { @class = "text-accent-p2" })
                                             </p>
 
                                             <div class="container radio">
-                                                <p>@Html.RadioButtonFor(m => m.Q7None, true, "Q7None") None</p>
-                                                <p> @Html.RadioButtonFor(m => m.Q7Limited, true, "Q7Limited") Limited</p>
-                                                <p> @Html.RadioButtonFor(m => m.Q7Considerable, true, "Q7Considerable") Considerable</p>
-                                                @Html.ValidationMessage("Q7None", new { @class = "text-danger" })
-                                                @Html.ValidationMessage("Q7Limited", new { @class = "text-danger" })
-                                                @Html.ValidationMessage("Q7Considerable", new { @class = "text-danger" })
+                                                <p>@Html.RadioButtonFor(m => m.Q7Average, true, "Q7Average") Average</p>
+                                                <p> @Html.RadioButtonFor(m => m.Q7AboveAverage, true, "Q7AboveAverage") Above Average</p>
+                                                <p> @Html.RadioButtonFor(m => m.Q7Outstanding, true, "Q7Outstanding") Outstanding</p>
+                                                @Html.ValidationMessage("Q7Average", new { @class = "text-danger" })
+                                                @Html.ValidationMessage("Q7AboveAverage", new { @class = "text-danger" })
+                                                @Html.ValidationMessage("Q7Outstanding", new { @class = "text-danger" })
                                             </div>
-
-
-                                            <div class="form-group">
-                                                <span class="required-label">*</span>@Html.LabelFor(m => m.Q7)
-                                                @Html.TextAreaFor(m => m.Q7, new { maxlength = "900", @class = "form-control" }) <span>900 characters limit</span>
-                                            </div>
-
+                                             
                                             <div class="form-group">
                                                 <span class="required-label">*</span>
                                                 @Html.LabelFor(m => m.NameQ7)
