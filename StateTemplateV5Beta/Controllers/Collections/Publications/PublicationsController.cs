@@ -17,13 +17,6 @@ namespace StateTemplateV5Beta.Controllers.Collections
         }
 
         // GET: Publications
-        [Route("ca-publications")]
-        public ActionResult CAPublications()
-        {
-            return View("~/Views/Collections/Publications/CAPublications.cshtml");
-        }
-
-        // GET: Publications
         [Route("library-laws")]
         public ActionResult LibraryLaws()
         {
