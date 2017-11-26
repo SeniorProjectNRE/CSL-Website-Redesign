@@ -30,6 +30,10 @@
 
 <script>
     $(document).ready(function () {
+        $('.nav-tabs a').click(function () {
+            $(this).tab('show');
+            return false;
+        });
         $('.alphabet-content').hide();
         $('#tab-a').show();
         $('#alphabet-select').change(function () {
@@ -116,9 +120,9 @@
         <div class="tab-group">
             <span class="ca-gov-icon-favorite"></span>
             <!-- Nav tabs - NOTE: UNIQUE ID IS REQUIRED -->
-            <ul id="homeTabs" class="nav nav-tabs responsive" role="tablist">
-                <li class="active"><a href="#category" role="tab" data-toggle="tab">By Category</a></li>
-                <li><a href="#alphabet" role="tab" data-toggle="tab">By Alphabet</a></li>
+            <ul id="homeTabs" class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#category" role="tab">By Category</a></li>
+                <li><a href="#alphabet" role="tab">By Alphabet</a></li>
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
