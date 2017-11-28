@@ -257,52 +257,6 @@ namespace CSLDataAccessLayer
             return res;
         }
 
-        //public List<GrantsModel> GetAllGrants(string grantNum, string year, string library, string project, int award)
-        //{
-        //    List<GrantsModel> res = new List<GrantsModel>();
-        //    GrantsModel grantsModel;
-
-        //    string dbConnectionString = _dbConnectionString;
-        //    SqlConnection conn = new SqlConnection(dbConnectionString);
-        //    SqlCommand cmd = new SqlCommand("[grant].[uspSeeAllGrants]", conn);
-        //    cmd.CommandType = CommandType.StoredProcedure;
-
-        //    if (grantNum != null) { cmd.Parameters.AddWithValue("@GrantFilter", grantNum); }
-        //    if (year != null) { cmd.Parameters.AddWithValue("@YearFilter", year); }
-        //    if (library != null) { cmd.Parameters.AddWithValue("@LibraryFilter", library); }
-        //    if (project != null) { cmd.Parameters.AddWithValue("@ProjectFilter", project); }
-        //    if (award <=7 && award >=0) { cmd.Parameters.AddWithValue("@AwardFilter", award); }
-
-        //    conn.Open();
-
-        //    try
-        //    {
-        //        using (var reader = cmd.ExecuteReader())
-        //        {
-        //            while (reader.Read())
-        //            {
-        //                grantsModel = new GrantsModel();
-        //                grantsModel.Award = Convert.ToInt32(reader["Award"]);
-        //                grantsModel.Library = reader["Library"].ToString();
-        //                grantsModel.GrantID = reader["GrantID"].ToString();
-        //                grantsModel.Project = reader["Project"].ToString();
-        //                grantsModel.Year = reader["Year"].ToString();
-        //                res.Add(grantsModel);
-        //            }
-
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw;
-        //    }
-        //    finally
-        //    {
-        //        conn.Close();
-        //    }
-
-        //    return res;
-        //}
         #endregion
 
         #region Library
