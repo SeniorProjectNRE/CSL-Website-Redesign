@@ -738,6 +738,15 @@
     <Content Include="Content\StateTemplate\images\services\toLibraries\Statistics\people.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\top.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\zipbooks.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toPublic\borrowing.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toPublic\btbl.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toPublic\comp.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toPublic\docs.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toPublic\gen-public.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toPublic\genealogy.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toPublic\onlinecol.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toPublic\reference.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toPublic\top.jpg" />
     <Content Include="Content\StateTemplate\images\services\toStateEmployees\art_legislators.jpg" />
     <Content Include="Content\StateTemplate\images\services\toStateEmployees\borrowing_materials.jpg" />
     <Content Include="Content\StateTemplate\images\services\toStateEmployees\card.jpg" />
