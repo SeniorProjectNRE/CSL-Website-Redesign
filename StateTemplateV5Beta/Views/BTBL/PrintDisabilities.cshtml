@@ -36,138 +36,138 @@
                 </p>
 
 
-                    <div class="panel panel-standout">
-                        <div class="panel-heading">
-                            <h2><span class="ca-gov-icon-info"></span> Find your county</h2>
-                             
-                        </div>
-                        <div class="panel-body">
-                            <p>
-                                Please select your county of residence from the list below to be directed to the appropriate California National Library Service for the Blind and Physically Handicapped (NLS) network library.
-                            </p>
+                <div class="panel panel-standout">
+                    <div class="panel-heading">
+                        <h2><span class="ca-gov-icon-info"></span> Find your county</h2>
 
-                            <script language="JavaScript">
-									//checkContains(choice);
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            Please select your county of residence from the list below to be directed to the appropriate California National Library Service for the Blind and Physically Handicapped (NLS) network library.
+                        </p>
 
-                        var c43 = Array("Alameda", "Alpine", "Amador", "Butte", "Calaveras", "Colusa", "Contra Costa", "Del Norte", "El Dorado", "Glenn", "Humboldt", "Inyo", "Lake", "Lassen", "Marin", "Mariposa", "Mendocino", "Merced", "Modoc", "Mono", "Monterey", "Napa", "Nevada", "Placer", "Plumas", "Sacramento", "San Benito", "San Joaquin", "San Mateo", "Santa Clara", "Santa Cruz", "Shasta", "Sierra", "Siskiyou", "Solano", "Sonoma", "Stanislaus", "Sutter", "Tehama", "Trinity", "Tuolumne", "Yolo", "Yuba");
-                        var c4 = Array("Fresno", "Kings", "Madera", "Tulare");
-                        var c1 = Array("San Francisco");
-                        var c10 = Array("Buena Vista", "Imperial", "Kern", "Los Angeles", "Orange", "Riverside", "San Bernadino", "San Diego", "Santa Barbara", "Ventura");
+                        <script language="JavaScript">
+                            //checkContains(choice);
 
-                        function myselect(obj) {
-                            $(".county_hide").hide();
-                            var findValue = obj.value;
-                            if (contains(c43, findValue))
-                                $("#c43").show();
-                            if (contains(c4, findValue))
-                                $("#c4").show();
-                            if (contains(c1, findValue))
-                                $("#c1").show();
-                            if (contains(c10, findValue))
-                                $("#c10").show();
-                        }
+                            var c43 = Array("Alameda", "Alpine", "Amador", "Butte", "Calaveras", "Colusa", "Contra Costa", "Del Norte", "El Dorado", "Glenn", "Humboldt", "Inyo", "Lake", "Lassen", "Marin", "Mariposa", "Mendocino", "Merced", "Modoc", "Mono", "Monterey", "Napa", "Nevada", "Placer", "Plumas", "Sacramento", "San Benito", "San Joaquin", "San Mateo", "Santa Clara", "Santa Cruz", "Shasta", "Sierra", "Siskiyou", "Solano", "Sonoma", "Stanislaus", "Sutter", "Tehama", "Trinity", "Tuolumne", "Yolo", "Yuba");
+                            var c4 = Array("Fresno", "Kings", "Madera", "Tulare");
+                            var c1 = Array("San Francisco");
+                            var c10 = Array("Buena Vista", "Imperial", "Kern", "Los Angeles", "Orange", "Riverside", "San Bernadino", "San Diego", "Santa Barbara", "Ventura");
 
-                        // contains function
-                        function contains(arr, findValue) {
-                            var i = arr.length;
-
-                            while (i--) {
-                                if (arr[i] === findValue) return true;
+                            function myselect(obj) {
+                                $(".county_hide").hide();
+                                var findValue = obj.value;
+                                if (contains(c43, findValue))
+                                    $("#c43").show();
+                                if (contains(c4, findValue))
+                                    $("#c4").show();
+                                if (contains(c1, findValue))
+                                    $("#c1").show();
+                                if (contains(c10, findValue))
+                                    $("#c10").show();
                             }
-                            return false;
-                        }
+
+                            // contains function
+                            function contains(arr, findValue) {
+                                var i = arr.length;
+
+                                while (i--) {
+                                    if (arr[i] === findValue) return true;
+                                }
+                                return false;
+                            }
 
 
-                            </script>
+                        </script>
 
-                            <form name="choose-county" id="select_c" action="/" method="post">
+                        <form name="choose-county" id="select_c" action="/" method="post">
 
-                                <select name="county" id="county_choice" title="Choose your county" onchange="myselect(this)">
-                                    <option selected="selected">Select your county...</option>
-                                    <option value="Alameda">Alameda</option>
-                                    <option value="Alpine">Alpine</option>
-                                    <option value="Amador">Amador</option>
-                                    <option value="Buena Vista">Buena Vista</option>
-                                    <option value="Butte">Butte</option>
-                                    <option value="Calaveras">Calaveras</option>
-                                    <option value="Colusa">Colusa</option>
-                                    <option value="Contra Costa">Contra Costa</option>
-                                    <option value="Del Norte">Del Norte</option>
-                                    <option value="El Dorado">El Dorado</option>
-                                    <option value="Fresno">Fresno</option>
-                                    <option value="Glenn">Glenn</option>
-                                    <option value="Humboldt">Humboldt</option>
-                                    <option value="Imperial">Imperial</option>
-                                    <option value="Inyo">Inyo</option>
-                                    <option value="Kern">Kern</option>
-                                    <option value="Kings">Kings</option>
-                                    <option value="Lake">Lake</option>
-                                    <option value="Lassen">Lassen</option>
-                                    <option value="Los Angeles">Los Angeles</option>
-                                    <option value="Madera">Madera</option>
-                                    <option value="Marin">Marin</option>
-                                    <option value="Mariposa">Mariposa</option>
-                                    <option value="Mendocino">Mendocino</option>
-                                    <option value="Merced">Merced</option>
-                                    <option value="Modoc">Modoc</option>
-                                    <option value="Mono">Mono</option>
-                                    <option value="Monterey">Monterey</option>
-                                    <option value="Napa">Napa</option>
-                                    <option value="Nevada">Nevada</option>
-                                    <option value="Orange">Orange</option>
-                                    <option value="Placer">Placer</option>
-                                    <option value="Plumas">Plumas</option>
-                                    <option value="Riverside">Riverside</option>
-                                    <option value="Sacramento">Sacramento</option>
-                                    <option value="San Benito">San Benito</option>
-                                    <option value="San Bernadino">San Bernardino</option>
-                                    <option value="San Diego">San Diego</option>
-                                    <option value="San Francisco">San Francisco</option>
-                                    <option value="San Joaquin">San Joaquin</option>
-                                    <option value="San Mateo">San Mateo</option>
-                                    <option value="Santa Barbara">Santa Barbara</option>
-                                    <option value="Santa Clara">Santa Clara</option>
-                                    <option value="Santa Cruz">Santa Cruz</option>
-                                    <option value="Shasta">Shasta</option>
-                                    <option value="Sierra">Sierra</option>
-                                    <option value="Siskiyou">Siskiyou</option>
-                                    <option value="Solano">Solano</option>
-                                    <option value="Sonoma">Sonoma</option>
-                                    <option value="Stanislaus">Stanislaus</option>
-                                    <option value="Sutter">Sutter</option>
-                                    <option value="Tehama">Tehama</option>
-                                    <option value="Trinity">Trinity</option>
-                                    <option value="Tulare">Tulare</option>
-                                    <option value="Tuolumne">Tuolumne</option>
-                                    <option value="Ventura">Ventura</option>
-                                    <option value="Yolo">Yolo</option>
-                                    <option value="Yuba">Yuba</option>
-                                </select>
+                            <select name="county" id="county_choice" title="Choose your county" onchange="myselect(this)">
+                                <option selected="selected">Select your county...</option>
+                                <option value="Alameda">Alameda</option>
+                                <option value="Alpine">Alpine</option>
+                                <option value="Amador">Amador</option>
+                                <option value="Buena Vista">Buena Vista</option>
+                                <option value="Butte">Butte</option>
+                                <option value="Calaveras">Calaveras</option>
+                                <option value="Colusa">Colusa</option>
+                                <option value="Contra Costa">Contra Costa</option>
+                                <option value="Del Norte">Del Norte</option>
+                                <option value="El Dorado">El Dorado</option>
+                                <option value="Fresno">Fresno</option>
+                                <option value="Glenn">Glenn</option>
+                                <option value="Humboldt">Humboldt</option>
+                                <option value="Imperial">Imperial</option>
+                                <option value="Inyo">Inyo</option>
+                                <option value="Kern">Kern</option>
+                                <option value="Kings">Kings</option>
+                                <option value="Lake">Lake</option>
+                                <option value="Lassen">Lassen</option>
+                                <option value="Los Angeles">Los Angeles</option>
+                                <option value="Madera">Madera</option>
+                                <option value="Marin">Marin</option>
+                                <option value="Mariposa">Mariposa</option>
+                                <option value="Mendocino">Mendocino</option>
+                                <option value="Merced">Merced</option>
+                                <option value="Modoc">Modoc</option>
+                                <option value="Mono">Mono</option>
+                                <option value="Monterey">Monterey</option>
+                                <option value="Napa">Napa</option>
+                                <option value="Nevada">Nevada</option>
+                                <option value="Orange">Orange</option>
+                                <option value="Placer">Placer</option>
+                                <option value="Plumas">Plumas</option>
+                                <option value="Riverside">Riverside</option>
+                                <option value="Sacramento">Sacramento</option>
+                                <option value="San Benito">San Benito</option>
+                                <option value="San Bernadino">San Bernardino</option>
+                                <option value="San Diego">San Diego</option>
+                                <option value="San Francisco">San Francisco</option>
+                                <option value="San Joaquin">San Joaquin</option>
+                                <option value="San Mateo">San Mateo</option>
+                                <option value="Santa Barbara">Santa Barbara</option>
+                                <option value="Santa Clara">Santa Clara</option>
+                                <option value="Santa Cruz">Santa Cruz</option>
+                                <option value="Shasta">Shasta</option>
+                                <option value="Sierra">Sierra</option>
+                                <option value="Siskiyou">Siskiyou</option>
+                                <option value="Solano">Solano</option>
+                                <option value="Sonoma">Sonoma</option>
+                                <option value="Stanislaus">Stanislaus</option>
+                                <option value="Sutter">Sutter</option>
+                                <option value="Tehama">Tehama</option>
+                                <option value="Trinity">Trinity</option>
+                                <option value="Tulare">Tulare</option>
+                                <option value="Tuolumne">Tuolumne</option>
+                                <option value="Ventura">Ventura</option>
+                                <option value="Yolo">Yolo</option>
+                                <option value="Yuba">Yuba</option>
+                            </select>
 
-                                <p class="submit_btn" onclick="clickChoice('Choose_choice')"></p>
+                            <p class="submit_btn" onclick="clickChoice('Choose_choice')"></p>
 
-                            </form>
+                        </form>
 
-                            <div id="c43" class="county_hide" style="display:none;">
-                                <p><span class="ca-gov-icon-info-line"></span> Contact the <a href="/btbl">California Braille and Talking Book Library</a></p>
-                            </div>
+                        <div id="c43" class="county_hide" style="display:none;">
+                            <p><span class="ca-gov-icon-info-line"></span> Contact the <a href="/btbl">California Braille and Talking Book Library</a></p>
+                        </div>
 
-                            <div id="c1" class="county_hide" style="display:none;">
-                                <p>
-                                    <span class="ca-gov-icon-info-line"></span> Contact <a href="http://sfpl.org/index.php?pg=0200002301" target="_blank">San Francisco Library for the Blind and Print Disabled</a>
-                                </p>
-                            </div>
+                        <div id="c1" class="county_hide" style="display:none;">
+                            <p>
+                                <span class="ca-gov-icon-info-line"></span> Contact <a href="http://sfpl.org/index.php?pg=0200002301" target="_blank">San Francisco Library for the Blind and Print Disabled</a>
+                            </p>
+                        </div>
 
-                            <div id="c4" class="county_hide" style="display:none;">
-                                <p><span class="ca-gov-icon-info-line"></span> Contact <a href="http://www.fresnolibrary.org/tblb/" target="_blank">Fresno County Public Talking Book Library for the Blind</a></p>
-                            </div>
+                        <div id="c4" class="county_hide" style="display:none;">
+                            <p><span class="ca-gov-icon-info-line"></span> Contact <a href="http://www.fresnolibrary.org/tblb/" target="_blank">Fresno County Public Talking Book Library for the Blind</a></p>
+                        </div>
 
-                            <div id="c10" class="county_hide" style="display:none;">
-                                <p><span class="ca-gov-icon-info-line"></span> Contact <a href="http://www.brailleinstitute.org/library" target="_blank">Braille Institute Library</a></p>
-                            </div>
+                        <div id="c10" class="county_hide" style="display:none;">
+                            <p><span class="ca-gov-icon-info-line"></span> Contact <a href="http://www.brailleinstitute.org/library" target="_blank">Braille Institute Library</a></p>
                         </div>
                     </div>
-               
+                </div>
+
 
                 <h3>National Federation for the Blind NEWSLINE ®</h3>
 
@@ -238,4 +238,3 @@
 
     </main>
 </div>
-
