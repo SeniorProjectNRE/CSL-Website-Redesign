@@ -33,14 +33,14 @@ namespace CSLBusinessObjects.Models.Exams
         #endregion
 
         #region Questions
-        [Display(Name = "1. Please rate your experience in establishing and maintaining cooperative relationships with library patrons, coworkers, and the public.")]
+        [Display(Name = "1. Please rate your experience in forming multi-agency library partnerships in order to achieve a common goal.")]
         public bool Q1None { get; set; }
 
         public bool Q1Limited { get; set; }
 
         public bool Q1Considerable { get; set; }
 
-        [Display(Name = "Please describe the techniques and strategies that you have used to establish and maintain cooperative relationships with library patrons, coworkers, and the public that support your rating. (900 characters max)")]
+        [Display(Name = "Please describe your experience to support your rating. Discuss the nature of the partnership, what was the goal of the partnership, what was the outcome of the project, and specifically, what was your role. (900 characters max)")]
         [Required(ErrorMessage = "Please describe your experience for Question 1")]
         public string Q1 { get; set; }
 
@@ -59,14 +59,14 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumQ1 { get; set; }
 
 
-        [Display(Name = "2. Please rate your experience in developing and maintaining a discrimination and harassment free work environment.")]
+        [Display(Name = "2. Please rate your experience in developing, administering, or monitoring grant funding for projects or activities.")]
         public bool Q2None { get; set; }
 
         public bool Q2Limited { get; set; }
 
         public bool Q2Considerable { get; set; }
 
-        [Display(Name = "Please describe your experience that supports your rating. Discuss the number and composition of the workforce in which you worked and what you specific ally did to create a discrimination and harassment free workplace. (900 characters max)")]
+        [Display(Name = "Please describe your experience to support your rating. Discuss the nature of the grant funding, what was the goal of the project, what was the outcome of the grant, and specifically, what was your role. (900 characters max)")]
         [Required(ErrorMessage = "Please describe your experience for Question 2")]
         public string Q2 { get; set; }
 
@@ -85,14 +85,14 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumQ2 { get; set; }
 
 
-        [Display(Name = "3. Please rate your experience in forming and/or working with teams or fostering teamwork among coworkers or work units.")]
+        [Display(Name = "3. Please rate your experience with the development and/or revision of library policies and procedures.")]
         public bool Q3None { get; set; }
 
         public bool Q3Limited { get; set; }
 
         public bool Q3Considerable { get; set; }
 
-        [Display(Name = "Please describe your experience that supports your rating. Be specific about the nature of the team, its purpose or goals, and your role in the process. (900 characters max)")]
+        [Display(Name = "Please describe your experience that supports your rating. Discuss the subject of the policy or procedure, the problem to be addressed and the way in which the policy addressed this problem. Please be specific regarding your role in the process. (900 characters max)")]
         [Required(ErrorMessage = "Please describe your experience for Question 3")]
         public string Q3 { get; set; }
 
@@ -111,14 +111,14 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumQ3 { get; set; }
 
 
-        [Display(Name = "4. 4. Please rate your experience in the development, implementation, and or evaluation of library program criteria.")]
+        [Display(Name = "4. Please rate your experience in conducting research and studies relating to the planning of grant programs. ")]
         public bool Q4None { get; set; }
 
         public bool Q4Limited { get; set; }
 
         public bool Q4Considerable { get; set; }
 
-        [Display(Name = "Please describe your experience that supports your rating. Be specific about the program, the criteria and/or metrics you developed and implemented and your assessment of their effectiveness as evaluative tools. (900 characters max)")]
+        [Display(Name = "Please describe your experience that supports your rating. Discuss the purpose of the research or study, the nature of the conclusions and recommendations, whether the study was presented in a written report and/or verbal presentation, and specifically, your role in the process. (900 characters max)")]
         [Required(ErrorMessage = "Please describe your experience for Question 4")]
         public string Q4 { get; set; }
 
@@ -137,14 +137,14 @@ namespace CSLBusinessObjects.Models.Exams
         public string PhoneNumQ4 { get; set; }
 
 
-        [Display(Name = "5. Please rate your experience in developing and using conflict resolution strategies.")]
+        [Display(Name = "5. Please rate your experience in evaluating library programs to determine their effectiveness and opportunities for improvement.")]
         public bool Q5None { get; set; }
 
         public bool Q5Limited { get; set; }
 
         public bool Q5Considerable { get; set; }
 
-        [Display(Name = "Please describe your experience that supports your rating. Be specific about the situation in which you developed and/or used conflict resolution strategies and your role in the process. (900 characters max)")]
+        [Display(Name = "Please describe your experience that supports your rating. Discuss a program that was evaluated, the extent and scope of the evaluation process, the evaluation instruments/techniques used and why they were selected, and specifically, your role in the process. (900 characters max)")]
         [Required(ErrorMessage = "Please describe your experience for Question 5")]
         public string Q5 { get; set; }
 
@@ -158,44 +158,33 @@ namespace CSLBusinessObjects.Models.Exams
         public string EmailQ5 { get; set; }
 
         [Display(Name = "Phone Number of person listed above who can verify this experience:")]
-        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 6")]
+        [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 5")]
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 5")]
         public string PhoneNumQ5 { get; set; }
 
-
-        [Display(Name = "6. Please rate your experience in supervising other employees.")]
-        public bool Q6None { get; set; }
-
-        public bool Q6Limited { get; set; }
-
-        public bool Q6Considerable { get; set; }
-
-        [Display(Name = "Please describe your experience that supports your rating. Be specific about the number and types of employees supervised, directly or indirectly, and the breadth and scope of functions they performed. (900 characters max)")]
+         
+        [Display(Name = "Discuss any association affiliations, conferences/seminars attended, training attended or given, or any other resources utilized. Discuss your roll in any associations (eg. member, officer) and the extent of your participation in conferences/seminars/training programs (organizer, participant, speaker, etc.) (900 characters max)")]
         [Required(ErrorMessage = "Please describe your experience for Question 6")]
         public string Q6 { get; set; }
 
 
-        [Display(Name = "7. Please rate your experience in managing a library budget or in evaluating the fiscal status of projects or the fiscal viability of proposals to fund activities.")]
-        public bool Q7None { get; set; }
+        [Display(Name = "7. If one were to contact your current supervisor, how would he/she rate your overall work performance.")]
+        public bool Q7Average { get; set; }
 
-        public bool Q7Limited { get; set; }
+        public bool Q7AboveAverage { get; set; }
 
-        public bool Q7Considerable { get; set; }
-
-        [Display(Name = "Please describe your fiscal management experience. Be specific about the size and complexity of the program, project or proposal that you managed or oversaw. (900 characters max)")]
-        [Required(ErrorMessage = "Please describe your experience for Question 7")]
-        public string Q7 { get; set; }
-
-        [Display(Name = "Name of person who can verify this experience:")]
-        [Required(ErrorMessage = "Contact Required for Question 8")]
+        public bool Q7Outstanding { get; set; }
+        
+        [Display(Name = "Name of current supervisor:")]
+        [Required(ErrorMessage = "Contact Required for Question 7")]
         public string NameQ7 { get; set; }
 
-        [Display(Name = "E-mail of person listed above who can verify this experience:")]
+        [Display(Name = "E-mail of current supervisor:")]
         [RegularExpression("\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*", ErrorMessage = "Please enter a valid e-mail address")]
         [Required(ErrorMessage = "Contact's E-mail Required for Question 7")]
         public string EmailQ7 { get; set; }
 
-        [Display(Name = "Phone Number of person listed above who can verify this experience:")]
+        [Display(Name = "Phone Number of current supervisor:")]
         [RegularExpression("((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}", ErrorMessage = "Please enter a valid phone number for Question 7")]
         [Required(ErrorMessage = "Contact's Phone Number Required for Question 7")]
         public string PhoneNumQ7 { get; set; }
