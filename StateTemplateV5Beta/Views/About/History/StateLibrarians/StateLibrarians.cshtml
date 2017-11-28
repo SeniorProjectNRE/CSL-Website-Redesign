@@ -1,8 +1,8 @@
 ﻿
 @{
-    ViewBag.Title = "California State Librarians";
-    ViewBag.PageTitle = "CSL - California State Librarians";
-    ViewBag.Author = "Alan Cleetus";
+    ViewBag.PageTitle = "California State Librarians";
+    ViewBag.Title = "CSL - California State Librarians";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "California State Library California State Librarians Present and Past Librarians";
 }
 
@@ -11,14 +11,18 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-    
+
 </head>
 <div id="main-content" class="main-content">
     <main class="main-primary">
         <div class="section">
             <div class="container">
 
-                <ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/about/">about library</a></li><li><a href="/about/history/">history</a></li><li class="active">state librarians</li></ol>
+                <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">about library</a></li>
+                <li><a href="/about/history/">history</a></li>
+                <li class="active">state librarians</li></ol>
 
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
 
@@ -57,12 +61,12 @@
                     </ol>
 
                     <h3><a href="http://www.cslfdn.org/exhibits.html">Profiles of State Librarians 1850 – Present</a></h3>
-                <p>* State Librarians up to 1921 were appointed by the State Library Board of Trustees. The Board was abolished in 1921 during a reorganization of state government and the Library was made a division of the Department of Finance. In 1927 Governor C. C. Young placed the Library under the Department of Education. The State Librarian then became an appointee of the governor and Milton Ferguson was reappointed as State Librarian by Governor Young. Mabel Gillis and later State Librarians were appointed by the governor in office.</p>
-                
+                    <p>* State Librarians up to 1921 were appointed by the State Library Board of Trustees. The Board was abolished in 1921 during a reorganization of state government and the Library was made a division of the Department of Finance. In 1927 Governor C. C. Young placed the Library under the Department of Education. The State Librarian then became an appointee of the governor and Milton Ferguson was reappointed as State Librarian by Governor Young. Mabel Gillis and later State Librarians were appointed by the governor in office.</p>
+
                 </div>
 
                 <div class="third">
-                    <img alt="old building" class="animated fadeInLeft" src="~/Content/StateTemplate/images/about/old_building.png"/>
+                    <img alt="old building" class="animated fadeInLeft" src="~/Content/StateTemplate/images/about/old_building.png" />
                 </div>
             </div>
         </div>
