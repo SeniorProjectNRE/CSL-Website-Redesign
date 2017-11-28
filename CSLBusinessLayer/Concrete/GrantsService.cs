@@ -15,7 +15,6 @@ namespace CSLBusinessLayer.Concrete
     {
         private IDataAccess _dataAccess;
 
-
         public GrantsService(IDataAccess DataAccess)
         {
             _dataAccess = DataAccess;

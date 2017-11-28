@@ -1,11 +1,1676 @@
 ﻿
 @{
-    ViewBag.Title = "OnlineResources";
+    ViewBag.Title = "CSL - Online Resources for State Government";
+    ViewBag.PageTitle = "Online Resources";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "California State Library";
+    ViewBag.Keywords = "California, state, Library, online, resources";
 }
 
-<div id="main-content" class="main-content">
-    <main class="main-primary">
-        <h2>OnlineResources</h2>
-    </main>
-</div>
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
 
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<style>
+    .more-details {
+        font-weight: bold;
+    }
+
+    .collapse p {
+        padding-top: 10px;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('.nav-tabs a').click(function () {
+            $(this).tab('show');
+            return false;
+        });
+        $('.alphabet-content').hide();
+        $('#tab-a').show();
+        $('#alphabet-select').change(function () {
+            dropdown = $('#alphabet-select').val();
+            $('.alphabet-content').hide();
+            console.log(dropdown);
+            //$('a[href="#' + dropdown + '"]').tab('show');
+            $('#' + dropdown).show();
+        });
+    })
+</script>
+
+<div id="main-content" class="main-content">
+    <div class="container">
+        <main class="main-primary">
+            <!-- InstanceBeginEditable name="MainContent" -->
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li class="active">Online Resources</li>
+            </ol>
+            <h1 id="title-page">Online Resources</h1>
+            <img id="page-banner" src="~/Content/StateTemplate/images/services/onlineResources/top.jpg" style="width:100%;" alt="" />
+        </main>
+        <div class="half">
+            <div class="spacer"></div>
+            <p>
+                The following online resources augment the collections of the California State Library. These resources are available to California state government officials and employees and to all visitors in our <a href="/about/">reading rooms</a>. Please check our <a href="/research/moreLinks.html">Internet Links</a> for additional online resources.
+            </p>
+            <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                <div class="expand-div" style="width:100%">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="padding:5px">
+                                    <span class="icon-block bg-blue-gradient rounded-50x">
+                                        <i class="ca-gov-icon-lightbulb"></i>
+                                    </span>
+                                    <span style="color:#046b99">How to Login from Work</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <p>The electronic databases offered to California State government employees through the California State Library are listed on our Online Resources webpage.</p>
+                                <p>The State Library uses internet protocol (IP) addresses to connect state employees to the online resources via their work computers. On our Online Resources web page, click a database name and when connected to that resource you can begin searching. If you are prompted for a username and password, your state agency may not have provided your computer's IP address to the State Library. Please ask the IT staff at your agency to contact our Information Services staff in order to check the IP address for database access.</p>
+                                <p>Please contact our Information Services staff at <a href="maito:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a> or <a href="tel:+19166540261">(916) 654-0261</a> if you have any questions about the California State Library's online resources.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" style="margin-top:5px">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title" style="color:#046b99">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="padding:5px">
+                                    <span class="icon-block bg-blue-gradient rounded-50x">
+                                        <i class="ca-gov-icon-lightbulb"></i>
+                                    </span>
+                                    <span style="color:#046b99">How to Login from Home</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <p>Using their California State Library borrower card number, state employees can access the Library's online resources from their home computers. You can apply for a library card online.</p>
+                                <p>On our Online Resources web page, click a database name. You will be prompted for your California State Library card number and password. Enter the card number and password and click submit. You should then be connected to the database and can begin searching.</p>
+                                <p>Please contact our Information Services staff at <a href="maito:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a> or <a href="tel:+19166540261">(916) 654-0261</a> if you have any questions about the California State Library's online resources.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="half">
+            <div class="animate-fadeInRight">
+                <div class="spacer"></div>
+                <div class="box-with-border" style="margin:0; width:100%; text-align:left; padding:12px 30px">
+                    <h3 style="margin:10px 0">Recently added databases:</h3>
+                    <p><a href="http://network.bepress.com/" target="_blank" rel="noopener noreferrer">Digital Commons Network</a></p>
+                    <p><a href="http://randstatestats.org" target="_blank" rel="noopener noreferrer">RAND State Statistics</a></p>
+                    <p><a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Education Source (EBSCO)</a></p>
+                </div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+        <div class="spacer"></div>
+        <div class="tab-group">
+            <span class="ca-gov-icon-favorite"></span>
+            <!-- Nav tabs - NOTE: UNIQUE ID IS REQUIRED -->
+            <ul id="homeTabs" class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#category" role="tab">By Category</a></li>
+                <li><a href="#alphabet" role="tab">By Alphabet</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="category">
+                    <div class="panel-group" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading1">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        Newspaper Articles
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://infoweb.newsbank.com" target="_blank" rel="noopener noreferrer">America's News (NewsBank)</a> <!-- (No longer available) --><a href="#c1" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c1" class="collapse">
+                                                <p>
+                                                    Provides access to full-text articles from over 900 newspapers throughout the United States, including over 100 California titles.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li><a href="http://cdnc.ucr.edu/cdnc" target="_blank" rel="noopener noreferrer">California Digital Newspaper Collection</a></li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.proquest.com/databases" target="_blank" rel="noopener noreferrer">Ethnic NewsWatch</a> <a href="#c2" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c2" class="collapse">
+                                                <p>
+                                                    Full text access to 240 state, national and international newspapers, magazines and journals of the ethnic, minority and native press. Written from the perspectives of African-American, Hispanic, Native American, Asian, Arab, Jewish and European-American cultures, articles provide news analysis and commentary as well as points-of-view not covered in the mainstream media.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!--<li><strong>Press Reader</strong></a> (No longer available)</li>-->
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.proquest.com/databases" target="_blank" rel="noopener noreferrer">Los Angeles Times Historic 1881 to 1993</a> <a href="#c3" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c3" class="collapse">
+                                                <p>
+                                                    A full-image archive of the nation's largest metropolitan daily. Every page of every issue from 1881 to 1993 cover to cover, including news stories, letters to the editor, editorials, obituaries, opinion polls, photos and maps in downloadable PDF format is available.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.newspapers.com/welcome" target="_blank" rel="noopener noreferrer">Newspapers.com</a> <a href="#c4" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c4" class="collapse">
+                                                <p>
+                                                    Through a special partnership with the California Digital Newspaper Collection, Newspapers.com provides exclusive access to over 30 newspapers in the University of California, Riverside collection, including the Oakland Tribune, and papers from San Bernardino, Santa Cruz, and other cities. (Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>.)
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://access.newspaperarchive.com" target="_blank" rel="noopener noreferrer">NewspaperARCHIVE</a>
+                                            <a href="#c5" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c5" class="collapse">
+                                                <p>
+                                                    Access historic content for over 200 California newspaper titles from 1846-2003. Every part of every page is searchable, including local articles, advertisements, editorials, classified ads, and obituaries.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!--<li>
+                                        <a href="http://proxy.library.ca.gov/login?url=http://digitalmicrofilm.proquest.com" target="_blank" rel="noopener noreferrer"><strong>ProQuest Digital Microfilm</strong>(No longer available)-->
+                                        <!--</a> <span class="tips" id="tips1" style="cursor: pointer; color:#4079b2; font-weight: bold">(Details)</span>
+                                            <div id="cxx" class="collapse">
+                                                <p>
+                                                    Features recent microfilmed newspapers &ndash; cover-to-cover and in full-image for online viewing and retrieval including the Los Angeles Times-Record Edition, Oakland Tribune, San Jose Mercury News and the San Francisco Examiner. (Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>.) Note: Browser capability limited to Microsoft Internet Explorer.
+                                                </p>
+                                            </div>
+                                        </li>-->
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.proquest.com/databases" target="_blank" rel="noopener noreferrer">San Francisco Chronicle Historic 1865 to 1922</a>
+                                            <a href="#c6" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c6" class="collapse">
+                                                <p>
+                                                    A full-image archive of the newspaper. Every page of every issue from 1865 to 1922 cover to cover, including news stories, letters to the editor, editorials, obituaries, opinion polls, photos and maps in downloadable PDF format is available.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.proquest.com/databases" target="_blank" rel="noopener noreferrer">Wall Street Journal</a> <a href="#c7" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c7" class="collapse">
+                                                <p>
+                                                    The preeminent publication for business news and information on financial markets worldwide. Users can quickly access not only top news stories about companies, people and products, but also detailed information from all the paper's sections including editorials, letters to the editor, stock and bond prices and currency exchange rates from 1984 to present.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading2">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                        Journal and Magazine Articles
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Academic Search Complete</a> <br>(multi-subject scholarly journals) <a href="#c8" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c8" class="collapse">
+                                                <p>
+                                                    A multi-discipline, full-text database covering nearly all academic areas of study – including social sciences, humanities, education, computer sciences, engineering, language and linguistics, arts and literature, medical sciences, and ethnic studies.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Business Source Complete</a> <br>(business journals and news) <a href="#c9" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c9" class="collapse">
+                                                <p>
+                                                    Contains full-text journals in all business disciplines. Non-journal content includes company profiles, financial data, industry reports, market research reports, and Morningstar reports.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://network.bepress.com/" target="_blank" rel="noopener noreferrer">Digital Commons Network</a> <a href="#c10" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c10" class="collapse">
+                                                <p>
+                                                    Free, full-text scholarly articles from hundreds of universities and colleges worldwide. Curated by university librarians and their supporting institutions, it includes a growing collection of peer-reviewed journal articles, book chapters, dissertations, working papers, conference proceedings, and other original scholarly work.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.greeninfoonline.com" target="_blank" rel="noopener noreferrer">GreenFile</a> <br>(human impact to the environment) <a href="#c11" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c11" class="collapse">
+                                                <p>
+                                                    A collection of scholarly, government and general-interest titles covering all aspects of human impact to the environment including global warming, green building, pollution, sustainable agriculture, renewable energy, recycling and more. Provides indexing and abstracts for more than 384,000 records, as well as Open Access full text for more than 4,700 records.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!--<li>
+                                            <strong>Health Source: Nursing/Academic Edition</strong> <br />(No longer available)
+                                        </li>-->
+                                        <li>
+                                            <a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=lxh" target="_blank" rel="noopener noreferrer">Library, Information Science &amp; Technology Abstracts</a> <a href="#c12" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c12" class="collapse">
+                                                <p>
+                                                    This bibliographic database provides coverage on subjects such as librarianship, classification, cataloging, bibliometrics, online information retrieval, information management, and more. Indexes journals, books, research reports, and proceedings.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!--<li>
+                                            <strong>MasterFILE</strong> (No longer available)
+                                        </li>-->
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">MEDLINE with Full Text</a> <br>(medical journals via EBSCO) <a href="#c13" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c13" class="collapse">
+                                                <p>
+                                                    Created by the National Library of Medicine, allows users to search for journal articles in the fields of medicine, nursing, dentistry, veterinary medicine and health care. The complete text is provided for nearly 1,200 journals indexed in MEDLINE.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.ncjrs.gov/library.html" target="_blank" rel="noopener noreferrer">NCJRS Abstracts Database</a> <br>(criminal justice and substance abuse) <a href="#c14" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c14" class="collapse">
+                                                <p>
+                                                    The National Criminal Justice Reference Service (NCJRS) is a federally funded resource offering justice and substance abuse information to support research, policy, and program development worldwide. NCJRS Abstracts Database contains summaries of more than 160,000 criminal justice publications.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Psychology &amp; Behavioral Sciences Collection</a> (EBSCO) <a href="#c15" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c15" class="collapse">
+                                                <p>
+                                                    Includes journal citations and full-text articles on the topics of emotional and behavioral characteristics, psychiatry and psychology, mental processes, anthropology, and observational and experimental methods.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed" target="_blank" rel="noopener noreferrer">PubMed</a> (medical articles) <a href="#c16" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c16" class="collapse">
+                                                <p>
+                                                    A service of the National Library of Medicine, providing access to over 11 million MEDLINE citations back to the mid-1960's and additional life science journals. Includes links to many sites providing full text articles and other related resources.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Regional Business News (EBSCO)</a> <br>(U.S. metro and rural business news)<a href="#c17" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c17" class="collapse">
+                                                <p>
+                                                    Incorporates full-text coverage of business journals, newspapers, and newswires from all metropolitan and rural areas within the United States. This database is updated on a daily basis.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!--<li>
+                                        <a href="http://proxy.library.ca.gov/login?url=http://www.sciencedirect.com/science/journal/00489697" target="_blank" rel="noopener noreferrer"></a>
+                                        <strong>Science of the Total Environment</strong><br /> (No longer available)-->
+                                        <!--
+                                            <span class="tips" id="tips1" style="cursor: pointer; color:#4079b2; font-weight: bold">(Details)</span>
+                                            <div id="cxx" class="collapse">
+                                                <p>
+                                                    An international journal for publication of original research on the total environment, which includes the atmosphere, hydrosphere, biosphere, lithosphere, and anthroposphere.
+                                                </p>
+                                            </div>
+                                        </li>-->
+                                        <!--<li>
+                                        <a href="http://proxy.library.ca.gov/login?url=http://www.scopus.com" target="_blank" rel="noopener noreferrer"><strong>Scopus</strong><br />(No longer available)-->
+                                        <!--<span class="tips" id="tips1" style="cursor: pointer; color:#4079b2; font-weight: bold">(Details)</span>
+                                            <div id="cxx" class="collapse">
+                                                <p>
+                                                    The largest abstract and citation database of peer-reviewed literature, features tools to track, analyze and visualize research. Scopus delivers an overview of the world's research output in science, technology, medicine, social sciences, and arts and humanities.
+                                                </p>
+                                            </div>
+                                        </li>-->
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">SocINDEX with Full Text</a> <br>(sociological journals) <a href="#c18" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c18" class="collapse">
+                                                <p>
+                                                    Provides coverage of journals, books, and conference papers in all aspects of sociological study including anthropology, criminology, demography, ethnic studies, politics, social work and substance abuse.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading12">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse12" aria-expanded="true" aria-controls="collapse12">
+                                        E-Books
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                                <div class="panel-body">
+                                    <ul>
+                                        <!--<li>
+                                            <strong>AHFS Consumer Medication Information</strong><br /> (No longer available)
+                                        </li>-->
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://proquest.safaribooksonline.com" target="_blank" rel="noopener noreferrer">Safari Tech Books Online</a>
+                                            <a href="#c19" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c19" class="collapse">
+                                                <p>
+                                                    Access to the electronic versions of thousands of books from industry-leading technical publishers. Covers a wide range of topics, including e-commerce, IT management, markup languages, networking, operating systems, programming, security, and web design, to help with virtually any programming or technical issue. Also covers business topics such as project management, sales and marketing, and professional development.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading3">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                        Business
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="https://uniworldonline.com/search" target="_blank" rel="noopener noreferrer">American Firms Operating in Foreign Countries</a> <a href="#c20" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c20" class="collapse">
+                                                <p>
+                                                    Contains American companies that have a substantial investment in overseas operations. In the American Firms directory, the parent company information, US branch locations and foreign subsidiaries are retrieved. Search results can be downloaded into Excel for further sorting. (Anyone can access using computers or wireless at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>. State employees with library cards can log in from anywhere.)
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!--<li>
+                                        <a href="http://proxy.library.ca.gov/login?url=http://www.atozdatabases.com" target="_blank" rel="noopener noreferrer"><strong>AtoZdatabases</strong>-->
+                                        <!--</a> <span class="tips" id="tips1" style="cursor: pointer; color:#4079b2; font-weight: bold"> (No longer available)-->
+                                        <!--</span>
+                                            <div id="cxx" class="collapse">
+                                                <p>
+                                                    A business database of over 30 million U.S. business profiles. Detailed data includes industry specifics, employee size, sales, competitors, executive titles and email addresses, historic data, and more. Search by geography, industry, executives, or ownership. Also includes 2 million new businesses, 220 million U.S. residents, 1.1 million healthcare professionals, and more. (Anyone can access using computers or wireless at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>. State employees with library cards can log in from anywhere.)
+                                                </p>
+                                            </div>
+                                        </li>-->
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Business Source Complete</a> <br>(business journals and news) <a href="#c21" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c21" class="collapse">
+                                                <p>
+                                                    Contains full-text journals in all business disciplines. Non-journal content includes company profiles, financial data, industry reports, market research reports, and Morningstar reports.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="https://uniworldonline.com/search" target="_blank" rel="noopener noreferrer">Foreign Firms Operating in the United States</a> <a href="#c22" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c22" class="collapse">
+                                                <p>
+                                                    Foreign companies listed have a substantial investment in American operations. Parent company information and US subsidiary are retrieved. Search results can be downloaded into Excel for further sorting. (Anyone can access using computers or wireless at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>. State employees with library cards can log in from anywhere.)
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!--<li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://webreports.mergent.com" target="_blank" rel="noopener noreferrer"><strong>Mergent Online Manuals</strong><br /> (No longer available)<!--</a> (corporate data) <span class="tips" id="tips1" style="cursor: pointer; color:#4079b2; font-weight: bold">(Details)</span>
+                                            <div id="cxx" class="collapse">
+                                                <p>
+                                                    Provides access to corporate history, business descriptions and detailed financial statements, for every Mergent (formerly Moody&rsquo;s) Manual published: Industrial Manual since 1920, OTC Unlisted Manual since 1986, Public Utility Manual since 1914, International Manual since 1981, OTC Industrial Manual since 1970, Bank &amp; Finance Manual since 1928 and the Transportation Manual since 1909.
+                                                </p>
+                                            </div>
+                                        </li>-->
+                                        <!--<li>
+                                            <strong>Plunkett Research Online <span class="tips" id="tips1" style="cursor: pointer; color:#4079b2; font-weight: bold"></strong>(No longer available)</span>
+                                        </li>-->
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Regional Business News (EBSCO)</a> <br>(U.S. metro and rural business news) <a href="#c23" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c23" class="collapse">
+                                                <p>
+                                                    Incorporates full-text coverage of business journals, newspapers, and newswires from all metropolitan and rural areas within the United States. This database is updated on a daily basis.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.proquest.com/databases" target="_blank" rel="noopener noreferrer">Wall Street Journal</a> <a href="#c24" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c24" class="collapse">
+                                                <p>
+                                                    The preeminent publication for business news and information on financial markets worldwide. Users can quickly access not only top news stories about companies, people and products, but also detailed information from all the paper's sections including editorials, letters to the editor, stock and bond prices and currency exchange rates from 1984 to present.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading4">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                        Education
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ddu" target="_blank" rel="noopener noreferrer">American Doctoral Dissertations, 1933-1955</a> <a href="#c25" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c25" class="collapse">
+                                                <p>
+                                                    This print index includes nearly 100,000 citations to twenty-two years of dissertation research. It represents the only comprehensive record of dissertations accepted by U.S. universities during that period of time.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Education Source</a> <a href="#c26" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c26" class="collapse">
+                                                <p>
+                                                    Spans all levels of education from early childhood to higher education and also includes educational specialties such as multilingual education, health education and testing. Provides indexing and abstracts for more than 2,850 academic periodicals and includes full text for more than 1,800 journals, 550 books and monographs, education-related conference papers, and citations for articles including book reviews.
+
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.eric.ed.gov" target="_blank" rel="noopener noreferrer">ERIC</a> (educational resources) <a href="#c27" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c27" class="collapse">
+                                                <p>
+                                                    Free access to more than 1.2 million bibliographic records of journal articles and other education-related materials and, if available, includes links to full text. The California State Library owns most titles listed in the Education Resources Information Center database that have an ED number.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=trh" target="_blank" rel="noopener noreferrer">Teacher Reference Center</a> <a href="#c28" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c28" class="collapse">
+                                                <p>
+                                                    Provides indexing and abstracts for 280 of the most popular teacher and administrator journals and magazines to assist professional educators.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading5">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                        Genealogy and History
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="http://www.ancestryinstitution.com" target="_blank" rel="noopener noreferrer">Ancestry.com</a> (U.S. and U.K. historical resources) <a href="#c29" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c29" class="collapse">
+                                                <p>
+                                                    Contains approximately 4,000 databases for genealogical and historical research. Key collections include U.S. Federal Census images and indexes from 1790 to 1930, New York and San Francisco passenger lists, World War I draft registration cards, World War II service records, the Social Security Death Index, UK census records from 1861-1901, historical maps, Daughters of the American Revolution Lineage volumes, the Dawes Commission Index and the Federal Writers' Project Slave Narratives.
+                                                    (Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!--<li>
+                                            <strong>Fold3 History and Genealogy Archives Plus</strong> <br />(No longer available)</span>
+                                        </li>-->
+                                        <li>
+                                            <a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=hev" target="_blank" rel="noopener noreferrer">European Views of the Americas: 1493 to 1750</a> <a href="#c30" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c30" class="collapse">
+                                                <p>
+                                                    A comprehensive guide to printed records about the Americas written in Europe before 1750, this database containing over 32,000 citations covers the history of European exploration as well as portrayals of native American peoples.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://heritagequestonline.com/login" target="_blank" rel="noopener noreferrer">HeritageQuest Online</a> (family and local history resources) <a href="#c31" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c31" class="collapse">
+                                                <p>
+                                                    A collection of over 20,000 family and local history book titles and more than 250 primary source historical documents such as tax lists, city directories, church records and probate records dating back to the 1700s. Includes searchable images of U.S. federal census records from 1790 to 1930.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!--<li>
+                                            <strong>MyHeritage Library Edition (EBSCO)</strong> <br />(No longer available)
+                                        </li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading6">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                        Government
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://infoweb.newsbank.com" target="_blank" rel="noopener noreferrer">American State Papers, 1789 to 1838</a> <a href="#c32" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c32" class="collapse">
+                                                <p>
+                                                    Contains the legislative and executive documents of Congress during the period 1789 to 1838.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.youtube.com/californiagovernment" target="_blank" rel="noopener noreferrer">California State Government YouTube</a> <a href="#c33" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c33" class="collapse">
+                                                <p>
+                                                    Official YouTube channel of the California State government, linking to videos and playlists of California departments and agencies.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!--<li>
+                                        <a href="http://search.proquest.com/congressional" target="_blank" rel="noopener noreferrer"><strong>Congressional Research Digital Collection (ProQuest)</strong> <br />(No longer available)-->
+                                        <!--</a> <span class="tips" id="tips1" style="cursor: pointer; color:#4079b2; font-weight: bold">(Details)</span>
+                                            <div id="cxx" class="collapse">
+                                                <p>
+                                                    Combines Congressional Research Service reports (CRS) and Congressional Committee Prints to give users a comprehensive view of U.S. legislative documents since 2004. (Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>.)
+                                                </p>
+                                            </div>
+                                        </li>-->
+                                        <li>
+                                            <a href="http://www.gpo.gov/fdsys" target="_blank" rel="noopener noreferrer">FDsys</a> (Federal Digital System) <a href="#c34" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c34" class="collapse">
+                                                <p>
+                                                    Developed by the U.S. Government Printing Office, provides permanent public access to electronic U.S. government information published by the U.S. Congress, Federal Executive agencies, and the Federal Court System.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://www.ffis.org">Federal Funds Information for States</a> (FFIS) <a href="#c35" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c35" class="collapse">
+                                                <p>
+                                                    A subscription service of the National Governor's Association and the National Conference of State Legislators. Tracks the fiscal impact of federal budget and policy decisions on state budgets and programs. A database of more than 200 federal grant-in-aid programs provides detailed information on federal funds available to California.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=https://www.hsdl.org/" target="_blank" rel="noopener noreferrer">Homeland Security Digital Library (HSDL)</a> <a href="#c36" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c36" class="collapse">
+                                                <p>
+                                                    The nation's premier collection of documents related to homeland security policy, strategy, and organizational management. Sponsored by the U.S. Department of Homeland Security's <a href="http://www.fema.gov/national-preparedness-directorate" target="_blank" rel="noopener noreferrer">National Preparedness Directorate, FEMA</a> and the Naval Postgraduate School (NPS) <a href="http://www.chds.us/" target="_blank" rel="noopener noreferrer">Center for Homeland Defense and Security</a>. The California State Library is able to offer access to the full collection of HSDL materials as a part of our role as a member of the Federal Depository Library Program (FDLP).
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://infoweb.newsbank.com" target="_blank" rel="noopener noreferrer">U.S. Congressional Serial Set, 1817 to 1980</a> <a href="#c37" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c37" class="collapse">
+                                                <p>
+                                                    Contains reports, documents and journals of the U.S. Senate and House of Representatives during the period 1817 to 1980.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading7">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                        Laws and Regulations
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="/services/to-libraries/library-laws/">California Library Laws</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://library.uchastings.edu/research/ballots/index.php" target="_blank" rel="noopener noreferrer">California Ballot Measures Database</a><br> (1911–present) <a href="#c38" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c38" class="collapse">
+                                                <p>
+                                                    A comprehensive, searchable source of information on California ballot propositions and initiatives from 1911 to the present. Contains the full text of the initiatives, accompanying material relating to their filing and qualification, related legal and legislative history, and digital images of pertinent documents.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://california.lp.findlaw.com/ca01_codes/municode.html" target="_blank" rel="noopener noreferrer">California city / county ordinances</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.courts.ca.gov/selfhelp.htm" target="_blank" rel="noopener noreferrer">California courts and court forms</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://clerk.assembly.ca.gov/" target="_blank" rel="noopener noreferrer">California Bills, Assembly Journals, Histories and Indexes, and Statutes</a> (1849–present)
+                                        </li>
+                                        <li>
+                                            <a href="http://ccr.oal.ca.gov" target="_blank" rel="noopener noreferrer">California Code of Regulations</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://leginfo.legislature.ca.gov/" target="_blank" rel="noopener noreferrer">California Legislative Information</a> (Codes, Bills)
+                                        </li>
+                                        <li>
+                                            <a href="https://www.congress.gov/" target="_blank" rel="noopener noreferrer">Congress.gov (Federal legislative information, committee information, Congressional Record)</a>
+                                        </li>
+                                        <!--<li>
+                                        <a href="http://www.lexisnexis.com/congcomp" target="_blank" rel="noopener noreferrer"><strong>Congressional Research Digital Collection (ProQuest)</strong> <br />(No longer available)-->
+                                        <!--</a> <span class="tips" id="tips1" style="cursor: pointer; color:#4079b2; font-weight: bold">(Details)</span>
+                                            <div id="cxx" class="collapse">
+                                                <p>
+                                                    Combines Congressional Research Service reports (CRS) and Congressional Committee Prints to give users a comprehensive view of U.S. legislative documents since 2004. (Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>.)
+                                                </p>
+                                            </div>
+                                        </li>-->
+                                        <li>
+                                            <a href="http://www.gpo.gov/fdsys" target="_blank" rel="noopener noreferrer">FDsys</a> (Federal Digital System) <a href="#c39" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c39" class="collapse">
+                                                <p>
+                                                    Developed by the U.S. Government Printing Office, provides permanent public access to electronic U.S. government information published by the U.S. Congress, Federal Executive agencies, and the Federal Court System.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://lawyers.findlaw.com/" target="_blank" rel="noopener noreferrer">Find a lawyer</a>
+                                        </li>
+                                        <!--<li>
+                                            <a href="http://www.gpoaccess.gov/index.html" target="_blank" rel="noopener noreferrer">GPO Access</a> (Includes Federal Register, Congressional Bills, Congressional Record)
+                                        </li>-->
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://heinonline.org/HOL/Welcome" target="_blank" rel="noopener noreferrer">HeinOnline</a> (legal journals and collections) <a href="#c40" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c40" class="collapse">
+                                                <p>
+                                                    A searchable digital library of full-text collections of legal journals, texts, cases, statutes, regulations, presidential materials, treaties, as well as international and foreign legal journals, cases and materials. Content is in the original page-image (PDF) format, ensuring the authenticity of the original hardcopy document. (Anyone can access using computers or wireless at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>. State employees with library cards can log in from anywhere.)
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!--<li>
+                                            <strong>LegalTrac</strong> (No longer available)
+                                        </li>-->
+                                        <li>
+                                            <a href="http://www.ncsl.org/" target="_blank" rel="noopener noreferrer">National Conference of State Legislatures (NCSL)</a> <a href="#c41" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c41" class="collapse">
+                                                <p>
+                                                    Assembles information from home pages and websites of the fifty state legislatures, District of Columbia, and Territories. View website content such as bills, press releases, and statutes from all states, one state, or a selected list of states.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://ceb.com/OnLAW/ipaccess" target="_blank" rel="noopener noreferrer">OnLAW (CEB)</a> <a href="#c42" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c42" class="collapse">
+                                                <p>
+                                                    Online access to over 140 titles of Continuing Education of the Bar (CEB) California practice guides. Search CEB's publications to find expert step-by-step guidance, legal analysis, and forms for business law, criminal law, employment law, estate planning, family law, litigation, real property law, and other California legal topics. (Anyone can access using computers or wireless at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>. State employees with library cards can log in from anywhere.)
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading8">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                                        Library Catalogs
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                                <div class="panel-body">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>
+                                                <a href="http://catalog.library.ca.gov" target="_blank" rel="noopener noreferrer">California State Library Catalogs</a><br> (books, journals, reports, videos, images, etc. in the library's collections)
+                                            </li>
+                                            <li>
+                                                <a href="http://california.worldcat.org/" target="_blank" rel="noopener noreferrer">California Libraries Catalog</a> (libraries throughout California)
+                                            </li>
+                                            <li>
+                                                <a href="http://melvyl.worldcat.org" target="_blank" rel="noopener noreferrer">Melvyl Catalog</a> (Univ. of Calif. libraries and the State Library) <a href="#c43" data-toggle="collapse" class="more-details">(Details)</a>
+                                                <div id="c43" class="collapse">
+                                                    <p>
+                                                        Contains records of UC's books, periodicals, serials, as well as records of other materials such as maps, videos and sound recordings. Also includes holdings of the California State Library, the California Academy of Sciences, the California Historical Society, the Center for Research Libraries, and the Graduate Theological Union.
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.worldcat.org" target="_blank" rel="noopener noreferrer">WorldCat.org</a> (materials in libraries worldwide)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading9">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                                        Research Reports
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="/crb/reports-events/">California Research Bureau Reports</a> <a href="#c44" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c44" class="collapse">
+                                                <p>
+                                                    The California Research Bureau (CRB) provides nonpartisan research services to the Governor and his staff, to both houses of the legislature, and to other state elected officials. These services include preparation of reports on current policy issues, which might cover topics such as the history of the issue, experiences and proposals in other states, case studies and examples, data analysis, and development of legislative proposals.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="https://ntrl.ntis.gov/NTRL/user/signUp.xhtml" target="_blank" rel="noopener noreferrer">National Technical Reports Library (NTRL)</a> <a href="#c45" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c45" class="collapse">
+                                                <p>
+                                                    A collection of historical and current U.S. Government-sponsored research reports, indexing and abstracting over 2.2 million titles, with over 700,000 of those technical reports as digitized full-text. Subjects include aeronautics, economics, natural resources, transportation, and many others. <!--(Limited to registered state employee borrowers and to onsite use at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>.)-->
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.policyarchive.org" target="_blank" rel="noopener noreferrer">PolicyArchive</a> <a href="#c46" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c46" class="collapse">
+                                                <p>
+                                                    An open-access, digital archive of non-partisan public policy research. It houses summaries and full text reports from think tanks, universities, government agencies, and foundations. A project of the non-profit Center for Governmental Studies (CGS) in partnership with the Indianapolis University Purdue University Indianapolis (IUPUI) University Library and support from major U.S. charitable foundations.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.rand.org/publications/pubs_search.html" target="_blank" rel="noopener noreferrer">RAND Research Reports</a> <a href="#c47" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c47" class="collapse">
+                                                <p>
+                                                    The RAND Corporation is a nonprofit institution that helps improve policy and decisionmaking through research and analysis of critical social and economic issues such as education, poverty, crime, and the environment, as well as a range of national security issues. RAND utilizes a variety of documents to communicate and disseminate the results of its research in order to better meet the needs of policymakers and decisionmakers, researchers, and the general public.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading10">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                                        Statistics
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="http://www.dof.ca.gov/HTML/FS_DATA/STAT-ABS/Statistical_Abstract.php" target="_blank" rel="noopener noreferrer">California Statistical Abstract</a> (California Department of Finance)
+                                        </li>
+                                        <!--<li><a href="http://proxy.library.ca.gov/login?url=http://ca.rand.org/cgi-bin/homepage.cgi" target="_blank" rel="noopener noreferrer">RAND California</a> (economic and public policy statistics) <a href="#rand">(Details)</a></li>-->
+                                        <li>
+                                            <a href="http://randstatestats.org" target="_blank" rel="noopener noreferrer">RAND State Statistics</a> <a href="#c48" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c48" class="collapse">
+                                                <p>
+                                                    Contains statistical data at the national, state, and local levels. RAND US contains nearly 200 social science databases covering all 50 U.S. states. The CA collection contains these U.S. databases, plus about 80 detailed databases on California. Databases are arranged by section, which range from population &amp; demographics to health care to transportation. (Limited to onsite use at the <a href="http://www.library.ca.gov/about/" target="_blank" rel="noopener noreferrer">California State Library in Sacramento</a> and the <a href="http://www.library.ca.gov/sutro/" target="_blank" rel="noopener noreferrer">Sutro Library in San Francisco</a>.)
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <!--<li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://library.cqpress.com/statestats/" target="_blank" rel="noopener noreferrer">State Stats</a> <span class="tips" id="tips1" style="cursor: pointer; color:#4079b2; font-weight: bold">(Details)</span>
+                                            <div id="cxx" class="collapse">
+                                                <p>
+                                                    Comprehensive data coverage of each state including health care, crime, education and more. Data from more than 80 different sources covering more than 15 years that can be explored using the mapping and graphing tools and compared with other data sets.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.census.gov/compendia/statab" target="_blank" rel="noopener noreferrer">Statistical Abstracts</a> (United States Bureau of the Census)
+                                        </li>
+                                        <li>
+                                            <a href="http://statabs.proquest.com/sa/index.html" target="_blank" rel="noopener noreferrer">Statistical Abstract of the United States (ProQuest)</a> <span class="tips" id="tips1" style="cursor: pointer; color:#4079b2; font-weight: bold">(Details)</span>
+                                            <div id="cxx" class="collapse">
+                                                <p>
+                                                    Published annually by the Federal government since 1878, the best-known statistical reference publication in the country. Now compiled and annotated by ProQuest, it is a comprehensive collection of statistics on the social, political, and economic conditions of the United States.
+                                                </p>
+                                            </div>
+                                        </li>-->
+                                        <li>
+                                            <a href="http://search.proquest.com/statistical" target="_blank" rel="noopener noreferrer">Statistical Insight (ProQuest)</a> <a href="#c49" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c49" class="collapse">
+                                                <p>
+                                                    Find statistics from 1973 to the present on population, economic conditions, labor, health, education, natural resources, pollution and many other topics from U.S. government and business reports. (Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>.)
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="http://data.un.org" target="_blank" rel="noopener noreferrer">UNdata (United Nations)</a> <a href="#c50" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c50" class="collapse">
+                                                <p>
+                                                    Produced by the United Nations Statistics Division (UNSD) of the Department of Economic and Social Affairs (DESA). Includes global statistical data on a variety of topics including agriculture, education, employment, energy, environment, health, human development, industry, information and communication technology, population, refugees, trade and tourism.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="https://usatrade.census.gov/" target="_blank" rel="noopener noreferrer">USA Trade Online</a> <a href="#c51" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c51" class="collapse">
+                                                <p>
+                                                    Current and cumulative U.S. export and import data on more than 18,000 export commodities and 24,000 import commodities worldwide. <!--(Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a>)-->
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading11">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                                        Technology Resources
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="http://proxy.library.ca.gov/login?url=http://proquest.safaribooksonline.com" target="_blank" rel="noopener noreferrer">Safari Tech Books Online</a>
+                                            <a href="#c52" data-toggle="collapse" class="more-details">(Details)</a>
+                                            <div id="c52" class="collapse">
+                                                <p>
+                                                    Access to the electronic versions of thousands of books from industry-leading technical publishers. Covers a wide range of topics, including e-commerce, IT management, markup languages, networking, operating systems, programming, security, and web design, to help with virtually any programming or technical issue. Also covers business topics such as project management, sales and marketing, and professional development.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane" id="alphabet">
+                    <div class="form-group">
+                        <label for="alphabet-select">Starts With: </label>
+                        <select class="form-control" id="alphabet-select">
+                            <option value="tab-a">A</option>
+                            <option value="tab-b">B</option>
+                            <option value="tab-c">C</option>
+                            <option value="tab-d">D</option>
+                            <option value="tab-e">E</option>
+                            <option value="tab-f">F</option>
+                            <option value="tab-g">G</option>
+                            <option value="tab-h">H</option>
+                            <option value="tab-l">L</option>
+                            <option value="tab-m">M</option>
+                            <option value="tab-n">N</option>
+                            <option value="tab-o">O</option>
+                            <option value="tab-p">P</option>
+                            <option value="tab-r">R</option>
+                            <option value="tab-s">S</option>
+                            <option value="tab-t">T</option>
+                            <option value="tab-u">U</option>
+                            <option value="tab-w">W</option>
+                        </select>
+                    </div>
+
+                    <div class="tab-content">
+                        <div id="tab-a" class="tab-pane active alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <li>
+                                    <a class="toggle">Academic Search Complete (EBSCO)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            A multi-discipline, full-text database covering nearly all academic areas of study &ndash; including social sciences, humanities, education, computer sciences, engineering, language and linguistics, arts and literature, medical sciences, and ethnic studies.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+
+
+                                <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><p class="col_title">AHFS Consumer Medication Information</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px">
+                                    <p class="indent">
+                                         This database is no longer available.
+                                    </p>
+                                </div>
+                                </p>-->
+                                <li>
+                                    <a class="toggle">American Doctoral Dissertations, 1933-1955</a>
+
+                                    <div class="description">
+                                        <p class="indent">
+                                            This print index includes nearly 100,000 citations to twenty-two years of dissertation research. It represents the only comprehensive record of dissertations accepted by U.S. universities during that period of time.
+                                            <span class="db_link"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=ddu" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a class="toggle">American Firms Operating in Foreign Countries (Uniworld)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Contains American companies that have a substantial investment in overseas operations. In the American Firms directory, the parent company information, US branch locations and foreign subsidiaries are retrieved. Search results can be downloaded into Excel for further sorting. (Anyone can access using computers or wireless at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>. State employees with library cards can log in from anywhere.)
+                                            <span class="db_link"><a href="https://uniworldonline.com/search" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a class="toggle">American State Papers, 1789 to 1838 (Readex)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Contains the legislative and executive documents of Congress during the period 1789 to 1838.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://infoweb.newsbank.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a class="toggle">America's News (NewsBank)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Provides access to full-text articles from over 900 newspapers throughout the United States, including over 100 California titles.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://infoweb.newsbank.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                        <!--This database is no longer available. Due to budget shortfalls, we are evaluating our subscriptions. Send comments to <a href="mailto:Kimberly.Brown@library.ca.gov">Kimberly.Brown@library.ca.gov</a>-->
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a class="toggle">Ancestry.com</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Contains approximately 4,000 databases for genealogical and historical research. Key collections include U.S. Federal Census images and indexes from 1790 to 1930, New York and San Francisco passenger lists, World War I draft registration cards, World War II service records, the Social Security Death Index, UK census records from 1861-1901, historical maps, Daughters of the American Revolution Lineage volumes, the Dawes Commission Index and the Federal Writers' Project Slave Narratives.
+                                            (Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>.)
+                                            <span class="db_link"><a href="http://www.ancestryinstitution.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <!--<p>
+                                    <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                        <span style="cursor: pointer;"><p class="col_title">AtoZdatabases</p></span>
+                                    </div>
+                                    <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px">
+                                        <p class="indent">
+                                            This database is no longer available. Due to budget shortfalls, we are evaluating our subscriptions. Send comments to <a href="mailto:Kimberly.Brown@library.ca.gov">Kimberly.Brown@library.ca.gov</a>
+                                            <!--A business database of over 30 million U.S. business profiles. Detailed data includes industry specifics, employee size, sales, competitors, executive titles and email addresses, historic data, and more. Search by geography, industry, executives, or ownership. Also includes 2 million new businesses, 220 million U.S. residents, 1.1 million healthcare professionals, and more. (Anyone can access using computers or wireless at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>. State employees with library cards can log in from anywhere.)
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://www.atozdatabases.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>-->
+                                <!--</p>
+                                    </div>
+                                </p>-->
+                            </ul>
+                        </div>
+                        <div id="tab-b" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <li>
+                                    <a class="toggle">Business Source Complete (EBSCO)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Contains full-text journals in all business disciplines. Non-journal content includes company profiles, financial data, industry reports, market research reports, and Morningstar reports.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-c" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <li>
+                                    <a class="toggle">California Ballot Measures Database (University of California, Hastings College of the Law)</a>
+                                <div class="description">
+                                    <p class="indent">
+                                        A comprehensive, searchable source of information on California ballot propositions and initiatives from 1911 to the present. Contains the full text of the initiatives, accompanying material relating to their filing and qualification, related legal and legislative history, and digital images of pertinent documents.
+                                        <span class="db_link"><a href="http://library.uchastings.edu/research/ballots/index.php" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://clerk.assembly.ca.gov/" target="_blank" rel="noopener noreferrer">California Bills, Assembly Journals, Histories and Indexes, and Statutes</a> (1849&ndash;present)
+                            </li>
+                            <li>
+                                <a href="http://california.lp.findlaw.com/ca01_codes/municode.html" target="_blank" rel="noopener noreferrer">California city / county ordinances</a>
+                            </li>
+                            <li>
+                                <a href="http://ccr.oal.ca.gov" target="_blank" rel="noopener noreferrer">California Code of Regulations</a>
+                            </li>
+                            <li>
+                                <a href="http://www.courts.ca.gov/selfhelp.htm" target="_blank" rel="noopener noreferrer">California courts and court forms</a>
+                            </li>
+                            <li>
+                                <a href="http://cdnc.ucr.edu/cdnc" target="_blank" rel="noopener noreferrer">California Digital Newspaper Collection</a>
+                            </li>
+                            <li>
+                                <a href="http://leginfo.legislature.ca.gov/" target="_blank" rel="noopener noreferrer">California Legislative Information</a> (Codes, Bills)
+                            </li>
+                            <li>
+                                <a href="http://california.worldcat.org/" target="_blank" rel="noopener noreferrer">California Libraries Catalog</a> (libraries throughout California)
+                            </li>
+                            <li>
+                                <a href="/services/to-libraries/library-laws/">California Library Laws</a>
+                            </li>
+                                <li>
+                                    <a class="toggle">California Research Bureau (CRB) Reports</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            The California Research Bureau (CRB) provides nonpartisan research services to the Governor and his staff, to both houses of the legislature, and to other state elected officials. These services include preparation of reports on current policy issues, which might cover topics such as the history of the issue, experiences and proposals in other states, case studies and examples, data analysis, and development of legislative proposals.
+                                            <span class="db_link"><a href="/crb/reports-events/">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">California State Government YouTube</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Official YouTube channel of the California State government, linking to videos and playlists of California departments and agencies.
+                                            <span class="db_link"><a href="http://www.youtube.com/californiagovernment" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            <li>
+                                <a href="http://catalog.library.ca.gov" target="_blank" rel="noopener noreferrer">California State Library Catalogs</a> (books, journals, reports, videos, images, etc. in the library's collections)
+                            </li>
+                            <li>
+                                <a href="http://www.dof.ca.gov/HTML/FS_DATA/STAT-ABS/Statistical_Abstract.php" target="_blank" rel="noopener noreferrer">California Statistical Abstract</a> (California Department of Finance)
+                            </li>
+                            <li>
+                                <a href="https://www.congress.gov/" target="_blank" rel="noopener noreferrer">Congress.gov (Federal legislative information, committee information, Congressional Record)</a>
+                            </li>
+                            <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><p class="col_title">Congressional Research Digital Collection (ProQuest)</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px">
+                                    <p class="indent">
+                                        This database is no longer available. Due to budget shortfalls, we are evaluating our subscriptions. Send comments to <a href="mailto:Kimberly.Brown@library.ca.gov">Kimberly.Brown@library.ca.gov</a>
+                                        <!--Combines Congressional Research Service reports (CRS) and Congressional Committee Prints to give users a comprehensive view of U.S. legislative documents since 2004. (Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>.)
+                                        <span class="db_link"><a href="http://congressional.proquest.com/congressional/search/basic/basicsearch" target="_blank" rel="noopener noreferrer">Link to the database</a></span>-->
+                                    <!--</p>
+                                </div>
+                            </p>-->
+                            </ul>
+                        </div>
+                        <div id="tab-d" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <li>
+                                    <a class="toggle">Digital Commons Network</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Free, full-text scholarly articles from hundreds of universities and colleges worldwide. Curated by university librarians and their supporting institutions, it includes a growing collection of peer-reviewed journal articles, book chapters, dissertations, working papers, conference proceedings, and other original scholarly work.
+                                            <span class="db_link"><a href="http://network.bepress.com/" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-e" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><a name="education"></a><p class="col_title">Education Research Complete (EBSCO)</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px">
+                                    <p class="indent">
+                                        This database is no longer available.
+                                    </p>
+                                </div>
+                            </p>-->
+                                <li>
+                                    <a class="toggle">Education Source</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Spans all levels of education from early childhood to higher education and also includes educational specialties such as multilingual education, health education and testing. Provides indexing and abstracts for more than 2,850 academic periodicals and includes full text for more than 1,800 journals, 550 books and monographs, education-related conference papers, and citations for articles including book reviews.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">ERIC: Education Resources Information Center (U.S. Department of Education)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Free access to more than 1.2 million bibliographic records of journal articles and other education-related materials and, if available, includes links to full text. The California State Library owns most titles listed in the Education Resources Information Center database that have an ED number.
+                                            <span class="db_link"><a href="http://www.eric.ed.gov" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">Ethnic NewsWatch (ProQuest)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Full text access to 240 state, national and international newspapers, magazines and journals of the ethnic, minority and native press. Written from the perspectives of African-American, Hispanic, Native American, Asian, Arab, Jewish and European-American cultures, articles provide news analysis and commentary as well as points-of-view not covered in the mainstream media.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://search.proquest.com/databases" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">European Views of the Americas: 1493 to 1750</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            A comprehensive guide to printed records about the Americas written in Europe before 1750, this database containing over 32,000 citations covers the history of European exploration as well as portrayals of native American peoples.
+                                            <span class="db_link"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=hev" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-f" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <li>
+                                    <a class="toggle">Federal Digital System (FDsys)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Developed by the U.S. Government Printing Office, provides permanent public access to electronic U.S. government information published by the U.S. Congress, Federal Executive agencies, and the Federal Court System.
+                                            <span class="db_link"><a href="http://www.gpo.gov/fdsys" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">Federal Funds Information for States (FFIS)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            A subscription service of the National Governor's Association and the National Conference of State Legislators. Tracks the fiscal impact of federal budget and policy decisions on state budgets and programs. A database of more than 200 federal grant-in-aid programs provides detailed information on federal funds available to California.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://www.ffis.org" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="http://lawyers.findlaw.com/" target="_blank" rel="noopener noreferrer">Find a lawyer</a>
+                                </li>
+                            <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><a name="fold"></a><p class="col_title">Fold3 History and Genealogy Archives Plus</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px">
+                                    <p class="indent">
+                                        This database is no longer available.
+                                    </p>
+                                </div>
+                            </p>-->
+                                <li>
+                                    <a class="toggle">Foreign Firms Operating in the United States (Uniworld)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Foreign companies listed have a substantial investment in American operations. Parent company information and US subsidiary are retrieved. Search results can be downloaded into Excel for further sorting. (Anyone can access using computers or wireless at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>. State employees with library cards can log in from anywhere.)
+                                            <span class="db_link"><a href="https://uniworldonline.com/search" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-g" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><a name="Gale"></a><p class="col_title">Gale Directory Library Complete</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px">
+                                    <p class="indent">
+                                        This database is no longer available.
+                                    </p>
+                                </div>
+                            </p>
+                            <p>
+                                <a href="http://www.gpoaccess.gov/index.html" target="_blank" rel="noopener noreferrer">GPO Access</a> (Includes Federal Register, Congressional Bills, Congressional Record)
+                            </p>-->
+                                <li>
+                                    <a class="toggle">GreenFILE (EBSCO)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            A collection of scholarly, government and general-interest titles covering all aspects of human impact to the environment including global warming, green building, pollution, sustainable agriculture, renewable energy, recycling and more. Provides indexing and abstracts for more than 384,000 records, as well as Open Access full text for more than 4,700 records.
+                                            <span class="db_link"><a href="http://www.greeninfoonline.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-h" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><a name="health"></a><p class="col_title">Health Source: Nursing/Academic Edition (EBSCO)</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px">
+                                    <p class="indent">
+                                        This database is no longer available.
+                                    </p>
+                                </div>
+                            </p>-->
+                                <li>
+                                    <a class="toggle">HeinOnline</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            A searchable digital library of full-text collections of legal journals, texts, cases, statutes, regulations, presidential materials, treaties, as well as international and foreign legal journals, cases and materials. Content is in the original page-image (PDF) format, ensuring the authenticity of the original hardcopy document. (Anyone can access using computers or wireless at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>. State employees with library cards can log in from anywhere.)
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://heinonline.org/HOL/Welcome" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">HeritageQuest Online (ProQuest)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            A collection of over 20,000 family and local history book titles and more than 250 primary source historical documents such as tax lists, city directories, church records and probate records dating back to the 1700s. Includes searchable images of U.S. federal census records from 1790 to 1930.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://heritagequestonline.com/login" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">Homeland Security Digital Library (HSDL)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            The nation's premier collection of documents related to homeland security policy, strategy, and organizational management. Sponsored by the U.S. Department of Homeland Security's <a href="http://www.fema.gov/national-preparedness-directorate" target="_blank" rel="noopener noreferrer">National Preparedness Directorate, FEMA</a> and the Naval Postgraduate School (NPS) <a href="http://www.chds.us/" target="_blank" rel="noopener noreferrer">Center for Homeland Defense and Security</a>. The California State Library is able to offer access to the full collection of HSDL materials as a part of our role as a member of the Federal Depository Library Program (FDLP).
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=https://www.hsdl.org/" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-l" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><a name="llo"></a><p class="col_title">Leadership Library Online</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px">
+                                    <p class="indent">
+                                        (This database is no longer available. Due to budget shortfalls, we are evaluating our subscriptions. Send comments to <a href="mailto:Kimberly.Brown@library.ca.gov">Kimberly.Brown@library.ca.gov</a>)
+                                    </p>
+                                </div>
+                            </p>
+                            <p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><a name="legal"></a><p class="col_title">LegalTrac (Gale Cengage)</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px">
+                                    <p class="indent">
+                                        This database is no longer available.
+                                    </p>
+                                </div>
+                            </p>-->
+                                <li>
+                                    <a class="toggle">Library, Information Science & Technology Abstracts</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            This bibliographic database provides coverage on subjects such as librarianship, classification, cataloging, bibliometrics, online information retrieval, information management, and more. Indexes journals, books, research reports, and proceedings.
+                                            <span class="db_link"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=lxh" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">Los Angeles Times Historic 1881&ndash;1993 (ProQuest)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            A full-image archive of the nation's largest metropolitan daily. Every page of every issue from 1881 to 1993 cover to cover, including news stories, letters to the editor, editorials, obituaries, opinion polls, photos and maps in downloadable PDF format is available.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://search.proquest.com/databases" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-m" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><a name="master"></a><p class="col_title">MasterFILE Premier (EBSCO)</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px;">
+                                    <p class="indent">
+                                        This database is no longer available.
+                                    </p>
+                                </div>
+                            </p>-->
+                                <li>
+                                    <a class="toggle">MEDLINE with Full Text (EBSCO)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Created by the National Library of Medicine, allows users to search for journal articles in the fields of medicine, nursing, dentistry, veterinary medicine and health care. The complete text is provided for nearly 1,200 journals indexed in MEDLINE.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">Melvyl Catalog (University of California)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Contains records of UC's books, periodicals, serials, as well as records of other materials such as maps, videos and sound recordings. Also includes holdings of the California State Library, the California Academy of Sciences, the California Historical Society, the Center for Research Libraries, and the Graduate Theological Union.
+                                            <span class="db_link"><a href="http://melvyl.worldcat.org" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><p class="col_title">Mergent Online Manuals</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px;">
+                                    <p class="indent">
+                                        This database is no longer available. Due to budget shortfalls, we are evaluating our subscriptions. Send comments to <a href="mailto:Kimberly.Brown@library.ca.gov">Kimberly.Brown@library.ca.gov</a>
+                                        <!--Provides access to corporate history, business descriptions and detailed financial statements, for every Mergent (formerly Moody&rsquo;s) Manual published: Industrial Manual since 1920, OTC Unlisted Manual since 1986, Public Utility Manual since 1914, International Manual since 1981, OTC Industrial Manual since 1970, Bank &amp; Finance Manual since 1928 and the Transportation Manual since 1909.
+                                        <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://webreports.mergent.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                    </p>
+                                </div>
+                            </p>-->
+                            <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><p class="col_title">MyHeritage Library Edition (EBSCO)</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px;">
+                                    <p class="indent">
+                                        This database is no longer available.
+                                    </p>
+                                </div>
+                            </p>-->
+                            </ul>
+                        </div>
+                        <div id="tab-n" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <li>
+                                    <a class="toggle">National Conference of State Legislatures (NCSL)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Assembles information from home pages and websites of the fifty state legislatures, District of Columbia, and Territories. View website content such as bills, press releases, and statutes from all states, one state, or a selected list of states.
+                                            <span class="db_link"><a href="https://ntrl.ntis.gov/NTRL/user/signUp.xhtml" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">National Technical Reports Library (NTRL)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            A collection of historical and current U.S. Government-sponsored research reports, indexing and abstracting over 2.2 million titles, with over 700,000 of those technical reports as digitized full-text. Subjects include aeronautics, economics, natural resources, transportation, and many others.
+                                            <span class="db_link"><a href="https://ntrl.ntis.gov/NTRL/user/signUp.xhtml" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">NCJRS Abstracts Database</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            The National Criminal Justice Reference Service (NCJRS) is a federally funded resource offering justice and substance abuse information to support research, policy, and program development worldwide. NCJRS Abstracts Database contains summaries of more than 160,000 criminal justice publications.
+                                            <span class="db_link"><a href="https://www.ncjrs.gov/library.html" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">Newspapers.com</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Through a special partnership with the California Digital Newspaper Collection, Newspapers.com provides exclusive access to over 30 newspapers in the University of California, Riverside collection, including the Oakland Tribune, and papers from San Bernardino, Santa Cruz, and other cities. (Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>.)
+                                            <span class="db_link"><a href="http://www.newspapers.com/welcome" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>            
+                                <li>
+                                    <a class="toggle">NewspaperARCHIVE</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            <!--This resource is no longer available. Due to budget shortfalls, we are evaluating our subscriptions. Send comments to <a href="mailto:Kimberly.Brown@library.ca.gov">Kimberly.Brown@library.ca.gov</a>-->
+                                            Access historic content for over 200 California newspaper titles from 1846-2003. Every part of every page is searchable, including local articles, advertisements, editorials, classified ads, and obituaries.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://access.newspaperarchive.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-o" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <li>
+                                    <a class="toggle">OnLAW (CEB)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Online access to over 140 titles of Continuing Education of the Bar (CEB) California practice guides. Search CEB's publications to find expert step-by-step guidance, legal analysis, and forms for business law, criminal law, employment law, estate planning, family law, litigation, real property law, and other California legal topics. (Anyone can access using computers or wireless at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>. State employees with library cards can log in from anywhere.)
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://ceb.com/OnLAW/ipaccess" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-p" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><p class="col_title">Plunkett Research Online</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px;">
+                                    <p class="indent">
+                                        This database is no longer available.
+                                    </p>
+                                </div>
+                            </p>-->
+                                <li>
+                                    <a class="toggle">PolicyArchive</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            An open-access, digital archive of non-partisan public policy research. It houses summaries and full text reports from think tanks, universities, government agencies, and foundations. A project of the non-profit Center for Governmental Studies (CGS) in partnership with the Indianapolis University Purdue University Indianapolis (IUPUI) University Library and support from major U.S. charitable foundations.
+                                            <span class="db_link"><a href="http://www.policyarchive.org" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><p class="col_title">Press Reader</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px;">
+                                    <p class="indent">
+                                        This database is no longer available.
+                                    </p>
+                                </div>
+                            </p>-->
+                                <li>
+                                    <a class="toggle">ProQuest Digital Microfilm</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            This resource is no longer available. Due to budget shortfalls, we are evaluating our subscriptions. Send comments to <a href="mailto:Kimberly.Brown@library.ca.gov">Kimberly.Brown@library.ca.gov</a>
+                                            <!--Features recent microfilmed newspapers &ndash; cover-to-cover and in full-image for online viewing and retrieval including the Los Angeles Times-Record Edition, Oakland Tribune, San Jose Mercury News and the San Francisco Examiner. (Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>.) Note: Browser capability limited to Microsoft Internet Explorer.
+                <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://digitalmicrofilm.proquest.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>-->
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">Psychology and Behavioral Sciences Collection (EBSCO)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Includes journal citations and full-text articles on the topics of emotional and behavioral characteristics, psychiatry and psychology, mental processes, anthropology, and observational and experimental methods.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">PubMed (medical articles)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            A service of the National Library of Medicine, providing access to over 11 million MEDLINE citations back to the mid-1960's and additional life science journals. Includes links to many sites providing full text articles and other related resources.
+                                            <span class="db_link"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-r" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <li>
+                                    <a class="toggle">RAND Research Reports (RAND)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            The RAND Corporation is a nonprofit institution that helps improve policy and decisionmaking through research and analysis of critical social and economic issues such as education, poverty, crime, and the environment, as well as a range of national security issues. RAND utilizes a variety of documents to communicate and disseminate the results of its research in order to better meet the needs of policymakers and decisionmakers, researchers, and the general public.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">RAND State Statistics</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Contains statistical data at the national, state, and local levels. RAND US contains nearly 200 social science databases covering all 50 U.S. states. The CA collection contains these U.S. databases, plus about 80 detailed databases on California. Databases are arranged by section, which range from population & demographics to health care to transportation. (Limited to onsite use at the <a href="http://www.library.ca.gov/about/" target="_blank" rel="noopener noreferrer">California State Library in Sacramento</a> and the <a href="http://www.library.ca.gov/sutro/" target="_blank" rel="noopener noreferrer">Sutro Library in San Francisco</a>.)
+                                            <span class="db_link" style="padding-top:10px;"><a href="http://randstatestats.org" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">Regional Business News (EBSCO)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Incorporates full-text coverage of business journals, newspapers, and newswires from all metropolitan and rural areas within the United States. This database is updated on a daily basis.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-s" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <li>
+                                    <a class="toggle">Safari Tech Books Online (ProQuest)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Access to the electronic versions of thousands of books from industry-leading technical publishers. Covers a wide range of topics, including e-commerce, IT management, markup languages, networking, operating systems, programming, security, and web design, to help with virtually any programming or technical issue. Also covers business topics such as project management, sales and marketing, and professional development.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://proquest.safaribooksonline.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">San Francisco Chronicle Historic 1865 to 1922</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            A full-image archive of the newspaper. Every page of every issue from 1865 to 1922 cover to cover, including news stories, letters to the editor, editorials, obituaries, opinion polls, photos and maps in downloadable PDF format is available.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://search.proquest.com/databases" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                            <!--This resource is no longer available. Due to budget shortfalls, we are evaluating our subscriptions. Send comments to <a href="mailto:Kimberly.Brown@library.ca.gov">Kimberly.Brown@library.ca.gov</a>-->
+                                        </p>
+                                    </div>
+                                </li>
+                            <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><p class="col_title">Science of the Total Environment</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px;">
+                                    <p class="indent">
+                                        This resource is no longer available. Due to budget shortfalls, we are evaluating our subscriptions. Send comments to <a href="mailto:Kimberly.Brown@library.ca.gov">Kimberly.Brown@library.ca.gov</a>
+                                        <!--An international journal for publication of original research on the total environment, which includes the atmosphere, hydrosphere, biosphere, lithosphere, and anthroposphere.
+                                        <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://www.sciencedirect.com/science/journal/00489697" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                    </p>
+                                </div>
+                            </p>-->
+                            <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><p class="col_title">Scopus</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px;">
+                                    <p class="indent">
+                                        This database is no longer available. Due to budget shortfalls, we are evaluating our subscriptions. Send comments to <a href="mailto:Kimberly.Brown@library.ca.gov">Kimberly.Brown@library.ca.gov</a>
+                                    </p>
+                                    <p class="indent">
+                                        The largest abstract and citation database of peer-reviewed literature, featuring tools to track, analyze and visualize research. Delivers an overview of the world's research output in science, technology, medicine, social sciences, and arts and humanities.
+                                        <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://www.scopus.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                    </p>
+                                </div>
+                            </p>-->
+                                <li>
+                                    <a class="toggle">SocINDEX with Full Text (EBSCO)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Provides coverage of journals, books, and conference papers in all aspects of sociological study including anthropology, criminology, demography, ethnic studies, politics, social work and substance abuse.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://search.ebscohost.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            <!--<p>
+                                <div class="tips" id="tips1" style="position:relative; height:30px;) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><p class="col_title">State Stats</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px;">
+                                    <p class="indent">
+                                        Comprehensive data coverage of each state including health care, crime, education and more. Data from more than 80 different sources covering more than 15 years that can be explored using the mapping and graphing tools and compared with other data sets.
+                                        <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://library.cqpress.com/statestats/" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                    </p>
+                                </div>
+                            </p>
+                            <p>
+                                <a href="http://www.census.gov/compendia/statab" target="_blank" rel="noopener noreferrer">Statistical Abstracts</a> (United States Bureau of the Census)
+                            </p>
+                            <p>
+                                <div class="tips" id="tips1" style="position:relative; ) no-repeat 0 0">
+                                    <span style="cursor: pointer;"><p class="col_title">Statistical Abstract of the United States (ProQuest)</p></span>
+                                </div>
+                                <div id="see_tips1" style="display:none; z-index:1000; position:relative; padding:10px 0 10px 0px;">
+                                    <p class="indent">
+                                        Published annually by the Federal government since 1878, the best-known statistical reference publication in the country. Now compiled and annotated by ProQuest, it is a comprehensive collection of statistics on the social, political, and economic conditions of the United States.
+                                        <span class="db_link"><a href="http://statabs.proquest.com/sa/index.html" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                    </p>
+                                </div>
+                            </p>-->
+                                <li>
+                                    <a class="toggle">Statistical Insight (ProQuest)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Find statistics from 1973 to the present on population, economic conditions, labor, health, education, natural resources, pollution and many other topics from U.S. government and business reports. (Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a> and the <a href="/sutro/">Sutro Library in San Francisco</a>.)
+                                            <span class="db_link"><a href="http://search.proquest.com/statistical" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-t" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <li>
+                                    <a class="toggle">Teacher Reference Center</a>
+                                    <div class="description">
+                                        <p>
+                                            Provides indexing and abstracts for 280 of the most popular teacher and administrator journals and magazines to assist professional educators.
+                                            <span class="db_link"><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=trh" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-u" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <li>
+                                    <a class="toggle">U.S. Congressional Serial Set, 1817 to 1980 (Readex)</a>
+                                    <div class="description">
+                                        <p>
+                                        Contains reports, documents and journals of the U.S. Senate and House of Representatives during the period 1817 to 1980.
+                                        <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://infoweb.newsbank.com" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">USA Trade Online</a>
+                                    <div class="description">
+                                        <p>
+                                            Current and cumulative U.S. export and import data on more than 18,000 export commodities and 24,000 import commodities worldwide. <!--(Limited to onsite use at the <a href="/about/">California State Library in Sacramento</a>)-->
+                                            <span class="db_link"><a href="https://usatrade.census.gov/" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="toggle">UNdata (United Nations)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            Produced by the United Nations Statistics Division (UNSD) of the Department of Economic and Social Affairs (DESA). Includes global statistical data on a variety of topics including agriculture, education, employment, energy, environment, health, human development, industry, information and communication technology, population, refugees, trade and tourism.
+                                            <span class="db_link"><a href="http://data.un.org" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab-w" class="tab-pane alphabet-content">
+                            <ul class="list-understated accordion-list">
+                                <li>
+                                    <a class="toggle">Wall Street Journal (ProQuest)</a>
+                                    <div class="description">
+                                        <p class="indent">
+                                            The preeminent publication for business news and information on financial markets worldwide. Users can quickly access not only top news stories about companies, people and products, but also detailed information from all the paper's sections including editorials, letters to the editor, stock and bond prices and currency exchange rates from 1984 to present.
+                                            <span class="db_link"><a href="http://proxy.library.ca.gov/login?url=http://search.proquest.com/databases" target="_blank" rel="noopener noreferrer">Link to the database</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="http://www.worldcat.org" target="_blank" rel="noopener noreferrer">WorldCat.org</a> (materials in libraries worldwide)
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="spacer"></div>
+    </div>
+</div>
