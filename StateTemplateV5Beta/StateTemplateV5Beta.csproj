@@ -463,6 +463,16 @@
     <Content Include="Content\StateTemplate\images\CAGoldRush\section3.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section4.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section5.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section5\californiano.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section5\charivari_1.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section5\charivari_2.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section5\delano_1.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section5\delano_2.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section5\forrester.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section5\francis_elton.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section5\gold_hunter.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section5\nathan_currier.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section5\read.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section6.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section7.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section8.jpg" />
