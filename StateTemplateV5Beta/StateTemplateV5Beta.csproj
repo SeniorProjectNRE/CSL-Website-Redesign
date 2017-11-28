@@ -1904,7 +1904,7 @@
     <Content Include="Views\Privacy\Privacy.cshtml" />
     <Content Include="Views\SiteMap\SiteMap.cshtml" />
     <Content Include="Views\Services\Services.cshtml" />
-    <Content Include="Views\Services\Apply.cshtml" />
+    <Content Include="Views\Apply\Apply.cshtml" />
     <Content Include="Views\Services\Borrowing.cshtml" />
     <Content Include="Views\Services\OnlineResources.cshtml" />
     <Content Include="Views\Services\Policies.cshtml" />
