@@ -411,6 +411,9 @@
     <Content Include="Content\StateTemplate\images\CAGoldRush\intro.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section1.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section10.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section10\capt_tate.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section10\feather_yuba_river.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section10\marysville.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section11.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section12.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section13.jpg" />
@@ -488,6 +491,17 @@
     <Content Include="Content\StateTemplate\images\CAGoldRush\section7.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section8.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section9.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section9\baker.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section9\barber_baker.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section9\constructing_levee.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section9\cornerstone.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section9\culver.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section9\j_street.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section9\proclamation_sacramento.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section9\receipt_bidwell.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section9\sacramento_historian.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section9\sacramento_newsletter.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section9\ville_sacramento.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\banquet.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\bouquet.jpg" />
     <Content Include="Content\StateTemplate\images\caliorniaHistory\CaliforninaHistory\ca_pioneers_song.png" />
