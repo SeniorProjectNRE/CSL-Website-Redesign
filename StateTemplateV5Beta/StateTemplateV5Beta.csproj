@@ -593,6 +593,7 @@
     <Content Include="Content\StateTemplate\images\collections\top.jpg" />
     <Content Include="Content\StateTemplate\images\collections\video.jpg" />
     <Content Include="Content\StateTemplate\images\collections\videosPodcasts\top.jpg" />
+    <Content Include="Content\StateTemplate\images\comingsoon.jpg" />
     <Content Include="Content\StateTemplate\images\contact-top.jpg" />
     <Content Include="Content\StateTemplate\images\contact\LCI.jpg" />
     <Content Include="Content\StateTemplate\images\contact\LCII.jpg" />
@@ -1068,6 +1069,7 @@
     <Content Include="Content\StateTemplate\images\top-icons\visit.jpg" />
     <Content Include="Content\StateTemplate\images\top-icons\work-over.jpg" />
     <Content Include="Content\StateTemplate\images\top-icons\work.jpg" />
+    <Content Include="Content\StateTemplate\images\topcoming.jpg" />
     <Content Include="Content\StateTemplate\images\visitUs\events.jpg" />
     <Content Include="Content\StateTemplate\images\visitUs\exhibits.jpg" />
     <Content Include="Content\StateTemplate\images\visitUs\hours.jpg" />
