@@ -85,5 +85,27 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
         {
             return View("~/Views/Services/ToLibraries/LibraryStaffEducationPogram.cshtml");
         }
+
+        // GET: statistics-directories
+        [Route("statistics-directories")]
+        public ActionResult StatisticsDirectories()
+        {
+            return View("~/Views/Services/ToLibraries/StatisticsDirectories.cshtml");
+        }
+
+        // GET: laws-public-library-organization
+        [Route("laws-public-library-organization")]
+        public ActionResult LawsPublicLibraryOrganization()
+        {
+            return View("~/Views/Services/ToLibraries/LawsPublicLibraryOrganization.cshtml");
+        }
+
+        // GET: cooperative-systems-clsa
+        [Route("cooperative-systems-clsa")]
+        public ActionResult CooperativeSystemsClsa()
+        {
+            return View("~/Views/Services/ToLibraries/CooperativeSystemsClsa.cshtml");
+        }
+
     }
 }

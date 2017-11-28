@@ -37,11 +37,19 @@ namespace StateTemplateV5Beta.Controllers.Collections
             return View("~/Views/Collections/Genealogy/Toolkit.cshtml");
         }
 
+        // GET: OnlineCollections
+        [Route("online-collections")]
+        public ActionResult OnlineCollections()
+        {
+            return View("OnlineCollections");
+        }
+
+
         // GET: VideoPodcasts
         [Route("videos-podcasts")]
         public ActionResult VideosPodcasts()
         {
-            return View("VideoPodcasts");
+            return View("VideosPodcasts");
         }
     }
 }
