@@ -414,6 +414,14 @@
     <Content Include="Content\StateTemplate\images\CAGoldRush\section11.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section12.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section13.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section13\anglo_gold_mining.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section13\charter_grass_valley.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section13\constitution_mining_company.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section13\laws_chinese_camp.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section13\mining_claim.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section13\prospectus_sonora.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section13\quicksilver.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section13\yreka_water.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section1\captain_sutter.png" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section1\jewett.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section1\mashall_1.jpg" />
@@ -474,6 +482,9 @@
     <Content Include="Content\StateTemplate\images\CAGoldRush\section5\nathan_currier.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section5\read.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section6.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section6\hutchings.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section6\miner_pioneer.jpg" />
+    <Content Include="Content\StateTemplate\images\CAGoldRush\section6\orion.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section7.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section8.jpg" />
     <Content Include="Content\StateTemplate\images\CAGoldRush\section9.jpg" />
