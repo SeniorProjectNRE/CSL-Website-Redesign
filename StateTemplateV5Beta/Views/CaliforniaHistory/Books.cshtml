@@ -2,20 +2,34 @@
 @{
     ViewBag.Title = "CSL - Book Collections - CA History Room";
     ViewBag.PageTitle = "California Books";
-    ViewBag.Author = "Jonathan Shaw";
+    ViewBag.Author = "California State Library";
     ViewBag.Image = "books1.png";
     ViewBag.Description = "Want to peruse book on California? The California history section has one of the deepest collections of California history related books anywhere!";
 }
 
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+</head>
+
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        
+
         <div class="section">
             <div class="container">
-                <ol class="breadcrumb dynamic"></ol>
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/california-history">California History</a></li>
+                    <li class="active">Books</li>
+                </ol>
+
                 <h2 class="page-title" id="title">@ViewBag.PageTitle</h2>
                 <p>
-                    Are you looking for books on California history? We can help! In addition to our 
+                    Are you looking for books on California history? We can help! In addition to our
                     <a href="/california-history/manuscripts/">
                         manuscripts,
                     </a>
@@ -23,29 +37,29 @@
                         ephemera,
                     </a>
                     <a href="/california-history/periodicals/">
-                    periodicals, 
+                        periodicals,
                     </a>
                     <a href="/california-history/pictorial-resources/">
                         photos
                     </a>
-                    and 
+                    and
                     <a href="/california-history/collections/">
                         other resources,
                     </a>
                     we have over 80,000 California history-related books, making our collection one of the largest of its
                     kind in the world. In our stacks, we have early cookbooks, diaries, county histories, and much more. To fully explore our
-                    books, please consult the 
+                    books, please consult the
                     <a href="http://catalog.library.ca.gov/F/63N218EE6S9BP72GY548LEYF3IASHIGMG2JVV4ENTCLS11J8CH-10454?&pds_handle=GUEST">
                         library catalog
-                    </a>or 
+                    </a>or
                     <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">
                         contact us.
                     </a>
                 </p>
-                <br/>
+                <br />
                 <div class="half">
                     <div class="panel-group" role="tablist" aria-multiselectable="true" style="margin-left: -15px;">
-                        
+
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h3 class="panel-title">
@@ -73,7 +87,7 @@
                                             </li>
                                             <li>
                                                 <a href="/california-history/current-display/">
-                                                    On Display   
+                                                    On Display
                                                 </a>
                                             </li>
                                         </ul>
@@ -92,22 +106,22 @@
                                 <div class="panel-body indent-outer">
                                     <div class="indent-inner">
                                         <p style="margin-top: 7px">
-                                            Not finding what you need? Don't give up! We have many other book resources including 
+                                            Not finding what you need? Don't give up! We have many other book resources including
                                             <a href="/california-history/unique-indexes/">
                                                 indexes
-                                            </a> and 
+                                            </a> and
                                             <a href="/services/online-resources/">
                                                 online books.
                                             </a>
-                                            What's more, if we don't have it another 
+                                            What's more, if we don't have it another
                                             <a href="/about/library-sections/">
-                                                library section 
+                                                library section
                                             </a>
-                                            might. Just 
+                                            might. Just
                                             <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?pmi=cPYI9N65bk">
-                                                drop us a line 
+                                                drop us a line
                                             </a>
-                                            and we will 
+                                            and we will
                                             try to connect you with the appropriate resource.
                                         </p>
                                     </div>
@@ -125,9 +139,9 @@
                                 <div class="panel-body indent-outer">
                                     <div class="indent-inner">
                                         <p style="margin-top: 7px">
-                                            We are thrilled that you want to borrow our items! We loan our circulating books directly to current state 
-                                            employees and indirectly to the general public via interlibrary loan. If you have any questions about 
-                                            borrowing our materials, please feel free to 
+                                            We are thrilled that you want to borrow our items! We loan our circulating books directly to current state
+                                            employees and indirectly to the general public via interlibrary loan. If you have any questions about
+                                            borrowing our materials, please feel free to
                                             <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">
                                                 contact us.
                                             </a>
@@ -147,19 +161,19 @@
                                 <div class="panel-body indent-outer">
                                     <div class="indent-inner">
                                         <p style="margin-top: 7px">
-                                            Even if you cannot 
+                                            Even if you cannot
                                             <a href="/california-history/visiting/">
-                                                visit us, 
+                                                visit us,
                                             </a>
-                                            you can still use many of our books remotely by placing an inter-library loan at 
-                                            your local library, viewing 
+                                            you can still use many of our books remotely by placing an inter-library loan at
+                                            your local library, viewing
                                             <a href="https://archive.org/details/californiastatelibrary?">
                                                 digitized copies
-                                            </a>or placing 
+                                            </a>or placing
                                             <a href="/california-history/photocopy/">
                                                 copy orders
-                                            </a> for book selections less than 20 pages in 
-                                            length. If you have any questions about these access options, please 
+                                            </a> for book selections less than 20 pages in
+                                            length. If you have any questions about these access options, please
                                             <a href="https://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref">
                                                 contact us.
                                             </a>
@@ -179,12 +193,12 @@
                                 <div class="panel-body indent-outer">
                                     <div class="indent-inner">
                                         <p style="margin-top: 7px">
-                                            To accommodate researchers who choose to visit us, we provide access to digital book-scanners that allow you to 
-                                            email or save scans of many of our books to a flash-drive free of charge. If you need paper copies, we have a 
-                                            coin-operated copy-machine. Each print-out costs 15 cents. We also permit no-flash photography and can arrange 
-                                            for 
+                                            To accommodate researchers who choose to visit us, we provide access to digital book-scanners that allow you to
+                                            email or save scans of many of our books to a flash-drive free of charge. If you need paper copies, we have a
+                                            coin-operated copy-machine. Each print-out costs 15 cents. We also permit no-flash photography and can arrange
+                                            for
                                             <a href="/california-history/photo-reproduction/">
-                                                photographic reproductions 
+                                                photographic reproductions
                                             </a>
                                             from our rare books.
                                         </p>
