@@ -3,8 +3,8 @@
     ViewBag.Title = "CSL - California As We Saw It: Exploring The California Gold Rush";
     ViewBag.PageTitle = "California Gold Rush";
     ViewBag.Banner = "CSLBuilding.jpg";
-    ViewBag.Author = "Matthew Loller";
-    ViewBag.Description = "California State Library About page.  Find general information about the state library here.";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "EXPLORING THE CALIFORNIA GOLD RUSH. Overview of the Gold Rush By Gary F. Kurutz  Curator of Special Collections. The exhibit features many examples drawn for the California History Sections extensive collections and incorporates items that will simultaneously delight  surprise  and inform.";
     ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library";
 }
 
@@ -14,18 +14,11 @@
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
 
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
-
-
     <style>
         #intro, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section10, #section11, #section12, #section13, #section14 {
             background: #323a45
         }
     </style>
-
-
 </head>
 
 
@@ -40,16 +33,19 @@
                     <a href="/">Home</a>
                 </li>
                 <li>
+                    <a href="/collections">Our Collections</a>
+                </li>
+                <li>
                     <a href="/california-history/">California History</a>
                 </li>
-                <li class="active">California Gold Rush</li>
+                <li class="active">Gold Rush</li>
             </ol>
             <h2 class="page-title">@ViewBag.PageTitle</h2>
         </div>
 
         <div id="top"></div>
-        
-        
+
+
 
 
         <div id="scrollIntro"></div>
@@ -74,7 +70,7 @@
                         <div class="card-block">
                             <h4 class="card-title">Section I. The Great Discovery</h4>
                             <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scrollIntro').offset().top -150}, 600);"  class="btn btn-default" data-toggle="collapse" href="#section1" aria-expanded="false" aria-controls="section1" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scrollIntro').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section1" aria-expanded="false" aria-controls="section1" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +80,7 @@
                         <div class="card-block">
                             <h4 class="card-title">Section II. By Sea to the Golden Land</h4>
                             <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scrollIntro').offset().top -150}, 600);"  class="btn btn-default" data-toggle="collapse" href="#section2" aria-expanded="false" aria-controls="section2" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scrollIntro').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section2" aria-expanded="false" aria-controls="section2" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
                         </div>
                     </div>
                 </div>
@@ -107,14 +103,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="third" name="section4">
                     <div class="card card-default">
                         <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section4.jpg" alt="section 4 image">
                         <div class="card-block">
                             <h4 class="card-title">Section IV. Via the Isthmus</h4>
                             <p></p>
-                            <a role="tab"  onclick="$('html, body').animate({scrollTop: $('#scroll3').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section4" aria-expanded="false" aria-controls="section4" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
+                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scroll3').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section4" aria-expanded="false" aria-controls="section4" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
                         </div>
                     </div>
                 </div>
@@ -169,7 +165,7 @@
                 </div>
             </div>
         </div>
-         
+
         <div id="scroll9"></div>
         @Html.Partial("~/Views/shared/CAGoldRush/_Section9.cshtml")
         @Html.Partial("~/Views/shared/CAGoldRush/_Section10.cshtml")
