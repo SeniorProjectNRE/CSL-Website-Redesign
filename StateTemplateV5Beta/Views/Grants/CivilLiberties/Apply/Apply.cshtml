@@ -1,12 +1,61 @@
-﻿
-@{
-    ViewBag.Title = "Apply";
+﻿@{
+    ViewBag.Title = "Submit Your Application";
+    ViewBag.Author = "Jonathan Shaw";
+    ViewBag.Description = "Find information about applying for the California Civil Liberties Public EducationProgram.";
+    ViewBag.Keywords = "CCLP CCL CL California Civil Liberties Program Public Education Application";
+    ViewBag.pageID = "CCL Apply";
+
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Apply</h2>
+        <div class="container">
+            <div class="section">
+                <ol class="breadcrumb dynamic"></ol>
+                <h2 class="page-title">@ViewBag.Title</h2>
+                <div>
+                    <h4 style="color:red;">
+                        Application Period Closed
+                    </h4>
+                    <p>
+                        The California Civil Liberties Public Education Program FY 2016-17 application is online. Please note before starting the following before starting the online process: 
+                    </p>
+                    <ul class="list-standout">
+                        <li>
+                            There is no "partial save" option for this application. Once an application process is started, it must be completed during the same session, or the applicant must start the process over.
+                        </li>
+                        <li>
+                            Fill-in fields include information about an applicant's legislative districts; we recommend this information be researched ahead of time.
+                        </li>
+                        <li>
+                            Some fields are "essay" (narrative) questions; we recommend drafting this language ahead of time, keeping the maximum character count for each question in mind.
+                        </li>
+                        <li>
+                            There are multiple attachments that must be submitted in PDF format, including Timeline, Budget, Applicant Information and Key Personnel, and Supplementary Materials. These components must be created before starting the application.
+                        </li>
+                    </ul>
+                    <p>
+                        <a href="~/Content/StateTemplate/pdf/grants/Civil Liberties/BeforeYouStartApplication-CaliforniaCivilLibertiesProgramFY2016-17.pdf">
+                            Before You Start Your Application
+                        </a>
+                        (PDF) – this document takes applicants through the different sections of the CCLPEP application so an applicant can properly prepare. 
+                    </p>
+                    <p>
+                        Questions? Email Mary Beth Barber at
+                        <a href="mailto:marybeth.barber@library.ca.gov">
+                            Marybeth.barber@library.ca.gov
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
-
-
