@@ -10,8 +10,6 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
-
 
     <style>
         . {
@@ -25,165 +23,168 @@
 <div id="main-content" class="main-content">
     <main class="main-primary">
 
-        <div class="section">
-            <div class="container">
-                <div class="two-thirds">
-                    <ol class="breadcrumb">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/collections/">Our Collection</a></li>
-                        <li><a href="/california-history/">California History</a></li>
-                        <li class="active">Collections</li>
-                    </ol>
-                    <h2 class="page-title">@ViewBag.PageTitle</h2>
 
-                    <p>
-                        Are you researching a California history topic? Come see us! Our huge collection of Californiana includes first hand-resources, such as <a href="/california-history/manuscripts">letters</a>, <a href="/california-history/newspapers">newspapers</a>, <a href="/california-history/pictorial-resources">pictures</a>, <a href="/california-history/maps">maps</a> and <a href="/california-history/ephemera">sheet music</a>, as well as numerous <a href="/california-history/books">books</a>, <a href="/california-history/periodicals">periodicals</a> and <a href="/california-history/unique-indexes">indexes</a>, from every single county in California and a few from outside the state. Whether you're interested in 1960s protest movements, California's involvement in World War I, the Gold Rush or even pre-historic California, we'll have a resource for you.
-                    </p>
+        <div class="container">
+            <div class="section">
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/collections/">Our Collection</a></li>
+                    <li><a href="/california-history/">California History</a></li>
+                    <li class="active">Collections</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+            </div>
+            <div class="two-thirds">
 
 
+                <p>
+                    Are you researching a California history topic? Come see us! Our huge collection of Californiana includes first hand-resources, such as <a href="/california-history/manuscripts">letters</a>, <a href="/california-history/newspapers">newspapers</a>, <a href="/california-history/pictorial-resources">pictures</a>, <a href="/california-history/maps">maps</a> and <a href="/california-history/ephemera">sheet music</a>, as well as numerous <a href="/california-history/books">books</a>, <a href="/california-history/periodicals">periodicals</a> and <a href="/california-history/unique-indexes">indexes</a>, from every single county in California and a few from outside the state. Whether you're interested in 1960s protest movements, California's involvement in World War I, the Gold Rush or even pre-historic California, we'll have a resource for you.
+                </p>
 
-                    <div class="panel-group" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingOne">
-                                <h3 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Materials News</a>
-                                </h3>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    <ul>
-                                        <li><a href="/california-history/county-month">County of the Month</a></li>
-                                        <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local%5Fbase=csl01pub&amp;ccl%5Fterm=wrd%3Dcalnew-17-08" target="_blank">Latest Additions</a></li>
-                                        <li><a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=(ENT%20ct%20(August%202017)%20NOT%20IMG2%20ct%20(*))&amp;TN=CALINFO&amp;RF=webdisplaycollab&amp;DF=webdisplaycollab&amp;AC=QBE_QUERY" target="_blank">Just Indexed</a></li>
-                                        <li><a href="/california-history/current-display">Monthly Display</a></li>
-                                        <li><a href="/california-history/periodicals-month">Periodical of the Month</a></li>
-                                        <li><a href="http://californiastatelibrary.tumblr.com/tagged/American-Haiku-Archives" target="_blank">Haiku of the Week</a></li>
-                                        <li><a href="http://californiastatelibrary.tumblr.com/tagged/botw" target="_blank">Book of the Week</a></li>
-                                    </ul>
-                                </div>
+
+
+                <div class="panel-group" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Materials News</a>
+                            </h3>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="/california-history/county-month">County of the Month</a></li>
+                                    <li><a href="http://catalog.library.ca.gov/F/?func=find-c&amp;local%5Fbase=csl01pub&amp;ccl%5Fterm=wrd%3Dcalnew-17-08" target="_blank">Latest Additions</a></li>
+                                    <li><a href="http://dbs.library.ca.gov/dbtw-wpd/exec/dbtwpub.dll?QY=(ENT%20ct%20(August%202017)%20NOT%20IMG2%20ct%20(*))&amp;TN=CALINFO&amp;RF=webdisplaycollab&amp;DF=webdisplaycollab&amp;AC=QBE_QUERY" target="_blank">Just Indexed</a></li>
+                                    <li><a href="/california-history/current-display">Monthly Display</a></li>
+                                    <li><a href="/california-history/periodicals-month">Periodical of the Month</a></li>
+                                    <li><a href="http://californiastatelibrary.tumblr.com/tagged/American-Haiku-Archives" target="_blank">Haiku of the Week</a></li>
+                                    <li><a href="http://californiastatelibrary.tumblr.com/tagged/botw" target="_blank">Book of the Week</a></li>
+                                </ul>
                             </div>
                         </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTwo">
-                                <h3 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">More California Materials</a>
-                                </h3>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                    <p>
-                                        Can't find what you're looking for? Don't give up yet! If you haven't already looked, we suggest that you search our <a href="http://catalog.library.ca.gov/F/?" target="_blank">catalog</a> and the <a href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm" target="_blank">California Information File II</a>. For more information, about what we have, please <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>, if we don't have an item, we can point you to the <a href="/about/library-sections">library section</a> that might have it.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingThree">
-                                <h3 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Borrowing</a>
-                                </h3>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    <p>
-                                        We are thrilled that you want to borrow our items! We loan our circulating <a href="/california-history/books">books</a> and <a href="/california-history/periodicals">periodicals</a> directly to <a href="/services/to-state-employees">current state employees</a> and indirectly to the general public via interlibrary loan. If you have any questions about borrowing our materials, please feel free to <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingFour">
-                                <h3 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Remote Access</a>
-                                </h3>
-                            </div>
-                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                <div class="panel-body">
-                                    <p>
-                                        Even if you can't make it into Sacramento, you can still use many of our materials. Depending on what you're interested in, you may be able to use our items by placing interlibrary loans at your local library, placing <a href="/california-history/photocopy">copy orders</a> and even viewing some of our materials online, via <a href="https://calisphere.org/institution/51/collections/" target="_blank">Calisphere</a>, the <a href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm" target="_blank">California Information File II</a>, our <a href="/collections/online-exhibits">online exhibits</a>, or <a href="https://archive.org/details/californiastatelibrary?" target="_blank">Internet Archive</a>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingFive">
-                                <h3 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Reproduction</a>
-                                </h3>
-                            </div>
-                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                <div class="panel-body">
-                                    <p>
-                                        We are happy to offer a wide variety of reproduction options including photographic <a href="/california-history/digital-images">reproduction</a>, <a href="/california-history/photocopy">copying services</a> and <a href="/california-history/digital-images">digital reproductions</a>. We also permit no-flash photography and make self-serve copying and scanning equipment available to our <a href="/california-history/visiting">visitors</a>. If you have any questions or you would like to place an order, please <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                </div>
 
-                <div class="third">
-                    <div class="section">
-                        <div class="row">
-
-                            <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:right; margin-right:0;padding-right:0;">
-                                <a href="/california-history/books">
-                                    <img class=" img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_book_over.jpg" alt="Card image cap">
-                                </a>
-                            </div>
-
-
-                            <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:left; margin-left:0;padding-left:0;">
-                                <a href="/california-history/manuscripts">
-                                    <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_manuscripts_over.jpg" alt="Card image cap">
-                                </a>
-                            </div>
-
-                            <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:right; margin-right:0;padding-right:0;">
-                                <a href="/california-history/newspapers">
-                                    <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_newspaper_over.jpg" alt="Card image cap">
-                                </a>
-                            </div>
-
-                            <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:left; margin-left:0;padding-left:0;">
-                                <a href="/california-history/periodicals"> <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_periodicals_over.jpg" alt="Card image cap"></a>
-                            </div>
-
-
-                            <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:right; margin-right:0;padding-right:0;">
-                                <a href="/california-history/ephemera">
-                                    <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_ephemera_over.jpg" alt="Card image cap">
-                                </a>
-                            </div>
-
-                            <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:left; margin-left:0;padding-left:0;">
-                                <a href="/california-history/maps">
-                                    <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_maps_over.jpg" alt="Card image cap">
-                                </a>
-                            </div>
-
-                            <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:right; margin-right:0;padding-right:0;">
-                                <a href="/california-history/pictorial-resources">
-                                    <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_pictorial_over.jpg" alt="Card image cap">
-                                </a>
-                            </div>
-
-                            <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:left; margin-left:0;padding-left:0;">
-                                <a href="/california-history/unique-indexes">
-                                    <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_unique_over.jpg" alt="Card image cap">
-                                </a>
-                            </div>
-
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">More California Materials</a>
+                            </h3>
                         </div>
-
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <p>
+                                    Can't find what you're looking for? Don't give up yet! If you haven't already looked, we suggest that you search our <a href="http://catalog.library.ca.gov/F/?" target="_blank">catalog</a> and the <a href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm" target="_blank">California Information File II</a>. For more information, about what we have, please <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>, if we don't have an item, we can point you to the <a href="/about/library-sections">library section</a> that might have it.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Borrowing</a>
+                            </h3>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <p>
+                                    We are thrilled that you want to borrow our items! We loan our circulating <a href="/california-history/books">books</a> and <a href="/california-history/periodicals">periodicals</a> directly to <a href="/services/to-state-employees">current state employees</a> and indirectly to the general public via interlibrary loan. If you have any questions about borrowing our materials, please feel free to <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Remote Access</a>
+                            </h3>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <p>
+                                    Even if you can't make it into Sacramento, you can still use many of our materials. Depending on what you're interested in, you may be able to use our items by placing interlibrary loans at your local library, placing <a href="/california-history/photocopy">copy orders</a> and even viewing some of our materials online, via <a href="https://calisphere.org/institution/51/collections/" target="_blank">Calisphere</a>, the <a href="http://dbs.library.ca.gov/dbtext_html/QueryCalinfo.htm" target="_blank">California Information File II</a>, our <a href="/collections/online-exhibits">online exhibits</a>, or <a href="https://archive.org/details/californiastatelibrary?" target="_blank">Internet Archive</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Reproduction</a>
+                            </h3>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                <p>
+                                    We are happy to offer a wide variety of reproduction options including photographic <a href="/california-history/digital-images">reproduction</a>, <a href="/california-history/photocopy">copying services</a> and <a href="/california-history/digital-images">digital reproductions</a>. We also permit no-flash photography and make self-serve copying and scanning equipment available to our <a href="/california-history/visiting">visitors</a>. If you have any questions or you would like to place an order, please <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank">contact us</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+            <div class="third">
+                <div class="section">
+                    <div class="row">
+
+                        <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:right; margin-right:0;padding-right:0;">
+                            <a href="/california-history/books">
+                                <img class=" img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_book_over.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+
+
+                        <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:left; margin-left:0;padding-left:0;">
+                            <a href="/california-history/manuscripts">
+                                <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_manuscripts_over.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:right; margin-right:0;padding-right:0;">
+                            <a href="/california-history/newspapers">
+                                <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_newspaper_over.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:left; margin-left:0;padding-left:0;">
+                            <a href="/california-history/periodicals"> <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_periodicals_over.jpg" alt="Card image cap"></a>
+                        </div>
+
+
+                        <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:right; margin-right:0;padding-right:0;">
+                            <a href="/california-history/ephemera">
+                                <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_ephemera_over.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:left; margin-left:0;padding-left:0;">
+                            <a href="/california-history/maps">
+                                <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_maps_over.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:right; margin-right:0;padding-right:0;">
+                            <a href="/california-history/pictorial-resources">
+                                <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_pictorial_over.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-md-6 col-lg-6" style="text-align:left; margin-left:0;padding-left:0;">
+                            <a href="/california-history/unique-indexes">
+                                <img class="img-responsive" src="~/Content/StateTemplate/images/caliorniaHistory/collections/c_unique_over.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </main>
 </div>

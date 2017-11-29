@@ -12,19 +12,20 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
         <div class="container">
-            <ol class="breadcrumb">
-                <li><a href="/home">Home</a></li>
-                <li><a href="/collections">Our Collections</a></li>
-                <li><a href="/california-history">California History</a></li>
-                <li style="text-transform:none;">Research Guides</li>
-            </ol>
-            <h2 class="page-title">@ViewBag.Pagetitle</h2>
+            <div class="section">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/california-history">California History</a></li>
+                    <li style="text-transform:none;">Research Guides</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.Pagetitle</h2>
+            </div>
         </div>
         <div class="section">
             <div class="container">
