@@ -1,11 +1,36 @@
-﻿
-@{
-    ViewBag.Title = "Application";
+﻿@{
+    ViewBag.Title = "Civil Liberties Application - Start";
+    ViewBag.Author = "Jonathan Shaw";
+    ViewBag.Description = "Start here for information about the California Civil Liberties Public Education Program";
+    ViewBag.Keywords = "CCLP CCL CL California Civil Liberties Program Public Education Application Apply";
+    ViewBag.pageID = "CCL Application";
+
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Application</h2>
+        <div class="container">
+            <div class="section">
+                <ol class="breadcrumb dynamic"></ol>
+                <h2 class="page-title">@ViewBag.Title</h2>
+                <h4 style="color:red;">Application Period Closed</h4>
+                <p>
+                    This online application for the California Civil Liberties Public Education Program FY 2016-17 has six different sections, many that require documents to be prepared before starting the online application process. Please carefully read the <a href="~/Content/StateTemplate/pdf/grants/Civil Liberties/CACivilLibertiesPublicEducationProgramFY2016-17GUIDELINES.pdf">Guidelines</a> and the <a href="~/Content/StateTemplate/pdf/grants/Civil Liberties/BeforeYouStartApplication-CaliforniaCivilLibertiesProgramFY2016-17.pdf">Before You Start</a> documents and prepare the necessary components of the application before starting. 
+                </p>
+                <p>
+                    <strong>
+                        Please do not use the Back button on your browser. You will have the opportunity to edit each section of your application right before you submit. If you need to go back to a previous section during your application process, please use the Back and Next buttons at the bottom of each section to navigate around your application. 
+                    </strong>
+                </p>
+            </div>
+        </div>
     </main>
 </div>
-
