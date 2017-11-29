@@ -687,6 +687,12 @@
     <Content Include="Content\StateTemplate\images\crb\icons\resources.png" />
     <Content Include="Content\StateTemplate\images\crb\icons\staff.png" />
     <Content Include="Content\StateTemplate\images\crb\icons\watercolor.png" />
+    <Content Include="Content\StateTemplate\images\crb\newsletters\archive.png" />
+    <Content Include="Content\StateTemplate\images\crb\newsletters\crb-home.png" />
+    <Content Include="Content\StateTemplate\images\crb\newsletters\reports.png" />
+    <Content Include="Content\StateTemplate\images\crb\newsletters\resources.png" />
+    <Content Include="Content\StateTemplate\images\crb\newsletters\sitn-top.jpg" />
+    <Content Include="Content\StateTemplate\images\crb\newsletters\staff.png" />
     <Content Include="Content\StateTemplate\images\crb\rss.png" />
     <Content Include="Content\StateTemplate\images\crb\sitn-top.jpg" />
     <Content Include="Content\StateTemplate\images\crb\watercolor.jpg" />
