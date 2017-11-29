@@ -1,6 +1,7 @@
 ﻿@{
-    ViewBag.Title = "Services to the General Public";
-    ViewBag.Author = "Jonathan Shaw";
+    ViewBag.Title = "CSL - Services To the General Public";
+    ViewBag.PageTitle = "California State Library Services To the General Public";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "California State Library Public Services page.  Find info about public services here.";
     ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library, services, general, public";
 }
@@ -12,90 +13,289 @@
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
+<style>
+    @@media (min-width: 1280px) {
+        #title-page {
+            display: none;
+        }
+
+        #page-banner {
+            display: block;
+        }
+    }
+
+    @@media (max-width: 767px) {
+        #title-page {
+            display: block;
+        }
+
+        #page-banner {
+            display: none;
+        }
+    }
+
+    .holidays {
+        width: 23%;
+        float: right;
+        margin-top: 30px;
+        text-align: center;
+        border: 1px solid #c7c7c7;
+        padding: 5px 30px
+    }
+
+    .blue-div {
+        background-color: #0a5b82;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+        margin: 0 auto;
+    }
+
+        .blue-div h2 {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 20px 0 0 0;
+            text-align: left;
+        }
+
+    .threecolumns {
+        width: 1246px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .columns {
+        width: 400px;
+        float: left;
+        margin-right: 22px;
+        background-color: #fff;
+    }
+
+        .columns p, .twocolumns p {
+            padding: 0px;
+        }
+
+        .columns img {
+            width: 400px
+        }
+
+    .half h3 {
+        text-align: left;
+        font-size: 1.2em;
+        margin: 0px 0;
+        padding-top: 0;
+    }
+
+    .twocolumns {
+        width: 600px;
+        float: left;
+        margin-right: 22px;
+        background-color: #fff;
+    }
+
+    .wrap {
+        padding: 0 15px;
+    }
+
+    .icon {
+        width: 33px;
+        float: left;
+        padding: 20px 0
+    }
+
+    .more-info {
+        padding-top: 20px
+    }
+
+    .grey-box {
+        width: 100%;
+        background-color: #e1e1e1;
+        height: 55px;
+        text-align: center;
+    }
+
+    .box-with-border {
+        width: 23%;
+        float: right;
+        margin: 30px 60px 0 0;
+        text-align: center;
+        border: 1px solid #c7c7c7;
+        padding: 5px 30px
+    }
+
+    .orange {
+        color: #FDB81E;
+        font-weight: bold
+    }
+
+    .blue {
+        text-align: center;
+        color: #0a5b82;
+        font-weight: bold
+    }
+
+    .expand-div {
+        width: 33%;
+        float: left;
+        padding-right: 20px;
+        margin: 0 auto;
+    }
+
+    .panel-group {
+        margin-bottom: 0
+    }
+
+    .spacer {
+        height: 30px;
+    }
+
+    .list-overstated li, .list-understated li {
+        background: url(/images/crb/year.png) no-repeat 0 0 !important;
+        height: 103px;
+        width: 100%;
+    }
+
+    .panel-default > .panel-heading {
+        background-color: #0a5b82;
+        border: 0;
+    }
+
+    .panel-title > a {
+        color: #fff;
+        font-size: 2.2em;
+    }
+
+    .panel-default .panel-body {
+        background-color: #d8e2eb;
+    }
+
+    .accordion .panel-heading .panel-title a:after, .panel-group .panel-heading .panel-title a:after, .service-tile-content .panel-heading .panel-title a:after {
+        color: #fff;
+        top: 36%;
+    }
+
+    .transp-p {
+        text-align: center;
+        color: #fff;
+        opacity: 0.5;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .card {
+        float: left;
+        background-color: #f5f5f5;
+        height: 450px;
+    }
+
+    h4 {
+        color: #066bb2;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+</style>
+
 <div id="main-content" class="main-content">
-    <main class="main-primary">
-        <div class="section">
-            <div class="container">
-
-                <ol class="breadcrumb dynamic"></ol>
-                <h2 class="page-title" id="title">@ViewBag.Title</h2>
-
-                <div class="two-thirds">
-                    <h3>
-                        Overview
-                    </h3>
-                    <p>
-                        A wide range of services are available to Californians through the California State Library. The library provides reference services to visitors of the library, as well as those contacting us via phone, fax, letter, email or TDD. Visitors are welcome to use our collections on site. The State Library's circulating materials are loaned to the public through local libraries. Other services include braille and recorded books, a directory of California libraries, support for literacy programs and volunteer programs, use of computers with Internet access, and online access to our catalogs. For more information, please contact one of our information desks.
-                    </p>
-
-
-                    <div class="panel panel-overstated highlight">
-                        <div class="panel-heading">
-                            <h2> Information Services at the State Library</h2>
-
-                        </div>
-                        <div class="panel-body">
-                            <ul>
-                                <li>
-                                    <a href="http://catalog.library.ca.gov/F?RN=352681599">
-                                        Online Catalogs
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/services/research-resources/reference/">
-                                        Information and Reference
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/services/borrowing/">
-                                        Borrowing Library Materials
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/california-history/">
-                                        California History Information
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/california-history/genealogy/">
-                                        California Genealogy Resources
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/services/statistics/library-directory/">
-                                        California Library Directory
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://libraryliteracy.org/">
-                                        California Library Literacy Services
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/government-publications/">
-                                        Government Publications
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/visit-us/locations-and-hours/">
-                                        Contacting Us
-                                    </a>
-                                </li>
-                            </ul>
+    <div class="container">
+        <main class="main-primary">
+            <!-- InstanceBeginEditable name="MainContent" -->
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li class="active" style="text-transform:none;">To the Public</li>
+            </ol>
+            <h1 id="title-page">@(ViewBag.PageTitle)</h1>
+            <img id="page-banner" src="~/Content/StateTemplate/images/services/toPublic/top.jpg" style="width:100%;" alt="" />
+            <p style="padding-top:40px">
+                A wide range of services are available to Californians through the California State Library. The library provides reference services to visitors of the library, as well as those contacting us.  Visitors are welcome to use our collections on site. The State Library's circulating materials are loaned to the public through local libraries. For more information, please contact one of our information desks.
+            </p>
+            <h2 class="orange">Information Services at the State Library</h2>
+            <div class="group">
+                <div class="half">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toPublic/onlinecol.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Online Catalogs</h4>
+                            <p>Find books, documents, legal materials, magazines, journals, photographs, manuscripts, maps, videos, audio books available to eligible users of the National Library Service for the Blind and Physically Handicapped, and more in the collections of the California State Library, including the Sutro Library in San Francisco.</p>
+                            <a href="http://catalog.library.ca.gov/" class="btn btn-default">GO TO CATALOG</a>
                         </div>
                     </div>
-
-
-
                 </div>
-
-                <div class="third">
-                    <img alt="public services" src="~/Content/StateTemplate/images/services/PublicServices.png" class="animated fadeInRight" />
+                <div class="half">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toPublic/reference.jpg" alt="reference">
+                        <div class="card-block">
+                            <h4 class="card-title">Information and Reference</h4>
+                            <p>Everyone is welcome to visit the California State Library and use our collections. Each public service location of the library has an information desk. You can use our Online Catalog to search our collections. Check our Research Resources to help you get started in your research.</p>
+                            <a href="" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
                 </div>
-
+                <div class="half">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toPublic/borrowing.jpg" alt="BTBL">
+                        <div class="card-block">
+                            <h4 class="card-title">Borrowing Library Materials</h4>
+                            <p>The California State Library loans books, magazines, government publications, newspapers on microfilm, and other materials to the public through the interlibrary loan program. Please contact your local public, academic, or workplace library to request an interlibrary loan. Interlibrary Loan departments should review our Interlibrary Loan instructions.</p>
+                            <a href="/services/btbl/" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toPublic/comp.jpg" alt="Computer">
+                        <div class="card-block">
+                            <h4 class="card-title">Internet Computers, WiFi and Scanners</h4>
+                            <p>Internet workstations, WiFi, and book and digital microform scanners are available for use in the California State Library's public service locations on the 3rd floor of the Stanley Mosk Library and Courts building at 914 Capitol Mall, the California History Room on the 2nd floor of the Annex Building at 900 N Street in Sacramento and the Sutro Library in San Francisco.</p>
+                            <a href="http://www.library.ca.gov/services/internet.html" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toPublic/btbl.jpg" alt="BTBL">
+                        <div class="card-block">
+                            <h4 class="card-title">Services to People with Disabilities</h4>
+                            <p>Learn about the free services and vast, searchable catalog available to eligible readers through our online directory of services and information about the Braille and Talking Book Library.</p>
+                            <a href="http://www.library.ca.gov/services/btbl.html" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toPublic/gen-public.jpg" alt="general public">
+                        <div class="card-block">
+                            <h4 class="card-title">California History Information</h4>
+                            <p>Our librarians have spent hundreds of hours developing research guides to help you find information and materials in our collection for specific California topics, such as railroads in California, California Native Americans, land grants, mining, the 1906 San Francisco earthquake and fire, and much more.</p>
+                            <a href="/services/to-public/" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toPublic/docs.jpg" alt="research">
+                        <div class="card-block">
+                            <h4 class="card-title">Government Publications</h4>
+                            <p>Since 1850, the California State Library has collected legislative proceedings, hearings, and research reports; state agency reports; environmental impact reports; budgets and financial reports; statistical compilations; directories and organization charts; and periodicals.</p>
+                            <a href="http://www.library.ca.gov/gps/gps_cal1.html" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/services/toPublic/genealogy.jpg" alt="Genealogy materials">
+                        <div class="card-block">
+                            <h4 class="card-title">Genealogy</h4>
+                            <p>Access our genealogy toolkit to start your family history research with helpful links and a chart creator. Visit one of our reading rooms open to the public to access California county genealogy indexes, files that contain information on people in California history or third party genealogy databases.</p>
+                            <a href="/services/genealogy/" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 
-    </main>
+            <div style="clear:both"></div>
+            <div class="spacer"></div>
+        </main>
+    </div>
 </div>
-

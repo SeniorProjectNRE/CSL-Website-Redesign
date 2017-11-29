@@ -1,31 +1,18 @@
-﻿@model StateTemplateV5Beta.Models.HelperClasses.HomeViewModel
-@using StateTemplateV5Beta.Models
-
-@{
-    ViewBag.Title = "Welcome to the California State Library";
-    ViewBag.Author = "";
+﻿@{
+    ViewBag.Title = "CSL - Welcome to the California State Library";
+    ViewBag.PageTitle = "Welcome to the California State Library";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "";
     ViewBag.Keywords = "";
     ViewBag.pageID = "Home";
-
 }
+
 <head>
     <title>@(ViewBag.Title)</title>
-    <meta name="Author" content="State of California" />
-    <meta name="Description" content="State of California" />
-    <meta name="Keywords" content="California, government" />
-    
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="State of California Library" />
+    <meta name="Keywords" content="California, government" />  
 </head>
-
-<!--
-<div class="navigation-search">
-	<div id="head-search" class="search-container featured-search fade">
-        
-		Html.Partial("~/Views/shared/modules/search.cshtml")
-	</div>
-
-</div>
--->
 
 <!-- Search Results -->
 <div class="search-results-container">
@@ -35,34 +22,14 @@
 <div class="header-decoration"></div>
 
 <body class="primary">
-
-
-	<!-- Ask Bar -->
-	@*@Html.Partial("~/Views/shared/modules/ask-bar.cshtml")*@
-	<!-- Step 5: Header Images -->
-	<!-- Include for optional slideshow banner -->
-	@*@Html.Partial("~/Views/shared/modules/header-single-banner.cshtml")*@
-
-    
-    
-
 	<div id="main-content" class="main-content">
 			<!-- Begin Main Content -->
-
             @Html.Partial("~/Views/shared/modules/_HomeCarousel.cshtml")
             @Html.Partial("~/Views/shared/modules/_HomeSpotlight.cshtml")
             @Html.Partial("~/Views/shared/modules/_HomeEvents.cshtml")
             @Html.Partial("~/Views/shared/modules/_HomeLinks.cshtml")
-            @*@Html.Partial("~/Views/shared/modules/_HomeTodayInCali.cshtml")*@
-            @Html.Partial("~/Views/shared/modules/_HomeItems.cshtml")
-            @*Html.Partial("~/Views/shared/modules/Blogs.cshtml", Model.BlogList)*@
-            @*@Html.Partial("~/Views/shared/modules/section-footer2.cshtml")*@
-
-			
-			<!-- End Main Content -->
-		
+            @Html.Partial("~/Views/shared/modules/_HomeItems.cshtml")	
+			<!-- End Main Content -->		
 	</div>
-   
-
 </body>
 

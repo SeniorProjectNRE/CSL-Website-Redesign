@@ -1,8 +1,8 @@
 ﻿
 @{
-    ViewBag.Title = "The Historic Library & Courts Building: An Architectural Treasure";
-    ViewBag.PageTitle = "CSL - The Historic Library & Courts Building";
-    ViewBag.Author = "Alan Cleetus";
+    ViewBag.PageTitle = "The Historic Library & Courts Building: An Architectural Treasure";
+    ViewBag.Title = "CSL - The Historic Library & Courts Building";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "The Library & Courts Building located at 914 Capitol Mall is widely regarded as one of the most beautiful buildings in State Government";
 }
 
@@ -12,13 +12,10 @@
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
 
-
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
-
     <script src="~/Content/StateTemplate/js/libs/lightbox.js"></script>
     <link rel="stylesheet" href="~/Content/StateTemplate/css/lightbox.css" />
-
 </head>
+
 <style>
     #fancyBoxImageGallery > a > img {
         padding: 5px;
@@ -30,7 +27,12 @@
         <div class="section">
             <div class="container">
 
-                <ol class="breadcrumb dynamic"></ol>
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About Library</a></li>
+                    <li><a href="/about/history">History</a></li>
+                    <li>Building</li>
+                </ol>
 
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
 
@@ -54,7 +56,7 @@
 
                 </h3>
                 <p>
-                    Here you can see exterior and interior views of the Library & Courts Building, as well as the photos of the Library & Courts II Building.
+                    Here you can see exterior and interior views of the Library & Courts Building, as well as the photos of the Library & Courts II Building the California State Library Building.
 
                 </p>
                 <p>

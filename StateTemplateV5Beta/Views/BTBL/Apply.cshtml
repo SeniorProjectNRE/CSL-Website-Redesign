@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "CSL - BTBL - Application for BTBL Service";
     ViewBag.PageTitle = "Application for BTBL Service";
-    ViewBag.Author = "Jonathan Shaw";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "Eligibility requirements and sign-up application to become a patron of the Braille and Talking Book Library BTBL service. We serve residents of the counties of Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Glenn, Humboldt, Inyo, Lake, Lassen, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Placer, Plumas, Sacramento, San Benito, San Joaquin, San Mateo, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tuolumne, Yolo, and Yuba. Applicants must be permanently or temporarily: Legally blind, with vision in the better eye of 2/2 or less with corrective glasses, or have a visual field no greater than 2 degrees in diameter, or be unable to see well enough or focus long enough to read standard print, even with corrective glasses, or be unable to handle print books or turn pages because of a physical disability, or be certified by a medical doctor as having a reading disability such as dyslexia due to an organic dysfunction that is severe enough to prevent reading in the usual manner.";
 }
 
@@ -10,16 +10,22 @@
     <meta name="Author" content="State of California" />
     <meta name="Description" content="State of California" />
     <meta name="Keywords" content="California, government" />
-
 </head>
 
 <div id="main-content" class="main-content">
     <div class="container">
         <main class="main-primary">
             <div class="section">
-                <ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/btbl/">Braille and Talking books</a></li><li class="active">Apply for Services</li></ol>
+
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/btbl/">Braille and Talking books</a></li>
+                    <li class="active">Apply for Services</li>
+                </ol>
+
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
-          
+
                 <h3>Before Applying</h3>
                 <p>
                     Please make sure you live in our Service Area and meet the Eligibility Requirements listed below. After BTBL has received your application, a staff member will call within 5 business days to introduce you to our service before it begins.
@@ -36,14 +42,14 @@
 
                         <div class="half">
                             <p>
-                                For Individuals (<a href="~/Content/StateTemplate/otherDocuments/btbl/BTBLIndividualApplicationRev8-17.docx">Word </a>),
+                                For Individuals (<a href="~/Content/StateTemplate/otherDocuments/btbl/BTBLIndividualApplicationRev8-17.docx">WORD</a>),
                                 (<a href="~/Content/StateTemplate/pdf/btbl/BTBLIndividualApplicationRev8-17.pdf">PDF</a>)
                             </p>
                             <p>
-                                For Institutions (<a href="~/Content/StateTemplate/otherDocuments/btbl/new_institution_application-klas-arial-new_logo.doc">Word</a>), (<a href="~/Content/StateTemplate/pdf/btbl/new_institution_application-klas-arial-new_logo.pdf">PDF</a>)
+                                For Institutions (<a href="~/Content/StateTemplate/otherDocuments/btbl/new_institution_application-klas-arial-new_logo.doc">WORD</a>), (<a href="~/Content/StateTemplate/pdf/btbl/new_institution_application-klas-arial-new_logo.pdf">PDF</a>)
                             </p>
                             <p>
-                                En Español (<a href="~/Content/StateTemplate/otherDocuments/btbl/new_institution_application-klas-arial-new_logo.doc">PDF</a>)
+                                En Español (<a href="~/Content/StateTemplate/otherDocuments/btbl/spanishapplication.pdf">PDF</a>)
                             </p>
                         </div>
                         <div class="half">
@@ -65,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-            
+
                 <h3>
                     Service Area
                 </h3>
@@ -75,7 +81,7 @@
                 <p>
                     Residents of San Francisco City should contact the <a href="https://sfpl.org/index.php?pg=0200002301">Library for the Blind and Print Disabled</a> in San Francisco. Residents of Fresno, Madera, Kings, and Tulare Counties should contact the <a href="http://www.fresnolibrary.org/tblb/">Fresno Talking Book Library for the Blind</a>. Southern California residents should contact the <a href="http://www.brailleinstitute.org/library.html">Braille Institute Library</a> in Los Angeles. Other U.S. residents should search for their network library using the NLS <a href="http://www.loc.gov/nls/braille-audio-reading-materials/find-a-local-library/">Find Your Library</a> directory.
                 </p>
-            
+
                 <h3>
                     Eligibility Requirements
                 </h3>

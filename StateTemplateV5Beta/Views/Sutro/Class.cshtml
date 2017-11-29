@@ -51,15 +51,10 @@
                 </ol>
 
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
-                <br />
-
-                @if (Model != null && !string.IsNullOrEmpty(Model.SuccessMessage))
-                { <div class="alert-success">@Model.SuccessMessage</div> }
-   
+                <br />   
             </div>
         </div>
 
-        @if (Model == null) { 
         <div class="section">
             <div class="container">
 
@@ -127,20 +122,7 @@
                     }
                 </div>
            </div>
-        </div>
-        }
-        else
-        {
-            <div class="section section-overstated">
-                <div class="container">
-                    <div class="row pull-right">
-                        <div class="btn btn-primary" onclick="location.href='@Url.Action("Class", "Sutro")'">Submit new form</div>
-                        <div class="btn btn-primary" onclick="location.href='@Url.Action("Index", "Sutro")'">Visit Sutro!</div>
-                    </div>
-                </div>
-            </div>
-
-        }
+        </div> 
     </main>
 </div>
 

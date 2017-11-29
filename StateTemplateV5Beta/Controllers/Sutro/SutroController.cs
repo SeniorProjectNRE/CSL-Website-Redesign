@@ -71,8 +71,14 @@ namespace StateTemplateV5Beta.Controllers.Sutro
                 return View(model);
             }
 
-            SuccessModel success = _emailService.SendSutroClassEmail(model);
-            model.SuccessMessage = success.SuccessMessage;
+            bool success = _emailService.SendSutroClassEmail(model);
+
+            if (success == true)
+            {
+                return RedirectToAction("success", "sutro");
+            }
+            else return RedirectToAction("index", "error");
+
             return View(model);
         }
 
@@ -123,6 +129,13 @@ namespace StateTemplateV5Beta.Controllers.Sutro
         public ActionResult Calendar()
         {
             return View("~/Views/Sutro/Genealogy/Calendar.cshtml");
+        }
+
+        // GET: success
+        [Route("success")]
+        public ActionResult Success()
+        {
+            return View();
         }
     }
 }

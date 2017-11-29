@@ -1,10 +1,286 @@
 ﻿
 @{
-    ViewBag.Title = "DevelopmentProgramsProjects";
+    ViewBag.Title = "CSL -  Library Development Programs and Projects";
+    ViewBag.PageTitle = "Library Development Programs and Projects";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "The grant and support programs and projects developed and managed by the Library Development Services Bureau, for California libraries statewide, are featured here.";
+    ViewBag.Keywords = "California, state, Library, development, programs, projects";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
 <div id="main-content" class="main-content">
-    <main class="main-primary">
-        <h2>DevelopmentProgramsProjects</h2>
+
+    <div class="container">
+        <main class="main-primary">
+            <!-- InstanceBeginEditable name="MainContent" -->
+            <ol class="breadcrumb">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/services/to-libraries/">To Libraries</a></li>
+                <li class="active">Library Development Programs and Projects</li>
+            </ol>
+            <h1 id="title-page">>@ViewBag.PageTitle</h1>
+            <img id="page-banner" src="~/Content/StateTemplate/images/services/toLibraries/ldp/top.jpg" style="width:100%" alt="" />
+            <!--<div class="columns">
+                <p>The California State Library staff is available to help you via telephone, mail, and email.</p>
+            </div>
+            <div class="animate-fadeInRight">
+                <div class="holidays">
+                    <a href="">2017 state holidays</a>
+                </div>
+            </div>
+            <div style="clear: both;"></div>  -->
+            <!--<p>To provide state template v5 Beta feedback use GitHub otherwise feel free to contact us by visiting <a href="http://webtools.ca.gov/about-web-tools/contact-us/">this page</a>.</p>
+            <p>Feel free to <a href="http://Info.Eservices@state.ca.gov/">Subscribe</a> to the Webmaster User Group for state template updates, group announcements and events. You can also visit the <a href="http://webtools.ca.gov/">Webtools</a> website for more information. To contact us about the state template please visit <a href="http://webtools.ca.gov/about-web-tools/contact-us/">this page</a>.<br>
+            </p>
+            <p>This website is managed by the California Department of Technology.</p>
+            <article><p>&nbsp;</p>
+                </article>
+            <!-- InstanceEndEditable -->
         </main>
     </div>
-
+    <div class="threecolumns">
+        <!--<h2 class="orange">LIBRARY UNITS</h2>-->
+        <!--<h4 style="text-align:center; color:#0a5b82; font-weight:bold; text-transform: uppercase">Title</h4>-->
+        <div class="spacer"></div>
+        <p>
+            The grant and support programs and projects developed and managed by the Library Development Services Bureau, for California libraries statewide, are featured here. These opportunities are designed to assist libraries as they reimagine and sustain existing library programs, connect with their communities, foster partnerships, test and implement new technologies, and extend and enhance their library services.
+        </p>
+        <div class="panel-group" id="example-accordion1" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">California Library Literacy Services (CLLS)</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                    <div class="panel-body">
+                        <a href="http://libraryliteracy.org/" target="_blank" rel="noopener noreferrer">California Library Literacy Services (CLLS)</a> supports the people of the state by providing services to adults with low-literacy and their families through California public libraries
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading2">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">California Preservation Program (CPP)</a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                    <div class="panel-body">
+                        <a href="https://calpreservation.org/" target="_blank" rel="noopener noreferrer">The California Preservation Program (CPP)</a> provides information, education, and expert assistance on preservation of collections to libraries, archives, historical societies, history museums, and records repositories in California.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading3">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">California Revealed</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                    <div class="panel-body">
+                        <a href="https://calpreservation.org/california-revealed/" target="_blank" rel="noopener noreferrer">California Revealed</a> is an initiative to help California’s public libraries digitize, preserve, and serve their local history collections online. Participating libraries identify and select from their collections, create discovery metadata for the selected materials, and send materials together with associated metadata to a digital preservation service managed by the California Preservation Program.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading4">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">Career Online High School</a>
+                    </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                    <div class="panel-body">
+                        <!-- TODO: Might be changed to /services/to-libraries/career-online-high-school/ -->
+                        <a href="/grants/career-online-high-school/">Career Online High School</a> is an educational service offered by Gale, a part of Cengage Learning, which gives adults the opportunity to earn an accredited high school diploma and credentialed career certificate at the same time. Through this program, California public libraries receive support to offer free COHS scholarships in their communities.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading5">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">Center for the Book</a>
+                    </h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                    <div class="panel-body">
+                        <a href="http://calbook.org/" target="_blank" rel="noopener noreferrer">The California Center for the Book</a> aims to help California libraries get their communities reading and connecting, through the development and expansion of programs geared toward adults that promote civic engagement, reading, and lifelong learning.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading6">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">Early Learning with Families</a>
+                    </h4>
+                </div>
+                <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                    <div class="panel-body">
+                        <a href="http://elf2.library.ca.gov/" target="_blank" rel="noopener noreferrer">Early Learning with Families (ELF) 2.0</a> is a California State Library initiative intended to further the evolution of library services to young children (0-5), their families and caregivers. ELF libraries serve their communities by providing high quality, engaging, family-focused, and developmentally appropriate early learning services that support family strengths and nurture young children's bodies, minds and spirits.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading7">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">Harwood Public Innovation for California’s Libraries</a>
+                    </h4>
+                </div>
+                <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                    <div class="panel-body">
+                        <!-- TOOD: Link might be changed to /services/to-libraries/harwood/ -->
+                        The California State Library is working with The Harwood Institute to support California library staff in adopting the Turning Outward practice. Library professionals who Turn Outward build a deep knowledge of their communities and use the community as the reference point for their choices and judgments concerning library services. <a href="/grants/harwood/">More about the program</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading8">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">High-Speed Broadband in California’s Libraries</a>
+                    </h4>
+                </div>
+                <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                    <div class="panel-body">
+                        The goal of the <a href="/services/to-libraries/broadband/">High-Speed Broadband Project</a> is to bring high-speed broadband to all California public libraries by connecting them to the California Research and Education Network (CalREN)—a high-capacity 3,800-mile fiber-optic-based network designed to meet the unique requirements of California's vital public-serving educational institutions. </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading9">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">Immigrant Alliance</a>
+                    </h4>
+                </div>
+                <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                    <div class="panel-body">
+                        <!-- TODO: Link might change to /services/to-libraries/immigrant-alliance/ -->
+                        <a href="/grants/immigrant-alliance/">The Immigrant Alliance Project</a> was created to support libraries statewide as they create, enhance, and extend services to immigrants and their families.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading10">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10">Libraries Illuminated</a>
+                    </h4>
+                </div>
+                <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                    <div class="panel-body">
+                        <!-- TODO: Link might change to /services/to-libraries/libraries-illuminated/ -->
+                        <a href="/grants/libraries-illuminated/">The Libraries Illuminated project</a> helps California public libraries make software and hardware improvements to maximize benefits to patrons as they access new high-speed broadband  and Internet connections.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading11">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapse11" aria-expanded="true" aria-controls="collapse11">Maximizing Learning Spaces, or How to MacGyver Your Library</a>
+                    </h4>
+                </div>
+                <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                    <div class="panel-body">
+                        The Maximizing Learning Spaces project provides an opportunity for libraries to receive support to re-examine, plan, evaluate, and reimagine library spaces to maximize their potential as places of learning, literacy, and reading.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading12">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapse12" aria-expanded="true" aria-controls="collapse12">Mental Health Initiative</a>
+                    </h4>
+                </div>
+                <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                    <div class="panel-body">
+                        <!-- TODO: This link is not in the page tracker: http://www.library.ca.gov/grants/lsta/mentalhealthtraining.html -->
+                        <!--<a href="http://www.library.ca.gov/grants/lsta/mentalhealthtraining.html">The Mental Health Initiative</a>-->
+                        <a href="/services/to-libraries/development-programs-projects/">The Mental Health Initiative</a> provides training opportunities for public library staff, to learn how to work effectively with patrons affected by mental illness.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading13">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse13">Public Library Staff Education Program</a>
+                    </h4>
+                </div>
+                <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                    <div class="panel-body">
+                        <a href="/services/to-libraries/public-library-staff-education-program/">The Public Library Staff Education Program</a> is a tuition reimbursement program developed by the California State Library to assist California public and county law libraries with staff professional development. Funding for credentialed training is provided to enable library staff to acquire the knowledge and skills needed to support valuable programs and services in their communities.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading14">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">Rural Libraries Initiative</a>
+                    </h4>
+                </div>
+                <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+                    <div class="panel-body">
+                        The Rural Initiative directs resources to address the most critical needs identified by California rural libraries.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading15">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse15" aria-expanded="false" aria-controls="collapse15">Summer@Your Library: Explore, Learn, Read, Connect</a>
+                    </h4>
+                </div>
+                <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+                    <div class="panel-body">
+                        <a href="http://calchallenge.org" target="_blank" rel="noopener noreferrer">Summer @@ Your Library</a> provides California public library staff with program planning resources, training workshops, a set of quality principles and indicators, statewide summer program outcome statements, and a framework and support for presenting outcomes-based summer programs. Project staff also collect and collate libraries’ summer participation data, work with libraries to develop and test new programming and outreach models, and support a community of practice.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading16">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse16" aria-expanded="false" aria-controls="collapse16">Value of Libraries</a>
+                    </h4>
+                </div>
+                <div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
+                    <div class="panel-body">
+                        Through this project, the State Library is exploring and demonstrating the value that public libraries provide to their communities and the people who invest in them. This effort aims to bring together the best information about the <a href="/services/to-libraries/development-programs-projects/value-libraries/">value of libraries</a> and make it easily accessible through an online clearinghouse.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading17">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse17" aria-expanded="false" aria-controls="collapse17">Veterans Connect@the Library</a>
+                    </h4>
+                </div>
+                <div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
+                    <div class="panel-body">
+                        Through this project, California public libraries work to improve the quality of life for veterans and their families through connecting them to <a href="https://calibrariesforveterans.org/" target="_blank" rel="noopener noreferrer">state and federal benefits and services</a> for which they are eligible.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading18">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse18" aria-expanded="false" aria-controls="collapse18">Zip Books</a>
+                    </h4>
+                </div>
+                <div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading18">
+                    <div class="panel-body">
+                        Zip Books is a project that provides resources and support for California public libraries to employ an alternative model to interlibrary loan, based on a buy vs. borrow and direct patron delivery concept.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="spacer"></div>
+    </div>
+</div>

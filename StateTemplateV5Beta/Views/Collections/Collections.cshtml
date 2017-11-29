@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "CSL - Discover Our Collections";
     ViewBag.PageTitle = "Discover Our Collections";
-    ViewBag.Author = "Chris Pulido";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "California State Library";
     ViewBag.Keywords = "California, state, Library, collections";
 }
@@ -18,70 +18,124 @@
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
+<style>
+    h4 {
+        color: #066bb2;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+</style>
+
 <div id="main-content" class="main-content">
-    <main class="main-primary">
-        <div class="section">
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li><a href="/home">Home</a></li>
-                    <li>Our Collections</li>
-                </ol>
-                <h2 class="page-title">@ViewBag.PageTitle</h2>
-                <div class="group">
-                    <div class="two-thirds">
-                        <p>
-                            Access to the collections of the California State Library is available from our public service sections:
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="http://phereo.com/californiastatelibrary" target="_blank">3D Collections</a>
-                            </li>
-                            <li>
-                                <a href="/btbl/borrow">Braille and Talking Books</a>
-                            </li>
-                            <li>
-                                <a href="/california-history">California History</a>
-                            </li>
-                            <li>
-                                <a href="/grants/civil-liberties/recipients">California Civil Liberties Public Education Program (CCLPEP)</a>
-                            </li>
-                            <li>
-                                <a href="http://www.archive.org/details/californiastatelibrary" target="_blank">Digital Collections</a>
-                            </li>
-                            <li>
-                                <a href="/government-publications">Federal and State Government Publications</a>
-                            </li>
-                            <li>
-                                <a href="/california-history/genealogy">Genealogy Resources</a>
-                            </li>
-                            <li>
-                                <!-- TOOD: needs view -->
-                                <a href="http://www.library.ca.gov/collections/general_coll.html">General Collections</a>
-                            </li>
-                            <li>
-                                <a href="/law">Law Collection</a>
-                            </li>
-                            <li>
-                                <a href="http://catalog.library.ca.gov/" target="_blank">Library's Catalog</a>
-                            </li>
-                            <li>
-                                <a href="/collections/online-exhibits">Online Exhibits</a>
-                            </li>
-                            <li>
-                                <a href="http://catalog.library.ca.gov/F/?func=find-e-0&local_base=images" target="_blank">Photographs, Art Works, Prints, Drawings</a>
-                            </li>
-                            <li>
-                                <a href="/sutro">Sutro Library</a>
-                            </li>
-                        </ul>
+    <div class="container">
+        <main class="main-primary">
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">Our Collections</li>
+            </ol>
+            <h1 id="title-page">@ViewBag.PageTitle</h1>
+            <img id="page-banner" src="~/Content/StateTemplate/images/collections/top.jpg" style="width:100%" alt="Poster featuring a bird's-eye view of Treasure Island looking northeast; shows World's Fair building and grounds, boats in harbor and hills beyond. Ken Sawyer signature at lower right of center." title="California Invites You - 1939 World's Fair - On San Francisco Bay, poster, 1939." />
+            <p style="padding-top:40px;">
+                All visitors to the <a href="/contact">public service locations</a> of the California State Library may access our collections, while state government officials and employees with a <a href="/services/apply/">State Library Card</a> may access a large portion of our collection online.
+            </p>
+            <div class="group">
+                <div class="third">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/btbl.jpg" alt="BTBL">
+                        <div class="card-block">
+                            <h4 class="card-title">Braille and Talking Books</h4>
+                            <p>Learn about the free services and vast, searchable catalog available to eligible readers through our online directory of services and information about the Braille and Talking Book Library.</p>
+                            <a href="/btbl/" class="btn btn-default">READ MORE</a>
+                        </div>
                     </div>
-                    <div class="third">
-                        <img src="~/Content/StateTemplate/images/collections/collection_index.png" class="animated fadeInRight" alt="California State Library Collections" title="California State Library Collections" />
+                </div>
+                <div class="third">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/online.jpg" alt="BTBL">
+                        <div class="card-block">
+                            <h4 class="card-title">Online Catalogs</h4>
+                            <p>Find new and historic publications, photos, maps, reading material for eligible users of the National Library Service for the Blind and Physically Handicapped and more in our online catalogs.</p>
+                            <a href="http://catalog.library.ca.gov/" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/onlinecol.jpg" alt="research">
+                        <div class="card-block">
+                            <h4 class="card-title">Online Collections</h4>
+                            <p>Virtually visit the California State Library and remotely access our collections of historic photographs, drawings, prints and 3D images, as well as view our online exhibits, including on the California gold rush.</p>
+                            <a href="/collections/online-collections/" class="btn btn-default">READ MORE</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-    </main>
+            <div class="group">
+                <div class="third">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/genealogy.jpg" alt="statistics">
+                        <div class="card-block">
+                            <h4 class="card-title">Genealogy</h4>
+                            <p>Access third-party genealogy databases, <a href="http://www.library.ca.gov/calhist/gen-indexes.html">California county genealogy indexes</a> as well as our <a href="http://www/calhist/researchguides.html">genealogy research guides</a> and unique files that contain information on people and events in California history.</p>
+                            <a href="/collections/genealogy/" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/sutro1.jpg" alt="Adolph Sutro">
+                        <div class="card-block">
+                            <h4 class="card-title">Sutro Library</h4>
+                            <p>Our San Francisco branch holds philanthropist Adoph Sutro's original collection, including publications dating from the 13th century and one of the largest genealogy collections in the United States.</p>
+                            <a href="/sutro/" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/history.jpg" alt="Poster or label advertising the California State Fair, September 4-11, 1926. Shows two cars center with red heart, skyline of the city behind; steamboats, railroad, factories, mountains in the distance.">
+                        <div class="card-block">
+                            <h4 class="card-title">California History</h4>
+                            <p>Find the state's premier collection of documents from and about California's rich history, including thousands of rare books, documents, maps, newspapers, photographs, letters, paintings and more.</p>
+                            <a href="/california-history/" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="third">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/govpub.jpg" alt="Federal reporter">
+                        <div class="card-block">
+                            <h4 class="card-title">Government Publications</h4>
+                            <p>Get access to official California governmental publications received by the State Library. Visit the Library to access print publications dating back to 1947, or access our online catalog going back to January 2001.</p>
+                            <a href="/government-publications/" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/employee.jpg" alt="state employee">
+                        <div class="card-block">
+                            <h4 class="card-title">Law</h4>
+                            <p>Access our extensive collection of primary and secondary sources with a focus on California law. Our collection also includes materials relating to federal legislation, and historical and international law.</p>
+                            <a href="/law/" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/video.jpg" alt="Videos">
+                        <div class="card-block">
+                            <h4 class="card-title">Videos/Podcasts</h4>
+                            <p>Watch and listen to videos and podcasts produced by the staff of California State Library, including interviews with reenactors of historical California figures and readings of our extensive haiku collection.</p>
+                            <a href="/collections/videos-podcasts/" class="btn btn-default">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            <div class="spacer"></div>
+        </main>
+    </div>
 </div>
-

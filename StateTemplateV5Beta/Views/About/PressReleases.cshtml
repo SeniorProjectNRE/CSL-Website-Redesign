@@ -1,17 +1,16 @@
 ﻿
 @{
     ViewBag.Title = "CSL - Recent Press Releases from the California State Library";
-    ViewBag.PageTitle = " ";
-    ViewBag.Author = "Alan Cleetus";
+    ViewBag.PageTitle = "Press Releases ";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "Recent Press Releases from the California State Library";
-
 }
 
 <head>
     <title>@(ViewBag.Title)</title>
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
 </head>
 
 <div id="main-content" class="main-content">
@@ -28,7 +27,7 @@
 
                 
 
-                <h2 class="page-title">@ViewBag.Title</h2>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
 
                 <div class="panel-group" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">

@@ -427,20 +427,6 @@ namespace CSLBusinessLayer.Concrete
             return res;
         }
 
-        //public List<string> GetStatusAndCodes(List<string> status, List<string> code)
-        //{
-        //    List<string> myStatus = status;
-        //    List<string> myCode = code;
-        //    List<string> res = new List<string>();
-        //    string statusAndCode;
-        //    for(int i = 0; i < myStatus.Count(); i++)
-        //    {
-        //        statusAndCode = myStatus[i] + ": " + myCode[i];
-        //        res.Add(statusAndCode);
-        //    }
-        //    return res;
-        //}
-
         public List<string> GetStatusListValues(List<LibraryStatusModel> model)
         {
             List<string> res = new List<string>();
