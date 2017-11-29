@@ -1807,7 +1807,7 @@
     <Content Include="Views\CaliforniaHistory\Genealogy\CountyIndexes.cshtml" />
     <Content Include="Views\CaliforniaHistory\CaliforniaHistory.cshtml" />
     <Content Include="Views\CaliforniaHistory\Books.cshtml" />
-    <Content Include="Views\CaliforniaHistory\CAGoldrush.cshtml" />
+    <Content Include="Views\CaliforniaHistory\GoldRush.cshtml" />
     <Content Include="Views\CaliforniaHistory\Collections.cshtml" />
     <Content Include="Views\CaliforniaHistory\CountyMonth.cshtml" />
     <Content Include="Views\CaliforniaHistory\Databases.cshtml" />
@@ -1816,7 +1816,7 @@
     <Content Include="Views\CaliforniaHistory\Donations.cshtml" />
     <Content Include="Views\CaliforniaHistory\Ephemera.cshtml" />
     <Content Include="Views\CaliforniaHistory\Events.cshtml" />
-    <Content Include="Views\CaliforniaHistory\GoldRush.cshtml" />
+    <Content Include="Views\CaliforniaHistory\CAGoldRush.cshtml" />
     <Content Include="Views\CaliforniaHistory\Manuscripts.cshtml" />
     <Content Include="Views\CaliforniaHistory\Maps.cshtml" />
     <Content Include="Views\CaliforniaHistory\Newspapers.cshtml" />
