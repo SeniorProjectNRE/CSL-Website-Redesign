@@ -1690,6 +1690,7 @@
     <Content Include="Content\StateTemplate\pdf\slaa-pdf\SLAA_calvcb_2015.pdf" />
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\CLSA_Grants_Report_Legislature_September_2017.pdf" />
     <Content Include="Content\StateTemplate\pdf\grants\Civil Liberties\BeforeYouStartApplication-CaliforniaCivilLibertiesProgramFY2016-17.pdf" />
+    <Content Include="Content\StateTemplate\pdf\grants\Civil Liberties\CACivilLibertiesPublicEducationProgramFY2016-17GUIDELINES.pdf" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
