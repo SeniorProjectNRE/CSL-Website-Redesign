@@ -872,6 +872,7 @@
     <Content Include="Content\StateTemplate\images\services\harwood\icon_www.png" />
     <Content Include="Content\StateTemplate\images\services\harwood\icon_www_over.png" />
     <Content Include="Content\StateTemplate\images\services\harwood\person.jpg" />
+    <Content Include="Content\StateTemplate\images\services\interlibraryLending\library_shelves.png" />
     <Content Include="Content\StateTemplate\images\services\online.jpg" />
     <Content Include="Content\StateTemplate\images\services\onlineResources\top.jpg" />
     <Content Include="Content\StateTemplate\images\services\policies\policies.png" />
