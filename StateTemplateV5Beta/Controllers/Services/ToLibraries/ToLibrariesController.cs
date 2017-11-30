@@ -38,7 +38,7 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
         }
 
         // GET: development-programs-projects/value-libraries
-        [Route("development-programs-projects/value-libraries")]
+        [Route("value-of-libraries")]
         public ActionResult ValueLibraries()
         {
             return View("~/Views/Services/ToLibraries/DevelopmentProgramsProjects/ValueLibraries.cshtml");

@@ -1,8 +1,9 @@
 ﻿@{
-    ViewBag.Title = "E-Rate and California Teleconnect Fund (CTF) Information for Libraries";
+    ViewBag.Title = "CSL - E-Rate and California Teleconnect Fund (CTF) Information for Libraries";
+    ViewBag.PageTitle = "E-Rate and California Teleconnect Fund (CTF) Information for Libraries";
     ViewBag.Author = "California State Library";
     ViewBag.Banner = "erate_banner.jpg";
-    ViewBag.Description = "";
+    ViewBag.Description = "This site includes information for libraries about how to apply for e-rate and California Teleconnect Fund discounts for telecommunications services.";
 }
 
 <head>
@@ -16,8 +17,12 @@
     <main class="main-primary">
         <div class="container">
             <div class="section">
-                <ol class="breadcrumb dynamic"></ol>
-                <h2 class="page-title" id="title">@ViewBag.Title</h2>
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="~/services/to-libraries/">Services To Libraries</a></li>
+                    <li><a href="~/library-dev-services/">E-Rate</a></li>
+                </ol>
+                <h2 class="page-title" id="title">@ViewBag.PageTitle</h2>
                 <img src="~/Content/StateTemplate/images/services/toLibraries/@(ViewBag.Banner)" style="width:100%" alt="" class="animated fadeInLeft" />
             </div>
             <div class="section">
