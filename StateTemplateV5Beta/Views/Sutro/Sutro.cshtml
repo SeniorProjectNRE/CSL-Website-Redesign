@@ -1,8 +1,8 @@
 ﻿
 @{
-    ViewBag.Title = "California State Library - California Womens March Collection";
+    ViewBag.Title = "CSL - Sutro Library (San Francisco)";
     ViewBag.Author = "California State Library";
-    ViewBag.Description = "Donate your materials from any of the Women's Marches that occurred in California on January 21, 2017";
+    ViewBag.Description = "California State Library Replace with: The Sutro Library acquires, preserves, and makes accessible rare and unique resources for scholarship and education of students, faculty, and independent researchers.  Find information about all academic disciplines and family and local genealogy.";
     ViewBag.Keywords = "California, State, Library, Sutro , Adolf Sutro";
 }
 
@@ -11,10 +11,6 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
 <style>
@@ -32,7 +28,11 @@
 <div id="main-content" class="main-content">
     <div class="container">
         <main class="main-primary">
-            <ol class="breadcrumb dynamic"></ol> 
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/collections">Our Collections</a></li>
+                <li>Sutro</li>
+            </ol>
             <h2 class="page-title">Sutro Library (San Francisco)</h2>
 
             <div class="section section-lightGray">
@@ -49,7 +49,7 @@
 
                 <div>
 
-                    <a href="/Sutro/Womens-March"><img class="img-thumbnail img-left" src="~/Content/StateTemplate/images/sutro-images/womensmarch.jpg" alt="womens march"/></a>
+                    <a href="/Sutro/Womens-March"><img class="img-thumbnail img-left" src="~/Content/StateTemplate/images/sutro-images/womensmarch.jpg" alt="womens march" /></a>
 
                     <p><span class="ca-gov-icon-menu-toggle-closed"></span> The California State Library is mandated to protect and preserve California's rich history and is ideally suited to house this collection of historical and political importance. See our <a href="/Sutro/Womens-March">California Women's March Collection.</a></p>
                 </div>
@@ -89,12 +89,12 @@
 
                         <div>
                             <div class="half">
-                            <p>
-                                <strong>
-                                    <span class="ca-gov-icon-menu-toggle-closed text-accent-p1"></span> The Mexican Collection: materials on Mexican culture, religion and politics (1540–1889);
-                                </strong>
-                            </p>
-                                </div>
+                                <p>
+                                    <strong>
+                                        <span class="ca-gov-icon-menu-toggle-closed text-accent-p1"></span> The Mexican Collection: materials on Mexican culture, religion and politics (1540–1889);
+                                    </strong>
+                                </p>
+                            </div>
                             <div class="half">
                                 <p>
                                     <strong>
@@ -103,12 +103,12 @@
                                 </p>
                             </div>
 
-                        </div> 
+                        </div>
 
                         <div class="clearfix"></div>
 
                     </div>
-                </div> 
+                </div>
 
                 <p>Adolph Sutro's heirs donated his collection to the California State Library in 1913 with the requirement that the collection stay within the city of San Francisco. After operating in various locations in the city for almost 100 years, the Sutro Library moved to a permanent home at San Francisco State University in 2012.</p>
 
@@ -283,7 +283,7 @@
                     </div>
 
                 </div>
-                <br >
+                <br>
                 <div class="half">
                     <!--twitter
                     -->

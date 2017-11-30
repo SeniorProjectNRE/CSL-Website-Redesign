@@ -41,7 +41,7 @@ namespace StateTemplateV5Beta.Controllers.Sutro
 
         // GET: class
         [HttpGet]
-        [Route("class")]
+        [Route("visiting/class")]
         public ActionResult Class()
         {
             return View();
@@ -49,7 +49,7 @@ namespace StateTemplateV5Beta.Controllers.Sutro
 
         // Post: class
         [HttpPost]
-        [Route("class")]
+        [Route("visiting/class")]
         public ActionResult Class(SutroClassModel model)
         {
             if(!ModelState.IsValid)
@@ -100,11 +100,11 @@ namespace StateTemplateV5Beta.Controllers.Sutro
         [Route("genealogy")]
         public ActionResult Genealogy()
         {
-            return View();
+            return View("~/Views/Sutro/Genealogy/Genealogy.cshtml");
         }
 
         // GET: search
-        [Route("search")]
+        [Route("catalog-tips")]
         public ActionResult Search()
         {
             return View();
