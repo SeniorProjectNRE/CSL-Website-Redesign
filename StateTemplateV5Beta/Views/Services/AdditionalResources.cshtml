@@ -1,10 +1,555 @@
 ﻿@{
-    ViewBag.Title = "AdditionalResources";
+    ViewBag.Title = "CSL - Conduct Research";
+    ViewBag.PageTitle = "More Links";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "California State Library Research Sources";
+    ViewBag.Keywords = "California, state, Library, genealogy, helpful, links";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>AdditionalResources</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/services/research/">Research</a></li>
+                    <li class="active">Additional Resources</li>
+                </ol>
+                <h2 class="page-title">@(ViewBag.PageTitle)</h2>
+                <p> The internet sites listed below are provided by organizations outside the California State Library. Staff of the Library have selected these particular sites as convenient sources of information to supplement the main collections of the State Library and to further its mission to serve the information needs of all California citizens.</p>
+
+                <p>The California State Library bears no responsibility for the accuracy or the content of external sites. Please contact the external site's administrator for any questions regarding these sites.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="panel-group" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Book and Photo Preservation
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                                <ul class="list-understated">
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.lcweb.loc.gov/preserv/">Preservation Instructions from the Library of Congress</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://palimpsest.stanford.edu">Conservation Online, Resources for Conservation Professionals</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.kodak.com/US/en/corp/membersGallery/archiving/caringForAlbums.shtml">Preserving Family Albums </a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://libweb5.princeton.edu/visual_materials/hb/index.html">Hand Bookbindings</a> (Princeton University Library exhibit)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    Braille and Talking Book Resources
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <ul class="list-understated">
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://lii.org/pub/topic/disabled">Librarians' Internet Index &ndash; Disabilities</a></li>-->
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.afb.org/">American Foundation for the Blind</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.aph.org">American Printing House for the Blind</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.blindreaders.info">Blind Readers Page</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.nyise.org/blind.htm">Blind Resource Center (NYISE)</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.brailleinstitute.org">Braille Institute</a> (Southern California)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cfv.org">Captioned Media Program</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cde.ca.gov/re/pn/sm/">Clearinghouse for Specialized Media and Technology</a> (Educational materials, K-12)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.wgbh.org/wgbh/access/dvs/">Descriptive Video Service</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.disability.gov/">Disability.gov</a> (U.S. Department of Labor, Office of Disability Employment Policy)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.loc.gov/nls/">National Library Service for the Blind and Physically Handicapped</a> (Library of Congress)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://lcweb.loc.gov/cgi-bin/zgate?ACTION=INIT&amp;FORM_HOST_PORT=/prod/www/data/nls/catalog/index.html,z3950.loc.gov,7490">National Library Service Union Catalog</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.rfbd.org/">Recording for the Blind and Dyslexic</a> (Academic and professional materials)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.autopenhosting.org/w3c/rblind.html">Welcome to Blind Links</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading3">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    California History
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body">
+                                <ul class="list-understated">
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://lii.org/pub/topic/california_history">Librarians' Internet Index &ndash; California History</a></li>-->
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://bancroft.berkeley.edu/reference/africanamerican/">African Americans in California</a> (The Bancroft Library)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://memory.loc.gov/ammem/cbhtml/cbhome.html">American Memory Project of the Library of Congress</a> (Historical collections for the National Digital Library)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://cdnc.ucr.edu/cdnc">California Digital Newspaper Collection</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://bancroft.berkeley.edu/collections/calheritage.html">California Heritage Collection</a>  (UC Berkeley's California Heritage Digital Image Access Project)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.californiahistoricalsociety.org">California Historical Society</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://library.sdsu.edu/guides/sub2.php?id=195&amp;pg=193">California Indians and Their Reservations</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://cnp.ucr.edu/">California Newspaper Project</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cagenweb.com/cpl/">California Pioneer Project</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://shipwrecks.slc.ca.gov">California Shipwrecks</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.calisphere.universityofcalifornia.edu/">Calisphere</a></li>
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://158.96.229.240/eddhistindex.htm">Celebrating a Rich Past</a> (California Employment Development Department)</li>-->
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://CPRR.org">Central Pacific Railroad Photographic History Museum</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://bancroft.berkeley.edu/collections/chineseinca/">The Chinese in California, 1850-1925</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://firstladies.library.ca.gov">First Ladies of California</a></li>
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://www.militarymuseum.org/Flags_Over_Ca.pdf" target="_blank" rel="noopener noreferrer">Flags Over California</a></li>-->
+                                    <li><a target="_blank" rel="noopener noreferrer" href="/california-history/gold-rush/">Gold Rush Exhibit</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://governors.library.ca.gov">Governors of California</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.maritimeheritage.org">Maritime Heritage Project</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.sacramentohistory.org/">Sacramento History Online</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.sandiegohistory.org/">San Diego History</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://sfpl.org/index.php?pg=0200000301">San Francisco Historical Photograph Collection</a> (San Francisco Public Library)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.sfgenealogy.com/sf/history/sindex.htm">San Francisco History</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.lapl.org/collections-resources/electronic-neighborhood">Southern California Electronic Neighborhood</a> (Los Angeles Public Library – California and regional history topics)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading4">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                    California Reference Resources
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                            <div class="panel-body">
+                                <ul class="list-understated">
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://lii.org/pub/topic/california">Librarians' Internet Index – California</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.californiaauthors.com/">California Authors</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://cdnc.ucr.edu/cdnc">California Digital Newspaper Collection</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cbsr.ucr.edu/cnp/">California Newspaper Project</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.dof.ca.gov/html/fs_data/stat-abs/sa_home.htm">California Statistical Abstract</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.dof.ca.gov/research/">California Statistics</a> (Economic and demographic statistics from the Dept. of Finance)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.ipm.ucdavis.edu/WEATHER/weather1.html">California Weather Databases</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cdph.ca.gov/programs/CHS/Pages/default.aspx">Vital Statistics Data Tables</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading5">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                    Genealogy
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                            <div class="panel-body">
+                                <ul class="list-understated">
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://lii.org/pub/subtopic/2033">Librarians' Internet Index &ndash; Genealogy</a></li>-->
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.srcalifornia.com/library/aboutlibrary.htm">American Heritage Library</a> (Sons of the Revolution in the State of CA)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.calgensoc.org">California Genealogical Society</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cagenweb.com/cpl/">California Pioneer Project</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.csga.com">California State Genealogical Alliance</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.familysearch.org">FamilySearch Internet Genealogy Service</a></li>
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://www.ala.org/ala/mgrps/divs/acrl/publications/crlnews/1999/jun/genealogy.cfm">Finding Roots on the Web</a></li>-->
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.archives.gov/research/genealogy/index.html">The Genealogy Page </a> (National Archives and Records Administration)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cdph.ca.gov/certlic/birthdeathmar/Pages/default.aspx">How to Order from the California State Office of Vital Records</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.glorecords.blm.gov/">Federal Land Patent Records</a> (including California)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.interment.net/Default.htm">Interment.net – Cemetery Transcription Library</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.maritimeheritage.org">Maritime Heritage Project</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cdc.gov/nchs/w2w.htm">National Center For Health Statistics</a> (How to obtain birth, death, marriage, and divorce certificates)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.jwfgenresearch.com/SFCallIndex.htm">San Francisco Call Database</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.searchsystems.net">Search Systems</a> (Searchable Public Records Databases)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="../calhist/genealogy.html">Selected Guide to Sources for Genealogy in the California History Section of the California State Library</a></li>
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://www.familyrecords.gov.uk">UK Family History Online</a></li>-->
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cagenweb.com/">USGEN Web Project: California</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading6">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                    General Reference Resources
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                            <div class="panel-body">
+                                <ul class="list-understated">
+                                    <li><a title="Librarian's Internet Index" href="http://lii.org/">Librarians' Internet Index</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.acronymfinder.com/">Acronym Finder</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.agnic.org">Agriculture Network Information Center (AgNIC)</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.bartleby.com/reference/">Bartleby.com</a> (Reference books online)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.bartleby.com/100">Bartlett's Familiar Quotations</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://bigcharts.marketwatch.com/historical/">Bigcharts Historical Stock Quotes</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.cia.gov/library/publications/the-world-factbook/geos/us.html">CIA World Fact Book</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.yourdictionary.com">Dictionaries</a> (A WEB of On-line Dictionaries, including 130+ foreign languages)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.eric.ed.gov/">ERIC: Education Resources Information Center</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://fedstats.sites.usa.gov/">FEDSTATS</a> (A clearinghouse of federal agency statistics)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.treasury.gov/resource-center/financial-education/Pages/fdd.aspx">Financial Data Finder</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.ncbi.nlm.nih.gov/sites/entrez">Medline – PubMed</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://digital.library.upenn.edu/books/">On-Line Books Page</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.bibme.org/">Online Citation Styles</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.OpenThesis.org">OpenThesis.org</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.prb.org">Population Reference Bureau</a> (Population and health data)</li>
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://www.ipl.org/div/subject/browse/ref00.00.00">Reference at the Internet Public Library</a></li>-->
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.powerthesaurus.org/roget">Roget's Thesaurus</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.census.gov/library/publications/time-series/statistical_abstracts.html">Statistical Abstract of the United States</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.usno.navy.mil/USNO/astronomical-applications/data-services">Sunrise, Sunset, Twilight, and Moonrise, Moonset, Phase</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://lcweb2.loc.gov/ammem/today/today.html">Today in History (from the Library of Congress)</a></li>
+                                    <li><a title="http://data.un.org/" href="http://data.un.org/">UNdata (United Nations statistics)</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.census.gov/geo/www/gazetteer/gazette.html">U.S. Gazetteer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading7">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                    Government, State of California
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                            <div class="panel-body">
+                                <ul class="list-understated">
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://lii.org/pub/topic/california_government">Librarians' Internet Index &ndash; California Government</a></li>-->
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.ca.gov/Agencies">State Agency Index</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.ca.gov/">California State Government Home Page</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/californiagovernment">California State Government YouTube</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="/government-publications/ca-publications/">California State Publications</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.courts.ca.gov">California Courts</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.ca.gov/About/Government/State/Executive.html">California Executive Agencies and Officials</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.taxes.ca.gov">California Tax Service Center</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href=" http://www.easyvoterguide.org/">Easy Voter Guide</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://governors.library.ca.gov/firstladies/">First Ladies of California</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://gov.ca.gov/">Governor's Home Page</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://governors.library.ca.gov">Governors of California</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.leginfo.ca.gov">Legislative Information (old website)</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://leginfo.legislature.ca.gov/">Legislative Information (new website)</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.legislature.ca.gov">California Legislature</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.assembly.ca.gov">California Legislature, Assembly</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.sen.ca.gov">California Legislature, Senate</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.dgs.ca.gov/pd/Programs/eprocure.aspx">California State Contracts Register</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.dof.ca.gov/html/fs_data/stat-abs/statistical_abstract.php">California Statistical Abstract</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.dhcs.ca.gov/DATAANDSTATS/Pages/default.aspx">Department of Health Care Services Data and Statistics</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cdph.ca.gov/data/Pages/default.aspx">Department of Public Health Statistics</a></li>
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://www.cpec.ca.gov/CollegeGuide/CollegeGuide.asp">Guide to California Colleges and Universities</a></li>-->
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.smartvoter.org">Smart Voter Guide to Polling Places and Ballots</a> (League of Women Voters)</li>
+                                    <li><a href="https://www.library.ca.gov/slaa/">State Leadership Accountability Act Reports (SLAA)</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.rebuildyourlife.ca.gov">Rebuild Your Life</a> (Disaster recovery resources)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading8">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                                    Government, Federal
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <h4>General Sites</h4>
+                                        <ul class="list-understated">
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.gpo.gov/fdsys/browse/collectionCfr.action?collectionCode=CFR">Code of Federal Regulations</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.gpo.gov/fdsys/browse/collection.action?collectionCode=FR">Federal Register</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.usa.gov/Contact/Directories.shtml">Federal E-mail/Telephone Directories</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.usa.gov/Topics/Reference-Shelf/forms.shtml">Forms.gov</a> (Frequently used Federal forms)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.gpo.gov/fdsys/">FDsys [Federal Digital System] </a> (includes Congressional Bills and Reports, Presidential Documents, and Federal Codes and Regulations)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.data.gov/">Data.gov (Open Data Portal for the U.S. Government)</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.ntis.gov/">National Technical Information Service (NTIS) / National Technical Reports Library (NTRL)</a></li>
+                                            <!--<li><a target="_blank" rel="noopener noreferrer" href="http://lii.org/pub/topic/federal">Librarians' Internet Index &ndash; Federal Government</a></li>-->
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://catalog.gpo.gov/F/?func=file&amp;file_name=find-net&amp;local_base=NEWTITLE">New Federal Electronic Titles</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.science.gov">Science.gov</a> (USAgov for Science)</li>
+                                            <!--<li><a target="_blank" rel="noopener noreferrer" href="http://www.gpoaccess.gov/databases.html">U.S Government Online Resources</a></li>-->
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.census.gov/compendia/statab/">Statistical Abstract of the United States</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.congress.gov/">THOMAS: Legislative Information on the Internet</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.consumer.gov">U.S. Consumer Gateway</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.usa.gov/">USA.gov</a> (the WEB portal for the United States Federal government)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="half">
+                                        <h4>Selected Agency Sites</h4>
+                                        <ul class="list-understated">
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://aad.archives.gov/aad/">Access to Archival Databases (National Archives and Records Administration)</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.sec.gov/edgar.shtml">The Edgar Database</a> (Securities and Exchange Commission's database of financial information on publicly held companies)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://eric.ed.gov/">Educational Resources Information Center (ERIC)</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://nepis.epa.gov/Exe/ZyNET.EXE?ZyActionL=Register&amp;User=anonymous&amp;Password=anonymous&amp;Client=EPA&amp;Init=1">Environmental Protection Agency (EPA) Publications Search</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.fbi.gov/about-us/cjis/ucr/ucr">Federal Bureau of Investigation (FBI) – Uniform Crime Reports</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.washlaw.edu/doclaw/executive5m.html">Federal Agency Index</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://fedstats.sites.usa.gov/">FEDSTATS</a> (A clearinghouse of federal agency statistics)</li>
+                                            <!--<li><a target="_blank" rel="noopener noreferrer" href="http://www.fedworld.gov/">FedWorld</a> (National Technical Information Service)</li>-->
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.osti.gov/scitech/">SciTech Connect</a> (Research from the U.S. Dept. of Energy)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.loc.gov/">Library of Congress</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="https://ncjrs.gov/">National Criminal Justice Reference Service (NCJRS)</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://nces.ed.gov/quicktables/">National Center for Education Statistics</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.cdc.gov/nchs/index.htm">National Center for Health Statistics</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.ncbi.nlm.nih.gov/pubmed">Medline – PubMed</a> (Public access to Medline)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.census.gov/">U.S. Bureau of the Census</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.uscourts.gov/">U.S. Courts</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.house.gov/">U.S. House of Representatives</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.irs.gov/">U.S. Internal Revenue Service</a></li>
+                                            <!--<li><a target="_blank" rel="noopener noreferrer" href="http://www.irs.ustreas.gov/formspubs/index.html">U.S. Internal Revenue Service (IRS) Forms and Publications</a></li>-->
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.senate.gov">U.S. Senate</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.whitehouse.gov/">The White House</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading9">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                                    Government, Local California
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                            <div class="panel-body">
+                                <ul class="list-understated">
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://www.ipl.org/IPLBrowse/GetSubject?vid=13&tid=7038&parent=0">Librarians' Internet Index &ndash; Government</a></li>-->
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.californiacityfinance.com">California Local Government Finance Almanac</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.counties.org/">California State Association of Counties</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cacities.org/">California Cities</a> (League of California Cities)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://igs.berkeley.edu/library/california-local-government-documents/codes-and-charters">City Codes and Charters</a> (UC Berkeley Institute of Governmental Studies)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://ceres.ca.gov/planning/index.html">LUPIN</a> (California Land Use Planning Information Network)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://publicrecords.searchsystems.net/">Search Systems</a> (Searchable Public Record Databases)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.statelocalgov.net/state-ca.cfm">State and Local Government on the Net – California</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cagenweb.com/">USGEN Web Project – California</a> (A geneaology site with local government links)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading10">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                                    Government, Other States
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                            <div class="panel-body">
+                                <ul class="list-understated">
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://lii.org/pub/topic/govlaw">Librarians' Internet Index &ndash; Government</a></li>-->
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.ncsl.org/?tabid=17173">Internet Sites of the State Legislatures</a> (National Conference of State Legislatures)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.codepublishing.com/statesearch/">Municipal Codes</a> (Code Publishing, Inc.)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.naco.org">National Association of Counties</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.cdc.gov/nchs/w2w.htm">National Center for Health Statistics</a> (How to obtain birth, death, marriage, and divorce certificates)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.nga.org">National Governors' Association</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.nlc.org/">National League of Cities</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.statelocalgov.net/index.cfm">State and Local Government on the Net</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.searchsystems.net">Search Systems</a> (Searchable Public Record Databases)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.stateline.org">StateLine.Org</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.mayors.org">U.S. Conference of Mayors</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading11">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                                    Law
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <h4>California Sites</h4>
+                                        <ul class="list-understated">
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://library.uchastings.edu/library/california-research/ca-ballot-measures.html">Ballot Propositions</a> (full-text and searchable)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.leginfo.ca.gov/bilinfo.html">Bill Information</a> (1993-present; status, history, bill text, analyses, votes)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://ccr.oal.ca.gov/">California Code of Regulations</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.leginfo.ca.gov/calaw.html">California Codes</a></li>
+                                            <li><a title="california courts" href="http://www.courts.ca.gov">California Courts</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.legislature.ca.gov">California Legislature</a></li>
+                                            <li><a title="california legislature, assembly" target="_blank" rel="noopener noreferrer" href="http://www.assembly.ca.gov/">California Legislature, Assembly</a></li>
+                                            <li><a title="california legislature, senate" target="_blank" rel="noopener noreferrer" href="http://senate.ca.gov/">California Legislature, Senate</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.lexisnexis.com/clients/CACourts/">California Supreme and Appellate Court opinions</a> (1850-present)</li>
+                                            <li><a title="california supreme and appellate court opinions" target="_blank" rel="noopener noreferrer" href="http://www.findlaw.com/cacases/">California Supreme and Appellate Court opinions</a> (1934-present)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.igs.berkeley.edu/library/calcodes.html">City and County Codes and Charters</a> (Institute of Governmental Studies)</li>
+                                            <!--<li><a target="_blank" rel="noopener noreferrer" href="http://www.lalaw.lib.ca.us/research/pathfinders/califleghistory/">Guide to California Legislative History</a></li>-->
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.lawhelpca.org">LawHelpCalifornia.org</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.courtinfo.ca.gov/selfhelp/">California Courts, Self Help Center</a> <!--(California Courts)--></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.calbar.ca.gov/state/calbar/calbar_home.jsp">State Bar of California</a> (with searchable member records)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.leginfo.ca.gov/const.html">State Constitution</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.leginfo.ca.gov/statute.html">Statutes</a> (1993-present)</li>
+                                            <!--<li><a target="_blank" rel="noopener noreferrer" href="http://192.234.213.35/clerkarchive/">Statutes Archive</a> (1850-1992)</li>-->
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.courts.ca.gov">Superior Courts</a> (locations, phone numbers, web sites)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.witkin.com/index.html">Witkin Legal Institute</a> (includes biography of Bernard E. Witkin)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="half">
+                                        <h4>United States Sites</h4>
+                                        <ul class="list-understated">
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.gpoaccess.gov/index.html">GPO Access</a> (CFR, Federal Register, U.S. Code, Congressional Bills, Congressional Record)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://thomas.loc.gov">THOMAS</a> (federal legislation, committee information, Congressional Record)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.loc.gov/law/help/guide/states.php">U.S. States and Territories Guide to Law Online</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://supct.law.cornell.edu/supct/">U.S. Supreme Court Information</a> (Legal Information Institute)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.findlaw.com/casecode/supreme.html">U.S. Supreme Court Opinions</a> (FindLaw)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.usa.gov/">USAgov</a> (federal government portal)</li>
+                                        </ul>
+                                        <h4>General Sites</h4>
+                                        <ul class="list-understated">
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.martindale.com/">Attorney</a> directory from Martindale</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.findlaw.com/">FindLaw</a> (Extensive source of legal information)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.law.nyu.edu/library/research/foreign_intl/index.htm">Guide to Foreign and International Legal Databases</a> (New York University School of Law)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.loc.gov/law/guide/nations.html">Guide to Law Online: Nations of the World</a> (Law Library of Congress)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.hg.org/">Hieros Gamos</a> (legal information portal)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.law.cornell.edu/topics/">Legal Information Institute</a> (School of Law at Cornell University)</li>
+                                            <!--<li><a target="_blank" rel="noopener noreferrer" href="http://lii.org/pub/topic/law">Librarians' Internet Index &ndash; Law</a></li>-->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading12">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse12" aria-expanded="true" aria-controls="collapse12">
+                                    Library Links
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <h4>Libraries</h4>
+                                        <ul class="list-understated">
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://aad.archives.gov/aad/">Access to Archival Databases (National Archives and Records Administration)</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.loc.gov/rr/askalib/">Ask a Librarian (Library of Congress)</a></li>
+                                            <!--<li><a target="_blank" rel="noopener noreferrer" href="http://www.csusm.edu/csb/">Barahona Center for the Study of Books in Spanish for Children and Adolescents</a></li>-->
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.caamuseum.org/">California African American Museum</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.santarosa.edu/%7Ekathy/cclw.shtml">California Community College Libraries</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="~/Content/StateTemplate/pdf/services/additionalResources/CaliforniaCountyLawLibraries.pdf">California County Law Libraries</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.cdlib.org/">California Digital Library</a> (University of California)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.energy.ca.gov/library/index.html">California Energy Commission Library</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.calepa.ca.gov/Library/">California Environmental Protection Agency Library</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.conservation.ca.gov/cgs/library/">California Geological Survey Library</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="https://california.worldcat.org/">California Libraries Catalog</a><em> (holdings of California public libraries)</em></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.post.ca.gov/post-library.aspx">California Peace Officer Standards and Training Library</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.californiarailroad.museum/visit/library">California State Railroad Museum Library</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://library.csus.edu/">California State University, Sacramento</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.calstate.edu/search_find/campus_libraries.shtml">California State University System, Systemwide Electronic Information Resources (SEIR)</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://library.calstate.edu/catalog/">California State University System</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.calisphere.universityofcalifornia.edu/">Calisphere</a> (University of California primary source images and documents)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.infopeople.org/">InFoPeople: Internet &amp; California public libraries</a></li>
+                                            <!--<li><a target="_blank" rel="noopener noreferrer" href="http://www.ipl.org/">Internet Public Library</a> (A "virtual" library)</li>
+                <li><a target="_blank" rel="noopener noreferrer" href="http://lii.org/pub/topic/california_libraries">Librarians' Internet Index &ndash; Education and Libraries</a></li>-->
+                                            <li><a title="Library of Congress" href="http://lcweb.loc.gov/">Library of Congress</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://catalog.loc.gov/">Library of Congress Catalog</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.libraryspot.com/">LibrarySpot</a> (A "virtual" library)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.lib-web.org">Libweb: Library Servers via WWW</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://melvyl.worldcat.org">Melvyl Catalog</a><em> (Univ. of Calif. libraries and the State Library)</em></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.oac.cdlib.org">Online Archive of California</a><em> (includes California State Library materials)</em></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://saclaw.org/">Sacramento County Public Law Library</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.saclibrarycatalog.org">Sacramento Public Library</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://shareill.org/">ShareILL</a> (A gateway to resources on interlibrary loan, document delivery, and resource sharing)</li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.lib.ucdavis.edu">University of California, Davis</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="half">
+                                        <h4>Associations</h4>
+                                        <ul class="list-understated">
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.aallnet.org">American Association of Law Libraries</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.ala.org">American Library Association</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.arl.org">Association of Research Libraries</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.carl-acrl.org">California Academic and Research Libraries</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.cla-net.org">California Library Association</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.ifla.org/">International Federation of Library Associations and Institutions</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.sla.org">Special Libraries Association</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading13">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse13" aria-expanded="true" aria-controls="collapse13">
+                                    Patent, Trademark, and Copyright
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <h4>General Sites</h4>
+                                        <ul class="list-understated">
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.lib.utexas.edu/engin/patent-tutorial/index.htm">University of Texas Patent Tutorial</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.uspto.gov">US Patent and Trademark Office</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://lcweb.loc.gov/copyright/">US Copyright Office</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.copyright.gov/records/">Copyright Search</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.patentcafe.com">Patent Cafe</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="half">
+                                        <h4>Libraries</h4>
+                                        <ul class="list-understated">
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://sunnyvale.ca.gov/Departments/SunnyvalePublicLibrary/ResearchOnline/PatentsandTrademarks.aspx">Sunnyvale Patent and Trademark Depository Library</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://sfpl.org/index.php?pg=0200003301">San Francisco Patent and Trademark Depository Library</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.lapl.org/central/science.html">Los Angeles Public Library Patent and Trademark Depository Library</a></li>
+                                            <li><a target="_blank" rel="noopener noreferrer" href="http://www.sannet.gov/public-library/">San Diego Patent and Trademark Depository Library</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading14">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse14" aria-expanded="true" aria-controls="collapse14">
+                                    Search Engines & Subject Guides
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+                            <div class="panel-body">
+                                <ul class="list-understated">
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://infopeople.org/content/best-search-tools-chart">InFoPeople – Best Search Tools</a> (Such as Google, Alta Vista, Yahoo, etc.)</li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://lii.org">Librarians Internet Index</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://www.searchengineguide.com">Search Engine Guide</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="http://scout.cs.wisc.edu/">Scout Report</a> (Evaluates and classifies sites on the World Wide Web)</li>
+                                    <!--<li><a target="_blank" rel="noopener noreferrer" href="http://wikis.ala.org/lita/index.php/Tool_Kit_for_the_Expert_Web_Searcher">Tool Kit for the Expert Web Searcher Wiki</a> (LITA &ndash; Library and Information Technology Association)</li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 </div>
 
