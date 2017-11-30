@@ -1,12 +1,43 @@
-﻿
-@{
-    ViewBag.Title = "Events";
+﻿@{
+    ViewBag.Title = "Upcoming Events";
+    ViewBag.PageTitle = "Upcoming Events";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "Find information about upcoming events here.";
+    ViewBag.Keywords = "Upcoming Events";
+    ViewBag.pageID = "Upcoming Events";
+
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Events</h2>
+        <div class="container">
+            <div class="section">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/visit-us">Visit Us</a></li>
+                    <li class="active">Events</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <div class="events-list third">
+                    <br />
+                    <article class="event-item">
+                        <h5><a href="" class="title">Author's Talk: "442"</a></h5>
+                        <div class="description">A graphic novel of the Japanese-American 442nd regiment’s rescue of the Lost Battalion in WWII.</div>
+                        <div class="start-date"><time datetime="2017-11-15 18:00">11/15/17 6:00-7:00 p.m.</time>, Capitol Mall</div>
+                    </article>
+                </div>
+                <div class="two-thirds">
+                    <img id="page-banner" src="~/Content/StateTemplate/images/visitUs/events.jpg" style="width:100%; height:auto" alt="Calendar" title="Calendar" />
+                </div>
+            </div>
+        </div>
     </main>
 </div>
-
-
