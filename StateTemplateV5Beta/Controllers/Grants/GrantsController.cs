@@ -46,19 +46,7 @@ namespace StateTemplateV5Beta.Controllers.Grants
             return View();
         }
 
-        // GET: harwood
-        [Route("harwood")]
-        public ActionResult Harwood()
-        {
-            return View();
-        }
-
-        // GET: immigrant-alliance
-        [Route("immigrant-alliance")]
-        public ActionResult ImmigrantAlliance()
-        {
-            return View();
-        }
+        
 
         // GET: initatives
         [Route("initatives")]
@@ -67,12 +55,7 @@ namespace StateTemplateV5Beta.Controllers.Grants
             return View();
         }
 
-        // GET: libraries-illuminated
-        [Route("libraries-illuminated")]
-        public ActionResult LibrariesIlluminated()
-        {
-            return View();
-        }
+        
 
         // GET:manage
         //[Route("manage")]
@@ -116,12 +99,7 @@ namespace StateTemplateV5Beta.Controllers.Grants
             return View();
         }
 
-        // GET: innovation-station
-        [Route("innovation-station")]
-        public ActionResult InnovationStation()
-        {
-            return View();
-        }
+
 
         // GET: /library-services-technology-act
         //[Route("library-services-technology-act")]

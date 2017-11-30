@@ -58,6 +58,27 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
             return View("~/Views/Services/ToLibraries/ImmigrantAlliance.cshtml");
         }
 
+        // GET: harwood
+        [Route("harwood")]
+        public ActionResult Harwood()
+        {
+            return View("~/Views/Services/ToLibraries/Harwood.cshtml");
+        }
+
+        // GET: innovation-station
+        [Route("innovation-station")]
+        public ActionResult InnovationStation()
+        {
+            return View("~/Views/Services/ToLibraries/InnovationStation.cshtml");
+        }
+
+        // GET: libraries-illuminated
+        [Route("libraries-illuminated")]
+        public ActionResult LibrariesIlluminated()
+        {
+            return View("~/Views/Services/ToLibraries/LibrariesIlluminated.cshtml");
+        }
+
         // GET: LibraryDirectory
         [Route("library-directory")]
         public ActionResult LibraryDirectory()
