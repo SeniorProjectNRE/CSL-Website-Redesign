@@ -1,11 +1,981 @@
 ﻿
 @{
-    ViewBag.Title = "Links";
+    ViewBag.Title = "CSL - Genealogy Hub - Helpful Links";
+    ViewBag.PageTitle = "Links";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "Hundreds of useful genealogy links that supplement the collections of the California State Library.";
+    ViewBag.Keywords = "California, state, Library, genealogy, helpful, links";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>Links</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/collections/">Our Collections</a></li>
+                    <li><a href="/collections/genealogy/">Genealogy</a></li>
+                    <li><a href="/collections/genealogy/toolkit/">Toolkit</a></li>
+                    <li class="active">Helpful Links</li>
+                </ol>
+                <h2 class="page-title">@(ViewBag.PageTitle)</h2>
+
+                <em>The internet sites listed below are maintained by organizations outside the California State Library. These sites can be convenient sources of information that supplement the main collections of the State Library and further its mission to serve the information needs of all California citizens. In determining whether a website should be included as a link, we consider the following factors: availability of free and current content, accuracy, authority, currency, unique information offerings, clarity, unbiased writing, and representation of many / multiple areas of interest. The California State Library bears no responsibility for the accuracy or the content of external sites. Please contact the external site's administrator for any questions regarding these sites.</em>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="container">
+
+                <h3>By Culture</h3>
+
+                <div class="panel-group" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    African and African American Resources
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://worldmap.harvard.edu/africamap/" target="_blank" rel="noopener noreferrer">Africa Map (Harvard University)</a></li>
+                                            <li><a href="http://africanamericancemeteries.com/" target="_blank" rel="noopener noreferrer">African American Cemeteries</a></li>
+                                            <li><a href="http://www.rootsweb.ancestry.com/~aagriots/" target="_blank" rel="noopener noreferrer">African American Griots Project (Rootsweb)</a></li>
+                                            <li><a href="http://dbs.ohiohistory.org/africanam/" target="_blank" rel="noopener noreferrer">African Americans in Ohio (Ohio Historical Society)</a></li>
+                                            <li><a href="http://www.afrigeneas.com/" target="_blank" rel="noopener noreferrer">AfriGeneas</a></li>
+                                            <li><a href="https://www.ibiblio.org/laslave/fields.php" target="_blank" rel="noopener noreferrer">Afro-Louisiana History and Genealogy</a></li>
+                                            <li><a href="http://memory.loc.gov/ammem/browse/ListSome.php?category=African%20American%20History" target="_blank" rel="noopener noreferrer">American Memory (Library of Congress)</a></li>
+                                            <li><a href="http://www.amistadresearchcenter.org/" target="_blank" rel="noopener noreferrer">Amistad Research Center</a></li>
+                                            <li><a href="http://slaveryimages.org/search.html" target="_blank" rel="noopener noreferrer">Atlantic Slave Trade and Slave Life in the Americas</a></li>
+                                            <li><a href="https://mail.ces.ca.gov/owa/redir.aspx?SURL=qkiMsMwEAtBPRPEmKw9BfXc1XcX97n5plXMmyedzq0tUSkzMkt3TCGgAdAB0AHAAOgAvAC8AYQB2AGUAcgB5AC4AYwBvAGYAYwAuAGUAZAB1AC8AcgBlAHMAZQBhAHIAYwBoAC8A&URL=http%3a%2f%2favery.cofc.edu%2fresearch%2f" target="_blank" rel="noopener noreferrer">Avery Research Center (College of Charleston)</a></li>
+                                            <li><a href="http://www.blackpast.org/" target="_blank" rel="noopener noreferrer">BlackPast &ndash; Online Reference Guide</a></li>
+                                            <li><a href="http://www.insurance.ca.gov/01-consumers/150-other-prog/10-seir/" target="_blank" rel="noopener noreferrer">California Slavery Era Insurance Registry</a></li>
+                                            <li><a href="http://www.candoo.com/genresources/" target="_blank" rel="noopener noreferrer">Caribbean Surname Index (CarSurDex)</a></li>
+                                            <li><a href="http://library.uncg.edu/slavery/" target="_blank" rel="noopener noreferrer">Digital Library on American Slavery (UNC Greensboro)</a></li>
+                                            <li><a href="http://freeafricanamericans.com/" target="_blank" rel="noopener noreferrer">Free African Americans</a></li>
+                                            <li><a href="http://lib.lsu.edu/sites/all/files/sc/fpoc/collections.html" target="_blank" rel="noopener noreferrer">Free People of Color in Louisiana (Louisiana State University)</a></li>
+                                            <li><a href="http://stlcourtrecords.wustl.edu/display-search-results.php?collection=2&search_fields=Notes&order_by=archivists_table.Year&search_text=&search_type=BROWSE&after_text=&before_text=&startrow=0&previous=-1" target="_blank" rel="noopener noreferrer">Freedom Suits Case Files &ndash; St. Louis Circuit Court Historical Records Project</a></li>
+                                            <li><a href="http://www.freedmensbureau.com/" target="_blank" rel="noopener noreferrer">Freedmen's Bureau Online</a></li>
+                                            <li><a href="http://www.discoverfreedmen.org/" target="_blank" rel="noopener noreferrer">Mapping the Freedmen's Bureau</a></li>
+                                            <li><a href="http://anom.archivesnationales.culture.gouv.fr/caomec2/recherche.php?territoire=INDE" target="_blank" rel="noopener noreferrer">Discover Freedmen (FamilySearch)</a></li>
+                                            <li><a href="http://www.wisconsinhistory.org/Content.aspx?dsNav=N:4294963828-4294963805&dsRecordDetails=R:CS4415" target="_blank" rel="noopener noreferrer">Freedom's Journal &ndash; First African American owned newspaper</a></li>
+                                            <li><a href="http://www2.vcdh.virginia.edu/exist/runaways/xquery.xsp" target="_blank" rel="noopener noreferrer">Advertisement Database &ndash; Geography of Slavery</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.gilderlehrman.org/collections/" target="_blank" rel="noopener noreferrer">Gilder Lehrman Center</a></li>
+                                            <li><a href="http://glc.yale.edu/" target="_blank" rel="noopener noreferrer">Gilder Lehrman Center for the Study of Slavery, Resistance, and Abolition</a></li>
+                                            <li><a href="http://www.cyberdriveillinois.com/departments/archives/databases/servant.html" target="_blank" rel="noopener noreferrer">Illinois Servitude and Emancipation </a></li>
+                                            <li><a href="http://insurance.illinois.gov/Consumer/SlaveryInformation/SlaveryReporting.asp" target="_blank" rel="noopener noreferrer">Illinois Slavery Insurance Database</a></li>
+                                            <li><a href="http://www.lowcountryafricana.com/" target="_blank" rel="noopener noreferrer">Lowcountry Africana (SC, FL, GA)</a></li>
+                                            <li><a href="http://www.ohiomemory.org/cdm/landingpage/collection/p15005coll34" target="_blank" rel="noopener noreferrer">National Afro-American Museum and Cultural Center</a></li>
+                                            <li><a href="https://nmaahc.si.edu/" target="_blank" rel="noopener noreferrer">National Museum of African American History and Culture</a></li>
+                                            <li><a href="http://www.freedomcenter.org/" target="_blank" rel="noopener noreferrer">National Underground Railroad Freedom Center</a></li>
+                                            <li><a href="http://www.nps.gov/subjects/ugrr/index.htm" target="_blank" rel="noopener noreferrer">Network to Freedom &ndash; Underground Rail Road (National Park Service)</a></li>
+                                            <li><a href="http://www.archives.com/patriots" target="_blank" rel="noopener noreferrer">Patriots of Color &ndash; Revolutionary War Veterans</a></li>
+                                            <li><a href="https://www.pinterest.com/savingstories/african-american-genealogy/" target="_blank" rel="noopener noreferrer">Pinterest &ndash; African American Genealogy</a></li>
+                                            <li><a href="http://www.prattlibrary.org/locations/afam/index.aspx?id=3000" target="_blank" rel="noopener noreferrer">Pratt Library &ndash; African American Collection (Baltimore)</a></li>
+                                            <li><a href="https://www.nypl.org/locations/schomburg" target="_blank" rel="noopener noreferrer">Schomburg Center for Research in Black Culture</a></li>
+                                            <li><a href="http://statelibrary.ncdcr.gov/ghl/resources/genealogy/slaverecordsbib.html" target="_blank" rel="noopener noreferrer">Slave Records Bibliography (State Library of North Carolina)</a></li>
+                                            <li><a href="http://www.sciway.net/afam/" target="_blank" rel="noopener noreferrer">South Carolina &ndash; African American Resources</a></li>
+                                            <li><a href="http://slavevoyages.org/resources/names-database" target="_blank" rel="noopener noreferrer">Trans-Atlantic Slave Trade Database</a></li>
+                                            <li><a href="http://vrhc.uhv.edu/cemeteries/search.aspx" target="_blank" rel="noopener noreferrer">Texas &ndash; African American Cemeteries Database</a></li>
+                                            <li><a href="http://familysearch.org/learn/wiki/en/United_States_Colored_Troops_in_the_Civil_War" target="_blank" rel="noopener noreferrer">U.S. Colored Troops in Civil War</a></li>
+                                            <li><a href="http://unknownnolonger.vahistorical.org/" target="_blank" rel="noopener noreferrer">Unknown No Longer &ndash; Virginia Slave Names</a></li>
+                                            <li><a href="http://people.uvawise.edu/runaways/" target="_blank" rel="noopener noreferrer">Virginia Runaways</a></li>
+                                            <li><a href="http://www.lva.virginia.gov/public/guides/vhr/afam.htm" target="_blank" rel="noopener noreferrer">Virginia &ndash; African American History Sites</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    Asian, Asian American and Pacific Rim Resources
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.aiisf.org/" target="_blank" rel="noopener noreferrer">Angel Island Immigration Station Foundation</a></li>
+                                            <li><a href="http://www.angloburmeselibrary.com/" target="_blank" rel="noopener noreferrer">Anglo-Burmese Library</a></li>
+                                            <li><a href="http://eslibrary.berkeley.edu/asian-american-studies-collection" target="_blank" rel="noopener noreferrer">Asian American Studies Collection (UC Berkeley)</a></li>
+                                            <li><a href="http://www.nanl.gov.bd/" target="_blank" rel="noopener noreferrer">Bangladesh Directorate of Archives and Libraries</a></li>
+                                            <li><a href="http://www.bacsa.org.uk/" target="_blank" rel="noopener noreferrer">British Association for Cemeteries in South Asia</a></li>
+                                            <li><a href="https://www.nla.gov.au/asian/burmese" target="_blank" rel="noopener noreferrer">Burmese Collection (National Library of Australia)</a></li>
+                                            <li><a href="http://www.cifhs.com/" target="_blank" rel="noopener noreferrer">Cambodian Collection (National Library of Australia)</a></li>
+                                            <li><a href="http://www.bodleian.ox.ac.uk/ccl/e-resources" target="_blank" rel="noopener noreferrer">Center for Indigenous Family History Studies (Australia)</a></li>
+                                            <li><a href="http://www.bodleian.ox.ac.uk/ccl/e-resources" target="_blank" rel="noopener noreferrer">Chinese Centre Library &ndash; Oxford University</a></li>
+                                            <li><a href="http://www.chinesefamilyhistory.org/chinese-genealogy-resources.html" target="_blank" rel="noopener noreferrer">Chinese Family History Group</a></li>
+                                            <li><a href="http://chsa.org/" target="_blank" rel="noopener noreferrer">Chinese Historical Society</a></li>
+                                            <li><a href="https://familysearch.org/wiki/en/Chinese_Research_Helps" target="_blank" rel="noopener noreferrer">Chinese Research Helps</a></li>
+                                            <li><a href="http://crossasia.org/en/ressourcen/ogea/ogeasearch.html" target="_blank" rel="noopener noreferrer">CrossAsia</a></li>
+                                            <li><a href="http://www.digitalhimalaya.com/collections/maps/nepalmaps/" target="_blank" rel="noopener noreferrer">Digital Himalaya Maps &ndash; Nepal</a></li>
+                                            <li><a href="http://wiki.fibis.org/index.php/Directories_online#East-India_Register_.26_Directory" target="_blank" rel="noopener noreferrer">East Asian Digital Library (Princeton)</a></li>
+                                            <li><a href="http://www.lib.berkeley.edu/libraries/east-asian-library" target="_blank" rel="noopener noreferrer">East Asian Library (UC Berkeley)</a></li>
+                                            <li><a href="http://www.kindredtrails.com/" target="_blank" rel="noopener noreferrer">East India Register & Directory (Sutro Catalog)</a></li>
+                                            <li><a href="http://www.fibis.org/" target="_blank" rel="noopener noreferrer">Families in British India Society</a></li>
+                                            <li><a href="http://www.filipinaslibrary.org.ph/" target="_blank" rel="noopener noreferrer">Filipinas Heritage Museum (Ayala Museum)</a></li>
+                                            <li><a href="http://fanhs-national.org/filam/" target="_blank" rel="noopener noreferrer">Filipino American National Historical Society</a></li>
+                                            <li><a href="http://filipinos-ww1usmilitaryservice.tripod.com/" target="_blank" rel="noopener noreferrer">Filipinos WWI Military Service</a></li>
+                                            <li><a href="https://www.archives.sa.gov.au/content/finding-aboriginal-history" target="_blank" rel="noopener noreferrer">Finding Your Aboriginal History (Government of South Australia)</a></li>
+                                            <li><a href="http://www.janm.org/projects/clasc/index.htm" target="_blank" rel="noopener noreferrer">Global Gazetteer (Find a town)</a></li>
+                                            <li><a href="http://www.rootsweb.ancestry.com/" target="_blank" rel="noopener noreferrer">Hirasaki National Resource Center</a></li>
+                                            <li><a href="http://anom.archivesnationales.culture.gouv.fr/caomec2/recherche.php?territoire=INDE" target="_blank" rel="noopener noreferrer">India Civil Registration (French National Archives)</a></li>
+                                            <li><a href="https://indiafamily.bl.uk/UI/Home.aspx" target="_blank" rel="noopener noreferrer">India Office Family History Search</a></li>
+                                            <li><a href="http://www.indian-cemeteries.org/index.html" target="_blank" rel="noopener noreferrer">Indian Cemeteries</a></li>
+                                            <li><a href="http://www.digital.lib.csus.edu/jaac" target="_blank" rel="noopener noreferrer">Japanese American Archival Collection</a></li>
+                                            <li><a href="https://www.archives.gov/research/japanese-americans/case-files" target="_blank" rel="noopener noreferrer">Japanese American Case Files</a></li>
+                                            <li><a href="http://www.janm.org/" target="_blank" rel="noopener noreferrer">Japanese American National Museum</a></li>
+                                            <li><a href="https://calisphere.org/exhibitions/t11/jarda/" target="_blank" rel="noopener noreferrer">Japanese American Relocation Digital Archives</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.aiisf.org/" target="_blank" rel="noopener noreferrer">Angel Island Immigration Station Foundation</a></li>
+                                            <li><a href="http://www.angloburmeselibrary.com/" target="_blank" rel="noopener noreferrer">Anglo-Burmese Library</a></li>
+                                            <li><a href="http://eslibrary.berkeley.edu/asian-american-studies-collection" target="_blank" rel="noopener noreferrer">Asian American Studies Collection (UC Berkeley)</a></li>
+                                            <li><a href="http://www.nanl.gov.bd/" target="_blank" rel="noopener noreferrer">Bangladesh Directorate of Archives and Libraries</a></li>
+                                            <li><a href="http://www.bacsa.org.uk/" target="_blank" rel="noopener noreferrer">British Association for Cemeteries in South Asia</a></li>
+                                            <li><a href="https://www.nla.gov.au/asian/burmese" target="_blank" rel="noopener noreferrer">Burmese Collection (National Library of Australia)</a></li>
+                                            <li><a href="http://www.cifhs.com/" target="_blank" rel="noopener noreferrer">Cambodian Collection (National Library of Australia)</a></li>
+                                            <li><a href="http://www.bodleian.ox.ac.uk/ccl/e-resources" target="_blank" rel="noopener noreferrer">Center for Indigenous Family History Studies (Australia)</a></li>
+                                            <li><a href="http://www.bodleian.ox.ac.uk/ccl/e-resources" target="_blank" rel="noopener noreferrer">Chinese Centre Library &ndash; Oxford University</a></li>
+                                            <li><a href="http://www.chinesefamilyhistory.org/chinese-genealogy-resources.html" target="_blank" rel="noopener noreferrer">Chinese Family History Group</a></li>
+                                            <li><a href="http://chsa.org/" target="_blank" rel="noopener noreferrer">Chinese Historical Society</a></li>
+                                            <li><a href="https://familysearch.org/wiki/en/Chinese_Research_Helps" target="_blank" rel="noopener noreferrer">Chinese Research Helps</a></li>
+                                            <li><a href="http://crossasia.org/en/ressourcen/ogea/ogeasearch.html" target="_blank" rel="noopener noreferrer">CrossAsia</a></li>
+                                            <li><a href="http://www.digitalhimalaya.com/collections/maps/nepalmaps/" target="_blank" rel="noopener noreferrer">Digital Himalaya Maps &ndash; Nepal</a></li>
+                                            <li><a href="http://wiki.fibis.org/index.php/Directories_online#East-India_Register_.26_Directory" target="_blank" rel="noopener noreferrer">East Asian Digital Library (Princeton)</a></li>
+                                            <li><a href="http://www.lib.berkeley.edu/libraries/east-asian-library" target="_blank" rel="noopener noreferrer">East Asian Library (UC Berkeley)</a></li>
+                                            <li><a href="http://www.kindredtrails.com/" target="_blank" rel="noopener noreferrer">East India Register & Directory (Sutro Catalog)</a></li>
+                                            <li><a href="http://www.fibis.org/" target="_blank" rel="noopener noreferrer">Families in British India Society</a></li>
+                                            <li><a href="http://www.filipinaslibrary.org.ph/" target="_blank" rel="noopener noreferrer">Filipinas Heritage Museum (Ayala Museum)</a></li>
+                                            <li><a href="http://fanhs-national.org/filam/" target="_blank" rel="noopener noreferrer">Filipino American National Historical Society</a></li>
+                                            <li><a href="http://filipinos-ww1usmilitaryservice.tripod.com/" target="_blank" rel="noopener noreferrer">Filipinos WWI Military Service</a></li>
+                                            <li><a href="https://www.archives.sa.gov.au/content/finding-aboriginal-history" target="_blank" rel="noopener noreferrer">Finding Your Aboriginal History (Government of South Australia)</a></li>
+                                            <li><a href="http://www.janm.org/projects/clasc/index.htm" target="_blank" rel="noopener noreferrer">Global Gazetteer (Find a town)</a></li>
+                                            <li><a href="http://www.rootsweb.ancestry.com/" target="_blank" rel="noopener noreferrer">Hirasaki National Resource Center</a></li>
+                                            <li><a href="http://anom.archivesnationales.culture.gouv.fr/caomec2/recherche.php?territoire=INDE" target="_blank" rel="noopener noreferrer">India Civil Registration (French National Archives)</a></li>
+                                            <li><a href="https://indiafamily.bl.uk/UI/Home.aspx" target="_blank" rel="noopener noreferrer">India Office Family History Search</a></li>
+                                            <li><a href="http://www.indian-cemeteries.org/index.html" target="_blank" rel="noopener noreferrer">Indian Cemeteries</a></li>
+                                            <li><a href="http://www.digital.lib.csus.edu/jaac" target="_blank" rel="noopener noreferrer">Japanese American Archival Collection</a></li>
+                                            <li><a href="https://www.archives.gov/research/japanese-americans/case-files" target="_blank" rel="noopener noreferrer">Japanese American Case Files</a></li>
+                                            <li><a href="http://www.janm.org/" target="_blank" rel="noopener noreferrer">Japanese American National Museum</a></li>
+                                            <li><a href="https://calisphere.org/exhibitions/t11/jarda/" target="_blank" rel="noopener noreferrer">Japanese American Relocation Digital Archives</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading3">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    Hispanic and Latin American Resources
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.agn.gub.uy/" target="_blank" rel="noopener noreferrer">Archivo Nacional de la Nacion &ndash; Uruguay</a></li>
+                                            <li><a href="http://www.bnjm.cu/" target="_blank" rel="noopener noreferrer">Biblioteca Jose Marti &ndash; Cuba</a></li>
+                                            <li><a href="http://www.marcopolo.pro.br/genealogia/sp/ProcItu_OrdemAlfab.pdf" target="_blank" rel="noopener noreferrer">Brazilian Wills and Probates (Museu Republicano de Itu)</a></li>
+                                            <li><a href="http://www.vc.id.au/tb/" target="_blank" rel="noopener noreferrer">British Guiana Colonists</a></li>
+                                            <li><a href="http://www.patbrit.org/eng/index.htm" target="_blank" rel="noopener noreferrer">British Presence in Southern Patagonia</a></li>
+                                            <li><a href="http://www.genealog.cl/Chile/" target="_blank" rel="noopener noreferrer">Chilean Genealogy Compilation (A to Z)</a></li>
+                                            <li><a href="http://www.cubagenweb.org/" target="_blank" rel="noopener noreferrer">CubaGenWeb</a></li>
+                                            <li><a href="http://www.drtl.org/" target="_blank" rel="noopener noreferrer">Daughters of the Republic of Texas Library</a></li>
+                                            <li><a href="http://gw.geneanet.org/ecuadorgen" target="_blank" rel="noopener noreferrer">EcuadorGen</a></li>
+                                            <li><a href="http://www.cultura.gob.sv/biblioteca-especializada-del-muna-recibe-nuevos-documentos-para-consulta/" target="_blank" rel="noopener noreferrer">El Salvador National Library</a></li>
+                                            <li><a href="http://www.familias-argentinas.com.ar/" target="_blank" rel="noopener noreferrer">Familias Argentinas</a></li>
+                                            <li><a href="http://www.famliysearch.org" target="_blank" rel="noopener noreferrer">FamilySearch (Search by state or country name)</a></li>
+                                            <li><a href="https://genargentina.com.ar/" target="_blank" rel="noopener noreferrer">GenArgentina</a></li>
+                                            <li><a href="http://genealogiadominicana.com/" target="_blank" rel="noopener noreferrer">Genealogia Dominicana</a></li>
+                                            <li><a href="http://Genelogias.org" target="_blank" rel="noopener noreferrer">Genealogies (Brazil)</a></li>
+                                            <li><a href="http://www.agh.qc.ca/indexen.html" target="_blank" rel="noopener noreferrer">Genealogy Association of Haiti</a></li>
+                                            <li><a href="http://www.gsha.net/index.html" target="_blank" rel="noopener noreferrer">Genealogical Society of Hispanic America</a></li>
+                                            <li><a href="http://wiki-de.genealogy.net/Hauptseite" target="_blank" rel="noopener noreferrer">Germans to Brazil</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.agn.gub.uy/" target="_blank" rel="noopener noreferrer">Archivo Nacional de la Nacion &ndash; Uruguay</a></li>
+                                            <li><a href="http://www.bnjm.cu/" target="_blank" rel="noopener noreferrer">Biblioteca Jose Marti &ndash; Cuba</a></li>
+                                            <li><a href="http://www.marcopolo.pro.br/genealogia/sp/ProcItu_OrdemAlfab.pdf" target="_blank" rel="noopener noreferrer">Brazilian Wills and Probates (Museu Republicano de Itu)</a></li>
+                                            <li><a href="http://www.vc.id.au/tb/" target="_blank" rel="noopener noreferrer">British Guiana Colonists</a></li>
+                                            <li><a href="http://www.patbrit.org/eng/index.htm" target="_blank" rel="noopener noreferrer">British Presence in Southern Patagonia</a></li>
+                                            <li><a href="http://www.genealog.cl/Chile/" target="_blank" rel="noopener noreferrer">Chilean Genealogy Compilation (A to Z)</a></li>
+                                            <li><a href="http://www.cubagenweb.org/" target="_blank" rel="noopener noreferrer">CubaGenWeb</a></li>
+                                            <li><a href="http://www.drtl.org/" target="_blank" rel="noopener noreferrer">Daughters of the Republic of Texas Library</a></li>
+                                            <li><a href="http://gw.geneanet.org/ecuadorgen" target="_blank" rel="noopener noreferrer">EcuadorGen</a></li>
+                                            <li><a href="http://www.cultura.gob.sv/biblioteca-especializada-del-muna-recibe-nuevos-documentos-para-consulta/" target="_blank" rel="noopener noreferrer">El Salvador National Library</a></li>
+                                            <li><a href="http://www.familias-argentinas.com.ar/" target="_blank" rel="noopener noreferrer">Familias Argentinas</a></li>
+                                            <li><a href="http://www.famliysearch.org" target="_blank" rel="noopener noreferrer">FamilySearch (Search by state or country name)</a></li>
+                                            <li><a href="https://genargentina.com.ar/" target="_blank" rel="noopener noreferrer">GenArgentina</a></li>
+                                            <li><a href="http://genealogiadominicana.com/" target="_blank" rel="noopener noreferrer">Genealogia Dominicana</a></li>
+                                            <li><a href="http://Genelogias.org" target="_blank" rel="noopener noreferrer">Genealogies (Brazil)</a></li>
+                                            <li><a href="http://www.agh.qc.ca/indexen.html" target="_blank" rel="noopener noreferrer">Genealogy Association of Haiti</a></li>
+                                            <li><a href="http://www.gsha.net/index.html" target="_blank" rel="noopener noreferrer">Genealogical Society of Hispanic America</a></li>
+                                            <li><a href="http://wiki-de.genealogy.net/Hauptseite" target="_blank" rel="noopener noreferrer">Germans to Brazil</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading4">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                    Jewish and Jewish American Resources
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.americanjewisharchives.org/" target="_blank" rel="noopener noreferrer">American Jewish Archives</a></li>
+                                            <li><a href="http://www.ajhs.org/" target="_blank" rel="noopener noreferrer">American Jewish Historical Society</a></li>
+                                            <li><a href="http://www.avotaynuonline.com/" target="_blank" rel="noopener noreferrer">Avotaynu Online</a></li>
+                                            <li><a href="http://synagogues.cjh.org/" target="_blank" rel="noopener noreferrer">Early New York Synagogue Archives</a></li>
+                                            <li><a href="http://search.geshergalicia.org/" target="_blank" rel="noopener noreferrer">Gesher Galicia Database</a></li>
+                                            <li><a href="http://www.hohenemsgenealogie.at/en/" target="_blank" rel="noopener noreferrer">Hohenems Genealogy</a></li>
+                                            <li><a href="http://www.jnul.huji.ac.il/imhm/" target="_blank" rel="noopener noreferrer">Institute of Microfilmed Hebrew Manuscripts</a></li>
+                                            <li><a href="http://www.irishjewishroots.com/names/" target="_blank" rel="noopener noreferrer">Irish Jewish Roots</a></li>
+                                            <li><a href="http://www.jewishgen.org/" target="_blank" rel="noopener noreferrer">Jewish Gen</a></li>
+                                            <li><a href="http://www.jgsgb.org.uk/" target="_blank" rel="noopener noreferrer">Jewish Genealogical Society of Great Britain</a></li>
+                                            <li><a href="http://guides.library.ucla.edu/c.php?g=180582&p=1190348" target="_blank" rel="noopener noreferrer">Jewish Los Angeles (UCLA Library)</a></li>
+                                            <li><a href="http://jewishmuseum.ca/archives/?gclid=CNW2t-bfl9ECFZCcfgodgMIPng" target="_blank" rel="noopener noreferrer">Jewish Museum & Archives of British Columbia</a></li>
+                                            <li><a href="http://jri-poland.org/" target="_blank" rel="noopener noreferrer">Jewish Records Indexing (Poland)</a></li>
+                                            <li><a href="https://www.lbi.org/" target="_blank" rel="noopener noreferrer">Leo Baeck Institute</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="https://www.litvaksig.org/research/family-research/" target="_blank" rel="noopener noreferrer">Lithuanian-Jewish Special Interest Group</a></li>
+                                            <li><a href="http://www.montefioreendowment.org.uk/census/" target="_blank" rel="noopener noreferrer">Montefiore Censuses</a></li>
+                                            <li><a href="http://www.rtrfoundation.org/index.shtml" target="_blank" rel="noopener noreferrer">Routes to Roots Foundation</a></li>
+                                            <li><a href="http://www.sjac.org.uk/" target="_blank" rel="noopener noreferrer">Scottish Jewish Archives Centre</a></li>
+                                            <li><a href="http://sephardicancestry.com/index.php" target="_blank" rel="noopener noreferrer">Sephardic Ancestry</a></li>
+                                            <li><a href="http://www.jewishsouth.org/" target="_blank" rel="noopener noreferrer">Southern Jewish Historical Society</a></li>
+                                            <li><a href="http://synagoguescribes.com/blog/" target="_blank" rel="noopener noreferrer">Synagogue Scribes</a></li>
+                                            <li><a href="https://www.ushmm.org/remember/the-holocaust-survivors-and-victims-resource-center/holocaust-survivors-and-victims-database" target="_blank" rel="noopener noreferrer">U.S. Holocaust Memorial Museum</a></li>
+                                            <li><a href="https://www.lib.umn.edu/umja" target="_blank" rel="noopener noreferrer">Upper Midwest Jewish Archives (University of Minnesota)</a></li>
+                                            <li><a href="http://content.lib.washington.edu/jhpweb/" target="_blank" rel="noopener noreferrer">Washington State Jewish Archives</a></li>
+                                            <li><a href="http://www.yadvashem.org/yv/en/" target="_blank" rel="noopener noreferrer">Yad Vasham Archives</a></li>
+                                            <li><a href="https://www.yivo.org/" target="_blank" rel="noopener noreferrer">YIVO Institute for Jewish Research</a></li>
+                                            <li><a href="http://www.crarg.org/search-holocaust-records.php" target="_blank" rel="noopener noreferrer">Czestochowa-Radomsko Area Research Group (Poland)</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading5">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                    Native American Resources
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="https://aiatsis.gov.au/research/finding-your-family" target="_blank" rel="noopener noreferrer">Australian Institute of Aboriginal and Torres Strait Islander Studies</a></li>
+                                            <li><a href="https://www.familysearch.org/wiki/en/American_Indian_Genealogy" target="_blank" rel="noopener noreferrer">American Indian Genealogy (Family Search)</a></li>
+                                            <li><a href="https://www.archives.gov/research/native-americans" target="_blank" rel="noopener noreferrer">American Indian Records in the National Archives</a></li>
+                                            <li><a href="http://cdm16280.contentdm.oclc.org/cdm/landingpage/collection/p4007coll4" target="_blank" rel="noopener noreferrer">Bureau of Catholic Indian Missions (Marquette University)</a></li>
+                                            <li><a href="https://www.parks.ca.gov/?page_id=24096" target="_blank" rel="noopener noreferrer">California Indian Culture and Heritage (State Parks)</a></li>
+                                            <li><a href="http://www.kstrom.net/isk/maps/ca/calprecontact.gif" target="_blank" rel="noopener noreferrer">California Indians Pre-contact Tribal Territories map</a></li>
+                                            <li><a href="http://www.calisphere.universityofcalifornia.edu/calcultures/ethnic_groups/ethnic4.html" target="_blank" rel="noopener noreferrer">Calisphere</a></li>
+                                            <li><a href="http://cherokeeregistry.com/index.php?option=com_content&view=frontpage&Itemid=546" target="_blank" rel="noopener noreferrer">Cherokee Heritage Documentation Center</a></li>
+                                            <li><a href="hhttp://www.cherokee.org/" target="_blank" rel="noopener noreferrer">Cherokee Nation (Language Resources)</a></li>
+                                            <li><a href="https://digital.libraries.ou.edu/whc/duke/" target="_blank" rel="noopener noreferrer">Doris Duke Collection of American Indian Oral History (University of Oklahoma)</a></li>
+                                            <li><a href="http://www.glitc.org/" target="_blank" rel="noopener noreferrer">Great Lakes Inter-Tribal Council (Tribal Map)</a></li>
+                                            <li><a href="https://www.bia.gov/cs/groups/public/documents/text/idc-002619.pdf" target="_blank" rel="noopener noreferrer">Guide to Tracing Native American Heritage (NARA)</a></li>
+                                            <li><a href="https://www.iltf.org/resources/land-tenure-history/tribe-reservation-allotment-information" target="_blank" rel="noopener noreferrer">Indian Land Tenure Foundation</a></li>
+                                            <li><a href="https://familysearch.org/learn/wiki/en/Indians_of_California" target="_blank" rel="noopener noreferrer">Indians of California (Family Search)</a></li>
+                                            <li><a href="https://apps.ksbe.edu/kaiwakiloumoku/makalii/feature-stories/finding_your_roots" target="_blank" rel="noopener noreferrer">Makali'I - Finding Your Roots</a></li>
+
+                                            <li><a href="http://www.nicwa.org/pathways/Tracing-Indian-Ancestry.asp" target="_blank" rel="noopener noreferrer">National Indian Child Welfare Association (NICWA) - Tracing Native Ancestry</a></li>
+                                            <li><a href="https://sites.google.com/site/nativehawaiiangenealogygroup/" target="_blank" rel="noopener noreferrer">Native Hawaiian Genealogy Site</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.accessgenealogy.com/native/native-american-indian-cemeteries.htm" target="_blank" rel="noopener noreferrer">Native American Cemeteries</a></li>
+                                            <li><a href="http://www.history.army.mil/html/topics/natam/natam-moh.html" target="_blank" rel="noopener noreferrer">Native American Medal of Honor Recipients (U.S. Army)</a></li>
+                                            <li><a href="http://eslibrary.berkeley.edu/NASsites" target="_blank" rel="noopener noreferrer">Native American Studies Collection (UC Berkeley)</a></li>
+                                            <li><a href="http://guides.library.manoa.hawaii.edu/genealogyhawaiian" target="_blank" rel="noopener noreferrer">Native Hawaiian Information Sources</a></li>
+                                            <li><a href="http://www.native-languages.org/genealogy.htm" target="_blank" rel="noopener noreferrer">Native Languages of the Americas</a></li>
+                                            <li><a href="https://www.archives.gov/fort-worth/public" target="_blank" rel="noopener noreferrer">National Archives &ndash; Fort Worth, TX</a></li>
+                                            <li><a href="http://www.nmcpr.state.nm.us/archives/about-the-archives" target="_blank" rel="noopener noreferrer">New Mexico Commission of Public Records</a></li>
+                                            <li><a href="hhttp://www.okhistory.org/research/genealogy.php" target="_blank" rel="noopener noreferrer">Oklahoma Historical Society</a></li>
+                                            <li><a href="http://www.seminolenation-indianterritory.org/" target="_blank" rel="noopener noreferrer">Seminole Nation</a></li>
+                                            <li><a href="http://www.siris.si.edu/" target="_blank" rel="noopener noreferrer">Smithsonian Institution Research Information System</a></li>
+                                            <li><a href="http://metis.galib.uga.edu/ssp/cgi-bin/ftaccess.cgi?galileo_server=galileofe02.galib.uga.edu&galileo_server_port=80&galileo_server_id=17&instcode=publ&instname=Guest&helpuserid=&style=&_id=5dcbc54d-66ca794374-0615&dbs=ZLNA" target="_blank" rel="noopener noreferrer">Southeastern Native American Documents (Digital Library of Georgia)</a></li>
+                                            <li><a href="http://www.narf.org/nill/resources/roots.html" target="_blank" rel="noopener noreferrer">Tracing Native American Family Roots (National Indian Law Library)</a></li>
+                                            <li><a href="http://digital.library.okstate.edu/kappler/Vol2/toc.htm" target="_blank" rel="noopener noreferrer">Treaties by Tribe Name (Oklahoma State University)</a></li>
+                                            <li><a href="http://digital.library.okstate.edu/search.htm" target="_blank" rel="noopener noreferrer">Treaties by Tribe Name - Search feature</a></li>
+                                            <li><a href="http://avalon.law.yale.edu/subject_menus/ntreaty.asp" target="_blank" rel="noopener noreferrer">Treaties between the United States and Native Americans (Yale University)</a></li>
+                                            <li><a href="http://www.wyandot.org/1867.htm" target="_blank" rel="noopener noreferrer">Wyandot Tribal Roll (1867)</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <h3>By Subject</h3>
+                <div class="panel-group" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading6">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                    General Search Sites
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.accessgenealogy.com/" target="_blank" rel="noopener noreferrer">AccessGenealogy</a></li>
+                                            <li><a href="http://www.ancestry.com/" target="_blank" rel="noopener noreferrer">Ancestry</a></li>
+                                            <li><a href="http://www.cyndislist.com/" target="_blank" rel="noopener noreferrer">Cyndi's List</a></li>
+                                            <li><a href="http://familysearch.org/" target="_blank" rel="noopener noreferrer">FamilySearch</a></li>
+                                            <li><a href="http://www.findmypast.com/" target="_blank" rel="noopener noreferrer">FindMyPast / Mocavo</a></li>
+                                            <li><a href="http://www.fold3.com/" target="_blank" rel="noopener noreferrer">Fold3</a></li>
+                                            <li><a href="http://www.freeukgenealogy.org.uk/" target="_blank" rel="noopener noreferrer">Free UK Genealogy</a></li>
+                                            <li><a href="http://en.geneanet.org/" target="_blank" rel="noopener noreferrer">GeneaNet</a></li>
+                                            <li><a href="http://www.genealogy.com/" target="_blank" rel="noopener noreferrer">Geneaology.com</a></li>
+                                            <li><a href="http://genealogytoday.com/" target="_blank" rel="noopener noreferrer">GenealogyToday</a></li>
+                                            <li><a href="http://www.genesreunited.co.uk/" target="_blank" rel="noopener noreferrer">Genes Reunited</a></li>
+                                            <li><a href="http://www.geni.com/" target="_blank" rel="noopener noreferrer">Geni</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.genuki.org.uk/" target="_blank" rel="noopener noreferrer">GENUKI (British Isles)</a></li>
+                                            <li><a href="http://www.kindredtrails.com/" target="_blank" rel="noopener noreferrer">KindredTrails</a></li>
+                                            <li><a href="http://www.linkpendium.com/" target="_blank" rel="noopener noreferrer">Linkpendium</a></li>
+                                            <li><a href="http://www.mooseroots.com/" target="_blank" rel="noopener noreferrer">MooseRoots</a></li>
+                                            <li><a href="http://www.myheritage.com/" target="_blank" rel="noopener noreferrer">MyHeritage</a></li>
+                                            <li><a href="http://www.stevemorse.org/" target="_blank" rel="noopener noreferrer">OneStep by Steve Morse</a></li>
+                                            <li><a href="http://www.rootsweb.ancestry.com/" target="_blank" rel="noopener noreferrer">RootsWeb</a></li>
+                                            <li><a href="http://www.tribalpages.com/search.html" target="_blank" rel="noopener noreferrer">TribalPages</a></li>
+                                            <li><a href="http://www.usgenweb.org/" target="_blank" rel="noopener noreferrer">USGenWeb</a></li>
+                                            <li><a href="http://www.wikitree.com/" target="_blank" rel="noopener noreferrer">WikiTree</a></li>
+                                            <li><a href="http://www.worldgenweb.org/" target="_blank" rel="noopener noreferrer">World GenWeb Project</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading7">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                    Amateur and Professional Athletics
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.automotivehalloffame.org/" target="_blank" rel="noopener noreferrer">Automotive Hall of Fame</a></li>
+                                            <li><a href="http://www.bashof.org/Sports_Hall_of_Fame.html" target="_blank" rel="noopener noreferrer">Bay Area Sports Hall of Fame</a></li>
+                                            <li><a href="https://californiasportshalloffame.org/" target="_blank" rel="noopener noreferrer">California Sports Hall of Fame</a></li>
+                                            <li><a href="https://www.olympic.org/athletes" target="_blank" rel="noopener noreferrer">International Olympic Committee</a></li>
+                                            <li><a href="https://www.tennisfame.com/" target="_blank" rel="noopener noreferrer">International Tennis Hall of Fame</a></li>
+                                            <li><a href="http://www.lpga.com/players/lpga-hall-of-fame" target="_blank" rel="noopener noreferrer">Ladies Professional Golf Association (PGA) Hall of Fame</a></li>
+                                            <li><a href="http://mlb.mlb.com/mlb/players/" target="_blank" rel="noopener noreferrer">Major League Baseball (MLB) Player Database</a></li>
+                                            <li><a href="http://www.hoophall.com/hall-of-famers/" target="_blank" rel="noopener noreferrer">Naismith Memorial Basketball Hall of Fame (NBA)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://web1.ncaa.org/stats/StatsSrv/careersearch" target="_blank" rel="noopener noreferrer">National Collegiate Athletic Association (NCAA)</a></li>
+                                            <li><a href="http://www.nfl.com/players/search?category=name&playerType=historical" target="_blank" rel="noopener noreferrer">National Football League (NFL) Player Database</a></li>
+                                            <li><a href="https://www.nhl.com/player" target="_blank" rel="noopener noreferrer">National Hockey League (NHL)</a></li>
+                                            <li><a href="https://www.racingmuseum.org/hall-of-fame/jockeys" target="_blank" rel="noopener noreferrer">National Museum of Racing and Hall of Fame</a></li>
+                                            <li><a href="http://coe.k-state.edu/annex/nlbemuseum/history/players.html" target="_blank" rel="noopener noreferrer">Negro Leagues Baseball Museum</a></li>
+                                            <li><a href="http://www.sacsportshof.com/" target="_blank" rel="noopener noreferrer">Sacramento Sports Hall of Fame</a></li>
+                                            <li><a href="https://en.wikipedia.org/wiki/List_of_halls_and_walks_of_fame" target="_blank" rel="noopener noreferrer">Wikipedia List of Halls of Fame</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading8">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                                    Blogs, Podcasts, and Webinars
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://africanrootspodcast.com/" target="_blank" rel="noopener noreferrer">African Roots</a></li>
+                                            <li><a href="https://www.ancestry.com/academy/courses/recommended" target="_blank" rel="noopener noreferrer">Ancestry Academy</a></li>
+                                            <li><a href="https://sites.lib.byu.edu/familyhistory/classes-and-webinars/youtube-videos/" target="_blank" rel="noopener noreferrer">BYU Family History Library Channel</a></li>
+                                            <li><a href="http://www.densho.org/archive/default" target="_blank" rel="noopener noreferrer">Densho: Japanese American Oral History Project</a></li>
+                                            <li><a href="https://blog.eogn.com/" target="_blank" rel="noopener noreferrer">Eastman's Online Genealogy Newsletter</a></li>
+                                            <li><a href="http://extremegenes.com/" target="_blank" rel="noopener noreferrer">Extreme Genes</a></li>
+                                            <li><a href="https://familysearch.org/wiki/en/Family_History_Library_Classes_and_Webinars" target="_blank" rel="noopener noreferrer">FamilySearch Webinars</a></li>
+                                            <li><a href="http://french-genealogy.typepad.com/" target="_blank" rel="noopener noreferrer">French Genealogy Blog</a></li>
+                                            <li><a href="http://www.geneabloggers.com/search-geneablogger-member-blogs/" target="_blank" rel="noopener noreferrer">GeneaBloggers</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://blog.geneawebinars.com/" target="_blank" rel="noopener noreferrer">GeneaWebinars</a></li>
+                                            <li><a href="http://genealogygemspodcast.com/" target="_blank" rel="noopener noreferrer">Genealogy Gems</a></li>
+                                            <li><a href="http://genealogyguys.com/" target="_blank" rel="noopener noreferrer">Genealogy Guys</a></li>
+                                            <li><a href="http://www.legalgenealogist.com/" target="_blank" rel="noopener noreferrer">The Legal Genealogist</a></li>
+                                            <li><a href="https://narations.blogs.archives.gov/" target="_blank" rel="noopener noreferrer">NARA: "Narations"</a></li>
+                                            <li><a href="https://www.archives.gov/calendar/genealogy-fair/2016" target="_blank" rel="noopener noreferrer">NARA: Webinars &ndash; Virtual Genealogy Fair</a></li>
+                                            <li><a href="http://media.nationalarchives.gov.uk/index.php/category/family-history" target="_blank" rel="noopener noreferrer">National Archives (United Kingdom)</a></li>
+                                            <li><a href="http://www.olivetreegenealogy.com/index.shtml" target="_blank" rel="noopener noreferrer">OliveTree Genealogy</a></li>
+                                            <li><a href="https://www.rootstech.org/videos" target="_blank" rel="noopener noreferrer">RootsTech Video Archive</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading9">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                                    Burials Cemeteries, Cremations
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="https://www.nps.gov/afbg/index.htm" target="_blank" rel="noopener noreferrer">African Burial Ground National Monument</a></li>
+                                            <li><a href="http://www.abmc.gov/" target="_blank" rel="noopener noreferrer">American Battle Monuments Commission</a></li>
+                                            <li><a href="http://www.afgs.org/AFGS-Databases.html" target="_blank" rel="noopener noreferrer">American-French Genealogical Society</a></li>
+                                            <li><a href="http://www.arlingtoncemetery.mil/#/" target="_blank" rel="noopener noreferrer">Arlington National Cemetery</a></li>
+                                            <li><a href="http://billiongraves.com/" target="_blank" rel="noopener noreferrer">Billion Graves</a></li>
+                                            <li><a href="https://bccfa.islandnet.com/" target="_blank" rel="noopener noreferrer">British Columbia Cemetery Finding Aid</a></li>
+                                            <li><a href="http://www.cemeteryscribes.com/" target="_blank" rel="noopener noreferrer">Cemetery Scribes</a></li>
+                                            <li><a href="http://www.cwgc.org/" target="_blank" rel="noopener noreferrer">Commonwealth War Graves Commission</a></li>
+                                            <li><a href="http://cemetery.jocohistory.org/" target="_blank" rel="noopener noreferrer">The Digital Cemetery</a></li>
+                                            <li><a href="http://findagrave.com/" target="_blank" rel="noopener noreferrer">Find-a-Grave</a></li>
+                                            <li><a href="http://www.forgottenashes.com/" target="_blank" rel="noopener noreferrer">Forgotten Ashes</a></li>
+                                            <li><a href="http://www.volksbund.de/en/graebersuche.html" target="_blank" rel="noopener noreferrer">German War Casualties Abroad</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.indian-cemeteries.org/search.asp" target="_blank" rel="noopener noreferrer">Indian Cemeteries (India)</a></li>
+                                            <li><a href="http://www.interment.net/" target="_blank" rel="noopener noreferrer">Interment.net</a></li>
+                                            <li><a href="http://www.jewishgen.org/databases/Cemetery/" target="_blank" rel="noopener noreferrer">Jewish Gen Online Worldwide Burial Registry</a></li>
+                                            <li><a href="http://www.namesinstone.com/Search.aspx" target="_blank" rel="noopener noreferrer">Names in Stone</a></li>
+                                            <li><a href="http://www.cem.va.gov/cems/listcem.asp" target="_blank" rel="noopener noreferrer">National Cemetery Administration</a></li>
+                                            <li><a href="https://www.nps.gov/ande/planyourvisit/np-natcems.htm" target="_blank" rel="noopener noreferrer">National Park Service Cemeteries</a></li>
+                                            <li><a href="http://gravelocator.cem.va.gov/" target="_blank" rel="noopener noreferrer">National Veteran's Gravesite Locator</a></li>
+                                            <li><a href="http://www.gentracer.org/powdeathindex.html" target="_blank" rel="noopener noreferrer">Prisoner of War Cemeteries within the U.S.</a></li>
+                                            <li><a href="https://www.nps.gov/nr/travel/Asian_American_and_Pacific_Islander_Heritage/Rohwer-Relocation-Center-Memorial-Cemetery.htm" target="_blank" rel="noopener noreferrer">Rohwer Relocation Center Cemetery</a></li>
+                                            <li><a href="http://www.usgwtombstones.org/" target="_blank" rel="noopener noreferrer">Tombstone Transcription Project</a></li>
+                                            <li><a href="http://www.gravematter.com/" target="_blank" rel="noopener noreferrer">A Very Grave Matter</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading10">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                                    Genealogy Tools
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="/genealogy/">CSL Chart Creator</a> <br />(Create your own Pedigree Chart and Family Group Sheets)</li>
+                                            <li><a href="http://www-users.med.cornell.edu/~spon/picu/calc/agecalc.htm" target="_blank" rel="noopener noreferrer">Age Calculator</a> (Cornell University)</li>
+                                            <li><a href="http://publications.newberry.org/ahcbp/index.html" target="_blank" rel="noopener noreferrer">Atlas of Historical County Boundaries</a> (Newberry Library)</li>
+                                            <li><a href="http://www.searchforancestors.com/utility/birthday.html" target="_blank" rel="noopener noreferrer">Ancestor Search Birthday Calculator</a></li>
+                                            <li><a href="https://evernote.com/" target="_blank" rel="noopener noreferrer">Evernote</a> (Cross-platform note taking)</li>
+                                            <li><a href="http://stevemorse.org/#dealing" target="_blank" rel="noopener noreferrer">Foreign Alphabets</a> (Steve Morse One-Step)</li>
+                                            <li><a href="http://www.academic-genealogy.com/foreignlanguagestranslations.htm" target="_blank" rel="noopener noreferrer">Foreign Languages: Translations and Translators</a></li>
+                                            <li><a href="https://familysearch.org/wiki/en/Genealogy_Research_Forms" target="_blank" rel="noopener noreferrer">Genealogy Research Forms</a> (FamilySearch)</li>
+                                            <li><a href="http://www.archives.gov/research/start/" target="_blank" rel="noopener noreferrer">How to Get Started Guide (NARA)</a></li>
+                                            <li><a href="https://www.mapofus.org/united-states/" target="_blank" rel="noopener noreferrer">Interactive Map of U.S. State Formation History</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="https://www.loc.gov/rr/genealogy/bib_guid/states/states_intro.html" target="_blank" rel="noopener noreferrer">Local History and Genealogy Reference Service</a> (Library of Congress)</li>
+                                            <li><a href="http://maps.nypl.org/warper" target="_blank" rel="noopener noreferrer">Map Warper</a> (NY Public Library)</li>
+                                            <li><a href="http://www.genuki.org.uk/" target="_blank" rel="noopener noreferrer">Name Thesaurus</a> (Image Partners Limited &ndash; UK)</li>
+                                            <li><a href="http://www.nationalarchives.gov.uk/palaeography/default.htm" target="_blank" rel="noopener noreferrer">Paleography: Reading old handwriting</a> <br />(UK National Archives)</li>
+                                            <li><a href="http://stevemorse.org/jcal/perpetual.html" target="_blank" rel="noopener noreferrer">Perpetual Calendar</a> (One-Step by Stephen Morse)</li>
+                                            <li><a href="https://familysearch.org/wiki/en/Main_Page" target="_blank" rel="noopener noreferrer">Research Wiki</a> (FamilySearch)</li>
+                                            <li><a href="http://www.stevemorse.org/census/soundex.html" target="_blank" rel="noopener noreferrer">Soundex Calculator</a> (One-Step by Stephen Morse)</li>
+                                            <li><a href="http://chroniclingamerica.loc.gov/search/titles/" target="_blank" rel="noopener noreferrer">U.S. Newspaper Directory</a> (Library of Congress)</li>
+                                            <li><a href="http://www.worldcat.org/" target="_blank" rel="noopener noreferrer">WorldCat</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading11">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                                    Immigration and Passenger Lists
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                            <div class="panel-body">
+                                <p>Please consult with your community's librarian for local access to online commercial newspaper databases (Proquest, Gale-Cengage, Readex, etc.) as well as newspapers available on microfilm.</p>
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.ahsgr.org/?page=PassengerSurname" target="_blank" rel="noopener noreferrer">American Historical Society of Germans from Russia</a></li>
+                                            <li><a href="http://www.hotkey.net.au/~jwilliams4/pass1.htm#Index" target="_blank" rel="noopener noreferrer">Australia Passenger Indexes</a></li>
+                                            <li><a href="http://www.passengerlists.de/" target="_blank" rel="noopener noreferrer">Bremen, Germany Passenger Lists</a></li>
+                                            <li><a href="http://www.sfgenealogy.com/californiabound/cbindex.htm" target="_blank" rel="noopener noreferrer">California - Panama Passenger Lists</a></li>
+                                            <li><a href="http://castlegarden.org/" target="_blank" rel="noopener noreferrer">Castle Garden</a></li>
+                                            <li><a href="http://www.cubagen.org/ships/search-pass.htm" target="_blank" rel="noopener noreferrer">CubaGen</a></li>
+                                            <li><a href="http://www.libertyellisfoundation.org/" target="_blank" rel="noopener noreferrer">Ellis Island</a></li>
+                                            <li><a href="http://www.entradadepasajeros.com.ar/pasajeros.htm" target="_blank" rel="noopener noreferrer">Entrada de Pasajeros / Argentina Passenger Lists</a></li>
+                                            <li><a href="http://www.archivesdepartementales76.net/rechercher/archives-en-ligne/inscription-maritime/" target="_blank" rel="noopener noreferrer">Le Havre, France Passenger Lists</a></li>
+                                            <li><a href="http://www.gjenvick.com/PassengerLists/index.html#axzz4MKsXTeOw" target="_blank" rel="noopener noreferrer">Gjenvick Archives</a></li>
+                                            <li><a href="http://ags.hawaii.gov/archives/about-us/genealogy-research-guide/ships-passenger-manifests/" target="_blank" rel="noopener noreferrer">Hawaii Passenger Lists</a></li>
+                                            <li><a href="http://immigrants.byu.edu/" target="_blank" rel="noopener noreferrer">Immigrant Ancestors Project (BYU)</a></li>
+                                            <li><a href="http://www.immigrantships.net/" target="_blank" rel="noopener noreferrer">Immigrant Ship Transcribers Guild</a></li>
+                                            <li><a href="http://ocp.hul.harvard.edu/immigration/" target="_blank" rel="noopener noreferrer">Immigration to the U.S. (Harvard)</a></li>
+                                            <li><a href="http://vrhc.uhv.edu/manuscripts/indianola/" target="_blank" rel="noopener noreferrer">Indianola, Texas Immigrant Database</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.germanroots.com/international-passenger-lists.html" target="_blank" rel="noopener noreferrer">International Ship Passenger Lists</a></li>
+                                            <li><a href="http://www.italianimmigrants.org/" target="_blank" rel="noopener noreferrer">Italian Immigrants</a></li>
+                                            <li><a href="http://www.mainegenealogy.net/passenger_search.asp" target="_blank" rel="noopener noreferrer">Maine Passenger Lists</a></li>
+                                            <li><a href="http://www.maritimeheritage.org/research-sites.html" target="_blank" rel="noopener noreferrer">Maritime Heritage Project</a></li>
+                                            <li><a href="http://nanaimofamilyhistory.ca/passenger-list-project/" target="_blank" rel="noopener noreferrer">Nanaimo Family History Society (Canada)</a></li>
+                                            <li><a href="https://aad.archives.gov/aad/series-list.jsp?cat=GP44" target="_blank" rel="noopener noreferrer">National Archives (NARA) Immigration Databases</a></li>
+                                            <li><a href="http://nutrias.org/guides/genguide/immigrationrecords.htm" target="_blank" rel="noopener noreferrer">New Orleans Immigration</a></li>
+                                            <li><a href="http://www.olivetreegenealogy.com/ships/tousa_index.shtml" target="_blank" rel="noopener noreferrer">Olive Tree Genealogy</a></li>
+                                            <li><a href="http://www.usgwarchives.net/la/orleans/ships.htm" target="_blank" rel="noopener noreferrer">Orleans, Louisiana Parish Passenger Lists</a></li>
+                                            <li><a href="http://www.stevemorse.org/" target="_blank" rel="noopener noreferrer">Steve Morse</a></li>
+                                            <li><a href="http://www.theshipslist.com/" target="_blank" rel="noopener noreferrer">The Ships List</a></li>
+                                            <li><a href="http://www.slavevoyages.org/resources/names-database" target="_blank" rel="noopener noreferrer">Transatlantic Slave Trade Database</a></li>
+                                            <li><a href="http://www.genesearch.com/ports.html" target="_blank" rel="noopener noreferrer">U.S. Ports of Arrival & Passenger Lists</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading12">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse12" aria-expanded="true" aria-controls="collapse12">
+                                    International Agency Collections
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="https://www.icrc.org/en/archives" target="_blank" rel="noopener noreferrer">International Committee of the Red Cross</a></li>
+                                            <li><a href="http://www.unmict.org/en/about/archives-international-criminal-tribunals" target="_blank" rel="noopener noreferrer">International War Crimes Tribunals</a></li>
+                                            <li><a href="https://www.its-arolsen.org/en/archives/" target="_blank" rel="noopener noreferrer">International Tracing Service (Victims of Nazi persecution)</a></li>
+                                            <li><a href="http://www.nato.int/cps/en/natolive/68238.htm" target="_blank" rel="noopener noreferrer">NATO Archives</a></li>
+                                            <li><a href="http://www.oas.org/columbus/" target="_blank" rel="noopener noreferrer">Organization of American States</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="https://archives.un.org/" target="_blank" rel="noopener noreferrer">United Nations</a></li>
+                                            <li><a href="http://www.unesco-ci.org/photos/showgallery.php/cat/557" target="_blank" rel="noopener noreferrer">UNESCO Memory of the World</a></li>
+                                            <li><a href="http://whc.unesco.org/en/interactive-map/" target="_blank" rel="noopener noreferrer">UNESCO World Heritage Sites Map</a></li>
+                                            <li><a href="https://history.state.gov/countries/archives" target="_blank" rel="noopener noreferrer">U.S. Office of the Historian Diplomatic Archives</a></li>
+                                            <li><a href="http://www.worldbank.org/en/about/archives" target="_blank" rel="noopener noreferrer">World Bank Archives</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading13">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse13" aria-expanded="true" aria-controls="collapse13">
+                                    Landownership and Maps
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://publications.newberry.org/ahcbp/" target="_blank" rel="noopener noreferrer">Atlas of Historical County Boundaries</a></li>
+                                            <li><a href="http://www.glorecords.blm.gov/search/default.aspx" target="_blank" rel="noopener noreferrer">Bureau of Land Management/GLO</a></li>
+                                            <li><a href="http://vredenburgh.org/capatents/" target="_blank" rel="noopener noreferrer">California Patents (Vredenburgh.org)</a></li>
+                                            <li><a href="http://www.csga.com/CAResearch/CAResearch_Land.php" target="_blank" rel="noopener noreferrer">California State Genealogical Alliance - Land records</a></li>
+                                            <li><a href="http://www.elephind.com/" target="_blank" rel="noopener noreferrer">David Rumsey Map Collection</a></li>
+                                            <li><a href="https://geonames.usgs.gov/" target="_blank" rel="noopener noreferrer">Geographic Name Search</a></li>
+                                            <li><a href="https://library.stanford.edu/collections/glen-mclaughlin-map-collection-california-island" target="_blank" rel="noopener noreferrer">Glen McLaughlin Collection (Stanford University)</a></li>
+                                            <li><a href="http://www.fallingrain.com/world/" target="_blank" rel="noopener noreferrer">Global Gazetteer</a></li>
+                                            <li><a href="http://www.historicmapworks.com/" target="_blank" rel="noopener noreferrer">Historic MapWorks</a></li>
+                                            <li><a href="https://www.historygeo.com/" target="_blank" rel="noopener noreferrer">History Geo</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="https://www.loc.gov/maps/collections/" target="_blank" rel="noopener noreferrer">Library of Congress - Digitized Maps</a></li>
+                                            <li><a href="https://www.loc.gov/rr/geogmap/" target="_blank" rel="noopener noreferrer">Library of Congress - Map Room</a></li>
+                                            <li><a href="https://www.archives.gov/research/land/" target="_blank" rel="noopener noreferrer">National Archives</a></li>
+                                            <li><a href="http://www.oldmapsonline.org/" target="_blank" rel="noopener noreferrer">Old Maps Online</a></li>
+                                            <li><a href="http://www.lib.utexas.edu/maps" target="_blank" rel="noopener noreferrer">Perry Casta&ntilde;eda Collection (University of Texas)</a></li>
+                                            <li><a href="https://www.loc.gov/rr/geogmap/sanborn/" target="_blank" rel="noopener noreferrer">Sanborn Fire Insurance Maps</a></li>
+                                            <li><a href="http://maps.nls.uk/geo/explore/sidebyside.cfm#zoom=15&lat=56.7110&lon=-2.4668&layers=5&right=BingHyb" target="_blank" rel="noopener noreferrer">Side-by-Side Map (National Library of Scotland)</a></li>
+                                            <li><a href="http://www.visionofbritain.org.uk/maps/" target="_blank" rel="noopener noreferrer">Vision of Britain through Time</a></li>
+                                            <li><a href="http://worldmap.harvard.edu/" target="_blank" rel="noopener noreferrer">World Map (Harvard University)</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading14">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse14" aria-expanded="true" aria-controls="collapse14">
+                                    Libraries, Archives, Special Collections
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+                            <div class="panel-body">
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.genealogycenter.org/" target="_blank" rel="noopener noreferrer">Allen County Public Library</a></li>
+                                            <li><a href="http://www.ancientfaces.com/" target="_blank" rel="noopener noreferrer">Ancient Faces</a></li>
+                                            <li><a href="https://beta.worldcat.org/archivegrid/" target="_blank" rel="noopener noreferrer">Archive Grid</a></li>
+                                            <li><a href="http://www.lib.berkeley.edu/libraries/bancroft-library" target="_blank" rel="noopener noreferrer">Bancroft Library (UC Berkeley)</a></li>
+                                            <li><a href="http://brbl-dl.library.yale.edu/vufind/" target="_blank" rel="noopener noreferrer">Beinecke Rare Book & Manuscript Library</a></li>
+                                            <li><a href="http://www.rootsweb.ancestry.com/~bwo" target="_blank" rel="noopener noreferrer">Books We Own</a></li>
+                                            <li><a href="http://digital.cincinnatilibrary.org/cdm/" target="_blank" rel="noopener noreferrer">Cincinnati Public Library &ndash; Digital Collections</a></li>
+                                            <li><a href="http://www.dp.la" target="_blank" rel="noopener noreferrer">Digital Public Library</a></li>
+                                            <li><a href="http://ehistory.osu.edu/" target="_blank" rel="noopener noreferrer">Digital Scriptorium (UC Berkeley)</a></li>
+                                            <li><a href="http://www.historicmapworks.com/" target="_blank" rel="noopener noreferrer">E-History (Ohio State University)</a></li>
+                                            <li><a href="http://familysearch.org/" target="_blank" rel="noopener noreferrer">Family Search (Search>Books)</a></li>
+                                            <li><a href="http://www.godfrey.org/" target="_blank" rel="noopener noreferrer">Godfrey Memorial Library</a></li>
+                                            <li><a href="http://books.google.com" target="_blank" rel="noopener noreferrer">Google Books</a></li>
+                                            <li><a href="http://ocp.hul.harvard.edu/" target="_blank" rel="noopener noreferrer">Harvard University &ndash; Open Collections</a></li>
+                                            <li><a href="https://www.hathitrust.org/" target="_blank" rel="noopener noreferrer">Hathitrust Digital Library</a></li>
+                                            <li><a href="http://huntington.org/WebAssets/Templates/search.aspx?searchtext=sunset%20strip" target="_blank" rel="noopener noreferrer">Huntington Library</a></li>
+                                            <li><a href="http://icar-us.eu/en" target="_blank" rel="noopener noreferrer">International Centre for Archival Research (ICARUS)</a></li>
+                                            <li><a href="http://www.archive.org" target="_blank" rel="noopener noreferrer">Internet Archive</a></li>
+                                            <li><a href="http://www.jstor.org/" target="_blank" rel="noopener noreferrer">JStor</a></li>
+                                            <li><a href="http://www.loc.gov" target="_blank" rel="noopener noreferrer">Library of Congress</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.lva.virginia.gov/" target="_blank" rel="noopener noreferrer">Library of Virginia</a></li>
+                                            <li><a href="http://www.mymcpl.org/genealogy" target="_blank" rel="noopener noreferrer">Mid-Continent Public Library</a></li>
+                                            <li><a href="http://mwdl.org/" target="_blank" rel="noopener noreferrer">Mountain West Digital Library</a></li>
+                                            <li><a href="http://www.nara.gov" target="_blank" rel="noopener noreferrer">National Archives (NARA)</a></li>
+                                            <li><a href="http://www.archives.gov/research/start/" target="_blank" rel="noopener noreferrer">NARA &ndash; How to Get Started Guide</a></li>
+                                            <li><a href="https://www.archives.gov/digitization/digitized-by-partners.html" target="_blank" rel="noopener noreferrer">NARA &ndash; Items Digitized by Partners</a></li>
+                                            <li><a href="http://www.loc.gov/coll/nucmc/" target="_blank" rel="noopener noreferrer">National Union Catalog of Manuscript Collections</a></li>
+                                            <li><a href="http://www.americanancestors.org/" target="_blank" rel="noopener noreferrer">New England Historical & Genealogical Society</a></li>
+                                            <li><a href="http://nypl.org" target="_blank" rel="noopener noreferrer">New York Public Library</a></li>
+                                            <li><a href="http://www.newberry.org/genealogy-and-local-history" target="_blank" rel="noopener noreferrer">Newberry Library</a></li>
+                                            <li><a href="http://www.oac.cdlib.org" target="_blank" rel="noopener noreferrer">Online Archive of California</a></li>
+                                            <li><a href="https://muse.jhu.edu/" target="_blank" rel="noopener noreferrer">Project Muse</a></li>
+                                            <li><a href="http://www.rbhayes.org/main/research-collections/" target="_blank" rel="noopener noreferrer">Rutherford B. Hayes Presidential Library</a></li>
+                                            <li><a href="http://www.siris.si.edu/" target="_blank" rel="noopener noreferrer">Smithsonian Archives and Libraries</a></li>
+                                            <li><a href="http://www.dar.org/library" target="_blank" rel="noopener noreferrer">Society of the Daughters of the American Revolution (DAR)</a></li>
+                                            <li><a href="http://collections.stanford.edu/images/bin/page;jsessionid=AAC4D39069DE39554C485B81007C018F?forward=home" target="_blank" rel="noopener noreferrer">Stanford University – Image Gallery </a></li>
+                                            <li><a href="https://www.archives.gov/presidential-libraries/research/" target="_blank" rel="noopener noreferrer">U.S. Presidential Libraries</a></li>
+                                            <li><a href="http://www.lib.berkeley.edu/uchistory/sitemap" target="_blank" rel="noopener noreferrer">UC History Digital Archives</a></li>
+                                            <li><a href="http://www.worldcat.org" target="_blank" rel="noopener noreferrer">WorldCat</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading15">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse15" aria-expanded="true" aria-controls="collapse15">
+                                    Military Service
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+                            <div class="panel-body">
+                                <ul class="list-understated accordion-list">
+                                    <li>                                        <a href="https://familysearch.org/wiki/en/United_States_Military_Records" target="_blank" rel="noopener noreferrer">                                            U.S. Military Records Overview (Family Search)                                        </a>                                    </li>
+                                    <li>
+                                        <a class="toggle">18th Century</a>
+                                        <div class="description">
+                                            <h4>American Revolution</h4>
+                                            <div class="group">
+                                                <div class="half">
+                                                    <ul>
+                                                        <li><a href="http://www.usmm.org/revdead.html" target="_blank" rel="noopener noreferrer">American Prisoners</a></li>
+                                                        <li><a href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/american-revolution/" target="_blank" rel="noopener noreferrer">The British Archives</a></li>
+                                                        <li><a href="http://www.bl.uk/reshelp/findhelprestype/news/britmilhist/britmilhist.html" target="_blank" rel="noopener noreferrer">British Library</a></li>
+                                                        <li><a href="http://www.dar.org/" target="_blank" rel="noopener noreferrer">Daughters of the American Revolution</a></li>
+                                                        <li><a href="http://www.lva.virginia.gov/public/guides/rn8_varev.pdf" target="_blank" rel="noopener noreferrer">Library of Virginia</a></li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="half">
+                                                    <ul>
+                                                        <li><a href="http://www.royalprovincial.com/military/musters/mustlist.htm" target="_blank" rel="noopener noreferrer">On-Line Institute for Advanced Loyalist</a></li>
+                                                        <li><a href="http://revwarapps.org/" target="_blank" rel="noopener noreferrer">Southern Campaigns</a></li>
+                                                        <li><a href="http://quod.lib.umich.edu/m/moagrp/" target="_blank" rel="noopener noreferrer">University of Michigan Making of America</a></li>
+                                                        <li><a href="http://ebooks.library.cornell.edu/m/moa/" target="_blank" rel="noopener noreferrer">Cornell University's Making of America</a></li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="toggle">19th Century</a>
+                                        <div class="description">
+                                            <div class="group">
+                                                <div class="half">
+                                                    <h4>War of 1812</h4>
+                                                    <ul>
+                                                        <li><a href="https://go.fold3.com/1812pensions/" target="_blank" rel="noopener noreferrer">Pension and bounty land warrant application files</a></li>
+                                                        <li><a href="http://www.cyberdriveillinois.com/departments/archives/databases/war1812.html" target="_blank" rel="noopener noreferrer">Illinois Veterans</a></li>
+                                                        <li><a href="https://archive.org/details/rosterofohiosold00ohio" target="_blank" rel="noopener noreferrer">Ohio Soldiers</a></li>
+                                                        <li><a href="http://www.angelfire.com/on3/oneida/page79.html" target="_blank" rel="noopener noreferrer">Oneida Indian Soldiers</a></li>
+                                                        <li><a href="http://www.lva.virginia.gov/public/guides/opac/1812about.htm" target="_blank" rel="noopener noreferrer">Pay Rolls and Muster Rolls (Library of Virginia)</a></li>
+                                                        <li><a href="https://www.nps.gov/hobe/upload/39infantry.pdf" target="_blank" rel="noopener noreferrer">U.S. Army 39th Infantry</a></li>
+                                                        <li><a href="https://books.google.com/books?id=mIQFAAAAQAAJ&source=gbs_navlinks_s" target="_blank" rel="noopener noreferrer">Pension Roll of 1835 (Report from the Secretary of War)</a></li>
+                                                        <li><a href="http://www.1812privateers.org/" target="_blank" rel="noopener noreferrer">U.S., Canadian, and British Privateers</a></li>
+                                                        <li><a href="http://www.collectionscanada.gc.ca/microform-digitization/index-e.html" target="_blank" rel="noopener noreferrer">Canadian War of Records</a></li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="half">
+                                                    <h4>Mexican American War</h4>
+                                                    <ul>
+                                                        <li><a href="http://www.dmwv.org/mexwar/mexwar1.htm" target="_blank" rel="noopener noreferrer">Descendants of Mexican American War Veterans</a></li>
+                                                        <li><a href="http://www.militaryindexes.com/mexicanwar/index.html" target="_blank" rel="noopener noreferrer">Military Indexes.com</a></li>
+                                                    </ul>
+                                                    <h4>Civil War</h4>
+                                                    <ul>
+                                                        <li><a href="https://www.nps.gov/civilwar/soldiers-and-sailors-database.html" target="_blank" rel="noopener noreferrer">Civil War NPS Soldiers and Sailors Database</a></li>
+                                                        <li><a href="http://ebooks.library.cornell.edu/m/moawar/waro.html" target="_blank" rel="noopener noreferrer">Making of America database (Cornell University)</a></li>
+                                                    </ul>
+
+                                                    <h4>Spanish-American War</h4>
+                                                    <ul>
+                                                        <li><a href="http://www2.warwick.ac.uk/services/library/mrc/explorefurther/digital/scw" target="_blank" rel="noopener noreferrer">Spanish-American War Centennial</a></li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="toggle">20th Century</a>
+                                        <div class="description">
+                                            <ul style="padding-top:20px;">
+                                                <li><a href="http://freedommuseum.org/" target="_blank" rel="noopener noreferrer">The Freedom Museum</a></li>
+                                                <li><a href="http://csws.utk.edu/" target="_blank" rel="noopener noreferrer">The Center for the Study of War and Society</a></li>
+                                            </ul>
+                                            <div class="group">
+                                                <div class="half">
+                                                    <h4>WWI</h4>
+                                                    <ul>
+                                                        <li><a href="http://www.genealogybranches.com/worldwaronedraftcards.html" target="_blank" rel="noopener noreferrer">WWI Draft Card Finding Aid</a></li>
+                                                        <li><a href="http://www.gwpda.org/" target="_blank" rel="noopener noreferrer">WWI Document Archive</a></li>
+                                                        <li><a href="http://www.bac-lac.gc.ca/eng/discover/military-heritage/first-world-war/Pages/introduction.aspx" target="_blank" rel="noopener noreferrer">Canadian WWI Records</a></li>
+                                                    </ul>
+
+                                                    <h4>Spanish Civil War</h4>
+                                                    <ul>
+                                                        <li><a href="http://guides.library.yale.edu/c.php?g=296063&p=1973557" target="_blank" rel="noopener noreferrer">Yale University:<br />Digital Primary Source Archives & Websites</a></li>
+                                                        <li><a href="http://www.alba-valb.org/" target="_blank" rel="noopener noreferrer">Abraham Lincoln Brigade Archives</a></li>
+                                                        <li><a href="http://www.marx-memorial-library.org/" target="_blank" rel="noopener noreferrer">Marx Memorial Library</a></li>
+                                                        <li><a href="http://www2.warwick.ac.uk/services/library/mrc/explorefurther/digital/scw" target="_blank" rel="noopener noreferrer">Modern Records Centre</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="half">
+                                                    <h4>WWII</h4>
+                                                    <ul><li>...</li></ul>
+                                                    <h4>Korean</h4>
+                                                    <ul>
+                                                        <li><a href="http://www.koreanwarpow.org/" target="_blank" rel="noopener noreferrer">Korean War POWs</a></li>
+                                                        <li><a href="http://www.koreanwarcasualties.org/" target="_blank" rel="noopener noreferrer">Korean War Casualties</a></li>
+                                                    </ul>
+                                                    <h4>Vietnam</h4>
+                                                    <ul><li>...</li></ul>
+                                                    <h4>MidEast</h4>
+                                                    <ul>
+                                                        <li><a href="http://csws.utk.edu/" target="_blank" rel="noopener noreferrer">The Center for the Study of War and Society</a></li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading16">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse16" aria-expanded="true" aria-controls="collapse16">
+                                    Newspapers
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
+                            <div class="panel-body">
+                                <p>Please consult with your community's public librarian for local access to online commercial newspaper databases (Proquest, Gale-Cengage, Readex, etc.) as well as microfilmed newspapers.</p>
+                                <div class="group">
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://www.theancestorhunt.com/newspapers.html" target="_blank" rel="noopener noreferrer">Ancestor Hunt</a></li>
+                                            <li><a href="http://newspapers.bc.edu/cgi-bin/bostonsh?a=q&e=-------en-20--1-byDA-txt-txIN-------" target="_blank" rel="noopener noreferrer">Boston College Newspaper Database</a></li>
+                                            <li><a href="http://cdnc.ucr.edu/cgi-bin/cdnc" target="_blank" rel="noopener noreferrer">California Digital Newspaper Collection</a></li>
+                                            <li><a href="http://chroniclingamerica.loc.gov/" target="_blank" rel="noopener noreferrer">Chronicling America (Library of Congress)</a></li>
+                                            <li><a href="http://www.elephind.com/" target="_blank" rel="noopener noreferrer">Elephind</a></li>
+                                            <li><a href="https://familysearch.org/wiki/en/Digital_Historical_Newspapers" target="_blank" rel="noopener noreferrer">Family Search Newspaper Wiki</a></li>
+                                            <li><a href="http://www.freenewspaperarchives.us/free-western-newspaper-collections/" target="_blank" rel="noopener noreferrer">Free Newspaper Archives (by region)</a></li>
+                                            <li><a href="http://www.genealogybank.com/" target="_blank" rel="noopener noreferrer">Genealogy Bank</a></li>
+                                            <li><a href="https://news.google.com/newspapers" target="_blank" rel="noopener noreferrer">Google News Archive</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="half">
+                                        <ul class="list-understated">
+                                            <li><a href="http://libweb.hawaii.edu/digicoll/newspapers.htm" target="_blank" rel="noopener noreferrer">Hawaiian Language Newspapers</a></li>
+                                            <li><a href="http://nyshistoricnewspapers.org/" target="_blank" rel="noopener noreferrer">NYS Historic Newspapers Project</a></li>
+                                            <li><a href="http://www.nytimes.com/ref/membercenter/nytarchive.html" target="_blank" rel="noopener noreferrer">New York Times (Historical Archive)</a></li>
+                                            <li><a href="http://newspaperarchive.com/" target="_blank" rel="noopener noreferrer">Newspaper Archive</a></li>
+                                            <li><a href="http://www.newspapers.com/" target="_blank" rel="noopener noreferrer">Newspapers.com</a></li>
+                                            <li><a href="http://smalltownpapers.com/" target="_blank" rel="noopener noreferrer">Small Town Papers</a></li>
+                                            <li><a href="http://www.xooxleanswers.com/free-newspaper-archives/us-state-and-local-newspaper-archives/" target="_blank" rel="noopener noreferrer">Xooxle</a></li>
+                                            <li><a href="http://viewshare.org/views/refhelp/historical-newspapers-online-usa-2/" target="_blank" rel="noopener noreferrer">ViewShare Historical Newspapers (Library of Congress)</a></li>
+                                            <li><a href="https://en.wikipedia.org/wiki/Wikipedia:List_of_online_newspaper_archives" target="_blank" rel="noopener noreferrer">Wikipedia Worldwide Online Newspaper Archives</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading17">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse17" aria-expanded="true" aria-controls="collapse17">
+                                    Vital Records
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
+                            <div class="panel-body">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 </div>
 
