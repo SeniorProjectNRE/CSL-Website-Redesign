@@ -1829,6 +1829,9 @@
     <Content Include="Content\StateTemplate\pdf\services\toLibraries\CLSA_Grants_Report_Legislature_September_2017.pdf" />
     <Content Include="Content\StateTemplate\pdf\grants\Civil Liberties\BeforeYouStartApplication-CaliforniaCivilLibertiesProgramFY2016-17.pdf" />
     <Content Include="Content\StateTemplate\pdf\grants\Civil Liberties\CACivilLibertiesPublicEducationProgramFY2016-17GUIDELINES.pdf" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\InnovationStationApplicationFormSept2017REV.docx" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\InnovationStationProjectApplicationGuidelinesREV.docx" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\FAQ-Innovation-Project.docx" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
