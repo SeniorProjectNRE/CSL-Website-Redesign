@@ -1,10 +1,278 @@
 ﻿@{
-    ViewBag.Title = "History";
+    ViewBag.Title = "CSL - History of the California State Library";
+    ViewBag.PageTitle = "History of the California State Library";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "History of the California State Library";
+    ViewBag.Keywords = "California, state, Library, history, state librarians, secretary of state";
 }
 
-<div id="main-content" class="main-content">
-    <main class="main-primary">
-        <h2>History</h2>
-    </main>
-</div>
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
 
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<style>
+    @@media (min-width: 1280px) {
+        #title-page {
+            display: none;
+        }
+
+        #page-banner {
+            display: block;
+        }
+    }
+
+    @@media (max-width: 767px) {
+        #title-page {
+            display: block;
+        }
+
+        #page-banner {
+            display: none;
+        }
+    }
+
+    .wrap {
+        font-size:inherit;
+    }
+    blockquote {
+        margin-left: 50px;
+        color: #046b99;
+        border-left: 5px solid #61a9ca;
+        font-size: 1.15em;
+    }
+    .expand-div {
+        width:100%;
+    }
+</style>
+
+
+<div id="main-content" class="main-content">
+    <div class="container">
+        <main class="main-primary">
+            <!-- InstanceBeginEditable name="MainContent" -->
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li class="active">History</li>
+            </ol>
+            <h1 id="title-page">@(ViewBag.PageTitle)</h1>
+            <img id="page-banner" src="~/Content/StateTemplate/images/about/history/top.jpg" style="width:100%" title="Capitol and Library-Courts Building. Sacramento, 1929." alt="View of fountain plaza between 9th and 10th Streets at Capitol Mall. Shows Capitol and Library-Courts Building. Sacramento, 1929." />
+            <div class="spacer"></div>
+            <div class="wrap">
+                <p>
+                    Nearly a year before California was admitted as the 31st state, its citizens were working hard to build a government that could meet the needs of the rapidly growing population. One of the first actions taken by the State Senate was to appoint a “Committee on State Library” to investigate the best way to organize and preserve the collection of books, maps and documents that were being used as reference materials by the new lawmakers.
+                </p>
+                <blockquote>
+                    <p>
+                        <em>“The Committee on State Library beg leave to report, that through the liberality of some distinguished citizens, the State is in possession of a number of volumes of very valuable work. The Committee have been informed that it is the intention of other citizens to make donations also, and there is a probability that in a short time the State will be in possession of a large number of works.”</em>
+                    </p>
+                    <footer><cite title="Source Title">State Senator Alexander W. Hope</cite> - December 28, 1850</footer>
+                </blockquote>
+                <p>
+                    By the end of the following month, Governor Peter Burnett had signed a bill establishing the State Librarian and assigning the duty to maintain the Library to the Secretary of State. The Secretary of State continued to serve as the State Librarian in an ex-officio capacity until 1861. In 1855 , under the administration of James W. Denver, the legislature approved the expenditure of $17,250 to purchase the San Francisco Law Library. In 1860, the collection grew again as the Library received authorization to purchase newspaper files.
+                </p>
+                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                    <div class="expand-div">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading1">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1"><strong>Secretary of State</strong> <br /><em>(Appointed by Governor)</em></a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tr>
+                                                <th>William Van Voorhies</th>
+                                                <td>1850 - 1853</td>
+                                            </tr>
+                                            <tr>
+                                                <th>James W. Denver</th>
+                                                <td>1853 - 1855</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Charles H. Hempstead</th>
+                                                <td>1855 - 1856</td>
+                                            </tr>
+                                            <tr>
+                                                <th>David F. Douglass</th>
+                                                <td>1856 - 1858</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Ferris Forman</th>
+                                                <td>1858 - 1860</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Johnson Price</th>
+                                                <td>1860 - 1861</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="spacer"></div>
+                <p>
+                    On March 8, 1861, legislation was enacted that removed responsibility for the State Library from the Secretary of State and assigned it to the newly created five-member State Library Board of Trustees. The Board, intended to reflect the role of the Library as a resource for the entire state government, was composed of the Governor, the Chief Justice of the Supreme Court, and three members elected by the Legislature. To assist with the daily operations of the Library, the Board of Trustees was authorized to appoint a State Librarian, who was to fill that role for a four year term.
+                </p>
+                <blockquote>
+                    <p>
+                        <em>“The Board of Trustees shall have power to appoint a Librarian to superintend and take care of the State Library, and they shall prescribe such rules and regulations for the government of the library as they shall think proper.”</em>
+                    </p>
+                    <footer><cite title="Source Title">Chapter 62, Statutes of 1861</cite></footer>
+                </blockquote>
+                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                    <div class="expand-div">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading2">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2"><strong>State Librarians</strong>  <br /><em>(Appointed by the State Library Board of Trustees)</em></a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tr>
+                                                <th>W. C. Stratton</th>
+                                                <td>1861 - 1870</td>
+                                            </tr>
+                                            <tr>
+                                                <th>William Neely Johnson</th>
+                                                <td>1870 - 1870</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Robert O. Cravens</th>
+                                                <td>1870 - 1882</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Talbot H. Wallis</th>
+                                                <td>1882 - 1890</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Ferris Forman</th>
+                                                <td>1890 - 1896</td>
+                                            </tr>
+                                            <tr>
+                                                <th>William P. Mathews</th>
+                                                <td>1896 - 1897</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Edward D. McCabe</th>
+                                                <td>1897 - 1898</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Frank L. Coombs</th>
+                                                <td>1898 - 1899</td>
+                                            </tr>
+                                            <tr>
+                                                <th>James L. Gillis</th>
+                                                <td>1899 - 1917</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Milton J. Ferguson</th>
+                                                <td>1917 - 1927</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="spacer"></div>
+                <p>
+                    In 1871, the Library was expanded to include a large collection of minerals, precious metals, and other geological items. This "Cabinet Department" was initially valued at $13,000 and remained with the Library until 1887, when it was moved to the Crocker Art Gallery.
+                </p>
+                <p>
+                    In 1899, James L. Gillis was appointed State Librarian, beginning one of the most important eras in the history of the Library. In addition to founding the county library system, which serves Californians in all 58 counties today, Gillis was instrumental in building support for the construction of the Library and Courts Building in downtown Sacramento to house the growing collection.
+                </p>
+                <p>
+                    Another major accomplishment during Gillis’ term as State Librarian was the donation of mining magnate and San Francisco Mayor Adolph Sutro’s private library to the state in 1913. This 125,000 volume collection includes rare manuscripts, books, and documents and was described as early as 1892 as “one of the four great libraries of the world.” The Sutro Library, which opened to the public on in 1917, is located at San Francisco State University.
+                </p>
+                <blockquote>
+                    <p>
+                        <em>“Outside of the great public libraries of Europe there is nothing to compare with it. Mr. Sutro was a shrewd buyer and accumulated a remarkable collection of books at ordinary cost. When the possessions of the mad King of Bavaria were sold, he bought largely and secured many rare volumes.”</em>
+                    </p>
+                    <footer><cite title="Source Title">San Francisco Call, 12 August 1898</cite></footer>
+                </blockquote>
+                <p>
+                    In 1927, the Library was moved directly under the Governor, with the State Librarian becoming a position appointed by the Governor. Since then, the Library collection has continued to grow, becoming a major resource for Californians seeking information about their state, its laws and government, as well as a variety of books in print or Braille.
+                </p>
+                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                    <div class="expand-div">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading3">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3"><strong>State Librarians</strong> <br /><em>(Appointed by Governor)</em></a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tr>
+                                                <th>Milton J. Ferguson</th>
+                                                <td>1927 - 1930</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Mabel R. Gillis</th>
+                                                <td>1930 - 1951</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Carma R. Zimmerman Leigh</th>
+                                                <td>1951 - 1972</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Ethel S. Crockett</th>
+                                                <td>1972 - 1980</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Gary E. Strong</th>
+                                                <td>1980 - 1994</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Dr. Kevin Starr</th>
+                                                <td>1994 - 2004</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Susan Hildreth</th>
+                                                <td>2004 - 2009</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Stacey A. Aldrich</th>
+                                                <td>2009 - 2012</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Gerald Maginnity</th>
+                                                <td>2012 - 2014</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Greg Lucas </th>
+                                                <td>2014 - Present</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="spacer"></div>
+            </div>
+        </main>
+    </div>
+</div>

@@ -295,6 +295,7 @@
     <Content Include="Content\StateTemplate\images\about\executiveStaff\RebeccaWendt.jpg" />
     <Content Include="Content\StateTemplate\images\about\executiveStaff\top.jpg" />
     <Content Include="Content\StateTemplate\images\about\executiveStaff\WendyHopkins.jpg" />
+    <Content Include="Content\StateTemplate\images\about\history\top.jpg" />
     <Content Include="Content\StateTemplate\images\about\hist_building\1.jpg" />
     <Content Include="Content\StateTemplate\images\about\hist_building\10.jpg" />
     <Content Include="Content\StateTemplate\images\about\hist_building\11.jpg" />
