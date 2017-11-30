@@ -46,13 +46,6 @@ namespace StateTemplateV5Beta.Controllers.Grants
             return View();
         }
 
-        // GET: career-online-high-school
-        [Route("career-online-high-school")]
-        public ActionResult CareerOnlineHighSchool()
-        {
-            return View();
-        }
-
         // GET: harwood
         [Route("harwood")]
         public ActionResult Harwood()

@@ -1,5 +1,6 @@
 ﻿@{
-    ViewBag.Title = "Submit Your Application";
+    ViewBag.Title = "CSL - California Civil Liberties advisory committee";
+    ViewBag.PageTitle = "Submit Your Application";
     ViewBag.Author = "California State Library";
     ViewBag.Description = "Find information about applying for the California Civil Liberties Public EducationProgram.";
     ViewBag.Keywords = "CCLP CCL CL California Civil Liberties Program Public Education Application";
@@ -19,13 +20,19 @@
     <main class="main-primary">
         <div class="container">
             <div class="section">
-                <ol class="breadcrumb dynamic"></ol>
-                <h2 class="page-title">@ViewBag.Title</h2>
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/grants">Grants</a></li>
+
+                    <li><a href="/grants/civil-liberties">CCLPEP</a></li>
+                    <li class="active">Apply</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
                 <h4 style="color:red;">
                     Application Period Closed
                 </h4>
                 <p>
-                    The California Civil Liberties Public Education Program FY 2016-17 application is online. Please note before starting the following before starting the online process: 
+                    The California Civil Liberties Public Education Program FY 2016-17 application is online. Please note before starting the following before starting the online process:
                 </p>
                 <ul class="list-standout">
                     <li>
@@ -45,7 +52,7 @@
                     <a href="~/Content/StateTemplate/pdf/grants/Civil Liberties/BeforeYouStartApplication-CaliforniaCivilLibertiesProgramFY2016-17.pdf">
                         Before You Start Your Application
                     </a>
-                    (PDF) – this document takes applicants through the different sections of the CCLPEP application so an applicant can properly prepare. 
+                    (PDF) – this document takes applicants through the different sections of the CCLPEP application so an applicant can properly prepare.
                 </p>
                 <p>
                     Questions? Email Mary Beth Barber at

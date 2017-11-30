@@ -107,5 +107,12 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
             return View("~/Views/Services/ToLibraries/CooperativeSystemsClsa.cshtml");
         }
 
+        // GET: career-online-high-school
+        [Route("career-online-high-school")]
+        public ActionResult CareerOnlineHighSchool()
+        {
+            return View("~/Views/Services/ToLibraries/CareerOnlineHighSchool.cshtml");
+        }
+
     }
 }

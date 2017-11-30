@@ -1924,7 +1924,7 @@
     <Content Include="Views\Services\ToLibraries\Broadband\Libraries.cshtml" />
     <Content Include="Views\Grants\LSTA.cshtml" />
     <Content Include="Views\Grants\Apply.cshtml" />
-    <Content Include="Views\Grants\CareerOnlineHighSchool.cshtml" />
+    <Content Include="Views\Services\ToLibraries\CareerOnlineHighSchool.cshtml" />
     <Content Include="Views\Grants\Harwood.cshtml" />
     <Content Include="Views\Grants\ImmigrantAlliance.cshtml" />
     <Content Include="Views\Grants\Initatives.cshtml" />
