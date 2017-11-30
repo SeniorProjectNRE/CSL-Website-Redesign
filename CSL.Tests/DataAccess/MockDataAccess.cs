@@ -27,7 +27,7 @@ namespace CSL.Tests.DataAccess
 
             testRow1["ReportYear"] = year;
             testRow1["ReportAgencyCode"] = code;
-            //testRow1["ReportAgencyName"] = library;
+            testRow1["ReportAgencyName"] = code;
 
             myTable.Rows.Add(testRow1);
 
@@ -73,7 +73,26 @@ namespace CSL.Tests.DataAccess
 
         public DataTable GetAllSLAA(int year, string code)
         {
-            throw new NotImplementedException();
+            DataTable myTable = new DataTable();
+            DataColumn g = new DataColumn("ReportYear");
+            g.DataType = System.Type.GetType("System.String");
+            myTable.Columns.Add(g);
+            DataColumn y = new DataColumn("ReportAgencyCode");
+            y.DataType = System.Type.GetType("System.String");
+            myTable.Columns.Add(y);
+            DataColumn l = new DataColumn("ReportAgencyName");
+            l.DataType = System.Type.GetType("System.String");
+            myTable.Columns.Add(l);
+
+            DataRow testRow1 = myTable.NewRow();
+
+            testRow1["ReportYear"] = year;
+            testRow1["ReportAgencyCode"] = code;
+            testRow1["ReportAgencyName"] = code;
+
+            myTable.Rows.Add(testRow1);
+
+            return myTable;
         }
 
         public DataTable GetAssembly(string library, string jurisdiction, string csla, string city, string county, int zip, int assembly, int senate, int congress, string status, string code)
@@ -290,7 +309,22 @@ namespace CSL.Tests.DataAccess
 
         public DataTable GetYear(int year, string code)
         {
-            throw new NotImplementedException();
+            DataTable myTable = new DataTable();
+            DataColumn g = new DataColumn("Year");
+            g.DataType = System.Type.GetType("System.String");
+            myTable.Columns.Add(g);
+            DataColumn y = new DataColumn("ReportAgencyCode");
+            y.DataType = System.Type.GetType("System.String");
+            myTable.Columns.Add(y);
+
+            DataRow testRow1 = myTable.NewRow();
+
+            testRow1["Year"] = year;
+            testRow1["ReportAgencyCode"] = code;
+
+            myTable.Rows.Add(testRow1);
+
+            return myTable;
         }
 
         public DataTable GetZip(string library, string jurisdiction, string csla, string city, string county, int zip, int assembly, int senate, int congress, string status, string code)
