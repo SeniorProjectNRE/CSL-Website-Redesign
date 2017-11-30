@@ -1932,7 +1932,7 @@
     <Content Include="Views\Grants\Manage.cshtml" />
     <Content Include="Views\Grants\MentalHealth.cshtml" />
     <Content Include="Views\Grants\PitchAnIdea.cshtml" />
-    <Content Include="Views\Grants\PreviousGrantAwards.cshtml" />
+    <Content Include="Views\Grants\LibraryServicesTechnologyAct\PreviousGrantAwards.cshtml" />
     <Content Include="Views\Grants\StaffInnovation.cshtml" />
     <Content Include="Views\Grants\Statewide.cshtml" />
     <Content Include="Views\Grants\VirtualReality.cshtml" />
@@ -2035,7 +2035,7 @@
     <Content Include="Views\Collections\VideosPodcasts.cshtml" />
     <Content Include="Views\Grants\CivilLiberties\AdvisoryCommittee.cshtml" />
     <Content Include="Views\Grants\InnovationStation.cshtml" />
-    <Content Include="Views\Grants\LibraryServicesTechnologyAct.cshtml" />
+    <Content Include="Views\Grants\LibraryServicesTechnologyAct\LibraryServicesTechnologyAct.cshtml" />
     <Content Include="Views\Services\ToLibraries\BroadbandERate.cshtml" />
     <Content Include="Views\CaliforniaHistory\DigitizedResources.cshtml" />
     <Content Include="Views\Collections\Genealogy\Links.cshtml" />
