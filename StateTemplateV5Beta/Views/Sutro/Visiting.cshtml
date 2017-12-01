@@ -1,9 +1,9 @@
 ﻿
 @{
-    ViewBag.Title = "Visiting Sutro";
+    ViewBag.Title = "CSL - Visit Sutro Library (San Francisco)";
     ViewBag.Banner = "SutroBuilding.jpg";
-    ViewBag.Author = "Jonathan Shaw";
-    ViewBag.Description = "California State Library Vist Sutro page.  Find information related to visiting Sutro here";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "California State Library Replace with: Plan your trip to Sutro Library in San Francisco, CA";
     ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library, Sutro, SFSU, visiting, visit";
 }
 
@@ -18,10 +18,14 @@
 <div id="main-content" class="main-content">
     <main class="main-primary">
         <div class="container">
-            <ol class="breadcrumb dynamic">
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/collections">Our Collections</a></li>
+                <li><a href="/sutro">Sutro</a></li>
+                <li>Visiting</li>
             </ol>
 
-            <h2 class="page-title" id="title">@ViewBag.Title</h2>
+            <h2 class="page-title" id="title">Visting Sutro</h2>
 
             <img src="~/Content/StateTemplate/images/banner/@(ViewBag.Banner)" style="width:100%" alt="" class="animated fadeInLeft" />
         </div>
@@ -34,15 +38,15 @@
                     You can visit Sutro 10am - 4pm, Monday - Friday, excluding <a href="http://www.library.ca.gov/visit-us/locations-and-hours/">State holidays.</a>
                 </p>
                 <p>
-                    The Sutro Library welcomes SFSU's academic community, visiting scholars, 
-                    and the general public. Scholars using Sutro's rare materials are asked to 
-                    <a href="mailto:sutro@library.ca.gov">email us</a> 3 business days in advance 
-                    of their visit and have a government issued or current student photo ID. 
-                    Pencils and/or laptops are welcome, but no binders, three-ring notebooks or pens 
+                    The Sutro Library welcomes SFSU's academic community, visiting scholars,
+                    and the general public. Scholars using Sutro's rare materials are asked to
+                    <a href="mailto:sutro@library.ca.gov">email us</a> 3 business days in advance
+                    of their visit and have a government issued or current student photo ID.
+                    Pencils and/or laptops are welcome, but no binders, three-ring notebooks or pens
                     of any kind will be permitted.
                 </p>
 
-                <br/>
+                <br />
 
                 <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
@@ -62,7 +66,7 @@
                                         their students.
                                     </p>
                                 </div>
-                                
+
 
                                 <h3>
                                     Using Sutro's Classroom
@@ -154,7 +158,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                
+
                                 <h3>
                                     Disability Assistance
                                 </h3>
@@ -169,7 +173,7 @@
                                         8:30am to 4:30pm.
                                     </p>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -183,7 +187,7 @@
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body indent-outer">
                                 <div class="indent-inner">
-                                
+
                                     <p style="margin-top: 7px;">
                                         We are changing our circulation policies. Starting January 1, 2017, our
                                         books will not circulate directly to the public. If you wish to borrow a
@@ -247,7 +251,7 @@
                                             </p>
                                         </li>
                                     </ul>
-                                   
+
                                     <p>
                                         Sutro will be going green! Sutro Library will save valuable state and
                                         environmental resources by becoming a paperless library. Anyone wanting

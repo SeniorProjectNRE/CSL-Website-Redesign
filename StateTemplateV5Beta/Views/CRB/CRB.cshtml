@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "CSL - California Research Bureau";
-    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "The California Research Bureau provides timely and confidential policy research to the Legislature, the Governor’s Office and other Constitutional Officers.";
     ViewBag.Keywords = "California, State, Library, Research, Bureau";
     ViewBag.Image = "crb-top.jpg";
@@ -12,10 +12,6 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
 <div id="main-content" class="main-content">
@@ -24,6 +20,8 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/research">Research By CSL</a></li>
                     <li>California Research Bureau</li>
                 </ol>
 
@@ -45,8 +43,8 @@
                             <img class="animate-pulse" src="~/Content/StateTemplate/images/crb/icons/resources.png" alt="reseorces" style="height:65px; width:69px;" /><br />
                             <a class="animate-pulse" href="/services/online-resources">ONLINE RESOURCES</a>
                         </div>
-                        <div class="link-icon"> 
-                            <img class="animate-pulse" src="~/Content/StateTemplate/images/crb/icons/staff.png" alt="staff"  style="height:65px; width:69px;" /><br />
+                        <div class="link-icon">
+                            <img class="animate-pulse" src="~/Content/StateTemplate/images/crb/icons/staff.png" alt="staff" style="height:65px; width:69px;" /><br />
                             <a class="animate-pulse" href="/crb/staff">Staff Directory</a>
                         </div>
                     </div>
@@ -155,7 +153,7 @@
                 </div>
                 <div class="half">
                     <div class="pub">
-                         
+
                         <p class="pdf-title" style="font-size:1.2em; color:#0a5b82;">
                             <span class="ca-gov-icon-pdf biggest"></span>
                             Demographics in the California Legislature: November 2016 Election Update

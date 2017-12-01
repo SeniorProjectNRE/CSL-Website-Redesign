@@ -37,8 +37,7 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
         [Route("apply")]
         public ActionResult Apply()
         {
-            LibrarianModel model = new LibrarianModel();
-            return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
+            return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml");
         }
 
         [HttpPost]

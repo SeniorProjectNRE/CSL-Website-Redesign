@@ -1,9 +1,9 @@
 ﻿
 @{
-    ViewBag.Title = "Art For Legislators from the State Library Collection";
+    ViewBag.Title = "CSL - Art For Legislators from the State Library Collection";
     ViewBag.PageTitle = "Art For Legislators";
-    ViewBag.Author = "Alan Cleetus";
-    ViewBag.Description = "Art for Legislators";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "Art For Legislators from the State Library Collection";
     ViewBag.Keywords = "California State Library, Art, CA, Legislators, State Library";
 }
 
@@ -13,12 +13,10 @@
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
 
-
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
-
     <link rel="stylesheet" href="~/Content/StateTemplate/css/lightbox.css" />
     <script src="~/Content/StateTemplate/js/libs/lightbox.js"></script>
 </head>
+
 <style>
     #fancyBoxImageGallery > a > img {
         padding: 5px;
@@ -30,7 +28,10 @@
         <div class="section">
             <div class="container">
 
-                <ol class="breadcrumb dynamic"></ol>
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li>Art for California Legislators</li>
+                </ol>
 
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
                 <p>

@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "CSL - California Public Library Directory";
     ViewBag.PageTitle = "California Library Directory";
-    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "The California Public Library Directory contains location and service information for public main and branch libraries throughout California, in various formats.";
     ViewBag.Keywords = "Directory";
 }
@@ -11,10 +11,6 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
 <div id="main-content" class="main-content">
@@ -26,26 +22,27 @@
                     <li><a href="/home">Home</a></li>
                     <li><a href="/services">Services</a></li>
                     <li><a href="/services/to-libraries">To Libraries</a></li>
-                    <li>Library Directory</li>
+                    <li>Public Library Directory</li>
                 </ol>
 
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
 
                 <div class="group">
                     <p>
-                        The information in the directories is drawn from annual reports submitted by California's public and county law libraries. 
+                        The information in the directories is drawn from annual reports submitted by California's public and county law libraries.
                         The public library files are updated monthly.
                     </p>
 
                     <p>
-                        (Documents in PDF format can be viewed with the 
+                        (Documents in PDF format can be viewed with the
                         <a href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank">Adobe Acrobat Reader</a>.)
                     </p>
 
                     <div class="half">
                         <ul class="list-overstated">
-                            <li><a href="~/Content/StateTemplate/pdf/services/toLibraries/CaliforniaPublicLibraryDirectory0917.pdf">CA Public Library Directory</a> 
-                                            (PDF 401 KB) - This file contains location and service information for public main and branch libraries in California. Use to locate direct library services. (Updated 09/21/2017)
+                            <li>
+                                <a href="~/Content/StateTemplate/pdf/services/toLibraries/CaliforniaPublicLibraryDirectory0917.pdf">CA Public Library Directory</a>
+                                (PDF 401 KB) - This file contains location and service information for public main and branch libraries in California. Use to locate direct library services. (Updated 09/21/2017)
                             </li>
 
                             <li>
@@ -65,7 +62,7 @@
                             <li>
                                 <a href="~/Content/StateTemplate/otherDocuments/services/toLibraries/LibraryMailList.txt">Library Mail List</a>
                                 (txt 51 KB) – A tab delimited text file of public library administrative headquarters mailing addresses, can be used with word processors as the source of a mail merge for labels and form letters. (Updated 09/21/2017)
-                            </li>                            
+                            </li>
                         </ul>
                     </div>
                 </div>

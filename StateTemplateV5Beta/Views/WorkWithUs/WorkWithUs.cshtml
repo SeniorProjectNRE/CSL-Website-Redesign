@@ -1,10 +1,9 @@
 ﻿@{
     ViewBag.Title = "CSL - Work With Us!";
-    ViewBag.PageTitle = "Working at today's California State Library";
-    ViewBag.Author = "Ryan Salcido";
+    ViewBag.PageTitle = "Work With Us";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "The California State Library seeks diverse and talented people to work in our culturally-rich, and technologically advanced field of librarianship and research. The State Library offers a variety of careers and jobs, ranging from librarians to accounting.  The services our employees provide are truly essential to the people of California. In public service, you will spend every day doing work that is vital to your state and your community.";
     ViewBag.Keywords = "jobs exam bulletin application vacancy working current jobs openings duty statement civil service";
-    ViewBag.Image = "working.png";
 }
 
 <head>
@@ -18,47 +17,264 @@
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
+<style>
+
+    @@media (min-width: 1280px) {
+        #title-page {
+            display: none;
+        }
+        #page-banner {
+            display: block;
+        }
+    }
+
+    @@media (max-width: 767px) {
+        #title-page {
+            display: block;
+        }
+
+        #page-banner {
+            display: none;
+        }
+    }
+
+    .holidays {
+        width: 23%;
+        float: right;
+        margin-top: 30px;
+        text-align: center;
+        border: 1px solid #c7c7c7;
+        padding: 5px 30px
+    }
+
+    .blue-div {
+        background-color: #0a5b82;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+        margin: 0 auto;
+    }
+
+        .blue-div h2 {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 20px 0 0 0;
+            text-align: left;
+        }
+
+    .threecolumns {
+        width: 1246px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .columns {
+        width: 400px;
+        float: left;
+        margin-right: 22px;
+        background-color: #fff;
+    }
+
+        .columns p, .twocolumns p {
+            padding: 0px;
+        }
+
+        .columns img {
+            width: 400px
+        }
+
+    .half h3 {
+        text-align: left;
+        font-size: 1.2em;
+        margin: 0px 0;
+        padding-top: 0;
+    }
+
+    .twocolumns {
+        width: 600px;
+        float: left;
+        margin-right: 22px;
+        background-color: #fff;
+    }
+
+    .wrap {
+        padding: 0 15px;
+    }
+
+    .icon {
+        width: 33px;
+        float: left;
+        padding: 20px 0
+    }
+
+    .more-info {
+        padding-top: 20px
+    }
+
+    .grey-box {
+        width: 100%;
+        background-color: #e1e1e1;
+        height: 55px;
+        text-align: center;
+    }
+
+    .box-with-border {
+        width: 23%;
+        float: right;
+        margin: 30px 60px 0 0;
+        text-align: center;
+        border: 1px solid #c7c7c7;
+        padding: 5px 30px
+    }
+
+    .orange {
+        color: #FDB81E;
+        font-weight: bold
+    }
+
+    .blue {
+        text-align: center;
+        color: #0a5b82;
+        font-weight: bold
+    }
+
+    .expand-div {
+        width: 33%;
+        float: left;
+        padding-right: 20px;
+        margin: 0 auto;
+    }
+
+    .panel-group {
+        margin-bottom: 0
+    }
+
+    .spacer {
+        height: 30px;
+    }
+
+    .list-overstated li, .list-understated li {
+        background: url(/images/crb/year.png) no-repeat 0 0 !important;
+        height: 103px;
+        width: 100%;
+    }
+
+    .panel-default > .panel-heading {
+        background-color: #0a5b82;
+        border: 0;
+    }
+
+    .panel-title > a {
+        color: #fff;
+        font-size: 2.2em;
+    }
+
+    .panel-default .panel-body {
+        background-color: #d8e2eb;
+    }
+
+    .accordion .panel-heading .panel-title a:after, .panel-group .panel-heading .panel-title a:after, .service-tile-content .panel-heading .panel-title a:after {
+        color: #fff;
+        top: 36%;
+    }
+
+    .transp-p {
+        text-align: center;
+        color: #fff;
+        opacity: 0.5;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .card {
+        /*float: left;*/
+        /*margin: 1%;*/
+        background-color: #f5f5f5;
+        min-height: 370px;
+        margin-top: 0;
+        border: 0;
+        text-align: left
+    }
+
+    h4 {
+        color: #066bb2;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .card-block p {
+        color: black;
+        font-weight:normal;
+    }
+</style>
+
 <div id="main-content" class="main-content">
-    <main class="main-primary">
-        <div class="section">
-            <div class="container">
-                <ol class="breadcrumb dynamic"></ol>
-                <h2 class="page-title">@(ViewBag.PageTitle)</h2>
-
-                <img class="insetImage image-responsive animated fadeInRight" src="~/Content/StateTemplate/images/workWithUs/@(ViewBag.Image)" alt="Working" />
-
+    <div class="container">
+        <main class="main-primary">
+            <!-- InstanceBeginEditable name="MainContent" -->
+            <ol class="breadcrumb">
+                <li><a href="/index2_.html">Home</a></li>
+                <li class="active">Work With Us</li>
+            </ol>
+            <h1 id="title-page">@(ViewBag.PageTitle)</h1>
+            <img id="page-banner" src="~/Content/StateTemplate/images/topcoming.jpg" style="width:100%" alt="Work With Us" title="Work With Us" />
+            <div class="half" style="padding:20px 0">
                 <p>
-                    At the California State Library, we seek diverse and talented people to work in our culturally-rich, and technologically advanced field of librarianship and research. 
-                    Our 162-year old institution is still in the business of loaning books, but today's California State Library also embraces the innovative and exciting ways Californians are seeking, and managing, their information.
+                    When you become <a href="http://jobs.ca.gov/GeneralInfo/Glossary#class-E" target="_blank" rel="noopener noreferrer">eligible</a> to work for the state (when you have passed an <a href="http://jobs.ca.gov/" target="_blank" rel="noopener noreferrer">Open Examination</a>), or if you are a former or current state employee, you can apply for a job at the California State Library. The <a href="https://www.jobs.ca.gov/" target="_blank" rel="noopener noreferrer">California Department of Human Resources (CalHR)</a> lists these jobs for us on their website.
                 </p>
-
-                <p style="font-size:28px; padding-top:20px">Our Location</p>
+            </div>
+            <div class="animate-fadeInRight">
+                <div class="holidays">
+                    <a href="https://jobs.ca.gov/CalHRPublic/Search/JobSearchResults.aspx#depid=276" target="_blank" rel="noopener noreferrer">Current Jobs</a>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </main>
+    </div>
+    <div class="blue-div">
+        <div class="container">
+            <div class="group">
+                <div class="third">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/comingsoon.jpg" alt="jobs at CSL">
+                        <div class="card-block">
+                            <h4 class="card-title">JOBS</h4>
+                            <p>Learn about currently scheduled examinations and how to be eligible for a state job. Find and apply for current jobs at the California State Library, as well as access information from the California Department of Human Resources.</p>
+                            <a href="/work-with-us/jobs/" class="btn btn-default">MORE ABOUT JOBS</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/comingsoon.jpg" alt="Intern">
+                        <div class="card-block">
+                            <h4 class="card-title">INTERNSHIPS</h4>
+                            <p>Learn about internship opportunities designed to give undergraduate students meaningful work experience as well as potentially college credit.</p>
+                            <a href="/work-with-us/internships/" class="btn btn-default">MORE ABOUT INTERNSHIPS</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/comingsoon.jpg" alt="Volunteer">
+                        <div class="card-block">
+                            <h4 class="card-title">VOLUNTEER</h4>
+                            <p> Learn about current volunteer opportunities at one of oldest cultural institutions in California.</p>
+                            <a href="/work-with-us/volunteer/" class="btn btn-default">MORE ABOUT VOLUNTEERING</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div style="clear:both"></div>
+            <div class="description" style="color:#fff; text-align:left; min-height:220px; padding:10px">
+                <h2>EEO Disclaimer</h2>
                 <p>
-                    California State Library headquarters are in Sacramento, a booming, affordable, metropolitan California city. From Sacramento you can take a two-hour drive to San Francisco, Lake Tahoe, the Sierra Nevadas, the California coastline, or the Wine Country. 
-                    You can also indulge in some of Sacramento's lifestyle perks - boating, swimming, art, theater, award-winning cuisine, and family-friendly neighborhoods. Regional Transit light rail and bus lines, and restaurants are all within walking distance of our Sacramento offices.
-                </p>
-                <p>
-                    We also have the Sutro Library in western San Francisco, on the north campus of San Francisco State University. The Sutro is located near the Stonestown Shopping Center, and Muni transit lines.
-                    A smaller working environment than our headquarters, the Sutro branch features U.S. local history, Adolph Sutro's notable rare book and manuscript collections, and the finest genealogy collection west of Salt Lake City, Utah.
-                </p>
-
-                <p style="font-size:28px; padding-top:20px">State Employee Benefits</p>
-                <p>
-                    The California State Library is a California state agency which means our employees enjoy the state of California's excellent 
-                    <a href="http://calhr.ca.gov/employees/Pages/main.aspx">employee benefits</a> package in addition to competitive salaries and opportunities for advancement.
-                </p>
-
-                <p style="font-size:28px; padding-top:20px">Getting Started with the State: The Civil Service Process</p>
-                <p>
-                    To join a state agency such as the CSL you must compete for job opportunities by taking an examination. When you pass the exam your name is placed on a list, and then you are eligible to work for the state.
-                </p>
-                <p>
-                    To learn about the state of California's official civil service hiring process from the state of California's official personnel agency directly, please visit the <a href="http://www.calhr.ca.gov/Pages/home.aspx">California Department of Human Resources website</a>.
-                </p>
-                <p>
-                    Please visit <a href="~/work-with-us/jobs">Jobs at the California State Library</a> to connect to current exam opportunities, and job openings at the California State Library.
+                    It is the policy of the State and the California State Library (CSL) to provide equal employment opportunity to all qualified job applicants and employees and have a workforce representative of California's diverse population. All efforts to ensure a representative workforce are made on the basis of an individual's merit, efficiency, ability, and fitness consistent with the State civil service and merit system principles and regulations.
                 </p>
             </div>
         </div>
-    </main>
+    </div>
 </div>

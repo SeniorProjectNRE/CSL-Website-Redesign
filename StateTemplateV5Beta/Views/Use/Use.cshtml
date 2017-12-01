@@ -1,9 +1,9 @@
 ﻿
 @{
-    ViewBag.Title = "California State Library - Use Policy";
+    ViewBag.Title = "CSL - California State Library’s condition of use policy";
     ViewBag.PageTitle = "Use Policy";
-    ViewBag.Author = "Chris Pulido";
-    ViewBag.Description = "View the use policy of information on the California State Library website.";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "The library wants you to know about the collection, use, security, and access to information that may be obtained through use of our website. By visiting this web site, you are accepting the policies and practices described in our condition of use policy.";
     ViewBag.Keywords = "California, state, Library";
 }
 
@@ -12,10 +12,6 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
 <style>
@@ -29,7 +25,6 @@
     .anchor {
         padding-top: 90px;
     }
-
 </style>
 
 
@@ -37,7 +32,10 @@
     <main class="main-primary">
 
         <div class="container">
-            <ol class="breadcrumb dynamic"></ol>
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li>Use Policy</li>
+            </ol>
         </div>
 
         <div class="section">

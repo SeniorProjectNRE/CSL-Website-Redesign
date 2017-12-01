@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewBag.Title = "CSL - Online Collections";
+    ViewBag.PageTitle = "Our Collections";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "The California State Library online collections include catalogs of 3D images, historical photographs and documents, as well as online exhibits of the gold rush and much more.";
+    ViewBag.Keywords = "California, state, Library, collections";
+}
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+</head>
+
+<style>
+    h4 {
+        color: #066bb2;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+</style>
+
+<div id="main-content" class="main-content">
+    <div class="container">
+        <main class="main-primary">
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><a href="/collections/">Our Collections</a></li>
+                <li class="active">Online Collections</li>
+            </ol>
+            <h1 id="title-page">Online Collections</h1>
+            <img id="page-banner" src="~/Content/StateTemplate/images/collections/onlineCollections/top.jpg" style="width:100%;" alt="Seated portrait of two men with arms folded across their chests wearing hats." title="Two miners, between 1850 and 1855" />
+            <p style="padding-top:40px">
+                Our online collections include <a href="/collections/online-exhibits">Exhibits</a> you can visit through this website, and searchable catalogs of historic California art work, prints, documents, and photographs including some in 3D. The public may access any of our online catalogs by vising the <a href="/contact/">public service locations</a> of the State Library, while state government officials and employees with a <a href="/services/apply">State Library Card</a> may access our catalogs remotely.
+            </p>
+            <div class="group">
+                <div class="half">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/onlineCollections/online-exhibits.jpg" alt="Poster advertising the Southern Pacific Streamlined Daylight locomotive no. 4410 and passenger cars passing mission bell tower and palm trees on left; mountains in background." title="Southern Pacific Streamlined Daylight Los Angeles-San Francisco, ca 1936." />
+                        <div class="card-block">
+                            <h4 class="card-title">Online Exhibits</h4>
+                            <!-- TODO: Convert or trash http://www.library.ca.gov/calhist/ca_calls.html (artwork from 1870 to 1940)-->
+                            <p>We have a range of online exhibits, including on <a href="/california-history/cagoldrush">California’s gold rush</a>; <a href="/collections/online-collections/">artwork from 1870 to 1940</a> promoting the Golden State; and interactive galleries of <a href="http://governors.library.ca.gov/">each governor</a> and <a href="http://governors.library.ca.gov/firstladies/" target="_blank" rel="noopener noreferrer">first lady</a> of California.</p>
+                            <a href="/collections/online-collections/" class="btn btn-default">SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/onlineCollections/digital.jpg" alt="">
+                        <div class="card-block">
+                            <h4 class="card-title">Digital Collections</h4>
+                            <p>Search nearly 3,000 historical images, government documents and publications by topic, title, publication date or creator.</p>
+                            <!-- TODO: Find proper link -->
+                            <a href="/collections/online-collections/" class="btn btn-default">SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="half">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/onlineCollections/photo.jpg" alt="">
+                        <div class="card-block">
+                            <h4 class="card-title">Picture Catalog</h4>
+                            <p>Search through the State Library’s rich collection of historical photographs, prints, drawings and even sheet music.</p>
+                            <!-- TODO: Find proper link -->
+                            <a href="/collections/online-collections/" class="btn btn-default">SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half">
+                    <div class="card card-default">
+                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/collections/onlineCollections/3d.jpg" alt="Locomotive with Thomas Kensett lettered on cab at rail yard. Eldora R.R. Iowa">
+                        <div class="card-block">
+                            <h4 class="card-title">3D Images</h4>
+                            <p>View our catalog of 3D images, including photographs of early railroad work in California and trains, and of San Francisco following the 1906 earthquake.</p>
+                            <a href="http://phereo.com/californiastatelibrary" class="btn btn-default">SEE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            <div class="spacer"></div>
+        </main>
+    </div>
+</div>

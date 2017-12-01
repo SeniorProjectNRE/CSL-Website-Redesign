@@ -1,11 +1,76 @@
-﻿
-@{
-    ViewBag.Title = "CALibraryServicesAct";
+﻿@{
+    ViewBag.Title = "CSL - California Library Services Act";
+    ViewBag.PageTitle = "California Library Services Act (CLSA)";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "California public libraries engaged in interlibrary cooperation are supported through a program under the California Library Services Act (CLSA). The program is administered by the 13-member California Library Services Board. Funding is allocated to California's 9 cooperative library systems.";
+    ViewBag.Keywords = "Services, act, CLSA";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>CALibraryServicesAct</h2>
+        <div class="section">
+            <div class="container">
+
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/to-libraries">To Libraries</a></li>
+                    <li class="active">Library Services Act</li>
+                </ol>
+
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+
+                <div class="group">
+                    <div class="two-thirds">
+                        <ul class="list-overstated">
+                            <li><a href="/services/to-libraries/ca-library-services-act/about" target="_blank">About the California Library Services Act</a></li>
+                            <li><a href="/services/to-libraries/ca-library-services-act/systems/" target="_blank">California Library Services Act (CLSA) Systems</a></li>
+                            <li><a href="/services/to-libraries/ca-library-services-act/board/" target="_blank">California Library Services Board</a></li>
+                            <li><a href="/services/to-libraries/ca-library-services-act/board/meetings/" target="_blank">Master Calendar</a></li>
+                            <li><a href="~/Content/StateTemplate/pdf/services/toLibraries/CLSA_Grants_Report_Legislature_September_2017.pdf" target="_blank">California Library Services Act Funds: Allocation of One-time funding </a>– Report to the Legislature</li>
+                        </ul>
+                    </div>
+
+                    <div class="third">
+
+                        <h3>Contact Us</h3>
+                        <div class="panel panel-understated">
+                            <div class="panel-heading">
+                                <h4>California Library Services Act </h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    <span class="ca-gov-icon-email"></span><strong>   By Email:</strong> <a href="mailto:monica.rivas@library.ca.gov"> monica.rivas@library.ca.gov </a><br><br>
+                                    <span class="ca-gov-icon-mail"></span><strong>By mail:</strong><br>
+                                </p>
+
+                                <p class="list-unstyled m-l-md">
+                                        P.O. Box 942837<br>
+                                        Sacramento, CA 94237-0001<br>
+                                        Phone:<a href="tel:+19166537532">(916) 653-7532</a><br>
+                                        Fax: (916) 653-8443
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        (Documents in PDF format can be viewed with the <a href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank" rel="noopener noreferrer">Adobe Acrobat Reader</a>.)
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 

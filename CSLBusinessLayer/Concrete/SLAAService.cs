@@ -14,7 +14,6 @@ namespace CSLBusinessLayer.Concrete
     {
         private IDataAccess _dataAccess;
 
-
         public SLAAService(IDataAccess DataAccess)
         {
             _dataAccess = DataAccess;

@@ -1,11 +1,145 @@
 ﻿
 @{
-    ViewBag.Title = "Grants";
+    ViewBag.Title = "CSL - Grants";
+    ViewBag.PageTitle = "Grants";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "Find information about the State Library's grant programs and current funding opportunities.";
+    ViewBag.Keywords = "California, state, Library, grants";
 }
 
-<div id="main-content" class="main-content">
-    <main class="main-primary">
-        <h2>Grants</h2>
-    </main>
-</div>
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
 
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+
+<div id="main-content" class="main-content">
+
+    <div class="container">
+        <main class="main-primary">
+            <ol class="breadcrumb">
+                <li><a href="/index.html">Home</a></li>
+                <li class="active">Grants</li>
+            </ol>
+            <h1 id="title-page">Grant and Aid Programs</h1>
+            <img id="page-banner" src="~/Content/StateTemplate/images/grants/top.jpg" style="width:100%" alt="" />
+            <!--<div class="columns">
+                <p>The California State Library staff is available to help you via telephone, mail, and email.</p>
+            </div>
+            <div class="animate-fadeInRight">
+                <div class="holidays">
+                    <a href="">2017 state holidays</a>
+                </div>
+            </div>
+            <div style="clear: both;"></div>  -->
+            <!--<p>To provide state template v5 Beta feedback use GitHub otherwise feel free to contact us by visiting <a href="http://webtools.ca.gov/about-web-tools/contact-us/">this page</a>.</p>
+            <p>Feel free to <a href="http://Info.Eservices@state.ca.gov/">Subscribe</a> to the Webmaster User Group for state template updates, group announcements and events. You can also visit the <a href="http://webtools.ca.gov/">Webtools</a> website for more information. To contact us about the state template please visit <a href="http://webtools.ca.gov/about-web-tools/contact-us/">this page</a>.<br>
+            </p>
+            <p>This website is managed by the California Department of Technology.</p>
+            <article><p>&nbsp;</p>
+                </article>
+            <!-- InstanceEndEditable -->
+        </main>
+    </div>
+    <div class="threecolumns">
+        <!--<h2 class="orange">LIBRARY UNITS</h2>-->
+        <!--<h4 style="text-align:center; color:#0a5b82; font-weight:bold; text-transform: uppercase">Title</h4>-->
+        <div class="spacer"></div>
+        <p>
+            The California State Library administers federal and state funding programs related to library development and cooperation, and civil liberties public education.
+        </p>
+        <!-- Note: To have multiple open panels, just give the panel-group's id a different name than what the children's data-parent attributes refer to -->
+        <div class="panel-group" id="example-accordion1" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Current funding opportunities</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <!-- TODO: This link could change to /services/to-libraries/innovation-station/ -->
+                            <a href="/grants/innovation-station">Innovation Station</a>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="orange">Grant programs</h2>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Library Services and Technology Act (LSTA)</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            The federal Institute of Museum and Library Services (IMLS),through its Grants to States Program, provides funding for California’s libraries from the federal <a href="/grants/library-services-technology-act">Library Services and Technology Act (LSTA)</a>, administered in California by the State Librarian. The funds are used to provide financial support for service improvements; to facilitate access to, and sharing of, resources and services between libraries and between libraries and partner institutions; and to achieve economical and effective delivery of services for the purpose of cultivating an educated and informed citizenry.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">California Civil Liberties Public Education Program (CCLPEP)</a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            The purpose of the <a href="/grants/civil-liberties/">California Civil Liberties Public Education program</a> is to sponsor public educational activities and development of educational materials to ensure that the events surrounding the exclusion, forced removal, and internment of civilians and permanent resident aliens of Japanese ancestry will be remembered so that the causes and circumstance of this and similar events may be illuminated and understood. This program is administered by the California State Library.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">California Library Services Act (CLSA)</a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            California public libraries engaged in cooperative efforts with neighboring libraries are supported through state funding provided through the <a href="/services/to-libraries/ca-library-services-act/about/">California Library Services Act (CLSA)</a>, specifically designed to assist and encourage such interlibrary cooperation. The program is administered by the 13-member California Library Services Board. Funding is allocated to California Cooperative Library Systems.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFiver">California Library Literacy Services &  Other State Funded Programs and Projects for Public Libraries</a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                            <p>
+                                The State of California has funded the <a href="http://libraryliteracy.org/index.html">California Library Literacy Services Program</a> since the 1980s. This program enables over 20,000 adults learn to read and write through their local public libraries every year.
+                            </p>
+                            <p>
+                                Other current state funded grants and projects for public libraries include:
+                            </p>
+                            <ul>
+                                <!-- TODO: Link might change to /services/to-libraries/career-online-high-school/ -->
+                                <li><a href="/grants/career-online-high-school/">Career Online High School</a></li>
+
+                                <li><a href="/services/to-libraries/broadband/">High Speed Broadband in California’s Libraries</a></li>
+
+                                <!-- TODO: Link might change to /services/to-libraries/libraries-illuminated/-->
+                                <li><a href="/grants/libraries-illuminated/">Libraries Illuminated</a></li>
+
+                                <li><a href="/services/to-libraries/development-programs-projects/value-libraries/">The Value of California’s Public Libraries</a></li>
+
+                                <li><a href="/services/to-libraries/zip-books/">Zip Books for Rural Libraries</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="orange">Funding calendar</h2>
+                <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=cslitbwebmaster%40gmail.com&amp;color=%74849d&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="spacer"></div>
+</div>
+</div>

@@ -1373,19 +1373,18 @@ namespace CSLBusinessLayer.Concrete
 
                             pdfFormFields.SetField("Q6Description", model.Q6);
 
-                            if (model.Q7None == true)
+                            if (model.Q7Average == true)
                             {
                                 pdfFormFields.SetField("Q7None", "On");
                             }
-                            if (model.Q7Limited == true)
+                            if (model.Q7AboveAverage == true)
                             {
                                 pdfFormFields.SetField("Q7Limited", "On");
                             }
-                            if (model.Q7Considerable == true)
+                            if (model.Q7Outstanding == true)
                             {
                                 pdfFormFields.SetField("Q7Considerable", "On");
                             }
-                            pdfFormFields.SetField("Q7Description", model.Q7);
                             pdfFormFields.SetField("Q7Contact", model.NameQ7);
                             pdfFormFields.SetField("Q7Email", model.EmailQ7);
                             pdfFormFields.SetField("Q7Phone", model.PhoneNumQ7);

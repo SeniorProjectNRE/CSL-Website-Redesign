@@ -1,8 +1,8 @@
 ﻿
 @{
-    ViewBag.Title = " Geneaological Search Tips";
-    ViewBag.Author = "Alan Cleetus";
-    ViewBag.Description = "Search tips for exploring our family and local history resources ";
+    ViewBag.Title = "CSL - Genealogical Search Tips";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "California State Library Replace with: Search tips for exploring our family and local history resources ";
     ViewBag.Keywords = "California, State, Library, Search";
 }
 
@@ -11,10 +11,6 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
 
@@ -24,7 +20,12 @@
         <div class="section">
             <div class="container">
 
-                <ol class="breadcrumb dynamic"></ol>
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/sutro">Sutro</a></li>
+                    <li>Catalog Search Tips</li>
+                </ol>
 
                 <p>On this page you will find a number of ways to search our catalog. You can search by:</p>
 

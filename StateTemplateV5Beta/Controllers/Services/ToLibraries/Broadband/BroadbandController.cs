@@ -28,7 +28,7 @@ namespace StateTemplateV5Beta.Controllers.Grants.LSTA
 
         // GET: libraries
         [HttpGet]
-        [Route("libraries")]
+        [Route("database")]
         public ActionResult Libraries()
         {
             string library = null, jurisdiction = null, csla = null, city = null, county = null, status = null, code = null;
@@ -39,7 +39,7 @@ namespace StateTemplateV5Beta.Controllers.Grants.LSTA
 
         // POST: libraries
         [HttpPost]
-        [Route("libraries")]
+        [Route("database")]
         public ActionResult Libraries(LibraryViewModel model)
         {
             string selectedLibrary, selectedJurisdiction, selectedCsla, selectedCity, selectedCounty, selectedStatus, selectedCode;

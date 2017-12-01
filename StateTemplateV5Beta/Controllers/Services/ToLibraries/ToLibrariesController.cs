@@ -38,7 +38,7 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
         }
 
         // GET: development-programs-projects/value-libraries
-        [Route("development-programs-projects/value-libraries")]
+        [Route("value-of-libraries")]
         public ActionResult ValueLibraries()
         {
             return View("~/Views/Services/ToLibraries/DevelopmentProgramsProjects/ValueLibraries.cshtml");
@@ -56,6 +56,27 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
         public ActionResult ImmigrantAlliance()
         {
             return View("~/Views/Services/ToLibraries/ImmigrantAlliance.cshtml");
+        }
+
+        // GET: harwood
+        [Route("harwood")]
+        public ActionResult Harwood()
+        {
+            return View("~/Views/Services/ToLibraries/Harwood.cshtml");
+        }
+
+        // GET: innovation-station
+        [Route("innovation-station")]
+        public ActionResult InnovationStation()
+        {
+            return View("~/Views/Services/ToLibraries/InnovationStation.cshtml");
+        }
+
+        // GET: libraries-illuminated
+        [Route("libraries-illuminated")]
+        public ActionResult LibrariesIlluminated()
+        {
+            return View("~/Views/Services/ToLibraries/LibrariesIlluminated.cshtml");
         }
 
         // GET: LibraryDirectory
@@ -85,5 +106,34 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
         {
             return View("~/Views/Services/ToLibraries/LibraryStaffEducationPogram.cshtml");
         }
+
+        // GET: statistics-directories
+        [Route("statistics-directories")]
+        public ActionResult StatisticsDirectories()
+        {
+            return View("~/Views/Services/ToLibraries/StatisticsDirectories.cshtml");
+        }
+
+        // GET: laws-public-library-organization
+        [Route("laws-public-library-organization")]
+        public ActionResult LawsPublicLibraryOrganization()
+        {
+            return View("~/Views/Services/ToLibraries/LawsPublicLibraryOrganization.cshtml");
+        }
+
+        // GET: cooperative-systems-clsa
+        [Route("cooperative-systems-clsa")]
+        public ActionResult CooperativeSystemsClsa()
+        {
+            return View("~/Views/Services/ToLibraries/CooperativeSystemsClsa.cshtml");
+        }
+
+        // GET: career-online-high-school
+        [Route("career-online-high-school")]
+        public ActionResult CareerOnlineHighSchool()
+        {
+            return View("~/Views/Services/ToLibraries/CareerOnlineHighSchool.cshtml");
+        }
+
     }
 }

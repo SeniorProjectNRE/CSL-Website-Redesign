@@ -2,13 +2,15 @@
 @{
     ViewBag.Title = "CSL - Sections of the California State Library";
     ViewBag.PageTitle = "Sections of the California State Library";
-    ViewBag.Author = "Alan Cleetus";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "Sections of the California State Library";
 }
 
 <head>
     <title>@(ViewBag.Title)</title>
-
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
 </head>
 
 <div id="main-content" class="main-content">
@@ -19,11 +21,10 @@
                 <ol class="breadcrumb">
                     <li><a href="/home">Home</a></li>
                     <li><a href="/about">About Library</a></li>
-
-                    <li class="active">Library Section</li>
+                    <li class="active">Library Sections</li>
                 </ol>
 
-                <h2 class="page-title" >@ViewBag.Title</h2>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
 
 
                 <div class='panel-group' role='tablist' aria-multiselectable='true'>
@@ -203,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                     
+
                     <div class='panel panel-default'>
                         <div class='panel-heading' role='tab' id='heading14'>
                             <h3 class='panel-title'>
@@ -238,7 +239,7 @@
 
                 </div>
 
-                <p  >
+                <p>
                     For more information, please see our <a href="/crb/staff/">Staff Contacts list</a>.
                 </p>
 

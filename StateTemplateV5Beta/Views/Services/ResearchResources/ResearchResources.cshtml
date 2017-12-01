@@ -2,9 +2,9 @@
 @{
     ViewBag.PageTitle = "Research Resources";
     ViewBag.Title = "CSL - Research How-To";
-    ViewBag.Author = "Dmitriy Rusetskiy";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "California History Research, Federal and State Government, State Employment, Genealogy";
-    ViewBag.Keywords = "California, state, Library, research, resources, research resources";
+
 }
 
 <head>
@@ -25,58 +25,47 @@
                 <ol class="breadcrumb">
                     <li><a href="/home">Home</a></li>
                     <li><a href="/services">Services</a></li>
-                    <li>Research Resources</li>
+                    <li><a href="/services/research">Research</a></li>
+                    <li style="text-transform:none;">Resources</li>
                 </ol>
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
-            </div>
-        </div>
-        <div class="section">
-            <div class="container">
-                <p>Placeholder for ask a librarian</p>
-            </div>
-        </div>
-        <div class="section">
-            <div class="container">
-                <div class="group">
-                    <h3>California History</h3>
-                    <ul>
-                        <li><a href="/calhist/pdf/collectionGuide.pdf" target="_blank">Guide to the collection</a></li>
-                        <li><a href="/calhist/pdf/1906EarthquakeResearch.pdf" target="_blank">Resources for researching the 1906 San Francisco earthquake and fire</a></li>
-                        <li><a href="/calhist/pdf/California_land_grants_research_guide.pdf" target="_blank">Resources for researching California land grants</a></li>
-                        <li><a href="/calhist/pdf/NativeAmericanResearch.pdf" target="_blank">Resources for researching California Native Americans</a></li>
-                        <li><a href="/calhist/pdf/SacHousesResearch.pdf" target="_blank">Resources for researching Sacramento buildings</a></li>
-                        <li><a href="/calhist/pdf/SutterFortCharacterGuide.pdf" target="_blank">Sutter's Fort Character Guide</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="container">
+
+
+                <h3>
+                    <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref"><span class="ca-gov-icon-question-fill"></span> Ask a Librarian</a>
+                </h3>
+                <h3>California History</h3>
+                <ul>
+                    <li><a href="~/Content/StateTemplate/pdf/services/researchResources/collectionGuide.pdf" target="_blank">Guide to the collection</a></li>
+                    <li><a href="/Content/StateTemplate/pdf/services/researchResources/1906EarthquakeResearch.pdf" target="_blank">Resources for researching the 1906 San Francisco earthquake and fire</a></li>
+                    <li><a href="/Content/StateTemplate/pdf/services/researchResources/California_land_grants_research_guide.pdf" target="_blank">Resources for researching California land grants</a></li>
+                    <li><a href="/Content/StateTemplate/pdf/services/researchResources/NativeAmericanResearch.pdf" target="_blank">Resources for researching California Native Americans</a></li>
+                    <li><a href="/Content/StateTemplate/pdf/services/researchResources/SacHousesResearch.pdf" target="_blank">Resources for researching Sacramento buildings</a></li>
+                    <li><a href="/Content/StateTemplate/pdf/services/researchResources/SutterFortCharacterGuide.pdf" target="_blank">Sutter's Fort Character Guide</a></li>
+                </ul>
+
+
+
                 <h3>Federal and State Government</h3>
                 <ul>
                     <li><a href="http://www.gpo.gov/fdsys/" target="_blank">Free online access to official publications</a></li>
-                    <li><a href="/gps/pat.html">Patent and Trademarks</a></li>
+                    <li><a href="~/services/research-resources/patents">Patent and Trademarks</a></li>
                 </ul>
-            </div>
-        </div>
-        <div class="section">
-            <div class="container">
+
+
                 <h3>For State Employees</h3>
                 <ul>
-                    <li><a href="/services/online-resources.html">Online Resources</a></li>
+                    <li><a href="/services/online-resources">Online Resources</a></li>
                 </ul>
-            </div>
-        </div>
-        <div class="section">
-            <div class="container">
+
                 <h3>Genealogy</h3>
                 <ul>
-                    <li><a href="/calhist/pdf/genealogyguide.pdf" target="_blank">Guide to sources for genealogy</a></li>
-                    <li><a href="/calhist/pdf/genealogyByDate.pdf" target="_blank">Genealogy resources by date</a></li>
-                    <li><a href="/calhist/pdf/FederalCensusResearch.pdf" target="_blank">Using federal census resources in the California History Room</a></li>
-                    <li><a href="/calhist/pdf/1930CensusTips.pdf" target="_blank">How to use the 1930 federal census in the California History Room</a></li>
-                    <li><a href="/calhist/pdf/StateCensusResearch.pdf" target="_blank">Using the 1852 California state census in the California History Room</a></li>
-                    <li><a href="/calhist/pdf/ImmigrationAndNaturalization.pdf" target="_blank">Immigration and naturalization resources in the California History Room</a></li>
+                    <li><a href="/Content/StateTemplate/pdf/services/researchResources/genealogyguide.pdf" target="_blank">Guide to sources for genealogy</a></li>
+                    <li><a href="/Content/StateTemplate/pdf/services/researchResources/genealogyByDate.pdf" target="_blank">Genealogy resources by date</a></li>
+                    <li><a href="/Content/StateTemplate/pdf/services/researchResources/FederalCensusResearch.pdf" target="_blank">Using federal census resources in the California History Room</a></li>
+                    <li><a href="/Content/StateTemplate/pdf/services/researchResources/1930CensusTips.pdf" target="_blank">How to use the 1930 federal census in the California History Room</a></li>
+                    <li><a href="/Content/StateTemplate/pdf/services/researchResources/StateCensusResearch.pdf" target="_blank">Using the 1852 California state census in the California History Room</a></li>
+                    <li><a href="/Content/StateTemplate/pdf/services/researchResources/ImmigrationAndNaturalization.pdf" target="_blank">Immigration and naturalization resources in the California History Room</a></li>
                 </ul>
             </div>
         </div>

@@ -1,11 +1,86 @@
 ﻿
 @{
-    ViewBag.Title = "VisitUs";
+    ViewBag.Title = "CSL - Visit the California State Library";
+    ViewBag.PageTitle = "Visit Us";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "California State Library";
+    ViewBag.Keywords = "California, state, Library";
 }
 
-<div id="main-content" class="main-content">
-    <main class="main-primary">
-        <h2>VisitUs</h2>
-    </main>
-</div>
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
 
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<div id="main-content" class="main-content">
+    <div class="container">
+        <main class="main-primary">
+            <!-- InstanceBeginEditable name="MainContent" -->
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">Visit Us</li>
+            </ol>
+            <h1 id="title-page">Visit Us</h1>
+            <img id="page-banner" src="~/Content/StateTemplate/images/visitUs/top.jpg" style="width:100%" alt="Visit Library" title="Visit Library" />
+        </main>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="threecolumns">
+        <div class="wrap">
+            <p>
+                Udis deniet occatium quae aut re, nes aut am ilitia dolente moditatiusa consecus quam excepel ibeatistrum iumqui doloribus. Unt doluptiorro excererem ipiendaecus aut volecum harum rationse pra volecea rchicat quaestiur? Accuptatur sedit in cusdam, arum hilliquam veris solenimod elignim sape non nat.
+            </p>
+        </div>
+        <div class="spacer"></div>
+        <div class="half">
+            <div class="card card-default">
+                <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/visitUs/hours.jpg" alt="Locations" />
+                <div class="card-block">
+                    <h4 class="card-title">LOCATIONS AND HOURS</h4>
+                    <p>Location and hours for public service desks, reading rooms, and other State Library services.</p>
+                    <a href="/contact/" class="btn btn-default">READ MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="half">
+            <div class="card card-default">
+                <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/visitUs/events.jpg" alt="Events" />
+                <div class="card-block">
+                    <h4 class="card-title">EVENTS</h4>
+                    <p>Learn what's happening today at the State Library.</p>
+                    <a href="/visit-us/events/" class="btn btn-default">MORE ABOUT EVENTS</a>
+                </div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+        <div class="half">
+            <div class="card card-default">
+                <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/visitUs/exhibits.jpg" alt="Exhibits" />
+                <div class="card-block">
+                    <h4 class="card-title">EXHIBITS</h4>
+                    <p>Our exhibits feature historic and contemporary works from our vast collections.</p>
+                    <a href="/visit-us/exhibits/" class="btn btn-default">MORE ABOUT EXHIBITS</a>
+                </div>
+            </div>
+        </div>
+        <div class="half">
+            <div class="card card-default">
+                <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/visitUs/tours1.jpg" alt="Tours" />
+                <div class="card-block">
+                    <h4 class="card-title">TOURS</h4>
+                    <p>The State Library conducts docent-led tours. You can also go on a self-guided or virtual tour.</p>
+                    <a href="/visit-us/tours/" class="btn btn-default">MORE ABOUT TOURS</a>
+                </div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <div class="spacer"></div>
+</div>

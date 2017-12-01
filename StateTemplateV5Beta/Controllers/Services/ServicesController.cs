@@ -23,13 +23,6 @@ namespace StateTemplateV5Beta.Controllers.Services
             return View();
         }
 
-        // GET: Apply
-        [Route("Apply")]
-        public ActionResult Apply()
-        {
-            return View();
-        }
-
         // GET: Borrowing
         [Route("Borrowing")]
         public ActionResult Borrowing()
@@ -62,7 +55,7 @@ namespace StateTemplateV5Beta.Controllers.Services
         [Route("To-Public")]
         public ActionResult ToPublic()
         {
-            return View();
+            return View("~/Views/Services/ToPublic/ToPublic.cshtml");
         }
 
 

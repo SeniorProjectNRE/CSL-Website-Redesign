@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "CSL - Research Guides - CA History Room";
     ViewBag.PageTitle = "California History and Research Guides";
-    ViewBag.Author = "Chris Pulido";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "Have a research project but don't know where to start? Check the California History Room’s research guides and pathfinders! We cover counties, genealogy and more!";
     ViewBag.Keywords = "California State Library, california history, research, guide";
 }
@@ -12,19 +12,20 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
         <div class="container">
-            <ol class="breadcrumb">
-                <li><a href="/home">Home</a></li>
-                <li><a href="/collections">Our Collections</a></li>
-                <li><a href="/california-history">California History</a></li>
-                <li style="text-transform:none;">Research Guides</li>
-            </ol>
-            <h2 class="page-title">@ViewBag.Pagetitle</h2>
+            <div class="section">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/california-history">California History</a></li>
+                    <li style="text-transform:none;">Research Guides</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.Pagetitle</h2>
+            </div>
         </div>
         <div class="section">
             <div class="container">

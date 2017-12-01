@@ -1,11 +1,10 @@
 ﻿
 @{
-    ViewBag.Title = "CSL - California As We Saw It: Exploring The California Gold Rush";
-    ViewBag.PageTitle = "California Gold Rush";
-    ViewBag.Banner = "CSLBuilding.jpg";
-    ViewBag.Author = "Matthew Loller";
-    ViewBag.Description = "California State Library About page.  Find general information about the state library here.";
-    ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library";
+    ViewBag.Title = "CSL - California Gold Rush - Seekers, Scoundrels, Loss and Luck";
+    ViewBag.PageTitle = "California Gold Rush – Seekers, Scoundrels, Loss and Luck";
+    ViewBag.Author = "Chris Pulido";
+    ViewBag.Description = "These images from the State Library's collection are included in the book \"Gold Rush Stories: 49 Tales of Seekers, Scoundrels, Luck and Loss\" by Gary Noy. The book presents little-known tales of the 1849 Gold Rush and features stories of searchers and scoundrels, struggle and serendipity.";
+    ViewBag.Keywords = "California, state, Library, gold, rush, image, gallery";
 }
 
 <head>
@@ -14,239 +13,207 @@
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
 
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/lightbox.css" />
+    <script src="~/Content/StateTemplate/js/libs/lightbox.js"></script>
+
 </head>
+
+<style>
+    #fancyBoxImageGallery > a > img {
+        padding: 5px;
+    }
+</style>
 
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-
-
-
-        <div class="container section">
-            <ol class="breadcrumb">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/california-history/">California History</a>
-                </li>
-                <li class="active">California Gold Rush</li>
-            </ol>
-            <h2 class="page-title">@ViewBag.PageTitle</h2>
-        </div>
-
-        <div id="top"></div>
-        
-        
-
-
-        <div id="scrollIntro"></div>
-        @Html.Partial("~/Views/shared/CAGoldRush/_Intro.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section1.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section2.cshtml")
         <div class="section">
             <div class="container">
-                <div class="third" name="intro">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section1.jpg" alt="section 1 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Introduction</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scrollIntro').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#intro" aria-expanded="false" aria-controls="intro" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="third" name="section1">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section1.jpg" alt="section 1 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section I. The Great Discovery</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scrollIntro').offset().top -150}, 600);"  class="btn btn-default" data-toggle="collapse" href="#section1" aria-expanded="false" aria-controls="section1" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="third" name="section2">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section2.jpg" alt="section 2 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section II. By Sea to the Golden Land</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scrollIntro').offset().top -150}, 600);"  class="btn btn-default" data-toggle="collapse" href="#section2" aria-expanded="false" aria-controls="section2" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/california-history">California History</a></li>
+                    <li>California Gold Rush</li>
+                </ol>
+                <h2 class="page-title">@(ViewBag.PageTitle)</h2>
+                <p>These images from the State Library's collection are included in the book "Gold Rush Stories: 49 Tales of Seekers, Scoundrels, Luck and Loss" by Gary Noy. The book presents little-known tales of the 1849 Gold Rush and features stories of searchers and scoundrels, struggle and serendipity.</p>
             </div>
         </div>
-
-        <div id="scroll3"></div>
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section3.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section4.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section5.cshtml")
         <div class="section">
-            <div class="container">
-                <div class="third" name="section3">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section3.jpg" alt="section 3 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section III. Ho for California! The Overland Trek</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scroll3').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section3" aria-expanded="false" aria-controls="section3" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="third" name="section4">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section4.jpg" alt="section 4 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section IV. Via the Isthmus</h4>
-                            <p></p>
-                            <a role="tab"  onclick="$('html, body').animate({scrollTop: $('#scroll3').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section4" aria-expanded="false" aria-controls="section4" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="third" name="section5">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section5.jpg" alt="section 5 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section V. Gold Mania Satirized</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scroll3').offset().top -150}, 650);" class="btn btn-default" data-toggle="collapse" href="#section5" aria-expanded="false" aria-controls="section5" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="container" id="fancyBoxImageGallery">
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/1.jpg" title="Colonel Richard Barnes Mason: California's military governor when the Gold Rush began. Source: California State Library, William Heath Davis Collection, Portrait by Bradley and Rulofson, c. 1850.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_1.jpg" alt="Colonel Richard Barnes Mason: California's military governor when the Gold Rush began. Source: California State Library, William Heath Davis Collection, Portrait by Bradley and Rulofson, c. 1850.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/2.jpg" title="Seized by gold fever, forty-niners headed west carrying their gear and their dreams, as illustrated in this whimsical 1850 lithograph, 'The Independent Gold-Hunter on His Way to California.' Kelloggs & Comstock, English & Thayer, 1850. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_2.jpg" alt="Seized by gold fever, forty-niners headed west carrying their gear and their dreams, as illustrated in this whimsical 1850 lithograph, 'The Independent Gold-Hunter on His Way to California.' Kelloggs & Comstock, English & Thayer, 1850. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/3.jpg" title="Portrait of Mariano Vallejo. Prior to the Gold Rush, California was dominated by the Californios - residents born in California to Spanish-speaking parents during the era of Mexican control. Mariano Guadalupe Vallejo was among the most prominent and powerful of the Californios. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_3.jpg" alt="Prior to the Gold Rush, California was dominated by the Californios - residents born in California to Spanish-speaking parents during the era of Mexican control. Mariano Guadalupe Vallejo was among the most prominent and powerful of the Californios. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/4.jpg" title="James W. Marshall, whose discovery of gold in 1848 triggered the Gold Rush, died penniless after years of bad luck and even worse decisions. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_4.jpg" alt="James Marshall, whose discovery of gold in 1848 triggered the Gold Rush, died penniless after years of bad luck and even worse decisions. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/5.jpg" title="'View of an Indian Rancheria, Yuba City, California.' Native Californians were immediately and severely impacted by the Gold Rush. Their lives would never be the same. Gleason's Pictorial, March 27, 1852, p. 196. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_5.jpg" alt="Native Californians were immediately and severely impacted by the Gold Rush. Their lives would never be the same. Gleason's Pictorial, March 27, 1852, p. 196. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/6.jpg" title="Cover of <em>Wonderful Facts from the Gold Regions</em> by Daniel Walton.' Despite his book's optimistic title, Daniel Walton offered warnings instead of unrealistic promises for the gold seekers. Wonderful Facts from the Gold Regions (Boston: Stacy, Richardson and Co., 1849), by Daniel Walton. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_6.jpg" alt="Despite his book's optimistic title, Daniel Walton offered warnings instead of unrealistic promises for the gold seekers. Wonderful Facts from the Gold Regions (Boston: Stacy, Richardson and Co., 1849), by Daniel Walton. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/7.jpg" title="<em>Journal of The Hartford Union Mining and Trading Company</em>. Many personal journals were written during the Gold Rush, but many believe the first one was by J. Linville Hall. Title page of Journal of the Hartford Union Mining and Trading Company (1849), by J. Linville Hall. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_7.jpg" alt="Many personal journals were written during the Gold Rush, but many believe the first one was by J. Linville Hall. Title page of Journal of the Hartford Union Mining and Trading Company (1849), by J. Linville Hall. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/8.jpg" title="Despite coming from many different cultures and backgrounds, Gold Rush miners shared many similar experiences in the diggings. 'Portrait of 23 Miners at Sluice,' daguerreotype by William Chapman, c. 1852. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_8.jpg" alt="Despite coming from many different cultures and backgrounds, Gold Rush miners shared many similar experiences in the diggings. 'Portrait of 23 Miners at Sluice,' daguerreotype by William Chapman, c. 1852. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/9.jpg" title="Claim. Possession of a claim was a primary goal for miners, but it could often lead to unscrupulous behavior. Image 1 from The Miners' Pioneer Ten Commandments of 1849. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_9.jpg" alt="Possession of a claim was a primary goal for miners, but it could often lead to unscrupulous behavior. Image 1 from The Miners' Pioneer Ten Commandments of 1849. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/10.jpg" title="Miners Progress - Pile. Striking it rich was always a reason to celebrate, but the trail to instant wealth could be strewn with uncertainty, and occasionally deception. 'The Pilgrim Rejoiceth over his 'Pile,'' illustration by Charles Christian Nahl, from The Miner's Progress; or, Scenes in the Life of a California Miner (1853), by Alonzo Delano and Charles Christian Nahl. Source: California State Library">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_10.jpg" alt="Striking it rich was always a reason to celebrate, but the trail to instant wealth could be strewn with uncertainty, and occasionally deception. 'The Pilgrim Rejoiceth over his 'Pile,'' illustration by Charles Christian Nahl, from The Miner's Progress; or, Scenes in the Life of a California Miner (1853), by Alonzo Delano and Charles Christian Nahl. Source: California State Library">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/11.jpg" title="Two Miners. Most who came to the California goldfields were young, male, unattached and seeking riches and adventure. Most failed in the pursuit, but they fondly remembered the experience the rest of their lives.'Two Miners,' daguerreotype, c. 1850. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_11.jpg" alt="Most who came to the California goldfields were young, male, unattached and seeking riches and adventure. Most failed in the pursuit, but they fondly remembered the experience the rest of their lives.'Two Miners,' daguerreotype, c. 1850. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/12.jpg" title="Ferran - Comfort. The idle behavior of the forty-niners provided a rich lode of material for observers, including Mallorcan artist Augusto Ferran.'Posiciones Comodas' ('Comfort'), illustration by Augusto Ferran, from Album Californiano (Havana: 1849-50). Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_12.jpg" alt="The idle behavior of the forty-niners provided a rich lode of material for observers, including Mallorcan artist Augusto Ferran.'Posiciones Comodas' ('Comfort'), illustration by Augusto Ferran, from Album Californiano (Havana: 1849-50). Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/13.jpg" title="El Dorado Saloon. Gold Rush gambling establishments could range from crude to extravagant. Among the most ornate was the El Dorado in Sacramento.'The El Dorado Gambling Saloon, 1852,' Illustrated London News, June 5, 1852. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_13.jpg" alt="Gold Rush gambling establishments could range from crude to extravagant. Among the most ornate was the El Dorado in Sacramento.'The El Dorado Gambling Saloon, 1852,' Illustrated London News, June 5, 1852. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/14.jpg" title="Sacramento Flood, 1850. Flooding was common during the Gold Rush, and in 1850, Sacramento suffered a flood so massive it made the history books. 'View of Sacramento City as It Appeared during the Great Inundation of January 1850,' lithograph by Sarony, c. 1850. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_14.jpg" alt="Flooding was common during the Gold Rush, and in 1850, Sacramento suffered a flood so massive it made the history books. 'View of Sacramento City as It Appeared during the Great Inundation of January 1850,' lithograph by Sarony, c. 1850. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/15.jpg" title="Sacramento Fire, 1852. Fire was a frequent scourge during the Gold Rush. Many cities and gold camps were razed, some more than once.'The Great Conflagration at Sacramento, California, 1852.' Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_15.jpg" alt="Fire was a frequent scourge during the Gold Rush. Many cities and gold camps were razed, some more than once.'The Great Conflagration at Sacramento, California, 1852.' Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/16.jpg" title="Grass Valley. When mining camps were first settled in the early 1850s, they were bucolic but growing rapidly. An example was Grass Valley in Nevada County, shown here c. 1852, lithograph by R. E. Ogilby. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_16.jpg" alt="When mining camps were first settled in the early 1850s, they were bucolic but growing rapidly. An example was Grass Valley in Nevada County, shown here c. 1852, lithograph by R. E. Ogilby. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/17.jpg" title="Sutters Fort. By 1890, the once impressive Sutter's Fort in Sacramento had nearly disappeared. Only the original two-story main building remained, and it was in a state of advanced decay.'Sketching Class,' photograph showing Sutter's Fort by William Jackson, c. 1890. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_17.jpg" alt="By 1890, the once impressive Sutter's Fort in Sacramento had nearly disappeared. Only the original two-story main building remained, and it was in a state of advanced decay.'Sketching Class,' photograph showing Sutter's Fort by William Jackson, c. 1890. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/18.jpg" title="Hydraulic Mining. During the Gold Rush, the most environmentally destructive form of mining was hydraulic mining. Old Hilltop Mine at Michigan Bar, c. 1860. Source: California State Library">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_18.jpg" alt="During the Gold Rush, the most environmentally destructive form of mining was hydraulic mining. Old Hilltop Mine at Michigan Bar, c. 1860. Source: California State Library">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/19.jpg" title="Hunters Find a Grizzly Bear. Grizzly bears are now extinct in California, but they were common during the Gold Rush. 'Hunters Find a Grizzly,' Detail from Pacific Rural Press, March 1, 1873. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_19.jpg" alt="Grizzly bears are now extinct in California, but they were common during the Gold Rush. 'Hunters Find a Grizzly,' Detail from Pacific Rural Press, March 1, 1873. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/20.jpg" title="Benson Family. The Benson family - Lucy Emeline Strong Benson, baby Charles, and Henry Austin Benson - arrived in California in 1850 and lived in Hangtown, today's Placerville. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_20.jpg" alt="The Benson family - Lucy Emeline Strong Benson, baby Charles, and Henry Austin Benson - arrived in California in 1850 and lived in Hangtown, today's Placerville. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/21.jpg" title="Nevada City, 1852. The boomtown of Nevada (later Nevada City in Nevada County) was typical of the mining camps that sprang to life during the Gold Rush. Within weeks, camps such as Nevada City saw their populations swell from a handful to thousands. The construction was often designed to be temporary and was frequently haphazard. Nevada City, c. 1852, drawing by George Holbrook Baker. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_21.jpg" alt="The boomtown of Nevada (later Nevada City in Nevada County) was typical of the mining camps that sprang to life during the Gold Rush. Within weeks, camps such as Nevada City saw their populations swell from a handful to thousands. The construction was often designed to be temporary and was frequently haphazard. Nevada City, c. 1852, drawing by George Holbrook Baker. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/22.jpg" title="Mifflin Wistar Gibbs. During the Gold Rush, African-Americans saw California as one of the quickest avenues to personal wealth and freedom from slavery. Mifflin Wistar Gibbs was a California Gold Rush civil rights pioneer, a successful merchant, and the first elected African American judge in United States history. Frontispiece from Shadow and Light: An Autobiography, with Reminiscences of the Last and Present Century, by Mifflin Wistar Gibbs (Washington, D.C.: 1902). Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_22.jpg" alt="During the Gold Rush, African-Americans saw California as one of the quickest avenues to personal wealth and freedom from slavery. Mifflin Wistar Gibbs was a California Gold Rush civil rights pioneer, a successful merchant, and the first elected African American judge in United States history. Frontispiece from Shadow and Light: An Autobiography, with Reminiscences of the Last and Present Century, by Mifflin Wistar Gibbs (Washington, D.C.: 1902). Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/23.jpg" title="Emporer Norton. Many 49ers saw the Gold Rush as an opportunity to start anew. Some reinvented themselves. Most famous was Joshua Abraham Norton, self-styled as Norton I, Emperor of the United States and Protector of Mexico. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_23.jpg" alt="Many 49ers saw the Gold Rush as an opportunity to start anew. Some reinvented themselves. Most famous was Joshua Abraham Norton, self-styled as Norton I, Emperor of the United States and Protector of Mexico. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/24.jpg" title="Hugh C. Murray. Hugh C. Murray, the youngest chief justice in the history of the California Supreme Court, took the position in 1852, when he was only twenty-six years old. In 1854 he wrote the notoriously anti-Chinese decision in People v. Hall, which barred Chinese people from testifying against white people in court. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_24.jpg" alt="Hugh C. Murray, the youngest chief justice in the history of the California Supreme Court, took the position in 1852, when he was only twenty-six years old. In 1854 he wrote the notoriously anti-Chinese decision in People v. Hall, which barred Chinese people from testifying against white people in court. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/25.jpg" title="James Mason and Emily Hutchings. Many 49ers came to California seeking their fortune but detoured into other occupations. One was James Mason Hutchings, who became a hotelier, publisher and the preeminent promoter of Yosemite Valley as a tourist destination. James Mason Hutchings and his wife, Emily, on October 31, 1902, the day he died while visiting Yosemite Valley. Photograph from James Mason Hutchings of Yo Semite, by Dennis Kruska (San Francisco: Book Club of California, 2009). Kruska Collection, Figure 88. Courtesy of Dennis Kruska. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_25.jpg" alt="Many 49ers came to California seeking their fortune but detoured into other occupations. One was James Mason Hutchings, who became a hotelier, publisher and the preeminent promoter of Yosemite Valley as a tourist destination. James Mason Hutchings and his wife, Emily, on October 31, 1902, the day he died while visiting Yosemite Valley. Photograph from James Mason Hutchings of Yo Semite, by Dennis Kruska (San Francisco: Book Club of California, 2009). Kruska Collection, Figure 88. Courtesy of Dennis Kruska. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/26.jpg" title="Hutchings 10 Commandments. The most popular letter sheet of the Gold Rush was the fanciful Miners' Ten Commandments, c. 1853, published by James Mason Hutchings. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_26.jpg" alt="The most popular letter sheet of the Gold Rush was the fanciful Miners' Ten Commandments, c. 1853, published by James Mason Hutchings. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/27.jpg" title="John F. Morse. Sacramento physician Dr. John Morse wrote what is considered to be the first history of the California Gold Rush in 1853. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_27.jpg" alt="Sacramento physician Dr. John Morse wrote what is considered to be the first history of the California Gold Rush in 1853. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/28.jpg" title="John Rollin Ridge. John Rollin Ridge, a Native American author and journalist, wrote the first novel published in California: the story of legendary Gold Rush outlaw Joaquín Murieta. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_28.jpg" alt="John Rollin Ridge, a Native American author and journalist, wrote the first novel published in California: the story of legendary Gold Rush outlaw Joaquín Murieta. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/29.jpg" title="Drawing of Joaquín Murieta. Based partly on fact but mostly in legend, Joaquín Murieta became a symbol of Californio resistance to the arriving throngs of gold seekers.'Joaquín Murieta, the Celebrated California Bandit,' drawing by Charles Christian Nahl, engraving by Thomas Armstrong, Sacramento Steamer Union, April 22, 1855. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_29.jpg" alt="Based partly on fact but mostly in legend, Joaquín Murieta became a symbol of Californio resistance to the arriving throngs of gold seekers.'Joaquín Murieta, the Celebrated California Bandit,' drawing by Charles Christian Nahl, engraving by Thomas Armstrong, Sacramento Steamer Union, April 22, 1855. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/30.jpg" title="John Calhoun Johnson. 49ers needed news from back home and pioneering mailmen such as John 'Snowshoe Thompson' Torsteinson-Rue and John Calhoun Johnson filled the bill. This is John Calhoun 'Cock-Eye' Johnson: Sierra Nevada trailblazer and Gold Rush mailman. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_30.jpg" alt="49ers needed news from back home and pioneering mailmen such as John 'Snowshoe Thompson' Torsteinson-Rue and John Calhoun Johnson filled the bill. This is John Calhoun 'Cock-Eye' Johnson: Sierra Nevada trailblazer and Gold Rush mailman. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/31.jpg" title="Tahoe or Bigler. For decades, there was a lively debate as to the proper name of Lake Tahoe. During the Gold Rush, the argument centered on 'Lake Tahoe' versus 'Lake Bigler.' Gold Rush era surveys labeled the lake as 'Lake Bigler,' in honor of Governor John Bigler, Many preferred 'Lake Tahoe' instead. In 1870, the California legislature passed a law officially naming the lake as 'Lake Bigler.' By that point, virtually everyone referred to the lake as 'Lake Tahoe.' 'Lake Bigler' would remain the official name until 1945, when the 1870 act was repealed and 'Lake Tahoe' was authorized as the official designation. Detail from 'DeGroot's Map of Nevada Territory,' 1863. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_31.jpg" alt="For decades, there was a lively debate as to the proper name of Lake Tahoe. During the Gold Rush, the argument centered on 'Lake Tahoe' versus 'Lake Bigler.' Gold Rush era surveys labeled the lake as 'Lake Bigler,' in honor of Governor John Bigler, Many preferred 'Lake Tahoe' instead. In 1870, the California legislature passed a law officially naming the lake as 'Lake Bigler.' By that point, virtually everyone referred to the lake as 'Lake Tahoe.' 'Lake Bigler' would remain the official name until 1945, when the 1870 act was repealed and 'Lake Tahoe' was authorized as the official designation. Detail from 'DeGroot's Map of Nevada Territory,' 1863. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/32.jpg" title="Joseph Pike diary. Most Gold Rushers wrote letters home or kept a journal or daily recorded their observations in a diary. The diary of Joseph Pike, an Illinois gold seeker, is one of the simplest, and most edifying, of all Gold Rush journals. Pages from Diary of a Forty-niner, Being the Diary of Joseph Pike of Half Day, Illinois, April 15, 1850 to December 29, 1851. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_32.jpg" alt="Most Gold Rushers wrote letters home or kept a journal or daily recorded their observations in a diary. The diary of Joseph Pike, an Illinois gold seeker, is one of the simplest, and most edifying, of all Gold Rush journals. Pages from Diary of a Forty-niner, Being the Diary of Joseph Pike of Half Day, Illinois, April 15, 1850 to December 29, 1851. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/33.jpg" title="Drinking - Pioneer 10 Commandments. Next to finding gold, among the forty-niners' favorite activities were drinking, dining, and other exuberantly unsavory diversions. Image 7 from The Miner's Pioneer Ten Commandments. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_33.jpg" alt="Next to finding gold, among the forty-niners' favorite activities were drinking, dining, and other exuberantly unsavory diversions. Image 7 from The Miner's Pioneer Ten Commandments. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/34.jpg" title="Kennovan - Pedestrian. 49ers had many amusements during the era. Among the most interesting was 'pedestrianism,' or competitive walking races. James 'Uncle Jimmy' Kennovan, champion pedestrian, frequently concluded his competitive walks by dancing a jig. James Kennovan of San Francisco, by J. A. Woodson, 1863. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_34.jpg" alt="Kennovan - Pedestrian. 49ers had many amusements during the era. Among the most interesting was 'pedestrianism,' or competitive walking races. James 'Uncle Jimmy' Kennovan, champion pedestrian, frequently concluded his competitive walks by dancing a jig. James Kennovan of San Francisco, by J. A. Woodson, 1863. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/35.jpg" title="Colton Hall. Colton Hall, in Monterey, was the site of the 1849 California Constitutional Convention. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_35.jpg" alt="Colton Hall, in Monterey, was the site of the 1849 California Constitutional Convention. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/36.jpg" title="CSL GR 36 - State House San Jos&eacute;, California. California's first state house, San Jose;, 1849. San Jose; was the capital of California until 1852. Drawing from The History of San Jose; and Surroundings, by Frederic Hall (San Francisco: A. L. Bancroft and Co., 1871). Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_36.jpg" alt="California's first state house, San Jose;, 1849. San Jose; was the capital of California until 1852. Drawing from The History of San Jose; and Surroundings, by Frederic Hall (San Francisco: A. L. Bancroft and Co., 1871). Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/37.jpg" title="Miners Tax. From 1850 to 1851 and again from 1852 to 1939, California levied a tax on foreign miners, requiring primarily non-English-speaking migrants to pay for licenses to mine in the state. The controversial tax sometimes led to violence. Source: California Library: Foreign Miners Tax documents, 1850-1867.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_37.jpg" alt="From 1850 to 1851 and again from 1852 to 1939, California levied a tax on foreign miners, requiring primarily non-English-speaking migrants to pay for licenses to mine in the state. The controversial tax sometimes led to violence. Source: California Library: Foreign Miners Tax documents, 1850-1867.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/38.jpg" title="Chinese Miner. The California Gold Rush was very cultural diverse. Thousands came from throughout the world to seek golden glory. The Chinese were early participants in the rush and were the majority population in some mining camps. They also faced significant discrimination and degrading comments.'The 'Heathen Chinee' Prospecting, Calif., Year 1852,' photograph by Eadweard Muybridge, c. 1871. An early innovator of photographic technology, Muybridge often captioned his photographs with commonly used stereotypical ethnic descriptions. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_38.jpg" alt="The California Gold Rush was very cultural diverse. Thousands came from throughout the world to seek golden glory. The Chinese were early participants in the rush and were the majority population in some mining camps. They also faced significant discrimination and degrading comments.'The 'Heathen Chinee' Prospecting, Calif., Year 1852,' photograph by Eadweard Muybridge, c. 1871. An early innovator of photographic technology, Muybridge often captioned his photographs with commonly used stereotypical ethnic descriptions. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/39.jpg" title="Vigilantes. The often lawless and violent atmosphere of the Gold Rush sometimes gave rise to vigilante justice.'The California Vigilantes Executing the Orders of Judge Lynch,' from Conquering the Wilderness, by Frank Triplett (Chicago: Werner, 1885). Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_39.jpg" alt="The often lawless and violent atmosphere of the Gold Rush sometimes gave rise to vigilante justice.'The California Vigilantes Executing the Orders of Judge Lynch,' from Conquering the Wilderness, by Frank Triplett (Chicago: Werner, 1885). Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/40.jpg" title="Columbia 1855. The rich and colorful Tuolumne County mining camp of Columbia was the location of one of the most dramatic and horrifying instances of vigilantism during the Gold Rush.'Columbia, Tuolumne County, 1855,' lithograph by Kuchel and Dressel. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_40.jpg" alt="The rich and colorful Tuolumne County mining camp of Columbia was the location of one of the most dramatic and horrifying instances of vigilantism during the Gold Rush.'Columbia, Tuolumne County, 1855,' lithograph by Kuchel and Dressel. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/41.jpg" title="Steamboats. The rich and colorful Tuolumne County mining camp of Columbia was the location of one of the most dramatic and horrifying instances of vigilantism during the Gold Rush. &quot;Columbia, Tuolumne County, 1855,&quot; lithograph by Kuchel and Dressel. Source: California State Library.">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_41.jpg" alt="The rich and colorful Tuolumne County mining camp of Columbia was the location of one of the most dramatic and horrifying instances of vigilantism during the Gold Rush. &quot;Columbia, Tuolumne County, 1855,&quot; lithograph by Kuchel and Dressel. Source: California State Library.">
+                </a>
+
+                <a data-lightbox="group" href="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/42.jpg" title="Death. The Gold Rush was exhilarating, but life in California could also be perilous, and the Land of Gold became the final resting place for many hopeful miners.'The Departure,' Hutchings' Illustrated California Magazine 5, no. 3 (September 1860). Source: California State Library">
+                    <img src="~/Content/StateTemplate/images/caliorniaHistory/cagoldrush/t_42.jpg" alt="The Gold Rush was exhilarating, but life in California could also be perilous, and the Land of Gold became the final resting place for many hopeful miners.'The Departure,' Hutchings' Illustrated California Magazine 5, no. 3 (September 1860). Source: California State Library">
+                </a>
+
+
+
             </div>
         </div>
-
-        <div id="scroll6"></div>
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section6.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section7.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section8.cshtml")
-        <div class="section">
-            <div class="container">
-                <div class="third" name="section6">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section6.jpg" alt="section 6 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section VI. The Miners' Ten Commandments</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scroll6').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section6" aria-expanded="false" aria-controls="section6" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="third" name="section7">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section7.jpg" alt="section 7 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section VII. The World Rushed In: Part I</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scroll6').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section7" aria-expanded="false" aria-controls="section7" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="third" name="section8">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section8.jpg" alt="section 8 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section VII. The World Rushed In: Part II</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scroll6').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section8" aria-expanded="false" aria-controls="section8" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-         
-        <div id="scroll9"></div>
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section9.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section10.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section11.cshtml")
-        <div class="section">
-            <div class="container">
-                <div class="third" name="section9">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section9.jpg" alt="section 9 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section VIII. An Instant City: Sacramento</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scroll9').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section9" aria-expanded="false" aria-controls="section9" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="third" name="section10">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section10.jpg" alt="section 10 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section IX. The Northern Mines</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scroll9').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section10" aria-expanded="false" aria-controls="section10" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="third" name="section11">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section11.jpg" alt="section 11 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section X. Scenes in the Life of the California Miner</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scroll9').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section11" aria-expanded="false" aria-controls="section11" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="scroll12"></div>
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section12.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section13.cshtml")
-        @Html.Partial("~/Views/shared/CAGoldRush/_Section14.cshtml")
-        <div class="section">
-            <div class="container">
-                <div class="third" name="section12">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section12.jpg" alt="section 12 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section XI. Making a Pile</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scroll12').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section12" aria-expanded="false" aria-controls="section12" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="third" name="section13">
-                    <div class="card card-default">
-                        <img class="card-img-top img-responsive" src="~/Content/StateTemplate/images/CAGoldRush/section13.jpg" alt="section 13 image">
-                        <div class="card-block">
-                            <h4 class="card-title">Section XII. Mining Companies</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scroll12').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section13" aria-expanded="false" aria-controls="section13" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="third" name="section14">
-                    <div class="card card-default">
-                        <div class="card-block">
-                            <h4 class="card-title">Credits</h4>
-                            <p></p>
-                            <a role="tab" onclick="$('html, body').animate({scrollTop: $('#scroll12').offset().top -150}, 600);" class="btn btn-default" data-toggle="collapse" href="#section14" aria-expanded="false" aria-controls="section14" aria-selected="false" id="ui-collapse-278"><span aria-hidden="true"></span>&nbsp;Toggle</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
     </main>
 </div>
-
-
-<script>
-    function scrolltop() {
-        console.log("top");
-        $('html,body').animate({ scrollTop: 0 }, 600);
-        return false;
-    }
-</script> 

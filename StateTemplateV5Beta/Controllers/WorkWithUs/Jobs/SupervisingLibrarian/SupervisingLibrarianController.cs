@@ -79,7 +79,7 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.SupervisingLibrarian
                     }
                     if (!ModelState.IsValid)
                     {
-                        return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
+                        return View("~/Views/WorkWithUs/Jobs/SupervisingLibrarian/Apply.cshtml", model);
                     }
                 }
 
@@ -104,7 +104,7 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.SupervisingLibrarian
 
                 if (model.IsCaptcha == false)
                 {
-                    return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
+                    return View("~/Views/WorkWithUs/Jobs/SupervisingLibrarian/Apply.cshtml", model);
                 }
 
                 string pdfSupervisingLibrarianITemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/SL1AppFinal.pdf";

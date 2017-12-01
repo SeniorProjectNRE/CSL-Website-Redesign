@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "CSL - California Immigrant Alliance Project";
     ViewBag.PageTitle = "California Immigrant Alliance Project";
-    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "Public libraries play a key role in welcoming and educating immigrants. The Immigrant Alliance Project was created to support California public libraries as they create, enhance, and extend services to immigrants and their families.";
     ViewBag.Keywords = "Immigrant, Alliance, Project";
 }
@@ -11,10 +11,6 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
 <div id="main-content" class="main-content">
@@ -24,9 +20,11 @@
 
                 <ol class="breadcrumb">
                     <li><a href="/home">Home</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/services/to-libraries">To Libraries</a></li>
-                    <li>Immigrant Alliance</li>
+                    <li><a href="/services">services</a></li>
+                    <li><a href="~/services/to-libraries/">To Libraries</a></li>
+                    <li><a href="~/library-dev-services/">Library Development Programs and Projects</a></li>
+
+                    <li class="active">Immigrant Alliance</li>
                 </ol>
 
                 <h2 class="page-title">@ViewBag.PageTitle</h2>

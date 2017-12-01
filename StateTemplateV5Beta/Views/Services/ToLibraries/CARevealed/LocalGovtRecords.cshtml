@@ -1,0 +1,161 @@
+﻿
+@{
+    ViewBag.Title = "CSL - California Revealed Copyright and State and Local Government Information Resources";
+    ViewBag.PageTitle = "About Local Government Records";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "Copyright law as applied to California state and local government documents is discussed on this site.";
+    ViewBag.Keywords = "California, state, Library, revealed, initiative, copyright, local, government, documents";
+}
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
+
+<div id="main-content" class="main-content">
+    <main class="main-primary">
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/to-libraries">To Libraries</a></li>
+                    <li><a href="/services/to-libraries/development-programs-projects" style="text-transform:none">Library Development Programs and Projects</a></li>
+                    <li><a href="/grants/ca-revealed">California Revealed</a></li>
+                    <li>Local Government Records</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <h3><span style="font-size:0.8em; font-weight:normal">(&copy; 2016, Gretchen McCord)</span><span class="required-label">*</span></h3>
+                <div class="panel panel-standout highlight">
+                    <div class="panel-heading">
+                        <h3><span class="ca-gov-icon-info"></span> Important Legal Notice</h3>
+                    </div>
+                    <div class="panel-body">
+                        Resources provided by the California Revealed project provide only legal information, not legal advice. Although prepared by a copyright attorney, <strong><em>nothing in these web pages or documents should be considered legal advice.</em></strong>
+                    </div>
+                </div>
+
+                <!-- Accordions -->
+                <div class="panel-group" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Introduction
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                                <p>
+                                    The Copyright Act does not address documents created by state or municipal governments. Copyright protection for these documents is a matter of state law. In California, the history of copyright protection for state and local government documents is quite murky, and the current status of such documents is both murky and contentious.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    Do any California agencies own copyright in their works?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                <p>
+                                    Some California codes, such as the Education Code, state relatively clearly that either the state generally or specific government agencies/entities (in some cases, including local agencies like school boards) may choose to claim copyright in works created by them. These agencies are listed below. However, the majority of state codes either do not address the matter at all or raise the issue but give no clear resolution.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading3">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    What about agencies not mentioned in the statutes?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                            <div class="panel-body">
+                                <p>
+                                    A 2015 California appellate court decision (<em>County of Santa Clara v. Superior Court</em>) held that a state agency may claim copyright in its works only if statutory law "affirmatively grants" the right to do so. Only a few agencies fall into this category. Nonetheless, various agencies not authorized under statutory law to claim copyright in their works continue to do so (look for copyright notices on individual works).
+                                </p>
+                                <p>
+                                    Furthermore, in recent years, the state has repeatedly made very clear its interest in broadly claiming copyright in state works. In 2000, and again 2011, at the request of the legislature, the state auditor conducted surveys regarding how all state agencies manage their intellectual property. Based on the reports of those audits, the auditor (and presumably the legislature) seem to assume that any state agency could claim copyright in at least some works. In early 2016, a bill proposed in the state Assembly would have specifically allowed the state to claim federal copyright protection for all eligible works created by state agencies. After great public outcry over potential chilling effects of the bill, the bill was amended to address only trademark rights and omit copyright.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading4">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                    What does this mean for the California Revealed project?
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                            <div class="panel-body">
+                                <p>
+                                    Based on the <em>County of Santa Clara</em> opinion noted above, it is reasonable to assume that agencies not statutorily authorized to claim copyright in their works cannot do so. But given the clear conflict between that holding and ongoing actions by the state, some participating libraries may prefer to take a conservative approach in certain cases (such as when an agency clearly claims copyright, even if not statutorily authorized to do so) and obtain permission. Finally, participating libraries should stay aware of further developments in this evolving situation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading5">
+                            <h3 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                    Statutory Authorization to Claim Copyright
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                            <div class="panel-body">
+                                <h4>
+                                    Education Code
+                                </h4>
+                                <ul>
+                                    <li>Boards of education for counties, school districts, and community college districts</li>
+                                </ul>
+                                <h4>Food and Agricultural Code</h4>
+                                <ul>
+                                    <li>California Rice Commission</li>
+                                    <li>California Nursery Producers Commission</li>
+                                </ul>
+                                <h4>Government Code</h4>
+                                <ul>
+                                    <li>County Boards of Supervisors</li>
+                                    <li>Computer software developed by any state or local agency</li>
+                                </ul>
+                                <h4>Health & Safety Code</h4>
+                                <ul>
+                                    <li>Department of Toxic Substances Control</li>
+                                    <li>Air pollution control districts</li>
+                                    <li>State Energy Resources Conservation and Development Commission</li>
+                                    <li>Works prepared by other state entities for the California Health and Human Services Agency</li>
+                                    <li>The Board of Fire Services claims copyright in "a complete series of promotional examinations" created by the State Fire Marshall</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+                <p>
+                    <span class="required-label">*</span>
+                    This page copyright 2016, Gretchen McCord. Content may be copied and used on an individual basis for non-commercial purposes only but may not be modified or broadly distributed without permission. For example, you may link to this page (linking does not infringe copyright), but you may not copy and paste the following content on another page.
+                </p>
+            </div>
+        </div>
+    </main>
+</div>
+

@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "CSL - California State Library’s privacy policy";
     ViewBag.PageTitle = "Privacy Policy";
-    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "It is the library’s policy to take the appropriate measures to protect your personal information on our website.  We use any information you provide for the purpose for which you gave it. We do not sell or otherwise distribute your information. We may use temporary cookies in some areas to improve usability of the site.";
     ViewBag.Keywords = "California, State, Library, Privacy, Policy";
 }
@@ -13,9 +13,6 @@
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
 
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
 
@@ -23,7 +20,10 @@
     <main class="main-primary">
         <div class="section">
             <div class="container">
-                <ol class="breadcrumb dynamic"></ol>
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li class="active">Privacy Policy</li>
+                </ol>
                 <h2 class="page-title">@(ViewBag.PageTitle)</h2>
             </div>
         </div>
@@ -38,37 +38,37 @@
                 </p>
                 <ul>
                     <li>
-                                    <p><strong>We collect personal information on individuals only as allowed by law. </strong> We limit the collection of personal information to what is relevant and necessary to accomplish a lawful purpose of the State Library. For example, we may need to know someone's address, telephone number and place of work before issuing a library card. </p>
-                                    <p>Personal information, as defined in the Information Practices Act, is information that identifies or describes an individual including, but not limited to, name, physical description, home address, home telephone number, and employment history. </p>
-                                </li>
+                        <p><strong>We collect personal information on individuals only as allowed by law. </strong> We limit the collection of personal information to what is relevant and necessary to accomplish a lawful purpose of the State Library. For example, we may need to know someone's address, telephone number and place of work before issuing a library card. </p>
+                        <p>Personal information, as defined in the Information Practices Act, is information that identifies or describes an individual including, but not limited to, name, physical description, home address, home telephone number, and employment history. </p>
+                    </li>
                     <li>
-                                    <p>
-                                        <strong>We do not collect home, business or email addresses or account information from persons who simply browse our Internet website. </strong>
-                                        The State Library collects personal information about individuals through our website only if an individual provides such information to the library voluntarily through forms or surveys.
-                                        The information that the Library automatically collects includes the domain name or Internet Protocol address that relates to the machine used to the access the State Library's website, the type of browser and operating system used, the city and country from where the machine is located, the language of the user, the type of device, the date and time when the website is visited, webpages displayed and any forms that are uploaded or submitted.
-                                        This information is collected for customer service and audit purposes. Electronically collected information is exempt from requests made under the Public Records Act. <strong>We may use session cookies in some areas of this website to improve the overall usability of the site.</strong> Cookies are small text files placed on your computer, often without your knowledge, while visiting certain sites on the Internet used to identify your computer. For example, cookies are used by some sites to greet you personally or to post a list of your favorite books to purchase.
-                                    </p>
-                                    <p>On the State Library's site, a temporary cookie may be placed on your computer for applications such as online complaint forms or library card applications, which can be sent electronically. The session cookies are used to facilitate the interaction between you and the fields in the form. <strong>The cookies are not used to collect or store information about you.</strong> The cookie is temporary and will be deleted when you exit your browser. </p>
-                                    <p>You can prevent cookies from being placed on your computer by accessing your browser's preferences menu and deleting existing cookies. There also are commercial programs available to help you manage cookies. Before taking such steps, you should be aware that some websites might not work properly if you choose to block the placement of cookies on your computer. You will need to decide whether enabling cookies outweigh privacy concerns. </p>
-                                </li>
+                        <p>
+                            <strong>We do not collect home, business or email addresses or account information from persons who simply browse our Internet website. </strong>
+                            The State Library collects personal information about individuals through our website only if an individual provides such information to the library voluntarily through forms or surveys.
+                            The information that the Library automatically collects includes the domain name or Internet Protocol address that relates to the machine used to the access the State Library's website, the type of browser and operating system used, the city and country from where the machine is located, the language of the user, the type of device, the date and time when the website is visited, webpages displayed and any forms that are uploaded or submitted.
+                            This information is collected for customer service and audit purposes. Electronically collected information is exempt from requests made under the Public Records Act. <strong>We may use session cookies in some areas of this website to improve the overall usability of the site.</strong> Cookies are small text files placed on your computer, often without your knowledge, while visiting certain sites on the Internet used to identify your computer. For example, cookies are used by some sites to greet you personally or to post a list of your favorite books to purchase.
+                        </p>
+                        <p>On the State Library's site, a temporary cookie may be placed on your computer for applications such as online complaint forms or library card applications, which can be sent electronically. The session cookies are used to facilitate the interaction between you and the fields in the form. <strong>The cookies are not used to collect or store information about you.</strong> The cookie is temporary and will be deleted when you exit your browser. </p>
+                        <p>You can prevent cookies from being placed on your computer by accessing your browser's preferences menu and deleting existing cookies. There also are commercial programs available to help you manage cookies. Before taking such steps, you should be aware that some websites might not work properly if you choose to block the placement of cookies on your computer. You will need to decide whether enabling cookies outweigh privacy concerns. </p>
+                    </li>
                     <li>
-                                    <p> <strong>We strive to tell people who provide personal information to the State Library the purpose for which the information is collected.</strong> At the time of collection, persons who are asked to provide personal information are told about the general uses of that information. </p>
-                                </li>
+                        <p> <strong>We strive to tell people who provide personal information to the State Library the purpose for which the information is collected.</strong> At the time of collection, persons who are asked to provide personal information are told about the general uses of that information. </p>
+                    </li>
                     <li>
-                                    <p> <strong>We use personal information only for the specified purposes</strong>, or purposes consistent with those purposes, unless we get the consent of the subject of the information, or unless authorized by law or regulation. We do not distribute or sell any electronically collected personal information to any third party without your consent. </p>
-                                </li>
+                        <p> <strong>We use personal information only for the specified purposes</strong>, or purposes consistent with those purposes, unless we get the consent of the subject of the information, or unless authorized by law or regulation. We do not distribute or sell any electronically collected personal information to any third party without your consent. </p>
+                    </li>
                     <li>
-                                    <p> <strong>We tell people who provide personal information to the library that they can review that information.</strong> The State Library allows individuals who provide personal information to look at that information and make corrections or additions to it. </p>
-                                </li>
+                        <p> <strong>We tell people who provide personal information to the library that they can review that information.</strong> The State Library allows individuals who provide personal information to look at that information and make corrections or additions to it. </p>
+                    </li>
                     <li>
-                                    <p> <strong>We tell people that they have the right to have any electronically collected personal information deleted without reuse or distribution.</strong> To have your personal information deleted, contact our privacy coordinator at <a href="mailto:privacy@library.ca.gov">privacy@library.ca.gov</a>. </p>
-                                </li>
+                        <p> <strong>We tell people that they have the right to have any electronically collected personal information deleted without reuse or distribution.</strong> To have your personal information deleted, contact our privacy coordinator at <a href="mailto:privacy@library.ca.gov">privacy@library.ca.gov</a>. </p>
+                    </li>
                     <li>
-                                    <p> <strong>We use information security safeguards.</strong> We take reasonable precautions to protect the personal information collected or maintained by the library against loss, unauthorized access and illegal use or disclosure. The State Library uses encryption software to protect the security of individuals' personal information during transmission of such information through the library's website. Personal information is stored by the State Library in secure locations. The library's staff is trained in managing personal information, including limitations on the release of information. Access to personal information is limited to those members of the State Library's staff whose work requires such access. Confidential information is destroyed according to the library's records retention schedule. The library conducts periodic reviews to ensure that proper information management policies and procedures are understood and followed. </p>
-                                    <p>The State Library encourages all individuals to use appropriate safeguards to secure their computers and the information on those computers. Please note that our Privacy Policy reflects the State Library's current practices and is subject to change without notice. </p>
-                                    <p>If you have questions, comments, complaints or would like more information about the library's privacy policy, you may contact our Privacy Coordinator, <a href="mailto:privacy@library.ca.gov">privacy@library.ca.gov</a> </p>
-                                    <p>Effective date: June 1, 2015 </p>
-                                </li>
+                        <p> <strong>We use information security safeguards.</strong> We take reasonable precautions to protect the personal information collected or maintained by the library against loss, unauthorized access and illegal use or disclosure. The State Library uses encryption software to protect the security of individuals' personal information during transmission of such information through the library's website. Personal information is stored by the State Library in secure locations. The library's staff is trained in managing personal information, including limitations on the release of information. Access to personal information is limited to those members of the State Library's staff whose work requires such access. Confidential information is destroyed according to the library's records retention schedule. The library conducts periodic reviews to ensure that proper information management policies and procedures are understood and followed. </p>
+                        <p>The State Library encourages all individuals to use appropriate safeguards to secure their computers and the information on those computers. Please note that our Privacy Policy reflects the State Library's current practices and is subject to change without notice. </p>
+                        <p>If you have questions, comments, complaints or would like more information about the library's privacy policy, you may contact our Privacy Coordinator, <a href="mailto:privacy@library.ca.gov">privacy@library.ca.gov</a> </p>
+                        <p>Effective date: June 1, 2015 </p>
+                    </li>
                 </ul>
             </div>
         </div>

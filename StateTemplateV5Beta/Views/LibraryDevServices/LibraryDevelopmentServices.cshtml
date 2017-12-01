@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "CSL - Library Development Services Bureau";
     ViewBag.PageTitle = "Library Development Services Bureau";
-    ViewBag.Author = "Ryan Salcido";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "The Library Development Services (LDS) Bureau administers state and federal grant programs for California’s libraries; works to enhance library collaboration and resource-sharing, and provides consulting services to public libraries and associated groups and organizations. These activities help to support existing library programs, develop innovative new programs, extend and enhance library services across the state, and gain the greatest benefit from funding sources.";
     ViewBag.Keywords = "Development, Services, Bureau";
 }
@@ -11,10 +11,6 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
 <div id="main-content" class="main-content">
@@ -23,8 +19,9 @@
             <div class="container">
 
                 <ol class="breadcrumb">
-                    <li><a href="/home">Home</a></li>
-                    <li>Library Development Services</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/"></a>About Library</li>
+                    <li>Library Sections</li>
                 </ol>
 
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
@@ -37,8 +34,8 @@
                     <p>
                         These activities help California's libraries maintain and support existing programs and services; implement new methods for delivering cost-effective library services; extend library services; gain the greatest benefit from existing funding sources; and develop partnerships to enhance capacity. See Services to Libraries for more information about LDS services, projects and programs.
                     </p>
-
-                    <div class="third">
+                    <br>
+                    <div class="two-thirds">
                         <div class="panel panel-understated">
                             <div class="panel-heading">
                                 <h4>Library Development Services</h4>
