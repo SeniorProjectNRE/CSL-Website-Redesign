@@ -20,7 +20,7 @@
         <div class="container">
 
             <div class="section">
-                
+
                 <ol class="breadcrumb">
                     <li><a href="/home">Home</a></li>
                     <li>Apply for a Library Card</li>
@@ -67,10 +67,13 @@
                             if (value == "General Public") {
                                 document.getElementById("resultDiv").innerHTML = "<p>The general public cannot apply for a library card<p>";
                                 document.getElementById("restOfForm").style.display = "none";
+
+                                document.getElementById("newsletterForm").style.display = "none";
                             }
                             else {
                                 document.getElementById("resultDiv").innerHTML = "";
                                 document.getElementById("restOfForm").style.display = "block";
+                                document.getElementById("newsletterForm").style.display = "block";
                             }
                         }
                     </script>
@@ -78,6 +81,7 @@
 
                     <!--this div only show if you are not the general public-->
                     <div id="restOfForm" style="display:none">
+
                         <!--person name-->
                         <div class="group">
                             <div class="form-group half">
@@ -338,10 +342,11 @@
                             </p>
                         </div>
 
+
                         <!--alerts adn sgnup -->
-                        <div class="form-group">
+                        <!-- div class="form-group">
                             <p>
-                                Sign up for California State Library newsletters, and news and alerts on upcoming events:
+
                             </p>
                             <p>
                                 <input type="checkbox" id="newsAndEventsAlerts">
@@ -368,15 +373,148 @@
                                 <input type="checkbox" id="emailAlerts">
                                 I would like to get email alerts for upcoming events at the State Library.
                             </p>
+                        </div-->
+
+                        <div class="form-group">
+                            <div class="pull-right">
+                                <input type="submit" value="Submit" class="btn btn-default pull-right" />
+                            </div>
                         </div>
 
-                        <input type="submit" />
                     </div>
                 </form>
+                <div class="clearfix"></div>
+                <br>
+                <br>
+                <div class="section" id="newsletterForm" style="display:none">
+                    <div class="contianer">
+                        <div class='panel-group' role='tablist' aria-multiselectable='true'>
 
+                            <div class='panel panel-default'>
+                                <div class='panel-heading' role='tab' id='heading1'>
+                                    <h3 class='panel-title'>
+                                        <a role='button' data-toggle='collapse' data-parent='#example-accordion' href='#collapse1' aria-expanded='false' aria-controls='collapse1'>Sign up for California State Library newsletters, and news and alerts on upcoming events:</a>
+                                    </h3>
+                                </div>
+                                <div id='collapse1' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading1'>
+
+                                    <div class='panel-body'>
+
+                                        <!-- Begin MailChimp Signup Form -->
+                                        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                                        <style type="text/css">
+                                            #mc_embed_signup {
+                                                background: #fff;
+                                                clear: left;
+                                                font: 14px Helvetica,Arial,sans-serif;
+                                            }
+                                            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                                                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                                        </style>
+                                        <div id="mc_embed_signup">
+                                            <form action="https://library.us13.list-manage.com/subscribe/post?u=dacfa367c242711b7d6f73ca7&amp;id=d29f00fe31" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                                <div id="mc_embed_signup_scroll">
+
+
+                                                    <div class="mc-field-group">
+                                                        <label for="mce-FNAME">
+                                                            First Name  <span class="asterisk">*</span>
+                                                        </label>
+                                                        <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                                                    </div>
+                                                    <div class="mc-field-group">
+                                                        <label for="mce-LNAME">
+                                                            Last Name  <span class="asterisk">*</span>
+                                                        </label>
+                                                        <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+                                                    </div>
+                                                    <div class="mc-field-group">
+                                                        <label for="mce-EMAIL">
+                                                            Email Address  <span class="asterisk">*</span>
+                                                        </label>
+                                                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                                    </div>
+                                                    <div class="mc-field-group">
+                                                        <label for="mce-ORG">Organization </label>
+                                                        <input type="text" value="" name="ORG" class="" id="mce-ORG">
+                                                    </div>
+                                                    <div class="mc-field-group">
+                                                        <label for="mce-ORGTYPE">Organization Type </label>
+                                                        <select name="ORGTYPE" class="" id="mce-ORGTYPE">
+                                                            <option value=""></option>
+                                                            <option value="Government - Other">Government - Other</option>
+                                                            <option value="Government - CA Legislature">Government - CA Legislature</option>
+                                                            <option value="Government - CA State Agency">Government - CA State Agency</option>
+                                                            <option value="Government - CA Office of the Governor">Government - CA Office of the Governor</option>
+                                                            <option value="Government - Other CA Constitutional Office">Government - Other CA Constitutional Office</option>
+                                                            <option value="Government - Local/County">Government - Local/County</option>
+                                                            <option value="Education">Education</option>
+                                                            <option value="Media">Media</option>
+                                                            <option value="Research Organization">Research Organization</option>
+                                                            <option value="General Public">General Public</option>
+                                                            <option value="Other">Other</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mc-field-group">
+                                                        <label for="mce-JOBTITLE">Job Title </label>
+                                                        <input type="text" value="" name="JOBTITLE" class="" id="mce-JOBTITLE">
+                                                    </div>
+                                                    <div class="mc-field-group input-group">
+                                                        <strong>Choose the mailing list(s) you want to subscribe: </strong>
+                                                        <ul>
+                                                            <li><input type="checkbox" value="1" name="group[9521][1]" id="mce-group[9521]-9521-0"><label for="mce-group[9521]-9521-0">CSL News and Events</label></li>
+                                                            <li><input type="checkbox" value="2" name="group[9521][2]" id="mce-group[9521]-9521-1"><label for="mce-group[9521]-9521-1">BTBL Updates</label></li>
+                                                            <li><input type="checkbox" value="4" name="group[9521][4]" id="mce-group[9521]-9521-2"><label for="mce-group[9521]-9521-2">California State Publications</label></li>
+                                                            <li><input type="checkbox" value="8" name="group[9521][8]" id="mce-group[9521]-9521-3"><label for="mce-group[9521]-9521-3">CRB Lunch with a Side of Research</label></li>
+                                                            <li><input type="checkbox" value="16" name="group[9521][16]" id="mce-group[9521]-9521-4"><label for="mce-group[9521]-9521-4">CRB Studies in the News</label></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mc-field-group input-group">
+                                                        <strong>Email Format </strong>
+                                                        <ul>
+                                                            <li><input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0"><label for="mce-EMAILTYPE-0">html</label></li>
+                                                            <li><input type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"><label for="mce-EMAILTYPE-1">text</label></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="mce-responses" class="clear">
+                                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dacfa367c242711b7d6f73ca7_d29f00fe31" tabindex="-1" value=""></div>
+                                                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                                        <script type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[2] = 'FNAME'; ftypes[2] = 'text'; fnames[1] = 'LNAME'; ftypes[1] = 'text'; fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[3] = 'ORG'; ftypes[3] = 'text'; fnames[4] = 'ORGTYPE'; ftypes[4] = 'dropdown'; fnames[5] = 'JOBTITLE'; ftypes[5] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+                                        <!--End mc_embed_signup-->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
-
-        </div>
     </main>
 </div>
 
+<script>
+    $(document).ready(function () {
+
+
+        $("#firstName").keyup(function () {
+            $("#mce-FNAME").val(this.value);
+        });
+
+        $("#lastName").keyup(function () {
+            $("#mce-LNAME").val(this.value);
+        });
+
+        $("#personalEmail").keyup(function () {
+            $("#mce-EMAIL").val(this.value);
+        });
+    });
+</script>
