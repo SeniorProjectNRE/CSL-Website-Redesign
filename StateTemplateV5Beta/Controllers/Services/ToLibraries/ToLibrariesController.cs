@@ -78,5 +78,12 @@ namespace StateTemplateV5Beta.Controllers.ToLibraries
         {
             return View("~/Views/Services/ToLibraries/ZipBooks.cshtml");
         }
+
+        // GET: library-staff-education-program
+        [Route("public-library-staff-education-program")]
+        public ActionResult LibraryStaffEducationProgram()
+        {
+            return View("~/Views/Services/ToLibraries/LibraryStaffEducationPogram.cshtml");
+        }
     }
 }
