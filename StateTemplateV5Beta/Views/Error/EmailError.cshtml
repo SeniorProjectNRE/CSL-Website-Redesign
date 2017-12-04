@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Error";
+    ViewBag.ScreenHeight = @Request.Browser.ScreenPixelsHeight.ToString() + "px";
+
+}
+<style>
+    .section-danger {
+        min-height: 300%
+    }
+</style>
+
+
+<div id="main-content" class="main-content" style="background-color:red">
+    <main class="main-primary">
+        <div class="container">
+            <div class="section">
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li>Error</li>
+                </ol>
+            </div>
+        </div>
+        <div class="section section-danger" >
+            <div class="container">
+                
+                <h2>Error</h2>
+                <h3>
+                    Something went wrong when trying to send your form out to our office, please send us a bug report <a href="/contact"><b>here</b></a>
+                </h3>
+            </div>
+        </div>
+    </main>
+</div>
+

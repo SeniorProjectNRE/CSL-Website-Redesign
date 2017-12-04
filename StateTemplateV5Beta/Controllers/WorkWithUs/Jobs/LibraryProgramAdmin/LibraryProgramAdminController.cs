@@ -93,6 +93,11 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.LibraryProgramAdmin
                     System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
                 }
 
+                if (res == false)
+                {
+                    return RedirectToAction("EmailError", "error");
+                }
+
                 ModelState.Clear();
                 model.Success = res;
                 return RedirectToAction("success", "libraryprogramadmin");

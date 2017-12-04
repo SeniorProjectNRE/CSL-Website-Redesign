@@ -188,7 +188,14 @@ namespace StateTemplateV5Beta.Controllers.Apply
         [Route("")]
         public ActionResult Index(ApplyModel viewModel)
         {
-            return View("Apply");
+            //put code here to handle what happens after form is submitted
+            //
+            //code below will redirect to email error page if return type of service method is false, see exams handling in the exam controllers
+            //if (success == false)
+            //{
+            //    return RedirectToAction("EmailError", "error");
+            //}
+            return View("Apply", viewModel);
         }
     }
 }

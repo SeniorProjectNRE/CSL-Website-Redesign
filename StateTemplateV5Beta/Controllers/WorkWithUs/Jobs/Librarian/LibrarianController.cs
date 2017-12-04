@@ -116,6 +116,11 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
                     System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
                 }
 
+                if (res == false)
+                {
+                    return RedirectToAction("EmailError", "error");
+                }
+
                 ModelState.Clear();
                 model.Success = res;
                 //return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
