@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLayer\GrantsServiceTests.cs" />
+    <Compile Include="BusinessLayer\LibraryServiceTests.cs" />
     <Compile Include="BusinessLayer\SLAAServiceTests.cs" />
     <Compile Include="DataAccess\MockDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
