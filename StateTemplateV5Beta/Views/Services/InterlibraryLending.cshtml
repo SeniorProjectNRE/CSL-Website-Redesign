@@ -1,11 +1,167 @@
-﻿
-@{
-    ViewBag.Title = "InterlibraryLending";
+﻿@{
+    ViewBag.Title = "CSL - Interlibrary Lending";
+    ViewBag.PageTitle = "Interlibrary Borrowing";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "The California State Library loans books, journals, government documents, videos, and newspapers on microfilm to public, academic and special libraries. ";
+    ViewBag.Keywords = "California, state, Library, interlibrary, lending, borrowing";
 }
+
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+</head>
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <h2>InterlibraryLending</h2>
+        <div class="section">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li class="active">Interlibrary Lending</li>
+                </ol>
+                <h2 class="page-title">@(ViewBag.PageTitle)</h2>
+                <div class="group">
+                    <div class="two-thirds">
+                        <p>
+                            California State employees who have a <a href="/apply/" target="_blank" rel="noopener noreferrer">California State Library card</a> can request items not available in the California State Library's collections from other libraries through the Interlibrary Loan service. Members and staff of the State Legislature and Governor's Office may contact the <a href="/crb/">California Research Bureau</a> for interlibrary borrowing assistance.
+                        </p>
+                        <div class="panel-group" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading1">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                            What Can Be Requested through Interlibrary Loan
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                    <div class="panel-body">
+                                        <p>
+                                            Books, journal articles, reports, etc. required for your California State government job.
+                                        </p>
+                                        <p>
+                                            Other libraries will generally loan material that they circulate to their own borrowers. Often excluded are: textbooks, reference books, course reserve books, rare books, recently-published books, microfilm, dissertations, technical reports, and audiovisual material.
+                                        </p>
+                                        <p>
+                                            Libraries usually supply a scanned PDF copy of a journal article rather than loan a journal.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading2">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                            Time Required to Receive Materials
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                    <div class="panel-body">
+                                        <p>
+                                            Obtaining books and articles from other libraries can take from two weeks to a month depending on which library is able to fill the interlibrary loan request. Please allow ample time.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading3">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                            How to Place a Request
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                    <div class="panel-body">
+                                        <p>
+                                            Submit requests online at <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank" rel="noopener noreferrer">Ask A Librarian</a> or email <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a>.
+                                        </p>
+                                        <p>
+                                            Members and staff of the State Legislature and Governor's Office may contact the <a href="/crb/">California Research Bureau</a> for Interlibrary Borrowing assistance.
+                                        </p>
+                                        <p>
+                                            Please supply your <strong>deadline</strong> for receiving the material; author, title, date of publication, edition, series and or report number for books and reports; and journal title, volume number, issue number, issue date, author, article title and page numbers for journal articles.
+                                        </p>
+                                        <p>
+                                            You will be notified by telephone or email when we have received the requested book, journal article, etc.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading4">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                            Returning Material
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                                    <div class="panel-body">
+                                        <p>
+                                            Please return items borrowed through interlibrary loan in-person to the California State Library Information Services desk by the due date to allow time for shipping the item back to the lending library. Members and staff of the State Legislature and Governor's Office may contact the <a href="/crb/">California Research Bureau</a> for Interlibrary Borrowing assistance.
+                                        </p>
+                                        <p>
+                                            Information Services<br />
+                                            California State Library<br />
+                                            Stanley Mosk Library and Courts Building<br />
+                                            914 Capitol Mall, Room 301
+                                        </p>
+                                        <p>
+                                            The Library is open 9:30 a.m. &ndash; 4:00 p.m., Monday &ndash; Friday, excluding <a href="/contact/">California state holidays</a>.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading5">
+                                    <h3 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                            Contact Us
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                                    <div class="panel-body">
+                                        <p>
+                                            Information Services<br />
+                                            California State Library<br />
+                                            Stanley Mosk Library and Courts Building<br />
+                                            914 Capitol Mall, Room 301
+                                        </p>
+                                        <br>
+                                        <p>
+                                            <span class="ca-gov-icon-phone"></span> (916) 654-0261<br />
+                                            <span class="ca-gov-icon-email"></span>  <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a><br />
+                                            <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank" rel="noopener noreferrer">Ask A Librarian</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="third">
+                        <div class="animated fadeInRight">
+                            <img src="~/Content/StateTemplate/images/services/interlibraryLending/library_shelves.png" alt="State Library">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 
