@@ -22,7 +22,6 @@ namespace StateTemplateV5Beta.Controllers.Apply
             viewModel.Jobs.Add("Faculty or Staff at UC/CSU");
             viewModel.Jobs.Add("Officials/Employees of State Court");
             viewModel.Jobs.Add("General Public");
-            viewModel.Agency.Add("** I can&#39;t find my agency");
             viewModel.Agency.Add("Administrative Law, Office of");
             viewModel.Agency.Add("Aging, California Commission on");
             viewModel.Agency.Add("Aging, Department of");
