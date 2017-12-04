@@ -136,10 +136,15 @@ namespace CSL.Tests.DataAccess
             myTable.Columns.Add(l);
 
             DataRow testRow1 = myTable.NewRow();
+            string testCode = code;
+            if (code == null)
+            {
+                testCode = "0";
+            }
 
             testRow1["ReportYear"] = year;
-            testRow1["ReportAgencyCode"] = code;
-            testRow1["ReportAgencyName"] = code;
+            testRow1["ReportAgencyCode"] = testCode;
+            testRow1["ReportAgencyName"] = testCode;
 
             myTable.Rows.Add(testRow1);
 

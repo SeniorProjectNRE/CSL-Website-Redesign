@@ -111,9 +111,9 @@ namespace CSL.Tests.BusinessLayer
         [TestMethod]
         public void Service_GetAgencyCodeFromAgencyNameTest()
         {
-            string res =_slaa.GetAgencyCodeFromAgencyName("1ab");
+            string res =_slaa.GetAgencyCodeFromAgencyName("0");
 
-            Assert.AreEqual(res, "1ba");
+            Assert.AreEqual(res, "0");
         }
     }
 }
