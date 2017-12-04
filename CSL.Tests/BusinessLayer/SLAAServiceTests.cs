@@ -113,7 +113,7 @@ namespace CSL.Tests.BusinessLayer
         {
             string res =_slaa.GetAgencyCodeFromAgencyName("1ab");
 
-            Assert.AreEqual(res, "1");
+            Assert.AreEqual(res, "1ba");
         }
     }
 }
