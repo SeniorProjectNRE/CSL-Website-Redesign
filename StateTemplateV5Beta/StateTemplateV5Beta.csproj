@@ -1833,6 +1833,10 @@
     <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\InnovationStationApplicationFormSept2017REV.docx" />
     <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\InnovationStationProjectApplicationGuidelinesREV.docx" />
     <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\FAQ-Innovation-Project.docx" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\Illuminated\LI_Application_Form_June_2017.docx" />
+    <Content Include="Content\StateTemplate\pdf\services\toLibraries\Illuminated\LI_Application_Guidelines_June_2017.pdf" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\Illuminated\LI_LIPC_for_Web.xls" />
+    <Content Include="Content\StateTemplate\otherDocuments\services\toLibraries\Illuminated\LIwebinarJune2017.pptx" />
     <None Include="Properties\PublishProfiles\CaliforniaStateLibrary - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\StateTemplateV5Beta20170412030627 - Web Deploy.pubxml" />
