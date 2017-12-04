@@ -15,11 +15,11 @@ namespace CSLBusinessObjects.Models
 
         [Display(Name = "First Name")]
         [Required(ErrorMessage = "Please enter your first name")]
-        public string InstructorEmail { get; set; }
+        public string FirstName { get; set; }
 
         [Display(Name = "Last Name")]
         [Required(ErrorMessage = "Please enter your last name")]
-        public string InstructorDepartment { get; set; }
+        public string LastName { get; set; }
 
         [Display(Name = "Home Address")]
         [Required(ErrorMessage = "Please enter your address.")]
