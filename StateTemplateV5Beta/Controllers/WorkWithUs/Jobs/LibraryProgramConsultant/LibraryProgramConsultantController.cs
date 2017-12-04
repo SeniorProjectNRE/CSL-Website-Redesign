@@ -31,6 +31,13 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.LibraryProgramConsulta
             return View("~/Views/WorkWithUs/Jobs/LibraryProgramConsultant/LibraryProgramConsultant.cshtml");
         }
 
+        [Route("success")]
+        // GET: success
+        public ActionResult Success()
+        {
+            return View("~/Views/WorkWithUs/Jobs/LibraryProgramConsultant/Success.cshtml");
+        }
+
         // GET: Apply
         [HttpGet]
         [Route("Apply")]
@@ -89,7 +96,7 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.LibraryProgramConsulta
 
                 ModelState.Clear();
                 model.Success = res;
-                return RedirectToAction("success", "jobs");
+                return RedirectToAction("success", "libraryprogramconsultant");
             }
             catch (Exception ex)
             {

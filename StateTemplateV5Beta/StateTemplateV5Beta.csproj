@@ -2136,7 +2136,7 @@
     <Content Include="Views\Services\ToLibraries\Statistics\Statistics.cshtml" />
     <Content Include="Views\Services\ToLibraries\Statistics\Summary.cshtml" />
     <Content Include="Views\Services\ToLibraries\ZipBooks.cshtml" />
-    <Content Include="Views\WorkWithUs\Jobs\Success.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\LibraryProgramAdmin\Success.cshtml" />
     <Content Include="Views\Grants\LibraryServicesTechnologyAct\Manage.cshtml" />
     <Content Include="Views\Services\ToLibraries\LibraryStaffEducationPogram.cshtml" />
     <Content Include="Views\Sutro\Success.cshtml" />
@@ -2144,6 +2144,10 @@
     <Content Include="Views\Services\ToLibraries\StatisticsDirectories.cshtml" />
     <Content Include="Views\Services\ToLibraries\LawsPublicLibraryOrganization.cshtml" />
     <Content Include="Views\Services\ToLibraries\CooperativeSystemsClsa.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\Librarian\Success.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\LibraryProgramConsultant\Success.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\LibraryTechnicalAssistant\Success.cshtml" />
+    <Content Include="Views\WorkWithUs\Jobs\SupervisingLibrarian\Success.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

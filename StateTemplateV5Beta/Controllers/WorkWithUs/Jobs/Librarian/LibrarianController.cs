@@ -33,6 +33,13 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
             return View("~/Views/WorkWithUs/Jobs/Librarian/Librarian.cshtml");
         }
 
+        [Route("success")]
+        // GET: success
+        public ActionResult Success()
+        {
+            return View("~/Views/WorkWithUs/Jobs/Librarian/Success.cshtml");
+        }
+
         [HttpGet]
         [Route("apply")]
         public ActionResult Apply()
@@ -112,7 +119,7 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
                 ModelState.Clear();
                 model.Success = res;
                 //return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
-                return RedirectToAction("success", "jobs");
+                return RedirectToAction("success", "librarian");
             }
             catch (Exception ex)
             {

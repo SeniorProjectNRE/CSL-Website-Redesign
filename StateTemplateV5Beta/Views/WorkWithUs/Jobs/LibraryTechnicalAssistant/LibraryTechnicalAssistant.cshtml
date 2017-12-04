@@ -1,5 +1,6 @@
 ﻿@{
-    ViewBag.Title = "Library Technical Assistant I/II Exam and Hiring Process";
+    ViewBag.Title = "CSL - Library Technical Assistant I and II Exam Process";
+    ViewBag.PageTitle = "Library Technical Assistant I/II Exam and Hiring Process";
     ViewBag.Author = "California State Library";
     ViewBag.Description = "California State library assistant exam and hiring page.  Find info about becoming a library assistant here.";
     ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library, California, assistant, work with  us, exam, hiring";
@@ -18,8 +19,13 @@
         <main class="main-primary">
 
             <div class="section">
-                <ol class="breadcrumb dynamic"></ol>
-                <h2 class="page-title">@ViewBag.Title</h2>
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/work-with-us">Work With Us</a></li>
+                    <li><a href="/work-with-us/jobs">Jobs</a></li>
+                    <li>Library Technical Assistant Exam</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
                 <p>
                     Thank you for your interest in the Library Technical Assistant I/II jobs. You can find all the information you need to apply for the examination and to be considered for these jobs here.
                 </p>

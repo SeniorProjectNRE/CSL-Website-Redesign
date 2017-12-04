@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Library Programs Consultant Exam and Hiring Process";
+    ViewBag.PageTitle = "Library Programs Consultant Exam and Hiring Process";
     ViewBag.Author = "California State Library";
     ViewBag.Description = "California State library programs consultant exam and hiring page.  Find info about becoming a library programs consultant here.";
     ViewBag.Keywords = "California State Library, Diital Image Reproduction, CA, Legislators, State Library, California, programs, consultant, work with  us, exam, hiring";
@@ -8,7 +8,7 @@
 <head>
     <title>@(ViewBag.Title)</title>
     <meta name="Author" content="State of California" />
-    <meta name="Description" content="State of California" />
+    <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="California, government" />
 
 </head>
@@ -17,8 +17,13 @@
     <div class="container">
         <main class="main-primary">
             <div class="section">
-                <ol class="breadcrumb dynamic"></ol>
-                <h2 class="page-title">@ViewBag.Title</h2>
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/work-with-us">Work With Us</a></li>
+                    <li><a href="/work-with-us/jobs">Jobs</a></li>
+                    <li>Library Programs Consultant Exam</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
                 <p>
                     Thank you for your interest in the Library Programs Consultant job. You can find all the information you need to apply for the examination and to be considered for these jobs here.
                 </p>

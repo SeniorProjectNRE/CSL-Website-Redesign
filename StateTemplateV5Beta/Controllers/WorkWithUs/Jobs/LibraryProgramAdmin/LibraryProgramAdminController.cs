@@ -31,6 +31,13 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.LibraryProgramAdmin
             return View("~/Views/WorkWithUs/Jobs/LibraryProgramAdmin/LibraryProgramAdmin.cshtml");
         }
 
+        [Route("success")]
+        // GET: success
+        public ActionResult Success()
+        {
+            return View("~/Views/WorkWithUs/Jobs/LibraryProgramAdmin/Success.cshtml");
+        }
+
         [HttpGet]
         [Route("apply")]
         public ActionResult Apply()
@@ -88,7 +95,7 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.LibraryProgramAdmin
 
                 ModelState.Clear();
                 model.Success = res;
-                return RedirectToAction("success", "jobs");
+                return RedirectToAction("success", "libraryprogramadmin");
             }
             catch (Exception ex)
             {
