@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "CSL - California Research Bureau Newsletters";
-    ViewBag.Author = "Dmitriy Rusetskiy";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "Subscribe to the California Research Bureau's free, weekly newsletters, Lunch with a side of Research and Studies in the News.";
     ViewBag.Keywords = "California, state, Library, Policies";
 }
@@ -17,7 +17,626 @@
     <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
+<style>
+    @@media (min-width: 1280px) {
+        #title-page {
+            display: none;
+        }
+
+        #page-banner {
+            display: block;
+        }
+    }
+
+    @@media (max-width: 767px) {
+        #title-page {
+            display: block;
+        }
+
+        #page-banner {
+            display: none;
+        }
+    }
+
+    .link-icon img {
+        width:auto;
+    }
+
+    .color-box {
+        height:auto;
+        padding-bottom:0;
+    }
+
+    .transp-p {
+        text-align: center;
+        color: #fff;
+        opacity: 0.5;
+        padding: 0;
+        margin-top: 10px;
+        font-size:1.1em;
+    }
+
+    .white-title {
+        margin:0;
+    }
+
+    .blue-div {
+        font-weight: normal;
+        color: #333333;
+    }
+        .blue-div p {
+            color: #333333;
+        }
+    .panel-default > .panel-heading {
+        background-color: #0a5b82;
+        border: 0;
+    }
+
+    .panel-title > a {
+        color: #fff;
+        font-size: 2.2em;
+    }
+
+    .panel-default .panel-body {
+        background-color: #d8e2eb;
+    }
+
+    .accordion .panel-heading .panel-title a:after, .panel-group .panel-heading .panel-title a:after, .service-tile-content .panel-heading .panel-title a:after {
+        color: #fff;
+        top: 36%;
+    }
+</style>
+
 <div id="main-content" class="main-content">
+    <div class="container">
+        <main class="main-primary">
+            <!-- InstanceBeginEditable name="MainContent" -->
+            <!--Home | Services | Research By CSL | CRB | Newsletters-->
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/services/research/">Resarch By CSL</a></li>
+                <li class="active"><a href="/crb/">CRB</a></li>
+                <li class="active">Newsletters</li>
+            </ol>
+            <h1 id="title-page">California Research Bureau</h1>
+            <img id="page-banner" src="~/Content/StateTemplate/images/crb/newsletters/sitn-top.jpg" style="width:100%" alt="" />
+            <div class="icons">
+                <div class="link-icon">
+                    <img class="animate-pulse" src="~/Content/StateTemplate/images/crb/newsletters/crb-home.png" alt="" /><br />
+                    <a class="animate-pulse" href="/crb">About CRB</a>
+                </div>
+                <div class="link-icon animate-pulse">
+                    <img class="animate-pulse" src="~/Content/StateTemplate/images/crb/newsletters/reports.png" alt="" /><br />
+                    <a class="animate-pulse" href="/crb/reports-events/">Public reports</a>
+                </div>
+                <div class="link-icon">
+                    <img class="animate-pulse" src="~/Content/StateTemplate/images/crb/newsletters/resources.png" alt="" /><br />
+                    <a class="animate-pulse" href="/services/online-resources">Online Resources</a>
+                </div>
+                <div class="link-icon">
+                    <img class="animate-pulse" src="~/Content/StateTemplate/images/crb/newsletters/staff.png" alt="" /><br />
+                    <a class="animate-pulse" href="/crb/staff">Staff Directory</a>
+                </div>
+            </div>
+            <div class="half">
+                <div class="color-box" style="background-color:#547e4d;">
+                    <div class="wrap">
+                        <div class="div-divider" style="height:auto">
+                            <h3 class="white-title" style="padding:15px 0 0px 15px; font-size:1.8em; text-align:center;">
+                                Lunch with a side of Research
+                            </h3>
+                            <p class="transp-p">
+                                Weekly delivery to your inbox
+                            </p>
+                        </div>
+                        <div style="margin:0 auto; text-align:center">
+                            <a href="" class="btn btn-primary">SIGN-UP TODAY</a>
+                        </div>
+                    </div>
+                </div>
+                <p style="padding-top:20px">
+                    <strong>Lunch with a side of Research</strong> is a free weekly email that lists all upcoming events in Sacramento that include both a free lunch and a public policy research discussion. The Research Bureau releases a new issue each Monday at 8 a.m.
+                </p>
+            </div>
+            <div class="half">
+                <div class="color-box" style="background-color:#cb7104;">
+                    <div class="wrap">
+                        <div class="div-divider" style="height:auto">
+                            <h3 class="white-title" style="padding:15px 0 0px 15px; font-size:1.8em; text-align:center">
+                                Studies in the News
+                            </h3>
+                            <p class="transp-p">
+                                Weekly delivery to your inbox
+                            </p>
+                        </div>
+                        <div style="margin:0 auto; text-align:center">
+                            <a href="" class="btn btn-primary">SIGN-UP TODAY</a>
+                        </div>
+                    </div>
+                </div>
+                <p style="padding:20px 0 20px 0">
+                    <strong>Studies in the News</strong> is a weekly roundup of high-quality research and surveys on policy issues relevant to California. The Research Bureau releases a new issue each Wednesday at 8 a.m. You can also subscribe to an <a href="">RSS feed</a> to be alerted as new issues of Studies in the News are released.
+                </p>
+            </div>
+            <div style="clear: both;"></div>
+        </main>
+    </div>
+    <div class="blue-div" style="background-color: #d8e2eb; text-align:left">
+        <div class="container">
+            <div class="half">
+                <h2 class="blue" style="color:#0a5b82">ARCHIVE</h2>
+                <p>
+                    Past issues of <strong>Studies in the News</strong> are archived below. To obtain full-text copies of materials mentioned in Studies in the News, use the URL provided in each issue for readily-available online items. For other studies:
+                </p>
+                <ul>
+                    <li>California state employees may contact Information Services Section at <a href="phone:+19166540261">(916) 654-0261</a> or <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a> with the desired study title and SITN issue date, and library staff will provide the requested publications.</li>
+                    <li>All other interested individuals should contact their local library &ndash; the items may be available there, or may be borrowed by your local library on your behalf.</li>
+                </ul>
+            </div>
+            <div class="half" style="text-align:center"><img class="animate-slideInRight" src="~/Content/StateTemplate/images/crb/newsletters/archive.png" style="padding:40px 20px 20px 20px; max-width:350px" alt="" /></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-primary">
+            <div class="wrap">
+                <p style="padding:20px 0 30px 0">
+                    <span class="ca-gov-icon-info" aria-hidden="true"></span> Click on the year below to expand the information.
+                </p>
+
+                <div class="panel-group" id="example-accordion1" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">2017</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170927.pdf" target="_blank">2017, September 27</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170920.pdf" target="_blank">2017, September 20</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170913.pdf" target="_blank">2017, September 13</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170906.pdf" target="_blank">2017, September 6</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170830.pdf" target="_blank">2017, August 30</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170823.pdf" target="_blank">2017, August 23</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170816.pdf" target="_blank">2017, August 16</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170809.pdf" target="_blank">2017, August 9</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170802.pdf" target="_blank">2017, August 2</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170726.pdf" target="_blank">2017, July 26</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170719.pdf" target="_blank">2017, July 19</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170712.pdf" target="_blank">2017, July 12</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170705.pdf" target="_blank">2017, July 5</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170628.pdf" target="_blank">2017, June 28</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170621.pdf" target="_blank">2017, June 21</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170614.pdf" target="_blank">2017, June 14</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170607.pdf" target="_blank">2017, June 7</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170531.pdf" target="_blank">2017, May 31</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170524.pdf" target="_blank">2017, May 24</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170517.pdf" target="_blank">2017, May 17</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170510.pdf" target="_blank">2017, May 10</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170503.pdf" target="_blank">2017, May 3</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170426.pdf" target="_blank">2017, Apr. 26</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170419.pdf" target="_blank">2017, Apr. 19</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170412.pdf" target="_blank">2017, Apr. 12</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170405.pdf" target="_blank">2017, Apr. 5</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170329.pdf" target="_blank">2017, Mar. 29</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170322.pdf" target="_blank">2017, Mar. 22</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170315.pdf" target="_blank">2017, Mar. 15</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170308.pdf" target="_blank">2017, Mar. 8</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170301.pdf" target="_blank">2017, Mar. 1</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170222.pdf" target="_blank">2017, Feb. 22</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170215.pdf" target="_blank">2017, Feb. 15</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170208.pdf" target="_blank">2017, Feb. 8</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170201.pdf" target="_blank">2017, Feb. 1</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170125.pdf" target="_blank">2017, Jan. 25</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170118.pdf" target="_blank">2017, Jan. 18</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170111.pdf" target="_blank">2017, Jan. 11</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20170104.pdf" target="_blank">2017, Jan. 4</a> Studies in the News
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2016</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20161214.pdf" target="_blank">2016, Dec. 14</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20161207.pdf" target="_blank">2016, Dec. 7</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20161130.pdf" target="_blank">2016, Nov. 30</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20161116.pdf" target="_blank">2016, Nov. 16</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20161109.pdf" target="_blank">2016, Nov. 9</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20161102.pdf" target="_blank">2016, Nov. 2</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20161026.pdf" target="_blank">2016, Oct. 26</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20161019.pdf" target="_blank">2016, Oct. 19</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20161012.pdf" target="_blank">2016, Oct. 12</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20161005.pdf" target="_blank">2016, Oct. 5</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160928.pdf" target="_blank">2016, Sep. 28</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160921.pdf" target="_blank">2016, Sep. 21</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160914.pdf" target="_blank">2016, Sep. 14</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160831.pdf" target="_blank">2016, Aug. 31</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160824.pdf" target="_blank">2016, Aug. 24</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160817.pdf" target="_blank">2016, Aug. 17</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160810.pdf" target="_blank">2016, Aug. 10</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160803.pdf" target="_blank">2016, Aug. 3</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160727.pdf" target="_blank">2016, July 27</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160720.pdf" target="_blank">2016, July 20</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160713.pdf" target="_blank">2016, July 13</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160706.pdf" target="_blank">2016, July 6</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160629.pdf" target="_blank">2016, June 29</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160622.pdf" target="_blank">2016, June 22</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160615.pdf" target="_blank">2016, June 15</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160608.pdf" target="_blank">2016, June 8</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160601.pdf" target="_blank">2016, June 1</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160525.pdf" target="_blank">2016, May 25</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160518.pdf" target="_blank">2016, May 18</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160511.pdf" target="_blank">2016, May 11</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160504.pdf" target="_blank">2016, May 4</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160427.pdf" target="_blank">2016, Apr. 27</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160420.pdf" target="_blank">2016, Apr. 20</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160413.pdf" target="_blank">2016, Apr. 13</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160406.pdf" target="_blank">2016, Apr. 6</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160330.pdf" target="_blank">2016, Mar. 30</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160323.pdf" target="_blank">2016, Mar. 23</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160316.pdf" target="_blank">2016, Mar. 16</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160309.pdf" target="_blank">2016, Mar. 9</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160302.pdf" target="_blank">2016, Mar. 2</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160224.pdf" target="_blank">2016, Feb. 24</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160217.pdf" target="_blank">2016, Feb. 17</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160210.pdf" target="_blank">2016, Feb. 10</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160203.pdf" target="_blank">2016, Feb. 3</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160127.pdf" target="_blank">2016, Jan. 27</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160120.pdf" target="_blank">2016, Jan. 20</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160113.pdf" target="_blank">2016, Jan. 13</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20160106.pdf" target="_blank">2016, Jan. 6</a> Studies in the News
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">2015</a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20151216.pdf" target="_blank">2015, Dec. 16</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20151209.pdf" target="_blank">2015, Dec. 9</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20151202.pdf" target="_blank">2015, Dec. 2</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20151118.pdf" target="_blank">2015, Nov. 18</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20151112.pdf" target="_blank">2015, Nov. 12</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20151104.pdf" target="_blank">2015, Nov. 4</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20151028.pdf" target="_blank">2015, Oct. 28</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20151021.pdf" target="_blank">2015, Oct. 21</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20151014.pdf" target="_blank">2015, Oct. 14</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20151007.pdf" target="_blank">2015, Oct. 7</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150930.pdf" target="_blank">2015, Sep. 30</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150923.pdf" target="_blank">2015, Sep. 23</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150916.pdf" target="_blank">2015, Sep. 16</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150909.pdf" target="_blank">2015, Sep. 9</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150902.pdf" target="_blank">2015, Sep. 2</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150826.pdf" target="_blank">2015, Aug. 26</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150819.pdf" target="_blank">2015, Aug. 19</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150812.pdf" target="_blank">2015, Aug. 12</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150805.pdf" target="_blank">2015, Aug. 5</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150729.pdf" target="_blank">2015, July 29</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150722.pdf" target="_blank">2015, July 22</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150715.pdf" target="_blank">2015, July 15</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150708.pdf" target="_blank">2015, July 8</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150701.pdf" target="_blank">2015, July 1</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150624.pdf" target="_blank">2015, June 24</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150617.pdf" target="_blank">2015, June 17</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150610.pdf" target="_blank">2015, June 10</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150603.pdf" target="_blank">2015, June 3</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150527.pdf" target="_blank">2015, May 27</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150520.pdf" target="_blank">2015, May 20</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150513.pdf" target="_blank">2015, May 13</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150506.pdf" target="_blank">2015, May 6</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150429.pdf" target="_blank">2015, Apr. 29</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150422.pdf" target="_blank">2015, Apr. 22</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150415.pdf" target="_blank">2015, Apr. 15</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150408.pdf" target="_blank">2015, Apr. 8</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150401.pdf" target="_blank">2015, Apr. 1</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150325.pdf" target="_blank">2015, Mar. 25</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150318.pdf" target="_blank">2015, Mar. 18</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150311.pdf" target="_blank">2015, Mar. 11</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150304.pdf" target="_blank">2015, Mar. 4</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150225.pdf" target="_blank">2015, Feb. 25</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150218.pdf" target="_blank">2015, Feb. 18</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150211.pdf" target="_blank">2015, Feb. 11</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150204.pdf" target="_blank">2015, Feb. 4</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150128.pdf" target="_blank">2015, Jan. 28</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150121.pdf" target="_blank">2015, Jan. 21</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150114.pdf" target="_blank">2015, Jan. 14</a> Studies in the News
+                                </p>
+                                <p class="regular">
+                                    <a href="~/Content/StateTemplate/pdf/crb/newsletters/20150107.pdf" target="_blank">2015, Jan. 7</a> Studies in the News
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="spacer"></div>
+    </div>
+</div>
+
+@*<div id="main-content" class="main-content">
     <main class="main-primary">
         <div class="section">
             <div class="container">
@@ -493,5 +1112,5 @@
             </div>
         </div>
     </main>
-</div>
+</div>*@
 

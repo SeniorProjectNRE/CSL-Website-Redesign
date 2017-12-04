@@ -12,10 +12,6 @@
     <meta name="Author" content="@(ViewBag.Author)" />
     <meta name="Description" content="@(ViewBag.Description)" />
     <meta name="Keywords" content="@(ViewBag.Keywords)" />
-
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
 </head>
 
 <div id="main-content" class="main-content">
@@ -23,7 +19,12 @@
         <div class="section">
             <div class="container">
 
-                <ol class="breadcrumb dynamic"></ol>
+                <ol class="breadcrumb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/collections">Our Collections</a></li>
+                    <li><a href="/sutro">Sutro</a></li>
+                    <li>Genealogy</li>
+                </ol>
                 <h2 class="page-title">@(ViewBag.PageTitle)</h2>
 
                 <p>

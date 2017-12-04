@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Women's March";
+    ViewBag.Title = "CSL - California Womens March Collection";
     ViewBag.PageTitle = "Women's March";
     ViewBag.Banner = "womensmarch1.jpg";
     ViewBag.Author = "California State Library";
@@ -9,9 +9,9 @@
 
 <head>
     <title>@(ViewBag.Title)</title>
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/random.css" media="screen, projection, print, tv" type="text/css" />
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
 </head>
 
 <div id="main-content" class="main-content">
@@ -23,10 +23,10 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/collections">Our Collections</a></li>
                 <li><a href="/sutro">Sutro</a></li>
-                <li>Womens March</li>
+                <li>Women's March</li>
             </ol>
 
-            <h2 class="page-title" id="title">@ViewBag.Title</h2>
+            <h2 class="page-title" id="title">@ViewBag.PageTitle</h2>
 
             <img src="~/Content/StateTemplate/images/banner/@(ViewBag.Banner)" style="width:100%" alt="" class="animated fadeInLeft" />
         </div>
@@ -309,6 +309,6 @@
 
                 </div>
             </div>
-            </div>
+        </div>
     </main>
 </div>

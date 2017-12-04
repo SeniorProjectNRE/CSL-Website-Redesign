@@ -1,276 +1,169 @@
 ﻿
 @{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "CSL - Contact the California State Library";
+    ViewBag.PageTitle = "Contact Us";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "Contact the California State Library";
+    ViewBag.Keywords = "Contact, Contact Info";
 }
 
 <head>
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom.css" media="screen, projection, print, tv" type="text/css" />
-    <link rel="stylesheet" href="~/Content/StateTemplate/css/custom1.css" media="screen, projection, print, tv" type="text/css" />
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
 </head>
 
 <!-- possible body classes are "primary" and "two-column" -->
-    <div id="main-content" class="main-content">
+<div id="main-content" class="main-content">
 
-        <div class="container">
-            <main class="main-primary">
-                <!-- InstanceBeginEditable name="MainContent" -->
-                <ol class="breadcrumb">
-                    <li><a href="">Home</a></li>
-                    <!--<li><a href="/sample/index.html">Examples</a></li>-->
-                    <li class="active"><a href="/contact">Contact Us</a></li>
-                </ol>
-                <h1 id="title-page">Contact Us</h1>
-                <img id="page-banner" src="~/Content/StateTemplate/images/contact-top.jpg" style="width:100%" alt="" />
-                <div class="columns">
-                    <p>The California State Library staff is available to help you via telephone, mail, and email.</p>
-                </div>
-                <div class="animate-fadeInRight">
-                    <div class="holidays">
-                        <a href="">2017 state holidays</a>
-                    </div>
-                </div>
-                <div style="clear: both;"></div>
-
-                <!--<p>To provide state template v5 Beta feedback use GitHub otherwise feel free to contact us by visiting <a href="http://webtools.ca.gov/about-web-tools/contact-us/">this page</a>.</p>
-                <p>Feel free to <a href="http://Info.Eservices@state.ca.gov/">Subscribe</a> to the Webmaster User Group for state template updates, group announcements and events. You can also visit the <a href="http://webtools.ca.gov/">Webtools</a> website for more information. To contact us about the state template please visit <a href="http://webtools.ca.gov/about-web-tools/contact-us/">this page</a>.<br>
-                </p>
-                <p>This website is managed by the California Department of Technology.</p>
-                <article><p>&nbsp;</p>
-                    </article>
-                <!-- InstanceEndEditable -->
-            </main>
-        </div>
-        <div class="blue-div">
-            <div class="threecolumns">
-                <h2>Public Service Locations</h2>
-                <div class="columns-wrapper">
-                    <div class="columns" style="padding-top:0; margin-top:0;">
-                        <img src="~/Content/StateTemplate/images/contact/LCI.jpg" alt="LCI" />
-                        <div class="wrap">
-                            <div class="address-icon" style="width:auto; float:left; padding:20px 0">
-                                <span class="ca-gov-icon-road-pin" style="font-size:2em; margin-left:-9px; width:auto;"></span>
-                            </div>
-                            <div style="float:left">
-                                <h3>
-                                    Stanley Mosk Library & Courts Building<br />
-                                    914 Capitol Mall<br />
-                                    Sacramento, CA 95814
-                                </h3>
-                            </div>
-                            <div style="clear: both;"></div>
-                            <h3><span class="ca-gov-icon-phone" style="font-size:1.5em; padding-right:9px; margin-top:15px"></span> (916) 323-9843</h3>
-                            <h3>
-                                <span class="ca-gov-icon-email" style="font-size:1.5em; padding-right:9px; margin-top:15px"></span>
-                                <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a>
-                            </h3>
-                            <h3><span class="ca-gov-icon-time" style="font-size:1.5em; padding-right:9px; margin-top:15px"></span> Monday - Friday, 9:30am - 4pm</h3>
-                            <div style="clear: both;"></div>
-                        </div>
-                         
-                    </div>
-                    <div class="columns" style="padding-top:0; margin-top:0;">
-                        <img src="~/Content/StateTemplate/images/contact/LCII.jpg" alt="LCII" />
-                        <div class="wrap">
-                            <div class="address-icon" style="width:auto; float:left; padding:20px 0">
-                                <span class="ca-gov-icon-road-pin" style="font-size:2em; margin-left:-9px"></span>
-                            </div>
-                            <div style="float:left">
-                                <h3>
-                                    California State Library<br />
-                                    900 N Street<br />
-                                    Sacramento, CA 95814-4869
-                                </h3>
-                            </div>
-                            <div style="clear: both;"></div>
-                            <h3><span class="ca-gov-icon-phone" style="font-size:1.5em; padding-right:9px; margin-top:5px"></span> (916) 323-9843</h3>
-                            <h3><span class="ca-gov-icon-email" style="font-size:1.5em; padding-right:9px; margin-top:5px"></span> <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a></h3>
-                            <h3><span class="ca-gov-icon-time" style="font-size:1.5em; padding-right:9px; margin-top:5px"></span> Monday - Friday, 9:30am - 4pm</h3>
-                            <div style="clear: both;"></div>
-                        </div>
-                         
-                    </div>
-                    <div class="columns" style="padding-top:0; margin-top:0; margin-right:0">
-                        <img src="~/Content/StateTemplate/images/contact/sutro.jpg" alt="Sutro" />
-                        <div class="wrap">
-                            <div class="address-icon" style="width:auto; float:left; padding:20px 0">
-                                <span class="ca-gov-icon-road-pin" style="font-size:2em; margin-left:-9px"></span>
-                            </div>
-                            <div style="float:left">
-                                <h3>
-                                    Paul Leonard Library - Sutro Library<br />
-                                    1630 Holloway Avenue<br />
-                                    San Francisco, CA 94132
-                                </h3>
-                            </div>
-                            <div style="clear: both;"></div>
-                            <h3><span class="ca-gov-icon-phone" style="font-size:1.5em; padding-right:9px; margin-top:5px"></span> (415) 469-6100</h3>
-                            <h3><span class="ca-gov-icon-email" style="font-size:1.5em; padding-right:9px; margin-top:5px"></span> <a href="mailto:cslinfo@library.ca.gov">sutro@library.ca.gov</a></h3>
-                            <h3><span class="ca-gov-icon-time" style="font-size:1.5em; padding-right:9px; margin-top:5px"></span> Monday - Friday, 10am - 4pm</h3>
-                            <div style="clear: both;"></div>
-                        </div>
-                        
-                    </div><div style="clear: both;"></div>
-                </div>
-            </div>
-        </div>
-        <div class="threecolumns">
-            <div class="twocolumns">
-                <p>
-                    The California State Library welcomes feedback and suggestions concerning our resources, programs, and services. We are also here to help you find information.
-                </p>
+    <div class="container">
+        <main class="main-primary">
+            <!-- InstanceBeginEditable name="MainContent" -->
+            <ol class="breadcrumb">
+                <li><a href="">Home</a></li>
+                <!--<li><a href="/sample/index.html">Examples</a></li>-->
+                <li class="active"><a href="/contact">Contact Us</a></li>
+            </ol>
+            <h1 id="title-page">Contact Us</h1>
+            <img id="page-banner" src="~/Content/StateTemplate/images/contact-top.jpg" style="width:100%" alt="" />
+            <div class="columns">
+                <p>The California State Library staff is available to help you via telephone, mail, and email.</p>
             </div>
             <div class="animate-fadeInRight">
-                <div class="box-with-border">
-                    <p>
-                        Mailing address for all locations:<br />
-                        P.O. Box 942837<br />
-                        Sacramento, CA 94237-0001
-                    </p>
+                <div class="holidays">
+                    <a href="">2017 state holidays</a>
                 </div>
             </div>
             <div style="clear: both;"></div>
-            <h2 class="orange">LIBRARY SECTIONS</h2>
-            <h4 style="text-align:center; color:#0a5b82; font-weight:bold; text-transform: uppercase">Public Service Desks</h4>
-            <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
-                <div class="expand-div">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Braille and Talking Book Library</a>
-                            </h4>
+
+            <!--<p>To provide state template v5 Beta feedback use GitHub otherwise feel free to contact us by visiting <a href="http://webtools.ca.gov/about-web-tools/contact-us/">this page</a>.</p>
+            <p>Feel free to <a href="http://Info.Eservices@state.ca.gov/">Subscribe</a> to the Webmaster User Group for state template updates, group announcements and events. You can also visit the <a href="http://webtools.ca.gov/">Webtools</a> website for more information. To contact us about the state template please visit <a href="http://webtools.ca.gov/about-web-tools/contact-us/">this page</a>.<br>
+            </p>
+            <p>This website is managed by the California Department of Technology.</p>
+            <article><p>&nbsp;</p>
+                </article>
+            <!-- InstanceEndEditable -->
+        </main>
+    </div>
+    <div class="blue-div">
+        <div class="threecolumns">
+            <h2>Public Service Locations</h2>
+            <div class="columns-wrapper">
+                <div class="columns" style="padding-top:0; margin-top:0;">
+                    <img src="~/Content/StateTemplate/images/contact/LCI.jpg" alt="LCI" />
+                    <div class="wrap">
+                        <div class="address-icon" style="width:auto; float:left; padding:20px 0">
+                            <span class="ca-gov-icon-road-pin" style="font-size:2em; margin-left:-9px; width:auto;"></span>
                         </div>
-                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body">
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 654-0640</h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:btbl@library.ca.gov">btbl@library.ca.gov</a></h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Mike Marlin - Section Head</h4>
-                            </div>
+                        <div style="float:left">
+                            <h3>
+                                Stanley Mosk Library & Courts Building<br />
+                                914 Capitol Mall<br />
+                                Sacramento, CA 95814
+                            </h3>
                         </div>
+                        <div style="clear: both;"></div>
+                        <h3><span class="ca-gov-icon-phone" style="font-size:1.5em; padding-right:9px; margin-top:15px"></span> (916) 323-9843</h3>
+                        <h3>
+                            <span class="ca-gov-icon-email" style="font-size:1.5em; padding-right:9px; margin-top:15px"></span>
+                            <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a>
+                        </h3>
+                        <h3><span class="ca-gov-icon-time" style="font-size:1.5em; padding-right:9px; margin-top:15px"></span> Monday - Friday, 9:30am - 4pm</h3>
+                        <div style="clear: both;"></div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Information Services Section</a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body">
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 323-9843</h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a></h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Lillian Chow - Section Head</h4>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
-                    <div class="expand-div">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingThree">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">California History Room</a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 654-0176</h4>
-                                    <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:cslcal@library.ca.gov">cslcal@library.ca.gov</a></h4>
-                                    <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Kathleen Correia - Section Head</h4>
-                                </div>
-                            </div>
+                <div class="columns" style="padding-top:0; margin-top:0;">
+                    <img src="~/Content/StateTemplate/images/contact/LCII.jpg" alt="LCII" />
+                    <div class="wrap">
+                        <div class="address-icon" style="width:auto; float:left; padding:20px 0">
+                            <span class="ca-gov-icon-road-pin" style="font-size:2em; margin-left:-9px"></span>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingFour">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Sutro Library</a>
-                                </h4>
-                            </div>
-                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                <div class="panel-body">
-                                    <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (415) 469-6100</h4>
-                                    <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:sutro@library.ca.gov">sutro@library.ca.gov</a></h4>
-                                    <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Mattie Taormina - Section Head</h4>
-                                </div>
-                            </div>
+                        <div style="float:left">
+                            <h3>
+                                California State Library<br />
+                                900 N Street<br />
+                                Sacramento, CA 95814-4869
+                            </h3>
                         </div>
+                        <div style="clear: both;"></div>
+                        <h3><span class="ca-gov-icon-phone" style="font-size:1.5em; padding-right:9px; margin-top:5px"></span> (916) 323-9843</h3>
+                        <h3><span class="ca-gov-icon-email" style="font-size:1.5em; padding-right:9px; margin-top:5px"></span> <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a></h3>
+                        <h3><span class="ca-gov-icon-time" style="font-size:1.5em; padding-right:9px; margin-top:5px"></span> Monday - Friday, 9:30am - 4pm</h3>
+                        <div style="clear: both;"></div>
                     </div>
+
                 </div>
-                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
-                    <div class="expand-div" style="padding-right:0">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingFive">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Government Publications Section</a>
-                                </h4>
-                            </div>
-                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                <div class="panel-body">
-                                    <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 323-9845</h4>
-                                    <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:cslgps@library.ca.gov">cslgps@library.ca.gov</a></h4>
-                                    <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Lillian Chow - Section Head</h4>
-                                </div>
-                            </div>
+                <div class="columns" style="padding-top:0; margin-top:0; margin-right:0">
+                    <img src="~/Content/StateTemplate/images/contact/sutro.jpg" alt="Sutro" />
+                    <div class="wrap">
+                        <div class="address-icon" style="width:auto; float:left; padding:20px 0">
+                            <span class="ca-gov-icon-road-pin" style="font-size:2em; margin-left:-9px"></span>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingSix">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Witkin State Law Library of California</a>
-                                </h4>
-                            </div>
-                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                                <div class="panel-body">
-                                    <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 323-9839</h4>
-                                    <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:csllaw@library.ca.gov">csllaw@library.ca.gov</a></h4>
-                                    <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Lillian Chow - Section Head</h4>
-                                </div>
-                            </div>
+                        <div style="float:left">
+                            <h3>
+                                Paul Leonard Library - Sutro Library<br />
+                                1630 Holloway Avenue<br />
+                                San Francisco, CA 94132
+                            </h3>
                         </div>
+                        <div style="clear: both;"></div>
+                        <h3><span class="ca-gov-icon-phone" style="font-size:1.5em; padding-right:9px; margin-top:5px"></span> (415) 469-6100</h3>
+                        <h3><span class="ca-gov-icon-email" style="font-size:1.5em; padding-right:9px; margin-top:5px"></span> <a href="mailto:cslinfo@library.ca.gov">sutro@library.ca.gov</a></h3>
+                        <h3><span class="ca-gov-icon-time" style="font-size:1.5em; padding-right:9px; margin-top:5px"></span> Monday - Friday, 10am - 4pm</h3>
+                        <div style="clear: both;"></div>
                     </div>
-                </div>
+
+                </div><div style="clear: both;"></div>
             </div>
-            <div style="clear: both;"></div>
-            <h4 style="text-align:center; color:#0a5b82; font-weight:bold; text-transform: uppercase">Other State Library Sections</h4>
-            <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
-                <div class="expand-div">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingSeven">
-                            <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">California Research Bureau</a>
-                            </h4>
-                        </div>
-                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                            <div class="panel-body">
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 653-7843</h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:crb@library.ca.gov">crb@library.ca.gov</a></h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Anne Neville - Bureau Chief</h4>
-                            </div>
+        </div>
+    </div>
+    <div class="threecolumns">
+        <div class="twocolumns">
+            <p>
+                The California State Library welcomes feedback and suggestions concerning our resources, programs, and services. We are also here to help you find information.
+            </p>
+        </div>
+        <div class="animate-fadeInRight">
+            <div class="box-with-border">
+                <p>
+                    Mailing address for all locations:<br />
+                    P.O. Box 942837<br />
+                    Sacramento, CA 94237-0001
+                </p>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <h2 class="orange">LIBRARY SECTIONS</h2>
+        <h4 style="text-align:center; color:#0a5b82; font-weight:bold; text-transform: uppercase">Public Service Desks</h4>
+        <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+            <div class="expand-div">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Braille and Talking Book Library</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 654-0640</h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:btbl@library.ca.gov">btbl@library.ca.gov</a></h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Mike Marlin - Section Head</h4>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingEight">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">Human Resource Services</a>
-                            </h4>
-                        </div>
-                        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-                            <div class="panel-body">
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 654-0202</h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a></h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Virginia Perry - Section Head</h4>
-                            </div>
-                        </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Information Services Section</a>
+                        </h4>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingNine">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Small Business Advocate</a>
-                            </h4>
-                        </div>
-                        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-                            <div class="panel-body">
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 654-0158</h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:Timothy.Burkhart@library.ca.gov">Timothy.Burkhart@library.ca.gov</a></h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Timothy Burkhart</h4>
-                            </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 323-9843</h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a></h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Lillian Chow - Section Head</h4>
                         </div>
                     </div>
                 </div>
@@ -278,44 +171,30 @@
             <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
                 <div class="expand-div">
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTen">
+                        <div class="panel-heading" role="tab" id="headingThree">
                             <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">Capitol Branch</a>
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">California History Room</a>
                             </h4>
                         </div>
-                        <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body">
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 319-2691</h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:crb@library.ca.gov">crb@library.ca.gov</a></h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Maeve Roche - Manager</h4>
+                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 654-0176</h4>
+                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:cslcal@library.ca.gov">cslcal@library.ca.gov</a></h4>
+                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Kathleen Correia - Section Head</h4>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingEleven">
+                        <div class="panel-heading" role="tab" id="headingFour">
                             <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">Information Technology Bureau</a>
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Sutro Library</a>
                             </h4>
                         </div>
-                        <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                             <div class="panel-body">
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 653-9485</h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:cslitb@library.ca.gov">cslitb@library.ca.gov</a></h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Michael Martinez - Bureau Chief</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwelve">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">State Librarian's Office</a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
-                            <div class="panel-body">
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 323-9759</h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:csl-adm@library.ca.gov">csl-adm@library.ca.gov</a></h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Greg Lucas - State Librarian</h4>
+                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (415) 469-6100</h4>
+                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:sutro@library.ca.gov">sutro@library.ca.gov</a></h4>
+                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Mattie Taormina - Section Head</h4>
                             </div>
                         </div>
                     </div>
@@ -324,52 +203,179 @@
             <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
                 <div class="expand-div" style="padding-right:0">
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading13">
+                        <div class="panel-heading" role="tab" id="headingFive">
                             <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse13">Communications Office</a>
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Government Publications Section</a>
                             </h4>
                         </div>
-                        <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                             <div class="panel-body">
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 653-3883</h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:alex.vassar@library.ca.gov">Alex.Vassar@library.ca.gov</a></h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Alex Vassar</h4>
+                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 323-9845</h4>
+                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:cslgps@library.ca.gov">cslgps@library.ca.gov</a></h4>
+                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Lillian Chow - Section Head</h4>
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading14">
+                        <div class="panel-heading" role="tab" id="headingSix">
                             <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">Library Development Services Bureau</a>
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Witkin State Law Library of California</a>
                             </h4>
                         </div>
-                        <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                             <div class="panel-body">
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 653-5217</h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:csllds@library.ca.gov">csllds@library.ca.gov</a></h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Wendy Hopkins - Bureau Chief</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading15">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse15" aria-expanded="false" aria-controls="collapse15">State Library Services Bureau</a>
-                            </h4>
-                        </div>
-                        <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
-                            <div class="panel-body">
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 651-3180</h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a></h4>
-                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Rebecca Wendt - Bureau Chief</h4>
+                                <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 323-9839</h4>
+                                <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:csllaw@library.ca.gov">csllaw@library.ca.gov</a></h4>
+                                <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Lillian Chow - Section Head</h4>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="clear: both;"></div>
-            <div class="spacer"></div>
         </div>
+        <div style="clear: both;"></div>
+        <h4 style="text-align:center; color:#0a5b82; font-weight:bold; text-transform: uppercase">Other State Library Sections</h4>
+        <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+            <div class="expand-div">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSeven">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#example-accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">California Research Bureau</a>
+                        </h4>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                        <div class="panel-body">
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 653-7843</h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:crb@library.ca.gov">crb@library.ca.gov</a></h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Anne Neville - Bureau Chief</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingEight">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">Human Resource Services</a>
+                        </h4>
+                    </div>
+                    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                        <div class="panel-body">
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 654-0202</h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a></h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Virginia Perry - Section Head</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingNine">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Small Business Advocate</a>
+                        </h4>
+                    </div>
+                    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                        <div class="panel-body">
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 654-0158</h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:Timothy.Burkhart@library.ca.gov">Timothy.Burkhart@library.ca.gov</a></h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Timothy Burkhart</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+            <div class="expand-div">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTen">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">Capitol Branch</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                        <div class="panel-body">
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 319-2691</h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:crb@library.ca.gov">crb@library.ca.gov</a></h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Maeve Roche - Manager</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingEleven">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">Information Technology Bureau</a>
+                        </h4>
+                    </div>
+                    <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                        <div class="panel-body">
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 653-9485</h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:cslitb@library.ca.gov">cslitb@library.ca.gov</a></h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Michael Martinez - Bureau Chief</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwelve">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">State Librarian's Office</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+                        <div class="panel-body">
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 323-9759</h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:csl-adm@library.ca.gov">csl-adm@library.ca.gov</a></h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Greg Lucas - State Librarian</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+            <div class="expand-div" style="padding-right:0">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading13">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse13">Communications Office</a>
+                        </h4>
+                    </div>
+                    <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                        <div class="panel-body">
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 653-3883</h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:alex.vassar@library.ca.gov">Alex.Vassar@library.ca.gov</a></h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Alex Vassar</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading14">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">Library Development Services Bureau</a>
+                        </h4>
+                    </div>
+                    <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+                        <div class="panel-body">
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 653-5217</h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:csllds@library.ca.gov">csllds@library.ca.gov</a></h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Wendy Hopkins - Bureau Chief</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading15">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapse15" aria-expanded="false" aria-controls="collapse15">State Library Services Bureau</a>
+                        </h4>
+                    </div>
+                    <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+                        <div class="panel-body">
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-phone"></span> (916) 651-3180</h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-email"></span> <a href="mailto:cslinfo@library.ca.gov">cslinfo@library.ca.gov</a></h4>
+                            <h4 style="margin:10px 0"><span class="ca-gov-icon-user-id"></span> Rebecca Wendt - Bureau Chief</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="spacer"></div>
     </div>
+</div>
 
 
