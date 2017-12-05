@@ -939,6 +939,17 @@
     <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeInvestment.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\BroadbandInitiativeResults.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\CARevealed\ca_revealed.png" />
+    <Content Include="Content\StateTemplate\images\banner\clsa_banner.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\CLSA\Bernardo.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\CLSA\christmas.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\CLSA\Huguenin.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\CLSA\ibanez.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\CLSA\Mahsoudi.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\CLSA\mcginity.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\CLSA\Mindnich.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\CLSA\murguia.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\CLSA\Schockman.jpg" />
+    <Content Include="Content\StateTemplate\images\services\toLibraries\CLSA\Williams.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\comingsoon.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\cooperate.jpg" />
     <Content Include="Content\StateTemplate\images\services\toLibraries\docs.jpg" />
