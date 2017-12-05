@@ -835,6 +835,7 @@
     <Content Include="Content\StateTemplate\images\CSL_picj.jpg" />
     <Content Include="Content\StateTemplate\images\digitizedResources\1.png" />
     <Content Include="Content\StateTemplate\images\digitizedResources\2.png" />
+    <Content Include="Content\StateTemplate\images\error\browser.jpg" />
     <Content Include="Content\StateTemplate\images\exhibit\1.jpg" />
     <Content Include="Content\StateTemplate\images\exhibit\1_001.jpg" />
     <Content Include="Content\StateTemplate\images\exhibit\1_002.jpg" />
