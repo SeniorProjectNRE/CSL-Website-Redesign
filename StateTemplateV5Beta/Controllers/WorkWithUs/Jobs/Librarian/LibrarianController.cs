@@ -109,20 +109,21 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
                     _examService.FillSeniorLibrarianExam(model, pdfSeniorLibrarianTemplate, newFile);
                 }
 
-                bool res = _emailService.SendLibrarianExamEmail(newFile, model);
-
-                if (System.IO.File.Exists(HostingEnvironment.MapPath(newFile)))
+                try
                 {
-                    System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
-                }
+                    _emailService.SendLibrarianExamEmail(newFile, model);
 
-                if (res == false)
+                    if (System.IO.File.Exists(HostingEnvironment.MapPath(newFile)))
+                    {
+                        System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
+                    }
+                }
+                catch(Exception e)
                 {
                     return RedirectToAction("EmailError", "error");
                 }
 
                 ModelState.Clear();
-                model.Success = res;
                 //return View("~/Views/WorkWithUs/Jobs/Librarian/Apply.cshtml", model);
                 return RedirectToAction("success", "librarian");
             }

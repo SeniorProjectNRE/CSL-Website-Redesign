@@ -15,56 +15,48 @@ namespace CSLBusinessLayer.Concrete
 {
     public class EmailService : IEmailService
     {
-        public bool SendLibrarianExamEmail(string file, LibrarianModel model)
+        public void SendLibrarianExamEmail(string file, LibrarianModel model)
         {
-            try
+            // Command line argument must the SMTP host.
+            SmtpClient client = new SmtpClient();
+            client.Port = 587;
+            client.Host = "smtp.gmail.com";
+            client.EnableSsl = true;
+            client.Timeout = 10000;
+            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            client.UseDefaultCredentials = false;
+            client.Credentials = new System.Net.NetworkCredential("seniorprojectteamnre@gmail.com", "Testing!23");
+
+            string subject;
+            if (model.IsLibrarian = true && model.IsSeniorLibrarian == false)
             {
-                // Command line argument must the SMTP host.
-                SmtpClient client = new SmtpClient();
-                client.Port = 587;
-                client.Host = "smtp.gmail.com";
-                client.EnableSsl = true;
-                client.Timeout = 10000;
-                client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                client.UseDefaultCredentials = false;
-                client.Credentials = new System.Net.NetworkCredential("seniorprojectteamnre@gmail.com", "Testing!23");
-
-                string subject;
-                if (model.IsLibrarian = true && model.IsSeniorLibrarian == false)
-                {
-                    subject = "New Librarian Supplemental Application - " + model.Name;
-                }
-                else subject = "New Senior Librarian Supplemental Application - " + model.Name;
-
-                MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", subject, LibrarianExamEmailBuilder(model));
-                mm.IsBodyHtml = true;
-                mm.BodyEncoding = UTF8Encoding.UTF8;
-                mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
-
-
-
-                mm.Attachments.Add(new Attachment(HostingEnvironment.MapPath(file)));
-                if (model.ResumeUpload != null && model.ResumeUpload.ContentLength > 0)
-                {
-                    try
-                    {
-                        string fileName = Path.GetFileName(model.ResumeUpload.FileName);
-                        var attachment = new Attachment(model.ResumeUpload.InputStream, fileName);
-                        mm.Attachments.Add(attachment);
-                    }
-                    catch (Exception) { }
-                }
-
-                client.Send(mm);
-
-                mm.Attachments.Dispose();
-
-                return true;
+                subject = "New Librarian Supplemental Application - " + model.Name;
             }
-            catch
+            else subject = "New Senior Librarian Supplemental Application - " + model.Name;
+
+            MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", subject, LibrarianExamEmailBuilder(model));
+            mm.IsBodyHtml = true;
+            mm.BodyEncoding = UTF8Encoding.UTF8;
+            mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+
+
+
+            mm.Attachments.Add(new Attachment(HostingEnvironment.MapPath(file)));
+            if (model.ResumeUpload != null && model.ResumeUpload.ContentLength > 0)
             {
-                return false;
+                try
+                {
+                    string fileName = Path.GetFileName(model.ResumeUpload.FileName);
+                    var attachment = new Attachment(model.ResumeUpload.InputStream, fileName);
+                    mm.Attachments.Add(attachment);
+                }
+                catch (Exception) { }
             }
+
+            client.Send(mm);
+
+            mm.Attachments.Dispose();
+
         }
 
         public bool SendSupervisingLibrarianExamEmail(string file, SupervisingLibrarianModel model)
@@ -235,8 +227,9 @@ namespace CSLBusinessLayer.Concrete
                 if (model.IsLTAI == true && model.IsLTAII == false)
                 {
                     subject = "New Library Technical Assistant I Supplemental Application - " + model.Name;
-                } else subject = "New Library Technical Assistant II Supplemental Application - " + model.Name;
-                
+                }
+                else subject = "New Library Technical Assistant II Supplemental Application - " + model.Name;
+
 
                 MailMessage mm = new MailMessage("seniorprojectteamnre@gmail.com", "matthewloller@gmail.com", subject, LTAExamEmailBuilder(model));
                 mm.IsBodyHtml = true;
