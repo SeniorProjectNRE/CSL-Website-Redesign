@@ -73,13 +73,16 @@ namespace StateTemplateV5Beta.Controllers.Sutro
 
             bool success = _emailService.SendSutroClassEmail(model);
 
+            if (success == false)
+            {
+                return RedirectToAction("EmailError", "error");
+            }
+
             if (success == true)
             {
                 return RedirectToAction("success", "sutro");
             }
             else return RedirectToAction("index", "error");
-
-            return View(model);
         }
 
         // GET: collection

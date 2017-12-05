@@ -1,8 +1,8 @@
 ﻿@model CSLBusinessObjects.Models.Exams.LPAModel
 @{
-    ViewBag.Title = "Apply";
-    ViewBag.PageTitle = "CSL - Library Programs Administrator Exam Supplemental Application";
-    ViewBag.Author = "Matt Loller, Alan Cleetus";
+    ViewBag.Title = "CSL - Library Programs Administrator Exam Process";
+    ViewBag.PageTitle = "Apply";
+    ViewBag.Author = "California State Library";
     ViewBag.Description = "In order to be considered for these jobs, it is first necessary for you to take and pass a civil service examination with a score that is among the highest of the applicants who take the test. Along with submission of a detailed resume, completion of this supplemental application is the examination process. This supplemental application solicits specific information about your experience and background that is directly relevant to these jobs. Thank you for your interest in a position of Library Programs Administrator at the California State Library.";
 }
 
@@ -27,7 +27,13 @@
         <div class="section">
             <div class="container">
 
-                <ol class="breadcrumb "><li><a href="/">Home</a></li><li><a href="/work-with-us/">work with us</a></li><li><a href="/work-with-us/jobs/">jobs</a></li><li><a href="/work-with-us/jobs/library-program-admin/">library program administrator exam</a></li><li class="active">apply</li></ol>
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/work-with-us">Work With Us</a></li>
+                    <li><a href="/work-with-us/jobs">Jobs</a></li>
+                    <li><a href="/work-with-us/jobs/librarian">Library Program Administrator Exam</a></li>
+                    <li class="active">Apply</li>
+                </ol>
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
 
                 <div class="group">
@@ -650,7 +656,26 @@
                                 </div>
                             </div>
 
-                           
+                            <div class="section">
+                                <div class="container">
+                                    <div class="half"></div>
+                                    <div class="half">
+                                        <div class="section">
+                                            <div class="full-width">
+                                                <div class="pull-right">
+                                                    <div class="g-recaptcha" data-sitekey="6Lf0XzYUAAAAAFm7yZHSL7K98voPXytgpy4O2zsU"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="pull-right">
+                                                <input type="submit" value="Submit" class="btn btn-default pull-right" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div><!--end accordion-->
                     }

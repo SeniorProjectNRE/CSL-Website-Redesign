@@ -15,5 +15,12 @@ namespace StateTemplateV5Beta.Controllers.Error
         {
             return View("Error");
         }
+
+        // GET: Error
+        [Route("EmailError")]
+        public ActionResult EmailError()
+        {
+            return View();
+        }
     }
 }

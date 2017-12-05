@@ -31,6 +31,13 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.LibraryTechnicalAssist
             return View("~/Views/WorkWithUs/Jobs/LibraryTechnicalAssistant/LibraryTechnicalAssistant.cshtml");
         }
 
+        [Route("success")]
+        // GET: success
+        public ActionResult Success()
+        {
+            return View("~/Views/WorkWithUs/Jobs/LibraryTechnicalAssistant/Success.cshtml");
+        }
+
         // GET: Apply
         [HttpGet]
         [Route("Apply")]
@@ -108,9 +115,14 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.LibraryTechnicalAssist
                     System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
                 }
 
+                if (res == false)
+                {
+                    return RedirectToAction("EmailError", "error");
+                }
+
                 ModelState.Clear();
                 model.Success = res;
-                return RedirectToAction("success", "jobs");
+                return RedirectToAction("success", "LibraryTechnicalAssistant");
             }
             catch (Exception ex)
             {

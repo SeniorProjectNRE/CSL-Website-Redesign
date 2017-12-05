@@ -1,10 +1,15 @@
 ﻿@model CSLBusinessObjects.Models.Exams.SupervisingLibrarianModel
 @{
-    ViewBag.Title = "Apply";
-    ViewBag.PageTitle = "Supervising Librarian I, Supervising Librarian II, Principal Librarian Supplemental Application";
+    ViewBag.Title = "CSL - Supervising Librarian I and II, Principal Librarian Exam Supplemental Application";
+    ViewBag.PageTitle = "Apply";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "In order to be considered for these jobs, it is first necessary for you to take and pass a civil service examination with a score that is among the highest of the applicants who take the test. Along with submission of a detailed resume, completion of this supplemental application is the examination process. This supplemental application solicits specific information about your experience and background that is directly relevant to these jobs. Thank you for your interest in a position of Supervising Librarian I, Supervising Librarian II, Principal Librarian at the California State Library";
 }
 
 <head>
+    <title>@ViewBag.Title</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
     <style>
         label.normal {
             font-weight: 200;
@@ -141,7 +146,13 @@
         <div class="section">
             <div class="container">
 
-                <ol class="breadcrumb dynamic"></ol>
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/work-with-us">Work With Us</a></li>
+                    <li><a href="/work-with-us/jobs">Jobs</a></li>
+                    <li><a href="/work-with-us/jobs/librarian">Supervising Librarian Exam</a></li>
+                    <li class="active">Apply</li>
+                </ol>
                 <h2 class="page-title">@ViewBag.PageTitle</h2>
 
 

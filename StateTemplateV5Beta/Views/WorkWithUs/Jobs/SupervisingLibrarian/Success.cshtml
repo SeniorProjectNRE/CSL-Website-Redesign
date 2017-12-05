@@ -1,7 +1,17 @@
 ﻿@{
-    ViewBag.Title = "Success";
+    ViewBag.Title = "CSL- Success";
+    ViewBag.PageTitle = "Success";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "Successful form submission";
 }
 
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="State of California" />
+    <meta name="Description" content="State of California" />
+    <meta name="Keywords" content="California, government" />
+
+</head>
 <div id="main-content" class="main-content ">
     <main class="main-primary">
 
@@ -9,8 +19,14 @@
 
 
             <div class="container">
-                <ol class="breadcrumb dynamic"></ol>
-                @*<h2 class="page-title">@ViewBag.PageTitle</h2>*@
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/work-with-us">Work With Us</a></li>
+                    <li><a href="/work-with-us/jobs">Jobs</a></li>
+                    <li><a href="/work-with-us/jobs/librarian">Supervising Librarian Exam</a></li>
+                    <li class="active">Success</li>
+                </ol>
+                <h2 class="page-title">@ViewBag.PageTitle</h2>
             </div>
 
             <div class="alert-success">
@@ -18,7 +34,7 @@
                 <div class="container">
                     <p class="regular">
                         Congratulations!  You have successfully submitted your Resume and Supplemental Application materials for the California State
-                        Library’s Supervising Librarian I, Supervising Librarian II, Principal Librarian open examination.  If you do
+                        Library’s Supervising Librarian I and II open examination.  If you do
                         <strong style="text-decoration: underline;">not</strong> receive a follow-up e-mail from us within 5 business days,
                         please contact us at <a href="mailto:csljobs@library.ca.gov">csljobs@library.ca.gov</a> or (916) 654-0202.
                         This e-mail will include information regarding the next steps in the examination and hiring process.
