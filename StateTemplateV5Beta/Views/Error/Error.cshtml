@@ -1,35 +1,116 @@
-﻿
-@{
-    ViewBag.Title = "Error";
-    ViewBag.ScreenHeight = @Request.Browser.ScreenPixelsHeight.ToString() + "px";
-
+﻿@{
+    ViewBag.Title = "CSL - Page Not Found";
+    ViewBag.PageTitle = "Page Not Found";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "The page you requested was not found.";
+    ViewBag.Keywords = "California, state, Library, error";
 }
+
 <style>
-    .section-danger {
-        min-height: 300%
+    @@media (max-width: 767px) {
+        .error1 {
+            float: none;
+            width: 100%;
+            background: none;
+            height: auto;
+            color: orange;
+            font-weight: bold;
+        }
+
+        .error2 {
+            float: none;
+            width: 100%;
+            height: auto;
+            background-color: #efefef;
+            padding: 15px;
+        }
+
+        #title-page {
+            display: block;
+        }
+
+        #page-banner {
+            display: none;
+        }
+
+    }
+
+    @@media (min-width: 768px) {
+        .error1 {
+            float: none;
+            width: 100%;
+            padding: 15px;
+            background: url('/Content/StateTemplate/images/error/browser.jpg') no-repeat 0 0;
+            padding: 0;
+        }
+
+        .error2 {
+            float: none;
+            width: 100%;
+            height: auto;
+            background-color: #efefef;
+            text-align: left;
+            padding: 15px;
+        }
+    }
+
+    @@media (min-width: 1280px) {
+        #title-page {
+            display: none;
+        }
+
+        #page-banner {
+            display: block;
+        }
+        .error1 {
+            float: left;
+            width: 38%;
+            background: url('/Content/StateTemplate/images/error/browser.jpg') no-repeat 0 0;
+            height: 467px;
+            margin-top: 20px;
+        }
+        .error2 {
+            float: left;
+            width: 62%;
+            height: auto;
+            background-color: #efefef;
+            text-align: left !important;
+            padding: 15px;
+        }
+    }
+
+    .wrap {
+        font-size:inherit;
     }
 </style>
 
-
-<div id="main-content" class="main-content" style="background-color:red">
-    <main class="main-primary">
-        <div class="container">
-            <div class="section">
-                <ol class="breadcrumb">
-                    <li><a href="/home">Home</a></li>
-                    <li>Error</li>
-                </ol>
+<div id="main-content" class="main-content">
+    <div class="container">
+        <main class="main-primary">
+            <!-- InstanceBeginEditable name="MainContent" -->
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">Page Not Found</li>
+            </ol>
+            <h1 id="title-page">@(ViewBag.PageTitle)</h1>
+            <div style="margin-bottom:40px">
+                <div class="error1">
+                </div>
+                <div class="error2">
+                    <div class="wrap">
+                        <h1>Oh no!</h1>
+                        <h2>It appears Browser, the California State Library’s dog, ate the page you are looking for!</h2>
+                        <p>The California State Library has recently redesigned our website and some of the links have changed. Please try the links below to find what you are looking for.</p>
+                        <p><span class="ca-gov-icon-arrow-fill-right"></span> <a href="/services"> Services</a></p>
+                        <p><span class="ca-gov-icon-arrow-fill-right"></span> <a href="/grants"> Grants</a></p>
+                        <p><span class="ca-gov-icon-arrow-fill-right"></span> <a href="/collections"> Collections</a></p>
+                        <p><span class="ca-gov-icon-arrow-fill-right"></span> <a href="/work-with-us"> Work With Us</a></p>
+                        <p><span class="ca-gov-icon-arrow-fill-right"></span> <a href="/about"> About Library</a></p>
+                        <p>Still can't find what you are looking for? <a href="http://askstatelibrary.libraryresearch.info/reft100.aspx?key=Ref" target="_blank" rel="noopener noreferrer">Ask one of our Librarians</a> for assistance.</p>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
             </div>
-        </div>
-        <div class="section section-danger" >
-            <div class="container">
-                
-                <h2>Error</h2>
-                <h3>
-                    @Request.Url.OriginalString is not a valid URL, please look it over and either enter in a working URL, or click here to return <a href="/">HOME</a>
-                </h3>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 </div>
-
