@@ -410,6 +410,7 @@
     <Content Include="Content\StateTemplate\images\banner\CSLBuilding.jpg" />
     <Content Include="Content\StateTemplate\images\banner\SutroBuilding.jpg" />
     <Content Include="Content\StateTemplate\images\banner\womensmarch1.jpg" />
+    <Content Include="Content\StateTemplate\images\Browser_Error.png" />
     <Content Include="Content\StateTemplate\images\btbl\btbl_home_3_pictures.jpg" />
     <Content Include="Content\StateTemplate\images\btbl\cal_state_library.png" />
     <Content Include="Content\StateTemplate\images\btbl\printdisabilities\disable.jpg" />

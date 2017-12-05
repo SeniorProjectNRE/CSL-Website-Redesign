@@ -1,34 +1,72 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Error";
-    ViewBag.ScreenHeight = @Request.Browser.ScreenPixelsHeight.ToString() + "px";
-
+    ViewBag.PageTitle = "Error";
+    ViewBag.Author = "California State Library";
+    ViewBag.Description = "Error: Page Not Found";
+    ViewBag.Keywords = "Error Page Not Found";
 }
-<style>
-    .section-danger {
-        min-height: 300%
-    }
-</style>
 
+<head>
+    <title>@(ViewBag.Title)</title>
+    <meta name="Author" content="@(ViewBag.Author)" />
+    <meta name="Description" content="@(ViewBag.Description)" />
+    <meta name="Keywords" content="@(ViewBag.Keywords)" />
+</head>
 
-<div id="main-content" class="main-content" style="background-color:red">
+<div id="main-content" class="main-content">
     <main class="main-primary">
         <div class="container">
             <div class="section">
                 <ol class="breadcrumb">
                     <li><a href="/home">Home</a></li>
-                    <li>Error</li>
+                    <li class="active">Page Not Found</li>
                 </ol>
-            </div>
-        </div>
-        <div class="section section-danger" >
-            <div class="container">
                 
-                <h2>Error</h2>
-                <h3>
-                    @Request.Url.OriginalString is not a valid URL, please look it over and either enter in a working URL, or click here to return <a href="/">HOME</a>
-                </h3>
             </div>
+            <div class="group">
+                <div class="section third">
+                    <img src="~/Content/StateTemplate/images/Browser_Error.png" style="max-width:100%; margin-left:-20px; margin-top:-30px;" />
+                </div>
+                <div class="section section-default two-thirds indent-outer">
+                    <h1>
+                        Oh no!
+                    </h1>
+                    <h2>
+                        It appears Browser, the California State Library’s dog, ate the page you are looking for!
+                    </h2>
+                    <p  style="font-size:larger;">
+                        The California State Library has recently redesigned our website and some of the links have changed. Please try the links below to find what you are looking for.
+                    </p>
+                    <ul class="list-standout indent-inner"  style="font-size:larger;">
+                        <li>
+                            <a href="/services">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/grants">
+                                Grants
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/collections">
+                                Collections
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/work-with-us">
+                                Work With Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/about">
+                                About Library
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
         </div>
     </main>
 </div>
