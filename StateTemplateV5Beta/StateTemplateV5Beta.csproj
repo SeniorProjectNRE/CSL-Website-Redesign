@@ -168,7 +168,6 @@
     <Compile Include="Controllers\About\History\HistoryController.cs" />
     <Compile Include="Controllers\About\History\StateLibrarians\StateLibrariansController.cs" />
     <Compile Include="Controllers\Accessibility\AccessibilityController.cs" />
-    <Compile Include="Controllers\AddBlogsController.cs" />
     <Compile Include="Controllers\Apply\ApplyController.cs" />
     <Compile Include="Controllers\Art\ArtController.cs" />
     <Compile Include="Controllers\BTBL\BTBLController.cs" />
@@ -2909,7 +2908,6 @@
     <Content Include="Views\About\History\StateLibrarians\Hildreth.cshtml" />
     <Content Include="Views\About\History\StateLibrarians\Lucas.cshtml" />
     <Content Include="Views\About\LibrarySections.cshtml" />
-    <Content Include="Views\About\Mission.cshtml" />
     <Content Include="Views\About\Multimedia.cshtml" />
     <Content Include="Views\About\PressReleases.cshtml" />
     <Content Include="Views\Accessibility\Accessibility.cshtml" />
@@ -3077,7 +3075,6 @@
     <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Members.cshtml" />
     <Content Include="Views\Services\ToPublic\ToPublic.cshtml" />
     <Content Include="Views\Services\InterlibraryLending.cshtml" />
-    <Content Include="Views\Home\Releases.cshtml" />
     <Content Include="Views\Shared\modules\_MobileShareBar.cshtml" />
     <Content Include="Views\CaliforniaHistory\FairUse.cshtml" />
     <Content Include="Views\CaliforniaHistory\PhotoReproduction.cshtml" />
@@ -3136,6 +3133,7 @@
     <Content Include="Views\WorkWithUs\Jobs\SupervisingLibrarian\Success.cshtml" />
     <Content Include="Views\Error\EmailError.cshtml" />
     <Content Include="Views\Shared\modules\_HomeStatistics.cshtml" />
+    <Content Include="Views\Error\FillFormError.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

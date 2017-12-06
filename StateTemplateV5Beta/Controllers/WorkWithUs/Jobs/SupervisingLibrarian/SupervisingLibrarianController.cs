@@ -43,7 +43,7 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.SupervisingLibrarian
         public ActionResult Apply()
         {
             SupervisingLibrarianModel model = new SupervisingLibrarianModel();
-            return View("~/Views/WorkWithUs/Jobs/SupervisingLibrarian/Apply.cshtml",model);
+            return View("~/Views/WorkWithUs/Jobs/SupervisingLibrarian/Apply.cshtml", model);
         }
 
         [HttpPost]
@@ -119,29 +119,37 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.SupervisingLibrarian
                 string pdfPrincipalLibrarianTemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/PLAppFinal.pdf";
                 string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + model.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
 
-                if (model.IsSupervisingLibrarianI = true && model.IsSupervisingLibrarianII == false && model.IsPrincipalLibrarian == false)
+                try
                 {
-                    _examService.FillSupervisingLibrarianIExam(model, pdfSupervisingLibrarianITemplate, newFile);
+                    if (model.IsSupervisingLibrarianI = true && model.IsSupervisingLibrarianII == false && model.IsPrincipalLibrarian == false)
+                    {
+                        _examService.FillSupervisingLibrarianIExam(model, pdfSupervisingLibrarianITemplate, newFile);
+                    }
+                    else if (model.IsSupervisingLibrarianII == true && model.IsPrincipalLibrarian == false)
+                    {
+                        _examService.FillSupervisingLibrarianIIExam(model, pdfSupervisingLibrarianIITemplate, newFile);
+                    }
+                    else _examService.FillPrincipalLibrarianExam(model, pdfPrincipalLibrarianTemplate, newFile);
                 }
-                else if (model.IsSupervisingLibrarianII == true && model.IsPrincipalLibrarian == false)
+                catch (Exception e)
                 {
-                    _examService.FillSupervisingLibrarianIIExam(model, pdfSupervisingLibrarianIITemplate, newFile);
-                } else _examService.FillPrincipalLibrarianExam(model, pdfPrincipalLibrarianTemplate, newFile);
-
-                bool res = _emailService.SendSupervisingLibrarianExamEmail(newFile, model);
-
-                if (System.IO.File.Exists(HostingEnvironment.MapPath(newFile)))
-                {
-                    System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
+                    return RedirectToAction("FillFormError", "error");
                 }
+                try
+                {
+                    _emailService.SendSupervisingLibrarianExamEmail(newFile, model);
 
-                if (res == false)
+                    if (System.IO.File.Exists(HostingEnvironment.MapPath(newFile)))
+                    {
+                        System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
+                    }
+                }
+                catch (Exception e)
                 {
                     return RedirectToAction("EmailError", "error");
                 }
 
                 ModelState.Clear();
-                model.Success = res;
                 return RedirectToAction("success", "SupervisingLibrarian");
             }
             catch (Exception ex)

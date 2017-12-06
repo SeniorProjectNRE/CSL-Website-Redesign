@@ -22,5 +22,12 @@ namespace StateTemplateV5Beta.Controllers.Error
         {
             return View();
         }
+
+        // GET: Error
+        [Route("FormError")]
+        public ActionResult FillFormError()
+        {
+            return View();
+        }
     }
 }

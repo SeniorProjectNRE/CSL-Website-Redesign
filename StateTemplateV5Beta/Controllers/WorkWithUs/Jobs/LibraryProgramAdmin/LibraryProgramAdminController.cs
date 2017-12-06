@@ -83,23 +83,30 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.LibraryProgramAdmin
                 string pdfLPAtemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/LPAAppFinal.pdf";
                 string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + model.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
 
-                _examService.FillLPAExam(model, pdfLPAtemplate, newFile);
-
-
-                bool res = _emailService.SendLPAExamEmail(newFile, model);
-
-                if (System.IO.File.Exists(HostingEnvironment.MapPath(newFile)))
+                try
                 {
-                    System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
+                    _examService.FillLPAExam(model, pdfLPAtemplate, newFile);
+                }
+                catch (Exception e)
+                {
+                    return RedirectToAction("FillFormError", "error");
                 }
 
-                if (res == false)
+                try
+                {
+                    _emailService.SendLPAExamEmail(newFile, model);
+
+                    if (System.IO.File.Exists(HostingEnvironment.MapPath(newFile)))
+                    {
+                        System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
+                    }
+                }
+                catch (Exception e)
                 {
                     return RedirectToAction("EmailError", "error");
                 }
 
                 ModelState.Clear();
-                model.Success = res;
                 return RedirectToAction("success", "libraryprogramadmin");
             }
             catch (Exception ex)

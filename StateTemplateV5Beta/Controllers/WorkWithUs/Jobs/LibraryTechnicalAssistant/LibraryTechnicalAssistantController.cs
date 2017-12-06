@@ -99,29 +99,37 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.LibraryTechnicalAssist
                 string pdfLTAIITemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/LTA_II_AppFinal.pdf";
                 string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + model.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
 
-                if (model.IsLTAI == true && model.IsLTAII == false)
+                try
                 {
-                    _examService.FillLTAIExam(model, pdfLTAITemplate, newFile);
+                    if (model.IsLTAI == true && model.IsLTAII == false)
+                    {
+                        _examService.FillLTAIExam(model, pdfLTAITemplate, newFile);
+                    }
+                    else if (model.IsLTAII == true)
+                    {
+                        _examService.FillLTAIIExam(model, pdfLTAIITemplate, newFile);
+                    }
                 }
-                else if (model.IsLTAII == true)
+                catch (Exception e)
                 {
-                    _examService.FillLTAIIExam(model, pdfLTAIITemplate, newFile);
+                    return RedirectToAction("FillFormError", "error");
                 }
 
-                bool res = _emailService.SendLTAExamEmail(newFile, model);
-
-                if (System.IO.File.Exists(HostingEnvironment.MapPath(newFile)))
+                try
                 {
-                    System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
-                }
+                    _emailService.SendLTAExamEmail(newFile, model);
 
-                if (res == false)
+                    if (System.IO.File.Exists(HostingEnvironment.MapPath(newFile)))
+                    {
+                        System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
+                    }
+                }
+                catch (Exception e)
                 {
                     return RedirectToAction("EmailError", "error");
                 }
 
                 ModelState.Clear();
-                model.Success = res;
                 return RedirectToAction("success", "LibraryTechnicalAssistant");
             }
             catch (Exception ex)

@@ -100,13 +100,20 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
                 string pdfSeniorLibrarianTemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/SenLibAppFinal.pdf";
                 string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + model.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
 
-                if (model.IsLibrarian == true && model.IsSeniorLibrarian == false)
+                try
                 {
-                    _examService.FillLibrarianExam(model, pdfLibrarianTemplate, newFile);
+                    if (model.IsLibrarian == true && model.IsSeniorLibrarian == false)
+                    {
+                        _examService.FillLibrarianExam(model, pdfLibrarianTemplate, newFile);
+                    }
+                    else if (model.IsSeniorLibrarian == true)
+                    {
+                        _examService.FillSeniorLibrarianExam(model, pdfSeniorLibrarianTemplate, newFile);
+                    }
                 }
-                else if (model.IsSeniorLibrarian == true)
+                catch (Exception e)
                 {
-                    _examService.FillSeniorLibrarianExam(model, pdfSeniorLibrarianTemplate, newFile);
+                    return RedirectToAction("FillFormError", "error");
                 }
 
                 try
@@ -118,7 +125,7 @@ namespace StateTemplateV5Beta.Controllers.WorkWithUs.Jobs.Librarian
                         System.IO.File.Delete(HostingEnvironment.MapPath(newFile));
                     }
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     return RedirectToAction("EmailError", "error");
                 }

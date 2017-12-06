@@ -52,7 +52,7 @@ namespace StateTemplateV5Beta.Controllers.Sutro
         [Route("visiting/class")]
         public ActionResult Class(SutroClassModel model)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View();
             }
@@ -66,23 +66,21 @@ namespace StateTemplateV5Beta.Controllers.Sutro
             ViewBag.Message = status ? "Google reCaptcha validation success" : "Google reCaptcha validation failed";
             model.IsCaptcha = status;
 
-            if(model.IsCaptcha == false)
+            if (model.IsCaptcha == false)
             {
                 return View(model);
             }
 
-            bool success = _emailService.SendSutroClassEmail(model);
-
-            if (success == false)
+            try
+            {
+                _emailService.SendSutroClassEmail(model);
+            }
+            catch (Exception e)
             {
                 return RedirectToAction("EmailError", "error");
             }
 
-            if (success == true)
-            {
-                return RedirectToAction("success", "sutro");
-            }
-            else return RedirectToAction("index", "error");
+            return RedirectToAction("success", "sutro");
         }
 
         // GET: collection
