@@ -9,15 +9,15 @@ namespace CSLBusinessLayer.Interface
 {
     public interface IExamService
     {
-        bool FillLibrarianExam(LibrarianModel model, string pdfTemplate, string newFile);
-        bool FillForm(LibrarianModel model, string pdfTemplate, string newFile);
-        bool FillSeniorLibrarianExam(LibrarianModel model, string pdfSeniorLibrarianTemplate, string newFile);
-        bool FillSupervisingLibrarianIExam(SupervisingLibrarianModel model, string pdfSupervisingLibrarianITemplate, string newFile);
-        bool FillSupervisingLibrarianIIExam(SupervisingLibrarianModel model, string pdfSupervisingLibrarianIITemplate, string newFile);
-        bool FillPrincipalLibrarianExam(SupervisingLibrarianModel model, string pdfPrincipalLibrarianTemplate, string newFile);
-        bool FillLPAExam(LPAModel model, string pdfLPAtemplate, string newFile);
-        bool FillLPCExam(LPCModel model, string pdfLPAtemplate, string newFile);
-        bool FillLTAIExam(LTAModel model, string pdfLTAITemplate, string newFile);
-        bool FillLTAIIExam(LTAModel model, string pdfLTAIITemplate, string newFile);
+        void FillLibrarianExam(LibrarianModel model, string pdfTemplate, string newFile);
+        void FillForm(LibrarianModel model, string pdfTemplate, string newFile);
+        void FillSeniorLibrarianExam(LibrarianModel model, string pdfSeniorLibrarianTemplate, string newFile);
+        void FillSupervisingLibrarianIExam(SupervisingLibrarianModel model, string pdfSupervisingLibrarianITemplate, string newFile);
+        void FillSupervisingLibrarianIIExam(SupervisingLibrarianModel model, string pdfSupervisingLibrarianIITemplate, string newFile);
+        void FillPrincipalLibrarianExam(SupervisingLibrarianModel model, string pdfPrincipalLibrarianTemplate, string newFile);
+        void FillLPAExam(LPAModel model, string pdfLPAtemplate, string newFile);
+        void FillLPCExam(LPCModel model, string pdfLPAtemplate, string newFile);
+        void FillLTAIExam(LTAModel model, string pdfLTAITemplate, string newFile);
+        void FillLTAIIExam(LTAModel model, string pdfLTAIITemplate, string newFile);
     }
 }

@@ -59,7 +59,7 @@ namespace CSLBusinessLayer.Concrete
 
         }
 
-        public bool SendSupervisingLibrarianExamEmail(string file, SupervisingLibrarianModel model)
+        public void SendSupervisingLibrarianExamEmail(string file, SupervisingLibrarianModel model)
         {
             try
             {
@@ -115,7 +115,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool SendLPAExamEmail(string file, LPAModel model)
+        public void SendLPAExamEmail(string file, LPAModel model)
         {
             try
             {
@@ -162,7 +162,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool SendLPCExamEmail(string file, LPCModel model)
+        public void SendLPCExamEmail(string file, LPCModel model)
         {
             try
             {
@@ -209,7 +209,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool SendLTAExamEmail(string file, LTAModel model)
+        public void SendLTAExamEmail(string file, LTAModel model)
         {
             try
             {
@@ -262,7 +262,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool SendSutroClassEmail(SutroClassModel model)
+        public void SendSutroClassEmail(SutroClassModel model)
         {
             try
             {

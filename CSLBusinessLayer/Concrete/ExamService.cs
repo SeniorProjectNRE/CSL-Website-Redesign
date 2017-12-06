@@ -13,7 +13,7 @@ namespace CSLBusinessLayer.Concrete
 {
     public class ExamService : IExamService
     {
-        public bool FillLibrarianExam(LibrarianModel model, string pdfTemplate, string newFile)
+        public void FillLibrarianExam(LibrarianModel model, string pdfTemplate, string newFile)
         {
             try
             {
@@ -120,7 +120,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool FillSeniorLibrarianExam(LibrarianModel model, string pdfTemplate, string newFile)
+        public void FillSeniorLibrarianExam(LibrarianModel model, string pdfTemplate, string newFile)
         {
             try
             {
@@ -265,7 +265,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool FillSupervisingLibrarianIExam(SupervisingLibrarianModel model, string pdfTemplate, string newFile)
+        public void FillSupervisingLibrarianIExam(SupervisingLibrarianModel model, string pdfTemplate, string newFile)
         {
             try
             {
@@ -491,7 +491,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool FillSupervisingLibrarianIIExam(SupervisingLibrarianModel model, string pdfTemplate, string newFile)
+        public void FillSupervisingLibrarianIIExam(SupervisingLibrarianModel model, string pdfTemplate, string newFile)
         {
             try
             {
@@ -755,7 +755,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool FillPrincipalLibrarianExam(SupervisingLibrarianModel model, string pdfTemplate, string newFile)
+        public void FillPrincipalLibrarianExam(SupervisingLibrarianModel model, string pdfTemplate, string newFile)
         {
             try
             {
@@ -1053,7 +1053,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool FillLPAExam(LPAModel model, string pdfTemplate, string newFile)
+        public void FillLPAExam(LPAModel model, string pdfTemplate, string newFile)
         {
             try
             {
@@ -1244,7 +1244,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool FillLPCExam(LPCModel model, string pdfTemplate, string newFile)
+        public void FillLPCExam(LPCModel model, string pdfTemplate, string newFile)
         {
             try
             {
@@ -1414,7 +1414,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool FillLTAIExam(LTAModel model, string pdfTemplate, string newFile)
+        public void FillLTAIExam(LTAModel model, string pdfTemplate, string newFile)
         {
             try
             {
@@ -1567,7 +1567,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool FillLTAIIExam(LTAModel model, string pdfTemplate, string newFile)
+        public void FillLTAIIExam(LTAModel model, string pdfTemplate, string newFile)
         {
             try
             {
@@ -1754,7 +1754,7 @@ namespace CSLBusinessLayer.Concrete
             }
         }
 
-        public bool FillForm(LibrarianModel model, string pdfTemplate, string newFile)
+        public void FillForm(LibrarianModel model, string pdfTemplate, string newFile)
         {
             string res = null;
             try

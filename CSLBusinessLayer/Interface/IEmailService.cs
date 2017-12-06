@@ -11,11 +11,11 @@ namespace CSLBusinessLayer.Interface
 {
     public interface IEmailService
     {
-        bool SendSutroClassEmail(SutroClassModel model);
+        void SendSutroClassEmail(SutroClassModel model);
         void SendLibrarianExamEmail(string file, LibrarianModel model);
-        bool SendSupervisingLibrarianExamEmail(string file, SupervisingLibrarianModel model);
-        bool SendLPAExamEmail(string newFile, LPAModel model);
-        bool SendLPCExamEmail(string newFile, LPCModel model);
-        bool SendLTAExamEmail(string newFile, LTAModel model);
+        void SendSupervisingLibrarianExamEmail(string file, SupervisingLibrarianModel model);
+        void SendLPAExamEmail(string newFile, LPAModel model);
+        void SendLPCExamEmail(string newFile, LPCModel model);
+        void SendLTAExamEmail(string newFile, LTAModel model);
     }
 }
