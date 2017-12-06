@@ -2837,6 +2837,7 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\CRB\FrivolousAction.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -2882,12 +2883,6 @@
     <Content Include="Views\Shared\modules\search-results-standalone.cshtml" />
     <Content Include="Views\Shared\modules\section-card-tests.cshtml" />
     <Content Include="Views\Shared\modules\topnav-test.cshtml" />
-    <Content Include="Views\Admin\modules\AddBlog.cshtml" />
-    <Content Include="Views\AddBlogs\Create.cshtml" />
-    <Content Include="Views\AddBlogs\Delete.cshtml" />
-    <Content Include="Views\AddBlogs\Details.cshtml" />
-    <Content Include="Views\AddBlogs\Edit.cshtml" />
-    <Content Include="Views\AddBlogs\Index.cshtml" />
     <Content Include="Views\Shared\modules\Blogs.cshtml" />
     <Content Include="Views\Shared\modules\section-generic-cards.cshtml" />
     <Content Include="Views\Shared\modules\header-carousal.cshtml" />
@@ -2905,10 +2900,7 @@
     <Content Include="Views\About\History\Building.cshtml" />
     <Content Include="Views\About\History\StateLibrarians\StateLibrarians.cshtml" />
     <Content Include="Views\About\History\StateLibrarians\Aldrich.cshtml" />
-    <Content Include="Views\About\History\StateLibrarians\Hildreth.cshtml" />
-    <Content Include="Views\About\History\StateLibrarians\Lucas.cshtml" />
     <Content Include="Views\About\LibrarySections.cshtml" />
-    <Content Include="Views\About\Multimedia.cshtml" />
     <Content Include="Views\About\PressReleases.cshtml" />
     <Content Include="Views\Accessibility\Accessibility.cshtml" />
     <Content Include="Views\Grants\CivilLiberties\Apply\Apply.cshtml" />
@@ -2924,13 +2916,10 @@
     <Content Include="Views\BTBL\Newsletter.cshtml" />
     <Content Include="Views\BTBL\Policies.cshtml" />
     <Content Include="Views\BTBL\PrintDisabilities.cshtml" />
-    <Content Include="Views\BTBL\Publications.cshtml" />
-    <Content Include="Views\BTBL\PurchaseBook.cshtml" />
     <Content Include="Views\BTBL\PurchasePlayer.cshtml" />
     <Content Include="Views\BTBL\RavenousReaders.cshtml" />
     <Content Include="Views\BTBL\Resources.cshtml" />
     <Content Include="Views\BTBL\Service.cshtml" />
-    <Content Include="Views\BTBL\SummerReading.cshtml" />
     <Content Include="Views\CaliforniaHistory\Genealogy\Genealogy.cshtml" />
     <Content Include="Views\CaliforniaHistory\Genealogy\CountyIndexes.cshtml" />
     <Content Include="Views\CaliforniaHistory\CaliforniaHistory.cshtml" />
@@ -2965,12 +2954,9 @@
     <Content Include="Views\Collections\Genealogy\Genealogy.cshtml" />
     <Content Include="Views\Collections\OnlineExhibits\OnlineExhibits.cshtml" />
     <Content Include="Views\Collections\OnlineExhibits\Hayden.cshtml" />
-    <Content Include="Views\Collections\Publications\Publications.cshtml" />
     <Content Include="Views\GovernmentPublications\CAPublications.cshtml" />
-    <Content Include="Views\Collections\Publications\LibraryLaws.cshtml" />
     <Content Include="Views\Contact\Contact.cshtml" />
     <Content Include="Views\CRB\Newsletters.cshtml" />
-    <Content Include="Views\CRB\FrivolousAction.cshtml" />
     <Content Include="Views\CRB\ReportsEvents.cshtml" />
     <Content Include="Views\CRB\Staff.cshtml" />
     <Content Include="Views\CRB\CRB.cshtml" />
@@ -2990,24 +2976,12 @@
     <Content Include="Views\Grants\CivilLiberties\Dates.cshtml" />
     <Content Include="Views\Grants\CivilLiberties\Recipients.cshtml" />
     <Content Include="Views\Grants\CivilLiberties\Apply\Application.cshtml" />
-    <Content Include="Views\Grants\PLStaffEducationProgram\PLStaffEducationProgram.cshtml" />
-    <Content Include="Views\Grants\PLStaffEducationProgram\Apply.cshtml" />
     <Content Include="Views\Services\ToLibraries\Broadband\Broadband.cshtml" />
     <Content Include="Views\Services\ToLibraries\Broadband\Libraries.cshtml" />
-    <Content Include="Views\Grants\LSTA.cshtml" />
-    <Content Include="Views\Grants\Apply.cshtml" />
     <Content Include="Views\Services\ToLibraries\CareerOnlineHighSchool.cshtml" />
     <Content Include="Views\Services\ToLibraries\Harwood.cshtml" />
-    <Content Include="Views\Grants\ImmigrantAlliance.cshtml" />
-    <Content Include="Views\Grants\Initatives.cshtml" />
     <Content Include="Views\Services\ToLibraries\LibrariesIlluminated.cshtml" />
-    <Content Include="Views\Grants\Manage.cshtml" />
-    <Content Include="Views\Grants\MentalHealth.cshtml" />
-    <Content Include="Views\Grants\PitchAnIdea.cshtml" />
     <Content Include="Views\Grants\LibraryServicesTechnologyAct\PreviousGrantAwards.cshtml" />
-    <Content Include="Views\Grants\StaffInnovation.cshtml" />
-    <Content Include="Views\Grants\Statewide.cshtml" />
-    <Content Include="Views\Grants\VirtualReality.cshtml" />
     <Content Include="Views\Services\ToLibraries\CARevealed\CARevealed.cshtml" />
     <Content Include="Views\Services\ToLibraries\CARevealed\FairUse.cshtml" />
     <Content Include="Views\Services\ToLibraries\CARevealed\LegalConsideration.cshtml" />
@@ -3030,30 +3004,22 @@
     <Content Include="Views\LibraryDevServices\LibraryDevelopmentServices.cshtml" />
     <Content Include="Views\MailingLists\MailingLists.cshtml" />
     <Content Include="Views\Privacy\Privacy.cshtml" />
-    <Content Include="Views\SiteMap\SiteMap.cshtml" />
     <Content Include="Views\Services\Services.cshtml" />
     <Content Include="Views\Apply\Apply.cshtml" />
     <Content Include="Views\Services\Borrowing.cshtml" />
     <Content Include="Views\Services\OnlineResources.cshtml" />
     <Content Include="Views\Services\Policies.cshtml" />
     <Content Include="Views\Services\ResearchResources\ResearchResources.cshtml" />
-    <Content Include="Views\Services\ResearchResources\AdditionalResources.cshtml" />
     <Content Include="Views\Services\ResearchResources\Patents.cshtml" />
     <Content Include="Views\Services\ResearchResources\Reference.cshtml" />
-    <Content Include="Views\Services\Statistics\Statistics.cshtml" />
-    <Content Include="Views\Services\Statistics\Archive.cshtml" />
-    <Content Include="Views\Services\Statistics\LibraryDirectory.cshtml" />
-    <Content Include="Views\Services\Statistics\Summary.cshtml" />
     <Content Include="Views\Use\Use.cshtml" />
     <Content Include="Views\Services\ToLibraries\ToLibraries.cshtml" />
     <Content Include="Views\Services\ToLibraries\ERate.cshtml" />
-    <Content Include="Views\Services\ToLibraries\Grants.cshtml" />
     <Content Include="Views\Services\ToStateEmployees\ToStateEmployees.cshtml" />
     <Content Include="Views\Services\ToStateEmployees\StateTrainingVideos.cshtml" />
     <Content Include="Views\VisitUs\VisitUs.cshtml" />
     <Content Include="Views\VisitUs\Events.cshtml" />
     <Content Include="Views\VisitUs\Exhibits.cshtml" />
-    <Content Include="Views\VisitUs\LocationsAndHours.cshtml" />
     <Content Include="Views\VisitUs\Tours.cshtml" />
     <Content Include="Views\WorkWithUs\Internships.cshtml" />
     <Content Include="Views\WorkWithUs\Jobs\Jobs.cshtml" />
@@ -3069,10 +3035,6 @@
     <Content Include="Views\WorkWithUs\Jobs\LibraryProgramAdmin\LibraryProgramAdmin.cshtml" />
     <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\CALibraryServicesAct.cshtml" />
     <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\About.cshtml" />
-    <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Systems.cshtml" />
-    <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Board.cshtml" />
-    <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Meetings.cshtml" />
-    <Content Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\Members.cshtml" />
     <Content Include="Views\Services\ToPublic\ToPublic.cshtml" />
     <Content Include="Views\Services\InterlibraryLending.cshtml" />
     <Content Include="Views\Shared\modules\_MobileShareBar.cshtml" />
@@ -3107,7 +3069,6 @@
     <Content Include="Views\Grants\CivilLiberties\AdvisoryCommittee.cshtml" />
     <Content Include="Views\Services\ToLibraries\InnovationStation.cshtml" />
     <Content Include="Views\Grants\LibraryServicesTechnologyAct\LibraryServicesTechnologyAct.cshtml" />
-    <Content Include="Views\Services\ToLibraries\BroadbandERate.cshtml" />
     <Content Include="Views\CaliforniaHistory\DigitizedResources.cshtml" />
     <Content Include="Views\Collections\Genealogy\Links.cshtml" />
     <Content Include="Views\Collections\Genealogy\Toolkit.cshtml" />
@@ -3124,9 +3085,6 @@
     <Content Include="Views\Services\ToLibraries\LibraryStaffEducationPogram.cshtml" />
     <Content Include="Views\Sutro\Success.cshtml" />
     <Content Include="Views\Collections\OnlineCollections.cshtml" />
-    <Content Include="Views\Services\ToLibraries\StatisticsDirectories.cshtml" />
-    <Content Include="Views\Services\ToLibraries\LawsPublicLibraryOrganization.cshtml" />
-    <Content Include="Views\Services\ToLibraries\CooperativeSystemsClsa.cshtml" />
     <Content Include="Views\WorkWithUs\Jobs\Librarian\Success.cshtml" />
     <Content Include="Views\WorkWithUs\Jobs\LibraryProgramConsultant\Success.cshtml" />
     <Content Include="Views\WorkWithUs\Jobs\LibraryTechnicalAssistant\Success.cshtml" />
@@ -3139,6 +3097,9 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\StateTemplate\sample\_notes\" />
     <Folder Include="Controllers\Services\ToPublic\" />
+    <Folder Include="Views\Collections\Publications\" />
+    <Folder Include="Views\Services\Statistics\" />
+    <Folder Include="Views\Services\ToLibraries\CALibraryServicesAct\Board\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
