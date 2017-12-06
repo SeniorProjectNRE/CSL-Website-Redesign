@@ -3123,6 +3123,7 @@
     <Content Include="Views\WorkWithUs\Jobs\LibraryTechnicalAssistant\Success.cshtml" />
     <Content Include="Views\WorkWithUs\Jobs\SupervisingLibrarian\Success.cshtml" />
     <Content Include="Views\Error\EmailError.cshtml" />
+    <Content Include="Views\Shared\modules\_HomeStatistics.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
