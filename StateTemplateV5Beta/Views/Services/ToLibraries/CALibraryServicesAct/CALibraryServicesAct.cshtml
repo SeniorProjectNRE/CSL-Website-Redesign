@@ -4,6 +4,7 @@
     ViewBag.Author = "California State Library";
     ViewBag.Description = "California public libraries engaged in interlibrary cooperation are supported through a program under the California Library Services Act (CLSA). The program is administered by the 13-member California Library Services Board. Funding is allocated to California's 9 cooperative library systems.";
     ViewBag.Keywords = "Services, act, CLSA";
+    ViewBag.Banner = "clsa_banner.jpg";
 }
 
 <head>
@@ -19,57 +20,678 @@
 
 <div id="main-content" class="main-content">
     <main class="main-primary">
-        <div class="section">
-            <div class="container">
+        <div class="container">
+            <div class="section">
 
                 <ol class="breadcrumb">
                     <li><a href="/home">Home</a></li>
                     <li><a href="/services">Services</a></li>
                     <li><a href="/services/to-libraries">To Libraries</a></li>
-                    <li class="active">Library Services Act</li>
+                    <li class="active">Cooperative Systems and CLSA</li>
                 </ol>
+                <img src="~/Content/StateTemplate/images/banner/@(ViewBag.Banner)" style="width:100%" alt="" class="animated fadeInLeft" />
+            </div>
+            
+            <div class="section group">
+                <div class="two-thirds">
+                    <p style="font-size:large">
+                        California public libraries engaged in cooperative efforts with neighboring libraries are supported through the Communications and Delivery Program of the California Library Services Act (CLSA), specifically designed to assist and encourage such cooperation. The program is administered by the 13-member California Library Services Board, and funding is allocated to California’s Cooperative Library Systems.
+                    </p>
+                    <br/>
+                    <ul class="list-overstated" style="font-size:large">
+                        <li><a href="/services/to-libraries/ca-library-services-act/about" target="_blank">About the California Library Services Act</a></li>
+                        <li><a href="~/Content/StateTemplate/pdf/services/toLibraries/CLSA_Grants_Report_Legislature_September_2017.pdf" target="_blank">California Library Services Act Funds: Allocation of One-time funding </a>– Report to the Legislature</li>
+                    </ul>
+                </div>
 
-                <h2 class="page-title">@ViewBag.PageTitle</h2>
+                <div class="third"">
+                    <div class="panel panel-understated">
+                        <div class="panel-heading">
+                            <h4>Contact Us</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <span class="ca-gov-icon-email"></span><span style="display:inline-block; width: 10px;"></span><strong>By Email:</strong> <a href="mailto:monica.rivas@library.ca.gov"> monica.rivas@library.ca.gov </a><br><br>
+                                <span class="ca-gov-icon-mail"></span><span style="display:inline-block; width: 10px;"></span><strong>By mail:</strong><br>
+                            </p>
 
-                <div class="group">
-                    <div class="two-thirds">
-                        <ul class="list-overstated">
-                            <li><a href="/services/to-libraries/ca-library-services-act/about" target="_blank">About the California Library Services Act</a></li>
-                            <li><a href="/services/to-libraries/ca-library-services-act/systems/" target="_blank">California Library Services Act (CLSA) Systems</a></li>
-                            <li><a href="/services/to-libraries/ca-library-services-act/board/" target="_blank">California Library Services Board</a></li>
-                            <li><a href="/services/to-libraries/ca-library-services-act/board/meetings/" target="_blank">Master Calendar</a></li>
-                            <li><a href="~/Content/StateTemplate/pdf/services/toLibraries/CLSA_Grants_Report_Legislature_September_2017.pdf" target="_blank">California Library Services Act Funds: Allocation of One-time funding </a>– Report to the Legislature</li>
-                        </ul>
+                            <p class="list-unstyled m-l-md">
+                                    P.O. Box 942837<br>
+                                    Sacramento, CA 94237-0001<br>
+                                    Phone:<a href="tel:+19166537532">(916) 653-7532</a><br>
+                                    Fax: (916) 653-8443
+                            </p>
+                        </div>
                     </div>
-
-                    <div class="third">
-
-                        <h3>Contact Us</h3>
-                        <div class="panel panel-understated">
-                            <div class="panel-heading">
-                                <h4>California Library Services Act </h4>
+                </div>
+            </div>
+            <div class="section">
+                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default" role="presentation">
+                        <div class="panel-heading" id="heading0" role="presentation">
+                            <h4 class="panel-title" role="presentation">
+                                <a tabindex="0" class="collapsed" id="ui-collapse-900" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse0" href="#collapse0" data-toggle="collapse" data-parent="#example-accordion">California Cooperative Library Systems</a>
+                            </h4>
+                        </div>
+                        <div tabindex="-1" class="panel-collapse collapse" id="collapse0" role="tabpanel" aria-expanded="false" aria-hidden="true" aria-selected="false" aria-labelledby="ui-collapse-900" style="height: 0px;">
+                            <div class="panel-body">
+                                <div class="spacer" role="presentation"></div>
+                                <p>
+                                    <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true" style="float:left; padding-right:15px"></i> <a href="http://www.library.ca.gov/services/docs/CLSASystemsMaps_updated.pdf" target="_blank" rel="noopener noreferrer">Statewide map and System maps of jurisdictions</a> (PDF)
+                                </p>
+                                <div class="spacer" role="presentation"></div>
+                                <div role="presentation">
+                                    <div role="presentation" style="float:left; width:420px">
+                                        <p>
+                                            <a href="http://www.blackgold.org/" target="_blank" rel="noopener noreferrer">Black Gold Cooperative Library System (BLACK GOLD)</a><br>
+                                            Maureen Theobald<br>
+                                            Executive Director<br>
+                                            580 Camino Mercado<br>
+                                            Arroyo Grande, CA 93420-1816<br>
+                                            Phone:(805) 543-6082<br>
+                                            Fax:(805) 543-9487<br>
+                                            <a href="mailto:mtheobald@blackgold.org">mtheobald@blackgold.org</a>
+                                        </p>
+                                        <p>
+                                            <strong>49-99 Cooperative Library System (49-99)</strong><br>
+                                            Diane Satchwell, Administrator<br>
+                                            248 E. Foothill Blvd., Suite 101<br>
+                                            Monrovia, CA 91016-5522<br>
+                                            Phone:(626) 359-6111<br>
+                                            Fax: (626) 283-5949<br>
+                                            <a href="mailto:dsatchwell@socallibraries.org">dsatchwell@socallibraries.org</a>
+                                        </p>
+                                        <p>
+                                            <a title="http://www.inlandlib.org/" href="http://www.inlandlib.org/" target="_blank" rel="noopener noreferrer">Inland Library System (INLAND)</a><br>
+                                            Diane Satchwell, Administrator<br>
+                                            248 E. Foothill Blvd., Suite 101<br>
+                                            Monrovia, CA 91016-5522<br>
+                                            Phone:(626) 359-6111<br>
+                                            Fax: (626) 283-5949<br>
+                                            <a href="mailto:dsatchwell@socallibraries.org">dsatchwell@socallibraries.org</a>
+                                        </p>
+                                    </div>
+                                    <div role="presentation" style="float:left; width:400px">
+                                        <p>
+                                            <a href="http://www.northnetlibs.org" target="_blank" rel="noopener noreferrer">NorthNet Library System (NLS)</a><br>
+                                            Jacquelyn Brinkley, Coordinator<br>
+                                            2471 Flores Street<br>
+                                            San Mateo, CA 94403-2273<br>
+                                            Phone: (650) 349-5538<br>
+                                            Fax:(650) 349-5089<br>
+                                            <a href="mailto:brinkley@plpinfo.org">brinkley@plpinfo.org</a>
+                                        </p>
+                                        <p>
+                                            <a href="http://plpinfo.org/" target="_blank" rel="noopener noreferrer">Pacific Library Partnership (PLP)</a><br>
+                                            Carol Frost, Assistant Director<br>
+                                            2471 Flores Street<br>
+                                            San Mateo, CA 94403-2273<br>
+                                            Phone:(650) 349-5538<br>
+                                            Fax:(650) 349-5089<br>
+                                            <a href="mailto:frost@plpinfo.org">frost@plpinfo.org</a>
+                                        </p>
+                                        <p>
+                                            <a href="http://www.sjvls.org/" target="_blank" rel="noopener noreferrer">San Joaquin Valley Library System (SJVLS)</a><br>
+                                            Kelley Landano, Interim Administrative Librarian<br>
+                                            2420 Mariposa Street<br>
+                                            Fresno, CA 93721-2285<br>
+                                            Phone:(559) 600-6237<br>
+                                            Fax:(559) 600-7628
+                                            <!--<br />
+                                <a href="mailto:jeffrey.crosby@sjvls.org">jeffrey.crosby@sjvls.org</a>-->
+                                        </p>
+                                    </div>
+                                    <div role="presentation" style="float:left; width:290px">
+                                        <p>
+                                            <strong>Santiago Library System (SANTIAGO)</strong><br>
+                                            Diane Satchwell, Administrator<br>
+                                            248 E. Foothill Blvd., Suite 101<br>
+                                            Monrovia, CA 91016-5522<br>
+                                            Phone:(626) 359-6111<br>
+                                            Fax: (626) 283-5949<br>
+                                            <a href="mailto:dsatchwell@socallibraries.org">dsatchwell@socallibraries.org</a>
+                                        </p>
+                                        <p>
+                                            <a href="http://www.serralib.org/" target="_blank" rel="noopener noreferrer">Serra Cooperative Library System (SERRA)</a><br>
+                                            Diane Satchwell, Administrator<br>
+                                            248 E. Foothill Blvd., Suite 101<br>
+                                            Monrovia, CA 91016-5522<br>
+                                            Phone:(626) 359-6111<br>
+                                            Fax: (626) 283-5949<br>
+                                            <a href="mailto:dsatchwell@socallibraries.org">dsatchwell@socallibraries.org</a>
+                                        </p>
+                                        <p>
+                                            <a href="http://www.socallibraries.org/" target="_blank" rel="noopener noreferrer">Southern California Library Cooperative (SCLC)</a><br>
+                                            Diane Satchwell, Administrator<br>
+                                            248 E. Foothill Blvd., Suite 101<br>
+                                            Monrovia, CA 91016-5522<br>
+                                            Phone:(626) 359-6111<br>
+                                            Fax: (626) 283-5949<br>
+                                            <a href="mailto:dsatchwell@socallibraries.org">dsatchwell@socallibraries.org</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>California Library Services Board</h3>
+                <br/>
+                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">About the Board</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
                                 <p>
-                                    <span class="ca-gov-icon-email"></span><strong>   By Email:</strong> <a href="mailto:monica.rivas@library.ca.gov"> monica.rivas@library.ca.gov </a><br><br>
-                                    <span class="ca-gov-icon-mail"></span><strong>By mail:</strong><br>
+                                    <a name="Board"></a>The California Library Services Board (the state board) consists of nine members appointed by the Governor and four by the Legislature. The state board determines policy for and authorizes allocation of funds from programs of the<strong> California Library Services Act</strong>. Members serve for four years, representing various constituencies, and also comprise the State Advisory Council on Libraries for the federal Library Services and Technology Act. The State Librarian serves as Chief Executive Officer of the California Library Services Board.
                                 </p>
-
-                                <p class="list-unstyled m-l-md">
-                                        P.O. Box 942837<br>
-                                        Sacramento, CA 94237-0001<br>
-                                        Phone:<a href="tel:+19166537532">(916) 653-7532</a><br>
-                                        Fax: (916) 653-8443
+                                <h2>Mission and Values</h2>
+                                <p>
+                                    The following mission and value statements are the most recent to be approved by the California Library Services Board.
+                                </p>
+                                <h2>CLSB Mission Statement</h2>
+                                <p>
+                                    The Mission of the California Library Services Board is to ensure that all Californians have free and convenient access to all library resources and services for the enrichment of their lives and for lifelong learning, regardless of their age or ethnicity, or any geographical, financial or administrative constraints.
+                                </p>
+                                <p>
+                                    In carrying out its mission, the CLSB expresses its values through the following policies:
+                                </p>
+                                <p>
+                                    <strong>Local Control</strong> – We affirm the principle of control and administration of public libraries by local government within the framework of statewide equity. Decisions are made locally about books and other materials.
+                                </p>
+                                <p>
+                                    <strong>Local Financing</strong> – We encourage adequate financing of libraries from local sources, with state and federal funds furnished to supplement, not supplant, local funds.
+                                </p>
+                                <p>
+                                    <strong>Service for the Underserved</strong> – We support service to any population segment of any age and ethnicity with service needs not adequately met by traditional library service patterns; including, but not limited to, those persons who are geographically isolated, economically disadvantaged, functionally illiterate, non-English speaking, shut-in, institutionalized, or handicapped.
+                                </p>
+                                <p>
+                                    <strong>Resource Sharing </strong> – We encourage and enable the sharing of resources among libraries of all types – school, academic, special, and public.
+                                </p>
+                                <p>
+                                    <strong>Equitable Reimbursement</strong> – We endorse equitable and sufficient reimbursement of any participating library for services it provides beyond its jurisdiction, if a public library, or if not a public library, beyond its normal clientele.
+                                </p>
+                                <p>
+                                    <strong>Public Participation</strong> – We value and ensure public participation in carrying out the intent of the California Library Services Act through locally appointed System Advisory Boards, open
+                                    public meetings, and involvement of voluntary groups.
+                                </p>
+                                <p>
+                                    <strong>Statewide Coordination </strong> – We encourage quick and equitable access to information for the entire state, including use of technology.
+                                </p>
+                                <h2>CLSB Values Statements</h2>
+                                <p>
+                                    <strong>Literacy</strong> - We recognize the importance of reading, and therefore literacy, to all Californians for life enrichment and for intelligent self-government as an essential component of democracy.
+                                </p>
+                                <p>
+                                    <strong>Diversity</strong> – Congress shall enable libraries in our increasingly multicultural and diverse society to target relevant services and programs to the special/unique segments of their communities' populations, including people with disabilities, and to serve as gateways by actively disseminating information to everyone in the U.S., its tribe, territories and freely associated states, including those in remote areas, through both traditional and nontraditional methods and locations. Services to reach both individuals and families of traditionally underserved populations should be equitable to those services offered to traditional users of a service-oriented public library. Coalitions should be encouraged between libraries and such diverse community groups, government institutions, business and health care providers.
+                                </p>
+                                <p>
+                                    <strong>Technology</strong> – The California Library Services Board will facilitate the balance between new technologies while preserving traditional Library services and value.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <p>
-                        (Documents in PDF format can be viewed with the <a href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank" rel="noopener noreferrer">Adobe Acrobat Reader</a>.)
-                    </p>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Board Members</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <h2>APPOINTED BY THE GOVERNOR:</h2>
+                                <p>NOTE: Positions representing Economically Disadvantaged and Limited, Non-English Speaking are currently vacant.</p>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading1" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-270" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse1" href="#collapse1" data-toggle="collapse" data-parent="#example-accordion">
+                                                    Anne R. Bernardo, President
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse1" role="tabpanel" aria-expanded="false" aria-hidden="true" aria-labelledby="ui-collapse-270" style="height: 0px;">
+                                            <div class="panel-body">
+                                                <p><strong>Representing Special Libraries</strong></p>
+                                                <img style="padding:0 20px 10px 0; float:left" alt="Picture of Ann R. Bernardo" src="~/Content/StateTemplate/images/services/toLibraries/CLSA/Bernardo.jpg">
+                                                <p>
+                                                    Anne R. Bernardo resides in Visalia, California. She was appointed November 4, 2003, and reappointed on June 13, 2014. Her term expires on January 1, 2018.
+                                                </p>
+                                                <p>
+                                                    Ms. Bernardo is the law library director of the Tulare County Public Law Library, a position she has held since 1994. She has served as president and vice president of the California Library Services Board, and as its legislative committee chair and board liaison to the Legislative and Advocacy Committee of the California Library Association. She has also served as president of the Council of California County Law Librarians, vice president of the Conference of California County Law Library Trustees and Librarians, and as council chair and board president of the Heartland Regional Library Network. She is a member of the American Association of Law Libraries, its State, Court, County Law Libraries Special Interest Section, and the Asian-American Law Librarians Caucus. She is a member of the Northern California Association of Law Libraries, Self-Help Providers of Tulare County, and a past member of the Special Libraries Association. She serves as the law libraries liaison to the executive committee of the Law Practice Management &amp; Technology Section of the California State Bar. In 2013, the Tulare County Bar Association recognized her with its Liberty Bell Award, and in 1998, she was awarded the College of the Sequoias Paralegal Mentor of the Year.
+                                                </p>
+                                                <p>
+                                                    She has served on the College of the Sequoias Paralegal Program Advisory Board and on the Board of Directors of the Visalian Friends of the Fox Theatre. As general manager of the Tulare County Symphony Association (1986-1994), under her management the orchestra was recognized by the California Arts Council, the National Endowment for the Arts, completed an international tour, and commissioned and premiered works by American composers.
+                                                </p>
+                                                <p>
+                                                    Ms. Bernardo earned her Bachelor of Science degree in Creative Arts and Human Behavior from the University of California, Davis in 1978 and her Paralegal certificate in 1987.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading2" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-658" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse2" href="#collapse2" data-toggle="collapse" data-parent="#example-accordion">
+                                                    Paymaneh Maghsoudi, Vice-President
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse2" role="tabpanel" aria-expanded="false" aria-hidden="true" aria-labelledby="ui-collapse-658" style="height: 0px;">
+                                            <div class="panel-body">
+                                                <p><strong>Representing Public Libraries</strong></p>
+                                                <img style="padding:0 20px 10px 0; float:left" alt="Picture of Paymaneh Maghsoudi" src="~/Content/StateTemplate/images/services/toLibraries/CLSA/Mahsoudi.jpg">
+                                                <p>
+                                                    Paymaneh Maghsoudi lives in Chino Hills, California. She was appointed on January 14, 2003, and reappointed on January 7, 2016. Her term expires on January 1, 2020.
+                                                </p>
+                                                <p>
+                                                    Ms. Maghsoudi is currently the Director of Library Services of Whittier Public Library, a position she has held since 2001. She has also served as the Director of Library and Community Services of the city of Azusa. Ms. Maghsoudi is a member of the American Library Association and the California Library Association, where she served as the CLA President in 2011. She represents the California Library Services Board on the CLA Legislative and Advocacy Committee. Ms. Maghsoudi is a board member of the Hodge Foundation. She is the recipient of the YMCA of San Gabriel Valley Woman of Achievement Award. Ms. Maghsoudi received a Bachelor of Arts degree from the Pars College in Tehran, Iran, and her Masters of Library Science degree from the University of Oklahoma.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading3" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-46" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse3" href="#collapse3" data-toggle="collapse" data-parent="#example-accordion">
+                                                    Gary M. Christmas
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse3" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-46">
+                                            <div class="panel-body">
+                                                <p><strong>Representing Public Library Trustees/Commissioners</strong></p>
+                                                <img style="padding:0 20px 10px 0; float:left" alt="Picture of Gary M. Christmas" src="~/Content/StateTemplate/images/services/toLibraries/CLSA/christmas.jpg">
+                                                <p>
+                                                    Gary M. Christmas lives in Riverside, California. He was appointed on June 20, 2014, and reappointed on January 7, 2016. His term expires on January 1, 2020.
+                                                </p>
+                                                <p>
+                                                    Mr. Christmas has been the owner of Gary Christmas Consulting since 2010. He served for the County of Riverside from 1997 to 2010 in executive officer positions, and as county librarian for Riverside County Library from 1997 to 2004. He also held the position of library branch manager and reference librarian for the Riverside City Library from 1981 to 1977. Mr. Christmas served from 1973 to 1977 as an enlisted member of the United States Cost Guard. He is a member of many organizations, including president-elect of the Raincross Group; the Riverside East Rotary Club; the Unforgettable Foundation, where he was president from 2013 to 2014; Board Member for the March Air Field Museum; Board of Library Trustees for the City of Riverside; and member of the California Riverside Ballet. Mr. Christmas earned his Master of Library Science degree from San Jose State University, and Bachelor of Arts degree in Political Science from the University of New Orleans.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading4" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-588" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse4" href="#collapse4" data-toggle="collapse" data-parent="#example-accordion">
+                                                    Florante Peter Ibanez
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse4" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-588">
+                                            <div class="panel-body">
+                                                <p><strong>Representing Special Libraries</strong></p>
+                                                <img style="padding:0 20px 10px 0; float:left" alt="Florante Peter Ibanez" src="~/Content/StateTemplate/images/services/toLibraries/CLSA/ibanez.jpg">
+                                                <p>
+                                                    Florante Peter Ibanez resides in Carson, California. He was appointed on June 20, 2014, and his term expires on January 1, 2018.
+                                                </p>
+                                                <p>
+                                                    Mr. Ibanez is currently the manager of library computer services at Loyola Law School, William M. Rains Library, where he has worked since 1992. He is also an adjunct professor for the Loyola Marymount University, Asian Pacific American Studies Program. Mr. Ibanez is and has been a member of many professional organizations, including: Special Libraries Association, past Diversity Chair of the Southern California Chapter; Past President of the Asian/Pacific American Librarians Association; Association of American Law Libraries; Southern California Association of Law Libraries; American Library Association; California Library Association; Society of California Archivists; Society of American Archivists; and the Association of Asian American Studies. He also served on the steering committee for the 2nd National Joint Conference of Librarians of Color 2012. He currently serves on the Board of Directors of the Filipino American Library and on the City of Carson Historical Committee. He coauthored with his life partner, Rose Ibanez, Filipinos in Carson and the South Bay. Mr. Ibanez has been involved in many community service events including raising funds and awareness for AIDS as well as supporting Bone Marrow registry. He earned a Master of Arts degree in Asian American Studies and a Master of Library and Information Science degree from the University of California, Los Angeles.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading5" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-876" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse5" href="#collapse5" data-toggle="collapse" data-parent="#example-accordion">
+                                                    Gregory F. McGinity
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse5" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-876">
+                                            <div class="panel-body">
+                                                <p><strong>Representing Public-at-Large</strong></p>
+                                                <img style="padding:0 20px 10px 0; width:120px; float:left" alt="Photograph of Gregory McGinity" src="~/Content/StateTemplate/images/services/toLibraries/CLSA/mcginity.jpg">
+                                                <p>
+                                                    Gregory McGinity resides in Redondo Beach, California. He was appointed on December 30, 2010, and his term expires on January 1, 2014.
+                                                </p>
+                                                <p>
+                                                    Mr. McGinity is the senior director of policy for the Broad Foundation, a position he has held since 2003. Prior to this he was acting chief of staff for the California Office of the Secretary of Education (2003), vice president of marketing for Pure Pharmaceuticals (2002–2003), marketing intern for Amgen in 2001, senior policy consultant for the California State Board of Education (1997–1999), legislative director for the Office of U.S. Representative Lindsey Graham (1996–1997), and legislative assistant for the Office of U.S. Senator Thad Cochran (1993–1996).
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading6" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-199" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse6" href="#collapse6" data-toggle="collapse" data-parent="#example-accordion">
+                                                    Peter A. Mindnich
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse6" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-199">
+                                            <div class="panel-body">
+                                                <p><strong>Representing Persons with Disabilities</strong></p>
+                                                <img style="padding:0 20px 10px 0; float:left" alt="Photograph of Gregory McGinity" src="~/Content/StateTemplate/images/services/toLibraries/CLSA/Mindnich.jpg">
+                                                <p>
+                                                    Peter Mindnich resides in Rolling Hills, California. He was appointed June 1, 2015, and reappointed on January 7, 2016. His term expires on January 1, 2020.
+                                                </p>
+                                                <p>
+                                                    Mr. Mindnich has been president of the Braille Institute since 2014, where he was executive vice president from 2011 to 2014. He was an executive intern at the U.S. Veterans Initiative from 2010 to 2011 and a clinical social work intern at St. Mary Medical Center's Comprehensive AIDS Resource and Education Program from 2009 to 2010. Mr. Mindnich was managing director at BlackRock Inc. from 2007 to 2009, principal at Quellos Group LLC from 2001 to 2007 and a managing director at Goldman, Sachs &amp; Company when he retired in 2001. He earned his Master of Business Administration degree from the Harvard Business School and his Master of Social Work degree from the University of Southern California School of Social Work.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading7" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-492" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse7" href="#collapse7" data-toggle="collapse" data-parent="#example-accordion">
+                                                    Connie Hamner Williams
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse7" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-492">
+                                            <div class="panel-body">
+                                                <p><strong>Representing School Libraries</strong></p>
+                                                <img style="padding:0 20px 10px 0; width:125px; float:left" alt="Photograph of Connie Williams" src="~/Content/StateTemplate/images/services/toLibraries/CLSA/Williams.jpg">
+                                                <p>
+                                                    Connie Williams resides in Petaluma, California. She was appointed on September 17, 2014, and reappointed on January 7, 2016. Her term expires on January 1, 2020.
+                                                </p>
+                                                <p>
+                                                    Ms. Williams is a teacher librarian at Petaluma High School, where she has worked since 2008. Prior to this she was a teacher librarian at Kenilworth Junior High School in Petaluma from 1989. Ms. Williams is co-chair of the American Library Association Government Information for Children Committee; a member of the American Library Association Office for Information Technology Policy Library Advisory Committee; and a member of the California School Library Association, where she was president from 2008 to 2009. Ms. Williams was chair of the American Association of School Librarians Legislation Committee from 2011 to 2012. She earned a Master of Library Science degree from Emporia State University.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>APPOINTED BY THE ASSEMBLY SPEAKER:</h2>
+                                <p>NOTE: One position representing the Public-at-Large is currently vacant.</p>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading8" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-489" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse8" href="#collapse8" data-toggle="collapse" data-parent="#example-accordion">
+                                                    Aleita Huguenin
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse8" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-489">
+                                            <div class="panel-body">
+                                                <p><strong>Public-at-Large</strong></p>
+                                                <img style="padding:0 20px 10px 0; width:125px; float:left" alt="Picture of Aleita Huguenin" src="~/Content/StateTemplate/images/services/toLibraries/CLSA/Huguenin.jpg">
+                                                <p>
+                                                    Aleita Huguenin resides in Rancho Murieta, California. She was appointed February 19, 2014, and her term expires January 1, 2018.
+                                                </p>
+                                                <p>
+                                                    Ms. Huguenin is currently the chair of the Democratic National Committee – Western States Region, a position she has held since 2005. In 2007, Ms. Huguenin became president of <em>Aleita &amp; Partners</em>, a firm that works on Democratic races in the 13 Western States.
+                                                </p>
+                                                <p>
+                                                    Ms. Huguenin taught Elementary and Junior High School in the Mt. Diablo Unified District from 1969 to 1987. She was the Bay Area Political Manager for the California Teachers Association from 1987 to 1996 and Statewide GR Manager for the California Teachers Association from 1995 to 2007.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>APPOINTED BY SENATE RULES COMMITTEE:</h2>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading9" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-774" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse9" href="#collapse9" data-toggle="collapse" data-parent="#example-accordion">
+                                                    Elizabeth Murguia
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse9" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-774">
+                                            <div class="panel-body">
+                                                <p><strong>Public-at-Large</strong></p>
+                                                <img style="padding:0 20px 10px 0; width:125px; float:left" alt="Picture of Elizabeth Murguia" src="~/Content/StateTemplate/images/services/toLibraries/CLSA/murguia.jpg">
+                                                <p>
+                                                    Elizabeth Murguia resides in Eureka, California. She was appointed April 14, 2008, and reappointed in January 2012. Her term expires on January 1, 2016.
+                                                </p>
+                                                <p>
+                                                    Ms. Murguia is President and Co-Founder of the Humboldt Library Foundation since 1996; she was recipient of the distinguished Helen Everett Award in 2006 in recognition of twenty-five years of work on behalf of the public library. She was a member and key fundraiser for the Humboldt County Library Construction Advisory Committee (1979–1995), a local organization formed to raise funds to construct a new Main Library for the Humboldt County Public Library system. Ms. Murguia sits on many boards, including the Humboldt County Democratic Central Committee, Ex-Officio Member since 1980; Member of the Open Door Community Health Clinics since 1992; Advocacy Committee Member of the St. Joseph’s Hospital since 1998; and Board Member for Keep Eureka Beautiful since 2000.
+                                                </p>
+                                                <p>
+                                                    In 1991 Ms. Murguia was a California Delegate to the White House Conference on Libraries in Washington, DC. She graduated from Sonoma State University, with a major in English Literature (1972).
+                                                </p>
+                                                <p>
+                                                    Ms. Murguia retired in April 2011 as a District Representative for Congressman Mike Thompson, a position she held since 1993. Prior to this she was District Representative for State Senator Barry Keene to author California’s 1988 Library Construction and Renovation Bond Act.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading10" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-414" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse10" href="#collapse10" data-toggle="collapse" data-parent="#example-accordion">
+                                                    H. Eric Schockman, PhD
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse10" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-414">
+                                            <div class="panel-body">
+                                                <p><strong>Public-at-Large</strong></p>
+                                                <img style="padding:0 20px 10px 0; width:125px; float:left" alt="Picture of H. Eric Schockman" src="~/Content/StateTemplate/images/services/toLibraries/CLSA/Schockman.jpg">
+                                                <p>
+                                                    H. Eric Schockman, PhD resides in Sherman Oaks, California. He was appointed November 12, 2013, and his term expires on January 1, 2018.
+                                                </p>
+                                                <p>
+                                                    Dr. Schockman is Chair and Associate Professor at the Center for Leadership at Woodbury University and adjunct Associate Professor at the Sol Price School of Public Policy at the University of Southern California. He is President and founder of the Global Hunger Foundation, dedicated to helping women in the developing world break the chains of poverty by funding projects designed to provide sustainable development and organic farming. Dr. Schockman currently served as chairman of the National Anti-Hunger Organization and was a member of both the National Interfaith Hunger director's committee and the Alliance to End Hunger. He was on the founding board of directors of the Global Food Banking Network. Dr. Schockman served as President and CEO of an international anti-hunger agency for over a decade, pumping both needed public policy focus and funding into the field.
+                                                </p>
+                                                <p>
+                                                    Dr. Schockman was appointed to the California Postsecondary Education Commission by Governor Schwarzenegger in 2007 and has served as its last chair. He has also served on the Little Hoover Commission, a bipartisan, independent body whose function is to promote efficiency, effectiveness and economy in state programs. He served in the Peace Corps in Sierra Leone, West Africa, and taught agricultural and sustainable development.
+                                                </p>
+                                                <p>
+                                                    Dr. Schockman holds a Ph.D. in Political Science and International Relations from the University of California, Riverside. He has written several books and edited many articles on politics in California, the nation and international affairs, and presented on panels on these same topics. Dr. Schockman speaks before elected officials, professional and community organizations across the country and is frequently quoted in The Los Angeles Times, The Chicago Tribune, The Dallas Morning News, CNN, NPR and other national publications and electronic media.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    State Board members may be contacted at California Library Services Board, P.O. Box 942837, Sacramento, CA 94237-0001.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#example-accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Board Meetings</a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <h2>Upcoming Board Meetings</h2>
+                                <p>
+                                </p><h4 style="color:#046b99; font-weight:bold">
+                                    <span class="ca-gov-icon-caret-fill-right"></span> April 2018<br>
+                                    Sacramento, CA
+                                </h4>
+                                <p></p>
+                                <p>
+                                </p><h4 style="color:#046b99; font-weight:bold">
+                                    <span class="ca-gov-icon-caret-fill-right"></span> Fall 2018<br>
+                                    Sacramento, CA
+                                </h4>
+                                <p></p>
+                                <h2>Previous Board Meetings</h2>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading11" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-534" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse11" href="#collapse11" data-toggle="collapse" data-parent="#example-accordion"><span class="ca-gov-icon-calendar"></span><span style="display:inline-block; width: 10px;"></span>2017</a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse11" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-534">
+                                            <div class="panel-body">
+                                                <ul>
+                                                    <li>
+                                                        October 2017<br>
+                                                        <a href="/loc/docs/2017-10_Agenda_packet.pdf" target="_blank" rel="noopener noreferrer">Agenda and packet (PDF)</a><br>
+                                                        <!--<a href="/loc/docs/2017-04_Minutes.pdf" target="_blank" rel="noopener noreferrer">Minutes (PDF)</a><br />-->
+                                                        <a href="/loc/docs/2017-10_Actions.pdf" target="_blank" rel="noopener noreferrer">Key Actions (PDF)</a><br>
+                                                    </li>
+                                                    <li>
+                                                        April 2017<br>
+                                                        <a href="/loc/docs/2017-04_Agenda_packet.pdf" target="_blank" rel="noopener noreferrer">Agenda and packet (PDF)</a><br>
+                                                        <a href="/loc/docs/2017-04_Minutes.pdf" target="_blank" rel="noopener noreferrer">Minutes (PDF)</a><br>
+                                                        <a href="/loc/docs/2017-04_Actions.pdf" target="_blank" rel="noopener noreferrer">Key Actions (PDF)</a><br>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading12" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-541" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse12" href="#collapse12" data-toggle="collapse" data-parent="#example-accordion"><span class="ca-gov-icon-calendar"></span><span style="display:inline-block; width: 10px;"></span><span class="bigger-title">2016</span></a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse12" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-541">
+                                            <div class="panel-body">
+                                                <ul>
+                                                    <li>
+                                                        October 2016<br>
+                                                        <a href="/loc/docs/2016-10_Agenda_packet.pdf" target="_blank" rel="noopener noreferrer">Agenda and packet (PDF)</a><br>
+                                                        <a href="/loc/docs/2016-10_minutes.pdf" target="_blank" rel="noopener noreferrer">Minutes (PDF)</a><br>
+                                                        <a href="/loc/docs/2016-10_Actions.pdf" target="_blank" rel="noopener noreferrer">Key Actions (PDF)</a><br>
+                                                    </li>
+                                                    <li>
+                                                        July 2016<br>
+                                                        <a href="/loc/docs/2016-07_Agenda_packet.pdf" target="_blank" rel="noopener noreferrer">Agenda and packet (PDF)</a><br>
+                                                        <a href="/loc/docs/2016-07_Minutes.pdf" target="_blank" rel="noopener noreferrer">Minutes (PDF)</a><br>
+                                                        <a href="/loc/docs/2016-07_Actions.pdf" target="_blank" rel="noopener noreferrer">Key Actions (PDF)</a><br>
+                                                    </li>
+                                                    <li>
+                                                        April 2016<br>
+                                                        <a href="/loc/docs/2016-04_Agenda_packet.pdf" target="_blank" rel="noopener noreferrer">Agenda and packet (PDF)</a><br>
+                                                        <a href="/loc/docs/2016-04_Minutes.pdf" target="_blank" rel="noopener noreferrer">Minutes (PDF)</a><br>
+                                                        <a href="/loc/docs/2016-04_Actions.pdf" target="_blank" rel="noopener noreferrer">Key Actions (PDF)</a><br>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading13" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-670" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse13" href="#collapse13" data-toggle="collapse" data-parent="#example-accordion"><span class="ca-gov-icon-calendar"></span><span style="display:inline-block; width: 10px;"></span><span class="bigger-title">2015</span></a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse13" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-670">
+                                            <div class="panel-body">
+                                                <ul>
+                                                    <li>
+                                                        September 2015<br>
+                                                        <a href="/loc/docs/2015-09_Agenda_packet.pdf" target="_blank" rel="noopener noreferrer">Agenda and packet (PDF)</a><br>
+                                                        <a href="/loc/docs/2015-09_Minutes.pdf" target="_blank" rel="noopener noreferrer">Minutes (PDF)</a><br>
+                                                        <a href="/loc/docs/2015-09_Actions.pdf" target="_blank" rel="noopener noreferrer">Key Actions (PDF)</a><br>
+                                                    </li>
+                                                    <li>
+                                                        April 2015<br>
+                                                        <a href="/loc/docs/2015-04_Agenda_packet.pdf" target="_blank" rel="noopener noreferrer">Agenda and packet (PDF)</a><br>
+                                                        <a href="/loc/docs/2015-04_Minutes.pdf" target="_blank" rel="noopener noreferrer">Minutes (PDF)</a><br>
+                                                        <a href="/loc/docs/2015-04_Actions.pdf" target="_blank" rel="noopener noreferrer">Key Actions (PDF)</a><br>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading14" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-551" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse14" href="#collapse14" data-toggle="collapse" data-parent="#example-accordion"><span class="ca-gov-icon-calendar"></span><span style="display:inline-block; width: 10px;"></span><span class="bigger-title">2014</span></a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse14" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-551">
+                                            <div class="panel-body">
+                                                <ul>
+                                                    <li>
+                                                        December 2014<br>
+                                                        <a href="/loc/docs/2014-12_Agenda_packet.pdf" target="_blank" rel="noopener noreferrer">Agenda and packet (PDF)</a><br>
+                                                        <a href="/loc/docs/2014-12_Minutes.pdf" target="_blank" rel="noopener noreferrer">Minutes (PDF)</a><br>
+                                                        <a href="/loc/docs/2014-12_Actions.pdf" target="_blank" rel="noopener noreferrer">Key Actions (PDF)</a><br>
+                                                    </li>
+                                                    <li>
+                                                        September 2014<br>
+                                                        <a href="/loc/docs/2014-09_Agenda_packet.pdf" target="_blank" rel="noopener noreferrer">Agenda and packet (PDF)</a><br>
+                                                        <a href="/loc/docs/2014-09_Minutes.pdf" target="_blank" rel="noopener noreferrer">Minutes (PDF)</a><br>
+                                                        <a href="/loc/docs/2014-09_Actions.pdf" target="_blank" rel="noopener noreferrer">Key Actions (PDF)</a><br>
+                                                    </li>
+                                                    <li>
+                                                        March 2014<br>
+                                                        <a href="/loc/docs/2014-03_Agenda_packet.pdf" target="_blank" rel="noopener noreferrer">Agenda and packet (PDF)</a><br>
+                                                        <a href="/loc/docs/2014-03_Minutes.pdf" target="_blank" rel="noopener noreferrer">Minutes (PDF)</a><br>
+                                                        <a href="/loc/docs/2014-03_Actions.pdf" target="_blank" rel="noopener noreferrer">Key Actions (PDF)</a><br>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="example-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" id="heading15" role="tab">
+                                            <h4 class="panel-title">
+                                                <a tabindex="-1" class="collapsed" id="ui-collapse-513" role="tab" aria-expanded="false" aria-selected="false" aria-controls="collapse15" href="#collapse15" data-toggle="collapse" data-parent="#example-accordion"><span class="ca-gov-icon-calendar"></span><span style="display:inline-block; width: 10px;"></span><span class="bigger-title">2013</span></a>
+                                            </h4>
+                                        </div>
+                                        <div tabindex="-1" class="panel-collapse collapse" id="collapse15" role="tabpanel" aria-hidden="true" aria-labelledby="ui-collapse-513">
+                                            <div class="panel-body">
+                                                <ul>
+                                                    <li>
+                                                        August 2013<br>
+                                                        <a href="/loc/docs/2013-08_Agenda_packet.pdf" target="_blank" rel="noopener noreferrer">Agenda and packet (PDF)</a><br>
+                                                        <a href="/loc/docs/2013-08_Minutes.pdf" target="_blank" rel="noopener noreferrer">Minutes (PDF)</a><br>
+                                                        <a href="/loc/docs/2013-08_Actions.pdf" target="_blank" rel="noopener noreferrer">Key Actions (PDF)</a><br>
+                                                    </li>
+                                                    <li>
+                                                        March 2013<br>
+                                                        <a href="/loc/docs/2013-03_Agenda_packet.pdf" target="_blank" rel="noopener noreferrer">Agenda and packet (PDF)</a><br>
+                                                        <a href="/loc/docs/2013-03_Minutes.pdf" target="_blank" rel="noopener noreferrer">Minutes (PDF)</a><br>
+                                                        <a href="/loc/docs/2013-03_Actions.pdf" target="_blank" rel="noopener noreferrer">Key Actions (PDF)</a><br>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="spacer"></div>
+                                <p>
+                                    For additional information about upcoming meetings, contact: <br><br>
+                                    <b>Annly Roman</b><br>
+                                    (916) 323-0057<br>
+                                    <a href="mailto:annly.roman@library.ca.gov">Annly.Roman@library.ca.gov</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </main>
 </div>
