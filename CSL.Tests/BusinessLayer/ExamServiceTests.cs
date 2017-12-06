@@ -15,7 +15,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CSL.Tests.ExamService;
+using CSLBusinessLayer.Concrete;
 
 namespace CSL.Tests.BusinessLayer
 {
@@ -38,7 +38,7 @@ namespace CSL.Tests.BusinessLayer
         [TestMethod]
         public void Service_FillLibrarianExamTest()
         {
-            LibrarianModel test = new LibrarianModel() { Name = "Librarian", Signature = "sig", Date = "111111", SearchStrategies = "2er" };
+            LibrarianModel test = new LibrarianModel() { IsLibrarian = true, IsSeniorLibrarian = false, Email = "test@test.com", HasEducation = true, HasExperience = true,  Name = "Librarian", Signature = "sig", Date = "11111111", SearchStrategies = "2er" };
             string pdfLibrarianTemplate = "~/Content/StateTemplate/pdf/ExamPDFTemplates/LibAppFinal.pdf";
             string newFile = "~/Content/StateTemplate/pdf/ExamPDFTemplates/" + test.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".pdf";
             bool res = _exam.FillLibrarianExam(test, pdfLibrarianTemplate, newFile);

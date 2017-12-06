@@ -58,8 +58,6 @@
     <Compile Include="BusinessLayer\LibraryServiceTests.cs" />
     <Compile Include="BusinessLayer\SLAAServiceTests.cs" />
     <Compile Include="DataAccess\MockDataAccess.cs" />
-    <Compile Include="ExamService\IExamService.cs" />
-    <Compile Include="ExamService\MockExamService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
